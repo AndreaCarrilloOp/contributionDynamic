@@ -7,6 +7,7 @@ from contribution_dynamic.scenarios.tanks import (
     FIRE_RANGE,
     LEFT,
     MAX_ENEMIES,
+    SPAWN_GAP,
     SPAWN_RADIUS,
     STEP,
     TOP,
@@ -63,12 +64,13 @@ def test_enemy_waves_return_fire_and_are_defeated():
     assert battle is not None
     enemies = [a for a in battle.attacks if a.enemy is not None]
     assert enemies
-    groups = {}
+    births = sorted(enemy.spawn for enemy in enemies)
+    assert all(b-a >= SPAWN_GAP-1e-8 for a, b in zip(births, births[1:]))
     for enemy in enemies:
         assert enemy.spawn < enemy.counter < enemy.shield_hit < enemy.fire < enemy.hit
-        groups.setdefault(enemy.spawn, []).append(enemy)
-    assert all(len(group) <= MAX_ENEMIES for group in groups.values())
-    assert any(len(group) > 1 for group in groups.values())
+    concurrent = [sum(e.spawn <= t < e.hit for e in enemies) for t in births]
+    assert max(concurrent) <= MAX_ENEMIES
+    assert max(concurrent) > 1
 
 
 def test_sparse_activity_starts_immediately():

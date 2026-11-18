@@ -18,6 +18,7 @@ CELL = 10
 FIRST = .12
 BASE = TOP + 7 * STEP + 15
 MAX_ENEMIES = 3
+SPAWN_GAP = .36
 WAVE_BRICKS = 5
 CHASE_ROUNDS = 10
 FIRE_RANGE = 5
@@ -309,16 +310,24 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
         )
         if not spawns:
             continue
-        born = clock
-        living = {enemy_id+i: pos for i, pos in enumerate(spawns)}
-        roles = {key: ROLES[i] for i, key in enumerate(living)}
-        enemy_id += len(living)
-        trails = {key: ([pos], [born]) for key, pos in living.items()}
-        pose(positions[-1], clock+.16, angles[-1])
+        living = {}
+        roles = {}
+        trails = {}
+        births = {}
+        # Deploy one tank at a time on real simulation ticks. Keep the hero
+        # stationary during deployment so no newly occupied cell is crossed.
+        for i, pos in enumerate(spawns):
+            key = enemy_id
+            enemy_id += 1
+            births[key] = clock
+            living[key] = pos
+            roles[key] = ROLES[i]
+            trails[key] = ([pos], [clock])
+            pose(positions[-1], clock+SPAWN_GAP, angles[-1])
 
         def defeat(key):
             target = living[key]
-            engage(target, enemy=key, born=born)
+            engage(target, enemy=key, born=births[key])
             path, ticks = trails[key]
             enemy_routes.append(EnemyRoute(key, roles[key], tuple(path), tuple(ticks)))
             del living[key]
@@ -478,7 +487,7 @@ def _enemy(attack, route, cycle, p):
     angle_times.append(attack.counter-.03)
     return [
         f'<g data-tank="enemy" data-enemy="{attack.enemy}" data-role="{route.role}" '
-        f'opacity="0" transform="translate({positions[0]})">',
+        f'data-spawn="{attack.spawn:.6f}" opacity="0" transform="translate({positions[0]})">',
         track("opacity", [0, 1, 1, 0],
               [attack.spawn, attack.spawn+.12, attack.hit-.015, attack.hit], cycle),
         track("transform", positions, route.times, cycle, transform=True),

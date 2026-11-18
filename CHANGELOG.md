@@ -46,3 +46,4 @@
 - Balance GitInvaders burst rounds to avoid repeated column attacks when alternatives remain.
 - Redesign GitBlast with pixel-style bomber, three enemy patrol variants, blast defeats, subdued masonry and readable dual-theme colors.
 - Fix the GitInvaders test import ordering that blocked publishing.
+- Stagger enemy births in GitBlast and GitTanks; reveal ghosts only after a contribution brick is destroyed and its flames clear.

@@ -23,6 +23,8 @@ RADIUS = 2
 FUSE = .45
 FLAME_TIME = .42
 MAX_ENEMIES = 3
+SPAWN_GAP = .36
+ENEMY_STEP = .18
 DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
 PALETTES = {
     "dark": {
@@ -68,11 +70,16 @@ class Blast:
 class Enemy:
     event: int
     kind: int
+    source: Day
     route: tuple[Square, ...]
+    times: tuple[float, ...]
     spawn: float
-    arrive: float
     end: float
-    defeated: bool
+    hit_event: int | None
+
+    @property
+    def defeated(self) -> bool:
+        return self.hit_event is not None
 
 
 @dataclass(frozen=True)
@@ -158,51 +165,111 @@ def _site(current, blocked, weeks):
     raise RuntimeError("No safe bomb placement")
 
 
+def _reserved_hero(run, start, end):
+    """Reserve both endpoints of every hero movement overlapping the interval."""
+    lo = max(0, bisect_right(run.times, start)-1)
+    hi = min(len(run.times), bisect_left(run.times, end)+1)
+    return set(run.positions[lo:hi])
+
+
+def _enemy_route(run, blocked, active, source, spawn, end, target, weeks, danger):
+    # Conservative spatial reservations prevent crossings even between keyframes.
+    forbidden = blocked | danger | _reserved_hero(run, spawn, end)
+    for enemy in active:
+        if enemy.end > spawn:
+            forbidden.update(enemy.route)
+    origin = (source.week, source.weekday)
+    starts = (origin, *_neighbors(origin, weeks))
+    options = []
+    limit = int((end-spawn-.14)/ENEMY_STEP)
+    if limit < 1:
+        return ()
+    for pos in starts:
+        if pos in forbidden:
+            continue
+        parents = _paths(pos, forbidden, weeks)
+        for dest in parents.keys() & target:
+            route = _route(parents, dest)
+            if 1 < len(route) <= limit+1:
+                options.append(route)
+    if not options:
+        return ()
+    # Prefer a nearby birth point and a moving patrol over a stationary sprite.
+    return min(options, key=lambda route: (
+        route[0] != origin, -min(len(route), 5), len(route), route,
+    ))
+
+
 def plan_enemies(run: Run, days: tuple[Day, ...]) -> tuple[Enemy, ...]:
-    """Plan distinct enemy patrols on free cells near each bomb."""
+    """Reveal ghosts only after contribution bricks are damaged and flames clear.
+
+    Each destroyed day can release at most one ghost. Enemies remain visible
+    until a later blast defeats them or the calendar resets. Birth and death
+    timelines use the same clock as the hero and bombs.
+    """
     weeks = board_weeks(days)
     blocked = {(d.week, d.weekday) for d in days if d.count}
     blocked.difference_update((d.week, d.weekday) for d in run.entry)
     enemies = []
+    last_spawn = -SPAWN_GAP
     for index, event in enumerate(run.events):
-        left = bisect_left(run.times, event.start)
-        right = bisect_right(run.times, event.clear)
-        reserved = set(run.positions[left:right]) | {event.center}
-        x, y = event.center
-        local = {
-            (a, b)
-            for a in range(max(0, x-4), min(weeks, x+5))
-            for b in range(max(0, y-4), min(ROWS, y+5))
-            if abs(a-x)+abs(b-y) <= 4
-        } - blocked - reserved
-        cross = set(event.cross)
-        candidates = sorted(local, key=lambda q: (
-            q not in cross, abs(q[0]-x)+abs(q[1]-y), q,
-        ))
-        count = 0
-        for target in candidates:
-            if target not in local:
-                continue
-            defeated = target in cross
-            starts = sorted(
-                q for q in _neighbors(target, weeks)
-                if q in local and (defeated or q not in cross)
-            )
-            if not starts:
-                continue
-            origin = min(starts, key=lambda q: (q in cross, q))
-            spawn = event.start + .015
-            arrive = event.hit - .065
-            if arrive <= spawn + .1:
-                continue
-            end = event.hit if defeated else event.clear
-            enemies.append(Enemy(index, (index+count) % 3, (origin, target),
-                                 spawn, arrive, end, defeated))
-            local.difference_update((origin, target))
-            count += 1
-            if count == MAX_ENEMIES:
-                break
         blocked.difference_update((d.week, d.weekday) for d in event.hits)
+        next_hit = (run.events[index+1].hit if index+1 < len(run.events)
+                    else run.cycle)
+        for source in event.hits:
+            spawn = max(event.clear+.10, last_spawn+SPAWN_GAP)
+            active = [enemy for enemy in enemies if enemy.end > spawn]
+            if len(active) >= MAX_ENEMIES or spawn+.35 >= next_hit:
+                continue
+            danger = set()
+            route = ()
+            hit_event = None
+            # Try to intercept a later blast, never cross the earlier flames.
+            for later_index in range(index+1, min(index+5, len(run.events))):
+                later = run.events[later_index]
+                route = _enemy_route(
+                    run, blocked, active, source, spawn, later.hit,
+                    set(later.cross)-blocked, weeks, danger,
+                )
+                if route:
+                    end, hit_event = later.hit, later_index
+                    break
+                danger.update(later.cross)
+            if not route:
+                # Surviving ghosts patrol until reset, never vanish mid-encounter.
+                end = run.cycle-.02
+                danger = {pos for later in run.events[index+1:] for pos in later.cross}
+                x, y = source.week, source.weekday
+                nearby = {
+                    (a, b)
+                    for a in range(max(0, x-3), min(weeks, x+4))
+                    for b in range(max(0, y-3), min(ROWS, y+4))
+                    if abs(a-x)+abs(b-y) <= 3
+                }
+                route = _enemy_route(
+                    run, blocked, active, source, spawn, end, nearby, weeks, danger,
+                )
+            if not route:
+                continue
+            # Move promptly, then oscillate on the last safe edge if surviving.
+            positions = list(route)
+            times = [spawn+i*ENEMY_STEP for i in range(len(route))]
+            if hit_event is not None:
+                # Hold the starting square, then move in time for the impact.
+                delay = max(0.0, end-.15-times[-1])
+                if delay > .01:
+                    positions.insert(0, positions[0])
+                    times = [spawn, *(t+delay for t in times)]
+            else:
+                while times[-1]+.55 < end-.10:
+                    positions.append(positions[-2])
+                    times.append(times[-1]+.55)
+                # A short-interval calendar may end before a second movement.
+            if times[-1] >= end-.08:
+                continue
+            enemies.append(Enemy(index, len(enemies) % 3, source, tuple(positions),
+                                 tuple(times), spawn, end, hit_event))
+            last_spawn = spawn
     return tuple(enemies)
 
 
@@ -314,7 +381,7 @@ def _actor(run: Run, p: dict) -> list[str]:
 def _enemy(enemy: Enemy, cycle: float, p: dict) -> list[str]:
     x, y = _point(enemy.route[0])
     tx, ty = _point(enemy.route[-1])
-    spawn, arrive, end = enemy.spawn, enemy.arrive, enemy.end
+    spawn, end = enemy.spawn, enemy.end
     fill = p["enemies"][enemy.kind]
     outcome = "defeated" if enemy.defeated else "withdrawn"
     shapes = (
@@ -324,10 +391,11 @@ def _enemy(enemy: Enemy, cycle: float, p: dict) -> list[str]:
     )
     parts = [
         f'<g data-actor="enemy" data-enemy="{enemy.event}-{enemy.kind}" '
-        f'data-outcome="{outcome}" transform="translate({x} {y})" opacity="0">',
+        f'data-outcome="{outcome}" data-source="{enemy.source.date.isoformat()}" '
+        f'data-spawn="{spawn:.6f}" transform="translate({x} {y})" opacity="0">',
         track("opacity", [0, 1, 1, 0], [spawn, spawn+.07, end-.035, end], cycle),
-        track("transform", [f"{x} {y}", f"{tx} {ty}"], [spawn+.07, arrive],
-              cycle, transform=True),
+        track("transform", [f"{a} {b}" for a, b in map(_point, enemy.route)],
+              enemy.times, cycle, transform=True),
         '<g shape-rendering="crispEdges">',
         f'<path d="{shapes[enemy.kind]}" fill="{fill}" stroke="{p["enemy_edge"]}" '
         'stroke-width=".65" stroke-linejoin="round"/>',

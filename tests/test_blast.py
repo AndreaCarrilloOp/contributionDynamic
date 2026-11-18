@@ -9,6 +9,7 @@ from contribution_dynamic.scenarios.blast import (
     FIRST,
     LEFT,
     MAX_ENEMIES,
+    SPAWN_GAP,
     STEP,
     TOP,
     blast_cross,
@@ -124,42 +125,57 @@ def test_brick_restores_original_fill():
 
 
 @pytest.mark.parametrize("dense", [False, True])
-def test_enemies_use_free_cells_and_respect_blast_outcomes(dense):
+def test_enemies_spawn_after_damage_and_only_one_at_a_time(dense):
     days = demo_calendar()
     if dense:
         days = tuple(replace(day, count=1) for day in days)
     run = plan_run(days)
     assert run is not None
     assert run.enemies
-    blocked = {(d.week, d.weekday) for d in days if d.count}
-    blocked.difference_update((d.week, d.weekday) for d in run.entry)
-    for index, event in enumerate(run.events):
-        enemies = [e for e in run.enemies if e.event == index]
-        assert len(enemies) <= MAX_ENEMIES
-        used = set()
-        hero = {pos for pos, time in zip(run.positions, run.times, strict=True)
-                if event.start <= time <= event.clear}
-        for enemy in enemies:
-            assert enemy.route[0] != enemy.route[-1]
-            assert not set(enemy.route) & (blocked | used | hero)
-            assert all(0 <= x < board_weeks(days) and 0 <= y < 7 for x, y in enemy.route)
-            assert event.start < enemy.spawn < enemy.arrive < event.hit
-            assert enemy.defeated == (enemy.route[-1] in event.cross)
-            assert enemy.end == (event.hit if enemy.defeated else event.clear)
-            used.update(enemy.route)
-        blocked.difference_update((d.week, d.weekday) for d in event.hits)
+    births = [enemy.spawn for enemy in run.enemies]
+    assert all(b-a >= SPAWN_GAP-1e-8 for a, b in zip(births, births[1:]))
+    assert len({enemy.source for enemy in run.enemies}) == len(run.enemies)
+    for enemy in run.enemies:
+        event = run.events[enemy.event]
+        assert enemy.source in event.hits
+        assert event.clear < enemy.spawn < enemy.end < run.cycle
+        assert len(enemy.route) == len(enemy.times)
+        assert len(set(enemy.route)) > 1
+        assert enemy.times[0] == enemy.spawn
+        assert all(a < b for a, b in zip(enemy.times, enemy.times[1:]))
+        assert all(0 <= x < board_weeks(days) and 0 <= y < 7 for x, y in enemy.route)
+        assert all(abs(a[0]-b[0])+abs(a[1]-b[1]) <= 1
+                   for a, b in zip(enemy.route, enemy.route[1:]))
+        cleared = set(run.entry)
+        for prior in run.events[:enemy.event+1]:
+            cleared.update(prior.hits)
+        blocked = {(d.week, d.weekday) for d in days if d.count and d not in cleared}
+        assert not set(enemy.route) & blocked
+        if enemy.defeated:
+            impact = run.events[enemy.hit_event]
+            assert enemy.hit_event > enemy.event
+            assert enemy.end == impact.hit
+            assert enemy.route[-1] in impact.cross
+        else:
+            assert abs(enemy.end-(run.cycle-.02)) < 1e-8
+        active = [e for e in run.enemies if e.spawn <= enemy.spawn < e.end]
+        assert len(active) <= MAX_ENEMIES
+        for other in active:
+            if other != enemy:
+                assert not set(enemy.route) & set(other.route)
 
 
 def test_enemy_sprites_and_impacts_in_both_themes():
     days = demo_calendar()
     run = plan_run(days)
     assert run is not None
-    assert any(e.defeated for e in run.enemies)
-    assert any(sum(e.event == i for e in run.enemies) > 1 for i in range(len(run.events)))
+    assert run.enemies
     for theme in ("dark", "light"):
         root = ElementTree.fromstring(render_blast(days, theme))
         assert len(root.findall(".//s:g[@data-sprite='bomber']", NS)) == 1
-        assert len(root.findall(".//s:g[@data-actor='enemy']", NS)) == len(run.enemies)
+        enemies = root.findall(".//s:g[@data-actor='enemy']", NS)
+        assert len(enemies) == len(run.enemies)
+        assert len({e.attrib["data-spawn"] for e in enemies}) == len(enemies)
         assert len(root.findall(".//s:circle[@data-enemy-impact]", NS)) == sum(
             e.defeated for e in run.enemies
         )
