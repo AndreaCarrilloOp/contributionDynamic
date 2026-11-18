@@ -7,6 +7,7 @@ import pytest
 from contribution_dynamic.calendar import Day, demo_calendar
 from contribution_dynamic.scenarios.blast import (
     FIRST,
+    INITIAL_ENEMIES,
     LEFT,
     MAX_ENEMIES,
     SPAWN_GAP,
@@ -132,13 +133,22 @@ def test_enemies_spawn_after_damage_and_only_one_at_a_time(dense):
     run = plan_run(days)
     assert run is not None
     assert run.enemies
-    births = [enemy.spawn for enemy in run.enemies]
+    later = [enemy for enemy in run.enemies if enemy.source is not None]
+    births = [enemy.spawn for enemy in later]
     assert all(b-a >= SPAWN_GAP-1e-8 for a, b in zip(births, births[1:]))
-    assert len({enemy.source for enemy in run.enemies}) == len(run.enemies)
+    assert len({enemy.source for enemy in later}) == len(later)
+    initial = [enemy for enemy in run.enemies if enemy.spawn == 0]
+    assert len(initial) <= INITIAL_ENEMIES
+    if not dense:
+        assert len(initial) == INITIAL_ENEMIES
     for enemy in run.enemies:
-        event = run.events[enemy.event]
-        assert enemy.source in event.hits
-        assert event.clear < enemy.spawn < enemy.end < run.cycle
+        if enemy.source is None:
+            assert enemy.event == -1 and enemy.spawn == 0
+        else:
+            event = run.events[enemy.event]
+            assert enemy.source in event.hits
+            assert event.clear < enemy.spawn
+        assert enemy.spawn < enemy.end < run.cycle
         assert len(enemy.route) == len(enemy.times)
         assert len(set(enemy.route)) > 1
         assert enemy.times[0] == enemy.spawn
@@ -146,7 +156,7 @@ def test_enemies_spawn_after_damage_and_only_one_at_a_time(dense):
         assert all(0 <= x < board_weeks(days) and 0 <= y < 7 for x, y in enemy.route)
         assert all(abs(a[0]-b[0])+abs(a[1]-b[1]) <= 1
                    for a, b in zip(enemy.route, enemy.route[1:]))
-        cleared = set(run.entry)
+        cleared = set(run.entry) if enemy.spawn else set()
         for prior in run.events[:enemy.event+1]:
             cleared.update(prior.hits)
         blocked = {(d.week, d.weekday) for d in days if d.count and d not in cleared}
@@ -175,7 +185,22 @@ def test_enemy_sprites_and_impacts_in_both_themes():
         assert len(root.findall(".//s:g[@data-sprite='bomber']", NS)) == 1
         enemies = root.findall(".//s:g[@data-actor='enemy']", NS)
         assert len(enemies) == len(run.enemies)
-        assert len({e.attrib["data-spawn"] for e in enemies}) == len(enemies)
+        initial = [e for e in enemies if e.attrib["data-source"] == "initial"]
+        assert len(initial) == INITIAL_ENEMIES
+        assert all(e.attrib["opacity"] == "1" for e in initial)
+        later = [e for e in enemies if e.attrib["data-source"] != "initial"]
+        assert len({e.attrib["data-spawn"] for e in later}) == len(later)
+        assert all(e.attrib["opacity"] == "0" for e in later)
         assert len(root.findall(".//s:circle[@data-enemy-impact]", NS)) == sum(
             e.defeated for e in run.enemies
         )
+
+
+def test_sparse_calendar_has_visible_enemies_before_first_bomb():
+    day = Day(date(2026, 11, 17), 7, 2, 52, 3)
+    run = plan_run((day,))
+    assert run is not None
+    initial = [e for e in run.enemies if e.spawn == 0]
+    assert len(initial) == INITIAL_ENEMIES
+    assert all(e.source is None for e in initial)
+    assert all((day.week, day.weekday) not in e.route for e in initial)

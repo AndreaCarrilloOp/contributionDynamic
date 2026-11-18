@@ -4,6 +4,7 @@ from xml.etree import ElementTree
 
 from contribution_dynamic.calendar import Day, demo_calendar
 from contribution_dynamic.scenarios.tanks import (
+    DAMAGE_INTERVAL,
     FIRE_RANGE,
     LEFT,
     MAX_ENEMIES,
@@ -67,7 +68,7 @@ def test_enemy_waves_return_fire_and_are_defeated():
     births = sorted(enemy.spawn for enemy in enemies)
     assert all(b-a >= SPAWN_GAP-1e-8 for a, b in zip(births, births[1:]))
     for enemy in enemies:
-        assert enemy.spawn < enemy.counter < enemy.shield_hit < enemy.fire < enemy.hit
+        assert enemy.spawn < enemy.counter < enemy.counter_hit < enemy.fire < enemy.hit
     concurrent = [sum(e.spawn <= t < e.hit for e in enemies) for t in births]
     assert max(concurrent) <= MAX_ENEMIES
     assert max(concurrent) > 1
@@ -193,8 +194,8 @@ def test_both_sides_fire_across_multiple_cells():
     ]
     assert ranged
     for attack in ranged:
-        assert attack.counter < attack.shield_hit < attack.fire < attack.hit
-        assert abs((attack.shield_hit-attack.counter)-(attack.hit-attack.fire)) < 1e-6
+        assert attack.counter < attack.counter_hit < attack.fire < attack.hit
+        assert abs((attack.counter_hit-attack.counter)-(attack.hit-attack.fire)) < 1e-6
 
 
 def test_no_enemy_spawns_after_the_last_brick_is_destroyed():
@@ -202,3 +203,39 @@ def test_no_enemy_spawns_after_the_last_brick_is_destroyed():
     battle = plan_battle((day,))
     assert battle is not None
     assert not battle.enemies
+
+
+def test_counterfire_is_evaded_and_real_damage_is_rare():
+    for days in (demo_calendar(), tuple(replace(d, count=1) for d in demo_calendar())):
+        battle = plan_battle(days)
+        assert battle is not None
+        counters = [a for a in battle.attacks if a.enemy is not None]
+        assert counters
+        missed = [a for a in counters if a.counter_outcome == "miss"]
+        assert missed
+        assert sum(a.counter_outcome == "damage" for a in counters) <= (
+            len(counters)//DAMAGE_INTERVAL
+        )
+        for attack in missed:
+            assert attack.evade is not None
+            dx = attack.evade[0]-attack.source[0]
+            dy = attack.evade[1]-attack.source[1]
+            assert abs(dx)+abs(dy) == 1
+            assert dx*(attack.target[0]-attack.source[0])+dy*(
+                attack.target[1]-attack.source[1]
+            ) == 0
+            at_impact = max(i for i, t in enumerate(battle.times) if t <= attack.counter_hit)
+            assert battle.positions[at_impact] == attack.evade
+            assert battle.positions[at_impact+1] == attack.evade
+
+
+def test_render_counterfire_outcomes_match_the_simulation():
+    days = demo_calendar()
+    battle = plan_battle(days)
+    assert battle is not None
+    expected = [a.counter_outcome for a in battle.attacks if a.enemy is not None]
+    assert expected.count("miss") > len(expected)/2
+    for theme in ("dark", "light"):
+        root = ElementTree.fromstring(render_tanks(days, theme))
+        outcomes = root.findall(".//s:g[@data-counter-outcome]", NS)
+        assert [node.attrib["data-counter-outcome"] for node in outcomes] == expected

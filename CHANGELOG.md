@@ -49,3 +49,4 @@
 - Stagger enemy births in GitBlast and GitTanks; reveal ghosts only after a contribution brick is destroyed and its flames clear.
 - Restore classic GitInvaders stepwise marching, alternating sprite poses, edge descent and progressive acceleration with synchronized impacts.
 - Constrain GitInvaders' retro oscillation and full sprite bounds to each original contribution cell, preserving the arcade timing and synchronized impacts.
+- Add real tank evasions with rare damage and initial Bomberman patrols while preserving staggered replacement spawns.

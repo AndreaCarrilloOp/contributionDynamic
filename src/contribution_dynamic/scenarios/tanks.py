@@ -24,6 +24,7 @@ CHASE_ROUNDS = 10
 FIRE_RANGE = 5
 SPAWN_RADIUS = 2
 PROJECTILE_SPEED = 150
+DAMAGE_INTERVAL = 20
 ROLES = ("hunter", "ambusher", "flanker")
 PALETTES = {
     "dark": {
@@ -64,8 +65,10 @@ class Attack:
     day: Day | None = None
     enemy: int | None = None
     counter: float | None = None
-    shield_hit: float | None = None
+    counter_hit: float | None = None
     spawn: float | None = None
+    evade: Square | None = None
+    counter_outcome: str | None = None
 
 
 @dataclass(frozen=True)
@@ -278,15 +281,38 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
             turn(pos)
             pose(pos, clock+.11, angles[-1])
 
-    def engage(target, day=None, enemy=None, born=None):
+    def engage(target, day=None, enemy=None, born=None, occupied=()):
         source = positions[-1]
         turn(target)
-        counter = shield_hit = None
+        counter = counter_hit = None
+        evade = outcome = None
         flight = _flight(source, target)
         if enemy is not None:
-            counter = clock+.04
-            shield_hit = counter+flight
-            pose(source, shield_hit+.08, angles[-1])
+            # The shooter locks onto the old square. Move sideways during
+            # its aiming telegraph, before the projectile can reach it.
+            dx, dy = target[0]-source[0], target[1]-source[1]
+            sidesteps = [
+                pos for pos in _neighbors(source, width, spawn)
+                if pos not in blocked and pos not in occupied
+                and (pos[0]-source[0])*dx+(pos[1]-source[1])*dy == 0
+            ]
+            counter = clock+.18
+            counter_hit = counter+flight
+            if sidesteps:
+                evade = min(sidesteps, key=lambda pos: (
+                    -sum(n not in blocked and n not in occupied
+                         for n in _neighbors(pos, width, spawn)),
+                    pos,
+                ))
+                pose(source, clock+.025, angles[-1])
+                pose(evade, counter-.01, angles[-1])
+                pose(evade, counter_hit+.06, angles[-1])
+                pose(source, clock+.13, angles[-1])
+                outcome = "miss"
+            else:
+                # A trapped tank can absorb the shot. Real damage is rare.
+                outcome = "damage" if (enemy+1) % DAMAGE_INTERVAL == 0 else "shield"
+                pose(source, counter_hit+.08, angles[-1])
         fire = clock+.04
         hit = fire+flight
         pose(source, hit+.16, angles[-1])
@@ -294,7 +320,7 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
         if day is not None and _distance(source, target) == 1:
             pose(target, clock+.11, angles[-1])
         attacks.append(Attack(source, target, fire, hit, clock, day, enemy,
-                              counter, shield_hit, born))
+                              counter, counter_hit, born, evade, outcome))
 
     while blocked:
         # Leave a standing brick for a real spawn site when a wave is possible.
@@ -327,7 +353,7 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
 
         def defeat(key):
             target = living[key]
-            engage(target, enemy=key, born=births[key])
+            engage(target, enemy=key, born=births[key], occupied=set(living.values()))
             path, ticks = trails[key]
             enemy_routes.append(EnemyRoute(key, roles[key], tuple(path), tuple(ticks)))
             del living[key]
@@ -464,13 +490,22 @@ def _explosion(point, hit, cycle, p, radius=7):
 
 def _hero(battle, p):
     positions = [_position(_center(*pos)) for pos in battle.positions]
+    damage, ticks = [1], [0.0]
+    for attack in battle.attacks:
+        if attack.counter_outcome == "damage":
+            t = attack.counter_hit
+            damage.extend((1, .3, 1, .45, 1))
+            ticks.extend((t-.01, t, t+.045, t+.09, t+.15))
     return [
         f'<g data-tank="hero" transform="translate({positions[0]})">',
         track("transform", positions, battle.times, battle.cycle, transform=True),
         '<g transform="rotate(90)">',
         track("transform", [f"{a:.2f}" for a in battle.angles], battle.times,
               battle.cycle, transform=True).replace('type="translate"', 'type="rotate"'),
+        '<g data-tank-body="hero">',
+        *([track("opacity", damage, ticks, battle.cycle)] if len(ticks) > 1 else []),
         *_tank_sprite(p, "hero"),
+        '</g>',
         '</g></g>',
     ]
 
@@ -506,14 +541,22 @@ def _combat(attack, cycle, p):
     parts = [f'<g data-shot="{label}" data-distance="{distance}">']
     if attack.enemy is not None:
         parts.extend(_projectile(target, origin, attack.counter,
-                                 attack.shield_hit, cycle, p, "enemy"))
-        parts.extend([
-            f'<circle cx="{origin[0]}" cy="{origin[1]}" r="7" fill="none" '
-            f'stroke="{p["shield"]}" stroke-width="1.4" opacity="0">',
-            track("opacity", [0, 1, 0],
-                  [attack.shield_hit-.02, attack.shield_hit, attack.shield_hit+.16], cycle),
-            '</circle>',
-        ])
+                                 attack.counter_hit, cycle, p, "enemy"))
+        outcome = attack.counter_outcome
+        parts.append(f'<g data-counter-outcome="{outcome}">')
+        if outcome == "shield":
+            parts.extend([
+                f'<circle cx="{origin[0]}" cy="{origin[1]}" r="7" fill="none" '
+                f'stroke="{p["shield"]}" stroke-width="1.4" opacity="0">',
+                track("opacity", [0, 1, 0],
+                      [attack.counter_hit-.02, attack.counter_hit, attack.counter_hit+.16],
+                      cycle),
+                '</circle>',
+            ])
+        else:
+            radius = 4 if outcome == "miss" else 7
+            parts.extend(_explosion(origin, attack.counter_hit, cycle, p, radius))
+        parts.append('</g>')
     parts.extend(_projectile(origin, target, attack.fire, attack.hit, cycle, p, "hero"))
     parts.extend(_explosion(target, attack.hit, cycle, p,
                             5+contribution_level(attack.day) if attack.day else 8))

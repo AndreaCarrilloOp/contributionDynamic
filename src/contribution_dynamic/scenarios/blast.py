@@ -23,6 +23,7 @@ RADIUS = 2
 FUSE = .45
 FLAME_TIME = .42
 MAX_ENEMIES = 3
+INITIAL_ENEMIES = 2
 SPAWN_GAP = .36
 ENEMY_STEP = .18
 DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
@@ -70,7 +71,7 @@ class Blast:
 class Enemy:
     event: int
     kind: int
-    source: Day
+    source: Day | None
     route: tuple[Square, ...]
     times: tuple[float, ...]
     spawn: float
@@ -200,8 +201,74 @@ def _enemy_route(run, blocked, active, source, spawn, end, target, weeks, danger
     ))
 
 
+def _initial_enemies(run, blocked, weeks):
+    """Place up to two already-visible opponents on safe open corridors.
+
+    The precomputed hero route takes precedence. A completely occupied board
+    cannot carry a visible enemy until its entry pocket has been opened.
+    """
+    enemies = []
+    if not run.events:
+        return enemies
+    anchors = [day for event in run.events[:4] for day in event.hits]
+    if not anchors:
+        return enemies
+    # Initial enemies are not released from a destroyed contribution.
+    for kind in range(INITIAL_ENEMIES):
+        route = ()
+        chosen = None
+        danger = set()
+        for index, event in enumerate(run.events[:4]):
+            for anchor in anchors:
+                route = _enemy_route(
+                    run, blocked, enemies, anchor, 0.0, event.hit,
+                    set(event.cross)-blocked, weeks, danger,
+                )
+                if route:
+                    chosen = index
+                    break
+            if route:
+                break
+            danger.update(event.cross)
+        end = run.events[chosen].hit if chosen is not None else run.cycle-.02
+        if not route:
+            # Prefer a nearby free edge, but allow another corridor if the
+            # protagonist's route occupies all squares around the first bomb.
+            forbidden = blocked | _reserved_hero(run, 0, end)
+            forbidden.update(pos for event in run.events for pos in event.cross)
+            forbidden.update(pos for enemy in enemies for pos in enemy.route)
+            x, y = run.positions[0]
+            free = sorted(
+                ((a, b) for a in range(weeks) for b in range(ROWS)
+                 if (a, b) not in forbidden),
+                key=lambda pos: (abs(pos[0]-x)+abs(pos[1]-y), pos),
+            )
+            for pos in free:
+                neighbor = next((n for n in _neighbors(pos, weeks) if n not in forbidden),
+                                None)
+                if neighbor is not None:
+                    route = (pos, neighbor)
+                    break
+        if not route:
+            continue
+        positions = list(route)
+        times = [i*ENEMY_STEP for i in range(len(route))]
+        if chosen is None:
+            while times[-1]+.55 < end-.10:
+                positions.append(positions[-2])
+                times.append(times[-1]+.55)
+        else:
+            delay = max(0.0, end-.15-times[-1])
+            if delay > .01:
+                positions.insert(0, positions[0])
+                times = [0.0, *(t+delay for t in times)]
+        enemies.append(Enemy(-1, kind, None, tuple(positions), tuple(times),
+                             0.0, end, chosen))
+    return enemies
+
+
 def plan_enemies(run: Run, days: tuple[Day, ...]) -> tuple[Enemy, ...]:
-    """Reveal ghosts only after contribution bricks are damaged and flames clear.
+    """Start with a small patrol; release replacements after damage and flame clearance.
 
     Each destroyed day can release at most one ghost. Enemies remain visible
     until a later blast defeats them or the calendar resets. Birth and death
@@ -209,9 +276,9 @@ def plan_enemies(run: Run, days: tuple[Day, ...]) -> tuple[Enemy, ...]:
     """
     weeks = board_weeks(days)
     blocked = {(d.week, d.weekday) for d in days if d.count}
+    enemies = _initial_enemies(run, blocked, weeks)
     blocked.difference_update((d.week, d.weekday) for d in run.entry)
-    enemies = []
-    last_spawn = -SPAWN_GAP
+    last_spawn = 0.0 if enemies else -SPAWN_GAP
     for index, event in enumerate(run.events):
         blocked.difference_update((d.week, d.weekday) for d in event.hits)
         next_hit = (run.events[index+1].hit if index+1 < len(run.events)
@@ -384,6 +451,12 @@ def _enemy(enemy: Enemy, cycle: float, p: dict) -> list[str]:
     spawn, end = enemy.spawn, enemy.end
     fill = p["enemies"][enemy.kind]
     outcome = "defeated" if enemy.defeated else "withdrawn"
+    source = enemy.source.date.isoformat() if enemy.source else "initial"
+    initial = spawn == 0
+    opacity = 1 if initial else 0
+    visibility = (track("opacity", [1, 1, 0], [0, end-.035, end], cycle)
+                  if initial else track("opacity", [0, 1, 1, 0],
+                                        [spawn, spawn+.07, end-.035, end], cycle))
     shapes = (
         "M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z",
         "M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z",
@@ -391,9 +464,9 @@ def _enemy(enemy: Enemy, cycle: float, p: dict) -> list[str]:
     )
     parts = [
         f'<g data-actor="enemy" data-enemy="{enemy.event}-{enemy.kind}" '
-        f'data-outcome="{outcome}" data-source="{enemy.source.date.isoformat()}" '
-        f'data-spawn="{spawn:.6f}" transform="translate({x} {y})" opacity="0">',
-        track("opacity", [0, 1, 1, 0], [spawn, spawn+.07, end-.035, end], cycle),
+        f'data-outcome="{outcome}" data-source="{source}" '
+        f'data-spawn="{spawn:.6f}" transform="translate({x} {y})" opacity="{opacity}">',
+        visibility,
         track("transform", [f"{a} {b}" for a, b in map(_point, enemy.route)],
               enemy.times, cycle, transform=True),
         '<g shape-rendering="crispEdges">',
