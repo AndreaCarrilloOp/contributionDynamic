@@ -69,7 +69,7 @@ Arcade robots plant bombs that break contribution bricks in cross-shaped explosi
 
 ### GitTanks
 
-One teal hero tank faces waves of red enemy tanks tied to active calendar cells. The enemies return fire, the hero dodges and counterattacks, and each contribution cell recovers after its wave.
+One teal tank navigates inside the calendar maze, fires at contribution bricks blocking its path, and advances only after each brick breaks. The original calendar returns when the tank completes its route.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">

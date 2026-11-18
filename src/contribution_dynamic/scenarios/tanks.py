@@ -1,7 +1,6 @@
-"""GitTanks: one hero against waves of contribution-powered enemy tanks."""
+"""GitTanks: a single arcade tank clears a path through contribution blocks."""
 
 from dataclasses import dataclass
-from math import atan2, cos, degrees, hypot, radians, sin
 
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day
@@ -10,53 +9,44 @@ STEP = 13
 CELL = 10
 LEFT = 47
 TOP = 30
-ROAD = TOP + 7 * STEP + 15
 FIRST = .12
+TURN = .09
+DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
+ANGLES = {(1, 0): 0, (0, 1): 90, (-1, 0): 180, (0, -1): -90}
 MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 PALETTES = {
     "dark": {
-        "bg": "#111b1a", "road": "#263832", "line": "#476456",
-        "empty": "#23332e", "text": "#a2b5a7",
+        "bg": "#111b1a", "empty": "#23332e", "text": "#a2b5a7",
         "tiles": ("#354c39", "#526d45", "#779359", "#a3bd70"),
         "hero": "#2fb894", "hero_top": "#85ead1", "hero_edge": "#123f38",
-        "enemy": "#b65343", "enemy_top": "#f2a18b", "enemy_edge": "#592d2e",
         "tracks": "#141d1b", "metal": "#dce4ce",
-        "fire": "#ff9d43", "core": "#fff0a3", "return": "#fd7a72",
+        "fire": "#ff9d43", "core": "#fff0a3",
     },
     "light": {
-        "bg": "#f8f6eb", "road": "#d7e1d1", "line": "#9eae93",
-        "empty": "#e7ebdd", "text": "#465a47",
+        "bg": "#f8f6eb", "empty": "#e7ebdd", "text": "#465a47",
         "tiles": ("#c5d5ae", "#a4bc88", "#809b5c", "#52733e"),
         "hero": "#087b68", "hero_top": "#5ad7bf", "hero_edge": "#174b43",
-        "enemy": "#af4334", "enemy_top": "#e78673", "enemy_edge": "#712f29",
         "tracks": "#303a32", "metal": "#edf2d8",
-        "fire": "#e96c22", "core": "#ffe08a", "return": "#c73737",
+        "fire": "#e96c22", "core": "#ffe08a",
     },
 }
-Point = tuple[float, float]
+
+Square = tuple[int, int]
 
 
 @dataclass(frozen=True)
-class Duel:
-    day: Day
-    return_launch: float
-    return_hit: float
-    launch: float
-    hit: float
-
-
-@dataclass(frozen=True)
-class Wave:
-    origin: float
-    base: float
-    dodge: float
+class TankStep:
+    origin: Square
+    destination: Square
     start: float
-    arrive: float
-    dodge_start: float
-    dodge_end: float
-    restore: float
-    duels: tuple[Duel, ...]
+    move_start: float
+    end: float
+    angle: int
+    turn: float
+    day: Day | None = None
+    fire: float | None = None
+    hit: float | None = None
 
 
 def _level(day: Day) -> int:
@@ -69,55 +59,85 @@ def board_weeks(days: tuple[Day, ...]) -> int:
     return max(53, max((d.week + 1 for d in days), default=0))
 
 
-def _center(day: Day) -> Point:
-    return LEFT + day.week * STEP + CELL / 2, TOP + day.weekday * STEP + CELL / 2
+def _center(square: Square) -> tuple[float, float]:
+    return LEFT + square[0] * STEP + CELL / 2, TOP + square[1] * STEP + CELL / 2
 
 
-def _aim(origin: Point, target: Point) -> float:
-    dx, dy = target[0] - origin[0], target[1] - origin[1]
-    return round(degrees(atan2(dy, dx)), 3)
+def _position(square: Square) -> str:
+    x, y = _center(square)
+    return f"{x:g} {y:g}"
 
 
-def _point(x: float, y: float) -> str:
-    return f"{x:.3f} {y:.3f}"
+def _distance(a: Square, b: Square) -> int:
+    return abs(a[0] - b[0]) + abs(a[1] - b[1])
 
 
-def _muzzle(origin: Point, angle: float, length: float) -> Point:
-    theta = radians(angle)
-    return origin[0] + length * cos(theta), origin[1] + length * sin(theta)
+def _inside(square: Square, weeks: int) -> bool:
+    return 0 <= square[0] < weeks and 0 <= square[1] < 7
 
 
-def plan_waves(days: tuple[Day, ...]) -> tuple[Wave, ...]:
-    """Schedule every active day once, with a single persistent hero."""
-    active = sorted((d for d in days if d.count), key=lambda d: (d.week, d.weekday))
-    if not active:
+def _spawn(blocks: dict[Square, Day], weeks: int) -> Square:
+    """Prefer a vacant cell beside activity; only a full board needs an edge entry."""
+    for x, y in sorted(blocks):
+        for dx, dy in DIRECTIONS:
+            neighbor = (x + dx, y + dy)
+            if _inside(neighbor, weeks) and neighbor not in blocks:
+                return neighbor
+    return (-1, 0)
+
+
+def _path(origin: Square, target: Square, vertical_first=False):
+    """Yield adjacent orthogonal squares; never teleport across the board."""
+    x, y = origin
+    axes = (1, 0) if vertical_first else (0, 1)
+    for axis in axes:
+        if axis == 0:
+            while x != target[0]:
+                x += 1 if target[0] > x else -1
+                yield (x, y)
+        else:
+            while y != target[1]:
+                y += 1 if target[1] > y else -1
+                yield (x, y)
+
+
+def plan_tank_route(days: tuple[Day, ...]) -> tuple[TankStep, ...]:
+    """Find nearby active blocks and clear every obstacle before entering its square."""
+    blocks = {(d.week, d.weekday): d for d in days if d.count}
+    if not blocks:
         return ()
-    size = 6 if len(active) > 120 else 4
-    lo = LEFT + 12
-    hi = LEFT + (board_weeks(days) - 1) * STEP + CELL / 2 - 12
-    waves = []
-    previous = max(lo, min(hi, _center(active[0])[0]))
-    start = FIRST
-    for index in range(0, len(active), size):
-        group = active[index:index + size]
-        base = max(lo, min(hi, sum(_center(d)[0] for d in group) / len(group)))
-        dodge = base + 18 if base + 18 <= hi else base - 18
-        arrive = start + max(.18, abs(base - previous) / 180)
-        dodge_start, dodge_end = arrive + .11, arrive + .40
-        duels = []
-        first_launch = arrive + .78 + (len(group) - 1) * .045
-        for i, day in enumerate(group):
-            return_launch = arrive + .10 + i * .045
-            return_hit = arrive + .50 + i * .045
-            launch = first_launch + i * .25
-            x, y = _center(day)
-            hit = launch + max(.18, hypot(x-dodge, y-ROAD) / 260)
-            duels.append(Duel(day, return_launch, return_hit, launch, hit))
-        restore = max(duel.hit for duel in duels) + .48
-        waves.append(Wave(previous, base, dodge, start, arrive, dodge_start,
-                          dodge_end, restore, tuple(duels)))
-        previous, start = dodge, restore + .12
-    return tuple(waves)
+    weeks = board_weeks(days)
+    home = _spawn(blocks, weeks)
+    density = len(blocks) / (weeks * 7)
+    move_time = .10 if density > .5 else .17
+    shot_time = .115 if density > .5 else .16
+    steps = []
+    current, now, previous_angle = home, FIRST, None
+
+    def advance(destination: Square, returning=False):
+        nonlocal current, now, previous_angle
+        dx, dy = destination[0] - current[0], destination[1] - current[1]
+        angle = ANGLES[(dx, dy)]
+        turn = TURN if previous_angle is not None and angle != previous_angle else 0.0
+        day = blocks.pop(destination, None)
+        fire = now + turn + .025 if day is not None else None
+        hit = fire + shot_time if fire is not None else None
+        move_start = hit + .05 if hit is not None else now + turn
+        duration = .075 if returning else move_time
+        end = move_start + duration
+        steps.append(TankStep(current, destination, now, move_start, end,
+                              angle, turn, day, fire, hit))
+        current, now, previous_angle = destination, end, angle
+
+    while blocks:
+        target = min(blocks, key=lambda pos: (_distance(current, pos), pos))
+        # In the exceptional full-board case enter horizontally at row zero.
+        for destination in _path(current, target):
+            advance(destination)
+    # All blocks remain cleared during the return; only the loop boundary resets them.
+    for destination in _path(current, home, vertical_first=True):
+        advance(destination, returning=True)
+    return tuple(steps)
 
 
 def _months(days):
@@ -132,131 +152,90 @@ def _months(days):
                 last = day.week
 
 
-def _sprite(p, side, angle):
-    """A compact original vector tank, facing right before turret rotation."""
+def _hero(steps, cycle, p):
+    home = steps[0].origin
+    positions, times = [_position(home)], [0.0]
+    first_angle = steps[0].angle
+    angle = first_angle
+    angles, angle_times = [angle], [0.0]
+    for step in steps:
+        if step.move_start > times[-1]:
+            positions.append(_position(step.origin))
+            times.append(step.move_start)
+        positions.append(_position(step.destination))
+        times.append(step.end)
+        if step.turn:
+            if step.start > angle_times[-1]:
+                angles.append(angle)
+                angle_times.append(step.start)
+            angle += (step.angle - angle + 180) % 360 - 180
+            angles.append(angle)
+            angle_times.append(step.start + step.turn)
+    # Face the original direction before the cycle resets.
+    end = steps[-1].end
+    angles.extend((angle, angle + (first_angle-angle+180) % 360 - 180))
+    angle_times.extend((end, end + TURN))
     return [
-        f'<rect x="-5.5" y="-4.5" width="11" height="9" rx="1.4" '
-        f'fill="{p["tracks"]}" stroke="{p[f"{side}_edge"]}" stroke-width=".6"/>',
-        f'<path d="M-4 -3.5H4M-4 3.5H4" stroke="{p["metal"]}" '
-        'stroke-width=".8" stroke-dasharray="1 1.5" opacity=".7"/>',
-        f'<rect x="-4" y="-2.5" width="8" height="5" rx="1" fill="{p[side]}"/>',
-        f'<g transform="rotate({angle})">',
-        f'<rect x="0" y="-.8" width="7" height="1.6" rx=".4" '
-        f'fill="{p[f"{side}_top"]}" stroke="{p[f"{side}_edge"]}" stroke-width=".35"/>',
-        f'<circle r="2.65" fill="{p[f"{side}_top"]}" '
-        f'stroke="{p[f"{side}_edge"]}" stroke-width=".5"/>',
-        f'<circle r=".8" fill="{p[side]}"/>',
-    ]
-
-
-def _hero(waves, cycle, p):
-    home = waves[0].origin
-    positions, times = [_point(home, ROAD)], [0.0]
-    angles, angle_times = [-90], [0.0]
-    for wave in waves:
-        positions.extend((_point(wave.origin, ROAD), _point(wave.base, ROAD),
-                          _point(wave.base, ROAD), _point(wave.dodge, ROAD)))
-        times.extend((wave.start, wave.arrive, wave.dodge_start, wave.dodge_end))
-        for duel in wave.duels:
-            angle = _aim((wave.dodge, ROAD), _center(duel.day))
-            angles.extend((angle, angle))
-            angle_times.extend((duel.launch-.09, duel.launch+.045))
-    end = waves[-1].restore
-    positions.extend((_point(waves[-1].dodge, ROAD), _point(home, ROAD)))
-    times.extend((end, cycle-.3))
-    angles.append(-90)
-    angle_times.append(cycle-.3)
-    parts = [
-        f'<g data-tank="hero" transform="translate({home} {ROAD})">',
+        f'<g data-tank="hero" transform="translate({_position(home)})">',
         track("transform", positions, times, cycle, transform=True),
-        '<g transform="scale(1.5)">',
-        *_sprite(p, "hero", -90),
+        f'<g transform="rotate({first_angle})">',
         track("transform", angles, angle_times, cycle,
               transform=True).replace('type="translate"', 'type="rotate"'),
-        '</g></g></g>',
-    ]
-    return parts
-
-
-def _missile(origin, target, launch, hit, cycle, color, core, angle, length):
-    start = _muzzle(origin, angle, length)
-    x, y = start
-    return [
-        f'<g transform="translate({x:.3f} {y:.3f})" opacity="0">',
-        track("opacity", [0, 1, 1, 0], [launch-.01, launch, hit-.01, hit], cycle),
-        track("transform", [_point(*start), _point(*target)], [launch, hit], cycle,
-              transform=True),
-        f'<g transform="rotate({angle})">',
-        f'<path d="M-4 0H0" stroke="{color}" stroke-width="1.35" '
-        'stroke-linecap="round"/>',
-        f'<circle r="1.35" fill="{core}"/>',
+        f'<rect x="-4.6" y="-4" width="9" height="8" rx="1.2" '
+        f'fill="{p["tracks"]}" stroke="{p["hero_edge"]}" stroke-width=".5"/>',
+        f'<path d="M-3.6 -3H3.6M-3.6 3H3.6" stroke="{p["metal"]}" '
+        'stroke-width=".9" stroke-dasharray="1 1.4"/>',
+        f'<rect x="-3.7" y="-2.4" width="7.2" height="4.8" rx="1" fill="{p["hero"]}"/>',
+        f'<rect x="1" y="-.85" width="5.7" height="1.7" rx=".35" '
+        f'fill="{p["hero_top"]}" stroke="{p["hero_edge"]}" stroke-width=".35"/>',
+        f'<circle r="2.5" fill="{p["hero_top"]}" stroke="{p["hero_edge"]}" '
+        'stroke-width=".55"/>',
+        f'<circle r=".8" fill="{p["hero"]}"/>',
         '</g></g>',
     ]
 
 
-def _enemy(duel, wave, cycle, p):
-    x, y = _center(duel.day)
-    angle = _aim((x, y), (wave.base, ROAD))
+def _impact(step: TankStep, cycle: float, p: dict) -> list[str]:
+    assert step.day is not None and step.fire is not None and step.hit is not None
+    x, y = _center(step.destination)
+    sx, sy = _center(step.origin)
+    dx, dy = step.destination[0] - step.origin[0], step.destination[1] - step.origin[1]
+    # Projectile starts at the cannon tip and stops at the struck block.
+    muzzle = f"{sx+dx*7:g} {sy+dy*7:g}"
+    target = f"{x:g} {y:g}"
+    fire, hit = step.fire, step.hit
+    fade = hit + .23
     return [
-        f'<g data-tank="enemy" data-enemy="{duel.day.date.isoformat()}" '
-        f'transform="translate({x} {y})" opacity="0">',
-        track("opacity", [0, 1, 1, 0],
-              [wave.start, wave.start+.12, duel.hit-.015, duel.hit], cycle),
-        *_sprite(p, "enemy", angle),
-        '</g></g>',
-    ]
-
-
-def _combat(duel, wave, cycle, p):
-    enemy = _center(duel.day)
-    hero = (wave.dodge, ROAD)
-    missed = (wave.base, ROAD)
-    angle = _aim(hero, enemy)
-    counter_angle = _aim(enemy, missed)
-    x, y = enemy
-    hit = duel.hit
-    parts = [
-        f'<g data-shot="{duel.day.date.isoformat()}">',
-        '<g data-projectile="enemy">',
-        *_missile(enemy, missed, duel.return_launch, duel.return_hit, cycle,
-                  p["return"], p["core"], counter_angle, 7),
+        f'<g data-shot="{step.day.date.isoformat()}">',
+        f'<g opacity="0" transform="translate({muzzle})">',
+        track("opacity", [0, 1, 1, 0], [fire-.01, fire, hit-.012, hit], cycle),
+        track("transform", [muzzle, target], [fire, hit], cycle, transform=True),
+        f'<circle r="1.45" fill="{p["core"]}" stroke="{p["fire"]}" stroke-width=".6"/>',
         '</g>',
-        '<g data-projectile="hero">',
-        *_missile(hero, enemy, duel.launch, hit, cycle,
-                  p["fire"], p["core"], angle, 10.5),
-        '</g>',
-        f'<g transform="translate({x} {y})" opacity="0" data-impact="true">',
-        track("opacity", [0, 1, .65, 0], [hit-.01, hit, hit+.09, hit+.27], cycle),
-        f'<circle r="2" stroke="{p["fire"]}" stroke-width="1.55" fill="none">',
-        track("r", [2, 5+_level(duel.day)], [hit, hit+.27], cycle),
+        f'<g data-impact="true" opacity="0" transform="translate({target})">',
+        track("opacity", [0, 1, .7, 0], [hit-.01, hit, hit+.08, fade], cycle),
+        f'<circle r="2" stroke="{p["fire"]}" stroke-width="1.3" fill="none">',
+        track("r", [2, 5+_level(step.day)], [hit, fade], cycle),
         '</circle>',
         f'<path d="M-4 0L0 -4L4 0L0 4Z" fill="{p["core"]}"/>',
-        '</g>',
-        f'<circle cx="{missed[0]}" cy="{ROAD}" r="2" fill="none" '
-        f'stroke="{p["return"]}" stroke-width="1" opacity="0">',
-        track("opacity", [0, .75, 0],
-              [duel.return_hit-.01, duel.return_hit, duel.return_hit+.16], cycle),
-        track("r", [2, 6], [duel.return_hit, duel.return_hit+.16], cycle),
-        '</circle></g>',
+        f'<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" '
+        f'stroke="{p["fire"]}" stroke-width="1.6" stroke-linecap="round"/>',
+        '</g></g>',
     ]
-    return parts
 
 
 def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
     weeks = board_weeks(days)
-    width, height = LEFT + weeks * STEP + 16, ROAD + 22
-    waves = plan_waves(days)
-    cycle = 4.0
-    if waves:
-        travel = abs(waves[-1].dodge - waves[0].origin) / 180
-        cycle = max(cycle, waves[-1].restore + max(.45, travel) + .3)
-    by_day = {d.day: (d, w) for w in waves for d in w.duels}
+    width, height = LEFT + weeks * STEP + 16, TOP + 7 * STEP + 17
+    steps = plan_tank_route(days)
+    cycle = max(4.0, steps[-1].end + .6) if steps else 4.0
+    by_day = {step.day: step for step in steps if step.day is not None}
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" '
-        'aria-label="GitTanks one versus many contribution battle">',
-        '<title>GitTanks — one hero against the invasion</title>',
+        'aria-label="GitTanks arcade tank clears contribution blocks">',
+        '<title>GitTanks — clear the battlefield</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
         f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
     ]
@@ -264,14 +243,7 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
         parts.append(f'<text x="{LEFT+week*STEP}" y="14">{label}</text>')
     for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         parts.append(f'<text x="10" y="{TOP+row*STEP+8}">{label}</text>')
-    parts.extend([
-        '</g>',
-        f'<rect x="{LEFT-4}" y="{ROAD-10}" width="{weeks*STEP+4}" height="20" '
-        f'rx="4" fill="{p["road"]}"/>',
-        f'<path d="M{LEFT} {ROAD}H{LEFT+weeks*STEP-4}" stroke="{p["line"]}" '
-        'stroke-width="1" stroke-dasharray="3 5"/>',
-        '<g id="calendar">',
-    ])
+    parts.extend(['</g>', '<g id="calendar">'])
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week*STEP, TOP + day.weekday*STEP
         level = _level(day)
@@ -280,25 +252,31 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
                      f'fill="{color}" data-date="{day.date.isoformat()}" data-level="{level}">')
         parts.append(f'<title>{day.date.isoformat()}: {day.count} contributions</title>')
         if day in by_day:
-            duel, wave = by_day[day]
+            step = by_day[day]
             parts.append(track("fill", [color, p["empty"], color],
-                               [0, duel.hit, wave.restore], cycle, "discrete"))
+                               [0, step.hit, cycle], cycle, "discrete"))
         parts.append('</rect>')
-    parts.extend(['</g>', '<g id="enemies">'])
-    for wave in waves:
-        for duel in wave.duels:
-            parts.extend(_enemy(duel, wave, cycle, p))
+    parts.extend(['</g>', '<g id="brick-detail">'])
+    for day in sorted(by_day, key=lambda d: (d.week, d.weekday)):
+        x, y = LEFT + day.week*STEP, TOP + day.weekday*STEP
+        step = by_day[day]
+        parts.append(f'<path d="M{x+1} {y+5}H{x+9}M{x+5} {y+1}V{y+5}'
+                     f'M{x+3} {y+5}V{y+9}" fill="none" stroke="{p["hero_edge"]}" '
+                     'stroke-width=".65" opacity=".5">')
+        parts.append(track("opacity", [.5, 0, .5], [0, step.hit, cycle],
+                           cycle, "discrete"))
+        parts.append('</path>')
     parts.extend(['</g>', '<g id="combat">'])
-    for wave in waves:
-        for duel in wave.duels:
-            parts.extend(_combat(duel, wave, cycle, p))
+    for step in steps:
+        if step.day is not None:
+            parts.extend(_impact(step, cycle, p))
     parts.extend(['</g>', '<g id="hero">'])
-    if waves:
-        parts.extend(_hero(waves, cycle, p))
+    if steps:
+        parts.extend(_hero(steps, cycle, p))
     parts.extend([
         '</g>',
-        f'<text x="{LEFT}" y="{height-4}" fill="{p["text"]}" font-size="8" '
-        'letter-spacing="1.2" font-family="system-ui,sans-serif">GITTANKS · ONE VS MANY</text>',
+        f'<text x="{LEFT}" y="{height-6}" fill="{p["text"]}" font-size="8" '
+        'letter-spacing="1.2" font-family="system-ui,sans-serif">GITTANKS</text>',
         '</svg>',
     ])
     return "\n".join(parts) + "\n"
