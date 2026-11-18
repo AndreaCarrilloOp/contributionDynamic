@@ -3,11 +3,10 @@
 import argparse
 from pathlib import Path
 
+from benchmark import calendars
 from playwright.sync_api import sync_playwright
 
 from contribution_dynamic.publish import build_assets
-
-from benchmark import calendars
 
 
 def main():
