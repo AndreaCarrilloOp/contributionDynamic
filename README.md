@@ -10,7 +10,7 @@ An animation and simulation engine for transforming GitHub contribution calendar
 
 | Scenario | Concept | Status |
 | --- | --- | --- |
-| GitFactory | Automated production lines powered by contributions | Planned |
+| GitFactory | Automated production lines powered by contributions | Prototype |
 | GitOrigami | Geometric folding and transformation | Planned |
 
 ## Quick start
@@ -30,7 +30,13 @@ The default generator uses deterministic sample data. For actual GitHub contribu
 python -m contribution_dynamic generate --user YOUR_LOGIN --theme dark --output examples/profile.svg
 ```
 
-Do not commit tokens. The current renderer is a motion prototype, not a completed scenario.
+Do not commit tokens. To preview the first factory scenario:
+
+```sh
+python -m contribution_dynamic generate --scenario factory --theme dark --output examples/factory-dark.svg
+```
+
+GitFactory models one production batch per active day, with contribution count controlling batch size. Its first prototype uses a fixed production cadence and decorative robotic arms.
 
 ## Architecture
 
@@ -42,7 +48,7 @@ See [architecture](docs/architecture.md) and [contributing](CONTRIBUTING.md).
 
 - [x] Repository initialization
 - [x] Core prototype implementation
-- [ ] Foundation and API validation
-- [ ] GitFactory prototype
+- [x] Core tests and live GraphQL validation
+- [x] GitFactory initial prototype (visual validation pending)
 - [ ] GitOrigami prototype
 - [ ] Automated SVG publishing

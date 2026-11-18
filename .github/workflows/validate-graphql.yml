@@ -31,6 +31,7 @@ jobs:
           import os
           from pathlib import Path
           from contribution_dynamic.collector import collect
+          from contribution_dynamic.scenarios.factory import render_factory
           from contribution_dynamic.svg import render
 
           days = collect(os.environ["CONTRIBUTION_USER"], os.environ["GITHUB_TOKEN"])
@@ -41,6 +42,9 @@ jobs:
           for theme in ("dark", "light"):
               (output / f"profile-{theme}.svg").write_text(
                   render(days, theme), encoding="utf-8"
+              )
+              (output / f"factory-{theme}.svg").write_text(
+                  render_factory(days, theme), encoding="utf-8"
               )
           print(f"GraphQL OK: {len(days)} calendar days received.")
           PY
