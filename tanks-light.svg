@@ -673,7 +673,7 @@
 </rect>
 <rect x="437" y="90" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-06-18" data-level="2">
 <title>2026-06-18: 17 contributions</title>
-<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.007312487;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.006671326;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="437" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-19" data-level="0">
 <title>2026-06-19: 0 contributions</title>
@@ -716,7 +716,7 @@
 </rect>
 <rect x="463" y="90" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-07-02" data-level="1">
 <title>2026-07-02: 7 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.017898182;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.016328865;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="463" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-03" data-level="0">
 <title>2026-07-03: 0 contributions</title>
@@ -732,7 +732,7 @@
 </rect>
 <rect x="476" y="64" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-07-07" data-level="1">
 <title>2026-07-07: 1 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.051187409;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.046699282;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="476" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-08" data-level="0">
 <title>2026-07-08: 0 contributions</title>
@@ -754,7 +754,7 @@
 </rect>
 <rect x="489" y="64" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-07-14" data-level="2">
 <title>2026-07-14: 18 contributions</title>
-<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.063235601;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.057691086;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="489" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-15" data-level="0">
 <title>2026-07-15: 0 contributions</title>
@@ -821,22 +821,22 @@
 </rect>
 <rect x="528" y="77" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-08-05" data-level="1">
 <title>2026-08-05: 8 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.227104952;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.224728382;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="528" y="90" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-08-06" data-level="1">
 <title>2026-08-06: 1 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.039139216;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.035707478;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="528" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-07" data-level="0">
 <title>2026-08-07: 0 contributions</title>
 </rect>
 <rect x="528" y="116" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-08-08" data-level="1">
 <title>2026-08-08: 4 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.129883697;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.136031514;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="541" y="38" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-08-09" data-level="2">
 <title>2026-08-09: 23 contributions</title>
-<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.248345985;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.244106995;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="541" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-10" data-level="0">
 <title>2026-08-10: 0 contributions</title>
@@ -873,11 +873,11 @@
 </rect>
 <rect x="554" y="103" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-08-21" data-level="2">
 <title>2026-08-21: 15 contributions</title>
-<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.108503378;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.116525828;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="554" y="116" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-08-22" data-level="1">
 <title>2026-08-22: 10 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.205724633;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.205222695;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="567" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-23" data-level="0">
 <title>2026-08-23: 0 contributions</title>
@@ -908,11 +908,11 @@
 </rect>
 <rect x="580" y="64" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-01" data-level="1">
 <title>2026-09-01: 4 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.401977854;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.401804435;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="580" y="77" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-02" data-level="1">
 <title>2026-09-02: 7 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.279685215;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.272698393;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="580" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-03" data-level="0">
 <title>2026-09-03: 0 contributions</title>
@@ -925,18 +925,18 @@
 </rect>
 <rect x="593" y="38" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-06" data-level="1">
 <title>2026-09-06: 3 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.433317083;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.430395832;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="51" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-09-07" data-level="2">
 <title>2026-09-07: 22 contributions</title>
-<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.417647468;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.416100133;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-08" data-level="0">
 <title>2026-09-08: 0 contributions</title>
 </rect>
 <rect x="593" y="77" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-09" data-level="1">
 <title>2026-09-09: 6 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.294936973;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.304148929;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-10" data-level="0">
 <title>2026-09-10: 0 contributions</title>
@@ -958,11 +958,11 @@
 </rect>
 <rect x="606" y="77" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-16" data-level="1">
 <title>2026-09-16: 7 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.312417299;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.320096575;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="606" y="90" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-17" data-level="1">
 <title>2026-09-17: 2 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.265826311;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.260054641;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="606" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-18" data-level="0">
 <title>2026-09-18: 0 contributions</title>
@@ -993,7 +993,7 @@
 </rect>
 <rect x="632" y="38" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-27" data-level="1">
 <title>2026-09-27: 2 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.454558117;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.449774446;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="632" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-28" data-level="0">
 <title>2026-09-28: 0 contributions</title>
@@ -1030,7 +1030,7 @@
 </rect>
 <rect x="645" y="103" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-10-09" data-level="1">
 <title>2026-10-09: 4 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.583188244;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.584662304;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="645" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-10" data-level="0">
 <title>2026-10-10: 0 contributions</title>
@@ -1058,7 +1058,7 @@
 </rect>
 <rect x="671" y="38" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-10-18" data-level="1">
 <title>2026-10-18: 5 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.479559858;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.472584027;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="671" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-19" data-level="0">
 <title>2026-10-19: 0 contributions</title>
@@ -1083,7 +1083,7 @@
 </rect>
 <rect x="684" y="51" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-10-26" data-level="1">
 <title>2026-10-26: 7 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.597047148;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.597306055;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="684" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-27" data-level="0">
 <title>2026-10-27: 0 contributions</title>
@@ -1096,11 +1096,11 @@
 </rect>
 <rect x="684" y="103" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-10-30" data-level="1">
 <title>2026-10-30: 2 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.783341458;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.784802084;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="684" y="116" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-10-31" data-level="1">
 <title>2026-10-31: 11 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.793439655;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.794014868;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-01" data-level="0">
 <title>2026-11-01: 0 contributions</title>
@@ -1113,19 +1113,19 @@
 </rect>
 <rect x="697" y="77" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-11-04" data-level="1">
 <title>2026-11-04: 5 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.645866704;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.641845098;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="90" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-11-05" data-level="1">
 <title>2026-11-05: 11 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.684309492;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.694453269;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="103" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-11-06" data-level="1">
 <title>2026-11-06: 8 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.805487847;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.805006671;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="116" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-11-07" data-level="2">
 <title>2026-11-07: 17 contributions</title>
-<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.818928895;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.834805261;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="710" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-08" data-level="0">
 <title>2026-11-08: 0 contributions</title>
@@ -1153,194 +1153,194 @@
 </rect>
 <rect x="723" y="51" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-11-16" data-level="1">
 <title>2026-11-16: 10 contributions</title>
-<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.614527474;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.613253701;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="64" width="10" height="10" rx="1" fill="#a95b22" data-date="2026-11-17" data-level="4">
 <title>2026-11-17: 70 contributions</title>
-<animate attributeName="fill" values="#a95b22;#eee8db;#a95b22" keyTimes="0;0.6320078;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#a95b22;#eee8db;#a95b22" keyTimes="0;0.629201347;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="77" width="10" height="10" rx="1" fill="#a95b22" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 57 contributions</title>
-<animate attributeName="fill" values="#a95b22;#eee8db;#a95b22" keyTimes="0;0.662929173;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<title>2026-11-18: 59 contributions</title>
+<animate attributeName="fill" values="#a95b22;#eee8db;#a95b22" keyTimes="0;0.674947582;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 </g>
 <g id="brick-detail">
 <g data-brick="2026-06-18" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.007312487;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.006671326;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M437 93.5H447M437 97H447M442 90V93.5M439.5 93.5V97M444.5 93.5V97M442 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M437.5 91H441.5M442.5 91H446.5M437.5 94.5H439M440 94.5H444M445 94.5H446.5M437.5 98H441.5M442.5 98H446.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M437 99.5H447" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-07-02" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.017898182;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.016328865;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M463 93.5H473M463 97H473M468 90V93.5M465.5 93.5V97M470.5 93.5V97M468 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M463.5 91H467.5M468.5 91H472.5M463.5 94.5H465M466 94.5H470M471 94.5H472.5M463.5 98H467.5M468.5 98H472.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M463 99.5H473" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-07-07" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.051187409;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.046699282;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M476 67.5H486M476 71H486M481 64V67.5M478.5 67.5V71M483.5 67.5V71M481 71V74" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M476.5 65H480.5M481.5 65H485.5M476.5 68.5H478M479 68.5H483M484 68.5H485.5M476.5 72H480.5M481.5 72H485.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M476 73.5H486" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-07-14" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.063235601;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.057691086;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M489 67.5H499M489 71H499M494 64V67.5M491.5 67.5V71M496.5 67.5V71M494 71V74" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M489.5 65H493.5M494.5 65H498.5M489.5 68.5H491M492 68.5H496M497 68.5H498.5M489.5 72H493.5M494.5 72H498.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M489 73.5H499" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-08-05" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.227104952;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.224728382;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M528 80.5H538M528 84H538M533 77V80.5M530.5 80.5V84M535.5 80.5V84M533 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M528.5 78H532.5M533.5 78H537.5M528.5 81.5H530M531 81.5H535M536 81.5H537.5M528.5 85H532.5M533.5 85H537.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M528 86.5H538" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-08-06" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.039139216;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.035707478;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M528 93.5H538M528 97H538M533 90V93.5M530.5 93.5V97M535.5 93.5V97M533 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M528.5 91H532.5M533.5 91H537.5M528.5 94.5H530M531 94.5H535M536 94.5H537.5M528.5 98H532.5M533.5 98H537.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M528 99.5H538" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-08-08" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.129883697;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.136031514;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M528 119.5H538M528 123H538M533 116V119.5M530.5 119.5V123M535.5 119.5V123M533 123V126" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M528.5 117H532.5M533.5 117H537.5M528.5 120.5H530M531 120.5H535M536 120.5H537.5M528.5 124H532.5M533.5 124H537.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M528 125.5H538" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-08-09" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.248345985;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.244106995;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M541 41.5H551M541 45H551M546 38V41.5M543.5 41.5V45M548.5 41.5V45M546 45V48" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M541.5 39H545.5M546.5 39H550.5M541.5 42.5H543M544 42.5H548M549 42.5H550.5M541.5 46H545.5M546.5 46H550.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M541 47.5H551" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-08-21" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.108503378;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.116525828;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M554 106.5H564M554 110H564M559 103V106.5M556.5 106.5V110M561.5 106.5V110M559 110V113" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M554.5 104H558.5M559.5 104H563.5M554.5 107.5H556M557 107.5H561M562 107.5H563.5M554.5 111H558.5M559.5 111H563.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M554 112.5H564" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-08-22" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.205724633;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.205222695;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M554 119.5H564M554 123H564M559 116V119.5M556.5 119.5V123M561.5 119.5V123M559 123V126" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M554.5 117H558.5M559.5 117H563.5M554.5 120.5H556M557 120.5H561M562 120.5H563.5M554.5 124H558.5M559.5 124H563.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M554 125.5H564" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-09-01" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.401977854;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.401804435;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M580 67.5H590M580 71H590M585 64V67.5M582.5 67.5V71M587.5 67.5V71M585 71V74" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M580.5 65H584.5M585.5 65H589.5M580.5 68.5H582M583 68.5H587M588 68.5H589.5M580.5 72H584.5M585.5 72H589.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M580 73.5H590" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-09-02" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.279685215;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.272698393;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M580 80.5H590M580 84H590M585 77V80.5M582.5 80.5V84M587.5 80.5V84M585 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M580.5 78H584.5M585.5 78H589.5M580.5 81.5H582M583 81.5H587M588 81.5H589.5M580.5 85H584.5M585.5 85H589.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M580 86.5H590" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-09-06" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.433317083;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.430395832;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M593 41.5H603M593 45H603M598 38V41.5M595.5 41.5V45M600.5 41.5V45M598 45V48" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M593.5 39H597.5M598.5 39H602.5M593.5 42.5H595M596 42.5H600M601 42.5H602.5M593.5 46H597.5M598.5 46H602.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M593 47.5H603" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-09-07" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.417647468;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.416100133;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M593 54.5H603M593 58H603M598 51V54.5M595.5 54.5V58M600.5 54.5V58M598 58V61" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M593.5 52H597.5M598.5 52H602.5M593.5 55.5H595M596 55.5H600M601 55.5H602.5M593.5 59H597.5M598.5 59H602.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M593 60.5H603" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-09-09" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.294936973;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.304148929;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M593 80.5H603M593 84H603M598 77V80.5M595.5 80.5V84M600.5 80.5V84M598 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M593.5 78H597.5M598.5 78H602.5M593.5 81.5H595M596 81.5H600M601 81.5H602.5M593.5 85H597.5M598.5 85H602.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M593 86.5H603" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-09-16" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.312417299;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.320096575;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M606 80.5H616M606 84H616M611 77V80.5M608.5 80.5V84M613.5 80.5V84M611 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M606.5 78H610.5M611.5 78H615.5M606.5 81.5H608M609 81.5H613M614 81.5H615.5M606.5 85H610.5M611.5 85H615.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M606 86.5H616" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-09-17" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.265826311;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.260054641;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M606 93.5H616M606 97H616M611 90V93.5M608.5 93.5V97M613.5 93.5V97M611 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M606.5 91H610.5M611.5 91H615.5M606.5 94.5H608M609 94.5H613M614 94.5H615.5M606.5 98H610.5M611.5 98H615.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M606 99.5H616" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-09-27" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.454558117;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.449774446;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M632 41.5H642M632 45H642M637 38V41.5M634.5 41.5V45M639.5 41.5V45M637 45V48" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M632.5 39H636.5M637.5 39H641.5M632.5 42.5H634M635 42.5H639M640 42.5H641.5M632.5 46H636.5M637.5 46H641.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M632 47.5H642" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-10-09" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.583188244;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.584662304;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M645 106.5H655M645 110H655M650 103V106.5M647.5 106.5V110M652.5 106.5V110M650 110V113" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M645.5 104H649.5M650.5 104H654.5M645.5 107.5H647M648 107.5H652M653 107.5H654.5M645.5 111H649.5M650.5 111H654.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M645 112.5H655" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-10-18" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.479559858;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.472584027;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M671 41.5H681M671 45H681M676 38V41.5M673.5 41.5V45M678.5 41.5V45M676 45V48" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M671.5 39H675.5M676.5 39H680.5M671.5 42.5H673M674 42.5H678M679 42.5H680.5M671.5 46H675.5M676.5 46H680.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M671 47.5H681" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-10-26" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.597047148;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.597306055;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M684 54.5H694M684 58H694M689 51V54.5M686.5 54.5V58M691.5 54.5V58M689 58V61" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M684.5 52H688.5M689.5 52H693.5M684.5 55.5H686M687 55.5H691M692 55.5H693.5M684.5 59H688.5M689.5 59H693.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M684 60.5H694" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-10-30" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.783341458;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.784802084;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M684 106.5H694M684 110H694M689 103V106.5M686.5 106.5V110M691.5 106.5V110M689 110V113" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M684.5 104H688.5M689.5 104H693.5M684.5 107.5H686M687 107.5H691M692 107.5H693.5M684.5 111H688.5M689.5 111H693.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M684 112.5H694" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-10-31" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.793439655;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.794014868;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M684 119.5H694M684 123H694M689 116V119.5M686.5 119.5V123M691.5 119.5V123M689 123V126" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M684.5 117H688.5M689.5 117H693.5M684.5 120.5H686M687 120.5H691M692 120.5H693.5M684.5 124H688.5M689.5 124H693.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M684 125.5H694" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-11-04" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.645866704;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.641845098;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M697 80.5H707M697 84H707M702 77V80.5M699.5 80.5V84M704.5 80.5V84M702 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M697.5 78H701.5M702.5 78H706.5M697.5 81.5H699M700 81.5H704M705 81.5H706.5M697.5 85H701.5M702.5 85H706.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M697 86.5H707" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-11-05" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.684309492;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.694453269;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M697 93.5H707M697 97H707M702 90V93.5M699.5 93.5V97M704.5 93.5V97M702 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M697.5 91H701.5M702.5 91H706.5M697.5 94.5H699M700 94.5H704M705 94.5H706.5M697.5 98H701.5M702.5 98H706.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M697 99.5H707" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-11-06" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.805487847;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.805006671;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M697 106.5H707M697 110H707M702 103V106.5M699.5 106.5V110M704.5 106.5V110M702 110V113" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M697.5 104H701.5M702.5 104H706.5M697.5 107.5H699M700 107.5H704M705 107.5H706.5M697.5 111H701.5M702.5 111H706.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M697 112.5H707" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-11-07" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.818928895;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.834805261;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M697 119.5H707M697 123H707M702 116V119.5M699.5 119.5V123M704.5 119.5V123M702 123V126" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M697.5 117H701.5M702.5 117H706.5M697.5 120.5H699M700 120.5H704M705 120.5H706.5M697.5 124H701.5M702.5 124H706.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M697 125.5H707" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-11-16" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.614527474;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.613253701;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M723 54.5H733M723 58H733M728 51V54.5M725.5 54.5V58M730.5 54.5V58M728 58V61" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M723.5 52H727.5M728.5 52H732.5M723.5 55.5H725M726 55.5H730M731 55.5H732.5M723.5 59H727.5M728.5 59H732.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M723 60.5H733" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-11-17" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.6320078;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.629201347;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M723 67.5H733M723 71H733M728 64V67.5M725.5 67.5V71M730.5 67.5V71M728 71V74" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M723.5 65H727.5M728.5 65H732.5M723.5 68.5H725M726 68.5H730M731 68.5H732.5M723.5 72H727.5M728.5 72H732.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M723 73.5H733" stroke="#783f1c" stroke-width="1" opacity=".6"/>
 </g>
 <g data-brick="2026-11-18" shape-rendering="crispEdges" opacity="1">
-<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.662929173;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.674947582;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M723 80.5H733M723 84H733M728 77V80.5M725.5 80.5V84M730.5 80.5V84M728 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
 <path d="M723.5 78H727.5M728.5 78H732.5M723.5 81.5H725M726 81.5H730M731 81.5H732.5M723.5 85H727.5M728.5 85H732.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
 <path d="M723 86.5H733" stroke="#783f1c" stroke-width="1" opacity=".6"/>
@@ -1349,14 +1349,14 @@
 <g id="combat">
 <g data-shot="2026-06-18" data-distance="1">
 <g data-projectile="hero" opacity="0" transform="translate(436.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.00459642;0.004805349;0.007103559;0.007312487;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="436.000 95.000;436.000 95.000;442.000 95.000;442.000 95.000" keyTimes="0;0.004805349;0.007312487;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.004193405;0.004384014;0.006480717;0.006671326;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="436.000 95.000;436.000 95.000;442.000 95.000;442.000 95.000" keyTimes="0;0.004384014;0.006671326;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(442.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.007103559;0.007312487;0.008983913;0.012326764;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.006480717;0.006671326;0.008196201;0.01124595;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.007312487;0.012326764;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.006671326;0.01124595;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1364,14 +1364,14 @@
 </g>
 <g data-shot="2026-07-02" data-distance="2">
 <g data-projectile="hero" opacity="0" transform="translate(449.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.01504283;0.015251758;0.017689254;0.017898182;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="449.000 95.000;449.000 95.000;468.000 95.000;468.000 95.000" keyTimes="0;0.015251758;0.017898182;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.013723871;0.01391448;0.016138255;0.016328865;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="449.000 95.000;449.000 95.000;468.000 95.000;468.000 95.000" keyTimes="0;0.01391448;0.016328865;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(468.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.017689254;0.017898182;0.019569608;0.022912459;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.016138255;0.016328865;0.017853739;0.020903488;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.017898182;0.022912459;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.016328865;0.020903488;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1379,14 +1379,14 @@
 </g>
 <g data-shot="2026-08-06" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(475.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.030851731;0.031060659;0.038930288;0.039139216;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="475.000 95.000;475.000 95.000;533.000 95.000;533.000 95.000" keyTimes="0;0.031060659;0.039139216;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.028146642;0.028337251;0.035516869;0.035707478;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="475.000 95.000;475.000 95.000;533.000 95.000;533.000 95.000" keyTimes="0;0.028337251;0.035707478;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(533.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.038930288;0.039139216;0.040810641;0.044153493;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.035516869;0.035707478;0.037232353;0.040282102;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.039139216;0.044153493;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.035707478;0.040282102;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1394,14 +1394,14 @@
 </g>
 <g data-shot="2026-07-07" data-distance="2">
 <g data-projectile="hero" opacity="0" transform="translate(481.000 88.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.048332057;0.048540985;0.05097848;0.051187409;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="481.000 88.000;481.000 88.000;481.000 69.000;481.000 69.000" keyTimes="0;0.048540985;0.051187409;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.044094288;0.044284897;0.046508673;0.046699282;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="481.000 88.000;481.000 88.000;481.000 69.000;481.000 69.000" keyTimes="0;0.044284897;0.046699282;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(481.000 69.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.05097848;0.051187409;0.052858834;0.056201685;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.046508673;0.046699282;0.048224157;0.051273906;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.051187409;0.056201685;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.046699282;0.051273906;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1409,24 +1409,24 @@
 </g>
 <g data-shot="2026-07-14" data-distance="2">
 <g data-projectile="hero" opacity="0" transform="translate(494.000 88.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.060380249;0.060589178;0.063026673;0.063235601;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="494.000 88.000;494.000 88.000;494.000 69.000;494.000 69.000" keyTimes="0;0.060589178;0.063235601;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.055086092;0.055276701;0.057500477;0.057691086;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="494.000 88.000;494.000 88.000;494.000 69.000;494.000 69.000" keyTimes="0;0.055276701;0.057691086;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(494.000 69.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.063026673;0.063235601;0.064907027;0.068249878;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.057500477;0.057691086;0.05921596;0.062265709;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.063235601;0.068249878;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.057691086;0.062265709;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="2" data-role="flanker" opacity="0" transform="translate(546.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.066578453;0.069085591;0.094470367;0.094783759;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="546.000 121.000;546.000 121.000;546.000 108.000;546.000 108.000" keyTimes="0;0.073682011;0.077442719;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="2" data-role="flanker" data-spawn="3.906667" opacity="0" transform="translate(546.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.074464706;0.076752017;0.103723235;0.104009149;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="546.000 121.000;546.000 121.000;546.000 108.000;546.000 108.000" keyTimes="0;0.084757608;0.088188576;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;180.0;180.0" keyTimes="0;0.066578453;0.077442719;0.079114144;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;180.0;180.0" keyTimes="0;0.074464706;0.088188576;0.089713451;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -1441,22 +1441,22 @@
 </g></g>
 <g data-shot="2" data-distance="4">
 <g data-projectile="enemy" opacity="0" transform="translate(539.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.079532001;0.079740929;0.085799847;0.086008775;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="539.000 108.000;539.000 108.000;494.000 108.000;494.000 108.000" keyTimes="0;0.079740929;0.086008775;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.090094669;0.090285279;0.095812949;0.096003558;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="539.000 108.000;539.000 108.000;494.000 108.000;494.000 108.000" keyTimes="0;0.090285279;0.096003558;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="494.0" cy="108.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.085590919;0.086008775;0.089351626;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.095622339;0.096003558;0.099053307;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(501.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.088306985;0.088515913;0.094574831;0.094783759;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="501.000 108.000;501.000 108.000;546.000 108.000;546.000 108.000" keyTimes="0;0.088515913;0.094783759;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.09810026;0.09829087;0.10381854;0.104009149;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="501.000 108.000;501.000 108.000;546.000 108.000;546.000 108.000" keyTimes="0;0.09829087;0.104009149;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(546.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.094574831;0.094783759;0.096455185;0.099798036;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.10381854;0.104009149;0.105534024;0.108583773;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.094783759;0.099798036;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.104009149;0.108583773;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1464,14 +1464,14 @@
 </g>
 <g data-shot="2026-08-21" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(501.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.100215892;0.100424821;0.108294449;0.108503378;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="501.000 108.000;501.000 108.000;559.000 108.000;559.000 108.000" keyTimes="0;0.100424821;0.108503378;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.108964991;0.109155601;0.116335218;0.116525828;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="501.000 108.000;501.000 108.000;559.000 108.000;559.000 108.000" keyTimes="0;0.109155601;0.116525828;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(559.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.108294449;0.108503378;0.110174803;0.113517654;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.116335218;0.116525828;0.118050702;0.121100451;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.108503378;0.113517654;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.116525828;0.121100451;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1479,24 +1479,24 @@
 </g>
 <g data-shot="2026-08-08" data-distance="3">
 <g data-projectile="hero" opacity="0" transform="translate(501.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.125217634;0.125426562;0.129674768;0.129883697;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="501.000 121.000;501.000 121.000;533.000 121.000;533.000 121.000" keyTimes="0;0.125426562;0.129883697;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.131774573;0.131965182;0.135840905;0.136031514;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="501.000 121.000;501.000 121.000;533.000 121.000;533.000 121.000" keyTimes="0;0.131965182;0.136031514;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(533.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.129674768;0.129883697;0.131555122;0.134897973;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.135840905;0.136031514;0.137556389;0.140606138;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.129883697;0.134897973;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.136031514;0.140606138;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="0" data-role="hunter" opacity="0" transform="translate(533.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.066578453;0.069085591;0.157636326;0.157949718;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="533.000 43.000;533.000 43.000;520.000 43.000;520.000 43.000;507.000 43.000;507.000 43.000;507.000 56.000;507.000 56.000;494.000 56.000;494.000 56.000" keyTimes="0;0.073682011;0.077442719;0.111846229;0.115606936;0.119367644;0.123128352;0.133226548;0.136987255;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="0" data-role="hunter" data-spawn="3.186667" opacity="0" transform="translate(533.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.060740835;0.063028147;0.161350785;0.161636699;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="533.000 43.000;533.000 43.000;520.000 43.000;520.000 43.000;507.000 43.000;507.000 43.000;507.000 56.000;507.000 56.000;494.000 56.000;494.000 56.000" keyTimes="0;0.084757608;0.088188576;0.119575577;0.123006544;0.126437512;0.12986848;0.139081263;0.142512231;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0;90.0;180.0;90.0;90.0" keyTimes="0;0.066578453;0.077442719;0.115606936;0.123128352;0.136987255;0.138658681;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0;90.0;180.0;90.0;90.0" keyTimes="0;0.060740835;0.088188576;0.123006544;0.12986848;0.142512231;0.144037105;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -1511,32 +1511,32 @@
 </g></g>
 <g data-shot="0" data-distance="5">
 <g data-projectile="enemy" opacity="0" transform="translate(494.000 63.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.139076537;0.139285466;0.147155094;0.147364023;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="494.000 63.000;494.000 63.000;494.000 121.000;494.000 121.000" keyTimes="0;0.139285466;0.147364023;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.144418324;0.144608933;0.151788551;0.15197916;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="494.000 63.000;494.000 63.000;494.000 121.000;494.000 121.000" keyTimes="0;0.144608933;0.15197916;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="494.0" cy="121.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.146946166;0.147364023;0.150706874;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.151597941;0.15197916;0.155028909;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(494.000 114.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.149662233;0.149871161;0.15774079;0.157949718;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="494.000 114.000;494.000 114.000;494.000 56.000;494.000 56.000" keyTimes="0;0.149871161;0.157949718;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.154075863;0.154266472;0.161446089;0.161636699;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="494.000 114.000;494.000 114.000;494.000 56.000;494.000 56.000" keyTimes="0;0.154266472;0.161636699;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(494.000 56.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.15774079;0.157949718;0.159621144;0.162963995;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.161446089;0.161636699;0.163161573;0.166211322;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.157949718;0.162963995;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.161636699;0.166211322;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="1" data-role="ambusher" opacity="0" transform="translate(572.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.066578453;0.069085591;0.185841632;0.186155025;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="572.000 82.000;572.000 82.000;572.000 95.000;572.000 95.000;572.000 108.000;572.000 108.000;559.000 108.000;559.000 108.000;546.000 108.000;546.000 108.000" keyTimes="0;0.073682011;0.077442719;0.111846229;0.115606936;0.119367644;0.123128352;0.133226548;0.136987255;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="1" data-role="ambusher" data-spawn="3.546667" opacity="0" transform="translate(572.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.06760277;0.069890082;0.187083042;0.187368956;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="572.000 82.000;572.000 82.000;572.000 95.000;572.000 95.000;572.000 108.000;572.000 108.000;559.000 108.000;559.000 108.000;546.000 108.000;546.000 108.000" keyTimes="0;0.084757608;0.088188576;0.119575577;0.123006544;0.126437512;0.12986848;0.139081263;0.142512231;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;90.0;90.0;180.0;180.0" keyTimes="0;0.066578453;0.077442719;0.115606936;0.123128352;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;90.0;90.0;180.0;180.0" keyTimes="0;0.06760277;0.088188576;0.123006544;0.12986848;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -1551,22 +1551,22 @@
 </g></g>
 <g data-shot="1" data-distance="4">
 <g data-projectile="enemy" opacity="0" transform="translate(539.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.170903266;0.171112194;0.177171112;0.17738004;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="539.000 108.000;539.000 108.000;494.000 108.000;494.000 108.000" keyTimes="0;0.171112194;0.17738004;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.173454476;0.173645085;0.179172756;0.179363365;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="539.000 108.000;539.000 108.000;494.000 108.000;494.000 108.000" keyTimes="0;0.173645085;0.179363365;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="494.0" cy="108.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.176962184;0.17738004;0.180722892;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.178982146;0.179363365;0.182413114;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(501.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.179678251;0.179887179;0.185946097;0.186155025;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="501.000 108.000;501.000 108.000;546.000 108.000;546.000 108.000" keyTimes="0;0.179887179;0.186155025;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.181460067;0.181650677;0.187178347;0.187368956;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="501.000 108.000;501.000 108.000;546.000 108.000;546.000 108.000" keyTimes="0;0.181650677;0.187368956;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(546.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.185946097;0.186155025;0.18782645;0.191169301;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.187178347;0.187368956;0.188893831;0.19194358;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.186155025;0.191169301;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.187368956;0.19194358;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1574,14 +1574,14 @@
 </g>
 <g data-shot="2026-08-22" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(501.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.197437147;0.197646076;0.205515704;0.205724633;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="501.000 121.000;501.000 121.000;559.000 121.000;559.000 121.000" keyTimes="0;0.197646076;0.205724633;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.197661859;0.197852468;0.205032086;0.205222695;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="501.000 121.000;501.000 121.000;559.000 121.000;559.000 121.000" keyTimes="0;0.197852468;0.205222695;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(559.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.205515704;0.205724633;0.207396058;0.210738909;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.205032086;0.205222695;0.20674757;0.209797319;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.205724633;0.210738909;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.205222695;0.209797319;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1589,14 +1589,14 @@
 </g>
 <g data-shot="2026-08-05" data-distance="3">
 <g data-projectile="hero" opacity="0" transform="translate(533.000 114.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.222438889;0.222647817;0.226896023;0.227104952;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="533.000 114.000;533.000 114.000;533.000 82.000;533.000 82.000" keyTimes="0;0.222647817;0.227104952;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.22047144;0.22066205;0.224537772;0.224728382;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="533.000 114.000;533.000 114.000;533.000 82.000;533.000 82.000" keyTimes="0;0.22066205;0.224728382;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(533.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.226896023;0.227104952;0.228776377;0.232119228;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.224537772;0.224728382;0.226253256;0.229303005;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.227104952;0.232119228;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.224728382;0.229303005;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1604,14 +1604,14 @@
 </g>
 <g data-shot="2026-08-09" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(546.000 101.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2400585;0.240267428;0.248137057;0.248345985;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="546.000 101.000;546.000 101.000;546.000 43.000;546.000 43.000" keyTimes="0;0.240267428;0.248345985;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.236546159;0.236736769;0.243916386;0.244106995;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="546.000 101.000;546.000 101.000;546.000 43.000;546.000 43.000" keyTimes="0;0.236736769;0.244106995;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(546.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.248137057;0.248345985;0.250017411;0.253360262;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.243916386;0.244106995;0.24563187;0.248681619;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.248345985;0.253360262;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.244106995;0.248681619;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1619,14 +1619,14 @@
 </g>
 <g data-shot="2026-09-17" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(553.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.257538826;0.257747754;0.265617383;0.265826311;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="553.000 95.000;553.000 95.000;611.000 95.000;611.000 95.000" keyTimes="0;0.257747754;0.265826311;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.252493805;0.252684415;0.259864032;0.260054641;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 95.000;553.000 95.000;611.000 95.000;611.000 95.000" keyTimes="0;0.252684415;0.260054641;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(611.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.265617383;0.265826311;0.267497737;0.270840588;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.259864032;0.260054641;0.261579516;0.264629265;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.265826311;0.270840588;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.260054641;0.264629265;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1634,14 +1634,14 @@
 </g>
 <g data-shot="2026-09-02" data-distance="3">
 <g data-projectile="hero" opacity="0" transform="translate(553.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.275019152;0.27522808;0.279476287;0.279685215;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;585.000 82.000;585.000 82.000" keyTimes="0;0.27522808;0.279685215;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.268441451;0.26863206;0.272507783;0.272698393;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;585.000 82.000;585.000 82.000" keyTimes="0;0.26863206;0.272698393;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(585.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.279476287;0.279685215;0.28135664;0.284699492;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.272507783;0.272698393;0.274223267;0.277273016;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.279685215;0.284699492;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.272698393;0.277273016;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1649,14 +1649,14 @@
 </g>
 <g data-shot="2026-09-09" data-distance="4">
 <g data-projectile="hero" opacity="0" transform="translate(553.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.288460199;0.288669127;0.294728045;0.294936973;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;598.000 82.000;598.000 82.000" keyTimes="0;0.288669127;0.294936973;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.298240041;0.29843065;0.30395832;0.304148929;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;598.000 82.000;598.000 82.000" keyTimes="0;0.29843065;0.304148929;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(598.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.294728045;0.294936973;0.296608399;0.29995125;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.30395832;0.304148929;0.305673804;0.308723553;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.294936973;0.29995125;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.304148929;0.308723553;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1664,24 +1664,24 @@
 </g>
 <g data-shot="2026-09-16" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(553.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.304129814;0.304338742;0.312208371;0.312417299;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;611.000 82.000;611.000 82.000" keyTimes="0;0.304338742;0.312417299;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.312535739;0.312726349;0.319905966;0.320096575;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;611.000 82.000;611.000 82.000" keyTimes="0;0.312726349;0.320096575;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(611.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.312208371;0.312417299;0.314088725;0.317431576;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.319905966;0.320096575;0.32162145;0.324671199;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.312417299;0.317431576;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.320096575;0.324671199;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="5" data-role="flanker" opacity="0" transform="translate(624.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.283028066;0.285535204;0.340169928;0.340483321;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="624.000 95.000;624.000 95.000;611.000 95.000;611.000 95.000;611.000 82.000;611.000 82.000" keyTimes="0;0.298279825;0.302040532;0.31576015;0.319520858;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="5" data-role="flanker" data-spawn="15.186667" opacity="0" transform="translate(624.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.289472012;0.291759324;0.345415846;0.34570176;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="624.000 95.000;624.000 95.000;611.000 95.000;611.000 95.000;611.000 82.000;611.000 82.000" keyTimes="0;0.307198678;0.310629646;0.323146324;0.326577292;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;-90.0;180.0;180.0" keyTimes="0;0.283028066;0.302040532;0.319520858;0.321192284;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;-90.0;180.0;180.0" keyTimes="0;0.289472012;0.310629646;0.326577292;0.328102167;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -1696,32 +1696,32 @@
 </g></g>
 <g data-shot="5" data-distance="5">
 <g data-projectile="enemy" opacity="0" transform="translate(604.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.32161014;0.321819068;0.329688697;0.329897625;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="604.000 82.000;604.000 82.000;546.000 82.000;546.000 82.000" keyTimes="0;0.321819068;0.329897625;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.328483385;0.328673995;0.335853612;0.336044221;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="604.000 82.000;604.000 82.000;546.000 82.000;546.000 82.000" keyTimes="0;0.328673995;0.336044221;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="546.0" cy="82.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.329479769;0.329897625;0.333240476;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.335663003;0.336044221;0.33909397;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(553.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.332195835;0.332404764;0.340274392;0.340483321;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;611.000 82.000;611.000 82.000" keyTimes="0;0.332404764;0.340483321;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.338140924;0.338331533;0.345511151;0.34570176;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;611.000 82.000;611.000 82.000" keyTimes="0;0.338331533;0.34570176;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(611.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.340274392;0.340483321;0.342154746;0.345497597;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.345511151;0.34570176;0.347226634;0.350276384;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.340483321;0.345497597;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.34570176;0.350276384;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="4" data-role="ambusher" opacity="0" transform="translate(585.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.283028066;0.285535204;0.361132391;0.361445783;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="585.000 43.000;585.000 43.000;572.000 43.000;572.000 43.000;559.000 43.000;559.000 43.000;546.000 43.000;546.000 43.000" keyTimes="0;0.298279825;0.302040532;0.31576015;0.319520858;0.347586879;0.351347587;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="4" data-role="ambusher" data-spawn="14.826667" opacity="0" transform="translate(585.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.282610077;0.284897389;0.364540314;0.364826228;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="585.000 43.000;585.000 43.000;572.000 43.000;572.000 43.000;559.000 43.000;559.000 43.000;546.000 43.000;546.000 43.000" keyTimes="0;0.307198678;0.310629646;0.323146324;0.326577292;0.352182477;0.355613444;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0;90.0;90.0" keyTimes="0;0.283028066;0.302040532;0.351347587;0.353019012;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0;90.0;90.0" keyTimes="0;0.282610077;0.310629646;0.355613444;0.357138319;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -1736,32 +1736,32 @@
 </g></g>
 <g data-shot="4" data-distance="2">
 <g data-projectile="enemy" opacity="0" transform="translate(546.000 50.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.353436869;0.353645797;0.356083293;0.356292221;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="546.000 50.000;546.000 50.000;546.000 69.000;546.000 69.000" keyTimes="0;0.353645797;0.356292221;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.357519537;0.357710147;0.359933922;0.360124531;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="546.000 50.000;546.000 50.000;546.000 69.000;546.000 69.000" keyTimes="0;0.357710147;0.360124531;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="546.0" cy="69.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.355874365;0.356292221;0.359635072;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.359743313;0.360124531;0.36317428;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(546.000 62.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.358590431;0.358799359;0.361236855;0.361445783;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="546.000 62.000;546.000 62.000;546.000 43.000;546.000 43.000" keyTimes="0;0.358799359;0.361445783;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.362221234;0.362411843;0.364635619;0.364826228;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="546.000 62.000;546.000 62.000;546.000 43.000;546.000 43.000" keyTimes="0;0.362411843;0.364826228;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(546.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.361236855;0.361445783;0.363117209;0.36646006;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.364635619;0.364826228;0.366351102;0.369400851;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.361445783;0.36646006;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.364826228;0.369400851;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="3" data-role="hunter" opacity="0" transform="translate(611.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.283028066;0.285535204;0.385716276;0.386029668;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="611.000 108.000;611.000 108.000;598.000 108.000;598.000 108.000;598.000 95.000;598.000 95.000;585.000 95.000;585.000 95.000;585.000 82.000;585.000 82.000" keyTimes="0;0.298279825;0.302040532;0.31576015;0.319520858;0.347586879;0.351347587;0.368549342;0.372310049;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="3" data-role="hunter" data-spawn="14.466667" opacity="0" transform="translate(611.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.275748142;0.278035453;0.386968677;0.387254591;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="611.000 108.000;611.000 108.000;598.000 108.000;598.000 108.000;598.000 95.000;598.000 95.000;585.000 95.000;585.000 95.000;585.000 82.000;585.000 82.000" keyTimes="0;0.307198678;0.310629646;0.323146324;0.326577292;0.352182477;0.355613444;0.371306945;0.374737912;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;-90.0;180.0;-90.0;180.0;180.0" keyTimes="0;0.283028066;0.302040532;0.319520858;0.351347587;0.372310049;0.373981475;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;-90.0;180.0;-90.0;180.0;180.0" keyTimes="0;0.275748142;0.310629646;0.326577292;0.355613444;0.374737912;0.376262787;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -1776,22 +1776,22 @@
 </g></g>
 <g data-shot="3" data-distance="3">
 <g data-projectile="enemy" opacity="0" transform="translate(578.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.374399331;0.37460826;0.378856466;0.379065395;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="578.000 82.000;578.000 82.000;546.000 82.000;546.000 82.000" keyTimes="0;0.37460826;0.379065395;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.376644005;0.376834615;0.380710337;0.380900947;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="578.000 82.000;578.000 82.000;546.000 82.000;546.000 82.000" keyTimes="0;0.376834615;0.380900947;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="546.0" cy="82.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.378647538;0.379065395;0.382408246;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.380519728;0.380900947;0.383950696;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(553.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.381363605;0.381572533;0.38582074;0.386029668;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;585.000 82.000;585.000 82.000" keyTimes="0;0.381572533;0.386029668;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.382997649;0.383188258;0.387063981;0.387254591;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;585.000 82.000;585.000 82.000" keyTimes="0;0.383188258;0.387254591;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(585.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.38582074;0.386029668;0.387701093;0.391043945;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.387063981;0.387254591;0.388779465;0.391829214;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.386029668;0.391043945;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.387254591;0.391829214;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1799,14 +1799,14 @@
 </g>
 <g data-shot="2026-09-01" data-distance="3">
 <g data-projectile="hero" opacity="0" transform="translate(553.000 69.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.397311791;0.397520719;0.401768925;0.401977854;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="553.000 69.000;553.000 69.000;585.000 69.000;585.000 69.000" keyTimes="0;0.397520719;0.401977854;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.397547493;0.397738103;0.401613826;0.401804435;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 69.000;553.000 69.000;585.000 69.000;585.000 69.000" keyTimes="0;0.397738103;0.401804435;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(585.000 69.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.401768925;0.401977854;0.403649279;0.40699213;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.401613826;0.401804435;0.403329309;0.406379058;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.401977854;0.40699213;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.401804435;0.406379058;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1814,14 +1814,14 @@
 </g>
 <g data-shot="2026-09-07" data-distance="4">
 <g data-projectile="hero" opacity="0" transform="translate(553.000 56.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.411170694;0.411379623;0.41743854;0.417647468;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="553.000 56.000;553.000 56.000;598.000 56.000;598.000 56.000" keyTimes="0;0.411379623;0.417647468;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.410191245;0.410381854;0.415909524;0.416100133;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 56.000;553.000 56.000;598.000 56.000;598.000 56.000" keyTimes="0;0.410381854;0.416100133;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(598.000 56.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.41743854;0.417647468;0.419318894;0.422661745;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.415909524;0.416100133;0.417625008;0.420674757;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.417647468;0.422661745;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.416100133;0.420674757;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1829,14 +1829,14 @@
 </g>
 <g data-shot="2026-09-06" data-distance="4">
 <g data-projectile="hero" opacity="0" transform="translate(553.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.426840309;0.427049237;0.433108155;0.433317083;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="553.000 43.000;553.000 43.000;598.000 43.000;598.000 43.000" keyTimes="0;0.427049237;0.433317083;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.424486943;0.424677553;0.430205223;0.430395832;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 43.000;553.000 43.000;598.000 43.000;598.000 43.000" keyTimes="0;0.424677553;0.430395832;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(598.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.433108155;0.433317083;0.434988509;0.43833136;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.430205223;0.430395832;0.431920707;0.434970456;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.433317083;0.43833136;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.430395832;0.434970456;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1844,14 +1844,14 @@
 </g>
 <g data-shot="2026-09-27" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(579.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.446270632;0.44647956;0.454349189;0.454558117;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="579.000 43.000;579.000 43.000;637.000 43.000;637.000 43.000" keyTimes="0;0.44647956;0.454558117;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.44221361;0.442404219;0.449583836;0.449774446;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="579.000 43.000;579.000 43.000;637.000 43.000;637.000 43.000" keyTimes="0;0.442404219;0.449774446;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(637.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.454349189;0.454558117;0.456229542;0.459572394;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.449583836;0.449774446;0.45129932;0.454349069;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.454558117;0.459572394;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.449774446;0.454349069;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1859,24 +1859,24 @@
 </g>
 <g data-shot="2026-10-18" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(618.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.471272373;0.471481301;0.47935093;0.479559858;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="618.000 43.000;618.000 43.000;676.000 43.000;676.000 43.000" keyTimes="0;0.471481301;0.479559858;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.465023191;0.4652138;0.472393418;0.472584027;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="618.000 43.000;618.000 43.000;676.000 43.000;676.000 43.000" keyTimes="0;0.4652138;0.472584027;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(676.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.47935093;0.479559858;0.481231284;0.484574135;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.472393418;0.472584027;0.474108901;0.47715865;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.479559858;0.484574135;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.472584027;0.47715865;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="6" data-role="hunter" opacity="0" transform="translate(637.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.482902709;0.485409847;0.514416046;0.514729438;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="637.000 108.000;637.000 108.000;624.000 108.000;624.000 108.000" keyTimes="0;0.490006268;0.493766975;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="6" data-role="hunter" data-spawn="24.953333" opacity="0" transform="translate(637.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.475633776;0.477921088;0.521920071;0.522205985;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="637.000 108.000;637.000 108.000;624.000 108.000;624.000 108.000" keyTimes="0;0.49965055;0.503081517;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;-90.0;-90.0" keyTimes="0;0.482902709;0.493766975;0.495438401;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;-90.0;-90.0" keyTimes="0;0.475633776;0.503081517;0.504606392;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -1891,32 +1891,32 @@
 </g></g>
 <g data-shot="6" data-distance="5">
 <g data-projectile="enemy" opacity="0" transform="translate(624.000 101.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.495856257;0.496065186;0.503934814;0.504143743;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="624.000 101.000;624.000 101.000;624.000 43.000;624.000 43.000" keyTimes="0;0.496065186;0.504143743;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.50498761;0.50517822;0.512357837;0.512548447;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="624.000 101.000;624.000 101.000;624.000 43.000;624.000 43.000" keyTimes="0;0.50517822;0.512548447;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="624.0" cy="43.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.503725886;0.504143743;0.507486594;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.512167228;0.512548447;0.515598196;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(624.000 50.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.506441953;0.506650881;0.51452051;0.514729438;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="624.000 50.000;624.000 50.000;624.000 108.000;624.000 108.000" keyTimes="0;0.506650881;0.514729438;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.514645149;0.514835758;0.522015376;0.522205985;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="624.000 50.000;624.000 50.000;624.000 108.000;624.000 108.000" keyTimes="0;0.514835758;0.522205985;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(624.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.51452051;0.514729438;0.516400864;0.519743715;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.522015376;0.522205985;0.52373086;0.526780609;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.514729438;0.519743715;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.522205985;0.526780609;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="8" data-role="flanker" opacity="0" transform="translate(702.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.482902709;0.485409847;0.538721359;0.539034752;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="702.000 43.000;702.000 43.000;689.000 43.000;689.000 43.000" keyTimes="0;0.490006268;0.493766975;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="8" data-role="flanker" data-spawn="25.673333" opacity="0" transform="translate(702.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.489357647;0.491644958;0.544094288;0.544380202;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="702.000 43.000;702.000 43.000;689.000 43.000;689.000 43.000" keyTimes="0;0.49965055;0.503081517;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0" keyTimes="0;0.482902709;0.493766975;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0" keyTimes="0;0.489357647;0.503081517;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -1931,32 +1931,32 @@
 </g></g>
 <g data-shot="8" data-distance="5">
 <g data-projectile="enemy" opacity="0" transform="translate(682.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.520161571;0.520370499;0.528240128;0.528449056;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="682.000 43.000;682.000 43.000;624.000 43.000;624.000 43.000" keyTimes="0;0.520370499;0.528449056;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.527161827;0.527352437;0.534532054;0.534722663;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="682.000 43.000;682.000 43.000;624.000 43.000;624.000 43.000" keyTimes="0;0.527352437;0.534722663;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="624.0" cy="43.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.5280312;0.528449056;0.531791908;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.534341445;0.534722663;0.537772412;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(631.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.530747267;0.530956195;0.538825824;0.539034752;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="631.000 43.000;631.000 43.000;689.000 43.000;689.000 43.000" keyTimes="0;0.530956195;0.539034752;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.536819366;0.537009975;0.544189593;0.544380202;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="631.000 43.000;631.000 43.000;689.000 43.000;689.000 43.000" keyTimes="0;0.537009975;0.544380202;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(689.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.538825824;0.539034752;0.540706177;0.544049028;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.544189593;0.544380202;0.545905077;0.548954826;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.539034752;0.544049028;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.544380202;0.548954826;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="7" data-role="ambusher" opacity="0" transform="translate(676.000 69.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.482902709;0.485409847;0.563305244;0.563618636;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="676.000 69.000;676.000 69.000;676.000 56.000;676.000 56.000;676.000 43.000;676.000 43.000" keyTimes="0;0.490006268;0.493766975;0.54613831;0.549899018;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="7" data-role="ambusher" data-spawn="25.313333" opacity="0" transform="translate(676.000 69.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.482495711;0.484783023;0.566522651;0.566808565;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="676.000 69.000;676.000 69.000;676.000 56.000;676.000 56.000;676.000 43.000;676.000 43.000" keyTimes="0;0.49965055;0.503081517;0.550860919;0.554291886;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0;180.0;180.0" keyTimes="0;0.482902709;0.493766975;0.549899018;0.551570444;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0;180.0;180.0" keyTimes="0;0.482495711;0.503081517;0.554291886;0.555816761;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -1971,22 +1971,22 @@
 </g></g>
 <g data-shot="7" data-distance="3">
 <g data-projectile="enemy" opacity="0" transform="translate(669.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5519883;0.552197228;0.556445435;0.556654363;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="669.000 43.000;669.000 43.000;637.000 43.000;637.000 43.000" keyTimes="0;0.552197228;0.556654363;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.55619798;0.556388589;0.560264312;0.560454921;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="669.000 43.000;669.000 43.000;637.000 43.000;637.000 43.000" keyTimes="0;0.556388589;0.560454921;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="637.0" cy="43.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.556236507;0.556654363;0.559997214;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.560073702;0.560454921;0.56350467;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(644.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.558952573;0.559161501;0.563409708;0.563618636;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="644.000 43.000;644.000 43.000;676.000 43.000;676.000 43.000" keyTimes="0;0.559161501;0.563618636;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.562551623;0.562742233;0.566617955;0.566808565;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="644.000 43.000;644.000 43.000;676.000 43.000;676.000 43.000" keyTimes="0;0.562742233;0.566808565;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(676.000 43.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.563409708;0.563618636;0.565290062;0.568632913;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.566617955;0.566808565;0.568333439;0.571383188;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.563618636;0.568632913;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.566808565;0.571383188;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -1994,14 +1994,14 @@
 </g>
 <g data-shot="2026-10-09" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(650.000 50.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.574900759;0.575109687;0.582979316;0.583188244;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="650.000 50.000;650.000 50.000;650.000 108.000;650.000 108.000" keyTimes="0;0.575109687;0.583188244;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.577101468;0.577292077;0.584471695;0.584662304;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="650.000 50.000;650.000 50.000;650.000 108.000;650.000 108.000" keyTimes="0;0.577292077;0.584662304;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(650.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.582979316;0.583188244;0.58485967;0.588202521;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.584471695;0.584662304;0.586187178;0.589236927;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.583188244;0.588202521;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.584662304;0.589236927;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2009,14 +2009,14 @@
 </g>
 <g data-shot="2026-10-26" data-distance="3">
 <g data-projectile="hero" opacity="0" transform="translate(657.000 56.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.592381085;0.592590013;0.59683822;0.597047148;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="657.000 56.000;657.000 56.000;689.000 56.000;689.000 56.000" keyTimes="0;0.592590013;0.597047148;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.593049114;0.593239723;0.597115446;0.597306055;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="657.000 56.000;657.000 56.000;689.000 56.000;689.000 56.000" keyTimes="0;0.593239723;0.597306055;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(689.000 56.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.59683822;0.597047148;0.598718574;0.602061425;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.597115446;0.597306055;0.59883093;0.601880679;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.597047148;0.602061425;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.597306055;0.601880679;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2024,14 +2024,14 @@
 </g>
 <g data-shot="2026-11-16" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(670.000 56.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.606239989;0.606448917;0.614318546;0.614527474;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="670.000 56.000;670.000 56.000;728.000 56.000;728.000 56.000" keyTimes="0;0.606448917;0.614527474;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.605692865;0.605883474;0.613063092;0.613253701;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 56.000;670.000 56.000;728.000 56.000;728.000 56.000" keyTimes="0;0.605883474;0.613253701;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(728.000 56.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.614318546;0.614527474;0.6161989;0.619541751;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.613063092;0.613253701;0.614778576;0.617828325;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.614527474;0.619541751;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.613253701;0.617828325;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2039,14 +2039,14 @@
 </g>
 <g data-shot="2026-11-17" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(670.000 69.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.623720315;0.623929243;0.631798872;0.6320078;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="670.000 69.000;670.000 69.000;728.000 69.000;728.000 69.000" keyTimes="0;0.623929243;0.6320078;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.621640511;0.62183112;0.629010738;0.629201347;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 69.000;670.000 69.000;728.000 69.000;728.000 69.000" keyTimes="0;0.62183112;0.629201347;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(728.000 69.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.631798872;0.6320078;0.633679226;0.637022077;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.629010738;0.629201347;0.630726221;0.633775971;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;9;9" keyTimes="0;0.6320078;0.637022077;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;9;9" keyTimes="0;0.629201347;0.633775971;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2054,14 +2054,14 @@
 </g>
 <g data-shot="2026-11-04" data-distance="3">
 <g data-projectile="hero" opacity="0" transform="translate(670.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.641200641;0.641409569;0.645657776;0.645866704;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="670.000 82.000;670.000 82.000;702.000 82.000;702.000 82.000" keyTimes="0;0.641409569;0.645866704;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.637588157;0.637778766;0.641654489;0.641845098;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 82.000;670.000 82.000;702.000 82.000;702.000 82.000" keyTimes="0;0.637778766;0.641845098;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(702.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.645657776;0.645866704;0.647538129;0.650880981;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.641654489;0.641845098;0.643369973;0.646419722;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.645866704;0.650880981;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.641845098;0.646419722;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2069,14 +2069,14 @@
 </g>
 <g data-shot="2026-11-18" data-distance="5">
 <g data-projectile="hero" opacity="0" transform="translate(670.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.654641688;0.654850616;0.662720245;0.662929173;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="670.000 82.000;670.000 82.000;728.000 82.000;728.000 82.000" keyTimes="0;0.654850616;0.662929173;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.667386746;0.667577356;0.674756973;0.674947582;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 82.000;670.000 82.000;728.000 82.000;728.000 82.000" keyTimes="0;0.667577356;0.674947582;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(728.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.662720245;0.662929173;0.664600599;0.66794345;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.674756973;0.674947582;0.676472457;0.679522206;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;9;9" keyTimes="0;0.662929173;0.66794345;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;9;9" keyTimes="0;0.674947582;0.679522206;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2084,24 +2084,24 @@
 </g>
 <g data-shot="2026-11-05" data-distance="3">
 <g data-projectile="hero" opacity="0" transform="translate(670.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.679643429;0.679852357;0.684100564;0.684309492;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="670.000 95.000;670.000 95.000;702.000 95.000;702.000 95.000" keyTimes="0;0.679852357;0.684309492;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.690196328;0.690386937;0.69426266;0.694453269;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 95.000;670.000 95.000;702.000 95.000;702.000 95.000" keyTimes="0;0.690386937;0.694453269;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(702.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.684100564;0.684309492;0.685980918;0.689323769;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.69426266;0.694453269;0.695978143;0.699027892;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.684309492;0.689323769;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.694453269;0.699027892;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="10" data-role="ambusher" opacity="0" transform="translate(715.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.649209555;0.651716693;0.708440699;0.708754092;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="715.000 121.000;715.000 121.000;715.000 108.000;715.000 108.000;715.000 95.000;715.000 95.000" keyTimes="0;0.666272025;0.670032732;0.67379344;0.677554147;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="10" data-role="ambusher" data-spawn="34.193333" opacity="0" transform="translate(715.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.651756783;0.654044094;0.716468645;0.716754559;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="715.000 121.000;715.000 121.000;715.000 108.000;715.000 108.000;715.000 95.000;715.000 95.000" keyTimes="0;0.677997331;0.681428299;0.684859267;0.688290234;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0;180.0;180.0" keyTimes="0;0.649209555;0.670032732;0.677554147;0.693084477;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0;180.0;180.0" keyTimes="0;0.651756783;0.681428299;0.688290234;0.70245886;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -2116,32 +2116,32 @@
 </g></g>
 <g data-shot="10" data-distance="4">
 <g data-projectile="enemy" opacity="0" transform="translate(708.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.693502333;0.693711261;0.699770179;0.699979107;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="708.000 95.000;708.000 95.000;663.000 95.000;663.000 95.000" keyTimes="0;0.693711261;0.699979107;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.702840079;0.703030688;0.708558358;0.708748968;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="708.000 95.000;708.000 95.000;663.000 95.000;663.000 95.000" keyTimes="0;0.703030688;0.708748968;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="663.0" cy="95.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.699561251;0.699979107;0.703321958;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.708367749;0.708748968;0.711798717;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(670.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.702277317;0.702486246;0.708545163;0.708754092;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="670.000 95.000;670.000 95.000;715.000 95.000;715.000 95.000" keyTimes="0;0.702486246;0.708754092;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.71084567;0.711036279;0.716563949;0.716754559;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 95.000;670.000 95.000;715.000 95.000;715.000 95.000" keyTimes="0;0.711036279;0.716754559;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(715.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.708545163;0.708754092;0.710425517;0.713768368;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.716563949;0.716754559;0.718279433;0.721329182;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.708754092;0.713768368;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.716754559;0.721329182;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="9" data-role="hunter" opacity="0" transform="translate(728.000 56.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.649209555;0.651716693;0.740545999;0.740859391;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="728.000 56.000;728.000 56.000;728.000 69.000;728.000 69.000;715.000 69.000;715.000 69.000;715.000 82.000;715.000 82.000;702.000 82.000;702.000 82.000;702.000 95.000;702.000 95.000" keyTimes="0;0.666272025;0.670032732;0.67379344;0.677554147;0.687652343;0.691413051;0.71585765;0.719618358;0.723379065;0.727139773;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="9" data-role="hunter" data-spawn="33.833333" opacity="0" transform="translate(728.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.644894847;0.647182159;0.745758943;0.746044857;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="728.000 56.000;728.000 56.000;728.000 69.000;728.000 69.000;715.000 69.000;715.000 69.000;715.000 82.000;715.000 82.000;702.000 82.000;702.000 82.000;702.000 95.000;702.000 95.000" keyTimes="0;0.677997331;0.681428299;0.684859267;0.688290234;0.697503018;0.700933986;0.723235275;0.726666243;0.730097211;0.733528178;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;90.0;180.0;90.0;180.0;90.0;180.0;180.0" keyTimes="0;0.649209555;0.670032732;0.677554147;0.691413051;0.719618358;0.727139773;0.728811199;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;90.0;180.0;90.0;180.0;90.0;180.0;180.0" keyTimes="0;0.644894847;0.681428299;0.688290234;0.700933986;0.726666243;0.733528178;0.735053053;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -2156,32 +2156,32 @@
 </g></g>
 <g data-shot="9" data-distance="3">
 <g data-projectile="enemy" opacity="0" transform="translate(695.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.729229055;0.729437983;0.73368619;0.733895118;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="695.000 95.000;695.000 95.000;663.000 95.000;663.000 95.000" keyTimes="0;0.729437983;0.733895118;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.735434272;0.735624881;0.739500604;0.739691213;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="695.000 95.000;695.000 95.000;663.000 95.000;663.000 95.000" keyTimes="0;0.735624881;0.739691213;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="663.0" cy="95.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.733477262;0.733895118;0.737237969;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.739309994;0.739691213;0.742740962;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(670.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.736193328;0.736402256;0.740650463;0.740859391;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="670.000 95.000;670.000 95.000;702.000 95.000;702.000 95.000" keyTimes="0;0.736402256;0.740859391;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.741787915;0.741978525;0.745854247;0.746044857;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 95.000;670.000 95.000;702.000 95.000;702.000 95.000" keyTimes="0;0.741978525;0.746044857;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(702.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.740650463;0.740859391;0.742530817;0.745873668;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.745854247;0.746044857;0.747569731;0.75061948;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.740859391;0.745873668;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.746044857;0.75061948;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="11" data-role="flanker" opacity="0" transform="translate(728.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.649209555;0.651716693;0.765129884;0.765443276;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="728.000 108.000;728.000 108.000;728.000 95.000;728.000 95.000;728.000 82.000;728.000 82.000;728.000 69.000;728.000 69.000;715.000 69.000;715.000 69.000;702.000 69.000;702.000 69.000;702.000 82.000;702.000 82.000" keyTimes="0;0.666272025;0.670032732;0.67379344;0.677554147;0.687652343;0.691413051;0.71585765;0.719618358;0.723379065;0.727139773;0.74796295;0.751723658;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="11" data-role="flanker" data-spawn="34.553333" opacity="0" transform="translate(728.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.658618718;0.66090603;0.768187305;0.768473219;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="728.000 108.000;728.000 108.000;728.000 95.000;728.000 95.000;728.000 82.000;728.000 82.000;728.000 69.000;728.000 69.000;715.000 69.000;715.000 69.000;702.000 69.000;702.000 69.000;702.000 82.000;702.000 82.000" keyTimes="0;0.677997331;0.681428299;0.684859267;0.688290234;0.697503018;0.700933986;0.723235275;0.726666243;0.730097211;0.733528178;0.752525573;0.755956541;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0;180.0;180.0;90.0;180.0;180.0" keyTimes="0;0.649209555;0.670032732;0.691413051;0.719618358;0.727139773;0.751723658;0.753395083;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0;180.0;180.0;90.0;180.0;180.0" keyTimes="0;0.658618718;0.681428299;0.700933986;0.726666243;0.733528178;0.755956541;0.757481416;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -2196,22 +2196,22 @@
 </g></g>
 <g data-shot="11" data-distance="3">
 <g data-projectile="enemy" opacity="0" transform="translate(695.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.75381294;0.754021868;0.758270075;0.758479003;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="695.000 82.000;695.000 82.000;663.000 82.000;663.000 82.000" keyTimes="0;0.754021868;0.758479003;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.757862634;0.758053244;0.761928966;0.762119576;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="695.000 82.000;695.000 82.000;663.000 82.000;663.000 82.000" keyTimes="0;0.758053244;0.762119576;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="663.0" cy="82.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.758061146;0.758479003;0.761821854;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.761738357;0.762119576;0.765169325;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(670.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.760777213;0.760986141;0.765234348;0.765443276;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="670.000 82.000;670.000 82.000;702.000 82.000;702.000 82.000" keyTimes="0;0.760986141;0.765443276;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.764216278;0.764406887;0.76828261;0.768473219;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 82.000;670.000 82.000;702.000 82.000;702.000 82.000" keyTimes="0;0.764406887;0.768473219;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(702.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.765234348;0.765443276;0.767114702;0.770457553;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.76828261;0.768473219;0.769998094;0.773047843;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.765443276;0.770457553;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.768473219;0.773047843;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2219,14 +2219,14 @@
 </g>
 <g data-shot="2026-10-30" data-distance="2">
 <g data-projectile="hero" opacity="0" transform="translate(689.000 89.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.780486106;0.780695034;0.78313253;0.783341458;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.000 89.000;689.000 89.000;689.000 108.000;689.000 108.000" keyTimes="0;0.780695034;0.783341458;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.78219709;0.782387699;0.784611475;0.784802084;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="689.000 89.000;689.000 89.000;689.000 108.000;689.000 108.000" keyTimes="0;0.782387699;0.784802084;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(689.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.78313253;0.783341458;0.785012884;0.788355735;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.784611475;0.784802084;0.786326959;0.789376708;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.783341458;0.788355735;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.784802084;0.789376708;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2234,14 +2234,14 @@
 </g>
 <g data-shot="2026-10-31" data-distance="3">
 <g data-projectile="hero" opacity="0" transform="translate(689.000 89.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.788773591;0.78898252;0.793230726;0.793439655;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.000 89.000;689.000 89.000;689.000 121.000;689.000 121.000" keyTimes="0;0.78898252;0.793439655;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.789757926;0.789948535;0.793824258;0.794014868;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="689.000 89.000;689.000 89.000;689.000 121.000;689.000 121.000" keyTimes="0;0.789948535;0.794014868;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(689.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.793230726;0.793439655;0.79511108;0.798453931;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.793824258;0.794014868;0.795539742;0.798589491;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.793439655;0.798453931;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.794014868;0.798589491;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2249,14 +2249,14 @@
 </g>
 <g data-shot="2026-11-06" data-distance="2">
 <g data-projectile="hero" opacity="0" transform="translate(702.000 89.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.802632495;0.802841423;0.805278919;0.805487847;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="702.000 89.000;702.000 89.000;702.000 108.000;702.000 108.000" keyTimes="0;0.802841423;0.805487847;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.802401677;0.802592287;0.804816062;0.805006671;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="702.000 89.000;702.000 89.000;702.000 108.000;702.000 108.000" keyTimes="0;0.802592287;0.805006671;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(702.000 108.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.805278919;0.805487847;0.807159273;0.810502124;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.804816062;0.805006671;0.806531546;0.809581295;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.805487847;0.810502124;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.805006671;0.809581295;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2264,24 +2264,24 @@
 </g>
 <g data-shot="2026-11-07" data-distance="3">
 <g data-projectile="hero" opacity="0" transform="translate(702.000 89.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.814262832;0.81447176;0.818719967;0.818928895;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="702.000 89.000;702.000 89.000;702.000 121.000;702.000 121.000" keyTimes="0;0.81447176;0.818928895;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.830548319;0.830738929;0.834614652;0.834805261;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="702.000 89.000;702.000 89.000;702.000 121.000;702.000 121.000" keyTimes="0;0.830738929;0.834805261;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(702.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.818719967;0.818928895;0.82060032;0.823943172;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.834614652;0.834805261;0.836330135;0.839379884;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.818928895;0.823943172;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.834805261;0.839379884;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="14" data-role="flanker" opacity="0" transform="translate(689.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.808830699;0.811337837;0.83943868;0.839752072;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.000 121.000;689.000 121.000;702.000 121.000;702.000 121.000" keyTimes="0;0.822271746;0.826032454;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="14" data-role="flanker" data-spawn="43.113333" opacity="0" transform="translate(689.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.821780291;0.824067603;0.853516742;0.853802656;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="689.000 121.000;689.000 121.000;702.000 121.000;702.000 121.000" keyTimes="0;0.83785501;0.841285978;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;0.0;-90.0;-90.0" keyTimes="0;0.808830699;0.826032454;0.827703879;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;0.0;-90.0;-90.0" keyTimes="0;0.821780291;0.841285978;0.842810852;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -2296,32 +2296,32 @@
 </g></g>
 <g data-shot="14" data-distance="3">
 <g data-projectile="enemy" opacity="0" transform="translate(702.000 114.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.828121735;0.828330664;0.83257887;0.832787799;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="702.000 114.000;702.000 114.000;702.000 82.000;702.000 82.000" keyTimes="0;0.828330664;0.832787799;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.843192071;0.84338268;0.847258403;0.847449012;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="702.000 114.000;702.000 114.000;702.000 82.000;702.000 82.000" keyTimes="0;0.84338268;0.847449012;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="702.0" cy="82.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.832369942;0.832787799;0.83613065;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.847067793;0.847449012;0.850498761;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(702.000 89.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.835086009;0.835294937;0.839543144;0.839752072;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="702.000 89.000;702.000 89.000;702.000 121.000;702.000 121.000" keyTimes="0;0.835294937;0.839752072;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.849545714;0.849736324;0.853612047;0.853802656;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="702.000 89.000;702.000 89.000;702.000 121.000;702.000 121.000" keyTimes="0;0.849736324;0.853802656;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(702.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.839543144;0.839752072;0.841423497;0.844766349;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.853612047;0.853802656;0.85532753;0.858377279;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.839752072;0.844766349;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.853802656;0.858377279;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="13" data-role="ambusher" opacity="0" transform="translate(728.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.808830699;0.811337837;0.867643986;0.867957379;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="728.000 121.000;728.000 121.000;728.000 108.000;728.000 108.000;728.000 95.000;728.000 95.000" keyTimes="0;0.822271746;0.826032454;0.846855631;0.850616338;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="13" data-role="ambusher" data-spawn="42.753333" opacity="0" transform="translate(728.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.814918356;0.817205667;0.879248999;0.879534913;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="728.000 121.000;728.000 121.000;728.000 108.000;728.000 108.000;728.000 95.000;728.000 95.000" keyTimes="0;0.83785501;0.841285978;0.860283373;0.86371434;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0" keyTimes="0;0.808830699;0.826032454;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0" keyTimes="0;0.814918356;0.841285978;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -2336,32 +2336,32 @@
 </g></g>
 <g data-shot="13" data-distance="1">
 <g data-projectile="enemy" opacity="0" transform="translate(728.000 88.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.860227035;0.860435964;0.862734174;0.862943102;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="728.000 88.000;728.000 88.000;728.000 82.000;728.000 82.000" keyTimes="0;0.860435964;0.862943102;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.872482369;0.872672978;0.87476968;0.87496029;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="728.000 88.000;728.000 88.000;728.000 82.000;728.000 82.000" keyTimes="0;0.872672978;0.87496029;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="728.0" cy="82.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.862525245;0.862943102;0.866285953;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.874579071;0.87496029;0.878010039;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(728.000 89.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.865241312;0.86545024;0.86774845;0.867957379;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="728.000 89.000;728.000 89.000;728.000 95.000;728.000 95.000" keyTimes="0;0.86545024;0.867957379;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.877056992;0.877247601;0.879344304;0.879534913;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="728.000 89.000;728.000 89.000;728.000 95.000;728.000 95.000" keyTimes="0;0.877247601;0.879534913;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(728.000 95.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.86774845;0.867957379;0.869628804;0.872971655;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.879344304;0.879534913;0.881059788;0.884109537;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.867957379;0.872971655;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.879534913;0.884109537;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
 </g>
 </g>
-<g data-tank="enemy" data-enemy="12" data-role="hunter" opacity="0" transform="translate(676.000 121.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.808830699;0.811337837;0.888327878;0.88864127;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="676.000 121.000;676.000 121.000;676.000 108.000;676.000 108.000;676.000 95.000;676.000 95.000;676.000 82.000;676.000 82.000" keyTimes="0;0.822271746;0.826032454;0.846855631;0.850616338;0.854377046;0.858137753;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank="enemy" data-enemy="12" data-role="hunter" data-spawn="42.393333" opacity="0" transform="translate(676.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.80805642;0.810343732;0.898119321;0.898405235;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="676.000 121.000;676.000 121.000;676.000 108.000;676.000 108.000;676.000 95.000;676.000 95.000;676.000 82.000;676.000 82.000" keyTimes="0;0.83785501;0.841285978;0.860283373;0.86371434;0.867145308;0.870576275;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0;0.0;0.0" keyTimes="0;0.808830699;0.826032454;0.858137753;0.872971655;1" dur="47.863333s" calcMode="discrete" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0;0.0;0.0" keyTimes="0;0.80805642;0.841285978;0.870576275;0.884109537;1" dur="52.463333s" calcMode="discrete" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
@@ -2376,22 +2376,22 @@
 </g></g>
 <g data-shot="12" data-distance="4">
 <g data-projectile="enemy" opacity="0" transform="translate(683.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.873389512;0.87359844;0.879657358;0.879866286;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="683.000 82.000;683.000 82.000;728.000 82.000;728.000 82.000" keyTimes="0;0.87359844;0.879866286;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.884490755;0.884681365;0.890209035;0.890399644;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="683.000 82.000;683.000 82.000;728.000 82.000;728.000 82.000" keyTimes="0;0.884681365;0.890399644;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <circle cx="728.0" cy="82.0" r="7" fill="none" stroke="#237fae" stroke-width="1.4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.87944843;0.879866286;0.883209137;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.890018426;0.890399644;0.893449393;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-projectile="hero" opacity="0" transform="translate(721.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.882164496;0.882373424;0.888432342;0.88864127;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="721.000 82.000;721.000 82.000;676.000 82.000;676.000 82.000" keyTimes="0;0.882373424;0.88864127;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.892496347;0.892686956;0.898214626;0.898405235;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="721.000 82.000;721.000 82.000;676.000 82.000;676.000 82.000" keyTimes="0;0.892686956;0.898405235;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
 </g>
 <g data-impact="true" opacity="0" transform="translate(676.000 82.000)">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.888432342;0.88864127;0.890312696;0.893655547;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.898214626;0.898405235;0.89993011;0.902979859;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.88864127;0.893655547;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.898405235;0.902979859;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
@@ -2406,9 +2406,9 @@
 </g>
 <g id="hero">
 <g data-tank="hero" transform="translate(429.000 95.000)">
-<animateTransform attributeName="transform" type="translate" values="429.000 95.000;429.000 95.000;442.000 95.000;442.000 95.000;455.000 95.000;455.000 95.000;468.000 95.000;468.000 95.000;481.000 95.000;481.000 95.000;494.000 95.000;494.000 95.000;494.000 108.000;494.000 108.000;494.000 121.000;494.000 121.000;494.000 108.000;494.000 108.000;494.000 121.000;494.000 121.000;507.000 121.000;507.000 121.000;520.000 121.000;520.000 121.000;533.000 121.000;533.000 121.000;546.000 121.000;546.000 121.000;546.000 108.000;546.000 108.000;546.000 95.000;546.000 95.000;546.000 82.000;546.000 82.000;546.000 69.000;546.000 69.000;546.000 82.000;546.000 82.000;546.000 69.000;546.000 69.000;546.000 56.000;546.000 56.000;546.000 43.000;546.000 43.000;559.000 43.000;559.000 43.000;572.000 43.000;572.000 43.000;585.000 43.000;585.000 43.000;598.000 43.000;598.000 43.000;611.000 43.000;611.000 43.000;624.000 43.000;624.000 43.000;637.000 43.000;637.000 43.000;650.000 43.000;650.000 43.000;650.000 56.000;650.000 56.000;663.000 56.000;663.000 56.000;663.000 69.000;663.000 69.000;663.000 82.000;663.000 82.000;663.000 95.000;663.000 95.000;663.000 108.000;663.000 108.000;663.000 95.000;663.000 95.000;663.000 82.000;663.000 82.000;676.000 82.000;676.000 82.000;689.000 82.000;689.000 82.000;702.000 82.000;702.000 82.000;715.000 82.000;715.000 82.000;728.000 82.000;728.000 82.000;728.000 95.000;728.000 95.000;715.000 95.000;715.000 95.000;702.000 95.000;702.000 95.000;689.000 95.000;689.000 95.000;676.000 95.000;676.000 95.000;663.000 95.000;663.000 95.000;650.000 95.000;650.000 95.000;637.000 95.000;637.000 95.000;624.000 95.000;624.000 95.000;611.000 95.000;611.000 95.000;598.000 95.000;598.000 95.000;585.000 95.000;585.000 95.000;572.000 95.000;572.000 95.000;559.000 95.000;559.000 95.000;546.000 95.000;546.000 95.000;533.000 95.000;533.000 95.000;520.000 95.000;520.000 95.000;507.000 95.000;507.000 95.000;494.000 95.000;494.000 95.000;481.000 95.000;481.000 95.000;468.000 95.000;468.000 95.000;455.000 95.000;455.000 95.000;442.000 95.000;442.000 95.000;429.000 95.000;429.000 95.000" keyTimes="0;0.010655338;0.012953548;0.022703531;0.025001741;0.026464238;0.028762449;0.043944564;0.046242775;0.055992757;0.058290967;0.071383801;0.073682011;0.117069434;0.119367644;0.162755067;0.165053277;0.193049655;0.195347865;0.210529981;0.212828191;0.214290689;0.216588899;0.218051396;0.220349607;0.2319103;0.23420851;0.235671008;0.237969218;0.253151334;0.255449544;0.27063166;0.27292987;0.345288669;0.347586879;0.366251132;0.368549342;0.392924298;0.395222509;0.406783202;0.409081412;0.422452817;0.424751027;0.438122432;0.440420642;0.441883139;0.44418135;0.459363465;0.461661676;0.463124173;0.465422383;0.466884881;0.469183091;0.487708058;0.490006268;0.5438401;0.54613831;0.570513267;0.572811477;0.587993593;0.590291803;0.601852497;0.604150707;0.619332823;0.621631033;0.636813149;0.639111359;0.671495229;0.67379344;0.71355944;0.71585765;0.721080855;0.723379065;0.74566474;0.74796295;0.772337907;0.774636117;0.776098614;0.778396824;0.798245003;0.800543213;0.84455742;0.846855631;0.852078836;0.854377046;0.895535901;0.897834111;0.899296608;0.901594819;0.903057316;0.905355526;0.906818024;0.909116234;0.910578731;0.912876941;0.914339439;0.916637649;0.918100146;0.920398356;0.921860854;0.924159064;0.925621561;0.927919772;0.929382269;0.931680479;0.933142977;0.935441187;0.936903684;0.939201894;0.940664392;0.942962602;0.944425099;0.946723309;0.948185807;0.950484017;0.951946514;0.954244725;0.955707222;0.958005432;0.95946793;0.96176614;0.963228637;0.965526847;0.966989345;0.969287555;0.970750052;0.973048262;0.97451076;0.97680897;0.978271467;0.980569678;0.982032175;0.984330385;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="429.000 95.000;429.000 95.000;442.000 95.000;442.000 95.000;455.000 95.000;455.000 95.000;468.000 95.000;468.000 95.000;481.000 95.000;481.000 95.000;494.000 95.000;494.000 95.000;494.000 108.000;494.000 108.000;494.000 121.000;494.000 121.000;494.000 108.000;494.000 108.000;494.000 121.000;494.000 121.000;507.000 121.000;507.000 121.000;520.000 121.000;520.000 121.000;533.000 121.000;533.000 121.000;546.000 121.000;546.000 121.000;546.000 108.000;546.000 108.000;546.000 95.000;546.000 95.000;546.000 82.000;546.000 82.000;546.000 69.000;546.000 69.000;546.000 82.000;546.000 82.000;546.000 69.000;546.000 69.000;546.000 56.000;546.000 56.000;546.000 43.000;546.000 43.000;559.000 43.000;559.000 43.000;572.000 43.000;572.000 43.000;585.000 43.000;585.000 43.000;598.000 43.000;598.000 43.000;611.000 43.000;611.000 43.000;624.000 43.000;624.000 43.000;637.000 43.000;637.000 43.000;650.000 43.000;650.000 43.000;650.000 56.000;650.000 56.000;663.000 56.000;663.000 56.000;663.000 69.000;663.000 69.000;663.000 82.000;663.000 82.000;663.000 95.000;663.000 95.000;663.000 108.000;663.000 108.000;663.000 95.000;663.000 95.000;663.000 82.000;663.000 82.000;676.000 82.000;676.000 82.000;689.000 82.000;689.000 82.000;702.000 82.000;702.000 82.000;715.000 82.000;715.000 82.000;728.000 82.000;728.000 82.000;728.000 95.000;728.000 95.000;715.000 95.000;715.000 95.000;702.000 95.000;702.000 95.000;689.000 95.000;689.000 95.000;676.000 95.000;676.000 95.000;663.000 95.000;663.000 95.000;650.000 95.000;650.000 95.000;637.000 95.000;637.000 95.000;624.000 95.000;624.000 95.000;611.000 95.000;611.000 95.000;598.000 95.000;598.000 95.000;585.000 95.000;585.000 95.000;572.000 95.000;572.000 95.000;559.000 95.000;559.000 95.000;546.000 95.000;546.000 95.000;533.000 95.000;533.000 95.000;520.000 95.000;520.000 95.000;507.000 95.000;507.000 95.000;494.000 95.000;494.000 95.000;481.000 95.000;481.000 95.000;468.000 95.000;468.000 95.000;455.000 95.000;455.000 95.000;442.000 95.000;442.000 95.000;429.000 95.000;429.000 95.000" keyTimes="0;0.009721075;0.011817777;0.020712879;0.022809581;0.024143846;0.026240549;0.040091492;0.042188195;0.051083296;0.053179999;0.082660906;0.084757608;0.124340809;0.126437512;0.166020713;0.168117415;0.193659063;0.195755766;0.209606709;0.211703412;0.213037677;0.21513438;0.216468645;0.218565347;0.229112396;0.231209098;0.232543364;0.234640066;0.24849101;0.250587712;0.264438656;0.266535358;0.350085774;0.352182477;0.369210242;0.371306945;0.393544698;0.3956414;0.406188449;0.408285152;0.420484148;0.42258085;0.434779846;0.436876549;0.438210814;0.440307516;0.45415846;0.456255162;0.457589428;0.45968613;0.461020395;0.463117098;0.497553847;0.49965055;0.548764216;0.550860919;0.573098672;0.575195375;0.589046318;0.591143021;0.601690069;0.603786772;0.617637715;0.619734418;0.633585361;0.635682064;0.682762564;0.684859267;0.721138573;0.723235275;0.728000508;0.730097211;0.750428871;0.752525573;0.774763327;0.776860029;0.778194294;0.780290997;0.798398882;0.800495584;0.85818667;0.860283373;0.865048605;0.867145308;0.904695343;0.906792045;0.90812631;0.910223013;0.911557278;0.913653981;0.914988246;0.917084948;0.918419213;0.920515916;0.921850181;0.923946884;0.925281149;0.927377851;0.928712116;0.930808819;0.932143084;0.934239787;0.935574052;0.937670754;0.939005019;0.941101722;0.942435987;0.944532689;0.945866955;0.947963657;0.949297922;0.951394625;0.95272889;0.954825592;0.956159858;0.95825656;0.959590825;0.961687528;0.963021793;0.965118495;0.966452761;0.968549463;0.969883728;0.971980431;0.973314696;0.975411398;0.976745664;0.978842366;0.980176631;0.982273334;0.983607599;0.985704301;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="rotate(90)">
-<animateTransform attributeName="transform" type="rotate" values="90.00;90.00;0.00;0.00;-90.00;-90.00;0.00;0.00;-90.00;-90.00;-270.00;-270.00;-360.00;-360.00;-270.00;-270.00;-360.00;-360.00;-450.00;-450.00;-360.00;-360.00;-270.00;-270.00;-360.00;-360.00;-450.00;-450.00;-360.00;-360.00;-450.00;-450.00;-360.00;-360.00;-450.00;-450.00;-360.00;-360.00;-450.00;-450.00;-630.00;-630.00;-720.00;-720.00;-810.00;-810.00;-720.00;-720.00;-810.00;-810.00;-720.00;-720.00;-810.00;-810.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-810.00;-810.00;-720.00;-720.00;-810.00;-810.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-540.00;-540.00;-630.00;-630.00;-540.00;-540.00;-630.00;-630.00" keyTimes="0;0.002507138;0.003969636;0.046242775;0.047705272;0.05453026;0.055992757;0.058290967;0.059753465;0.069921304;0.071383801;0.077442719;0.078905216;0.115606936;0.117069434;0.123128352;0.124590849;0.136987255;0.138449753;0.168813984;0.170276482;0.191587158;0.193049655;0.195347865;0.196810363;0.220349607;0.221812104;0.230447803;0.2319103;0.23420851;0.235671008;0.255449544;0.256912041;0.269169162;0.27063166;0.27292987;0.274392367;0.343826172;0.345288669;0.364788634;0.366251132;0.372310049;0.373772547;0.391461801;0.392924298;0.395222509;0.396685006;0.405320705;0.406783202;0.409081412;0.41054391;0.42099032;0.422452817;0.424751027;0.426213525;0.493766975;0.495229473;0.518072289;0.519534787;0.572811477;0.574273975;0.590291803;0.5917543;0.617870325;0.619332823;0.621631033;0.62309353;0.635350651;0.636813149;0.639111359;0.640573856;0.670032732;0.671495229;0.677554147;0.679016645;0.712096943;0.71355944;0.719618358;0.721080855;0.727139773;0.72860227;0.744202242;0.74566474;0.751723658;0.753186155;0.778396824;0.779859322;0.796782506;0.798245003;0.800543213;0.802005711;0.843094923;0.84455742;0.858137753;0.859600251;0.87130023;0.872762727;0.894073403;0.895535901;0.897834111;0.899296608;0.984330385;0.987464308;1" dur="47.863333s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="90.00;90.00;0.00;0.00;-90.00;-90.00;0.00;0.00;-90.00;-90.00;-270.00;-270.00;-360.00;-360.00;-270.00;-270.00;-360.00;-360.00;-450.00;-450.00;-360.00;-360.00;-270.00;-270.00;-360.00;-360.00;-450.00;-450.00;-360.00;-360.00;-450.00;-450.00;-360.00;-360.00;-450.00;-450.00;-360.00;-360.00;-450.00;-450.00;-630.00;-630.00;-720.00;-720.00;-810.00;-810.00;-720.00;-720.00;-810.00;-810.00;-720.00;-720.00;-810.00;-810.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-810.00;-810.00;-720.00;-720.00;-810.00;-810.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-540.00;-540.00;-630.00;-630.00;-540.00;-540.00;-630.00;-630.00" keyTimes="0;0.002287312;0.003621577;0.042188195;0.04352246;0.049749031;0.051083296;0.053179999;0.054514264;0.081326641;0.082660906;0.088188576;0.089522841;0.123006544;0.124340809;0.12986848;0.131202745;0.142512231;0.143846496;0.171548383;0.172882648;0.192324798;0.193659063;0.195755766;0.197090031;0.218565347;0.219899612;0.227778131;0.229112396;0.231209098;0.232543364;0.250587712;0.251921977;0.26310439;0.264438656;0.266535358;0.267869623;0.348751509;0.350085774;0.367875977;0.369210242;0.374737912;0.376072177;0.392210433;0.393544698;0.3956414;0.396975666;0.404854184;0.406188449;0.408285152;0.409619417;0.419149882;0.420484148;0.42258085;0.423915115;0.503081517;0.504415782;0.525255734;0.526589999;0.575195375;0.57652964;0.591143021;0.592477286;0.61630345;0.617637715;0.619734418;0.621068683;0.632251096;0.633585361;0.635682064;0.637016329;0.681428299;0.682762564;0.688290234;0.6896245;0.719804308;0.721138573;0.726666243;0.728000508;0.733528178;0.734862444;0.749094606;0.750428871;0.755956541;0.757290806;0.780290997;0.781625262;0.797064617;0.798398882;0.800495584;0.801829849;0.856852405;0.85818667;0.870576275;0.871910541;0.882584662;0.883918928;0.903361078;0.904695343;0.906792045;0.90812631;0.985704301;0.988563441;1" dur="52.463333s" calcMode="linear" repeatCount="indefinite"/>
 <g data-sprite="retro-tank" shape-rendering="crispEdges">
 <path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
 <path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>

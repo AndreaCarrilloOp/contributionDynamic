@@ -1160,7 +1160,7 @@
 <animate attributeName="fill" values="#acbca7;#26352e;#acbca7" keyTimes="0;0.588297591;1" dur="37.77s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="77" width="10" height="10" rx="1" fill="#acbca7" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 57 contributions</title>
+<title>2026-11-18: 59 contributions</title>
 <animate attributeName="fill" values="#acbca7;#26352e;#acbca7" keyTimes="0;0.515753243;1" dur="37.77s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 </g>
@@ -1347,96 +1347,9 @@
 </g>
 </g>
 <g id="enemy-patrols">
-<g data-actor="enemy" data-enemy="0-0" data-outcome="defeated" transform="translate(416.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.003574265;0.005427588;0.016812285;0.017738946;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="416.0 82.0;416.0 82.0;416.0 95.0;416.0 95.0" keyTimes="0;0.005427588;0.016018004;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="416.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017474186;0.017738946;0.023563675;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.017738946;0.023563675;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="0-1" data-outcome="defeated" transform="translate(442.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.003574265;0.005427588;0.016812285;0.017738946;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="442.0 82.0;442.0 82.0;429.0 82.0;429.0 82.0" keyTimes="0;0.005427588;0.016018004;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="429.0" cy="82.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017474186;0.017738946;0.023563675;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.017738946;0.023563675;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="0-2" data-outcome="defeated" transform="translate(390.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.003574265;0.005427588;0.016812285;0.017738946;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="390.0 95.0;390.0 95.0;403.0 95.0;403.0 95.0" keyTimes="0;0.005427588;0.016018004;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="403.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017474186;0.017738946;0.023563675;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.017738946;0.023563675;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="1-1" data-outcome="defeated" transform="translate(455.0 121.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.031903627;0.03375695;0.051495896;0.052422558;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="455.0 121.0;455.0 121.0;468.0 121.0;468.0 121.0" keyTimes="0;0.03375695;0.050701615;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="468.0" cy="121.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.052157797;0.052422558;0.058247286;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.052422558;0.058247286;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="1-2" data-outcome="defeated" transform="translate(494.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.031903627;0.03375695;0.051495896;0.052422558;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="494.0 95.0;494.0 95.0;494.0 108.0;494.0 108.0" keyTimes="0;0.03375695;0.050701615;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="494.0" cy="108.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.052157797;0.052422558;0.058247286;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.052422558;0.058247286;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="1-0" data-outcome="withdrawn" transform="translate(442.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.031903627;0.03375695;0.062615833;0.063542494;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="442.0 95.0;442.0 95.0;455.0 95.0;455.0 95.0" keyTimes="0;0.03375695;0.050701615;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<g data-actor="enemy" data-enemy="2-2" data-outcome="defeated" transform="translate(533.0 108.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.066587239;0.068440561;0.089356632;0.090283294;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="533.0 108.0;533.0 108.0;520.0 108.0;520.0 108.0" keyTimes="0;0.068440561;0.088562351;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="520.0" cy="108.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.090018533;0.090283294;0.096108022;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.090283294;0.096108022;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="2-0" data-outcome="defeated" transform="translate(507.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.066587239;0.068440561;0.089356632;0.090283294;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="507.0 95.0;507.0 95.0;520.0 95.0;520.0 95.0" keyTimes="0;0.068440561;0.088562351;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="0-0" data-outcome="defeated" data-source="2026-06-18" data-spawn="1.190000" transform="translate(442.0 95.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.031506487;0.033359809;0.089356632;0.090283294;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="442.0 95.0;442.0 95.0;455.0 95.0;455.0 82.0;468.0 82.0;481.0 82.0;494.0 82.0;507.0 82.0;520.0 82.0;520.0 95.0;520.0 95.0" keyTimes="0;0.048186391;0.052952078;0.057717765;0.062483452;0.06724914;0.072014827;0.076780514;0.081546201;0.086311888;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
@@ -1447,20 +1360,24 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.090018533;0.090283294;0.096108022;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.090283294;0.096108022;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="2-1" data-outcome="withdrawn" transform="translate(546.0 108.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.066587239;0.068440561;0.100476569;0.10140323;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="546.0 108.0;546.0 108.0;546.0 121.0;546.0 121.0" keyTimes="0;0.068440561;0.088562351;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="1-1" data-outcome="defeated" data-source="2026-07-02" data-spawn="2.500000" transform="translate(468.0 95.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.066190098;0.068043421;0.183876092;0.184802754;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="468.0 95.0;468.0 95.0;468.0 108.0;455.0 108.0;442.0 108.0;429.0 108.0;429.0 95.0;429.0 82.0;442.0 82.0;442.0 69.0;455.0 69.0;468.0 69.0;468.0 56.0;481.0 56.0;494.0 56.0;507.0 56.0;520.0 56.0;533.0 56.0;546.0 56.0;559.0 56.0;559.0 69.0;559.0 82.0;559.0 95.0;559.0 95.0" keyTimes="0;0.08075192;0.085517607;0.090283294;0.095048981;0.099814668;0.104580355;0.109346042;0.114111729;0.118877416;0.123643103;0.12840879;0.133174477;0.137940164;0.142705851;0.147471538;0.152237225;0.157002912;0.161768599;0.166534286;0.171299974;0.176065661;0.180831348;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
 </g></g>
-<g data-actor="enemy" data-enemy="3-0" data-outcome="defeated" transform="translate(520.0 121.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.104447975;0.106301297;0.124040244;0.124966905;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="520.0 121.0;520.0 121.0;533.0 121.0;533.0 121.0" keyTimes="0;0.106301297;0.123245962;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-enemy-impact="true" cx="559.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.184537993;0.184802754;0.190627482;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.184802754;0.190627482;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<g data-actor="enemy" data-enemy="2-2" data-outcome="defeated" data-source="2026-08-08" data-spawn="3.930000" transform="translate(520.0 121.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.104050834;0.105904157;0.124040244;0.124966905;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="520.0 121.0;520.0 121.0;533.0 121.0;533.0 121.0" keyTimes="0;0.116229812;0.120995499;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
+<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
@@ -1469,53 +1386,9 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.124702145;0.124966905;0.130791634;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.124966905;0.130791634;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="3-1" data-outcome="withdrawn" transform="translate(507.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.104447975;0.106301297;0.13516018;0.136086841;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="507.0 95.0;507.0 95.0;520.0 95.0;520.0 95.0" keyTimes="0;0.106301297;0.123245962;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<g data-actor="enemy" data-enemy="3-2" data-outcome="withdrawn" transform="translate(546.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.104447975;0.106301297;0.13516018;0.136086841;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="546.0 82.0;546.0 82.0;546.0 95.0;546.0 95.0" keyTimes="0;0.106301297;0.123245962;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<g data-actor="enemy" data-enemy="4-1" data-outcome="defeated" transform="translate(559.0 108.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.139131586;0.140984909;0.152369606;0.153296267;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="559.0 108.0;559.0 108.0;546.0 108.0;546.0 108.0" keyTimes="0;0.140984909;0.151575324;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="546.0" cy="108.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.153031506;0.153296267;0.159120995;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.153296267;0.159120995;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="4-2" data-outcome="defeated" transform="translate(507.0 121.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.139131586;0.140984909;0.152369606;0.153296267;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="507.0 121.0;507.0 121.0;520.0 121.0;520.0 121.0" keyTimes="0;0.140984909;0.151575324;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="520.0" cy="121.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.153031506;0.153296267;0.159120995;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.153296267;0.159120995;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="4-0" data-outcome="defeated" transform="translate(533.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.139131586;0.140984909;0.152369606;0.153296267;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="533.0 95.0;533.0 95.0;546.0 95.0;546.0 95.0" keyTimes="0;0.140984909;0.151575324;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="3-0" data-outcome="defeated" data-source="2026-08-21" data-spawn="5.240000" transform="translate(559.0 108.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.138734445;0.140587768;0.152369606;0.153296267;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="559.0 108.0;559.0 108.0;546.0 108.0;546.0 95.0;546.0 95.0" keyTimes="0;0.139793487;0.144559174;0.149324861;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
@@ -1526,35 +1399,9 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.153031506;0.153296267;0.159120995;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.153296267;0.159120995;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="5-2" data-outcome="defeated" transform="translate(520.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.167460948;0.169314271;0.183876092;0.184802754;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="520.0 82.0;520.0 82.0;520.0 95.0;520.0 95.0" keyTimes="0;0.169314271;0.183081811;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="520.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.184537993;0.184802754;0.190627482;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.184802754;0.190627482;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="5-0" data-outcome="defeated" transform="translate(494.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.167460948;0.169314271;0.183876092;0.184802754;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="494.0 95.0;494.0 95.0;507.0 95.0;507.0 95.0" keyTimes="0;0.169314271;0.183081811;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="507.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.184537993;0.184802754;0.190627482;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.184802754;0.190627482;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="5-1" data-outcome="defeated" transform="translate(520.0 121.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.167460948;0.169314271;0.183876092;0.184802754;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="520.0 121.0;520.0 121.0;533.0 121.0;533.0 121.0" keyTimes="0;0.169314271;0.183081811;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="4-1" data-outcome="defeated" data-source="2026-08-22" data-spawn="6.310000" transform="translate(559.0 121.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.167063807;0.16891713;0.183876092;0.184802754;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="559.0 121.0;559.0 121.0;546.0 121.0;533.0 121.0;533.0 121.0" keyTimes="0;0.171299974;0.176065661;0.180831348;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
@@ -1565,11 +1412,11 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.184537993;0.184802754;0.190627482;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.184802754;0.190627482;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="6-0" data-outcome="defeated" transform="translate(572.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.198967434;0.200820757;0.224913953;0.225840614;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="572.0 82.0;572.0 82.0;572.0 95.0;572.0 95.0" keyTimes="0;0.200820757;0.224119672;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="5-2" data-outcome="defeated" data-source="2026-08-05" data-spawn="7.500000" transform="translate(533.0 82.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.198570294;0.200423617;0.224913953;0.225840614;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="533.0 82.0;533.0 82.0;546.0 82.0;559.0 82.0;572.0 82.0;572.0 95.0;572.0 95.0" keyTimes="0;0.20280646;0.207572147;0.212337834;0.217103521;0.221869208;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
+<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
@@ -1578,50 +1425,11 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.225575854;0.225840614;0.231665343;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.225840614;0.231665343;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="6-1" data-outcome="defeated" transform="translate(546.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.198967434;0.200820757;0.224913953;0.225840614;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="546.0 95.0;546.0 95.0;559.0 95.0;559.0 95.0" keyTimes="0;0.200820757;0.224119672;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="6-0" data-outcome="defeated" data-source="2026-09-02" data-spawn="9.050000" transform="translate(585.0 82.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.239608155;0.241461477;0.25642044;0.257347101;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="585.0 82.0;585.0 82.0;585.0 95.0;572.0 95.0;572.0 95.0" keyTimes="0;0.243844321;0.248610008;0.253375695;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="559.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.225575854;0.225840614;0.231665343;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.225840614;0.231665343;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="6-2" data-outcome="defeated" transform="translate(572.0 121.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.198967434;0.200820757;0.224913953;0.225840614;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="572.0 121.0;572.0 121.0;585.0 121.0;585.0 121.0" keyTimes="0;0.200820757;0.224119672;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="585.0" cy="121.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.225575854;0.225840614;0.231665343;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.225840614;0.231665343;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="7-1" data-outcome="defeated" transform="translate(585.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.240005295;0.241858618;0.25642044;0.257347101;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="585.0 82.0;585.0 82.0;585.0 95.0;585.0 95.0" keyTimes="0;0.241858618;0.255626158;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="585.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.25708234;0.257347101;0.263171829;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.257347101;0.263171829;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="7-2" data-outcome="defeated" transform="translate(559.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.240005295;0.241858618;0.25642044;0.257347101;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="559.0 95.0;559.0 95.0;572.0 95.0;572.0 95.0" keyTimes="0;0.241858618;0.255626158;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
+<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
@@ -1630,37 +1438,11 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.25708234;0.257347101;0.263171829;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.257347101;0.263171829;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="7-0" data-outcome="defeated" transform="translate(585.0 121.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.240005295;0.241858618;0.25642044;0.257347101;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="585.0 121.0;585.0 121.0;598.0 121.0;598.0 121.0" keyTimes="0;0.241858618;0.255626158;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="7-1" data-outcome="defeated" data-source="2026-09-09" data-spawn="10.240000" transform="translate(598.0 82.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.271114641;0.272967964;0.287926926;0.288853588;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="598.0 82.0;598.0 82.0;598.0 95.0;585.0 95.0;585.0 95.0" keyTimes="0;0.275350808;0.280116495;0.284882182;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="598.0" cy="121.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.25708234;0.257347101;0.263171829;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.257347101;0.263171829;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="8-2" data-outcome="defeated" transform="translate(598.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.271511782;0.273365105;0.287926926;0.288853588;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="598.0 82.0;598.0 82.0;598.0 95.0;598.0 95.0" keyTimes="0;0.273365105;0.287132645;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="598.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.288588827;0.288853588;0.294678316;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.288853588;0.294678316;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="8-0" data-outcome="defeated" transform="translate(572.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.271511782;0.273365105;0.287926926;0.288853588;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="572.0 95.0;572.0 95.0;585.0 95.0;585.0 95.0" keyTimes="0;0.273365105;0.287132645;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
+<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
@@ -1669,37 +1451,11 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.288588827;0.288853588;0.294678316;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.288853588;0.294678316;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="8-1" data-outcome="defeated" transform="translate(598.0 121.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.271511782;0.273365105;0.287926926;0.288853588;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="598.0 121.0;598.0 121.0;611.0 121.0;611.0 121.0" keyTimes="0;0.273365105;0.287132645;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="8-2" data-outcome="defeated" data-source="2026-09-16" data-spawn="11.430000" transform="translate(611.0 82.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.302621128;0.304474451;0.319433413;0.320360074;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="611.0 82.0;611.0 82.0;611.0 95.0;611.0 108.0;611.0 108.0" keyTimes="0;0.306857294;0.311622981;0.316388668;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="611.0" cy="121.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.288588827;0.288853588;0.294678316;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.288853588;0.294678316;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="9-0" data-outcome="defeated" transform="translate(624.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.303018268;0.304871591;0.319433413;0.320360074;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="624.0 95.0;624.0 95.0;637.0 95.0;637.0 95.0" keyTimes="0;0.304871591;0.318639132;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="637.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.320095314;0.320360074;0.326184803;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.320360074;0.326184803;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="9-1" data-outcome="defeated" transform="translate(598.0 108.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.303018268;0.304871591;0.319433413;0.320360074;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="598.0 108.0;598.0 108.0;611.0 108.0;611.0 108.0" keyTimes="0;0.304871591;0.318639132;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
+<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
@@ -1708,127 +1464,22 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.320095314;0.320360074;0.326184803;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.320360074;0.326184803;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="9-2" data-outcome="defeated" transform="translate(624.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.303018268;0.304871591;0.319433413;0.320360074;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="624.0 82.0;624.0 82.0;637.0 82.0;637.0 82.0" keyTimes="0;0.304871591;0.318639132;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="637.0" cy="82.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.320095314;0.320360074;0.326184803;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.320360074;0.326184803;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="10-1" data-outcome="defeated" transform="translate(676.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.334524755;0.336378078;0.354117024;0.355043685;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="676.0 95.0;676.0 95.0;676.0 108.0;676.0 108.0" keyTimes="0;0.336378078;0.353322743;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="676.0" cy="108.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.354778925;0.355043685;0.360868414;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.355043685;0.360868414;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="10-2" data-outcome="withdrawn" transform="translate(624.0 121.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.334524755;0.336378078;0.365236961;0.366163622;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="624.0 121.0;624.0 121.0;637.0 121.0;637.0 121.0" keyTimes="0;0.336378078;0.353322743;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<g data-actor="enemy" data-enemy="10-0" data-outcome="withdrawn" transform="translate(637.0 108.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.334524755;0.336378078;0.365236961;0.366163622;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="637.0 108.0;637.0 108.0;650.0 108.0;650.0 108.0" keyTimes="0;0.336378078;0.353322743;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="9-0" data-outcome="defeated" data-source="2026-10-09" data-spawn="12.620000" transform="translate(650.0 108.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.334127615;0.335980937;0.354117024;0.355043685;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="650.0 108.0;650.0 108.0;650.0 95.0;663.0 95.0;676.0 95.0;676.0 95.0" keyTimes="0;0.336775218;0.341540905;0.346306593;0.35107228;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<g data-actor="enemy" data-enemy="11-2" data-outcome="defeated" transform="translate(663.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.369208366;0.371061689;0.385623511;0.386550172;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="663.0 95.0;663.0 95.0;676.0 95.0;676.0 95.0" keyTimes="0;0.371061689;0.38482923;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
 </g></g>
 <circle data-enemy-impact="true" cx="676.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.386285412;0.386550172;0.392374901;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.386550172;0.392374901;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.354778925;0.355043685;0.360868414;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.355043685;0.360868414;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="11-0" data-outcome="defeated" transform="translate(637.0 108.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.369208366;0.371061689;0.385623511;0.386550172;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="637.0 108.0;637.0 108.0;650.0 108.0;650.0 108.0" keyTimes="0;0.371061689;0.38482923;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="650.0" cy="108.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.386285412;0.386550172;0.392374901;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.386550172;0.392374901;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="11-1" data-outcome="defeated" transform="translate(663.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.369208366;0.371061689;0.385623511;0.386550172;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="663.0 82.0;663.0 82.0;676.0 82.0;676.0 82.0" keyTimes="0;0.371061689;0.38482923;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="676.0" cy="82.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.386285412;0.386550172;0.392374901;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.386550172;0.392374901;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="12-0" data-outcome="defeated" transform="translate(689.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.400714853;0.402568176;0.413952873;0.414879534;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.0 95.0;689.0 95.0;689.0 108.0;689.0 108.0" keyTimes="0;0.402568176;0.413158591;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="689.0" cy="108.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.414614774;0.414879534;0.420704263;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.414879534;0.420704263;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="12-1" data-outcome="defeated" transform="translate(650.0 121.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.400714853;0.402568176;0.413952873;0.414879534;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="650.0 121.0;650.0 121.0;663.0 121.0;663.0 121.0" keyTimes="0;0.402568176;0.413158591;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="663.0" cy="121.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.414614774;0.414879534;0.420704263;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.414879534;0.420704263;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="12-2" data-outcome="withdrawn" transform="translate(715.0 108.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.400714853;0.402568176;0.425072809;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="715.0 108.0;715.0 108.0;715.0 121.0;715.0 121.0" keyTimes="0;0.402568176;0.413158591;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<g data-actor="enemy" data-enemy="13-1" data-outcome="defeated" transform="translate(676.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.429044215;0.430897538;0.445459359;0.446386021;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="676.0 95.0;676.0 95.0;689.0 95.0;689.0 95.0" keyTimes="0;0.430897538;0.444665078;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="11-1" data-outcome="defeated" data-source="2026-10-30" data-spawn="15.120000" transform="translate(689.0 108.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.400317712;0.402171035;0.413952873;0.414879534;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="689.0 108.0;689.0 108.0;689.0 95.0;689.0 95.0" keyTimes="0;0.406142441;0.410908128;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
@@ -1836,53 +1487,14 @@
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
 </g></g>
 <circle data-enemy-impact="true" cx="689.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.44612126;0.446386021;0.452210749;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.446386021;0.452210749;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.414614774;0.414879534;0.420704263;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.414879534;0.420704263;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="13-2" data-outcome="defeated" transform="translate(650.0 108.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.429044215;0.430897538;0.445459359;0.446386021;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="650.0 108.0;650.0 108.0;663.0 108.0;663.0 108.0" keyTimes="0;0.430897538;0.444665078;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="13-2" data-outcome="defeated" data-source="2026-11-06" data-spawn="17.380000" transform="translate(689.0 108.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.460153561;0.462006884;0.476965846;0.477892507;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="689.0 108.0;689.0 108.0;676.0 108.0;676.0 108.0" keyTimes="0;0.469155414;0.473921101;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="663.0" cy="108.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.44612126;0.446386021;0.452210749;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.446386021;0.452210749;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="13-0" data-outcome="defeated" transform="translate(676.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.429044215;0.430897538;0.445459359;0.446386021;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="676.0 82.0;676.0 82.0;689.0 82.0;689.0 82.0" keyTimes="0;0.430897538;0.444665078;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="689.0" cy="82.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.44612126;0.446386021;0.452210749;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.446386021;0.452210749;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="14-2" data-outcome="defeated" transform="translate(689.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.460550702;0.462404024;0.476965846;0.477892507;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.0 95.0;689.0 95.0;689.0 108.0;689.0 108.0" keyTimes="0;0.462404024;0.476171565;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="689.0" cy="108.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.477627747;0.477892507;0.483717236;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.477892507;0.483717236;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="14-0" data-outcome="defeated" transform="translate(663.0 108.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.460550702;0.462404024;0.476965846;0.477892507;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="663.0 108.0;663.0 108.0;676.0 108.0;676.0 108.0" keyTimes="0;0.462404024;0.476171565;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
@@ -1891,22 +1503,9 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.477627747;0.477892507;0.483717236;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.477892507;0.483717236;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="14-1" data-outcome="defeated" transform="translate(728.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.460550702;0.462404024;0.476965846;0.477892507;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="728.0 95.0;728.0 95.0;728.0 108.0;728.0 108.0" keyTimes="0;0.462404024;0.476171565;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="728.0" cy="108.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.477627747;0.477892507;0.483717236;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.477892507;0.483717236;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="15-0" data-outcome="defeated" transform="translate(715.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.492057188;0.493910511;0.514826582;0.515753243;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="715.0 82.0;715.0 82.0;715.0 95.0;715.0 95.0" keyTimes="0;0.493910511;0.514032301;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="14-0" data-outcome="defeated" data-source="2026-11-05" data-spawn="18.570000" transform="translate(702.0 95.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.491660048;0.49351337;0.514826582;0.515753243;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="702.0 95.0;702.0 95.0;715.0 95.0;715.0 95.0" keyTimes="0;0.50701615;0.511781837;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
@@ -1917,70 +1516,22 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.515488483;0.515753243;0.521577972;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.515753243;0.521577972;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="15-1" data-outcome="defeated" transform="translate(689.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.492057188;0.493910511;0.514826582;0.515753243;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.0 95.0;689.0 95.0;702.0 95.0;702.0 95.0" keyTimes="0;0.493910511;0.514032301;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="15-1" data-outcome="defeated" data-source="2026-11-18" data-spawn="20.000000" transform="translate(728.0 82.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.529520784;0.531374106;0.549510193;0.550436855;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="728.0 82.0;728.0 82.0;728.0 95.0;728.0 95.0" keyTimes="0;0.541699762;0.546465449;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
 </g></g>
-<circle data-enemy-impact="true" cx="702.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.515488483;0.515753243;0.521577972;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.515753243;0.521577972;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="15-2" data-outcome="withdrawn" transform="translate(689.0 108.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.492057188;0.493910511;0.525946518;0.52687318;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.0 108.0;689.0 108.0;702.0 108.0;702.0 108.0" keyTimes="0;0.493910511;0.514032301;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<g data-actor="enemy" data-enemy="16-1" data-outcome="defeated" transform="translate(689.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.529917924;0.531771247;0.549510193;0.550436855;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.0 82.0;689.0 82.0;689.0 95.0;689.0 95.0" keyTimes="0;0.531771247;0.548715912;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="689.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
+<circle data-enemy-impact="true" cx="728.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.550172094;0.550436855;0.556261583;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.550436855;0.556261583;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="16-2" data-outcome="defeated" transform="translate(663.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.529917924;0.531771247;0.549510193;0.550436855;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="663.0 95.0;663.0 95.0;676.0 95.0;676.0 95.0" keyTimes="0;0.531771247;0.548715912;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="676.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.550172094;0.550436855;0.556261583;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.550436855;0.556261583;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="16-0" data-outcome="defeated" transform="translate(689.0 121.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.529917924;0.531771247;0.549510193;0.550436855;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.0 121.0;689.0 121.0;702.0 121.0;702.0 121.0" keyTimes="0;0.531771247;0.548715912;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="702.0" cy="121.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.550172094;0.550436855;0.556261583;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.550436855;0.556261583;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="17-2" data-outcome="defeated" transform="translate(715.0 69.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.564601536;0.566454858;0.587370929;0.588297591;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="715.0 69.0;715.0 69.0;715.0 82.0;715.0 82.0" keyTimes="0;0.566454858;0.586576648;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="16-2" data-outcome="defeated" data-source="2026-11-04" data-spawn="21.310000" transform="translate(702.0 82.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.564204395;0.566057718;0.587370929;0.588297591;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="702.0 82.0;702.0 82.0;715.0 82.0;715.0 82.0" keyTimes="0;0.579560498;0.584326185;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
@@ -1991,46 +1542,11 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.58803283;0.588297591;0.594122319;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.588297591;0.594122319;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="17-0" data-outcome="defeated" transform="translate(689.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.564601536;0.566454858;0.587370929;0.588297591;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.0 82.0;689.0 82.0;702.0 82.0;702.0 82.0" keyTimes="0;0.566454858;0.586576648;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="17-0" data-outcome="defeated" data-source="2026-11-17" data-spawn="22.740000" transform="translate(715.0 69.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.602065131;0.603918454;0.625231665;0.626158327;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="715.0 69.0;715.0 69.0;702.0 69.0;702.0 69.0" keyTimes="0;0.617421234;0.622186921;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="702.0" cy="82.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.58803283;0.588297591;0.594122319;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.588297591;0.594122319;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="17-1" data-outcome="withdrawn" transform="translate(689.0 69.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.564601536;0.566454858;0.598490866;0.599417527;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.0 69.0;689.0 69.0;702.0 69.0;702.0 69.0" keyTimes="0;0.566454858;0.586576648;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<g data-actor="enemy" data-enemy="18-0" data-outcome="defeated" transform="translate(715.0 56.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.602462272;0.604315594;0.625231665;0.626158327;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="715.0 56.0;715.0 56.0;715.0 69.0;715.0 69.0" keyTimes="0;0.604315594;0.624437384;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="715.0" cy="69.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.625893566;0.626158327;0.631983055;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.626158327;0.631983055;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="18-1" data-outcome="defeated" transform="translate(689.0 69.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.602462272;0.604315594;0.625231665;0.626158327;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="689.0 69.0;689.0 69.0;702.0 69.0;702.0 69.0" keyTimes="0;0.604315594;0.624437384;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
@@ -2039,85 +1555,24 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.625893566;0.626158327;0.631983055;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.626158327;0.631983055;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="18-2" data-outcome="withdrawn" transform="translate(715.0 43.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.602462272;0.604315594;0.636351602;0.637278263;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="715.0 43.0;715.0 43.0;728.0 43.0;728.0 43.0" keyTimes="0;0.604315594;0.624437384;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<g data-actor="enemy" data-enemy="19-1" data-outcome="defeated" transform="translate(676.0 56.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.640323008;0.64217633;0.663092401;0.664019063;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="676.0 56.0;676.0 56.0;676.0 69.0;676.0 69.0" keyTimes="0;0.64217633;0.66229812;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="18-1" data-outcome="defeated" data-source="2026-11-16" data-spawn="24.170000" transform="translate(728.0 56.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.639925867;0.64177919;0.663092401;0.664019063;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="728.0 56.0;728.0 56.0;728.0 69.0;715.0 69.0;715.0 69.0" keyTimes="0;0.650516283;0.65528197;0.660047657;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
 </g></g>
-<circle data-enemy-impact="true" cx="676.0" cy="69.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
+<circle data-enemy-impact="true" cx="715.0" cy="69.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.663754302;0.664019063;0.669843791;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.664019063;0.669843791;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="19-2" data-outcome="defeated" transform="translate(650.0 69.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.640323008;0.64217633;0.663092401;0.664019063;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="650.0 69.0;650.0 69.0;663.0 69.0;663.0 69.0" keyTimes="0;0.64217633;0.66229812;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="19-2" data-outcome="defeated" data-source="2026-10-26" data-spawn="25.600000" transform="translate(689.0 43.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.677786603;0.679639926;0.704130262;0.705056923;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="689.0 43.0;689.0 43.0;702.0 43.0;702.0 56.0;702.0 56.0" keyTimes="0;0.691554144;0.696319831;0.701085518;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="663.0" cy="69.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.663754302;0.664019063;0.669843791;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.664019063;0.669843791;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="19-0" data-outcome="defeated" transform="translate(676.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.640323008;0.64217633;0.663092401;0.664019063;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="676.0 95.0;676.0 95.0;689.0 95.0;689.0 95.0" keyTimes="0;0.64217633;0.66229812;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="689.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.663754302;0.664019063;0.669843791;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.664019063;0.669843791;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="20-2" data-outcome="defeated" transform="translate(663.0 43.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.678183744;0.680037066;0.704130262;0.705056923;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="663.0 43.0;663.0 43.0;663.0 56.0;663.0 56.0" keyTimes="0;0.680037066;0.703335981;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="663.0" cy="56.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.704792163;0.705056923;0.710881652;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.705056923;0.710881652;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="20-0" data-outcome="defeated" transform="translate(637.0 56.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.678183744;0.680037066;0.704130262;0.705056923;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="637.0 56.0;637.0 56.0;650.0 56.0;650.0 56.0" keyTimes="0;0.680037066;0.703335981;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="650.0" cy="56.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.704792163;0.705056923;0.710881652;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.705056923;0.710881652;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="20-1" data-outcome="defeated" transform="translate(702.0 43.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.678183744;0.680037066;0.704130262;0.705056923;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="702.0 43.0;702.0 43.0;702.0 56.0;702.0 56.0" keyTimes="0;0.680037066;0.703335981;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
@@ -2126,98 +1581,37 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.704792163;0.705056923;0.710881652;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.705056923;0.710881652;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="21-0" data-outcome="defeated" transform="translate(624.0 43.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.719221604;0.721074927;0.748345248;0.749271909;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="624.0 43.0;624.0 43.0;624.0 56.0;624.0 56.0" keyTimes="0;0.721074927;0.747550966;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="20-0" data-outcome="defeated" data-source="2026-10-18" data-spawn="27.150000" transform="translate(676.0 43.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.718824464;0.720677787;0.748345248;0.749271909;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="676.0 43.0;676.0 43.0;676.0 56.0;663.0 56.0;663.0 56.0" keyTimes="0;0.735769129;0.740534816;0.745300503;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
+<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
+<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
+<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
+</g></g>
+<circle data-enemy-impact="true" cx="663.0" cy="56.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.749007149;0.749271909;0.755096638;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.749271909;0.755096638;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<g data-actor="enemy" data-enemy="21-1" data-outcome="defeated" data-source="2026-09-27" data-spawn="28.820000" transform="translate(637.0 43.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.763039449;0.764892772;0.827243844;0.828170506;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="637.0 43.0;637.0 43.0;637.0 56.0;624.0 56.0;624.0 56.0" keyTimes="0;0.814667726;0.819433413;0.8241991;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g shape-rendering="crispEdges">
+<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
 </g></g>
 <circle data-enemy-impact="true" cx="624.0" cy="56.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.749007149;0.749271909;0.755096638;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.749271909;0.755096638;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="21-1" data-outcome="defeated" transform="translate(611.0 43.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.719221604;0.721074927;0.748345248;0.749271909;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="611.0 43.0;611.0 43.0;611.0 56.0;611.0 56.0" keyTimes="0;0.721074927;0.747550966;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="611.0" cy="56.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.749007149;0.749271909;0.755096638;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.749271909;0.755096638;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="21-2" data-outcome="defeated" transform="translate(624.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.719221604;0.721074927;0.748345248;0.749271909;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="624.0 82.0;624.0 82.0;637.0 82.0;637.0 82.0" keyTimes="0;0.721074927;0.747550966;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="637.0" cy="82.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.749007149;0.749271909;0.755096638;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.749271909;0.755096638;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="22-1" data-outcome="defeated" transform="translate(585.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.76343659;0.765289913;0.789383108;0.79030977;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="585.0 82.0;585.0 82.0;598.0 82.0;598.0 82.0" keyTimes="0;0.765289913;0.788588827;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="598.0" cy="82.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.790045009;0.79030977;0.796134498;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.79030977;0.796134498;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="22-2" data-outcome="defeated" transform="translate(585.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.76343659;0.765289913;0.789383108;0.79030977;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="585.0 95.0;585.0 95.0;598.0 95.0;598.0 95.0" keyTimes="0;0.765289913;0.788588827;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="598.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.790045009;0.79030977;0.796134498;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.79030977;0.796134498;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="22-0" data-outcome="withdrawn" transform="translate(559.0 69.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.76343659;0.765289913;0.800503045;0.801429706;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="559.0 69.0;559.0 69.0;572.0 69.0;572.0 69.0" keyTimes="0;0.765289913;0.788588827;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<g data-actor="enemy" data-enemy="23-2" data-outcome="defeated" transform="translate(585.0 43.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.804474451;0.806327773;0.827243844;0.828170506;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="585.0 43.0;585.0 43.0;585.0 56.0;585.0 56.0" keyTimes="0;0.806327773;0.826449563;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="585.0" cy="56.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.827905745;0.828170506;0.833995234;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.828170506;0.833995234;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="23-0" data-outcome="defeated" transform="translate(559.0 56.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.804474451;0.806327773;0.827243844;0.828170506;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="559.0 56.0;559.0 56.0;572.0 56.0;572.0 56.0" keyTimes="0;0.806327773;0.826449563;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="22-2" data-outcome="defeated" data-source="2026-09-01" data-spawn="30.370000" transform="translate(585.0 69.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.80407731;0.805930633;0.827243844;0.828170506;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="585.0 69.0;585.0 69.0;572.0 69.0;572.0 56.0;572.0 56.0" keyTimes="0;0.814667726;0.819433413;0.8241991;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
+<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
@@ -2226,61 +1620,22 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.827905745;0.828170506;0.833995234;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.828170506;0.833995234;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="23-1" data-outcome="defeated" transform="translate(624.0 43.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.804474451;0.806327773;0.827243844;0.828170506;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="624.0 43.0;624.0 43.0;624.0 56.0;624.0 56.0" keyTimes="0;0.806327773;0.826449563;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="624.0" cy="56.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.827905745;0.828170506;0.833995234;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.828170506;0.833995234;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="24-0" data-outcome="defeated" transform="translate(533.0 43.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.842335187;0.844188509;0.874635954;0.875562616;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="533.0 43.0;533.0 43.0;533.0 56.0;533.0 56.0" keyTimes="0;0.844188509;0.873841673;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="23-0" data-outcome="defeated" data-source="2026-09-06" data-spawn="31.800000" transform="translate(598.0 43.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.841938046;0.843791369;0.874635954;0.875562616;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="598.0 43.0;598.0 43.0;598.0 56.0;585.0 56.0;572.0 56.0;572.0 56.0" keyTimes="0;0.857294149;0.862059836;0.866825523;0.87159121;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
 </g></g>
-<circle data-enemy-impact="true" cx="533.0" cy="56.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
+<circle data-enemy-impact="true" cx="572.0" cy="56.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.875297855;0.875562616;0.881387344;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.875562616;0.881387344;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="24-1" data-outcome="defeated" transform="translate(507.0 56.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.842335187;0.844188509;0.874635954;0.875562616;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="507.0 56.0;507.0 56.0;520.0 56.0;520.0 56.0" keyTimes="0;0.844188509;0.873841673;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="520.0" cy="56.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.875297855;0.875562616;0.881387344;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.875562616;0.881387344;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="24-2" data-outcome="defeated" transform="translate(533.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.842335187;0.844188509;0.874635954;0.875562616;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="533.0 82.0;533.0 82.0;546.0 82.0;546.0 82.0" keyTimes="0;0.844188509;0.873841673;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="546.0" cy="82.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.875297855;0.875562616;0.881387344;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.875562616;0.881387344;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="25-1" data-outcome="defeated" transform="translate(494.0 56.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.889727297;0.89158062;0.915673815;0.916600477;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="494.0 56.0;494.0 56.0;507.0 56.0;507.0 56.0" keyTimes="0;0.89158062;0.914879534;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="24-1" data-outcome="defeated" data-source="2026-08-09" data-spawn="33.590000" transform="translate(546.0 43.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.889330156;0.891183479;0.915673815;0.916600477;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="546.0 43.0;546.0 43.0;546.0 56.0;533.0 56.0;520.0 56.0;507.0 56.0;507.0 56.0" keyTimes="0;0.893566322;0.89833201;0.903097697;0.907863384;0.912629071;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
@@ -2291,35 +1646,9 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.916335716;0.916600477;0.922425205;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.916600477;0.922425205;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="25-2" data-outcome="defeated" transform="translate(494.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.889727297;0.89158062;0.915673815;0.916600477;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="494.0 82.0;494.0 82.0;507.0 82.0;507.0 82.0" keyTimes="0;0.89158062;0.914879534;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="507.0" cy="82.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.916335716;0.916600477;0.922425205;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.916600477;0.922425205;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="25-0" data-outcome="defeated" transform="translate(494.0 43.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.889727297;0.89158062;0.915673815;0.916600477;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="494.0 43.0;494.0 43.0;507.0 43.0;507.0 43.0" keyTimes="0;0.89158062;0.914879534;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="507.0" cy="43.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.916335716;0.916600477;0.922425205;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.916600477;0.922425205;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="26-2" data-outcome="defeated" transform="translate(468.0 69.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.930765158;0.93261848;0.953534551;0.954461213;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="468.0 69.0;468.0 69.0;468.0 82.0;468.0 82.0" keyTimes="0;0.93261848;0.95274027;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="25-2" data-outcome="defeated" data-source="2026-07-14" data-spawn="35.140000" transform="translate(494.0 56.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.930368017;0.93222134;0.953534551;0.954461213;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="494.0 56.0;494.0 56.0;481.0 56.0;468.0 56.0;468.0 69.0;468.0 82.0;468.0 82.0" keyTimes="0;0.931427059;0.936192746;0.940958433;0.94572412;0.950489807;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-4 -4H-2V-5H2V-4H4V-1H5V3H3V4H-3V3H-5V-1H-4Z" fill="#b596ce" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
@@ -2330,32 +1659,15 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.954196452;0.954461213;0.960285941;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="2;2;7;7" keyTimes="0;0.954461213;0.960285941;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-actor="enemy" data-enemy="26-0" data-outcome="defeated" transform="translate(468.0 95.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.930765158;0.93261848;0.953534551;0.954461213;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="468.0 95.0;468.0 95.0;481.0 95.0;481.0 95.0" keyTimes="0;0.93261848;0.95274027;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<g data-actor="enemy" data-enemy="26-0" data-outcome="withdrawn" data-source="2026-07-07" data-spawn="36.570000" transform="translate(481.0 69.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.968228753;0.970082076;0.998543818;0.999470479;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="481.0 69.0;481.0 69.0;468.0 69.0;455.0 69.0;442.0 69.0;442.0 69.0" keyTimes="0;0.968228753;0.97299444;0.977760127;0.982525814;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <g shape-rendering="crispEdges">
 <path d="M-3 -5H3V-4H5V1H4V3H2V5H-2V3H-4V1H-5V-4H-3Z" fill="#e07b72" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
 <path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
 <path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
 <path d="M-1 2H1V3H-1Z" fill="#41323c"/>
 </g></g>
-<circle data-enemy-impact="true" cx="481.0" cy="95.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.954196452;0.954461213;0.960285941;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.954461213;0.960285941;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-actor="enemy" data-enemy="26-1" data-outcome="defeated" transform="translate(442.0 82.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.930765158;0.93261848;0.953534551;0.954461213;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="442.0 82.0;442.0 82.0;455.0 82.0;455.0 82.0" keyTimes="0;0.93261848;0.95274027;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<g shape-rendering="crispEdges">
-<path d="M-2 -5H2V-3H4V-2H5V3H3V5H1V3H-1V5H-3V3H-5V-2H-4V-3H-2Z" fill="#d7ae66" stroke="#41323c" stroke-width=".65" stroke-linejoin="round"/>
-<path d="M-3 -2H-1V1H-3ZM1 -2H3V1H1Z" fill="#fff5dc"/>
-<path d="M-2 -1H-1V1H-2ZM2 -1H3V1H2Z" fill="#16252c"/>
-<path d="M-1 2H1V3H-1Z" fill="#41323c"/>
-</g></g>
-<circle data-enemy-impact="true" cx="455.0" cy="82.0" r="2" fill="none" stroke="#fff0b5" stroke-width="1.1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.954196452;0.954461213;0.960285941;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.954461213;0.960285941;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
 </g>
 <g id="arcade-events">
 <g data-blast="29,4">
