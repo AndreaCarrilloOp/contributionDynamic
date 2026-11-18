@@ -36,7 +36,7 @@ One arcade hero navigates free cells, plants a single bomb beside an intact cont
 
 ### GitChess
 
-One golden queen moves across a classic wood-toned checkerboard, capturing ebony pawns that represent active contribution days. Pawn size encodes GitHub activity levels. The queen cannot pass through standing pawns; the calendar resets after she returns to her starting square.
+One golden queen moves across a high-contrast wood-toned checkerboard, capturing ebony pieces that represent active contribution days. Activity levels map to pawn, knight, bishop and rook, with increasing piece size. The queen cannot pass through standing pieces; the calendar resets after she returns to her starting square.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg">

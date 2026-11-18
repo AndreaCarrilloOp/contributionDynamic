@@ -6,7 +6,8 @@ from contribution_dynamic.calendar import Day, demo_calendar
 from contribution_dynamic.scenarios.chess import (
     FIRST_MOVE,
     LEFT,
-    PAWN_SCALES,
+    PIECE_BY_LEVEL,
+    PIECE_SCALES,
     STAGING_ROW,
     STEP,
     TOP,
@@ -36,13 +37,13 @@ def test_chess_geometry():
     assert legal_move("pawn", (3, 3), (4, 2), -1)
 
 
-def test_queen_cannot_jump_over_standing_pawn():
+def test_queen_cannot_jump_over_standing_piece():
     visible = set(queen_rays((2, 2), {(2, 4), (4, 4)}, 53))
     assert (2, 4) in visible and (2, 5) not in visible
     assert (4, 4) in visible and (5, 5) not in visible
 
 
-def test_one_continuous_legal_route_captures_all_pawns():
+def test_one_continuous_legal_route_captures_all_pieces():
     demo = demo_calendar()
     for days in (demo, tuple(replace(d, count=1) for d in demo)):
         match = plan_match(days)
@@ -79,30 +80,34 @@ def test_svg_preserves_coordinates_and_exact_api_level():
         root = ElementTree.fromstring(render_chess((day,), theme))
         cell = root.find(".//s:g[@id='calendar']/s:rect", NS)
         assert cell is not None
-        assert cell.attrib["fill"] == "#f0d9b5"
+        assert cell.attrib["fill"] == "#f3e4bf"
         assert cell.attrib["data-level"] == "1"
-        pawn = root.find(".//s:g[@data-piece='pawn']", NS)
-        assert pawn is not None
-        assert float(pawn.attrib["data-scale"]) == PAWN_SCALES[0]
-        assert pawn.attrib["data-level"] == "1"
+        piece = root.find(".//s:g[@data-piece='contribution']", NS)
+        assert piece is not None
+        assert float(piece.attrib["data-scale"]) == PIECE_SCALES[1]
+        assert piece.attrib["data-level"] == "1"
+        assert piece.attrib["data-kind"] == "pawn"
         assert int(cell.attrib["x"]) == LEFT + day.week * STEP
         assert int(cell.attrib["y"]) == TOP + day.weekday * STEP
 
 
-def test_svg_single_queen_and_each_active_pawn_restores():
+def test_svg_single_queen_and_each_active_piece_restores():
     days = demo_calendar()
     for theme in ("dark", "light"):
         svg = render_chess(days, theme)
         assert svg == render_chess(days, theme)
         root = ElementTree.fromstring(svg)
         assert len(root.findall(".//s:g[@data-piece='queen']", NS)) == 1
-        pawns = root.findall(".//s:g[@data-piece='pawn']", NS)
-        assert {p.attrib["data-pawn"] for p in pawns} == {
+        pieces = root.findall(".//s:g[@data-piece='contribution']", NS)
+        assert {p.attrib["data-piece-date"] for p in pieces} == {
             d.date.isoformat() for d in days if d.count
         }
-        assert len(root.findall(".//s:circle[@data-capture]", NS)) == len(pawns)
-        for pawn in pawns:
-            animation = pawn.find("s:animate[@attributeName='opacity']", NS)
+        assert len(root.findall(".//s:circle[@data-capture]", NS)) == len(pieces)
+        for piece in pieces:
+            level = int(piece.attrib["data-level"])
+            assert piece.attrib["data-kind"] == PIECE_BY_LEVEL[level]
+            assert float(piece.attrib["data-scale"]) == PIECE_SCALES[level]
+            animation = piece.find("s:animate[@attributeName='opacity']", NS)
             assert animation is not None
             assert animation.attrib["calcMode"] == "discrete"
             values = animation.attrib["values"].split(";")
@@ -122,7 +127,7 @@ def test_empty_calendar_has_no_pieces_or_animations():
         assert not root.findall(".//s:animate", NS)
 
 
-def test_checkerboard_and_pawn_size_encode_separate_information():
+def test_checkerboard_and_piece_type_encode_separate_information():
     days = (
         Day(date(2026, 11, 15), 0, 0, 52),
         Day(date(2026, 11, 16), 7, 1, 52, 4),
@@ -134,10 +139,26 @@ def test_checkerboard_and_pawn_size_encode_separate_information():
         root = ElementTree.fromstring(render_chess(days, theme))
         cells = root.findall(".//s:g[@id='calendar']/s:rect", NS)
         assert [c.attrib["fill"] for c in cells] == [
-            "#f0d9b5", "#b58863", "#f0d9b5", "#b58863", "#f0d9b5"
+            "#f3e4bf", "#8f6c47", "#f3e4bf", "#8f6c47", "#f3e4bf"
         ]
-        pawns = root.findall(".//s:g[@data-piece='pawn']", NS)
-        assert len(pawns) == 4
-        for pawn in pawns:
-            level = int(pawn.attrib["data-level"])
-            assert float(pawn.attrib["data-scale"]) == PAWN_SCALES[level-1]
+        pieces = root.findall(".//s:g[@data-piece='contribution']", NS)
+        assert len(pieces) == 4
+        for piece in pieces:
+            level = int(piece.attrib["data-level"])
+            assert float(piece.attrib["data-scale"]) == PIECE_SCALES[level]
+
+
+def test_distinct_piece_symbols_match_all_four_levels():
+    days = tuple(Day(date(2026, 11, 15+level), 99, level, 52, level)
+                 for level in range(1, 5))
+    for theme in ("dark", "light"):
+        root = ElementTree.fromstring(render_chess(days, theme))
+        pieces = root.findall(".//s:g[@data-piece='contribution']", NS)
+        assert {p.attrib["data-level"]: p.attrib["data-kind"] for p in pieces} == {
+            "1": "pawn", "2": "knight", "3": "bishop", "4": "rook",
+        }
+        for piece in pieces:
+            symbol = piece.find(".//s:use", NS)
+            assert symbol is not None
+            assert symbol.attrib["href"] == "#chess-" + piece.attrib["data-kind"]
+            assert root.find(f".//s:g[@id='chess-{piece.attrib['data-kind']}']", NS) is not None

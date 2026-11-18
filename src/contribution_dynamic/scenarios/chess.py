@@ -1,4 +1,4 @@
-"""GitChess: one persistent golden queen captures contribution pawns."""
+"""GitChess: one persistent golden queen captures level-coded contribution pieces."""
 
 from collections import deque
 from dataclasses import dataclass
@@ -13,19 +13,20 @@ LEFT = 47
 TOP = 30
 FIRST_MOVE = .12
 STAGING_ROW = 7
-PAWN_SCALES = (.48, .56, .64, .72)
+PIECE_BY_LEVEL = {1: "pawn", 2: "knight", 3: "bishop", 4: "rook"}
+PIECE_SCALES = {1: .48, 2: .56, 3: .62, 4: .70}
 DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1),
               (1, 1), (-1, 1), (-1, -1), (1, -1))
 PALETTES = {
     "dark": {
-        "bg": "#0f1115", "text": "#c9bba5", "squares": ("#f0d9b5", "#b58863"),
-        "pawn": "#302b2a", "pawn_edge": "#fff0d6",
-        "queen": "#ffd66b", "queen_edge": "#64400d", "gold": "#d4af37",
+        "bg": "#111417", "text": "#d6c6a8", "squares": ("#f3e4bf", "#8f6c47"),
+        "piece": "#1d2229", "piece_edge": "#fff2d6",
+        "queen": "#ffd45c", "queen_edge": "#6a4708", "gold": "#f0c94d",
     },
     "light": {
-        "bg": "#faf7f1", "text": "#5d4b3b", "squares": ("#f0d9b5", "#b58863"),
-        "pawn": "#302b2a", "pawn_edge": "#fff0d6",
-        "queen": "#ffd66b", "queen_edge": "#64400d", "gold": "#956919",
+        "bg": "#faf8f3", "text": "#574636", "squares": ("#f3e4bf", "#8f6c47"),
+        "piece": "#20242b", "piece_edge": "#fff2d6",
+        "queen": "#f2c94c", "queen_edge": "#6a4708", "gold": "#d4a72c",
     },
 }
 Square = tuple[int, int]
@@ -82,7 +83,7 @@ def board_weeks(days: tuple[Day, ...]) -> int:
 
 
 def queen_rays(origin: Square, occupied: set[Square], weeks: int):
-    """Yield legal destinations, ending each ray at its first standing pawn."""
+    """Yield legal destinations, ending each ray at its first standing piece."""
     for dx, dy in DIRECTIONS:
         x, y = origin
         while True:
@@ -96,7 +97,7 @@ def queen_rays(origin: Square, occupied: set[Square], weeks: int):
 
 
 def _path_to_capture(origin: Square, pending: dict[Square, Day], weeks: int):
-    """Find a visible pawn, or the shortest legal sequence of empty queen moves."""
+    """Find a visible piece, or the shortest legal sequence of empty queen moves."""
     occupied = set(pending)
     queue = deque([origin])
     previous = {origin: None}
@@ -117,7 +118,7 @@ def _path_to_capture(origin: Square, pending: dict[Square, Day], weeks: int):
             if pos not in previous:
                 previous[pos] = current
                 queue.append(pos)
-    raise RuntimeError("No queen route to a remaining pawn")
+    raise RuntimeError("No queen route to a remaining piece")
 
 
 def plan_match(days: tuple[Day, ...]) -> Match | None:
@@ -168,6 +169,20 @@ def _sprite_defs():
         '<g id="chess-pawn"><circle cy="-4" r="2.6"/>',
         '<path d="M-1.7 -1.5H1.7Q1.7 1 3.5 4H-3.5Q-1.7 1 -1.7 -1.5Z"/>',
         '<path d="M-3.5 4H3.5L4.5 6H-4.5Z"/></g>',
+        '<g id="chess-knight">',
+        '<path d="M-4.5 4L-3.5 1L-1 -1L-4.4 -.6L-5 -3L-1.5 -6'
+        'L-1.2 -8L.5 -6.7C4.5 -6 5 -1 3.4 4Z"/>',
+        '<circle cx="-1.3" cy="-3.9" r=".65" fill="#fff2d6" stroke="none"/>',
+        '<path d="M-4 4H4L5 6H-5Z"/></g>',
+        '<g id="chess-bishop">',
+        '<path d="M0 -7Q5 -3 2.5 -.5L1.5 .5L3.5 4H-3.5L-1.5 .5'
+        'Q-5 -2 0 -7Z"/>',
+        '<path d="M.3 -5.4L-1 -2.4" fill="none"/>',
+        '<path d="M-4 4H4L5 6H-5Z"/></g>',
+        '<g id="chess-rook">',
+        '<path d="M-5 -6H-3V-3.8H-1V-6H1V-3.8H3V-6H5V-1.5'
+        'L3 0L3.5 4H-3.5L-3 0L-5 -1.5Z"/>',
+        '<path d="M-4 4H4L5 6H-5Z"/></g>',
         '<g id="chess-queen">',
         '<path d="M-5 -4L-2.5 -1L0 -5L2.5 -1L5 -4L3.1 1L3.7 4H-3.7L-3.1 1Z"/>',
         '<circle cx="-5" cy="-5" r=".9"/><circle cy="-6" r="1"/>',
@@ -185,7 +200,7 @@ def _queen(match: Match, p: dict) -> list[str]:
         f'<g data-piece="queen" transform="translate({_position(match.home)})">',
         track("transform", positions, times, match.cycle, transform=True),
         '<ellipse cy="5" rx="5.8" ry="1.6" fill="#000000" opacity=".25"/>',
-        f'<g fill="{p["queen"]}" stroke="{p["queen_edge"]}" stroke-width=".65" '
+        f'<g fill="{p["queen"]}" stroke="{p["queen_edge"]}" stroke-width=".7" '
         'stroke-linejoin="round" stroke-linecap="round">',
         '<use href="#chess-queen" xlink:href="#chess-queen"/>',
         '</g></g>',
@@ -201,8 +216,8 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
     parts = [
         '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
         f'width="{width}" height="{height}" viewBox="0 0 {width} {height}" '
-        'role="img" aria-label="GitChess queen captures contribution pawns">',
-        '<title>GitChess — one queen against the pawns</title>',
+        'role="img" aria-label="GitChess queen captures contribution pieces">',
+        '<title>GitChess — one queen against many pieces</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
         *_sprite_defs(),
         f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
@@ -225,20 +240,22 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
             parts.append(track("fill", [color, p["gold"], color],
                                [hit-.035, hit, hit+.15], match.cycle))
         parts.append('</rect>')
-    parts.extend(['</g>', '<g id="contribution-pawns">'])
+    parts.extend(['</g>', '<g id="contribution-pieces">'])
     if match:
         for day, move in by_day.items():
             level = _level(day)
             x, y = _point(move.destination)
-            scale = PAWN_SCALES[level-1]
-            parts.append(f'<g data-piece="pawn" data-pawn="{day.date.isoformat()}" '
+            kind = PIECE_BY_LEVEL[level]
+            scale = PIECE_SCALES[level]
+            parts.append(f'<g data-piece="contribution" data-kind="{kind}" '
+                         f'data-piece-date="{day.date.isoformat()}" '
                          f'data-level="{level}" data-scale="{scale}" opacity="1" '
                          f'transform="translate({x} {y}) scale({scale})">')
             parts.append(track("opacity", [1, 0, 1],
                                [0, move.arrive, match.restore], match.cycle, "discrete"))
-            parts.append(f'<g fill="{p["pawn"]}" stroke="{p["pawn_edge"]}" '
+            parts.append(f'<g fill="{p["piece"]}" stroke="{p["piece_edge"]}" '
                          'stroke-width=".8" stroke-linejoin="round">')
-            parts.append('<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>')
+            parts.append(f'<use href="#chess-{kind}" xlink:href="#chess-{kind}"/></g></g>')
     parts.extend(['</g>', '<g id="capture-effects">'])
     if match:
         for move in by_day.values():
@@ -246,7 +263,7 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
             hit = move.arrive
             parts.extend([
                 f'<circle data-capture="{move.day.date.isoformat()}" cx="{x}" cy="{y}" '
-                f'r="3" fill="none" stroke="{p["gold"]}" stroke-width="1" opacity="0">',
+                f'r="3" fill="none" stroke="{p["gold"]}" stroke-width="1.1" opacity="0">',
                 track("opacity", [0, 1, 0], [hit-.02, hit, hit+.18], match.cycle),
                 track("r", [3, 7], [hit, hit+.18], match.cycle),
                 '</circle>',
