@@ -30,3 +30,29 @@ def demo_calendar(seed: int = 42, weeks: int = 53) -> tuple[Day, ...]:
         for w in range(weeks)
         for d in range(7)
     )
+
+
+MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+
+def month_label_positions(
+    days: tuple[Day, ...], left: int, step: int, width: int,
+) -> tuple[tuple[int, str], ...]:
+    """Label every represented month, including short boundary months.
+
+    Positions normally follow the first represented week. Shift labels
+    left if necessary to keep 10px month text separated and inside the SVG.
+    """
+    months = {}
+    for day in sorted(days, key=lambda d: d.date):
+        months.setdefault((day.date.year, day.date.month), day.week)
+    positions = [(left + week * step, MONTHS[month-1])
+                 for (_, month), week in months.items()]
+    right = width - 24
+    for i in range(len(positions)-1, -1, -1):
+        x, label = positions[i]
+        x = min(x, right)
+        positions[i] = (x, label)
+        right = x - 24
+    return tuple(positions)

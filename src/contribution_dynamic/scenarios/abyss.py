@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from math import hypot
 
 from contribution_dynamic.animation import track as _track
-from contribution_dynamic.calendar import Day
+from contribution_dynamic.calendar import Day, month_label_positions
 
 STEP = 13
 CELL = 10
@@ -26,8 +26,6 @@ PALETTES = {
         "deep": "#2563eb", "tentacle": "#0369a1",
     },
 }
-MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
-          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 
 
 @dataclass(frozen=True)
@@ -91,18 +89,6 @@ def plan_journeys(days: tuple[Day, ...]) -> tuple[Journey, ...]:
         positions.append(home)
         routes.append(Journey(tuple(visits), tuple(positions), tuple(times)))
     return tuple(routes)
-
-
-def _months(days: tuple[Day, ...]):
-    seen = set()
-    last = -4
-    for day in sorted(days, key=lambda d: d.date):
-        month = (day.date.year, day.date.month)
-        if month not in seen:
-            seen.add(month)
-            if day.week - last >= 3:
-                yield day.week, MONTHS[day.date.month - 1]
-                last = day.week
 
 
 def _jelly(route: Journey, index: int, cycle: float, p: dict) -> list[str]:
@@ -169,8 +155,8 @@ def render_abyss(days: tuple[Day, ...], theme: str = "dark") -> str:
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
         f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
     ]
-    for week, label in _months(days):
-        parts.append(f'<text x="{LEFT+week*STEP}" y="14">{label}</text>')
+    for x, label in month_label_positions(days, LEFT, STEP, width):
+        parts.append(f'<text x="{x}" y="14">{label}</text>')
     for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         parts.append(f'<text x="10" y="{TOP+row*STEP+8}">{label}</text>')
     parts.extend(['</g>', '<g id="calendar">'])

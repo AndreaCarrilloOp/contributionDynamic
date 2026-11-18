@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from math import atan2, cos, degrees, radians, sin
 
 from contribution_dynamic.animation import track
-from contribution_dynamic.calendar import Day
+from contribution_dynamic.calendar import Day, month_label_positions
 
 STEP = 13
 CELL = 10
@@ -20,8 +20,6 @@ FIRE_RANGE = 5
 SPAWN_RADIUS = 2
 PROJECTILE_SPEED = 150
 ROLES = ("hunter", "ambusher", "flanker")
-MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
-          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 PALETTES = {
     "dark": {
         "bg": "#080808", "empty": "#101010", "text": "#b7b3a6",
@@ -409,19 +407,6 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
                   tuple(sorted(enemy_routes, key=lambda enemy: enemy.enemy)))
 
 
-def _months(days):
-    seen = set()
-    last = -4
-    for day in sorted(days, key=lambda d: d.date):
-        month = (day.date.year, day.date.month)
-        if month not in seen:
-            seen.add(month)
-            if day.week - last >= 3:
-                yield day.week, MONTHS[day.date.month - 1]
-                last = day.week
-
-
-
 def _tank_sprite(p: dict, side: str = "hero") -> list[str]:
     """An original pixel-inspired silhouette, facing right, with a seven-unit muzzle."""
     return [
@@ -561,8 +546,8 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
         f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
     ]
-    for week, label in _months(days):
-        parts.append(f'<text x="{LEFT+week*STEP}" y="14">{label}</text>')
+    for x, label in month_label_positions(days, LEFT, STEP, width):
+        parts.append(f'<text x="{x}" y="14">{label}</text>')
     for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         parts.append(f'<text x="10" y="{TOP+row*STEP+8}">{label}</text>')
     parts.extend(['</g>', '<g id="calendar">'])

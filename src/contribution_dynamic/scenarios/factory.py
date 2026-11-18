@@ -3,7 +3,7 @@
 from dataclasses import dataclass
 
 from contribution_dynamic.animation import track as _track
-from contribution_dynamic.calendar import Day
+from contribution_dynamic.calendar import Day, month_label_positions
 
 STEP = 13
 CELL = 10
@@ -71,22 +71,6 @@ def _level(day: Day) -> int:
     if day.count == 0:
         return 0
     return max(1, day.level) if day.level is not None else contribution_level(day.count)
-
-
-def month_labels(days: tuple[Day, ...]) -> list[tuple[int, str]]:
-    labels = []
-    seen = set()
-    last_week = -4
-    names = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
-             "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
-    for day in sorted(days, key=lambda d: d.date):
-        month = (day.date.year, day.date.month)
-        if month not in seen:
-            seen.add(month)
-            if day.week - last_week >= 3:
-                labels.append((day.week, names[day.date.month - 1]))
-                last_week = day.week
-    return labels
 
 
 def _color(day, palette):
@@ -197,8 +181,8 @@ def render_factory(days: tuple[Day, ...], theme: str = "dark") -> str:
         f'<rect width="{width}" height="{height}" rx="6" fill="{palette["bg"]}"/>',
         f'<g font-family="system-ui,sans-serif" font-size="10" fill="{palette["text"]}">',
     ]
-    for week, label in month_labels(days):
-        p.append(f'<text x="{LEFT+week*STEP}" y="13">{label}</text>')
+    for x, label in month_label_positions(days, LEFT, STEP, width):
+        p.append(f'<text x="{x}" y="13">{label}</text>')
     for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         p.append(f'<text x="10" y="{TOP+row*STEP+8}">{label}</text>')
     p.extend(['</g>', '<g id="calendar">'])

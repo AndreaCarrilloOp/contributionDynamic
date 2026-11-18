@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from math import hypot
 
 from contribution_dynamic.animation import track as _track
-from contribution_dynamic.calendar import Day
+from contribution_dynamic.calendar import Day, month_label_positions
 
 STEP = 13
 CELL = 10
@@ -16,8 +16,6 @@ CADENCE = 1.65
 ARRIVAL = .88
 RESTORE = 1.48
 PIECES = ("knight", "rook", "bishop", "queen", "pawn", "king")
-MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
-          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 
 PALETTES = {
     "dark": {
@@ -144,18 +142,6 @@ def _point(square: Square) -> tuple[float, float]:
     return LEFT + square[0] * STEP + CELL / 2, TOP + square[1] * STEP + CELL / 2
 
 
-def _months(days):
-    seen = set()
-    last = -4
-    for day in sorted(days, key=lambda d: d.date):
-        month = (day.date.year, day.date.month)
-        if month not in seen:
-            seen.add(month)
-            if day.week - last >= 3:
-                yield day.week, MONTHS[day.date.month - 1]
-                last = day.week
-
-
 def _sprite_defs():
     parts = ['<defs>']
     for piece, shape in SHAPES.items():
@@ -221,8 +207,8 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
         *_sprite_defs(),
         f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
     ]
-    for week, name in _months(days):
-        parts.append(f'<text x="{LEFT+week*STEP}" y="14">{name}</text>')
+    for x, name in month_label_positions(days, LEFT, STEP, width):
+        parts.append(f'<text x="{x}" y="14">{name}</text>')
     for row, name in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         parts.append(f'<text x="10" y="{TOP+row*STEP+8}">{name}</text>')
     parts.extend(['</g>', '<g id="calendar">'])

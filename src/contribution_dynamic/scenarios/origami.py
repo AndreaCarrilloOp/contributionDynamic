@@ -1,7 +1,7 @@
 """Fold active contribution cells into paper birds using declarative SVG."""
 
 from contribution_dynamic.animation import track as _track
-from contribution_dynamic.calendar import Day
+from contribution_dynamic.calendar import Day, month_label_positions
 
 STEP = 13
 CELL = 10
@@ -54,22 +54,6 @@ def fold_schedule(days: tuple[Day, ...]) -> dict[Day, float]:
     return {day: FIRST_FOLD + i * cadence for i, day in enumerate(active)}
 
 
-def _months(days: tuple[Day, ...]) -> list[tuple[int, str]]:
-    names = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
-             "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
-    labels = []
-    seen = set()
-    last = -4
-    for day in sorted(days, key=lambda d: d.date):
-        key = (day.date.year, day.date.month)
-        if key not in seen:
-            seen.add(key)
-            if day.week - last >= 3:
-                labels.append((day.week, names[day.date.month - 1]))
-                last = day.week
-    return labels
-
-
 def _bird(day, color, shades, cycle, width, s):
     x = LEFT + day.week * STEP + CELL / 2
     y = TOP + day.weekday * STEP + CELL / 2
@@ -115,8 +99,8 @@ def render_origami(days: tuple[Day, ...], theme: str = "dark") -> str:
         f'<rect width="{width}" height="{height}" rx="6" fill="{bg}"/>',
         f'<g font-family="system-ui,sans-serif" font-size="10" fill="{text}">',
     ]
-    for week, label in _months(days):
-        parts.append(f'<text x="{LEFT+week*STEP}" y="14">{label}</text>')
+    for x, label in month_label_positions(days, LEFT, STEP, width):
+        parts.append(f'<text x="{x}" y="14">{label}</text>')
     for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         parts.append(f'<text x="10" y="{TOP+row*STEP+8}">{label}</text>')
     parts.extend(['</g>', '<g id="calendar">'])

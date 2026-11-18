@@ -30,3 +30,4 @@
 - Combine in-grid BFS navigation, hero-led brick destruction and silver enemy waves in GitTanks; restore the calendar after a safe return to spawn.
 - Add moving silver enemy pursuers to GitTanks, with role-based BFS interception and reserved-cell collision prevention.
 - Enable ranged tank duels with line-of-sight checks and restrict enemy spawns to the vicinity of intact contribution bricks.
+- Fix missing month labels (including December on rolling calendars) across all six scenarios using shared non-overlapping label placement.
