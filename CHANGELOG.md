@@ -20,3 +20,4 @@
 - Add GitChess with original chess-piece vectors, legal movement geometry and parallel capture zones.
 - Fix GitChess Ruff F541, share compact animation timeline serialization, add batch generation and a reusable composite action.
 - Add vector brand identity, live gallery, MIT license, setup guide and beta release checklist.
+- Restyle GitChess with classic checkerboard squares, ivory/ebony pieces and level-scaled golden capture tokens.

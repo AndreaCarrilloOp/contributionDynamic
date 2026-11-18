@@ -21,18 +21,22 @@ MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
 
 PALETTES = {
     "dark": {
-        "bg": "#0d1117", "empty": "#161b22", "text": "#8b949e",
-        "levels": ("#0e4429", "#006d32", "#26a641", "#39d353"),
-        "ivory": "#f1e5c9", "dark_piece": "#303943", "ink": "#111820",
-        "gold": "#d6b575",
+        "bg": "#0f1115", "text": "#c9bba5",
+        "squares": ("#f0d9b5", "#b58863"),
+        "ivory": "#fff4e0", "dark_piece": "#2b2b2b",
+        "ivory_edge": "#554237", "ebony_edge": "#e9d5ad",
+        "gold": "#d4af37", "token": "#ffe49a", "token_edge": "#6c4b17",
     },
     "light": {
-        "bg": "#ffffff", "empty": "#ebedf0", "text": "#57606a",
-        "levels": ("#9be9a8", "#40c463", "#30a14e", "#216e39"),
-        "ivory": "#fff3d8", "dark_piece": "#343b43", "ink": "#574630",
-        "gold": "#a47935",
+        "bg": "#faf7f1", "text": "#5d4b3b",
+        "squares": ("#f0d9b5", "#b58863"),
+        "ivory": "#fff4e0", "dark_piece": "#2b2b2b",
+        "ivory_edge": "#554237", "ebony_edge": "#e9d5ad",
+        "gold": "#956919", "token": "#f9d579", "token_edge": "#6c4b17",
     },
 }
+
+TOKEN_RADII = (1.5, 2.2, 3.0, 3.9)
 
 # Original vector silhouettes. Shared bases and strokes keep pieces legible
 # at calendar-cell size without chess fonts or external image dependencies.
@@ -176,7 +180,7 @@ def _capture(move: Capture, cycle: float, p: dict) -> list[str]:
     locations.append(f"{tx} {ty}")
     times.append(hit)
     fill = p["ivory"] if move.side == 1 else p["dark_piece"]
-    stroke = p["ink"] if move.side == 1 else gold
+    stroke = p["ivory_edge"] if move.side == 1 else p["ebony_edge"]
     parts = [
         f'<g data-capture="{move.day.date.isoformat()}" data-piece="{move.piece}" '
         f'data-lane="{move.lane}" opacity="0">',
@@ -225,16 +229,30 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP
         level = _level(day)
-        color = p["levels"][level-1] if level else p["empty"]
-        parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" '
-                     f'fill="{color}" data-date="{day.date.isoformat()}">')
+        color = p["squares"][(day.week + day.weekday) % 2]
+        parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx=".5" '
+                     f'fill="{color}" data-date="{day.date.isoformat()}" '
+                     f'data-level="{level}">')
         parts.append(f'<title>{day.date.isoformat()}: {day.count} contributions</title>')
         if day in by_day:
             s = by_day[day].start
             hit, end = s + ARRIVAL, s + RESTORE
-            parts.append(_track("fill", [color, p["gold"], p["empty"], color],
-                                [hit-.06, hit, hit+.22, end], cycle))
+            parts.append(_track("fill", [color, p["gold"], color],
+                                [hit-.06, hit, hit+.22], cycle))
         parts.append('</rect>')
+    parts.extend(['</g>', '<g id="contribution-tokens">'])
+    for day in sorted(by_day, key=lambda d: (d.week, d.weekday)):
+        level = _level(day)
+        x, y = _point((day.week, day.weekday))
+        move = by_day[day]
+        hit, end = move.start + ARRIVAL, move.start + RESTORE
+        radius = TOKEN_RADII[level - 1]
+        parts.append(f'<circle cx="{x}" cy="{y}" r="{radius}" fill="{p["token"]}" '
+                     f'stroke="{p["token_edge"]}" stroke-width=".65" '
+                     f'data-token="{day.date.isoformat()}" data-level="{level}" opacity="1">')
+        parts.append(_track("opacity", [1, 0, 0, 1],
+                            [hit-.06, hit+.10, end-.18, end], cycle))
+        parts.append('</circle>')
     parts.extend(['</g>', '<g id="chess-moves">'])
     for move in captures:
         parts.extend(_capture(move, cycle, p))

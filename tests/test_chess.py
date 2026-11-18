@@ -10,6 +10,7 @@ from contribution_dynamic.scenarios.chess import (
     PIECES,
     RESTORE,
     STEP,
+    TOKEN_RADII,
     TOP,
     board_weeks,
     legal_move,
@@ -73,11 +74,15 @@ def test_sparse_calendar_starts_immediately():
 
 def test_svg_preserves_coordinates_and_exact_api_level():
     day = Day(date(2026, 11, 17), 99, 2, 52, 1)
-    for theme, color in (("dark", "#0e4429"), ("light", "#9be9a8")):
+    for theme in ("dark", "light"):
         root = ElementTree.fromstring(render_chess((day,), theme))
         cell = root.find(".//s:g[@id='calendar']/s:rect", NS)
         assert cell is not None
-        assert cell.attrib["fill"] == color
+        assert cell.attrib["fill"] == "#f0d9b5"
+        assert cell.attrib["data-level"] == "1"
+        token = root.find(".//s:circle[@data-token]", NS)
+        assert token is not None
+        assert float(token.attrib["r"]) == TOKEN_RADII[0]
         assert int(cell.attrib["x"]) == LEFT + day.week * STEP
         assert int(cell.attrib["y"]) == TOP + day.weekday * STEP
 
@@ -103,3 +108,29 @@ def test_empty_calendar_has_no_captures():
     root = ElementTree.fromstring(render_chess(()))
     assert not root.findall(".//s:g[@data-capture]", NS)
     assert not root.findall(".//s:animate", NS)
+
+
+def test_checkerboard_is_independent_of_activity():
+    days = (
+        Day(date(2026, 11, 15), 0, 0, 52),
+        Day(date(2026, 11, 16), 7, 1, 52, 4),
+        Day(date(2026, 11, 17), 1, 2, 52, 1),
+        Day(date(2026, 11, 18), 8, 3, 52, 2),
+        Day(date(2026, 11, 19), 3, 4, 52, 3),
+    )
+    for theme in ("dark", "light"):
+        root = ElementTree.fromstring(render_chess(days, theme))
+        cells = root.findall(".//s:g[@id='calendar']/s:rect", NS)
+        assert [c.attrib["fill"] for c in cells] == [
+            "#f0d9b5", "#b58863", "#f0d9b5", "#b58863", "#f0d9b5"
+        ]
+        tokens = root.findall(".//s:circle[@data-token]", NS)
+        assert len(tokens) == 4
+        for token in tokens:
+            level = int(token.attrib["data-level"])
+            assert float(token.attrib["r"]) == TOKEN_RADII[level - 1]
+            animation = token.find("s:animate[@attributeName='opacity']", NS)
+            assert animation is not None
+            assert animation.attrib["values"].split(";")[0] == "1"
+            assert animation.attrib["values"].split(";")[-1] == "1"
+            assert "0" in animation.attrib["values"].split(";")

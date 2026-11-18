@@ -21,3 +21,5 @@ GitAbyss partitions active calendar days into up to seven deterministic serpenti
 GitChess divides the board into four disjoint column zones, prioritizes active cells by relative intensity and count, and schedules one temporary piece per zone. Each capture selects an in-bounds launch square satisfying the piece's movement geometry. SVG vector symbols, capture highlights, and restoration share a deterministic timeline. Chess check, checkmate, blocking, and turn-by-turn game state are intentionally out of scope.
 
 All four public scenarios share SMIL timeline serialization, retaining plateau boundaries while removing redundant interior keyframes and trailing numeric zeros. The registry drives batch generation and the composite action; selected themes and scenarios reuse one calendar fetch. No runtime speedup or browser-performance guarantee has been benchmarked yet.
+
+GitChess separates board parity from contribution intensity: alternating tan and brown squares are static at rest, while four golden token radii encode activity. Capture flashes and temporary token removal reuse the existing capture timestamps; ivory and ebony pieces have contrasting outlines.

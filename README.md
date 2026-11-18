@@ -47,7 +47,7 @@ Bioluminescent jellyfish collect contribution energy.
 
 ### GitChess
 
-Chess pieces capture and restore contribution tokens.
+Ivory and ebony chess pieces capture golden contribution tokens on a classic wood-toned checkerboard. Token size encodes GitHub activity levels.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg">
