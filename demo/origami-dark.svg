@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="752" height="151" viewBox="0 0 752 151" role="img" aria-label="GitOrigami contribution calendar animation">
+<svg xmlns="http://www.w3.org/2000/svg" width="749" height="151" viewBox="0 0 749 151" role="img" aria-label="GitOrigami contribution calendar animation">
 <title>GitOrigami — contribution calendar</title>
-<rect width="752" height="151" rx="6" fill="#0d1117"/>
+<rect width="749" height="151" rx="6" fill="#0d1117"/>
 <g id="calendar-labels" font-family="system-ui,sans-serif" font-size="10" fill="#8b949e">
 <g id="month-labels" text-anchor="start">
 <text x="47" y="13">Jan</text>

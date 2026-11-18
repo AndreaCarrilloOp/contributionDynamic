@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="752" height="178" viewBox="0 0 752 178" role="img" aria-label="GitInvaders pixel-art contribution battle">
+<svg xmlns="http://www.w3.org/2000/svg" width="749" height="178" viewBox="0 0 749 178" role="img" aria-label="GitInvaders pixel-art contribution battle">
 <title>GitInvaders — defend your contributions</title>
-<rect width="752" height="178" rx="6" fill="#090e1a"/>
+<rect width="749" height="178" rx="6" fill="#090e1a"/>
 <g id="calendar-labels" font-family="system-ui,sans-serif" font-size="10" fill="#93a6c3">
 <g id="month-labels" text-anchor="start">
 <text x="47" y="13">Nov</text>
@@ -668,7 +668,7 @@
 </rect>
 <rect x="437" y="99" width="10" height="10" rx="1" fill="#243a59" data-date="2026-06-18" data-level="2">
 <title>2026-06-18: 17 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.041337145;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.035874427;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="437" y="112" width="10" height="10" rx="1" fill="#141f30" data-date="2026-06-19" data-level="0">
 <title>2026-06-19: 0 contributions</title>
@@ -711,7 +711,7 @@
 </rect>
 <rect x="463" y="99" width="10" height="10" rx="1" fill="#34304c" data-date="2026-07-02" data-level="1">
 <title>2026-07-02: 7 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.085300765;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.156866578;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="463" y="112" width="10" height="10" rx="1" fill="#141f30" data-date="2026-07-03" data-level="0">
 <title>2026-07-03: 0 contributions</title>
@@ -727,7 +727,7 @@
 </rect>
 <rect x="476" y="73" width="10" height="10" rx="1" fill="#34304c" data-date="2026-07-07" data-level="1">
 <title>2026-07-07: 1 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.134815799;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.261228446;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="476" y="86" width="10" height="10" rx="1" fill="#141f30" data-date="2026-07-08" data-level="0">
 <title>2026-07-08: 0 contributions</title>
@@ -749,7 +749,7 @@
 </rect>
 <rect x="489" y="73" width="10" height="10" rx="1" fill="#243a59" data-date="2026-07-14" data-level="2">
 <title>2026-07-14: 18 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.184330834;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.362063282;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="489" y="86" width="10" height="10" rx="1" fill="#141f30" data-date="2026-07-15" data-level="0">
 <title>2026-07-15: 0 contributions</title>
@@ -816,22 +816,22 @@
 </rect>
 <rect x="528" y="86" width="10" height="10" rx="1" fill="#34304c" data-date="2026-08-05" data-level="1">
 <title>2026-08-05: 8 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.250831016;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.417973557;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="528" y="99" width="10" height="10" rx="1" fill="#34304c" data-date="2026-08-06" data-level="1">
 <title>2026-08-06: 1 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.239817726;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.408415677;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="528" y="112" width="10" height="10" rx="1" fill="#141f30" data-date="2026-08-07" data-level="0">
 <title>2026-08-07: 0 contributions</title>
 </rect>
 <rect x="528" y="125" width="10" height="10" rx="1" fill="#34304c" data-date="2026-08-08" data-level="1">
 <title>2026-08-08: 4 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.226864426;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.39717416;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="541" y="47" width="10" height="10" rx="1" fill="#53344e" data-date="2026-08-09" data-level="3">
 <title>2026-08-09: 23 contributions</title>
-<animate attributeName="fill" values="#53344e;#141f30;#53344e;#53344e" keyTimes="0;0.308660381;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#53344e;#141f30;#53344e;#53344e" keyTimes="0;0.316424884;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="541" y="60" width="10" height="10" rx="1" fill="#141f30" data-date="2026-08-10" data-level="0">
 <title>2026-08-10: 0 contributions</title>
@@ -868,11 +868,11 @@
 </rect>
 <rect x="554" y="112" width="10" height="10" rx="1" fill="#243a59" data-date="2026-08-21" data-level="2">
 <title>2026-08-21: 15 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.35975727;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.210905144;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="554" y="125" width="10" height="10" rx="1" fill="#34304c" data-date="2026-08-22" data-level="1">
 <title>2026-08-22: 10 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.34874398;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.201347264;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="567" y="47" width="10" height="10" rx="1" fill="#141f30" data-date="2026-08-23" data-level="0">
 <title>2026-08-23: 0 contributions</title>
@@ -903,11 +903,11 @@
 </rect>
 <rect x="580" y="73" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-01" data-level="1">
 <title>2026-09-01: 4 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.41667419;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.104333713;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="580" y="86" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-02" data-level="1">
 <title>2026-09-02: 7 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.4056609;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.094775833;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="580" y="99" width="10" height="10" rx="1" fill="#141f30" data-date="2026-09-03" data-level="0">
 <title>2026-09-03: 0 contributions</title>
@@ -920,18 +920,18 @@
 </rect>
 <rect x="593" y="47" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-06" data-level="1">
 <title>2026-09-06: 3 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.48654441;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.586322654;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="593" y="60" width="10" height="10" rx="1" fill="#53344e" data-date="2026-09-07" data-level="3">
+<rect x="593" y="60" width="10" height="10" rx="1" fill="#243a59" data-date="2026-09-07" data-level="2">
 <title>2026-09-07: 22 contributions</title>
-<animate attributeName="fill" values="#53344e;#141f30;#53344e;#53344e" keyTimes="0;0.475531121;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.576764775;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="73" width="10" height="10" rx="1" fill="#141f30" data-date="2026-09-08" data-level="0">
 <title>2026-09-08: 0 contributions</title>
 </rect>
 <rect x="593" y="86" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-09" data-level="1">
 <title>2026-09-09: 6 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.462577821;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.565523257;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="99" width="10" height="10" rx="1" fill="#141f30" data-date="2026-09-10" data-level="0">
 <title>2026-09-10: 0 contributions</title>
@@ -953,11 +953,11 @@
 </rect>
 <rect x="606" y="86" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-16" data-level="1">
 <title>2026-09-16: 7 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.54152132;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.722829045;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="606" y="99" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-17" data-level="1">
 <title>2026-09-17: 2 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.530508031;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.713271165;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="606" y="112" width="10" height="10" rx="1" fill="#141f30" data-date="2026-09-18" data-level="0">
 <title>2026-09-18: 0 contributions</title>
@@ -988,7 +988,7 @@
 </rect>
 <rect x="632" y="47" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-27" data-level="1">
 <title>2026-09-27: 2 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.599350685;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.84559171;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="632" y="60" width="10" height="10" rx="1" fill="#141f30" data-date="2026-09-28" data-level="0">
 <title>2026-09-28: 0 contributions</title>
@@ -1025,7 +1025,7 @@
 </rect>
 <rect x="645" y="112" width="10" height="10" rx="1" fill="#34304c" data-date="2026-10-09" data-level="1">
 <title>2026-10-09: 4 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.641374295;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.934375306;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="645" y="125" width="10" height="10" rx="1" fill="#141f30" data-date="2026-10-10" data-level="0">
 <title>2026-10-10: 0 contributions</title>
@@ -1053,7 +1053,7 @@
 </rect>
 <rect x="671" y="47" width="10" height="10" rx="1" fill="#34304c" data-date="2026-10-18" data-level="1">
 <title>2026-10-18: 5 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.69920366;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.89790513;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="671" y="60" width="10" height="10" rx="1" fill="#141f30" data-date="2026-10-19" data-level="0">
 <title>2026-10-19: 0 contributions</title>
@@ -1078,7 +1078,7 @@
 </rect>
 <rect x="684" y="60" width="10" height="10" rx="1" fill="#34304c" data-date="2026-10-26" data-level="1">
 <title>2026-10-26: 7 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.76713387;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.790935837;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="684" y="73" width="10" height="10" rx="1" fill="#141f30" data-date="2026-10-27" data-level="0">
 <title>2026-10-27: 0 contributions</title>
@@ -1091,11 +1091,11 @@
 </rect>
 <rect x="684" y="112" width="10" height="10" rx="1" fill="#34304c" data-date="2026-10-30" data-level="1">
 <title>2026-10-30: 2 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.750300549;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.776327045;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="684" y="125" width="10" height="10" rx="1" fill="#243a59" data-date="2026-10-31" data-level="2">
+<rect x="684" y="125" width="10" height="10" rx="1" fill="#34304c" data-date="2026-10-31" data-level="1">
 <title>2026-10-31: 11 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.739287259;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.766769165;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="47" width="10" height="10" rx="1" fill="#141f30" data-date="2026-11-01" data-level="0">
 <title>2026-11-01: 0 contributions</title>
@@ -1108,19 +1108,19 @@
 </rect>
 <rect x="697" y="86" width="10" height="10" rx="1" fill="#34304c" data-date="2026-11-04" data-level="1">
 <title>2026-11-04: 5 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.840257338;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.663621318;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="99" width="10" height="10" rx="1" fill="#243a59" data-date="2026-11-05" data-level="2">
+<rect x="697" y="99" width="10" height="10" rx="1" fill="#34304c" data-date="2026-11-05" data-level="1">
 <title>2026-11-05: 11 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.829244048;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.654063438;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="112" width="10" height="10" rx="1" fill="#34304c" data-date="2026-11-06" data-level="1">
 <title>2026-11-06: 8 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.818230759;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.644505558;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="125" width="10" height="10" rx="1" fill="#243a59" data-date="2026-11-07" data-level="2">
 <title>2026-11-07: 17 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.807217469;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.634947679;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="710" y="47" width="10" height="10" rx="1" fill="#141f30" data-date="2026-11-08" data-level="0">
 <title>2026-11-08: 0 contributions</title>
@@ -1148,609 +1148,609 @@
 </rect>
 <rect x="723" y="60" width="10" height="10" rx="1" fill="#34304c" data-date="2026-11-16" data-level="1">
 <title>2026-11-16: 10 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.908187548;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.507162417;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="73" width="10" height="10" rx="1" fill="#514026" data-date="2026-11-17" data-level="4">
 <title>2026-11-17: 70 contributions</title>
-<animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.897174259;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.497604537;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="86" width="10" height="10" rx="1" fill="#514026" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 42 contributions</title>
-<animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.886160969;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<title>2026-11-18: 44 contributions</title>
+<animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.488046657;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 </g>
-<path d="M42 162H740" stroke="#263751" stroke-width="1" stroke-dasharray="3 4"/>
+<path d="M42 162H737" stroke="#263751" stroke-width="1" stroke-dasharray="3 4"/>
 <g id="invaders" shape-rendering="crispEdges">
-<animateTransform attributeName="transform" type="translate" values="0 0;0.0 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;0 0;0 0" keyTimes="0;0.005730492;0.012416067;0.049694112;0.056379687;0.093657732;0.100343307;0.143172767;0.149858341;0.192687801;0.201823369;0.259187984;0.265873558;0.317017348;0.323702923;0.368114238;0.374799812;0.425031158;0.431716732;0.494901378;0.501586953;0.549878288;0.556563862;0.607707653;0.614393227;0.649731263;0.656416837;0.707560627;0.714246202;0.775490837;0.782176412;0.848614306;0.85529988;0.914873123;0.973735244;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="0 0;0.0 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;2.5 0;2.5 0;-2.5 0;-2.5 0;0 0;0 0" keyTimes="0;0.004973206;0.010775279;0.043127019;0.067993048;0.111586305;0.13176743;0.16411917;0.179615391;0.218157736;0.231311504;0.268481037;0.279292354;0.323677476;0.332146341;0.369315874;0.375442287;0.425226149;0.461263872;0.514415009;0.538740472;0.593575246;0.613215805;0.67087391;0.688172017;0.730081637;0.745037292;0.798188429;0.80845918;0.852844301;0.860772601;0.905157722;0.910959796;0.94017738;0.97720614;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <g data-invader="2026-06-18" data-level="2" transform="translate(442.0 104.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.041337145;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-1 -3h3v1h-3ZM-2 -2h5v1h-5ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-2 2h1v1h-1ZM0 2h1v1h-1ZM2 2h1v1h-1ZM-3 3h1v1h-1ZM3 3h1v1h-1Z" fill="#48b8ff"/>
-</g>
-<g data-invader="2026-07-02" data-level="1" transform="translate(468.0 104.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.085300765;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-07-07" data-level="1" transform="translate(481.0 78.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.134815799;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-07-14" data-level="2" transform="translate(494.0 78.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.184330834;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-1 -3h3v1h-3ZM-2 -2h5v1h-5ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-2 2h1v1h-1ZM0 2h1v1h-1ZM2 2h1v1h-1ZM-3 3h1v1h-1ZM3 3h1v1h-1Z" fill="#48b8ff"/>
-</g>
-<g data-invader="2026-08-08" data-level="1" transform="translate(533.0 130.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.226864426;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-08-06" data-level="1" transform="translate(533.0 104.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.239817726;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-08-05" data-level="1" transform="translate(533.0 91.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.250831016;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-08-09" data-level="3" transform="translate(546.0 52.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.308660381;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-3 -3h1v1h-1ZM3 -3h1v1h-1ZM-3 -2h2v1h-2ZM2 -2h2v1h-2ZM-4 -1h9v1h-9ZM-4 0h3v1h-3ZM0 0h1v1h-1ZM2 0h3v1h-3ZM-4 1h9v1h-9ZM-3 2h1v1h-1ZM-1 2h3v1h-3ZM3 2h1v1h-1ZM-4 3h1v1h-1ZM4 3h1v1h-1Z" fill="#ef58be"/>
-</g>
-<g data-invader="2026-08-22" data-level="1" transform="translate(559.0 130.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.34874398;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-08-21" data-level="2" transform="translate(559.0 117.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.35975727;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.035874427;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-1 -3h3v1h-3ZM-2 -2h5v1h-5ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-2 2h1v1h-1ZM0 2h1v1h-1ZM2 2h1v1h-1ZM-3 3h1v1h-1ZM3 3h1v1h-1Z" fill="#48b8ff"/>
 </g>
 <g data-invader="2026-09-02" data-level="1" transform="translate(585.0 91.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.4056609;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.094775833;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
 </g>
 <g data-invader="2026-09-01" data-level="1" transform="translate(585.0 78.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.41667419;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.104333713;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
 </g>
-<g data-invader="2026-09-09" data-level="1" transform="translate(598.0 91.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.462577821;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-invader="2026-07-02" data-level="1" transform="translate(468.0 104.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.156866578;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
 </g>
-<g data-invader="2026-09-07" data-level="3" transform="translate(598.0 65.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.475531121;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-invader="2026-08-22" data-level="1" transform="translate(559.0 130.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.201347264;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-08-21" data-level="2" transform="translate(559.0 117.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.210905144;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-1 -3h3v1h-3ZM-2 -2h5v1h-5ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-2 2h1v1h-1ZM0 2h1v1h-1ZM2 2h1v1h-1ZM-3 3h1v1h-1ZM3 3h1v1h-1Z" fill="#48b8ff"/>
+</g>
+<g data-invader="2026-07-07" data-level="1" transform="translate(481.0 78.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.261228446;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-08-09" data-level="3" transform="translate(546.0 52.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.316424884;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-3 -3h1v1h-1ZM3 -3h1v1h-1ZM-3 -2h2v1h-2ZM2 -2h2v1h-2ZM-4 -1h9v1h-9ZM-4 0h3v1h-3ZM0 0h1v1h-1ZM2 0h3v1h-3ZM-4 1h9v1h-9ZM-3 2h1v1h-1ZM-1 2h3v1h-3ZM3 2h1v1h-1ZM-4 3h1v1h-1ZM4 3h1v1h-1Z" fill="#ef58be"/>
 </g>
-<g data-invader="2026-09-06" data-level="1" transform="translate(598.0 52.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.48654441;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-09-17" data-level="1" transform="translate(611.0 104.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.530508031;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-09-16" data-level="1" transform="translate(611.0 91.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.54152132;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-09-27" data-level="1" transform="translate(637.0 52.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.599350685;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-10-09" data-level="1" transform="translate(650.0 117.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.641374295;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-10-18" data-level="1" transform="translate(676.0 52.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.69920366;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-10-31" data-level="2" transform="translate(689.0 130.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.739287259;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-invader="2026-07-14" data-level="2" transform="translate(494.0 78.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.362063282;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-1 -3h3v1h-3ZM-2 -2h5v1h-5ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-2 2h1v1h-1ZM0 2h1v1h-1ZM2 2h1v1h-1ZM-3 3h1v1h-1ZM3 3h1v1h-1Z" fill="#48b8ff"/>
 </g>
-<g data-invader="2026-10-30" data-level="1" transform="translate(689.0 117.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.750300549;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-invader="2026-08-08" data-level="1" transform="translate(533.0 130.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.39717416;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
 </g>
-<g data-invader="2026-10-26" data-level="1" transform="translate(689.0 65.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.76713387;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-invader="2026-08-06" data-level="1" transform="translate(533.0 104.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.408415677;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
 </g>
-<g data-invader="2026-11-07" data-level="2" transform="translate(702.0 130.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.807217469;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-1 -3h3v1h-3ZM-2 -2h5v1h-5ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-2 2h1v1h-1ZM0 2h1v1h-1ZM2 2h1v1h-1ZM-3 3h1v1h-1ZM3 3h1v1h-1Z" fill="#48b8ff"/>
-</g>
-<g data-invader="2026-11-06" data-level="1" transform="translate(702.0 117.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.818230759;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
-</g>
-<g data-invader="2026-11-05" data-level="2" transform="translate(702.0 104.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.829244048;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
-<path d="M-1 -3h3v1h-3ZM-2 -2h5v1h-5ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-2 2h1v1h-1ZM0 2h1v1h-1ZM2 2h1v1h-1ZM-3 3h1v1h-1ZM3 3h1v1h-1Z" fill="#48b8ff"/>
-</g>
-<g data-invader="2026-11-04" data-level="1" transform="translate(702.0 91.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.840257338;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-invader="2026-08-05" data-level="1" transform="translate(533.0 91.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.417973557;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
 </g>
 <g data-invader="2026-11-18" data-level="4" transform="translate(728.0 91.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.886160969;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.488046657;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-2 -3h2v1h-2ZM1 -3h2v1h-2ZM-3 -2h7v1h-7ZM-4 -1h9v1h-9ZM-4 0h2v1h-2ZM0 0h1v1h-1ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-3 2h2v1h-2ZM0 2h1v1h-1ZM2 2h2v1h-2ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#ffcd53"/>
 </g>
 <g data-invader="2026-11-17" data-level="4" transform="translate(728.0 78.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.897174259;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.497604537;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-2 -3h2v1h-2ZM1 -3h2v1h-2ZM-3 -2h7v1h-7ZM-4 -1h9v1h-9ZM-4 0h2v1h-2ZM0 0h1v1h-1ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-3 2h2v1h-2ZM0 2h1v1h-1ZM2 2h2v1h-2ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#ffcd53"/>
 </g>
 <g data-invader="2026-11-16" data-level="1" transform="translate(728.0 65.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.908187548;0.973735244;1" dur="20.940609s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.507162417;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-09-09" data-level="1" transform="translate(598.0 91.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.565523257;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-09-07" data-level="2" transform="translate(598.0 65.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.576764775;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-1 -3h3v1h-3ZM-2 -2h5v1h-5ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-2 2h1v1h-1ZM0 2h1v1h-1ZM2 2h1v1h-1ZM-3 3h1v1h-1ZM3 3h1v1h-1Z" fill="#48b8ff"/>
+</g>
+<g data-invader="2026-09-06" data-level="1" transform="translate(598.0 52.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.586322654;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-11-07" data-level="2" transform="translate(702.0 130.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.634947679;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-1 -3h3v1h-3ZM-2 -2h5v1h-5ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-2 2h1v1h-1ZM0 2h1v1h-1ZM2 2h1v1h-1ZM-3 3h1v1h-1ZM3 3h1v1h-1Z" fill="#48b8ff"/>
+</g>
+<g data-invader="2026-11-06" data-level="1" transform="translate(702.0 117.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.644505558;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-11-05" data-level="1" transform="translate(702.0 104.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.654063438;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-11-04" data-level="1" transform="translate(702.0 91.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.663621318;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-09-17" data-level="1" transform="translate(611.0 104.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.713271165;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-09-16" data-level="1" transform="translate(611.0 91.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.722829045;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-10-31" data-level="1" transform="translate(689.0 130.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.766769165;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-10-30" data-level="1" transform="translate(689.0 117.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.776327045;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-10-26" data-level="1" transform="translate(689.0 65.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.790935837;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-09-27" data-level="1" transform="translate(637.0 52.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.84559171;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-10-18" data-level="1" transform="translate(676.0 52.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.89790513;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
+</g>
+<g data-invader="2026-10-09" data-level="1" transform="translate(650.0 117.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.934375306;0.97720614;1" dur="24.129305s" calcMode="discrete" repeatCount="indefinite"/>
 <path d="M-2 -3h1v1h-1ZM2 -3h1v1h-1ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-4 0h2v1h-2ZM-1 0h3v1h-3ZM3 0h2v1h-2ZM-4 1h9v1h-9ZM-4 2h1v1h-1ZM-2 2h5v1h-5ZM4 2h1v1h-1ZM-2 3h1v1h-1ZM2 3h1v1h-1Z" fill="#49d8a0"/>
 </g>
 </g>
 <g id="lasers">
 <g data-laser="enemy" transform="translate(444.5 107.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.01384869;0.014326231;0.025309674;0.025787215;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="444.500 107.000;444.500 107.000;444.500 155.000;444.500 155.000" keyTimes="0;0.014326231;0.025787215;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.012018581;0.012433014;0.021964992;0.022379426;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="444.500 107.000;444.500 107.000;444.500 155.000;444.500 155.000" keyTimes="0;0.012433014;0.022379426;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
 </g>
 <g data-impact="true" transform="translate(444.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.025309674;0.025787215;0.02793615;0.031517707;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.021964992;0.022379426;0.024244378;0.027352632;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="hero" transform="translate(444.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.034144183;0.034621724;0.040859603;0.041337145;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="444.500 149.000;444.500 149.000;444.500 104.000;444.500 104.000" keyTimes="0;0.034621724;0.041337145;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.029632018;0.030046452;0.035459993;0.035874427;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="444.500 149.000;444.500 149.000;444.500 104.000;444.500 104.000" keyTimes="0;0.030046452;0.035874427;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
 <g data-impact="true" transform="translate(444.5 104.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.040859603;0.041337145;0.043486079;0.047067637;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(465.5 107.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.05781231;0.058289851;0.069273294;0.069750835;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="465.500 107.000;465.500 107.000;465.500 155.000;465.500 155.000" keyTimes="0;0.058289851;0.069750835;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(465.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.069273294;0.069750835;0.07189977;0.075481327;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(465.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.078107803;0.078585344;0.084823224;0.085300765;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="465.500 149.000;465.500 149.000;465.500 104.000;465.500 104.000" keyTimes="0;0.078585344;0.085300765;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(465.5 104.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.084823224;0.085300765;0.087449699;0.091031257;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(483.5 81.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.10177593;0.102253471;0.114908308;0.115385849;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="483.500 81.000;483.500 81.000;483.500 155.000;483.500 155.000" keyTimes="0;0.102253471;0.115385849;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(483.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.114908308;0.115385849;0.117534783;0.121116341;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(483.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.123742817;0.124220358;0.134338258;0.134815799;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="483.500 149.000;483.500 149.000;483.500 78.000;483.500 78.000" keyTimes="0;0.124220358;0.134815799;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(483.5 78.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.134338258;0.134815799;0.136964734;0.140546291;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(491.5 81.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.151290964;0.151768505;0.164423342;0.164900883;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="491.500 81.000;491.500 81.000;491.500 155.000;491.500 155.000" keyTimes="0;0.151768505;0.164900883;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(491.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.164423342;0.164900883;0.167049818;0.170631376;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(491.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.173257851;0.173735392;0.183853293;0.184330834;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="491.500 149.000;491.500 149.000;491.500 78.000;491.500 78.000" keyTimes="0;0.173735392;0.184330834;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(491.5 78.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.183853293;0.184330834;0.186479768;0.190061326;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(535.5 133.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.203255992;0.203733533;0.214716976;0.215194517;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="535.500 133.000;535.500 133.000;535.500 155.000;535.500 155.000" keyTimes="0;0.203733533;0.215194517;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(535.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.214716976;0.215194517;0.217343452;0.22092501;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(535.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.223551485;0.224029026;0.226386885;0.226864426;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="535.500 149.000;535.500 149.000;535.500 130.000;535.500 130.000" keyTimes="0;0.224029026;0.226864426;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(535.5 130.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.226386885;0.226864426;0.229013361;0.232594918;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(535.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.232624765;0.233102306;0.239340185;0.239817726;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="535.500 149.000;535.500 149.000;535.500 104.000;535.500 104.000" keyTimes="0;0.233102306;0.239817726;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(535.5 104.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.239340185;0.239817726;0.241966661;0.245548218;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(535.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.241698044;0.242175585;0.250353475;0.250831016;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="535.500 149.000;535.500 149.000;535.500 91.000;535.500 91.000" keyTimes="0;0.242175585;0.250831016;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(535.5 91.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.250353475;0.250831016;0.252979951;0.256561508;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(543.5 55.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.267306181;0.267783722;0.284872869;0.28535041;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="543.500 55.000;543.500 55.000;543.500 155.000;543.500 155.000" keyTimes="0;0.267783722;0.28535041;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(543.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.284872869;0.28535041;0.287499344;0.291080902;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(543.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.293707377;0.294184918;0.30818284;0.308660381;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="543.500 149.000;543.500 149.000;543.500 52.000;543.500 52.000" keyTimes="0;0.294184918;0.308660381;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(543.5 52.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.30818284;0.308660381;0.310809315;0.314390873;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ef58be"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(561.5 133.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.325135546;0.325613087;0.33659653;0.337074071;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="561.500 133.000;561.500 133.000;561.500 155.000;561.500 155.000" keyTimes="0;0.325613087;0.337074071;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(561.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.33659653;0.337074071;0.339223006;0.342804564;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(561.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.345431039;0.34590858;0.348266439;0.34874398;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="561.500 149.000;561.500 149.000;561.500 130.000;561.500 130.000" keyTimes="0;0.34590858;0.34874398;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(561.5 130.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.348266439;0.34874398;0.350892915;0.354474472;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(561.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.354504319;0.35498186;0.359279729;0.35975727;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="561.500 149.000;561.500 149.000;561.500 117.000;561.500 117.000" keyTimes="0;0.35498186;0.35975727;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(561.5 117.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.359279729;0.35975727;0.361906204;0.365487762;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.035459993;0.035874427;0.037739379;0.040847633;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(582.5 94.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.376232435;0.376709976;0.387693419;0.38817096;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="582.500 94.000;582.500 94.000;582.500 155.000;582.500 155.000" keyTimes="0;0.376709976;0.38817096;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.069236349;0.069650783;0.079182761;0.079597195;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="582.500 94.000;582.500 94.000;582.500 155.000;582.500 155.000" keyTimes="0;0.069650783;0.079597195;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
 </g>
 <g data-impact="true" transform="translate(582.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.387693419;0.38817096;0.390319895;0.393901453;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.079182761;0.079597195;0.081462147;0.084570401;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="hero" transform="translate(582.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.396527928;0.397005469;0.405183359;0.4056609;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="582.500 149.000;582.500 149.000;582.500 91.000;582.500 91.000" keyTimes="0;0.397005469;0.4056609;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.086849787;0.08726422;0.094361399;0.094775833;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="582.500 149.000;582.500 149.000;582.500 91.000;582.500 91.000" keyTimes="0;0.08726422;0.094775833;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
 <g data-impact="true" transform="translate(582.5 91.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.405183359;0.4056609;0.407809835;0.411391393;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.094361399;0.094775833;0.096640785;0.099749039;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="hero" transform="translate(582.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.405601208;0.406078749;0.416196649;0.41667419;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="582.500 149.000;582.500 149.000;582.500 78.000;582.500 78.000" keyTimes="0;0.406078749;0.41667419;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.094724029;0.095138463;0.103919279;0.104333713;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="582.500 149.000;582.500 149.000;582.500 78.000;582.500 78.000" keyTimes="0;0.095138463;0.104333713;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
 <g data-impact="true" transform="translate(582.5 78.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.416196649;0.41667419;0.418823125;0.422404682;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.103919279;0.104333713;0.106198665;0.109306919;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="enemy" transform="translate(600.5 94.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.433149355;0.433626896;0.44461034;0.445087881;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="600.500 94.000;600.500 94.000;600.500 155.000;600.500 155.000" keyTimes="0;0.433626896;0.445087881;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="enemy" transform="translate(470.5 107.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.133010731;0.133425165;0.142957143;0.143371577;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="470.500 107.000;470.500 107.000;470.500 155.000;470.500 155.000" keyTimes="0;0.133425165;0.143371577;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(600.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.44461034;0.445087881;0.447236815;0.450818373;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-impact="true" transform="translate(470.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.142957143;0.143371577;0.145236529;0.148344783;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="hero" transform="translate(600.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.453444849;0.45392239;0.46210028;0.462577821;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="600.500 149.000;600.500 149.000;600.500 91.000;600.500 91.000" keyTimes="0;0.45392239;0.462577821;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="hero" transform="translate(470.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.150624169;0.151038602;0.156452144;0.156866578;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="470.500 149.000;470.500 149.000;470.500 104.000;470.500 104.000" keyTimes="0;0.151038602;0.156866578;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(600.5 91.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.46210028;0.462577821;0.464726755;0.468308313;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-impact="true" transform="translate(470.5 104.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.156452144;0.156866578;0.15873153;0.161839784;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="hero" transform="translate(600.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.462518128;0.462995669;0.47505358;0.475531121;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="600.500 149.000;600.500 149.000;600.500 65.000;600.500 65.000" keyTimes="0;0.462995669;0.475531121;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(600.5 65.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.47505358;0.475531121;0.477680055;0.481261613;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ef58be"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(600.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.471591407;0.472068948;0.486066869;0.48654441;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="600.500 149.000;600.500 149.000;600.500 52.000;600.500 52.000" keyTimes="0;0.472068948;0.48654441;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(600.5 52.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.486066869;0.48654441;0.488693345;0.492274903;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(608.5 107.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.503019576;0.503497117;0.51448056;0.514958101;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="608.500 107.000;608.500 107.000;608.500 155.000;608.500 155.000" keyTimes="0;0.503497117;0.514958101;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="enemy" transform="translate(556.5 133.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.180858692;0.181273126;0.190805104;0.191219537;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="556.500 133.000;556.500 133.000;556.500 155.000;556.500 155.000" keyTimes="0;0.181273126;0.191219537;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(608.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.51448056;0.514958101;0.517107036;0.520688593;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-impact="true" transform="translate(556.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.190805104;0.191219537;0.19308449;0.196192743;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="hero" transform="translate(608.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.523315069;0.52379261;0.53003049;0.530508031;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="608.500 149.000;608.500 149.000;608.500 104.000;608.500 104.000" keyTimes="0;0.52379261;0.530508031;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="hero" transform="translate(556.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.198472129;0.198886563;0.20093283;0.201347264;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="556.500 149.000;556.500 149.000;556.500 130.000;556.500 130.000" keyTimes="0;0.198886563;0.201347264;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(608.5 104.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.53003049;0.530508031;0.532656965;0.536238523;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-impact="true" transform="translate(556.5 130.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.20093283;0.201347264;0.203212216;0.20632047;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="hero" transform="translate(608.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.532388348;0.532865889;0.541043779;0.54152132;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="608.500 149.000;608.500 149.000;608.500 91.000;608.500 91.000" keyTimes="0;0.532865889;0.54152132;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="hero" transform="translate(556.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.206346372;0.206760806;0.21049071;0.210905144;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="556.500 149.000;556.500 149.000;556.500 117.000;556.500 117.000" keyTimes="0;0.206760806;0.210905144;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(608.5 91.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.541043779;0.54152132;0.543670255;0.547251813;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(639.5 55.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.557996486;0.558474027;0.575563173;0.576040714;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="639.500 55.000;639.500 55.000;639.500 155.000;639.500 155.000" keyTimes="0;0.558474027;0.576040714;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(639.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.575563173;0.576040714;0.578189649;0.581771206;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(639.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.584397682;0.584875223;0.598873144;0.599350685;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="639.500 149.000;639.500 149.000;639.500 52.000;639.500 52.000" keyTimes="0;0.584875223;0.599350685;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(639.5 52.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.598873144;0.599350685;0.60149962;0.605081177;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(647.5 120.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.61582585;0.616303391;0.627286835;0.627764376;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="647.500 120.000;647.500 120.000;647.500 155.000;647.500 155.000" keyTimes="0;0.616303391;0.627764376;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(647.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.627286835;0.627764376;0.62991331;0.633494868;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(647.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.636121344;0.636598885;0.640896754;0.641374295;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="647.500 149.000;647.500 149.000;647.500 117.000;647.500 117.000" keyTimes="0;0.636598885;0.641374295;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(647.5 117.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.640896754;0.641374295;0.643523229;0.647104787;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(678.5 55.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.65784946;0.658327001;0.675416148;0.675893689;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="678.500 55.000;678.500 55.000;678.500 155.000;678.500 155.000" keyTimes="0;0.658327001;0.675893689;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(678.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.675416148;0.675893689;0.678042623;0.681624181;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(678.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.684250656;0.684728197;0.698726119;0.69920366;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="678.500 149.000;678.500 149.000;678.500 52.000;678.500 52.000" keyTimes="0;0.684728197;0.69920366;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(678.5 52.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.698726119;0.69920366;0.701352594;0.704934152;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="enemy" transform="translate(686.5 133.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.715678825;0.716156366;0.727139809;0.72761735;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="686.500 133.000;686.500 133.000;686.500 155.000;686.500 155.000" keyTimes="0;0.716156366;0.72761735;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(686.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.727139809;0.72761735;0.729766285;0.733347842;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(686.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.735974318;0.736451859;0.738809718;0.739287259;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="686.500 149.000;686.500 149.000;686.500 130.000;686.500 130.000" keyTimes="0;0.736451859;0.739287259;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(686.5 130.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.738809718;0.739287259;0.741436193;0.745017751;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-impact="true" transform="translate(556.5 117.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.21049071;0.210905144;0.212770096;0.21587835;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="hero" transform="translate(686.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.745047597;0.745525138;0.749823008;0.750300549;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="686.500 149.000;686.500 149.000;686.500 117.000;686.500 117.000" keyTimes="0;0.745525138;0.750300549;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="enemy" transform="translate(483.5 81.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.232554806;0.23296924;0.243951736;0.24436617;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="483.500 81.000;483.500 81.000;483.500 155.000;483.500 155.000" keyTimes="0;0.23296924;0.24436617;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(483.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.243951736;0.24436617;0.246231122;0.249339375;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(483.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.251618761;0.252033195;0.260814012;0.261228446;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="483.500 149.000;483.500 149.000;483.500 78.000;483.500 78.000" keyTimes="0;0.252033195;0.261228446;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(686.5 117.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.749823008;0.750300549;0.752449483;0.756031041;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-impact="true" transform="translate(483.5 78.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.260814012;0.261228446;0.263093398;0.266201651;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="hero" transform="translate(686.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.754120877;0.754598418;0.766656329;0.76713387;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="686.500 149.000;686.500 149.000;686.500 65.000;686.500 65.000" keyTimes="0;0.754598418;0.76713387;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="enemy" transform="translate(543.5 55.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.280535656;0.28095009;0.2957809;0.296195333;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="543.500 55.000;543.500 55.000;543.500 155.000;543.500 155.000" keyTimes="0;0.28095009;0.296195333;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(543.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.2957809;0.296195333;0.298060286;0.301168539;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(543.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.303447925;0.303862359;0.31601045;0.316424884;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="543.500 149.000;543.500 149.000;543.500 52.000;543.500 52.000" keyTimes="0;0.303862359;0.316424884;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(686.5 65.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.766656329;0.76713387;0.769282804;0.772864362;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-impact="true" transform="translate(543.5 52.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.31601045;0.316424884;0.318289836;0.32139809;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ef58be"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="enemy" transform="translate(496.5 81.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.333389642;0.333804076;0.344786572;0.345201006;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="496.500 81.000;496.500 81.000;496.500 155.000;496.500 155.000" keyTimes="0;0.333804076;0.345201006;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(496.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.344786572;0.345201006;0.347065958;0.350174212;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(496.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.352453598;0.352868032;0.361648848;0.362063282;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="496.500 149.000;496.500 149.000;496.500 78.000;496.500 78.000" keyTimes="0;0.352868032;0.362063282;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(496.5 78.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.361648848;0.362063282;0.363928234;0.367036488;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="enemy" transform="translate(530.5 133.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.376685588;0.377100022;0.386632;0.387046433;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="530.500 133.000;530.500 133.000;530.500 155.000;530.500 155.000" keyTimes="0;0.377100022;0.387046433;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(530.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.386632;0.387046433;0.388911386;0.392019639;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(530.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.394299025;0.394713459;0.396759726;0.39717416;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="530.500 149.000;530.500 149.000;530.500 130.000;530.500 130.000" keyTimes="0;0.394713459;0.39717416;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(530.5 130.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.396759726;0.39717416;0.399039112;0.402147366;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(530.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.402173268;0.402587702;0.408001243;0.408415677;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="530.500 149.000;530.500 149.000;530.500 104.000;530.500 104.000" keyTimes="0;0.402587702;0.408415677;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(530.5 104.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.408001243;0.408415677;0.410280629;0.413388883;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(530.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.41004751;0.410461944;0.417559123;0.417973557;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="530.500 149.000;530.500 149.000;530.500 91.000;530.500 91.000" keyTimes="0;0.410461944;0.417973557;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(530.5 91.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.417559123;0.417973557;0.419838509;0.422946763;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="enemy" transform="translate(730.5 94.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.462507173;0.462921607;0.472453585;0.472868019;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="730.500 94.000;730.500 94.000;730.500 155.000;730.500 155.000" keyTimes="0;0.462921607;0.472868019;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(730.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.472453585;0.472868019;0.474732971;0.477841225;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(730.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.480120611;0.480535044;0.487632223;0.488046657;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="730.500 149.000;730.500 149.000;730.500 91.000;730.500 91.000" keyTimes="0;0.480535044;0.488046657;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(730.5 91.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.487632223;0.488046657;0.489911609;0.493019863;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ffcd53"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(730.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.487994853;0.488409287;0.497190103;0.497604537;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="730.500 149.000;730.500 149.000;730.500 78.000;730.500 78.000" keyTimes="0;0.488409287;0.497604537;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(730.5 78.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.497190103;0.497604537;0.499469489;0.502577743;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ffcd53"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(730.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.495869096;0.496283529;0.506747983;0.507162417;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="730.500 149.000;730.500 149.000;730.500 65.000;730.500 65.000" keyTimes="0;0.496283529;0.507162417;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(730.5 65.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.506747983;0.507162417;0.509027369;0.512135623;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="enemy" transform="translate(595.5 94.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.539983773;0.540398207;0.549930185;0.550344619;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="595.500 94.000;595.500 94.000;595.500 155.000;595.500 155.000" keyTimes="0;0.540398207;0.550344619;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(595.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.549930185;0.550344619;0.552209571;0.555317825;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(595.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.557597211;0.558011644;0.565108823;0.565523257;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="595.500 149.000;595.500 149.000;595.500 91.000;595.500 91.000" keyTimes="0;0.558011644;0.565523257;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(595.5 91.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.565108823;0.565523257;0.567388209;0.570496463;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(595.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.565471453;0.565885887;0.576350341;0.576764775;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="595.500 149.000;595.500 149.000;595.500 65.000;595.500 65.000" keyTimes="0;0.565885887;0.576764775;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(595.5 65.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.576350341;0.576764775;0.578629727;0.58173798;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(595.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.573345696;0.573760129;0.585908221;0.586322654;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="595.500 149.000;595.500 149.000;595.500 52.000;595.500 52.000" keyTimes="0;0.573760129;0.586322654;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(595.5 52.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.585908221;0.586322654;0.588187607;0.59129586;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(704.5 133.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.783609035;0.784086576;0.795070019;0.79554756;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="704.500 133.000;704.500 133.000;704.500 155.000;704.500 155.000" keyTimes="0;0.784086576;0.79554756;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.614459107;0.614873541;0.624405518;0.624819952;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="704.500 133.000;704.500 133.000;704.500 155.000;704.500 155.000" keyTimes="0;0.614873541;0.624819952;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
 </g>
 <g data-impact="true" transform="translate(704.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.795070019;0.79554756;0.797696495;0.801278053;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.624405518;0.624819952;0.626684904;0.629793158;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="hero" transform="translate(704.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.803904528;0.804382069;0.806739928;0.807217469;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="704.500 149.000;704.500 149.000;704.500 130.000;704.500 130.000" keyTimes="0;0.804382069;0.807217469;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.632072544;0.632486978;0.634533245;0.634947679;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="704.500 149.000;704.500 149.000;704.500 130.000;704.500 130.000" keyTimes="0;0.632486978;0.634947679;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
 <g data-impact="true" transform="translate(704.5 130.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.806739928;0.807217469;0.809366404;0.812947961;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.634533245;0.634947679;0.636812631;0.639920884;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="hero" transform="translate(704.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.812977808;0.813455349;0.817753218;0.818230759;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="704.500 149.000;704.500 149.000;704.500 117.000;704.500 117.000" keyTimes="0;0.813455349;0.818230759;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.639946786;0.64036122;0.644091125;0.644505558;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="704.500 149.000;704.500 149.000;704.500 117.000;704.500 117.000" keyTimes="0;0.64036122;0.644505558;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
 <g data-impact="true" transform="translate(704.5 117.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.817753218;0.818230759;0.820379693;0.823961251;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.644091125;0.644505558;0.646370511;0.649478764;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="hero" transform="translate(704.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.822051087;0.822528628;0.828766507;0.829244048;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="704.500 149.000;704.500 149.000;704.500 104.000;704.500 104.000" keyTimes="0;0.822528628;0.829244048;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.647821029;0.648235463;0.653649004;0.654063438;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="704.500 149.000;704.500 149.000;704.500 104.000;704.500 104.000" keyTimes="0;0.648235463;0.654063438;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
 <g data-impact="true" transform="translate(704.5 104.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.828766507;0.829244048;0.831392983;0.834974541;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
-<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
-</g>
-<g data-laser="hero" transform="translate(704.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.831124366;0.831601907;0.839779797;0.840257338;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="704.500 149.000;704.500 149.000;704.500 91.000;704.500 91.000" keyTimes="0;0.831601907;0.840257338;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
-</g>
-<g data-impact="true" transform="translate(704.5 91.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.839779797;0.840257338;0.842406273;0.84598783;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.653649004;0.654063438;0.65592839;0.659036644;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="enemy" transform="translate(725.5 94.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.856732503;0.857210044;0.868193488;0.868671029;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="725.500 94.000;725.500 94.000;725.500 155.000;725.500 155.000" keyTimes="0;0.857210044;0.868671029;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="hero" transform="translate(704.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.655695271;0.656109705;0.663206884;0.663621318;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="704.500 149.000;704.500 149.000;704.500 91.000;704.500 91.000" keyTimes="0;0.656109705;0.663621318;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(704.5 91.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.663206884;0.663621318;0.66548627;0.668594524;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="enemy" transform="translate(608.5 107.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.689415319;0.689829752;0.69936173;0.699776164;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="608.500 107.000;608.500 107.000;608.500 155.000;608.500 155.000" keyTimes="0;0.689829752;0.699776164;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(725.5 155)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.868193488;0.868671029;0.870819964;0.874401521;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-impact="true" transform="translate(608.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.69936173;0.699776164;0.701641116;0.70474937;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="hero" transform="translate(725.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.877027997;0.877505538;0.885683428;0.886160969;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="725.500 149.000;725.500 149.000;725.500 91.000;725.500 91.000" keyTimes="0;0.877505538;0.886160969;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="hero" transform="translate(608.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.707028756;0.70744319;0.712856731;0.713271165;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="608.500 149.000;608.500 149.000;608.500 104.000;608.500 104.000" keyTimes="0;0.70744319;0.713271165;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(725.5 91.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.885683428;0.886160969;0.888309903;0.891891461;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ffcd53"/>
+<g data-impact="true" transform="translate(608.5 104.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.712856731;0.713271165;0.715136117;0.718244371;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="hero" transform="translate(725.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.886101276;0.886578817;0.896696718;0.897174259;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="725.500 149.000;725.500 149.000;725.500 78.000;725.500 78.000" keyTimes="0;0.886578817;0.897174259;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="hero" transform="translate(608.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.714902998;0.715317432;0.722414611;0.722829045;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="608.500 149.000;608.500 149.000;608.500 91.000;608.500 91.000" keyTimes="0;0.715317432;0.722829045;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(725.5 78.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.896696718;0.897174259;0.899323193;0.902904751;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ffcd53"/>
+<g data-impact="true" transform="translate(608.5 91.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.722414611;0.722829045;0.724693997;0.727802251;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
-<g data-laser="hero" transform="translate(725.5 149)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.895174556;0.895652097;0.907710007;0.908187548;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="725.500 149.000;725.500 149.000;725.500 65.000;725.500 65.000" keyTimes="0;0.895652097;0.908187548;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-laser="enemy" transform="translate(691.5 133.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.746280593;0.746695027;0.756227005;0.756641439;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="691.500 133.000;691.500 133.000;691.500 155.000;691.500 155.000" keyTimes="0;0.746695027;0.756641439;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(691.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.756227005;0.756641439;0.758506391;0.761614644;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(691.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.76389403;0.764308464;0.766354731;0.766769165;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="691.500 149.000;691.500 149.000;691.500 130.000;691.500 130.000" keyTimes="0;0.764308464;0.766769165;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
 </g>
-<g data-impact="true" transform="translate(725.5 65.0)" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.907710007;0.908187548;0.910336483;0.913918041;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<g data-impact="true" transform="translate(691.5 130.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.766354731;0.766769165;0.768634117;0.771742371;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(691.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.771768273;0.772182707;0.775912611;0.776327045;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="691.500 149.000;691.500 149.000;691.500 117.000;691.500 117.000" keyTimes="0;0.772182707;0.776327045;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(691.5 117.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.775912611;0.776327045;0.778191997;0.781300251;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(691.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.779642515;0.780056949;0.790521403;0.790935837;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="691.500 149.000;691.500 149.000;691.500 65.000;691.500 65.000" keyTimes="0;0.780056949;0.790935837;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(691.5 65.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.790521403;0.790935837;0.792800789;0.795909043;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="enemy" transform="translate(634.5 55.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.809702481;0.810116915;0.824947725;0.825362159;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="634.500 55.000;634.500 55.000;634.500 155.000;634.500 155.000" keyTimes="0;0.810116915;0.825362159;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(634.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.824947725;0.825362159;0.827227111;0.830335365;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(634.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.832614751;0.833029185;0.845177276;0.84559171;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="634.500 149.000;634.500 149.000;634.500 52.000;634.500 52.000" keyTimes="0;0.833029185;0.84559171;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(634.5 52.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.845177276;0.84559171;0.847456662;0.850564915;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="enemy" transform="translate(678.5 55.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.862015902;0.862430336;0.877261146;0.87767558;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="678.500 55.000;678.500 55.000;678.500 155.000;678.500 155.000" keyTimes="0;0.862430336;0.87767558;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(678.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.877261146;0.87767558;0.879540532;0.882648786;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(678.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.884928172;0.885342605;0.897490697;0.89790513;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="678.500 149.000;678.500 149.000;678.500 52.000;678.500 52.000" keyTimes="0;0.885342605;0.89790513;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(678.5 52.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.897490697;0.89790513;0.899770083;0.902878336;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="enemy" transform="translate(647.5 120.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.912203097;0.912617531;0.922149509;0.922563942;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="647.500 120.000;647.500 120.000;647.500 155.000;647.500 155.000" keyTimes="0;0.912617531;0.922563942;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V-5" stroke="#ff745e" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(647.5 155)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.922149509;0.922563942;0.924428895;0.927537148;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ff745e"/>
+<path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
+</g>
+<g data-laser="hero" transform="translate(647.5 149)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.929816534;0.930230968;0.933960872;0.934375306;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="647.500 149.000;647.500 149.000;647.500 117.000;647.500 117.000" keyTimes="0;0.930230968;0.934375306;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M0 0V5" stroke="#7fffe4" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g data-impact="true" transform="translate(647.5 117.0)" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.933960872;0.934375306;0.936240258;0.939348512;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 </g>
 <g data-ship="hero" transform="translate(442.0 155)">
-<animateTransform attributeName="transform" type="translate" values="442.000 155.000;442.000 155.000;444.500 155.000;444.500 155.000;455.500 155.000;455.500 155.000;444.500 155.000;444.500 155.000;465.500 155.000;465.500 155.000;476.500 155.000;476.500 155.000;465.500 155.000;465.500 155.000;483.500 155.000;483.500 155.000;494.500 155.000;494.500 155.000;483.500 155.000;483.500 155.000;491.500 155.000;491.500 155.000;502.500 155.000;502.500 155.000;491.500 155.000;491.500 155.000;535.500 155.000;535.500 155.000;546.500 155.000;546.500 155.000;535.500 155.000;535.500 155.000;543.500 155.000;543.500 155.000;554.500 155.000;554.500 155.000;543.500 155.000;543.500 155.000;561.500 155.000;561.500 155.000;572.500 155.000;572.500 155.000;561.500 155.000;561.500 155.000;582.500 155.000;582.500 155.000;593.500 155.000;593.500 155.000;582.500 155.000;582.500 155.000;600.500 155.000;600.500 155.000;611.500 155.000;611.500 155.000;600.500 155.000;600.500 155.000;608.500 155.000;608.500 155.000;619.500 155.000;619.500 155.000;608.500 155.000;608.500 155.000;639.500 155.000;639.500 155.000;650.500 155.000;650.500 155.000;639.500 155.000;639.500 155.000;647.500 155.000;647.500 155.000;658.500 155.000;658.500 155.000;647.500 155.000;647.500 155.000;678.500 155.000;678.500 155.000;689.500 155.000;689.500 155.000;678.500 155.000;678.500 155.000;686.500 155.000;686.500 155.000;697.500 155.000;697.500 155.000;686.500 155.000;686.500 155.000;704.500 155.000;704.500 155.000;715.500 155.000;715.500 155.000;704.500 155.000;704.500 155.000;725.500 155.000;725.500 155.000;714.500 155.000;714.500 155.000;725.500 155.000;725.500 155.000;442.000 155.000;442.000 155.000" keyTimes="0;0.005730492;0.012416067;0.015281313;0.022444428;0.027458609;0.033427871;0.049694112;0.056379687;0.059244933;0.066408048;0.071422229;0.077391492;0.093657732;0.100343307;0.103208553;0.110371668;0.117057242;0.123026505;0.143172767;0.149858341;0.152723587;0.159886703;0.166572277;0.17254154;0.192687801;0.201823369;0.204688615;0.21185173;0.216865911;0.222835174;0.259187984;0.265873558;0.268738804;0.275901919;0.287021803;0.292991066;0.317017348;0.323702923;0.326568169;0.333731284;0.338745465;0.344714728;0.368114238;0.374799812;0.377665058;0.384828173;0.389842354;0.395811617;0.425031158;0.431716732;0.434581978;0.441745094;0.446759274;0.452728537;0.494901378;0.501586953;0.504452199;0.511615314;0.516629495;0.522598757;0.549878288;0.556563862;0.559429109;0.566592224;0.577712108;0.58368137;0.607707653;0.614393227;0.617258473;0.624421589;0.629435769;0.635405032;0.649731263;0.656416837;0.659282083;0.666445198;0.677565082;0.683534345;0.707560627;0.714246202;0.717111448;0.724274563;0.729288744;0.735258007;0.775490837;0.782176412;0.785041658;0.792204773;0.797218954;0.803188217;0.848614306;0.85529988;0.858165126;0.865328242;0.870342422;0.876311685;0.914873123;0.973735244;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="442.000 155.000;442.000 155.000;444.500 155.000;444.500 155.000;455.500 155.000;455.500 155.000;444.500 155.000;444.500 155.000;582.500 155.000;582.500 155.000;593.500 155.000;593.500 155.000;582.500 155.000;582.500 155.000;470.500 155.000;470.500 155.000;481.500 155.000;481.500 155.000;470.500 155.000;470.500 155.000;556.500 155.000;556.500 155.000;567.500 155.000;567.500 155.000;556.500 155.000;556.500 155.000;483.500 155.000;483.500 155.000;494.500 155.000;494.500 155.000;483.500 155.000;483.500 155.000;543.500 155.000;543.500 155.000;554.500 155.000;554.500 155.000;543.500 155.000;543.500 155.000;496.500 155.000;496.500 155.000;507.500 155.000;507.500 155.000;496.500 155.000;496.500 155.000;530.500 155.000;530.500 155.000;541.500 155.000;541.500 155.000;530.500 155.000;530.500 155.000;730.500 155.000;730.500 155.000;719.500 155.000;719.500 155.000;730.500 155.000;730.500 155.000;595.500 155.000;595.500 155.000;606.500 155.000;606.500 155.000;595.500 155.000;595.500 155.000;704.500 155.000;704.500 155.000;715.500 155.000;715.500 155.000;704.500 155.000;704.500 155.000;608.500 155.000;608.500 155.000;619.500 155.000;619.500 155.000;608.500 155.000;608.500 155.000;691.500 155.000;691.500 155.000;702.500 155.000;702.500 155.000;691.500 155.000;691.500 155.000;634.500 155.000;634.500 155.000;645.500 155.000;645.500 155.000;634.500 155.000;634.500 155.000;678.500 155.000;678.500 155.000;689.500 155.000;689.500 155.000;678.500 155.000;678.500 155.000;647.500 155.000;647.500 155.000;658.500 155.000;658.500 155.000;647.500 155.000;647.500 155.000;442.000 155.000;442.000 155.000" keyTimes="0;0.004973206;0.010775279;0.013261882;0.019478389;0.023829944;0.029010367;0.043127019;0.067993048;0.070479651;0.076696158;0.081047713;0.086228136;0.111586305;0.13176743;0.134254033;0.14047054;0.144822095;0.150002518;0.16411917;0.179615391;0.182101994;0.188318501;0.192670056;0.197850479;0.218157736;0.231311504;0.233798107;0.240014615;0.245816688;0.250997111;0.268481037;0.279292354;0.281778957;0.287995464;0.297645852;0.302826275;0.323677476;0.332146341;0.334632944;0.340849451;0.346651524;0.351831947;0.369315874;0.375442287;0.37792889;0.384145397;0.388496952;0.393677375;0.425226149;0.461263872;0.463750475;0.469966982;0.474318537;0.47949896;0.514415009;0.538740472;0.541227075;0.547443582;0.551795137;0.55697556;0.593575246;0.613215805;0.615702408;0.621918915;0.626270471;0.631450893;0.67087391;0.688172017;0.69065862;0.696875127;0.701226682;0.706407105;0.730081637;0.745037292;0.747523895;0.753740402;0.758091957;0.76327238;0.798188429;0.80845918;0.810945783;0.81716229;0.826812677;0.8319931;0.852844301;0.860772601;0.863259203;0.869475711;0.879126098;0.884306521;0.905157722;0.910959796;0.913446398;0.919662906;0.924014461;0.929194883;0.94017738;0.97720614;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 <path d="M0 -4h1v1h-1ZM-1 -3h3v1h-3ZM-1 -2h3v1h-3ZM-3 -1h7v1h-7ZM-5 0h11v1h-11ZM-7 1h15v1h-15ZM-7 2h3v1h-3ZM-2 2h5v1h-5ZM5 2h3v1h-3ZM-6 3h2v1h-2ZM3 3h2v1h-2Z" fill="#edf6ff"/>
 <path d="M-1 -1h3v4h-3Z" fill="#38bdf8"/>
 <path d="M-1 -5h3v-3h-3Z" fill="#7fffe4" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0" keyTimes="0;0.034048675;0.034621724;0.03748697;0.078012295;0.078585344;0.08145059;0.123647309;0.124220358;0.127085604;0.173162343;0.173735392;0.176600638;0.223455977;0.224029026;0.226894272;0.232529256;0.233102306;0.235967552;0.241602536;0.242175585;0.245040831;0.293611869;0.294184918;0.297050165;0.345335531;0.34590858;0.348773826;0.35440881;0.35498186;0.357847106;0.39643242;0.397005469;0.399870715;0.405505699;0.406078749;0.408943995;0.45334934;0.45392239;0.456787636;0.46242262;0.462995669;0.465860915;0.471495899;0.472068948;0.474934194;0.523219561;0.52379261;0.526657856;0.53229284;0.532865889;0.535731136;0.584302174;0.584875223;0.587740469;0.636025835;0.636598885;0.639464131;0.684155148;0.684728197;0.687593444;0.73587881;0.736451859;0.739317105;0.744952089;0.745525138;0.748390385;0.754025369;0.754598418;0.757463664;0.80380902;0.804382069;0.807247315;0.812882299;0.813455349;0.816320595;0.821955579;0.822528628;0.825393874;0.831028858;0.831601907;0.834467153;0.876932489;0.877505538;0.880370784;0.886005768;0.886578817;0.889444063;0.895079047;0.895652097;0.898517343;1" dur="20.940609s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0;1;0;0" keyTimes="0;0.029549131;0.030046452;0.032533055;0.0867669;0.08726422;0.089750823;0.094641142;0.095138463;0.097625066;0.150541282;0.151038602;0.153525205;0.198389242;0.198886563;0.201373166;0.206263485;0.206760806;0.209247408;0.251535875;0.252033195;0.254519798;0.303365038;0.303862359;0.306348962;0.352370711;0.352868032;0.355354635;0.394216138;0.394713459;0.397200062;0.402090381;0.402587702;0.405074304;0.409964624;0.410461944;0.412948547;0.480037724;0.480535044;0.483021647;0.487911966;0.488409287;0.49089589;0.495786209;0.496283529;0.498770132;0.557514324;0.558011644;0.560498247;0.565388566;0.565885887;0.56837249;0.573262809;0.573760129;0.576246732;0.631989657;0.632486978;0.634973581;0.6398639;0.64036122;0.642847823;0.647738142;0.648235463;0.650722066;0.655612385;0.656109705;0.658596308;0.706945869;0.70744319;0.709929792;0.714820111;0.715317432;0.717804035;0.763811144;0.764308464;0.766795067;0.771685386;0.772182707;0.77466931;0.779559629;0.780056949;0.782543552;0.832531864;0.833029185;0.835515787;0.884845285;0.885342605;0.887829208;0.929733647;0.930230968;0.932717571;1" dur="24.129305s" calcMode="linear" repeatCount="indefinite"/>
 </path></g>
 <text x="47" y="173" fill="#93a6c3" font-size="8" letter-spacing="1.4" font-family="monospace">GITINVADERS</text>
 </svg>
