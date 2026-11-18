@@ -20,7 +20,7 @@ def main() -> int:
     commands = parser.add_subparsers(dest="command")
     generate = commands.add_parser("generate", help="Generate an SVG prototype")
     generate.add_argument("--user", help="GitHub login; omit for deterministic demo data")
-    generate.add_argument("--scenario", choices=RENDERERS, default="motion")
+    generate.add_argument("--scenario", choices=RENDERERS, default="factory")
     generate.add_argument("--seed", type=int, default=42)
     generate.add_argument("--theme", choices=["dark", "light"], default="dark")
     generate.add_argument("--output", type=Path, default=Path("contributions.svg"))

@@ -50,7 +50,7 @@ Run **CI** for token-free demo previews or **Validate GitHub GraphQL** for previ
 
 ## Automated publishing
 
-The **Publish contribution animations** workflow runs daily at 11:17 UTC and can also be started manually from the Actions tab. It uses the repository secret `CONTRIBUTION_TOKEN` to fetch the owner's calendar, validates all renderers and publishes six SVG files to the dedicated `output` branch. A failed generation leaves existing published assets untouched. No local token is required.
+The **Publish contribution animations** workflow runs daily at 11:17 UTC and can also be started manually from the Actions tab. It uses the repository secret `CONTRIBUTION_TOKEN` to fetch the owner's calendar, validates the code and publishes four SVG files to the dedicated `output` branch. A failed generation leaves existing published assets untouched. No local token is required.
 
 Use a read-only token limited to public data; the published SVGs expose calendar dates, contribution counts and activity levels. Do not publish private activity unless you intend to disclose it.
 
@@ -67,7 +67,7 @@ After the first successful publish, embed a scenario in a GitHub README with the
 </picture>
 ```
 
-Replace `factory` with `origami` or `motion` to select another scenario. GitHub image caching may delay visible updates.
+Replace `factory` with `origami` to select the other published scenario. The experimental `motion` renderer remains available for internal development through `--scenario motion`, but is not published. GitHub image caching may delay visible updates.
 
 ## Architecture
 
@@ -82,4 +82,4 @@ See [architecture](docs/architecture.md) and [contributing](CONTRIBUTING.md).
 - [x] Core tests and live GraphQL validation
 - [x] GitFactory board-based parallel prototype (visual validation pending)
 - [x] GitOrigami initial prototype (visual validation pending)
-- [x] Automated SVG publishing workflow (first live publish pending)
+- [x] Automated SVG publishing (first live publish verified)
