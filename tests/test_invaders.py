@@ -4,13 +4,22 @@ from xml.etree import ElementTree
 
 from contribution_dynamic.calendar import Day, demo_calendar
 from contribution_dynamic.scenarios.invaders import (
+    ARCADE_ALIENS,
+    ARCADE_HZ,
     DAMAGE_INTERVAL,
     DODGE,
+    DROP_LIMIT,
+    DROP_STEP,
     FIRST,
     LEFT,
+    MARCH_LIMIT,
+    MARCH_STEP,
     MAX_BURST,
+    MIN_MARCH_INTERVAL,
     STEP,
     TOP,
+    alien_position,
+    march_interval,
     plan_battle,
     render_invaders,
 )
@@ -83,7 +92,8 @@ def test_level_selects_original_pixel_sprite():
         root = ElementTree.fromstring(render_invaders(days, theme))
         invaders = root.findall(".//s:g[@data-invader]", NS)
         assert {i.attrib["data-level"] for i in invaders} == {"1", "2", "3", "4"}
-        sprites = [i.find("s:path", NS) for i in invaders]
+        sprites = [root.find(f".//s:g[@id='invader-sprite-{i}']/s:path", NS)
+                   for i in range(1, 5)]
         assert all(s is not None for s in sprites)
         assert len({s.attrib["d"] for s in sprites}) == 4
         assert len({s.attrib["fill"] for s in sprites}) == 4
@@ -132,3 +142,39 @@ def test_hits_are_occasional_and_visually_distinct_from_misses():
     assert len(root.findall(".//s:g[@data-hit-kind='ship']", NS)) == hits
     assert len(root.findall(".//s:g[@data-hit-kind='miss']", NS)) == len(battle.volleys)-hits
     assert root.find(".//s:g[@data-ship-body='true']/s:animate", NS) is not None
+
+
+def test_arcade_march_has_discrete_turns_and_progressive_speed():
+    battle = plan_battle(demo_calendar())
+    assert battle is not None
+    march = battle.march
+    assert march[0].time == 0
+    assert march[1].time == ARCADE_ALIENS/ARCADE_HZ
+    assert all(abs(step.x) <= MARCH_LIMIT and 0 <= step.y <= DROP_LIMIT for step in march)
+    assert any(step.y > 0 for step in march)
+    assert any(b.x < a.x for a, b in zip(march, march[1:]))
+    assert all(b.frame != a.frame and b.alive <= a.alive for a, b in zip(march, march[1:]))
+    for a, b in zip(march, march[1:]):
+        assert abs(b.x-a.x) in (0, MARCH_STEP)
+        assert b.y-a.y in (0, DROP_STEP)
+        assert abs((b.time-a.time)-march_interval(a.alive, march[0].alive)) < 1e-7
+    assert march_interval(1, 55) == MIN_MARCH_INTERVAL
+    assert march_interval(20, 55) < march_interval(55, 55)
+
+
+def test_formation_and_impacts_share_march_clock():
+    days = demo_calendar()
+    battle = plan_battle(days)
+    assert battle is not None
+    for theme in ("dark", "light"):
+        root = ElementTree.fromstring(render_invaders(days, theme))
+        motion = root.find(".//s:g[@id='invaders']/s:animateTransform", NS)
+        assert motion is not None and motion.attrib["calcMode"] == "discrete"
+        for level in range(1, 5):
+            poses = root.findall(f".//s:g[@id='invader-sprite-{level}']/s:path", NS)
+            assert len(poses) == 2 and poses[0].attrib["d"] != poses[1].attrib["d"]
+        impacts = root.findall(".//s:g[@data-hit-kind='alien']", NS)
+        shots = [shot for volley in battle.volleys for shot in volley.shots]
+        for impact, shot in zip(impacts, shots, strict=True):
+            x, y = alien_position(shot.day, battle.march, shot.hit)
+            assert impact.attrib["transform"] == f"translate({x} {y})"

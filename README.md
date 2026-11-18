@@ -47,7 +47,7 @@ A team of ivory chess attackers — queen, rook, bishop and knight — takes tur
 
 ### GitInvaders
 
-A single pixel-art spaceship battles a colorful formation of contribution-powered aliens. Four original silhouettes encode activity levels. The ship dodges most enemy lasers, takes occasional hits with a damage flash, and revisits columns in short one- or two-shot bursts. The calendar restores at the end of the loop.
+A single pixel-art ship faces a marching alien formation. Discrete lateral steps, edge turns, a bounded descent, alternating poses and progressive acceleration evoke the 1978 arcade cadence while preserving the calendar and synchronized laser impacts.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-dark.svg">

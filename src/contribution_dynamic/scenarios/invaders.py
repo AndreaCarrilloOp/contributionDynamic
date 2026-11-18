@@ -1,6 +1,7 @@
 """GitInvaders: a single pixel-art ship against the contribution formation."""
 
-from dataclasses import dataclass
+from bisect import bisect_right
+from dataclasses import dataclass, replace
 from itertools import groupby
 
 from contribution_dynamic.animation import track
@@ -16,7 +17,13 @@ from contribution_dynamic.layout import (
 CELL = 10
 SHIP_Y = TOP + 7 * STEP + 17
 FIRST = .12
-SWAY = 2.5
+ARCADE_ALIENS = 55
+ARCADE_HZ = 60
+MARCH_STEP = 2
+MARCH_LIMIT = 10
+DROP_STEP = 4
+DROP_LIMIT = 8
+MIN_MARCH_INTERVAL = .12
 DODGE = 16
 DAMAGE_INTERVAL = 9
 MAX_BURST = 2
@@ -47,6 +54,17 @@ ALIENS = (
      "#########", ".#.###.#.", "#.......#"),
     ("..##.##..", ".#######.", "#########", "##..#..##",
      "#########", ".##.#.##.", "..#...#.."),
+)
+# Alternating original sprite poses, sharing the same nine-by-seven footprint.
+ALIENS_ALT = (
+    ("..#...#..", "...###...", ".#######.", "##.###.##",
+     "#########", "..#####..", ".#.....#."),
+    ("...###...", "..#####..", ".#######.", "##.###.##",
+     "#########", ".#..#..#.", "..#...#.."),
+    (".#.....#.", ".##...##.", "#########", "###.#.###",
+     "#########", "..#####..", ".#..#..#."),
+    ("..##.##..", ".#######.", "#########", "##..#..##",
+     "#########", "..#.#.#..", ".#.....#."),
 )
 SHIP = (
     ".......#.......", "......###......", "......###......",
@@ -81,11 +99,21 @@ class Volley:
 
 
 @dataclass(frozen=True)
+class March:
+    time: float
+    x: int
+    y: int
+    frame: int
+    alive: int
+
+
+@dataclass(frozen=True)
 class Battle:
     home: float
     volleys: tuple[Volley, ...]
     restore: float
     cycle: float
+    march: tuple[March, ...]
 
 
 def center(day: Day) -> tuple[float, float]:
@@ -145,6 +173,42 @@ def _attack_groups(days: tuple[Day, ...]) -> tuple[tuple[Day, ...], ...]:
     return tuple(groups)
 
 
+def march_interval(alive: int, initial: int) -> float:
+    """Scale the original 55-alien/60-Hz cadence to a variable calendar."""
+    return max(MIN_MARCH_INTERVAL, ARCADE_ALIENS/ARCADE_HZ * alive/max(1, initial))
+
+
+def plan_march(shots: tuple[Shot, ...]) -> tuple[March, ...]:
+    """March independently of the hero: discrete steps, edge turns and acceleration."""
+    if not shots:
+        return ()
+    hits = sorted(shot.hit for shot in shots)
+    initial = len(hits)
+    steps = [March(0.0, 0, 0, 0, initial)]
+    x = y = frame = 0
+    direction = 1
+    time = march_interval(initial, initial)
+    while time < hits[-1]:
+        alive = initial-bisect_right(hits, time)
+        if x+direction*MARCH_STEP > MARCH_LIMIT or x+direction*MARCH_STEP < -MARCH_LIMIT:
+            direction *= -1
+            if y < DROP_LIMIT:
+                y = min(DROP_LIMIT, y+DROP_STEP)
+            else:
+                x += direction*MARCH_STEP
+        else:
+            x += direction*MARCH_STEP
+        frame = 1-frame
+        steps.append(March(time, x, y, frame, alive))
+        time += march_interval(alive, initial)
+    return tuple(steps)
+
+
+def march_at(march: tuple[March, ...], time: float) -> March:
+    index = bisect_right(march, time, key=lambda step: step.time)-1
+    return march[max(0, index)]
+
+
 def plan_battle(days: tuple[Day, ...]) -> Battle | None:
     """Plan short attacks, mostly successful evasions and occasional damage."""
     groups = _attack_groups(days)
@@ -155,14 +219,15 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
     volleys = []
     width = calendar_width(LEFT, STEP, CELL, RIGHT, board_weeks(days))
     for i, column in enumerate(groups):
-        shift = SWAY if (i // 3) % 2 == 0 else -SWAY
-        base = center(column[0])[0] + shift
+        shift = 0.0
+        base = center(column[0])[0]
         damaged = (i+1) % DAMAGE_INTERVAL == 0
         direction = 1 if i % 2 == 0 else -1
         if not 8 <= base + direction*DODGE <= width-8:
             direction = -direction
         dodge = base if damaged else base + direction*DODGE
-        arrive = start + max(.12, abs(base - previous) / 255)
+        # Reserve room for the formation's horizontal march while approaching.
+        arrive = start + max(.12, (abs(base - previous)+2*MARCH_LIMIT) / 255)
         enemy_launch = arrive + .035
         distance = SHIP_Y - center(column[0])[1]
         enemy_hit = enemy_launch + max(.27, distance / 280)
@@ -179,8 +244,23 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
                               enemy_launch, enemy_hit, dodge_start, dodge_end,
                               settle, tuple(shots), end, damaged))
         previous, start = base, end + .035
-    restore = volleys[-1].end + max(.3, abs(previous - home) / 255)
-    return Battle(home, tuple(volleys), restore, max(4.0, restore + .55))
+    march = plan_march(tuple(shot for volley in volleys for shot in volley.shots))
+    # Align the ship with the formation at arrival; every shot uses the actual
+    # launch or impact coordinates from the same clock, even between steps.
+    adjusted = []
+    previous = home
+    for i, volley in enumerate(volleys):
+        shift = march_at(march, volley.arrive).x
+        base = center(volley.shots[0].day)[0] + shift
+        direction = 1 if i % 2 == 0 else -1
+        if not 8 <= base+direction*DODGE <= width-8:
+            direction = -direction
+        dodge = base if volley.damaged else base+direction*DODGE
+        adjusted.append(replace(volley, origin=previous, base=base,
+                                dodge=dodge, shift=shift))
+        previous = base
+    restore = adjusted[-1].end + max(.3, abs(previous-home)/255)
+    return Battle(home, tuple(adjusted), restore, max(4.0, restore+.55), march)
 
 
 def _pixels(rows, x, y):
@@ -234,18 +314,26 @@ def _ship(battle, p):
 
 
 def _formation(battle, p):
-    shifts, times = ["0 0"], [0.0]
-    previous = 0.0
-    for volley in battle.volleys:
-        shifts.extend((f"{previous} 0", f"{volley.shift} 0", f"{volley.shift} 0"))
-        times.extend((volley.start, volley.arrive, volley.end))
-        previous = volley.shift
-    shifts.append("0 0")
-    times.append(battle.restore)
-    parts = [
-        '<g id="invaders" shape-rendering="crispEdges">',
-        track("transform", shifts, times, battle.cycle, transform=True),
-    ]
+    times = [step.time for step in battle.march] + [battle.restore]
+    shifts = [_xy(step.x, step.y) for step in battle.march] + ["0 0"]
+    frames = [step.frame for step in battle.march] + [0]
+    # Define four shared sprites; the two walking poses use the same march clock.
+    parts = ['<defs>']
+    for i, rows in enumerate(ALIENS):
+        poses = (_pixels(rows, -4, -3), _pixels(ALIENS_ALT[i], -4, -3))
+        parts.extend([
+            f'<g id="invader-sprite-{i+1}">',
+            f'<path d="{poses[0]}" fill="{p["aliens"][i]}">',
+            track("opacity", [1-frame for frame in frames], times, battle.cycle, "discrete"),
+            '</path>',
+            f'<path d="{poses[1]}" fill="{p["aliens"][i]}" opacity="0">',
+            track("opacity", frames, times, battle.cycle, "discrete"),
+            '</path></g>',
+        ])
+    parts.extend([
+        '</defs>', '<g id="invaders" shape-rendering="crispEdges">',
+        track("transform", shifts, times, battle.cycle, "discrete", transform=True),
+    ])
     for volley in battle.volleys:
         for shot in volley.shots:
             day = shot.day
@@ -256,20 +344,21 @@ def _formation(battle, p):
                 f'transform="translate({x} {y})" opacity="1">',
                 track("opacity", [1, 0, 1], [0, shot.hit, battle.restore],
                       battle.cycle, "discrete"),
-                f'<path d="{_pixels(ALIENS[variant-1], -4, -3)}" '
-                f'fill="{p["aliens"][variant-1]}"/>',
+                f'<use href="#invader-sprite-{variant}" xlink:href="#invader-sprite-{variant}"/>',
                 '</g>',
             ])
     parts.append('</g>')
     return parts
 
 
-def _laser(x, origin, target, launch, hit, cycle, color, side):
-    direction = -1 if target < origin else 1
+def _laser(origin, target, launch, hit, cycle, color, side):
+    x, y = origin
+    tx, ty = target
+    direction = -1 if ty < y else 1
     return [
-        f'<g data-laser="{side}" transform="translate({x} {origin})" opacity="0">',
+        f'<g data-laser="{side}" transform="translate({x} {y})" opacity="0">',
         track("opacity", [0, 1, 1, 0], [launch-.01, launch, hit-.01, hit], cycle),
-        track("transform", [_xy(x, origin), _xy(x, target)],
+        track("transform", [_xy(x, y), _xy(tx, ty)],
               [launch, hit], cycle, transform=True),
         f'<path d="M0 0V{-direction*5}" stroke="{color}" stroke-width="1.5" '
         'stroke-linecap="square"/>',
@@ -289,21 +378,27 @@ def _burst(x, y, hit, cycle, color, spark, kind="alien"):
     return parts
 
 
+def alien_position(day, march, time):
+    x, y = center(day)
+    step = march_at(march, time)
+    return x+step.x, y+step.y
+
+
 def _combat(battle, p):
     parts = ['<g id="lasers">']
     for volley in battle.volleys:
-        _, enemy_y = center(volley.shots[0].day)
-        parts.extend(_laser(volley.base, enemy_y+3, SHIP_Y, volley.enemy_launch,
-                            volley.enemy_hit, battle.cycle, p["hostile"], "enemy"))
-        # A missed laser impacts the ground, not the hero; only real hits flash the ship.
-        parts.extend(_burst(volley.base, SHIP_Y if volley.damaged else SHIP_Y+6,
-                            volley.enemy_hit, battle.cycle, p["hostile"], p["spark"],
-                            "ship" if volley.damaged else "miss"))
+        x, y = alien_position(volley.shots[0].day, battle.march, volley.enemy_launch)
+        target_y = SHIP_Y if volley.damaged else SHIP_Y+6
+        parts.extend(_laser((x, y+3), (volley.base, target_y),
+                            volley.enemy_launch, volley.enemy_hit,
+                            battle.cycle, p["hostile"], "enemy"))
+        parts.extend(_burst(volley.base, target_y, volley.enemy_hit, battle.cycle,
+                            p["hostile"], p["spark"], "ship" if volley.damaged else "miss"))
         for shot in volley.shots:
-            _, y = center(shot.day)
-            parts.extend(_laser(volley.base, SHIP_Y-6, y, shot.launch, shot.hit,
+            x, y = alien_position(shot.day, battle.march, shot.hit)
+            parts.extend(_laser((volley.base, SHIP_Y-6), (x, y), shot.launch, shot.hit,
                                 battle.cycle, p["laser"], "hero"))
-            parts.extend(_burst(volley.base, y, shot.hit, battle.cycle,
+            parts.extend(_burst(x, y, shot.hit, battle.cycle,
                                 p["aliens"][contribution_level(shot.day)-1], p["spark"]))
     parts.append('</g>')
     return parts
@@ -319,7 +414,8 @@ def render_invaders(
     battle = plan_battle(days)
     by_day = {s.day: s for v in battle.volleys for s in v.shots} if battle else {}
     parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
+        f'width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" '
         'aria-label="GitInvaders pixel-art contribution battle">',
         '<title>GitInvaders — defend your contributions</title>',
