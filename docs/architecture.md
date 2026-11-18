@@ -1,17 +1,9 @@
 # Architecture
 
-## Planned pipeline
+The core prototype implements a normalized immutable calendar model, deterministic demo input, GitHub GraphQL collector, serpentine motion path and self-contained SVG renderer.
 
-GitHub contribution collector → normalized calendar → scenario simulation → SVG renderer.
+The first motion path visits active cells in alternating column order. It is a baseline for testing, not the final scenario behavior. Future scenarios will define their own simulation state, timing and geometry.
 
-The simulation will be deterministic for identical input, configuration, and seed. SVG output must work as a static image resource with embedded animation, without JavaScript.
+SVG output uses embedded declarative animation without JavaScript. GitHub image rendering compatibility and live API access require verification.
 
-## Boundaries
-
-- Collectors: retrieve and normalize contribution data.
-- Core: calendar models, timing and simulation contracts.
-- Scenarios: GitFactory and GitOrigami behavior.
-- Renderers: translate simulation frames into self-contained SVG.
-- Themes: visual configuration independent of simulation.
-
-These are intended components, not implemented modules. The first milestone provides packaging, a CLI entry point, and basic tests. No GitHub token is needed yet.
+The collector accepts credentials from the environment through the CLI. The default demo requires no token.
