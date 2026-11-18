@@ -1,5 +1,6 @@
 """GitBlast: arcade-style bombs and destructible contribution bricks."""
 
+from collections import deque
 from dataclasses import dataclass
 
 from contribution_dynamic.animation import track
@@ -8,14 +9,13 @@ from contribution_dynamic.calendar import Day, month_label_positions
 STEP = 13
 CELL = 10
 LEFT = 47
-TOP = 30
-LANES = 4
+TOP = 39
 FIRST = .12
-CADENCE = 1.95
-PLANT = .48
-IGNITE = .98
-CLEAR = 1.40
-RESTORE = 1.76
+WALK_TIME = .12
+RADIUS = 2
+FUSE = .45
+FLAME_TIME = .42
+DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
 PALETTES = {
     "dark": {
         "bg": "#10151e", "empty": "#202b38", "text": "#a5b4c6",
@@ -42,8 +42,18 @@ class Blast:
     shelter: Square
     cross: tuple[Square, ...]
     hits: tuple[Day, ...]
-    lane: int
     start: float
+    plant: float
+    hit: float
+    clear: float
+
+
+@dataclass(frozen=True)
+class Run:
+    positions: tuple[Square, ...]
+    times: tuple[float, ...]
+    events: tuple[Blast, ...]
+    cycle: float
 
 
 def _level(day: Day) -> int:
@@ -56,87 +66,178 @@ def board_weeks(days: tuple[Day, ...]) -> int:
     return max(53, max((d.week + 1 for d in days), default=0))
 
 
-def blast_cross(center: Square, radius: int, left: int, right: int) -> tuple[Square, ...]:
-    """Return the center and four arms, clipped to a work zone and seven rows."""
+def _inside(pos: Square, weeks: int) -> bool:
+    # A narrow perimeter permits entry into fully occupied calendars.
+    return -1 <= pos[0] <= weeks and -1 <= pos[1] <= 7
+
+
+def _neighbors(pos: Square, weeks: int):
+    for dx, dy in DIRECTIONS:
+        candidate = pos[0]+dx, pos[1]+dy
+        if _inside(candidate, weeks):
+            yield candidate
+
+
+def _paths(start: Square, blocked: set[Square], weeks: int):
+    parents = {start: None}
+    queue = deque([start])
+    while queue:
+        current = queue.popleft()
+        for pos in _neighbors(current, weeks):
+            if pos not in blocked and pos not in parents:
+                parents[pos] = current
+                queue.append(pos)
+    return parents
+
+
+def _route(parents, end: Square) -> tuple[Square, ...]:
+    route = [end]
+    while parents[route[-1]] is not None:
+        route.append(parents[route[-1]])
+    return tuple(reversed(route))
+
+
+def blast_cross(center: Square, radius: int, weeks: int,
+                blocked: set[Square]) -> tuple[Square, ...]:
+    """A cross stops at the first intact brick in each direction."""
     x, y = center
     points = [center]
-    for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
-        for distance in range(1, radius + 1):
-            a, b = x + dx * distance, y + dy * distance
-            if left <= a < right and 0 <= b < 7:
-                points.append((a, b))
+    for dx, dy in DIRECTIONS:
+        for distance in range(1, radius+1):
+            pos = x+dx*distance, y+dy*distance
+            if not _inside(pos, weeks):
+                break
+            points.append(pos)
+            if pos in blocked:
+                break
     return tuple(points)
 
 
-def plan_blasts(days: tuple[Day, ...]) -> tuple[Blast, ...]:
-    """Cover every active cell with local cross-shaped detonations."""
+def _shelter(center, cross, blocked, weeks):
+    """Find an escape route outside the cross before detonation."""
+    parents = {center: None}
+    queue = deque([center])
+    while queue:
+        pos = queue.popleft()
+        if pos not in cross:
+            return _route(parents, pos)
+        for neighbor in _neighbors(pos, weeks):
+            if neighbor not in blocked and neighbor not in parents:
+                parents[neighbor] = pos
+                queue.append(neighbor)
+    return ()
+
+
+def _site(current, blocked, weeks):
+    parents = _paths(current, blocked, weeks)
+    for pos in parents:
+        if not any(neighbor in blocked for neighbor in _neighbors(pos, weeks)):
+            continue
+        cross = blast_cross(pos, RADIUS, weeks, blocked)
+        escape = _shelter(pos, cross, blocked, weeks)
+        if escape:
+            return _route(parents, pos), cross, escape
+    raise RuntimeError("No safe bomb placement")
+
+
+def plan_run(days: tuple[Day, ...]) -> Run | None:
+    """Move one persistent actor; place one bomb on a free neighboring square."""
+    bricks = {(d.week, d.weekday): d for d in days if d.count}
+    if not bricks:
+        return None
     weeks = board_weeks(days)
-    active = {(d.week, d.weekday): d for d in days if d.count}
+    blocked = set(bricks)
+    reachable = _paths((-1, -1), blocked, weeks)
+    # Start at a useful legal bomb site instead of walking across empty months.
+    first = min(bricks)
+    candidates = sorted(reachable, key=lambda pos: (
+        abs(pos[0]-first[0])+abs(pos[1]-first[1]),
+        not (0 <= pos[0] < weeks and 0 <= pos[1] < 7),
+        pos,
+    ))
+    spawn = next(
+        pos for pos in candidates
+        if any(n in blocked for n in _neighbors(pos, weeks))
+        and _shelter(pos, blast_cross(pos, RADIUS, weeks, blocked), blocked, weeks)
+    )
+    positions, times = [spawn, spawn], [0.0, FIRST]
     events = []
-    for lane in range(LANES):
-        left, right = lane * weeks // LANES, (lane + 1) * weeks // LANES
-        pending = {pos for pos in active if left <= pos[0] < right}
-        i = 0
-        while pending:
-            # Strong cells first; each detonation can cover neighboring activity.
-            center = min(pending, key=lambda pos: (-_level(active[pos]), pos))
-            radius = 1 if _level(active[center]) <= 2 else 2
-            cross = blast_cross(center, radius, left, right)
-            hits = tuple(active[pos] for pos in cross if pos in active)
-            pending.difference_update(cross)
-            x, y = center
-            dx = 1 if x + 1 < right else -1
-            dy = 1 if y + 1 < 7 else -1
-            origin = (x + dx, y)
-            shelter = (x + dx, y + dy)
-            events.append(Blast(center, origin, shelter, cross, hits,
-                                lane, FIRST + i * CADENCE))
-            i += 1
-    return tuple(events)
+    clock = FIRST
+
+    def hold(duration):
+        nonlocal clock
+        clock += duration
+        positions.append(positions[-1])
+        times.append(clock)
+
+    def walk(route):
+        nonlocal clock
+        for pos in route[1:]:
+            clock += WALK_TIME
+            positions.append(pos)
+            times.append(clock)
+
+    while blocked:
+        start = clock
+        approach, cross, escape = _site(positions[-1], blocked, weeks)
+        walk(approach)
+        center = positions[-1]
+        hold(.10)
+        plant = clock
+        walk(escape)
+        # Wait in safety until the fuse and the flame have finished.
+        hold(max(.12, plant+FUSE-clock))
+        hit = clock
+        hold(FLAME_TIME)
+        clear = clock
+        hits = tuple(bricks[pos] for pos in cross if pos in blocked)
+        blocked.difference_update(cross)
+        events.append(Blast(center, approach[0], escape[-1], cross, hits,
+                            start, plant, hit, clear))
+        hold(.10)
+
+    walk(_route(_paths(positions[-1], set(), weeks), spawn))
+    hold(.45)
+    return Run(tuple(positions), tuple(times), tuple(events), max(4.0, clock+.15))
+
+
+def plan_blasts(days: tuple[Day, ...]) -> tuple[Blast, ...]:
+    run = plan_run(days)
+    return run.events if run else ()
 
 
 def _point(square: Square) -> tuple[float, float]:
     return LEFT + square[0] * STEP + CELL / 2, TOP + square[1] * STEP + CELL / 2
 
 
-def _brick_track(color, events, empty, cycle):
-    values, times = [color], [0.0]
-    for event in events:
-        values.extend((empty, color))
-        times.extend((event.start + IGNITE, event.start + RESTORE))
-    return track("fill", values, times, cycle, "discrete")
-
-
-def _event(event: Blast, cycle: float, p: dict) -> list[str]:
-    sx, sy = _point(event.origin)
-    x, y = _point(event.center)
-    hx, hy = _point(event.shelter)
-    s = event.start
-    place, hit = s + PLANT, s + IGNITE
-    end = s + RESTORE
-    # Each sprite uses the same clock as the brick and blast tracks.
-    parts = [
-        f'<g data-blast="{event.center[0]},{event.center[1]}" '
-        f'data-lane="{event.lane}">',
-        f'<g opacity="0" transform="translate({sx} {sy})">',
-        track("opacity", [0, 1, 1, 0], [s, s+.09, hit+.15, end], cycle),
-        track("transform", [f"{sx} {sy}", f"{x} {y}", f"{sx} {sy}", f"{hx} {hy}"],
-              [s, place, place+.22, hit-.06], cycle, transform=True),
+def _actor(run: Run, p: dict) -> list[str]:
+    positions = [f"{x} {y}" for x, y in map(_point, run.positions)]
+    return [
+        f'<g data-actor="hero" transform="translate({positions[0]})">',
+        track("transform", positions, run.times, run.cycle, transform=True),
         f'<rect x="-4" y="-1" width="8" height="6" rx="1" fill="{p["actor"]}"/>',
         f'<rect x="-5" y="-6" width="10" height="8" rx="2" fill="{p["actor"]}" '
         f'stroke="{p["outline"]}" stroke-width=".6"/>',
         f'<rect x="-3" y="-4" width="6" height="3" rx="1" fill="{p["visor"]}"/>',
         f'<path d="M-3 5V7M3 5V7" stroke="{p["outline"]}" stroke-width="2"/>',
         '</g>',
+    ]
+
+
+def _event(event: Blast, cycle: float, p: dict) -> list[str]:
+    x, y = _point(event.center)
+    place, hit, clear = event.plant, event.hit, event.clear
+    parts = [
+        f'<g data-blast="{event.center[0]},{event.center[1]}">',
         f'<g data-bomb="true" transform="translate({x} {y})" opacity="0">',
         track("opacity", [0, 1, 1, 0], [place-.03, place, hit-.02, hit], cycle),
         f'<circle r="4.4" fill="{p["bomb"]}" stroke="{p["outline"]}" stroke-width=".6"/>',
         f'<path d="M1 -4Q1 -7 4 -7" fill="none" stroke="{p["spark"]}" stroke-width="1"/>',
         f'<circle cx="4" cy="-7" r="1.5" fill="{p["spark"]}">',
-        track("r", [1, 2.5, 1, 3], [place, place+.16, place+.30, hit], cycle),
+        track("r", [1, 2.5, 1, 3], [place, place+.12, place+.24, hit], cycle),
         '</circle></g>',
         '<g data-explosion="true" opacity="0">',
-        track("opacity", [0, 1, .85, 0], [hit-.01, hit+.06, hit+.20, s+CLEAR], cycle),
+        track("opacity", [0, 1, .85, 0], [hit-.01, hit+.06, hit+.20, clear], cycle),
     ]
     for pos in event.cross:
         cx, cy = _point(pos)
@@ -154,9 +255,9 @@ def _event(event: Blast, cycle: float, p: dict) -> list[str]:
             parts.extend([
                 f'<rect x="{bx-1}" y="{by-1}" width="2" height="2" fill="{color}" '
                 'opacity="0">',
-                track("opacity", [0, 1, 0], [hit, hit+.04, s+CLEAR], cycle),
-                track("x", [bx-1, bx+dx], [hit, s+CLEAR], cycle),
-                track("y", [by-1, by+dy], [hit, s+CLEAR], cycle),
+                track("opacity", [0, 1, 0], [hit, hit+.04, clear], cycle),
+                track("x", [bx-1, bx+dx], [hit, clear], cycle),
+                track("y", [by-1, by+dy], [hit, clear], cycle),
                 '</rect>',
             ])
     parts.append('</g>')
@@ -165,13 +266,11 @@ def _event(event: Blast, cycle: float, p: dict) -> list[str]:
 
 def render_blast(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
-    width, height = LEFT + board_weeks(days) * STEP + 16, TOP + 7 * STEP + 17
-    events = plan_blasts(days)
-    cycle = max(4.0, max((e.start + CADENCE for e in events), default=0) + .5)
-    by_day = {}
-    for event in events:
-        for day in event.hits:
-            by_day.setdefault(day, []).append(event)
+    width, height = LEFT + board_weeks(days) * STEP + 20, TOP + 8 * STEP + 18
+    run = plan_run(days)
+    events = run.events if run else ()
+    cycle = run.cycle if run else 4.0
+    by_day = {day: event for event in events for day in event.hits}
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" '
@@ -183,7 +282,7 @@ def render_blast(days: tuple[Day, ...], theme: str = "dark") -> str:
     for x, name in month_label_positions(days, LEFT, STEP, width):
         parts.append(f'<text x="{x}" y="14">{name}</text>')
     for row, name in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
-        parts.append(f'<text x="10" y="{TOP+row*STEP+8}">{name}</text>')
+        parts.append(f'<text x="5" y="{TOP+row*STEP+8}">{name}</text>')
     parts.extend(['</g>', '<g id="calendar">'])
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP
@@ -193,22 +292,22 @@ def render_blast(days: tuple[Day, ...], theme: str = "dark") -> str:
                      f'fill="{color}" data-date="{day.date.isoformat()}" data-level="{level}">')
         parts.append(f'<title>{day.date.isoformat()}: {day.count} contributions</title>')
         if day in by_day:
-            parts.append(_brick_track(color, by_day[day], p["empty"], cycle))
+            parts.append(track("fill", [color, p["empty"], color],
+                               [0, by_day[day].hit, cycle], cycle, "discrete"))
         parts.append('</rect>')
     parts.extend(['</g>', '<g id="brick-mortar">'])
     for day in sorted(by_day, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week*STEP, TOP + day.weekday*STEP
         parts.append(f'<path d="M{x} {y+5}H{x+10}M{x+5} {y}V{y+5}M{x+3} {y+5}V{y+10}" '
                      f'fill="none" stroke="{p["mortar"]}" stroke-width=".6" opacity=".65">')
-        values, times = [.65], [0.0]
-        for event in by_day[day]:
-            values.extend((0, .65))
-            times.extend((event.start + IGNITE, event.start + RESTORE))
-        parts.append(track("opacity", values, times, cycle, "discrete"))
+        parts.append(track("opacity", [.65, 0, .65],
+                           [0, by_day[day].hit, cycle], cycle, "discrete"))
         parts.append('</path>')
     parts.extend(['</g>', '<g id="arcade-events">'])
     for event in events:
         parts.extend(_event(event, cycle, p))
+    if run:
+        parts.extend(_actor(run, p))
     parts.extend([
         '</g>',
         f'<text x="{LEFT}" y="{height-6}" fill="{p["fire"]}" font-size="8" '

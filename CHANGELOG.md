@@ -31,3 +31,4 @@
 - Add moving silver enemy pursuers to GitTanks, with role-based BFS interception and reserved-cell collision prevention.
 - Enable ranged tank duels with line-of-sight checks and restrict enemy spawns to the vicinity of intact contribution bricks.
 - Fix missing month labels (including December on rolling calendars) across all six scenarios using shared non-overlapping label placement.
+- Rework GitBlast with one persistent hero, sequential adjacent bomb placement, BFS escape routes and first-brick blast blocking.

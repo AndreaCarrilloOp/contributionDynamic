@@ -58,7 +58,7 @@ Ivory and ebony chess pieces capture golden contribution tokens on a classic woo
 
 ### GitBlast
 
-Arcade robots plant bombs that break contribution bricks in cross-shaped explosions. Brick color encodes contribution intensity, and each affected cell is restored.
+One arcade hero navigates free cells, plants a single bomb beside an intact contribution brick, and retreats before a cross-shaped explosion. Flames stop at the first brick in each direction. The calendar resets when the hero returns home.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">
