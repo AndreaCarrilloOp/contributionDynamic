@@ -11,3 +11,5 @@
 - Preserve the contribution calendar as the GitFactory scene and synchronize extraction with the conveyor.
 - Redesign GitFactory as a compact four-zone factory using synchronized SMIL timelines.
 - Use relative contribution levels from GitHub GraphQL for calendar colors.
+- Add the GitOrigami calendar-to-paper-bird scenario and CLI selection.
+- Generate all three scenarios in light and dark themes using CI and live GraphQL previews.

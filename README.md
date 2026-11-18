@@ -11,7 +11,7 @@ An animation and simulation engine for transforming GitHub contribution calendar
 | Scenario | Concept | Status |
 | --- | --- | --- |
 | GitFactory | Robotic processing directly on the contribution calendar | Prototype |
-| GitOrigami | Geometric folding and transformation | Planned |
+| GitOrigami | Paper birds folding from active calendar cells | Prototype |
 
 ## Quick start
 
@@ -38,6 +38,16 @@ python -m contribution_dynamic generate --scenario factory --theme dark --output
 
 GitFactory preserves the calendar layout and uses four independent production zones. Rail-mounted grippers extract active cells, move them to local conveyors and process them at output stations. Each loop restores the calendar. Live data uses GitHub's contribution levels with a theme-specific palette; demo data uses a count-based fallback. The SVG is a separate image for use in a README; it does not alter GitHub's native calendar.
 
+To preview GitOrigami:
+
+```sh
+python -m contribution_dynamic generate --scenario origami --theme dark --output examples/origami-dark.svg
+```
+
+GitOrigami folds each active calendar cell into a four-panel paper bird. A staggered wave travels across the board, birds fly and fade, and the original calendar returns at the end of the loop. This is a geometric animation, not a physical paper-folding solver.
+
+Run **CI** for token-free demo previews or **Validate GitHub GraphQL** for previews based on the repository owner's actual contributions.
+
 ## Architecture
 
 Calendar collector → normalized model → motion path → SVG renderer.
@@ -50,5 +60,5 @@ See [architecture](docs/architecture.md) and [contributing](CONTRIBUTING.md).
 - [x] Core prototype implementation
 - [x] Core tests and live GraphQL validation
 - [x] GitFactory board-based parallel prototype (visual validation pending)
-- [ ] GitOrigami prototype
+- [x] GitOrigami initial prototype (visual validation pending)
 - [ ] Automated SVG publishing

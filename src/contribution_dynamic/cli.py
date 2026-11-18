@@ -8,7 +8,10 @@ from contribution_dynamic import __version__
 from contribution_dynamic.calendar import demo_calendar
 from contribution_dynamic.collector import collect
 from contribution_dynamic.scenarios.factory import render_factory
+from contribution_dynamic.scenarios.origami import render_origami
 from contribution_dynamic.svg import render
+
+RENDERERS = {"motion": render, "factory": render_factory, "origami": render_origami}
 
 
 def main() -> int:
@@ -17,7 +20,7 @@ def main() -> int:
     commands = parser.add_subparsers(dest="command")
     generate = commands.add_parser("generate", help="Generate an SVG prototype")
     generate.add_argument("--user", help="GitHub login; omit for deterministic demo data")
-    generate.add_argument("--scenario", choices=["motion", "factory"], default="motion")
+    generate.add_argument("--scenario", choices=RENDERERS, default="motion")
     generate.add_argument("--seed", type=int, default=42)
     generate.add_argument("--theme", choices=["dark", "light"], default="dark")
     generate.add_argument("--output", type=Path, default=Path("contributions.svg"))
@@ -29,7 +32,7 @@ def main() -> int:
         args.seed
     )
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    renderer = render_factory if args.scenario == "factory" else render
+    renderer = RENDERERS[args.scenario]
     args.output.write_text(renderer(days, args.theme), encoding="utf-8")
     print(args.output)
     return 0

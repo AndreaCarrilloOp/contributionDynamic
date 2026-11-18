@@ -9,3 +9,5 @@ SVG output uses embedded declarative animation without JavaScript. GitHub image 
 The collector accepts credentials from the environment through the CLI. The default demo requires no token.
 
 GitFactory assigns active days to four disjoint column zones with independent schedules. Each zone uses a persistent trolley, a gripper, a conveyor and an output station. Shared SVG timelines preserve source coordinates and reset the board at the cycle boundary. The collector retains GitHub contribution levels when available.
+
+GitOrigami animates four triangular SVG paper panels per active day. A deterministic column-and-row wave schedules folding, flight and fade-out. Source cells share the same timeline and return at the loop boundary. The CLI selects a renderer through a scenario registry. CI generates demo previews without credentials; the manual GraphQL workflow fetches live data once for all renderers.
