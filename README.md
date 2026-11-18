@@ -36,7 +36,7 @@ Do not commit tokens. To preview the first factory scenario:
 python -m contribution_dynamic generate --scenario factory --theme dark --output examples/factory-dark.svg
 ```
 
-GitFactory preserves the calendar layout and animates a rail-mounted gripper that extracts active cells, transports them along a conveyor, and restores the calendar on each loop. Color levels are currently derived from contribution counts. The SVG is a separate image for use in a README; it does not alter GitHub's native calendar.
+GitFactory preserves the calendar layout and uses four independent production zones. Rail-mounted grippers extract active cells, move them to local conveyors and process them at output stations. Each loop restores the calendar. Live data uses GitHub's contribution levels with a theme-specific palette; demo data uses a count-based fallback. The SVG is a separate image for use in a README; it does not alter GitHub's native calendar.
 
 ## Architecture
 
@@ -49,6 +49,6 @@ See [architecture](docs/architecture.md) and [contributing](CONTRIBUTING.md).
 - [x] Repository initialization
 - [x] Core prototype implementation
 - [x] Core tests and live GraphQL validation
-- [x] GitFactory initial prototype (visual validation pending)
+- [x] GitFactory board-based parallel prototype (visual validation pending)
 - [ ] GitOrigami prototype
 - [ ] Automated SVG publishing

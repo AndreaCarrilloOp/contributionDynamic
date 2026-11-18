@@ -11,10 +11,13 @@ class Day:
     count: int
     weekday: int
     week: int
+    level: int | None = None
 
     def __post_init__(self):
         if self.count < 0 or not 0 <= self.weekday <= 6 or self.week < 0:
             raise ValueError("Invalid contribution day")
+        if self.level is not None and not 0 <= self.level <= 4:
+            raise ValueError("Invalid contribution level")
 
 
 def demo_calendar(seed: int = 42, weeks: int = 53) -> tuple[Day, ...]:

@@ -9,3 +9,5 @@
 - Add generation command and engine tests.
 - Add GitFactory production schedule and SVG prototype with scenario selection.
 - Preserve the contribution calendar as the GitFactory scene and synchronize extraction with the conveyor.
+- Redesign GitFactory as a compact four-zone factory using synchronized SMIL timelines.
+- Use relative contribution levels from GitHub GraphQL for calendar colors.

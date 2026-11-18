@@ -27,9 +27,11 @@ def test_svg_is_valid_xml():
 def test_graphql_parser():
     payload = {"data": {"user": {"contributionsCollection": {"contributionCalendar": {
         "weeks": [{"contributionDays": [
-            {"date": "2025-01-05", "weekday": 0, "contributionCount": 3}
+            {"date": "2025-01-05", "weekday": 0, "contributionCount": 3,
+             "contributionLevel": "SECOND_QUARTILE"}
         ]}]
     }}}}}
     day, = parse_calendar(payload)
     assert day.count == 3
     assert day.week == 0
+    assert day.level == 2

@@ -7,3 +7,5 @@ The first motion path visits active cells in alternating column order. It is a b
 SVG output uses embedded declarative animation without JavaScript. GitHub image rendering compatibility and live API access require verification.
 
 The collector accepts credentials from the environment through the CLI. The default demo requires no token.
+
+GitFactory assigns active days to four disjoint column zones with independent schedules. Each zone uses a persistent trolley, a gripper, a conveyor and an output station. Shared SVG timelines preserve source coordinates and reset the board at the cycle boundary. The collector retains GitHub contribution levels when available.

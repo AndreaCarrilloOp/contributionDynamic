@@ -11,12 +11,20 @@ query Calendar($login: String!) {
   user(login: $login) {
     contributionsCollection {
       contributionCalendar {
-        weeks { contributionDays { date contributionCount weekday } }
+        weeks { contributionDays { date contributionCount weekday contributionLevel } }
       }
     }
   }
 }
 """
+
+LEVELS = {
+    "NONE": 0,
+    "FIRST_QUARTILE": 1,
+    "SECOND_QUARTILE": 2,
+    "THIRD_QUARTILE": 3,
+    "FOURTH_QUARTILE": 4,
+}
 
 
 def parse_calendar(payload: dict) -> tuple[Day, ...]:
@@ -27,7 +35,13 @@ def parse_calendar(payload: dict) -> tuple[Day, ...]:
         raise ValueError("GitHub user not found")
     weeks = user["contributionsCollection"]["contributionCalendar"]["weeks"]
     return tuple(
-        Day(date.fromisoformat(d["date"]), d["contributionCount"], d["weekday"], w)
+        Day(
+            date.fromisoformat(d["date"]),
+            d["contributionCount"],
+            d["weekday"],
+            w,
+            LEVELS.get(d.get("contributionLevel")),
+        )
         for w, week in enumerate(weeks)
         for d in week["contributionDays"]
     )
