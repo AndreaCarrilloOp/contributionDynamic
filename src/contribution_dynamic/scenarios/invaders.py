@@ -6,7 +6,12 @@ from itertools import groupby
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
-from contribution_dynamic.layout import calendar_width, render_padding
+from contribution_dynamic.layout import (
+    SIGNATURE_HEIGHT,
+    calendar_width,
+    render_padding,
+    render_signature,
+)
 
 CELL = 10
 SHIP_Y = TOP + 7 * STEP + 17
@@ -118,21 +123,25 @@ def _attack_groups(days: tuple[Day, ...]) -> tuple[tuple[Day, ...], ...]:
     columns = {week: list(group) for week, group in groupby(active, key=lambda d: d.week)}
     order = list(columns)
     groups = []
+    visited = set()
     for offset in range(0, len(order), 8):
         pending = order[offset:offset+8]
-        turn = 0
+        round_index = 0
         while pending:
-            # Keep the same visit order within each round to prevent repeat attacks
-            # at round boundaries whenever another occupied column is available.
+            # Equal bursts within a round keep equal-height columns balanced.
+            # Rotate the order if a boundary would immediately repeat a column.
+            if len(pending) > 1 and groups and groups[-1][0].week == pending[0]:
+                pending = pending[1:] + pending[:1]
             for week in pending:
                 column = columns[week]
-                count = min(len(column), 1 + (turn % 3 == 2), MAX_BURST)
-                if len(column) > 1 and not any(g for g in groups if g[0].week == week):
+                count = min(len(column), 1 + (round_index % 2), MAX_BURST)
+                if len(column) > 1 and week not in visited:
                     count = min(count, len(column)-1)
                 groups.append(tuple(column[:count]))
                 del column[:count]
-                turn += 1
+                visited.add(week)
             pending = [week for week in pending if columns[week]]
+            round_index += 1
     return tuple(groups)
 
 
@@ -300,10 +309,13 @@ def _combat(battle, p):
     return parts
 
 
-def render_invaders(days: tuple[Day, ...], theme: str = "dark") -> str:
+def render_invaders(
+    days: tuple[Day, ...], theme: str = "dark", *, signature: bool = False,
+) -> str:
     p = PALETTES[theme]
     weeks = board_weeks(days)
-    width, height = calendar_width(LEFT, STEP, CELL, RIGHT, weeks), SHIP_Y + 23
+    width, height = calendar_width(LEFT, STEP, CELL, RIGHT, weeks), SHIP_Y + 14
+    height += SIGNATURE_HEIGHT if signature else 0
     battle = plan_battle(days)
     by_day = {s.day: s for v in battle.volleys for s in v.shots} if battle else {}
     parts = [
@@ -339,8 +351,7 @@ def render_invaders(days: tuple[Day, ...], theme: str = "dark") -> str:
         parts.extend(_combat(battle, p))
         parts.extend(_ship(battle, p))
     parts.extend([
-        f'<text x="{LEFT}" y="{height-5}" fill="{p["text"]}" font-size="8" '
-        'letter-spacing="1.4" font-family="monospace">GITINVADERS</text>',
+        *render_signature(width, height, p["text"], signature),
         '</svg>',
     ])
     return "\n".join(parts) + "\n"

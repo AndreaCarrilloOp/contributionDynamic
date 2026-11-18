@@ -4,8 +4,8 @@ from xml.etree import ElementTree
 import pytest
 
 from contribution_dynamic.calendar import Day, board_weeks
-from contribution_dynamic.labels import LEFT, STEP, TOP
-from contribution_dynamic.layout import ROWS, calendar_width
+from contribution_dynamic.labels import FONT_SIZE, LEFT, MONTH_BASELINES, STEP, TOP
+from contribution_dynamic.layout import ROWS, SIGNATURE_HEIGHT, calendar_height, calendar_width
 from contribution_dynamic.registry import PUBLISHED_SCENARIOS, RENDERERS, THEMES
 
 NS = {"s": "http://www.w3.org/2000/svg"}
@@ -42,3 +42,20 @@ def test_partial_weeks_have_complete_visual_grid(scenario, theme, first, last):
     assert all(int(n.attrib["x"])+int(n.attrib["width"]) <= int(root.attrib["width"])
                for n in real+padding)
     assert not root.findall(".//s:animate", NS)
+
+
+@pytest.mark.parametrize("scenario", PUBLISHED_SCENARIOS)
+@pytest.mark.parametrize("theme", THEMES)
+def test_compact_layout_and_optional_signature(scenario, theme):
+    days = (Day(date(2026, 11, 18), 0, 3, 52, 0),)
+    plain = ElementTree.fromstring(RENDERERS[scenario](days, theme))
+    signed = ElementTree.fromstring(RENDERERS[scenario](days, theme, signature=True))
+    assert FONT_SIZE == 9 and TOP == 38 and MONTH_BASELINES == (10, 20)
+    assert plain.find(".//s:text[@id='repo-signature']", NS) is None
+    stamp = signed.find(".//s:text[@id='repo-signature']", NS)
+    assert stamp is not None and stamp.text == "contributionDynamic"
+    assert int(signed.attrib["height"]) == int(plain.attrib["height"]) + SIGNATURE_HEIGHT
+    assert plain.attrib["width"] == signed.attrib["width"]
+    assert int(plain.attrib["height"]) <= 165
+    assert int(plain.attrib["height"]) >= calendar_height(10)
+    assert not any((node.text or "").startswith("GIT") for node in plain.findall(".//s:text", NS))

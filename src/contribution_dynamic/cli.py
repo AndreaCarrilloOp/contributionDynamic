@@ -14,6 +14,7 @@ from contribution_dynamic.registry import PUBLISHED_SCENARIOS, RENDERERS, THEMES
 def _source_args(parser):
     parser.add_argument("--user", help="GitHub login; omit for deterministic demo data")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--signature", action="store_true", help="Add subtle repo signature")
 
 
 def main() -> int:
@@ -40,11 +41,15 @@ def main() -> int:
     if args.command == "batch":
         scenarios = PUBLISHED_SCENARIOS if args.scenario == "all" else (args.scenario,)
         themes = THEMES if args.theme == "both" else (args.theme,)
-        for path in build_assets(days, args.output_dir, scenarios, themes):
+        for path in build_assets(
+            days, args.output_dir, scenarios, themes, signature=args.signature,
+        ):
             print(path)
     else:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         renderer = RENDERERS[args.scenario]
-        args.output.write_text(renderer(days, args.theme), encoding="utf-8")
+        args.output.write_text(
+            renderer(days, args.theme, signature=args.signature), encoding="utf-8",
+        )
         print(args.output)
     return 0

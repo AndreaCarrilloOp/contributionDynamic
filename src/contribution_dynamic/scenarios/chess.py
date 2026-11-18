@@ -7,7 +7,13 @@ from math import hypot
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
-from contribution_dynamic.layout import calendar_width, render_padding
+from contribution_dynamic.layout import (
+    SIGNATURE_HEIGHT,
+    calendar_height,
+    calendar_width,
+    render_padding,
+    render_signature,
+)
 
 CELL = STEP
 STAGING_ROW = 7
@@ -311,11 +317,14 @@ def _highlight(move, match, p):
     return parts
 
 
-def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
+def render_chess(
+    days: tuple[Day, ...], theme: str = "dark", *, signature: bool = False,
+) -> str:
     p = PALETTES[theme]
     weeks = board_weeks(days)
     width = calendar_width(LEFT, STEP, CELL, RIGHT, weeks)
-    height = TOP + 8 * STEP + 19
+    height = calendar_height(CELL, rows=8)
+    height += SIGNATURE_HEIGHT if signature else 0
     match = plan_match(days)
     captures = [m for m in match.moves if m.day is not None] if match else []
     parts = [
@@ -360,8 +369,7 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
             parts.extend(_attacker(piece, home, match, p))
     parts.extend([
         '</g>',
-        f'<text x="{LEFT}" y="{height-6}" fill="{p["text"]}" font-size="8" '
-        'letter-spacing="1.2" font-family="system-ui,sans-serif">GITCHESS</text>',
+        *render_signature(width, height, p["text"], signature),
         '</svg>',
     ])
     return "\n".join(parts) + "\n"

@@ -7,7 +7,12 @@ from math import atan2, cos, degrees, radians, sin
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
-from contribution_dynamic.layout import calendar_width, render_padding
+from contribution_dynamic.layout import (
+    SIGNATURE_HEIGHT,
+    calendar_width,
+    render_padding,
+    render_signature,
+)
 
 CELL = 10
 FIRST = .12
@@ -520,10 +525,13 @@ def _eagle(center, p):
     ]
 
 
-def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
+def render_tanks(
+    days: tuple[Day, ...], theme: str = "dark", *, signature: bool = False,
+) -> str:
     p = PALETTES[theme]
     weeks, center = board_weeks(days), base_x(days)
-    width, height = calendar_width(LEFT, STEP, CELL, RIGHT, weeks), BASE+23
+    width, height = calendar_width(LEFT, STEP, CELL, RIGHT, weeks), BASE+14
+    height += SIGNATURE_HEIGHT if signature else 0
     battle = plan_battle(days)
     cycle = battle.cycle if battle else 4.0
     by_day = {a.day: a for a in battle.attacks if a.day} if battle else {}
@@ -582,8 +590,7 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
         parts.extend(_hero(battle, p))
     parts.extend([
         '</g>',
-        f'<text x="{LEFT}" y="{height-6}" fill="{p["text"]}" font-size="8" '
-        'letter-spacing="1.2" font-family="system-ui,sans-serif">GITTANKS · ONE VS MANY</text>',
+        *render_signature(width, height, p["text"], signature),
         '</svg>',
     ])
     return "\n".join(parts) + "\n"

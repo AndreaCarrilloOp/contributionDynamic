@@ -105,6 +105,7 @@ Add the following step to an Ubuntu workflow. Until a release is published, use 
 | scenario | all | all, tanks, blast, chess, invaders, origami |
 | theme | both | both, dark, light |
 | output-dir | generated | Destination directory |
+| signature | false | true, false |
 
 The action generates SVGs; it does not push changes. See the [setup guide](docs/setup.md) for a complete scheduled profile workflow and theme-aware embedding. Never commit tokens. Public SVGs disclose dates, counts and activity levels.
 
@@ -115,6 +116,7 @@ GraphQL collector → calendar model → scenario simulation → compact SVG →
 - Dependency-free runtime engine and deterministic animation.
 - Calendar positions and GitHub intensity levels preserved.
 - Consistent month and Mon/Wed/Fri labels aligned to calendar columns and rows in both themes.
+- Compact shared header and no scenario footer by default; use `--signature` on either CLI command or `signature: 'true'` in the action to add a subtle project signature.
 - Complete seven-row grid, including visual-only placeholders for slots omitted by GitHub.
 - Declarative SVG motion, no JavaScript or external sprites.
 - Shared timeline compaction and batch generation from a single API request.

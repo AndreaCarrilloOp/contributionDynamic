@@ -3,7 +3,13 @@
 from contribution_dynamic.animation import track as _track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
-from contribution_dynamic.layout import calendar_width, render_padding
+from contribution_dynamic.layout import (
+    SIGNATURE_HEIGHT,
+    calendar_height,
+    calendar_width,
+    render_padding,
+    render_signature,
+)
 
 CELL = 10
 FLIGHT = 2.6
@@ -55,7 +61,7 @@ def _bird(day, color, shades, cycle, width, s):
     # All flight positions remain in the SVG; the board itself stays in place.
     locations = [
         f"{x} {y}", f"{x} {y}", f"{x+dx*12} {y-6}",
-        f"{x+dx*34} {max(27, y-18)}", f"{x+dx*55} {max(27, y-28)}",
+        f"{x+dx*34} {max(TOP-3, y-18)}", f"{x+dx*55} {max(TOP-3, y-28)}",
     ]
     p = [
         f'<g data-bird="{day.date.isoformat()}" opacity="0" '
@@ -78,10 +84,13 @@ def _bird(day, color, shades, cycle, width, s):
     return p
 
 
-def render_origami(days: tuple[Day, ...], theme: str = "dark") -> str:
+def render_origami(
+    days: tuple[Day, ...], theme: str = "dark", *, signature: bool = False,
+) -> str:
     bg, empty, text, levels, highlight, middle, shadow = PALETTES[theme]
     weeks = board_weeks(days)
-    width, height = calendar_width(LEFT, STEP, CELL, RIGHT, weeks), TOP + 7 * STEP + 13
+    width, height = calendar_width(LEFT, STEP, CELL, RIGHT, weeks), calendar_height(CELL)
+    height += SIGNATURE_HEIGHT if signature else 0
     schedule = fold_schedule(days)
     cycle = max(4.0, max(schedule.values(), default=0) + FLIGHT + .65)
     parts = [
@@ -112,5 +121,5 @@ def render_origami(days: tuple[Day, ...], theme: str = "dark") -> str:
         parts.extend(_bird(day, levels[contribution_level(day)-1],
                            (shadow, middle, middle, highlight, highlight, shadow),
                            cycle, width, start))
-    parts.extend(['</g>', '</svg>'])
+    parts.extend(['</g>', *render_signature(width, height, text, signature), '</svg>'])
     return "\n".join(parts) + "\n"

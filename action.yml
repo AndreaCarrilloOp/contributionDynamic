@@ -21,6 +21,10 @@ inputs:
     description: 'both, dark, or light'
     required: false
     default: 'both'
+  signature:
+    description: 'Add a small contributionDynamic signature (true or false).'
+    required: false
+    default: 'false'
   output-dir:
     description: 'Destination directory for the generated SVG files.'
     required: false
@@ -47,6 +51,7 @@ runs:
         SCENARIO: ${{ inputs.scenario }}
         THEME: ${{ inputs.theme }}
         OUTPUT_DIR: ${{ inputs.output-dir }}
+        SIGNATURE: ${{ inputs.signature }}
       run: |
         set -euo pipefail
         if [[ "$OUTPUT_DIR" == *$'\n'* || "$OUTPUT_DIR" == *$'\r'* || -z "$OUTPUT_DIR" ]]; then
@@ -61,5 +66,10 @@ runs:
         if [[ -n "$CONTRIBUTION_USER" ]]; then
           args+=(--user="$CONTRIBUTION_USER")
         fi
+        case "$SIGNATURE" in
+          true) args+=(--signature) ;;
+          false) ;;
+          *) echo "signature must be true or false" >&2; exit 1 ;;
+        esac
         python -m contribution_dynamic "${args[@]}"
         printf 'directory=%s\n' "$OUTPUT_DIR" >> "$GITHUB_OUTPUT"

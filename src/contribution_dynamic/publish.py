@@ -12,6 +12,8 @@ def build_assets(
     destination: Path,
     scenarios: tuple[str, ...] = PUBLISHED_SCENARIOS,
     themes: tuple[str, ...] = THEMES,
+    *,
+    signature: bool = False,
 ) -> tuple[Path, ...]:
     """Render public scenarios before writing anything to the output directory."""
     if not days:
@@ -24,7 +26,7 @@ def build_assets(
     for scenario in scenarios:
         renderer = RENDERERS[scenario]
         for theme in themes:
-            svg = renderer(days, theme)
+            svg = renderer(days, theme, signature=signature)
             if ElementTree.fromstring(svg).tag != "{http://www.w3.org/2000/svg}svg":
                 raise ValueError(f"Invalid SVG generated for {scenario}/{theme}")
             assets[f"{scenario}-{theme}.svg"] = svg

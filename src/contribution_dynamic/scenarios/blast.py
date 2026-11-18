@@ -6,7 +6,14 @@ from dataclasses import dataclass
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
-from contribution_dynamic.layout import ROWS, calendar_width, render_padding
+from contribution_dynamic.layout import (
+    ROWS,
+    SIGNATURE_HEIGHT,
+    calendar_height,
+    calendar_width,
+    render_padding,
+    render_signature,
+)
 
 CELL = 10
 FIRST = .12
@@ -269,10 +276,13 @@ def _event(event: Blast, cycle: float, p: dict) -> list[str]:
     return parts
 
 
-def render_blast(days: tuple[Day, ...], theme: str = "dark") -> str:
+def render_blast(
+    days: tuple[Day, ...], theme: str = "dark", *, signature: bool = False,
+) -> str:
     p = PALETTES[theme]
     width = calendar_width(LEFT, STEP, CELL, RIGHT, board_weeks(days))
-    height = TOP + ROWS * STEP + 18
+    height = calendar_height(CELL, bottom=12)
+    height += SIGNATURE_HEIGHT if signature else 0
     run = plan_run(days)
     events = run.events if run else ()
     cycle = run.cycle if run else 4.0
@@ -322,8 +332,7 @@ def render_blast(days: tuple[Day, ...], theme: str = "dark") -> str:
         parts.extend(_actor(run, p))
     parts.extend([
         '</g>',
-        f'<text x="{LEFT}" y="{height-6}" fill="{p["fire"]}" font-size="8" '
-        'letter-spacing="1.3" font-family="system-ui,sans-serif">GITBLAST</text>',
+        *render_signature(width, height, p["text"], signature),
         '</svg>',
     ])
     return "\n".join(parts) + "\n"

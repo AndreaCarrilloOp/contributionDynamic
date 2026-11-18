@@ -3,12 +3,12 @@
 from contribution_dynamic.calendar import Day, month_label_positions
 
 LEFT = 47
-TOP = 47
+TOP = 38
 STEP = 13
 RIGHT = 16
-FONT_SIZE = 10
+FONT_SIZE = 9
 MONTH_SPACING = 24
-MONTH_BASELINES = (13, 25)
+MONTH_BASELINES = (10, 20)
 WEEKDAYS = ((1, "Mon"), (3, "Wed"), (5, "Fri"))
 
 

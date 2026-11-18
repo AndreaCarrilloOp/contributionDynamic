@@ -29,3 +29,13 @@ def test_default_generator_is_invaders(tmp_path, monkeypatch):
     ])
     assert cli.main() == 0
     assert 'data-ship="hero"' in output.read_text(encoding="utf-8")
+
+
+def test_generate_with_optional_signature(tmp_path, monkeypatch):
+    output = tmp_path / "signed.svg"
+    monkeypatch.setattr("sys.argv", [
+        "contribution_dynamic", "generate", "--scenario", "origami",
+        "--signature", "--output", str(output),
+    ])
+    assert cli.main() == 0
+    assert 'id="repo-signature"' in output.read_text(encoding="utf-8")
