@@ -3,7 +3,7 @@
 from contribution_dynamic.animation import track as _track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
-from contribution_dynamic.layout import calendar_width
+from contribution_dynamic.layout import calendar_width, render_padding
 
 CELL = 10
 FLIGHT = 2.6
@@ -93,6 +93,7 @@ def render_origami(days: tuple[Day, ...], theme: str = "dark") -> str:
     ]
     parts.extend(render_labels(days, width, CELL, text))
     parts.append('<g id="calendar">')
+    parts.extend(render_padding(days, CELL, empty, radius=2))
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP
         level = contribution_level(day)

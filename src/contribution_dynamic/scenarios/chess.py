@@ -7,7 +7,7 @@ from math import hypot
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
-from contribution_dynamic.layout import calendar_width
+from contribution_dynamic.layout import calendar_width, render_padding
 
 CELL = STEP
 STAGING_ROW = 7
@@ -337,6 +337,7 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
         parts.append(f'<rect x="{LEFT+week*STEP}" y="{TOP+STAGING_ROW*STEP}" '
                      f'width="{CELL}" height="{CELL}" fill="{color}"/>')
     parts.extend(['</g>', '<g id="calendar">'])
+    parts.extend(render_padding(days, CELL, p["squares"], radius=0))
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP
         color = p["squares"][(day.week + day.weekday) % 2]

@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
-from contribution_dynamic.layout import ROWS, calendar_width
+from contribution_dynamic.layout import ROWS, calendar_width, render_padding
 
 CELL = 10
 FIRST = .12
@@ -288,6 +288,7 @@ def render_blast(days: tuple[Day, ...], theme: str = "dark") -> str:
     ]
     parts.extend(render_labels(days, width, CELL, p["text"]))
     parts.append('<g id="calendar">')
+    parts.extend(render_padding(days, CELL, p["empty"]))
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP
         level = contribution_level(day)
