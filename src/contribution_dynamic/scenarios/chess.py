@@ -71,7 +71,6 @@ def legal_move(piece: str, origin: Square, destination: Square, side: int = 1) -
     raise ValueError(f"Unknown chess piece: {piece}")
 
 
-
 def _level(day: Day) -> int:
     if not day.count:
         return 0
@@ -220,12 +219,11 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
         '<title>GitChess — one queen against many pieces</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
         *_sprite_defs(),
-        f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
+        '<g id="month-labels" font-family="Georgia,serif" font-size="10.5" '
+        f'letter-spacing=".2" fill="{p["text"]}">',
     ]
     for x, name in month_label_positions(days, LEFT, STEP, width):
-        parts.append(f'<text x="{x}" y="14">{name}</text>')
-    for row, name in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
-        parts.append(f'<text x="10" y="{TOP+row*STEP+8}">{name}</text>')
+        parts.append(f'<text x="{x}" y="15">{name}</text>')
     parts.extend(['</g>', '<g id="calendar">'])
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP

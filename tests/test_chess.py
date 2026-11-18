@@ -2,7 +2,7 @@ from dataclasses import replace
 from datetime import date
 from xml.etree import ElementTree
 
-from contribution_dynamic.calendar import Day, demo_calendar
+from contribution_dynamic.calendar import Day, demo_calendar, month_label_positions
 from contribution_dynamic.scenarios.chess import (
     FIRST_MOVE,
     LEFT,
@@ -162,3 +162,53 @@ def test_distinct_piece_symbols_match_all_four_levels():
             assert symbol is not None
             assert symbol.attrib["href"] == "#chess-" + piece.attrib["data-kind"]
             assert root.find(f".//s:g[@id='chess-{piece.attrib['data-kind']}']", NS) is not None
+
+
+def test_stationary_pieces_disappear_on_arrival_and_restore_together():
+    days = demo_calendar(42, 8)
+    match = plan_match(days)
+    assert match is not None
+    captures = {m.day.date.isoformat(): m for m in match.moves if m.day is not None}
+    for theme in ("dark", "light"):
+        root = ElementTree.fromstring(render_chess(days, theme))
+        pieces = root.findall(".//s:g[@data-piece='contribution']", NS)
+        for piece in pieces:
+            move = captures[piece.attrib["data-piece-date"]]
+            x = LEFT + move.destination[0] * STEP + 5
+            y = TOP + move.destination[1] * STEP + 5
+            assert piece.attrib["transform"].startswith(f"translate({float(x)} {float(y)})")
+            assert not piece.findall(".//s:animateTransform", NS)
+            opacity = piece.find("s:animate[@attributeName='opacity']", NS)
+            assert opacity is not None
+            values = opacity.attrib["values"].split(";")
+            keys = list(map(float, opacity.attrib["keyTimes"].split(";")))
+            assert values[:3] == ["1", "0", "1"]
+            assert abs(keys[1] * match.cycle - move.arrive) < 1e-6
+            assert abs(keys[2] * match.cycle - match.restore) < 1e-6
+            effect = root.find(f".//s:circle[@data-capture='{move.day.date.isoformat()}']", NS)
+            assert effect is not None
+            assert float(effect.attrib["cx"]) == x
+            assert float(effect.attrib["cy"]) == y
+        queen = root.find(".//s:g[@data-piece='queen']", NS)
+        assert queen is not None
+        movement = queen.find("s:animateTransform[@type='translate']", NS)
+        assert movement is not None
+        positions = movement.attrib["values"].split(";")
+        assert positions[0] == positions[-1]
+        assert len(set(positions)) > 1
+
+
+def test_month_header_is_spaced_and_omits_weekdays():
+    days = demo_calendar()
+    for theme in ("dark", "light"):
+        root = ElementTree.fromstring(render_chess(days, theme))
+        header = root.find(".//s:g[@id='month-labels']", NS)
+        assert header is not None
+        assert header.attrib["font-family"] == "Georgia,serif"
+        labels = header.findall("s:text", NS)
+        expected = month_label_positions(days, LEFT, STEP, int(root.attrib["width"]))
+        assert [(int(label.attrib["x"]), label.text) for label in labels] == list(expected)
+        assert all(b[0] - a[0] >= 24 for a, b in zip(expected, expected[1:]))
+        texts = {node.text for node in root.findall(".//s:text", NS)}
+        assert not texts.intersection({"Mon", "Wed", "Fri"})
+        assert "Dec" in texts
