@@ -1149,9 +1149,9 @@
 <title>2026-11-17: 70 contributions</title>
 <animate attributeName="fill" values="#216e39;#ebedf0;#216e39" keyTimes="0;0.908955224;1" dur="53.6s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="723" y="78" width="10" height="10" rx="2" fill="#40c463" data-date="2026-11-18">
-<title>2026-11-18: 9 contributions</title>
-<animate attributeName="fill" values="#40c463;#ebedf0;#40c463" keyTimes="0;0.953731343;1" dur="53.6s" calcMode="discrete" repeatCount="indefinite"/>
+<rect x="723" y="78" width="10" height="10" rx="2" fill="#30a14e" data-date="2026-11-18">
+<title>2026-11-18: 13 contributions</title>
+<animate attributeName="fill" values="#30a14e;#ebedf0;#30a14e" keyTimes="0;0.953731343;1" dur="53.6s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 </g>
 <g id="zone-0">
@@ -1474,11 +1474,11 @@
 <animate attributeName="y" values="65;65;133;133" keyTimes="0;0.908955224;0.919402985;1" dur="53.6s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="fill" values="#216e39;#216e39;#0f766e;#0f766e" keyTimes="0;0.919402985;0.938059701;1" dur="53.6s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="723" y="78" width="10" height="10" rx="2" fill="#40c463" opacity="0" data-batch="2026-11-18">
+<rect x="723" y="78" width="10" height="10" rx="2" fill="#30a14e" opacity="0" data-batch="2026-11-18">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.953731343;0.982835821;1" dur="53.6s" calcMode="discrete" repeatCount="indefinite"/>
 <animate attributeName="x" values="723;723;723.0;723.0" keyTimes="0;0.964179104;0.982835821;1" dur="53.6s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="78;78;133;133" keyTimes="0;0.953731343;0.964179104;1" dur="53.6s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#40c463;#40c463;#0f766e;#0f766e" keyTimes="0;0.964179104;0.982835821;1" dur="53.6s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#30a14e;#30a14e;#0f766e;#0f766e" keyTimes="0;0.964179104;0.982835821;1" dur="53.6s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 </g>
 </svg>
