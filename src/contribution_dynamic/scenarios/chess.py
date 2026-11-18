@@ -345,7 +345,7 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
         color = p["squares"][(week+STAGING_ROW) % 2]
         parts.append(f'<rect x="{LEFT+week*STEP}" y="{TOP+STAGING_ROW*STEP}" '
                      f'width="{CELL}" height="{CELL}" fill="{color}"/>')
-    parts.append('<g id="calendar">')
+    parts.extend(['</g>', '<g id="calendar">'])
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP
         color = p["squares"][(day.week + day.weekday) % 2]
