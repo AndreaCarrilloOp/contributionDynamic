@@ -10,10 +10,12 @@ The collector accepts credentials from the environment through the CLI. The defa
 
 GitFactory assigns active days to four disjoint column zones with independent schedules. Each zone uses a persistent trolley, a gripper, a conveyor and an output station. Shared SVG timelines preserve source coordinates and reset the board at the cycle boundary. The collector retains GitHub contribution levels when available.
 
-GitOrigami animates six triangular SVG paper panels per active day. A deterministic active-cell wave schedules folding, flight and fade-out without waiting for empty columns. Each source cell is restored after its own flight. The CLI selects a renderer through a scenario registry. CI generates demo previews without credentials; the manual GraphQL workflow fetches live data once for the three public scenarios.
+GitOrigami animates six triangular SVG paper panels per active day. A deterministic active-cell wave schedules folding, flight and fade-out without waiting for empty columns. Each source cell is restored after its own flight. The CLI selects a renderer through a scenario registry. CI generates demo previews without credentials; the manual GraphQL workflow fetches live data once for the four public scenarios.
 
-Publishing renders and XML-validates six public assets from one calendar before uploading an artifact. A separate job with contents write permission updates the output branch without force-pushing. Generation uses read-only repository permissions and receives the contribution token only during the fetch step. Existing assets remain available if generation fails.
+Publishing renders and XML-validates eight public assets from one calendar before uploading an artifact. A separate job with contents write permission updates the output branch without force-pushing. Generation uses read-only repository permissions and receives the contribution token only during the fetch step. Existing assets remain available if generation fails.
 
 The experimental motion renderer is retained for local development and unit tests, but is excluded from publishing and CI preview artifacts.
 
 GitAbyss partitions active calendar days into up to seven deterministic serpentine routes. Jellyfish translation, cell illumination and expanding energy rings share visit timestamps. Each route returns to its start, and source colors are restored after every pulse. Independent SMIL animations create bell contractions and tentacle motion without JavaScript or blur filters.
+
+GitChess divides the board into four disjoint column zones, prioritizes active cells by relative intensity and count, and schedules one temporary piece per zone. Each capture selects an in-bounds launch square satisfying the piece's movement geometry. SVG vector symbols, capture highlights, and restoration share a deterministic timeline. Chess check, checkmate, blocking, and turn-by-turn game state are intentionally out of scope.

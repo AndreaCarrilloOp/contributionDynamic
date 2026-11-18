@@ -17,3 +17,4 @@
 - Fix sparse-calendar GitOrigami delays, bird geometry, and per-cell restoration.
 - Restrict published and preview assets to GitFactory and GitOrigami; retain motion as an internal baseline.
 - Add GitAbyss, a contribution-driven bioluminescent jellyfish scenario in both themes.
+- Add GitChess with original chess-piece vectors, legal movement geometry and parallel capture zones.

@@ -8,6 +8,7 @@ from contribution_dynamic import __version__
 from contribution_dynamic.calendar import demo_calendar
 from contribution_dynamic.collector import collect
 from contribution_dynamic.scenarios.abyss import render_abyss
+from contribution_dynamic.scenarios.chess import render_chess
 from contribution_dynamic.scenarios.factory import render_factory
 from contribution_dynamic.scenarios.origami import render_origami
 from contribution_dynamic.svg import render
@@ -17,6 +18,7 @@ RENDERERS = {
     "factory": render_factory,
     "origami": render_origami,
     "abyss": render_abyss,
+    "chess": render_chess,
 }
 
 

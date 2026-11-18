@@ -13,6 +13,7 @@ An animation and simulation engine for transforming GitHub contribution calendar
 | GitFactory | Robotic processing directly on the contribution calendar | Prototype |
 | GitOrigami | Paper birds folding from active calendar cells | Prototype |
 | GitAbyss | Bioluminescent jellyfish feeding on contribution energy | Prototype |
+| GitChess | Strategic chess-inspired captures on the contribution calendar | Prototype |
 
 ## Quick start
 
@@ -55,11 +56,19 @@ python -m contribution_dynamic generate --scenario abyss --theme dark --output e
 
 GitAbyss sends up to seven bioluminescent jellyfish along routes through active calendar cells. Each visit releases a light pulse proportional to the contribution level. The original cell colors return after each pulse, and the jellyfish gently swim back to their starting positions.
 
+To preview GitChess:
+
+```sh
+python -m contribution_dynamic generate --scenario chess --theme dark --output examples/chess-dark.svg
+```
+
+GitChess uses six original SVG chess silhouettes and four independent zones. Pieces follow traditional movement geometry (including diagonal pawn captures), prioritize stronger contributions, animate capture pulses, and restore source colors. It is a chess-inspired calendar animation, not a complete chess game: calendar cells do not block sliding pieces, and pieces enter and leave between turns.
+
 Run **CI** for token-free demo previews or **Validate GitHub GraphQL** for previews based on the repository owner's actual contributions.
 
 ## Automated publishing
 
-The **Publish contribution animations** workflow runs daily at 11:17 UTC and can also be started manually from the Actions tab. It uses the repository secret `CONTRIBUTION_TOKEN` to fetch the owner's calendar, validates the code and publishes six SVG files to the dedicated `output` branch. A failed generation leaves existing published assets untouched. No local token is required.
+The **Publish contribution animations** workflow runs daily at 11:17 UTC and can also be started manually from the Actions tab. It uses the repository secret `CONTRIBUTION_TOKEN` to fetch the owner's calendar, validates the code and publishes eight SVG files to the dedicated `output` branch. A failed generation leaves existing published assets untouched. No local token is required.
 
 Use a read-only token limited to public data; the published SVGs expose calendar dates, contribution counts and activity levels. Do not publish private activity unless you intend to disclose it.
 
@@ -76,7 +85,7 @@ After the first successful publish, embed a scenario in a GitHub README with the
 </picture>
 ```
 
-Replace `factory` with `origami` or `abyss` to select another published scenario. The experimental `motion` renderer remains available for internal development through `--scenario motion`, but is not published. GitHub image caching may delay visible updates.
+Replace `factory` with `origami`, `abyss`, or `chess` to select another published scenario. The experimental `motion` renderer remains available for internal development through `--scenario motion`, but is not published. GitHub image caching may delay visible updates.
 
 ## Architecture
 
@@ -92,4 +101,5 @@ See [architecture](docs/architecture.md) and [contributing](CONTRIBUTING.md).
 - [x] GitFactory board-based parallel prototype (visual validation pending)
 - [x] GitOrigami initial prototype (visual validation pending)
 - [x] GitAbyss initial prototype (visual validation pending)
+- [x] GitChess initial prototype (visual validation pending)
 - [x] Automated SVG publishing (first live publish verified)
