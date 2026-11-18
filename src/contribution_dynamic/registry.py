@@ -1,6 +1,7 @@
 """Scenario catalog shared by the CLI, action, and publishing pipeline."""
 
 from contribution_dynamic.scenarios.abyss import render_abyss
+from contribution_dynamic.scenarios.blast import render_blast
 from contribution_dynamic.scenarios.chess import render_chess
 from contribution_dynamic.scenarios.factory import render_factory
 from contribution_dynamic.scenarios.origami import render_origami
@@ -12,6 +13,7 @@ RENDERERS = {
     "origami": render_origami,
     "abyss": render_abyss,
     "chess": render_chess,
+    "blast": render_blast,
 }
-PUBLISHED_SCENARIOS = ("factory", "origami", "abyss", "chess")
+PUBLISHED_SCENARIOS = ("factory", "origami", "abyss", "chess", "blast")
 THEMES = ("dark", "light")

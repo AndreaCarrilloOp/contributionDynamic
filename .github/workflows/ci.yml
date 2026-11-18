@@ -64,7 +64,7 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-          expected = {f"{s}-{t}.svg" for s in ("factory", "origami", "abyss", "chess")
+          expected = {f"{s}-{t}.svg" for s in ("factory", "origami", "abyss", "chess", "blast")
                       for t in ("dark", "light")}
           assert {p.name for p in Path("previews").glob("*.svg")} == expected
           PY

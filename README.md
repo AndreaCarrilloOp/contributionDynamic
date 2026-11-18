@@ -56,6 +56,17 @@ Ivory and ebony chess pieces capture golden contribution tokens on a classic woo
 
 [Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg)
 
+### GitBlast
+
+Arcade robots plant bombs that break contribution bricks in cross-shaped explosions. Brick color encodes contribution intensity, and each affected cell is restored.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">
+  <img alt="GitBlast animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg" width="100%">
+</picture>
+
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg)
+
 ## Quick start
 
 Requires Python 3.12 or newer.
@@ -91,7 +102,7 @@ Add the following step to an Ubuntu workflow. Until a release is published, use 
 | --- | --- | --- |
 | github-user | empty | GitHub login or demo |
 | github-token | empty | Read-only token for live data |
-| scenario | all | all, factory, origami, abyss, chess |
+| scenario | all | all, factory, origami, abyss, chess, blast |
 | theme | both | both, dark, light |
 | output-dir | generated | Destination directory |
 

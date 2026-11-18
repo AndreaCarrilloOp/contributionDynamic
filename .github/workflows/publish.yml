@@ -81,7 +81,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm --ignore-unmatch -- motion-dark.svg motion-light.svg
-          for scenario in factory origami abyss chess; do
+          for scenario in factory origami abyss chess blast; do
             for theme in dark light; do
               file="$scenario-$theme.svg"
               cp "$RUNNER_TEMP/contribution-animations/$file" "$file"

@@ -10,9 +10,9 @@ The collector accepts credentials from the environment through the CLI. The defa
 
 GitFactory assigns active days to four disjoint column zones with independent schedules. Each zone uses a persistent trolley, a gripper, a conveyor and an output station. Shared SVG timelines preserve source coordinates and reset the board at the cycle boundary. The collector retains GitHub contribution levels when available.
 
-GitOrigami animates six triangular SVG paper panels per active day. A deterministic active-cell wave schedules folding, flight and fade-out without waiting for empty columns. Each source cell is restored after its own flight. The CLI selects a renderer through a scenario registry. CI generates demo previews without credentials; the manual GraphQL workflow fetches live data once for the four public scenarios.
+GitOrigami animates six triangular SVG paper panels per active day. A deterministic active-cell wave schedules folding, flight and fade-out without waiting for empty columns. Each source cell is restored after its own flight. The CLI selects a renderer through a scenario registry. CI generates demo previews without credentials; the manual GraphQL workflow fetches live data once for the five public scenarios.
 
-Publishing renders and XML-validates eight public assets from one calendar before uploading an artifact. A separate job with contents write permission updates the output branch without force-pushing. Generation uses read-only repository permissions and receives the contribution token only during the fetch step. Existing assets remain available if generation fails.
+Publishing renders and XML-validates ten public assets from one calendar before uploading an artifact. A separate job with contents write permission updates the output branch without force-pushing. Generation uses read-only repository permissions and receives the contribution token only during the fetch step. Existing assets remain available if generation fails.
 
 The experimental motion renderer is retained for local development and unit tests, but is excluded from publishing and CI preview artifacts.
 
@@ -23,3 +23,5 @@ GitChess divides the board into four disjoint column zones, prioritizes active c
 All four public scenarios share SMIL timeline serialization, retaining plateau boundaries while removing redundant interior keyframes and trailing numeric zeros. The registry drives batch generation and the composite action; selected themes and scenarios reuse one calendar fetch. No runtime speedup or browser-performance guarantee has been benchmarked yet.
 
 GitChess separates board parity from contribution intensity: alternating tan and brown squares are static at rest, while four golden token radii encode activity. Capture flashes and temporary token removal reuse the existing capture timestamps; ivory and ebony pieces have contrasting outlines.
+
+GitBlast partitions the board into four zones and schedules bombs until every active cell has been covered. Each cross is clipped to its zone and the seven calendar rows; multiple blasts may hit a previously restored cell. A diagonal shelter is outside the cross. Brick color and metadata preserve contribution level; synchronized timelines control the robot, fuse, explosion, debris and restoration. The simulation is arcade-inspired, not a playable game or full collision/pathfinding engine.
