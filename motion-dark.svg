@@ -367,5 +367,6 @@
 <rect x="688" y="12" width="10" height="10" rx="2" fill="#21262d"/>
 <rect x="688" y="25" width="10" height="10" rx="2" fill="#5eead4"/>
 <rect x="688" y="38" width="10" height="10" rx="2" fill="#5eead4"/>
-<circle r="4" fill="#f59e0b"><animateMotion path="M407,69 L433,69 L446,43 L459,43 L498,95 L498,69 L498,56 L511,17 L524,95 L524,82 L550,56 L550,43 L563,17 L563,30 L563,56 L576,69 L576,56 L602,17 L615,82 L641,17 L654,95 L654,82 L654,30 L667,56 L667,69 L667,82 L667,95 L693,30 L693,43 Z" dur="24s" repeatCount="indefinite"/></circle>
+<rect x="688" y="51" width="10" height="10" rx="2" fill="#164e45"/>
+<circle r="4" fill="#f59e0b"><animateMotion path="M407,69 L433,69 L446,43 L459,43 L498,95 L498,69 L498,56 L511,17 L524,95 L524,82 L550,56 L550,43 L563,17 L563,30 L563,56 L576,69 L576,56 L602,17 L615,82 L641,17 L654,95 L654,82 L654,30 L667,56 L667,69 L667,82 L667,95 L693,30 L693,43 L693,56 Z" dur="24s" repeatCount="indefinite"/></circle>
 </svg>
