@@ -41,3 +41,4 @@
 - Consolidate calendar helpers and package dependencies; remove the retired motion prototype and generated example SVGs from main. Fix initial queen placement for single-day calendars.
 - Fix trailing calendar spacing, restrict GitBlast to the grid with a dense-board entry pocket, and alternate GitInvaders attack order within local sectors.
 - Complete partial calendar weeks with visual-only placeholders in every scenario and theme.
+- Refine GitInvaders with short alternating attack bursts, wider evasions and occasional visible ship damage.

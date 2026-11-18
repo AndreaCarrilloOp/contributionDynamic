@@ -4,7 +4,10 @@ from xml.etree import ElementTree
 
 from contribution_dynamic.calendar import Day, demo_calendar
 from contribution_dynamic.scenarios.invaders import (
+    DAMAGE_INTERVAL,
+    DODGE,
     FIRST,
+    MAX_BURST,
     LEFT,
     STEP,
     TOP,
@@ -27,7 +30,11 @@ def test_one_ship_clears_every_active_day_from_bottom_up():
         for volley in battle.volleys:
             rows = [s.day.weekday for s in volley.shots]
             assert rows == sorted(rows, reverse=True)
-            assert abs(abs(volley.base - volley.dodge) - 11) < 1e-6
+            assert len(volley.shots) <= MAX_BURST
+            if volley.damaged:
+                assert volley.base == volley.dodge
+            else:
+                assert abs(abs(volley.base - volley.dodge) - DODGE) < 1e-6
             assert volley.enemy_launch < volley.dodge_end < volley.enemy_hit
             assert volley.enemy_hit < volley.settle < volley.shots[0].launch
             assert all(a.hit < b.hit for a, b in zip(volley.shots, volley.shots[1:]))
@@ -97,3 +104,31 @@ def test_column_order_alternates_within_local_sectors():
     assert battle is not None
     columns = [volley.shots[0].day.week for volley in battle.volleys]
     assert columns == [0, 7, 1, 6, 2, 5, 3, 4]
+
+
+def test_short_attacks_revisit_columns_and_preserve_bottom_up_order():
+    days = tuple(Day(date(2026, 1, 1+i*7+j), 2, j, i)
+                 for i in range(3) for j in range(7))
+    battle = plan_battle(days)
+    assert battle is not None
+    columns = [v.shots[0].day.week for v in battle.volleys]
+    assert columns[:3] == [0, 2, 1]
+    assert all(a != b for a, b in zip(columns, columns[1:]))
+    for week in range(3):
+        rows = [s.day.weekday for v in battle.volleys for s in v.shots
+                if s.day.week == week]
+        assert rows == list(range(6, -1, -1))
+        assert sum(v.shots[0].day.week == week for v in battle.volleys) > 1
+
+
+def test_hits_are_occasional_and_visually_distinct_from_misses():
+    days = demo_calendar()
+    battle = plan_battle(days)
+    assert battle is not None
+    hits = sum(v.damaged for v in battle.volleys)
+    assert hits == len(battle.volleys) // DAMAGE_INTERVAL
+    assert 0 < hits < len(battle.volleys) / 4
+    root = ElementTree.fromstring(render_invaders(days))
+    assert len(root.findall(".//s:g[@data-hit-kind='ship']", NS)) == hits
+    assert len(root.findall(".//s:g[@data-hit-kind='miss']", NS)) == len(battle.volleys)-hits
+    assert root.find(".//s:g[@data-ship-body='true']/s:animate", NS) is not None

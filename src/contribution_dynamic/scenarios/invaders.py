@@ -12,7 +12,9 @@ CELL = 10
 SHIP_Y = TOP + 7 * STEP + 17
 FIRST = .12
 SWAY = 2.5
-DODGE = 11
+DODGE = 16
+DAMAGE_INTERVAL = 9
+MAX_BURST = 2
 PALETTES = {
     "dark": {
         "bg": "#090e1a", "empty": "#141f30", "text": "#93a6c3",
@@ -70,6 +72,7 @@ class Volley:
     settle: float
     shots: tuple[Shot, ...]
     end: float
+    damaged: bool
 
 
 @dataclass(frozen=True)
@@ -109,40 +112,65 @@ def _ordered_active_days(days: tuple[Day, ...]) -> tuple[Day, ...]:
                         key=lambda d: (order[d.week], -d.weekday)))
 
 
-def plan_battle(days: tuple[Day, ...]) -> Battle | None:
-    """Fire bottom-to-top so a living invader never blocks a later shot."""
+def _attack_groups(days: tuple[Day, ...]) -> tuple[tuple[Day, ...], ...]:
+    """Revisit columns in local rounds; never sweep a tall column at once."""
     active = _ordered_active_days(days)
-    if not active:
+    columns = {week: list(group) for week, group in groupby(active, key=lambda d: d.week)}
+    order = list(columns)
+    groups = []
+    for offset in range(0, len(order), 8):
+        pending = order[offset:offset+8]
+        turn = 0
+        while pending:
+            # Keep the same visit order within each round to prevent repeat attacks
+            # at round boundaries whenever another occupied column is available.
+            for week in pending:
+                column = columns[week]
+                count = min(len(column), 1 + (turn % 3 == 2), MAX_BURST)
+                if len(column) > 1 and not any(g for g in groups if g[0].week == week):
+                    count = min(count, len(column)-1)
+                groups.append(tuple(column[:count]))
+                del column[:count]
+                turn += 1
+            pending = [week for week in pending if columns[week]]
+    return tuple(groups)
+
+
+def plan_battle(days: tuple[Day, ...]) -> Battle | None:
+    """Plan short attacks, mostly successful evasions and occasional damage."""
+    groups = _attack_groups(days)
+    if not groups:
         return None
-    home = center(active[0])[0]
+    home = center(groups[0][0])[0]
     previous, start = home, FIRST
     volleys = []
-    cadence = .115 if len(active) > 100 else .19
-    for i, (_, group) in enumerate(groupby(active, key=lambda d: d.week)):
-        column = tuple(group)
-        shift = SWAY if i % 2 == 0 else -SWAY
+    width = calendar_width(LEFT, STEP, CELL, RIGHT, board_weeks(days))
+    for i, column in enumerate(groups):
+        shift = SWAY if (i // 3) % 2 == 0 else -SWAY
         base = center(column[0])[0] + shift
-        # At the right edge evade to the left; the ship remains inside the SVG.
-        width = calendar_width(LEFT, STEP, CELL, RIGHT, board_weeks(days))
-        dodge = base + DODGE if base + DODGE + 8 <= width else base-DODGE
-        arrive = start + max(.14, abs(base - previous) / 230)
-        enemy_launch = arrive + .04
+        damaged = (i+1) % DAMAGE_INTERVAL == 0
+        direction = 1 if i % 2 == 0 else -1
+        if not 8 <= base + direction*DODGE <= width-8:
+            direction = -direction
+        dodge = base if damaged else base + direction*DODGE
+        arrive = start + max(.12, abs(base - previous) / 255)
+        enemy_launch = arrive + .035
         distance = SHIP_Y - center(column[0])[1]
-        enemy_hit = enemy_launch + max(.24, distance / 280)
-        dodge_start, dodge_end = arrive + .06, arrive + .21
-        settle = enemy_hit + .16
+        enemy_hit = enemy_launch + max(.27, distance / 280)
+        dodge_start, dodge_end = arrive + .055, arrive + .22
+        settle = enemy_hit + (.24 if damaged else .14)
         shots = []
         for j, day in enumerate(column):
-            launch = settle + .025 + j * cadence
+            launch = settle + .025 + j * .18
             distance = SHIP_Y - 6 - center(day)[1]
             hit = launch + distance / 320
             shots.append(Shot(day, launch, hit))
-        end = shots[-1].hit + .14
+        end = shots[-1].hit + .15
         volleys.append(Volley(previous, base, dodge, shift, start, arrive,
                               enemy_launch, enemy_hit, dodge_start, dodge_end,
-                              settle, tuple(shots), end))
+                              settle, tuple(shots), end, damaged))
         previous, start = base, end + .035
-    restore = volleys[-1].end + max(.3, abs(previous - home) / 230)
+    restore = volleys[-1].end + max(.3, abs(previous - home) / 255)
     return Battle(home, tuple(volleys), restore, max(4.0, restore + .55))
 
 
@@ -164,6 +192,7 @@ def _xy(x, y):
 def _ship(battle, p):
     positions, times = [_xy(battle.home, SHIP_Y)], [0.0]
     flash, flash_times = [0], [0.0]
+    damage, damage_times = [1], [0.0]
     for volley in battle.volleys:
         positions.extend(_xy(x, SHIP_Y) for x in (
             volley.origin, volley.base, volley.base, volley.dodge,
@@ -171,6 +200,11 @@ def _ship(battle, p):
         ))
         times.extend((volley.start, volley.arrive, volley.dodge_start, volley.dodge_end,
                       volley.enemy_hit+.035, volley.settle, volley.end))
+        if volley.damaged:
+            damage.extend((1, .25, 1, .35, 1))
+            damage_times.extend((volley.enemy_hit-.01, volley.enemy_hit,
+                                 volley.enemy_hit+.05, volley.enemy_hit+.10,
+                                 volley.enemy_hit+.19))
         for shot in volley.shots:
             flash.extend((0, 1, 0))
             flash_times.extend((shot.launch-.012, shot.launch, shot.launch+.06))
@@ -179,11 +213,14 @@ def _ship(battle, p):
     return [
         f'<g data-ship="hero" transform="translate({battle.home} {SHIP_Y})">',
         track("transform", positions, times, battle.cycle, transform=True),
+        '<g data-ship-body="true">',
+        *([track("opacity", damage, damage_times, battle.cycle)]
+          if len(damage) > 1 else []),
         f'<path d="{_pixels(SHIP, -7, -4)}" fill="{p["ship"]}"/>',
         f'<path d="M-1 -1h3v4h-3Z" fill="{p["ship_core"]}"/>',
         f'<path d="M-1 -5h3v-3h-3Z" fill="{p["laser"]}" opacity="0">',
         track("opacity", flash, flash_times, battle.cycle),
-        '</path></g>',
+        '</path></g></g>',
     ]
 
 
@@ -231,9 +268,10 @@ def _laser(x, origin, target, launch, hit, cycle, color, side):
     ]
 
 
-def _burst(x, y, hit, cycle, color, spark):
+def _burst(x, y, hit, cycle, color, spark, kind="alien"):
     parts = [
-        f'<g data-impact="true" transform="translate({x} {y})" opacity="0">',
+        f'<g data-impact="true" data-hit-kind="{kind}" '
+        f'transform="translate({x} {y})" opacity="0">',
         track("opacity", [0, 1, .7, 0], [hit-.01, hit, hit+.045, hit+.12], cycle),
         f'<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="{color}"/>',
         f'<path d="M-2 -2h4v4h-4Z" fill="{spark}"/>',
@@ -248,8 +286,10 @@ def _combat(battle, p):
         _, enemy_y = center(volley.shots[0].day)
         parts.extend(_laser(volley.base, enemy_y+3, SHIP_Y, volley.enemy_launch,
                             volley.enemy_hit, battle.cycle, p["hostile"], "enemy"))
-        parts.extend(_burst(volley.base, SHIP_Y, volley.enemy_hit, battle.cycle,
-                            p["hostile"], p["spark"]))
+        # A missed laser impacts the ground, not the hero; only real hits flash the ship.
+        parts.extend(_burst(volley.base, SHIP_Y if volley.damaged else SHIP_Y+6,
+                            volley.enemy_hit, battle.cycle, p["hostile"], p["spark"],
+                            "ship" if volley.damaged else "miss"))
         for shot in volley.shots:
             _, y = center(shot.day)
             parts.extend(_laser(volley.base, SHIP_Y-6, y, shot.launch, shot.hit,
