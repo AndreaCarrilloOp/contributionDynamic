@@ -1,8 +1,21 @@
-"""Deterministic factory production schedule and animated SVG renderer."""
+"""Animate production directly on the GitHub contribution calendar."""
 
 from dataclasses import dataclass
 
 from contribution_dynamic.calendar import Day
+
+STEP = 13
+CELL = 10
+LEFT = 47
+TOP = 57
+CADENCE = 3.6
+
+PALETTES = {
+    "dark": ("#0d1117", "#161b22", "#c9d1d9", "#30363d", "#94a3b8", "#2dd4bf",
+             ("#0e4429", "#006d32", "#26a641", "#39d353")),
+    "light": ("#ffffff", "#ebedf0", "#24292f", "#d0d7de", "#64748b", "#0f766e",
+              ("#9be9a8", "#40c463", "#30a14e", "#216e39")),
+}
 
 
 @dataclass(frozen=True)
@@ -11,93 +24,147 @@ class Job:
     start: float
 
 
-PERIOD = 8
-CADENCE = 2
+def active_days(days: tuple[Day, ...]) -> tuple[Day, ...]:
+    return tuple(sorted((d for d in days if d.count > 0), key=lambda d: d.date))
 
 
 def schedule(days: tuple[Day, ...]) -> tuple[Job, ...]:
-    """Release one batch per active day; count determines its load."""
-    active = sorted((d for d in days if d.count), key=lambda d: d.date)
-    return tuple(Job(day, i * CADENCE) for i, day in enumerate(active))
+    return tuple(Job(day, i * CADENCE) for i, day in enumerate(active_days(days)))
+
+
+def contribution_level(count: int) -> int:
+    return 0 if count == 0 else min(4, count.bit_length())
+
+
+def month_labels(days: tuple[Day, ...]) -> list[tuple[int, str]]:
+    labels = []
+    seen = set()
+    last_week = -4
+    for day in sorted(days, key=lambda d: d.date):
+        month = (day.date.year, day.date.month)
+        if month not in seen:
+            seen.add(month)
+            if day.week - last_week >= 3:
+                labels.append((day.week, day.date.strftime("%b")))
+                last_week = day.week
+    return labels
+
+
+def _animation(name, values, times, duration, mode="linear"):
+    keys = ";".join(f"{t / duration:.9f}" for t in times)
+    vals = ";".join(str(v) for v in values)
+    return (
+        f'<animate attributeName="{name}" values="{vals}" keyTimes="{keys}" '
+        f'dur="{duration}s" calcMode="{mode}" repeatCount="indefinite"/>'
+    )
+
+
+def _track(name, values, times, duration, mode="linear"):
+    """Extend a local timeline to the full cycle without duplicate end times."""
+    values, times = list(values), list(times)
+    if times[0] > 0:
+        times.insert(0, 0)
+        values.insert(0, values[0])
+    if times[-1] < duration:
+        times.append(duration)
+        values.append(values[-1])
+    return _animation(name, values, times, duration, mode)
 
 
 def render_factory(days: tuple[Day, ...], theme: str = "dark") -> str:
-    dark = theme == "dark"
-    bg, panel, metal, text = (
-        ("#0d1117", "#21262d", "#718697", "#dbe9ef") if dark
-        else ("#ffffff", "#e7edf1", "#526b7b", "#233846")
-    )
-    accent = "#14b8a6" if dark else "#0f766e"
+    bg, empty, text, panel, metal, accent, levels = PALETTES[theme]
+    weeks = max(53, max((day.week + 1 for day in days), default=0))
+    grid_width = weeks * STEP
+    width = LEFT + grid_width + 20
+    belt = TOP + 7 * STEP + 14
+    height = belt + 37
+    output = LEFT + grid_width - 10
     jobs = schedule(days)
-    cycle = max(PERIOD, len(jobs) * CADENCE + PERIOD)
+    cycle = max(4.0, len(jobs) * CADENCE + 0.6)
     p = [
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" '
-        'role="img" aria-label="GitFactory contribution production line">',
-        f'<rect width="760" height="220" rx="10" fill="{bg}"/>',
-        f'<g font-family="monospace" fill="{text}">',
-        '<text x="20" y="25" font-size="15" font-weight="bold">GitFactory</text>',
-        f'<text x="740" y="25" font-size="11" text-anchor="end">'
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
+        'role="img" aria-label="GitFactory contribution board animation">',
+        '<title>GitFactory — contribution calendar</title>',
+        f'<rect width="{width}" height="{height}" rx="8" fill="{bg}"/>',
+        f'<g font-family="system-ui,sans-serif" fill="{text}" font-size="10">',
+        '<text x="12" y="17" font-weight="bold" font-size="13">GitFactory</text>',
+        f'<text x="{width-12}" y="17" text-anchor="end">'
         f'{len(jobs)} batches / {sum(d.count for d in days)} contributions</text>',
     ]
-    for x, label in ((65, "INPUT"), (260, "ASSEMBLE"), (460, "INSPECT"), (680, "OUTPUT")):
-        p.append(f'<text x="{x}" y="193" text-anchor="middle" font-size="10">{label}</text>')
+    for week, label in month_labels(days):
+        p.append(f'<text x="{LEFT + week * STEP}" y="33">{label}</text>')
+    for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
+        p.append(f'<text x="12" y="{TOP + row * STEP + 8}">{label}</text>')
+    p.append('</g>')
+    p.append('<g id="calendar">')
+    by_position = {(d.week, d.weekday): d for d in days}
+    for week in range(weeks):
+        for row in range(7):
+            day = by_position.get((week, row))
+            if day is None:
+                continue
+            x, y = LEFT + week * STEP, TOP + row * STEP
+            level = contribution_level(day.count)
+            fill = levels[level - 1] if level else empty
+            p.append(
+                f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" '
+                f'fill="{fill}" data-date="{day.date.isoformat()}">'
+                f'<title>{day.date.isoformat()}: {day.count} contributions</title></rect>'
+            )
+    p.append('</g>')
     p.extend([
-        '</g>',
-        f'<rect x="30" y="140" width="700" height="27" rx="7" fill="{panel}"/>',
-        f'<rect x="36" y="145" width="688" height="15" rx="4" fill="{metal}" opacity=".45"/>',
+        f'<path d="M{LEFT} 45H{LEFT+grid_width-3}" stroke="{panel}" stroke-width="5"/>',
+        f'<rect x="{LEFT}" y="{belt}" width="{grid_width-3}" height="17" '
+        f'rx="4" fill="{panel}"/>',
+        f'<rect x="{output-8}" y="{belt-4}" width="16" height="23" rx="3" '
+        f'fill="{metal}"/>',
     ])
-    for x in range(44, 720, 22):
-        p.append(f'<circle cx="{x}" cy="153" r="4" fill="{metal}"/>')
+    for x in range(LEFT + 8, output - 8, 19):
+        p.append(f'<circle cx="{x}" cy="{belt+9}" r="4" fill="{metal}" opacity=".5"/>')
     if jobs:
         p.append(
-            f'<path d="M44 152H716" stroke="{accent}" stroke-width="2" '
-            'stroke-dasharray="8 14" opacity=".7">'
-            '<animate attributeName="stroke-dashoffset" from="0" to="-22" dur=".6s" '
+            f'<path d="M{LEFT+3} {belt+3}H{output-9}" stroke="{accent}" '
+            'stroke-width="1.5" stroke-dasharray="6 13">'
+            '<animate attributeName="stroke-dashoffset" from="0" to="-19" dur=".7s" '
             'repeatCount="indefinite"/></path>'
         )
-    for x in (260, 460):
-        p.extend([
-            f'<rect x="{x-27}" y="48" width="54" height="18" rx="4" fill="{panel}"/>',
-            f'<g transform="translate({x} 66)">',
-            f'<path d="M0 0L-22 29L0 55" fill="none" stroke="{metal}" '
-            'stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>',
-            f'<circle cx="-22" cy="29" r="6" fill="{accent}"/>',
-            f'<path d="M-9 55V65M9 55V65M-9 55H9" stroke="{accent}" '
-            'stroke-width="4" fill="none"/>',
-        ])
-        if jobs:
-            phase = 2 if x == 260 else 4
-            p.append(
-                '<animateTransform attributeName="transform" type="rotate" additive="sum" '
-                f'values="-18 0 0;-18 0 0;0 0 0;-18 0 0" begin="{phase}s" '
-                'keyTimes="0;.65;.85;1" dur="2s" repeatCount="indefinite"/>'
-            )
-        p.append('</g>')
     for job in jobs:
-        # One batch moves through four stations; the batch color changes after processing.
-        start = job.start / cycle
-        end = (job.start + PERIOD) / cycle
-        times = ";".join(f"{v:.10f}" for v in (start, end))
-        size = min(19, 10 + job.day.count.bit_length())
-        p.extend([
-            '<g opacity="0">',
-            f'<title>{job.day.date.isoformat()}: {job.day.count} contributions</title>',
-            f'<rect x="{-size/2}" y="{-size}" width="{size}" height="{size}" '
-            'rx="2" fill="#94a3b8">',
-            f'<animate attributeName="fill" values="#94a3b8;#94a3b8;{accent};#eab308;#eab308" '
-            f'keyTimes="0;{start:.10f};{(start+end)/2:.10f};{end:.10f};1" '
-            f'dur="{cycle}s" repeatCount="indefinite"/>',
-            '</rect>',
-            f'<animate attributeName="opacity" values="0;1;0;0" keyTimes="0;{times};1" '
-            f'calcMode="discrete" dur="{cycle}s" repeatCount="indefinite"/>'
-            if start > 0 else
-            f'<animate attributeName="opacity" values="1;0;0" keyTimes="0;{end:.10f};1" '
-            f'calcMode="discrete" dur="{cycle}s" repeatCount="indefinite"/>',
-            f'<animateTransform attributeName="transform" type="translate" '
-            f'values="45 140;45 140;715 140;715 140" '
-            f'keyTimes="0;{start:.10f};{end:.10f};1" dur="{cycle}s" '
-            'repeatCount="indefinite"/>',
-            '</g>',
-        ])
+        x = LEFT + job.day.week * STEP
+        y = TOP + job.day.weekday * STEP
+        cx, cy = x + CELL / 2, y + CELL / 2
+        s = job.start
+        grab, drop, end = s + .9, s + 1.8, s + 3.4
+        fill = levels[contribution_level(job.day.count) - 1]
+        # The source is visually removed after pickup, restored at cycle reset.
+        p.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
+                 f'rx="2" fill="{empty}" opacity="0">')
+        p.append(_track("opacity", [0, 1, 1, 0], [0, grab, cycle-.1, cycle],
+                        cycle, "discrete"))
+        p.append('</rect>')
+        # A rail-mounted gripper extends to the source, then lowers the payload.
+        p.append('<g opacity="0">')
+        p.append(_track("opacity", [0, 1, 0], [0, s+.1, drop], cycle, "discrete"))
+        p.append(f'<rect x="{cx-7}" y="40" width="14" height="10" rx="2" fill="{metal}"/>')
+        p.append(f'<line x1="{cx}" y1="49" x2="{cx}" y2="49" stroke="{metal}" '
+                 'stroke-width="2">')
+        p.append(_track("y2", [49, cy, belt-6], [s+.1, grab, drop], cycle))
+        p.append('</line>')
+        for offset in (-5, 5):
+            p.append(f'<line x1="{cx+offset}" x2="{cx+offset}" y1="49" y2="55" '
+                     f'stroke="{accent}" stroke-width="2" stroke-linecap="round">')
+            p.append(_track("y1", [49, cy, belt-6], [s+.1, grab, drop], cycle))
+            p.append(_track("y2", [55, cy+6, belt], [s+.1, grab, drop], cycle))
+            p.append('</line>')
+        p.append('</g>')
+        # The same calendar cell travels down to the belt and to the output.
+        p.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" '
+                 f'fill="{fill}" opacity="0">')
+        p.append(_track("opacity", [0, 1, 0], [0, grab, end], cycle, "discrete"))
+        p.append(_track("x", [x, x, output-CELL/2], [grab, drop, end], cycle))
+        p.append(_track("y", [y, belt-CELL, belt-CELL], [grab, drop, end], cycle))
+        p.append(_track("fill", [fill, fill, accent], [grab, drop, end], cycle))
+        p.append('</rect>')
+    p.append(f'<text x="{LEFT}" y="{height-8}" font-family="monospace" '
+             f'font-size="9" fill="{text}">CONTRIBUTION PROCESSING</text>')
     p.append('</svg>')
     return "\n".join(p) + "\n"

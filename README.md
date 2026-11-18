@@ -10,7 +10,7 @@ An animation and simulation engine for transforming GitHub contribution calendar
 
 | Scenario | Concept | Status |
 | --- | --- | --- |
-| GitFactory | Automated production lines powered by contributions | Prototype |
+| GitFactory | Robotic processing directly on the contribution calendar | Prototype |
 | GitOrigami | Geometric folding and transformation | Planned |
 
 ## Quick start
@@ -36,7 +36,7 @@ Do not commit tokens. To preview the first factory scenario:
 python -m contribution_dynamic generate --scenario factory --theme dark --output examples/factory-dark.svg
 ```
 
-GitFactory models one production batch per active day, with contribution count controlling batch size. Its first prototype uses a fixed production cadence and decorative robotic arms.
+GitFactory preserves the calendar layout and animates a rail-mounted gripper that extracts active cells, transports them along a conveyor, and restores the calendar on each loop. Color levels are currently derived from contribution counts. The SVG is a separate image for use in a README; it does not alter GitHub's native calendar.
 
 ## Architecture
 

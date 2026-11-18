@@ -8,3 +8,4 @@
 - Add baseline motion path and SVG renderer with light/dark themes.
 - Add generation command and engine tests.
 - Add GitFactory production schedule and SVG prototype with scenario selection.
+- Preserve the contribution calendar as the GitFactory scene and synchronize extraction with the conveyor.
