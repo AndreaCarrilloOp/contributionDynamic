@@ -1,5 +1,6 @@
-"""GitTanks: defend an eagle base against waves of arcade enemy tanks."""
+"""GitTanks: golden maze tank against waves of silver invaders."""
 
+from collections import deque
 from dataclasses import dataclass
 from math import atan2, cos, degrees, radians, sin
 
@@ -11,10 +12,9 @@ CELL = 10
 LEFT = 47
 TOP = 39
 FIRST = .12
-ASSAULT = TOP + 7 * STEP + 13
-GUARD = ASSAULT + 23
-BASE = GUARD + 21
-MAX_ENEMIES = 4
+BASE = TOP + 7 * STEP + 15
+MAX_ENEMIES = 3
+WAVE_BRICKS = 7
 MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 PALETTES = {
@@ -42,37 +42,32 @@ PALETTES = {
 
 
 Point = tuple[float, float]
+Square = tuple[int, int]
+DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
 
 
 @dataclass(frozen=True)
-class Breach:
-    day: Day
-    origin: Point
-    target: Point
+class Attack:
+    source: Square
+    target: Square
     fire: float
     hit: float
+    enter: float
+    day: Day | None = None
+    enemy: int | None = None
+    counter: float | None = None
+    shield_hit: float | None = None
+    spawn: float | None = None
 
 
 @dataclass(frozen=True)
-class Invader:
-    week: int
-    positions: tuple[Point, ...]
+class Battle:
+    spawn: Square
+    positions: tuple[Square, ...]
     times: tuple[float, ...]
-    breaches: tuple[Breach, ...]
-    station: Point
-    attack: float
-    shield_hit: float
-    guard_x: float
-    counter: float
-    defeated: float
-
-
-@dataclass(frozen=True)
-class Wave:
-    start: float
-    ready: float
-    restore: float
-    enemies: tuple[Invader, ...]
+    angles: tuple[float, ...]
+    attacks: tuple[Attack, ...]
+    cycle: float
 
 
 def _level(day: Day) -> int:
@@ -106,58 +101,146 @@ def _toward(a: Point, b: Point, distance: float) -> Point:
     return a[0]+cos(theta)*distance, a[1]+sin(theta)*distance
 
 
-def plan_waves(days: tuple[Day, ...]) -> tuple[Wave, ...]:
-    """Send up to four enemies through active columns before attacking the base."""
-    columns: dict[int, dict[int, Day]] = {}
-    for day in sorted(days, key=lambda d: (d.week, d.weekday)):
-        if day.count:
-            columns.setdefault(day.week, {})[day.weekday] = day
-    center = base_x(days)
-    weeks = list(columns)
-    waves = []
-    start = FIRST
-    for offset in range(0, len(weeks), MAX_ENEMIES):
-        group = weeks[offset:offset+MAX_ENEMIES]
-        routes = []
-        for week in group:
-            origin = _center(week, -1)
-            positions, times = [origin, origin], [start, start+.12]
-            breaches = []
-            t = times[-1]
-            for row in range(7):
-                target = _center(week, row)
-                day = columns[week].get(row)
-                if day is not None:
-                    fire, hit = t+.04, t+.20
-                    breaches.append(Breach(day, positions[-1], target, fire, hit))
-                    positions.append(positions[-1])
-                    t = hit+.06
-                    times.append(t)
-                positions.append(target)
-                t += .16
-                times.append(t)
-            positions.append((origin[0], ASSAULT))
-            times.append(t+.20)
-            routes.append((week, positions, times, breaches))
-        gather = max(route[2][-1] for route in routes)+.14
-        slots = [center+(i-(len(group)-1)/2)*31 for i in range(len(group))]
-        travel = max(abs(slot-route[1][-1][0]) for slot, route in zip(slots, routes))
-        ready = gather+max(.45, travel/185)
-        enemies = []
-        for i, ((week, positions, times, breaches), slot) in enumerate(zip(routes, slots)):
-            station = (slot, ASSAULT)
-            positions.extend((positions[-1], station))
-            times.extend((gather, ready))
-            duel = ready+.10+i*1.02
-            guard_x = center+max(-28, min(28, (slot-center)*.56))
-            enemies.append(Invader(
-                week, tuple(positions), tuple(times), tuple(breaches), station,
-                duel+.28, duel+.58, guard_x, duel+.70, duel+.92,
-            ))
-        restore = enemies[-1].defeated+.52
-        waves.append(Wave(start, ready, restore, tuple(enemies)))
-        start = restore+.28
-    return tuple(waves)
+def _neighbors(pos: Square, width: int, spawn: Square):
+    for dx, dy in DIRECTIONS:
+        candidate = pos[0]+dx, pos[1]+dy
+        if candidate == spawn or (0 <= candidate[0] < width and 0 <= candidate[1] < 7):
+            yield candidate
+
+
+def _paths(start, blocked, width, spawn):
+    """BFS parent map; all discovered squares are traversable."""
+    parents = {start: None}
+    queue = deque([start])
+    while queue:
+        pos = queue.popleft()
+        for neighbor in _neighbors(pos, width, spawn):
+            if neighbor not in blocked and neighbor not in parents:
+                parents[neighbor] = pos
+                queue.append(neighbor)
+    return parents
+
+
+def _path(parents, end):
+    route = [end]
+    while parents[route[-1]] is not None:
+        route.append(parents[route[-1]])
+    return tuple(reversed(route))
+
+
+def _approach(start, blocked, targets, width, spawn):
+    """Find the closest reachable firing square adjacent to a blocked target."""
+    parents = _paths(start, blocked, width, spawn)
+    for pos in parents:
+        for neighbor in _neighbors(pos, width, spawn):
+            if neighbor in targets:
+                return _path(parents, pos), neighbor
+    raise ValueError("No reachable target")
+
+
+def _enemy_positions(current, blocked, width, spawn, count, cleared):
+    parents = _paths(current, blocked, width, spawn)
+    candidates = [pos for pos in parents if pos not in (current, spawn)]
+    # Favor nearby, already cleared squares. Never occupy unbroken bricks.
+    candidates.sort(key=lambda pos: (
+        abs(len(_path(parents, pos))-4),
+        pos not in cleared,
+        pos,
+    ))
+    return set(candidates[:count])
+
+
+def plan_battle(days: tuple[Day, ...]) -> Battle | None:
+    """Clear active bricks with one tank, then fight enemies on open grid squares."""
+    bricks = {(d.week, d.weekday): d for d in days if d.count}
+    if not bricks:
+        return None
+    width = board_weeks(days)
+    first = min(bricks)
+    # Prefer an actual inactive day. Dense or partial boards may need a nearby
+    # blank square; a completely full board uses a single top-edge entry square.
+    free = [(d.week, d.weekday) for d in days if not d.count]
+    if not free:
+        free = [(x, y) for x in range(width) for y in range(7) if (x, y) not in bricks]
+    spawn = min(free, key=lambda pos: (
+        abs(pos[0]-first[0])+abs(pos[1]-first[1]), pos,
+    )) if free else (first[0], -1)
+    blocked = set(bricks)
+    cleared = set()
+    positions = [spawn, spawn]
+    times = [0.0, FIRST]
+    angles = [90.0, 90.0]
+    attacks = []
+    clock = FIRST
+    enemy_id = 0
+
+    def pose(pos, t, angle):
+        nonlocal clock
+        positions.append(pos)
+        times.append(t)
+        angles.append(angle)
+        clock = t
+
+    def turn(target):
+        pos = positions[-1]
+        desired = _angle(_center(*pos), _center(*target))
+        previous = angles[-1]
+        angle = previous + (desired-previous+180) % 360 - 180
+        pose(pos, clock+.07, angle)
+
+    def walk(route):
+        for pos in route[1:]:
+            turn(pos)
+            pose(pos, clock+.11, angles[-1])
+
+    def engage(target, day=None, enemy=None, born=None):
+        source = positions[-1]
+        turn(target)
+        counter = shield_hit = None
+        if enemy is not None:
+            counter = clock+.04
+            shield_hit = counter+.12
+            pose(source, shield_hit+.08, angles[-1])
+        fire = clock+.04
+        hit = fire+.12
+        pose(source, hit+.16, angles[-1])
+        pose(target, clock+.11, angles[-1])
+        attacks.append(Attack(source, target, fire, hit, clock, day, enemy,
+                              counter, shield_hit, born))
+
+    while blocked:
+        count = min(WAVE_BRICKS, len(blocked))
+        for _ in range(count):
+            route, target = _approach(positions[-1], blocked, blocked, width, spawn)
+            walk(route)
+            engage(target, day=bricks[target])
+            blocked.remove(target)
+            cleared.add(target)
+        enemies = _enemy_positions(
+            positions[-1], blocked, width, spawn, min(MAX_ENEMIES, count), cleared,
+        )
+        if enemies:
+            born = clock
+            pose(positions[-1], clock+.16, angles[-1])
+            while enemies:
+                route, target = _approach(
+                    positions[-1], blocked | enemies, enemies, width, spawn,
+                )
+                walk(route)
+                engage(target, enemy=enemy_id, born=born)
+                enemy_id += 1
+                enemies.remove(target)
+        pose(positions[-1], clock+.10, angles[-1])
+
+    # With all bricks destroyed the hero can return through open lanes.
+    parents = _paths(positions[-1], set(), width, spawn)
+    walk(_path(parents, spawn))
+    previous = angles[-1]
+    home_angle = previous + (90-previous+180) % 360 - 180
+    pose(spawn, clock+.15, home_angle)
+    # Reset only when the hero is safely back at its starting square.
+    return Battle(spawn, tuple(positions), tuple(times), tuple(angles),
+                  tuple(attacks), max(4.0, clock+.6))
 
 
 def _months(days):
@@ -225,112 +308,81 @@ def _explosion(point, hit, cycle, p, radius=7):
     ]
 
 
-def _invader(enemy, wave, center, cycle, p):
-    pos, times = enemy.positions, enemy.times
-    station = enemy.station
-    lateral = 0 if station[0] >= pos[-2][0] else 180
-    gather = times[-2]
-    angle = _angle(station, (center, BASE))
-    parts = [
-        f'<g data-tank="enemy" data-column="{enemy.week}" opacity="0" '
-        f'transform="translate({_position(pos[0])})">',
-        track("opacity", [0, 1, 1, 0],
-              [wave.start, wave.start+.10, enemy.defeated-.015, enemy.defeated], cycle),
-        track("transform", [_position(pt) for pt in pos], times, cycle, transform=True),
+def _hero(battle, p):
+    positions = [_position(_center(*pos)) for pos in battle.positions]
+    return [
+        f'<g data-tank="hero" transform="translate({positions[0]})">',
+        track("transform", positions, battle.times, battle.cycle, transform=True),
         '<g transform="rotate(90)">',
-        track("transform", [90, 90, lateral, lateral, angle],
-              [wave.start, gather-.10, gather, wave.ready-.12, wave.ready], cycle,
-              transform=True).replace('type="translate"', 'type="rotate"'),
+        track("transform", [f"{a:.2f}" for a in battle.angles], battle.times,
+              battle.cycle, transform=True).replace('type="translate"', 'type="rotate"'),
+        *_tank_sprite(p, "hero"),
+        '</g></g>',
+    ]
+
+
+def _enemy(attack, cycle, p):
+    pos = _center(*attack.target)
+    aim = _angle(pos, _center(*attack.source))
+    return [
+        f'<g data-tank="enemy" data-enemy="{attack.enemy}" opacity="0" '
+        f'transform="translate({_position(pos)})">',
+        track("opacity", [0, 1, 1, 0],
+              [attack.spawn, attack.spawn+.12, attack.hit-.015, attack.hit], cycle),
+        '<g transform="rotate(90)">',
+        track("transform", [90, aim, aim], [attack.spawn, attack.counter-.03, attack.hit],
+              cycle, transform=True).replace('type="translate"', 'type="rotate"'),
         *_tank_sprite(p, "enemy"),
         '</g></g>',
     ]
-    for breach in enemy.breaches:
-        parts.append(f'<g data-shot="{breach.day.date.isoformat()}">')
-        parts.extend(_projectile(breach.origin, breach.target, breach.fire,
-                                 breach.hit, cycle, p, "enemy"))
-        parts.extend(_explosion(breach.target, breach.hit, cycle, p,
-                                5+_level(breach.day)))
-        parts.append('</g>')
-    shield_point = _toward((center, BASE), station, 12)
-    parts.extend(_projectile(station, shield_point, enemy.attack,
-                             enemy.shield_hit, cycle, p, "enemy"))
-    parts.extend(_projectile((enemy.guard_x, GUARD), station, enemy.counter,
-                             enemy.defeated, cycle, p, "hero"))
-    parts.extend(_explosion(station, enemy.defeated, cycle, p))
+
+
+def _combat(attack, cycle, p):
+    origin, target = _center(*attack.source), _center(*attack.target)
+    label = attack.day.date.isoformat() if attack.day is not None else attack.enemy
+    parts = [f'<g data-shot="{label}">']
+    if attack.enemy is not None:
+        parts.extend(_projectile(target, origin, attack.counter,
+                                 attack.shield_hit, cycle, p, "enemy"))
+        parts.extend([
+            f'<circle cx="{origin[0]}" cy="{origin[1]}" r="7" fill="none" '
+            f'stroke="{p["shield"]}" stroke-width="1.4" opacity="0">',
+            track("opacity", [0, 1, 0],
+                  [attack.shield_hit-.02, attack.shield_hit, attack.shield_hit+.16], cycle),
+            '</circle>',
+        ])
+    parts.extend(_projectile(origin, target, attack.fire, attack.hit, cycle, p, "hero"))
+    parts.extend(_explosion(target, attack.hit, cycle, p,
+                            5+_level(attack.day) if attack.day else 8))
+    parts.append('</g>')
     return parts
 
 
-def _hero(waves, center, cycle, p):
-    positions, times = [_position((center, GUARD))], [0.0]
-    angles, angle_times = [-90.0], [0.0]
-    current, angle = center, -90.0
-    for wave in waves:
-        for enemy in wave.enemies:
-            start = enemy.attack-.28
-            positions.extend((_position((current, GUARD)), _position((enemy.guard_x, GUARD))))
-            times.extend((start, start+.22))
-            target = _angle((enemy.guard_x, GUARD), enemy.station)
-            next_angle = angle+(target-angle+180)%360-180
-            angles.extend((angle, next_angle))
-            angle_times.extend((start+.22, enemy.counter-.06))
-            current, angle = enemy.guard_x, next_angle
-        positions.extend((_position((current, GUARD)), _position((center, GUARD))))
-        times.extend((wave.enemies[-1].defeated+.08, wave.restore))
-        angles.extend((angle, -90.0))
-        angle_times.extend((wave.enemies[-1].defeated+.08, wave.restore))
-        current, angle = center, -90.0
+def _eagle(center, p):
+    """Keep the eagle as a visual base, not a replacement for maze navigation."""
     return [
-        f'<g data-tank="hero" transform="translate({center} {GUARD})">',
-        track("transform", positions, times, cycle, transform=True),
-        '<g transform="rotate(-90)">',
-        track("transform", angles, angle_times, cycle,
-              transform=True).replace('type="translate"', 'type="rotate"'),
-        *_tank_sprite(p),
-        '</g></g>',
-    ]
-
-
-def _eagle(waves, center, cycle, p):
-    parts = [
         f'<g data-base="eagle" transform="translate({center} {BASE})">',
         f'<rect x="-10" y="-9" width="20" height="18" rx="1" fill="{p["empty"]}" '
         f'stroke="{p["brick_shadow"]}" stroke-width="1.3"/>',
-        '<g shape-rendering="crispEdges">',
         '<path d="M-8 -6H-5V-4H-3V-2H-1V-5H1V-6H4V-3H2V-2H4V-4'
         'H6V-6H8V-1H6V1H3V4H5V6H-5V4H-3V1H-6V-1H-8Z" '
         f'fill="{p["hero_top"]}" stroke="{p["hero_edge"]}" stroke-width=".6"/>',
-        f'<rect x="1" y="-5" width="1" height="1" fill="{p["hero_edge"]}"/>',
         '</g>',
-        f'<circle r="12" fill="none" stroke="{p["shield"]}" stroke-width="1.6" '
-        'opacity="0" data-shield="true">',
     ]
-    if waves:
-        values, times = [0], [0.0]
-        for wave in waves:
-            for enemy in wave.enemies:
-                t = enemy.shield_hit
-                values.extend((0, 1, 0))
-                times.extend((t-.02, t, t+.20))
-        parts.append(track("opacity", values, times, cycle))
-    parts.extend(('</circle>', '</g>'))
-    return parts
 
 
 def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
     weeks, center = board_weeks(days), base_x(days)
     width, height = LEFT+weeks*STEP+16, BASE+23
-    waves = plan_waves(days)
-    cycle = max(4.0, waves[-1].restore+.5) if waves else 4.0
-    by_day = {
-        breach.day: (breach, wave)
-        for wave in waves for enemy in wave.enemies for breach in enemy.breaches
-    }
+    battle = plan_battle(days)
+    cycle = battle.cycle if battle else 4.0
+    by_day = {a.day: a for a in battle.attacks if a.day} if battle else {}
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" '
-        'aria-label="GitTanks golden defender protects the eagle base">',
-        '<title>GitTanks — defend the eagle</title>',
+        'aria-label="GitTanks golden tank navigates the contribution maze">',
+        '<title>GitTanks — maze battle</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
         f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
     ]
@@ -347,17 +399,17 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
                      f'fill="{color}" data-date="{day.date.isoformat()}" data-level="{level}">')
         parts.append(f'<title>{day.date.isoformat()}: {day.count} contributions</title>')
         if day in by_day:
-            breach, wave = by_day[day]
+            attack = by_day[day]
             parts.append(track("fill", [color, p["empty"], color],
-                               [0, breach.hit, wave.restore], cycle, "discrete"))
+                               [0, attack.hit, cycle], cycle, "discrete"))
         parts.append('</rect>')
     parts.extend(['</g>', '<g id="brick-detail">'])
     for day in sorted(by_day, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT+day.week*STEP, TOP+day.weekday*STEP
-        breach, wave = by_day[day]
+        attack = by_day[day]
         parts.append(f'<g data-brick="{day.date.isoformat()}" '
                      'shape-rendering="crispEdges" opacity="1">')
-        parts.append(track("opacity", [1, 0, 1], [0, breach.hit, wave.restore],
+        parts.append(track("opacity", [1, 0, 1], [0, attack.hit, cycle],
                            cycle, "discrete"))
         # Three staggered courses, warm mortar, highlights and lower shadow.
         parts.append(f'<path d="M{x} {y+3.5}H{x+10}M{x} {y+7}H{x+10}'
@@ -373,16 +425,18 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
                      'stroke-width="1" opacity=".6"/>')
         parts.append('</g>')
     parts.extend(['</g>', '<g id="combat">'])
-    for wave in waves:
-        for enemy in wave.enemies:
-            parts.extend(_invader(enemy, wave, center, cycle, p))
-    parts.extend(['</g>', '<g id="defense">', *_eagle(waves, center, cycle, p)])
-    if waves:
-        parts.extend(_hero(waves, center, cycle, p))
+    if battle:
+        for attack in battle.attacks:
+            if attack.enemy is not None:
+                parts.extend(_enemy(attack, cycle, p))
+            parts.extend(_combat(attack, cycle, p))
+    parts.extend(['</g>', '<g id="base">', *_eagle(center, p), '</g>', '<g id="hero">'])
+    if battle:
+        parts.extend(_hero(battle, p))
     parts.extend([
         '</g>',
         f'<text x="{LEFT}" y="{height-6}" fill="{p["text"]}" font-size="8" '
-        'letter-spacing="1.2" font-family="system-ui,sans-serif">DEFEND THE EAGLE</text>',
+        'letter-spacing="1.2" font-family="system-ui,sans-serif">GITTANKS · MAZE BATTLE</text>',
         '</svg>',
     ])
     return "\n".join(parts) + "\n"

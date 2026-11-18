@@ -69,7 +69,7 @@ Arcade robots plant bombs that break contribution bricks in cross-shaped explosi
 
 ### GitTanks
 
-A golden retro tank defends an eagle base against waves of silver enemies. Enemy tanks breach contribution bricks, attack the shield and are defeated by the defender. The calendar is restored after each wave.
+A golden retro tank navigates the contribution maze, breaks bricks before entering their cells, and fights waves of silver enemies. The eagle remains a visual base; the original calendar is restored when the tank returns to its starting square.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">
