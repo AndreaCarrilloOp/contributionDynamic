@@ -13,3 +13,4 @@
 - Use relative contribution levels from GitHub GraphQL for calendar colors.
 - Add the GitOrigami calendar-to-paper-bird scenario and CLI selection.
 - Generate all three scenarios in light and dark themes using CI and live GraphQL previews.
+- Add validated multi-scenario asset generation and daily publishing to a dedicated output branch.

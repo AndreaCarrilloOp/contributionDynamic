@@ -1,0 +1,92 @@
+name: Publish contribution animations
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 11 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contribution-animation-publish
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install and validate
+        run: |
+          python -m pip install -e '.[dev]'
+          python -m pytest -v
+          python -m ruff check .
+      - name: Generate live SVG assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.CONTRIBUTION_TOKEN }}
+          CONTRIBUTION_USER: ${{ github.repository_owner }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          from contribution_dynamic.collector import collect
+          from contribution_dynamic.publish import build_assets
+
+          days = collect(os.environ["CONTRIBUTION_USER"], os.environ["GITHUB_TOKEN"])
+          files = build_assets(days, Path("generated"))
+          print(f"Generated {len(files)} SVG files from {len(days)} calendar days.")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: published-animations
+          path: generated/*.svg
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          name: published-animations
+          path: ${{ runner.temp }}/contribution-animations
+      - name: Publish to output branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git show-ref --verify --quiet refs/remotes/origin/output; then
+            git switch -c output --track origin/output
+          else
+            git switch --orphan output
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for scenario in motion factory origami; do
+            for theme in dark light; do
+              file="$scenario-$theme.svg"
+              cp "$RUNNER_TEMP/contribution-animations/$file" "$file"
+              git add -- "$file"
+            done
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git commit -m "chore: update contribution animations"
+          git push origin HEAD:refs/heads/output

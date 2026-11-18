@@ -48,6 +48,27 @@ GitOrigami folds each active calendar cell into a four-panel paper bird. A stagg
 
 Run **CI** for token-free demo previews or **Validate GitHub GraphQL** for previews based on the repository owner's actual contributions.
 
+## Automated publishing
+
+The **Publish contribution animations** workflow runs daily at 11:17 UTC and can also be started manually from the Actions tab. It uses the repository secret `CONTRIBUTION_TOKEN` to fetch the owner's calendar, validates all renderers and publishes six SVG files to the dedicated `output` branch. A failed generation leaves existing published assets untouched. No local token is required.
+
+Use a read-only token limited to public data; the published SVGs expose calendar dates, contribution counts and activity levels. Do not publish private activity unless you intend to disclose it.
+
+After the first successful publish, embed a scenario in a GitHub README with theme-aware markup:
+
+```html
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-dark.svg">
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg">
+  <img alt="GitFactory contribution animation"
+    src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg">
+</picture>
+```
+
+Replace `factory` with `origami` or `motion` to select another scenario. GitHub image caching may delay visible updates.
+
 ## Architecture
 
 Calendar collector → normalized model → motion path → SVG renderer.
@@ -61,4 +82,4 @@ See [architecture](docs/architecture.md) and [contributing](CONTRIBUTING.md).
 - [x] Core tests and live GraphQL validation
 - [x] GitFactory board-based parallel prototype (visual validation pending)
 - [x] GitOrigami initial prototype (visual validation pending)
-- [ ] Automated SVG publishing
+- [x] Automated SVG publishing workflow (first live publish pending)

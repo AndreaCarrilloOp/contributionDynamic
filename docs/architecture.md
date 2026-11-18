@@ -11,3 +11,5 @@ The collector accepts credentials from the environment through the CLI. The defa
 GitFactory assigns active days to four disjoint column zones with independent schedules. Each zone uses a persistent trolley, a gripper, a conveyor and an output station. Shared SVG timelines preserve source coordinates and reset the board at the cycle boundary. The collector retains GitHub contribution levels when available.
 
 GitOrigami animates four triangular SVG paper panels per active day. A deterministic column-and-row wave schedules folding, flight and fade-out. Source cells share the same timeline and return at the loop boundary. The CLI selects a renderer through a scenario registry. CI generates demo previews without credentials; the manual GraphQL workflow fetches live data once for all renderers.
+
+Publishing renders and XML-validates all six assets from one calendar before uploading an artifact. A separate job with contents write permission updates the output branch without force-pushing. Generation uses read-only repository permissions and receives the contribution token only during the fetch step. Existing assets remain available if generation fails.
