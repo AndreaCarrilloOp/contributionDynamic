@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
+from contribution_dynamic.layout import ROWS, calendar_width
 
 CELL = 10
 FIRST = .12
@@ -52,11 +53,11 @@ class Run:
     times: tuple[float, ...]
     events: tuple[Blast, ...]
     cycle: float
+    entry: tuple[Day, ...]
 
 
 def _inside(pos: Square, weeks: int) -> bool:
-    # A narrow perimeter permits entry into fully occupied calendars.
-    return -1 <= pos[0] <= weeks and -1 <= pos[1] <= 7
+    return 0 <= pos[0] < weeks and 0 <= pos[1] < ROWS
 
 
 def _neighbors(pos: Square, weeks: int):
@@ -135,19 +136,32 @@ def plan_run(days: tuple[Day, ...]) -> Run | None:
         return None
     weeks = board_weeks(days)
     blocked = set(bricks)
-    reachable = _paths((-1, -1), blocked, weeks)
-    # Start at a useful legal bomb site instead of walking across empty months.
     first = min(bricks)
-    candidates = sorted(reachable, key=lambda pos: (
-        abs(pos[0]-first[0])+abs(pos[1]-first[1]),
-        not (0 <= pos[0] < weeks and 0 <= pos[1] < 7),
-        pos,
+    # A free 2x2 component can always offer shelter outside a cross.
+    # If none exists, open the least occupied pocket before the hero arrives.
+    pockets = [
+        tuple((x+dx, y+dy) for dx in range(2) for dy in range(2))
+        for x in range(weeks-1) for y in range(ROWS-1)
+    ]
+    pocket = min(pockets, key=lambda cells: (
+        sum(pos in blocked for pos in cells),
+        min(abs(x-first[0])+abs(y-first[1]) for x, y in cells),
+        cells,
     ))
-    spawn = next(
-        pos for pos in candidates
-        if any(n in blocked for n in _neighbors(pos, weeks))
-        and _shelter(pos, blast_cross(pos, RADIUS, weeks, blocked), blocked, weeks)
-    )
+    entry = tuple(bricks[pos] for pos in pocket if pos in blocked)
+    blocked.difference_update(pocket)
+    reachable = _paths(pocket[0], blocked, weeks)
+    candidates = sorted(reachable, key=lambda pos: (
+        abs(pos[0]-first[0])+abs(pos[1]-first[1]), pos,
+    ))
+    if blocked:
+        spawn = next(
+            pos for pos in candidates
+            if any(n in blocked for n in _neighbors(pos, weeks))
+            and _shelter(pos, blast_cross(pos, RADIUS, weeks, blocked), blocked, weeks)
+        )
+    else:
+        spawn = pocket[0]
     positions, times = [spawn, spawn], [0.0, FIRST]
     events = []
     clock = FIRST
@@ -186,7 +200,7 @@ def plan_run(days: tuple[Day, ...]) -> Run | None:
 
     walk(_route(_paths(positions[-1], set(), weeks), spawn))
     hold(.45)
-    return Run(tuple(positions), tuple(times), tuple(events), max(4.0, clock+.15))
+    return Run(tuple(positions), tuple(times), tuple(events), max(4.0, clock+.15), entry)
 
 
 def plan_blasts(days: tuple[Day, ...]) -> tuple[Blast, ...]:
@@ -203,12 +217,15 @@ def _actor(run: Run, p: dict) -> list[str]:
     return [
         f'<g data-actor="hero" transform="translate({positions[0]})">',
         track("transform", positions, run.times, run.cycle, transform=True),
+        *([track("opacity", [0, 1, 1, 0], [0, FIRST, run.cycle-.08, run.cycle],
+                 run.cycle)] if run.entry else []),
+        '<g transform="scale(.65)">',
         f'<rect x="-4" y="-1" width="8" height="6" rx="1" fill="{p["actor"]}"/>',
         f'<rect x="-5" y="-6" width="10" height="8" rx="2" fill="{p["actor"]}" '
         f'stroke="{p["outline"]}" stroke-width=".6"/>',
         f'<rect x="-3" y="-4" width="6" height="3" rx="1" fill="{p["visor"]}"/>',
         f'<path d="M-3 5V7M3 5V7" stroke="{p["outline"]}" stroke-width="2"/>',
-        '</g>',
+        '</g></g>',
     ]
 
 
@@ -254,11 +271,14 @@ def _event(event: Blast, cycle: float, p: dict) -> list[str]:
 
 def render_blast(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
-    width, height = LEFT + board_weeks(days) * STEP + RIGHT, TOP + 8 * STEP + 18
+    width = calendar_width(LEFT, STEP, CELL, RIGHT, board_weeks(days))
+    height = TOP + ROWS * STEP + 18
     run = plan_run(days)
     events = run.events if run else ()
     cycle = run.cycle if run else 4.0
-    by_day = {day: event for event in events for day in event.hits}
+    hit_times = {day: event.hit for event in events for day in event.hits}
+    if run:
+        hit_times.update((day, FIRST / 2) for day in run.entry)
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" '
@@ -275,19 +295,26 @@ def render_blast(days: tuple[Day, ...], theme: str = "dark") -> str:
         parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="1" '
                      f'fill="{color}" data-date="{day.date.isoformat()}" data-level="{level}">')
         parts.append(f'<title>{day.date.isoformat()}: {day.count} contributions</title>')
-        if day in by_day:
+        if day in hit_times:
             parts.append(track("fill", [color, p["empty"], color],
-                               [0, by_day[day].hit, cycle], cycle, "discrete"))
+                               [0, hit_times[day], cycle], cycle, "discrete"))
         parts.append('</rect>')
     parts.extend(['</g>', '<g id="brick-mortar">'])
-    for day in sorted(by_day, key=lambda d: (d.week, d.weekday)):
+    for day in sorted(hit_times, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week*STEP, TOP + day.weekday*STEP
         parts.append(f'<path d="M{x} {y+5}H{x+10}M{x+5} {y}V{y+5}M{x+3} {y+5}V{y+10}" '
                      f'fill="none" stroke="{p["mortar"]}" stroke-width=".6" opacity=".65">')
         parts.append(track("opacity", [.65, 0, .65],
-                           [0, by_day[day].hit, cycle], cycle, "discrete"))
+                           [0, hit_times[day], cycle], cycle, "discrete"))
         parts.append('</path>')
     parts.extend(['</g>', '<g id="arcade-events">'])
+    if run:
+        for day in run.entry:
+            x, y = _point((day.week, day.weekday))
+            parts.append(f'<g data-entry="{day.date.isoformat()}" opacity="0">')
+            parts.append(track("opacity", [0, 1, 0], [0, FIRST/2, FIRST], cycle))
+            parts.append(f'<circle cx="{x}" cy="{y}" r="4" fill="{p["fire"]}"/>')
+            parts.append('</g>')
     for event in events:
         parts.extend(_event(event, cycle, p))
     if run:

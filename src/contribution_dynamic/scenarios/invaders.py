@@ -6,6 +6,7 @@ from itertools import groupby
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
+from contribution_dynamic.layout import calendar_width
 
 CELL = 10
 SHIP_Y = TOP + 7 * STEP + 17
@@ -83,9 +84,34 @@ def center(day: Day) -> tuple[float, float]:
     return LEFT + day.week * STEP + CELL / 2, TOP + day.weekday * STEP + CELL / 2
 
 
+def _column_order(days: tuple[Day, ...]) -> tuple[int, ...]:
+    """Alternate edges of local sectors rather than crossing the whole board."""
+    columns = sorted({day.week for day in days if day.count})
+    order = []
+    for offset in range(0, len(columns), 8):
+        sector = columns[offset:offset+8]
+        left, right = 0, len(sector)-1
+        take_left = (offset // 8) % 2 == 0
+        while left <= right:
+            if take_left:
+                order.append(sector[left])
+                left += 1
+            else:
+                order.append(sector[right])
+                right -= 1
+            take_left = not take_left
+    return tuple(order)
+
+
+def _ordered_active_days(days: tuple[Day, ...]) -> tuple[Day, ...]:
+    order = {week: i for i, week in enumerate(_column_order(days))}
+    return tuple(sorted((d for d in days if d.count),
+                        key=lambda d: (order[d.week], -d.weekday)))
+
+
 def plan_battle(days: tuple[Day, ...]) -> Battle | None:
     """Fire bottom-to-top so a living invader never blocks a later shot."""
-    active = sorted((d for d in days if d.count), key=lambda d: (d.week, -d.weekday))
+    active = _ordered_active_days(days)
     if not active:
         return None
     home = center(active[0])[0]
@@ -97,7 +123,8 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
         shift = SWAY if i % 2 == 0 else -SWAY
         base = center(column[0])[0] + shift
         # At the right edge evade to the left; the ship remains inside the SVG.
-        dodge = base + DODGE if base + DODGE < LEFT + board_weeks(days)*STEP else base-DODGE
+        width = calendar_width(LEFT, STEP, CELL, RIGHT, board_weeks(days))
+        dodge = base + DODGE if base + DODGE + 8 <= width else base-DODGE
         arrive = start + max(.14, abs(base - previous) / 230)
         enemy_launch = arrive + .04
         distance = SHIP_Y - center(column[0])[1]
@@ -236,7 +263,7 @@ def _combat(battle, p):
 def render_invaders(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
     weeks = board_weeks(days)
-    width, height = LEFT + weeks * STEP + RIGHT, SHIP_Y + 23
+    width, height = calendar_width(LEFT, STEP, CELL, RIGHT, weeks), SHIP_Y + 23
     battle = plan_battle(days)
     by_day = {s.day: s for v in battle.volleys for s in v.shots} if battle else {}
     parts = [

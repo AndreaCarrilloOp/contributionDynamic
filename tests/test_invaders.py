@@ -89,3 +89,11 @@ def test_no_fabricated_activity():
         assert not root.findall(".//s:g[@data-invader]", NS)
         assert not root.findall(".//s:g[@data-ship]", NS)
         assert not root.findall(".//s:animate", NS)
+
+
+def test_column_order_alternates_within_local_sectors():
+    days = tuple(Day(date(2026, 1, i+1), 1, 0, i) for i in range(8))
+    battle = plan_battle(days)
+    assert battle is not None
+    columns = [volley.shots[0].day.week for volley in battle.volleys]
+    assert columns == [0, 7, 1, 6, 2, 5, 3, 4]

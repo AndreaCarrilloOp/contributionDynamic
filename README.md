@@ -25,7 +25,7 @@ A golden retro tank navigates the contribution maze, breaks bricks before enteri
 
 ### GitBlast
 
-One arcade hero navigates free cells, plants a single bomb beside an intact contribution brick, and retreats before a cross-shaped explosion. Flames stop at the first brick in each direction. The calendar resets when the hero returns home.
+One arcade hero stays inside the calendar grid, navigates free cells, plants a single bomb beside an intact contribution brick, and retreats before a cross-shaped explosion. Flames stop at the first brick in each direction. The calendar resets when the hero returns home.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">
@@ -47,7 +47,7 @@ A team of ivory chess attackers — queen, rook, bishop and knight — takes tur
 
 ### GitInvaders
 
-A single pixel-art spaceship battles a colorful formation of contribution-powered aliens. Four original silhouettes encode activity levels. The ship evades enemy fire, clears each column from the bottom up, and the calendar restores at the end of the loop.
+A single pixel-art spaceship battles a colorful formation of contribution-powered aliens. Four original silhouettes encode activity levels. The ship evades enemy fire, alternates attack direction within local sectors, clears each column from the bottom up, and the calendar restores at the end of the loop.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-dark.svg">

@@ -3,6 +3,7 @@
 from contribution_dynamic.animation import track as _track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
+from contribution_dynamic.layout import calendar_width
 
 CELL = 10
 FLIGHT = 2.6
@@ -80,7 +81,7 @@ def _bird(day, color, shades, cycle, width, s):
 def render_origami(days: tuple[Day, ...], theme: str = "dark") -> str:
     bg, empty, text, levels, highlight, middle, shadow = PALETTES[theme]
     weeks = board_weeks(days)
-    width, height = LEFT + weeks * STEP + RIGHT, TOP + 7 * STEP + 13
+    width, height = calendar_width(LEFT, STEP, CELL, RIGHT, weeks), TOP + 7 * STEP + 13
     schedule = fold_schedule(days)
     cycle = max(4.0, max(schedule.values(), default=0) + FLIGHT + .65)
     parts = [

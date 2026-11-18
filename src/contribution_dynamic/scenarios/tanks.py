@@ -7,6 +7,7 @@ from math import atan2, cos, degrees, radians, sin
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
+from contribution_dynamic.layout import calendar_width
 
 CELL = 10
 FIRST = .12
@@ -522,7 +523,7 @@ def _eagle(center, p):
 def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
     weeks, center = board_weeks(days), base_x(days)
-    width, height = LEFT + weeks * STEP + RIGHT, BASE+23
+    width, height = calendar_width(LEFT, STEP, CELL, RIGHT, weeks), BASE+23
     battle = plan_battle(days)
     cycle = battle.cycle if battle else 4.0
     by_day = {a.day: a for a in battle.attacks if a.day} if battle else {}

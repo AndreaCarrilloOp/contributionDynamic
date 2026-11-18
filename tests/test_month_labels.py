@@ -5,6 +5,7 @@ import pytest
 
 from contribution_dynamic.calendar import Day, month_label_positions
 from contribution_dynamic.labels import LEFT, MONTH_BASELINES, RIGHT, STEP, TOP, WEEKDAYS
+from contribution_dynamic.layout import calendar_width
 from contribution_dynamic.registry import PUBLISHED_SCENARIOS, RENDERERS, THEMES
 
 NS = {"s": "http://www.w3.org/2000/svg"}
@@ -50,7 +51,8 @@ def test_all_calendar_months_are_visible(scenario, theme, start, end):
     cells = root.findall(".//s:g[@id='calendar']/s:rect", NS)
     assert {c.attrib["data-date"] for c in cells} == {d.date.isoformat() for d in days}
     cell = float(cells[0].attrib["height"])
-    assert int(root.attrib["width"]) == LEFT + max(53, days[-1].week+1)*STEP + RIGHT
+    weeks = max(53, days[-1].week+1)
+    assert int(root.attrib["width"]) == calendar_width(LEFT, STEP, int(cell), RIGHT, weeks)
     for node, day in zip(cells, days, strict=True):
         assert float(node.attrib["x"]) == LEFT + day.week * STEP
         assert float(node.attrib["y"]) == TOP + day.weekday * STEP

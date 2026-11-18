@@ -38,7 +38,12 @@ def test_one_continuous_safe_route_and_valid_bombs(dense):
     assert run is not None
     blocked = {(d.week, d.weekday) for d in days if d.count}
     original = blocked.copy()
-    hits = set()
+    hits = {(d.week, d.weekday) for d in run.entry}
+    assert hits <= original
+    blocked.difference_update(hits)
+    assert run.positions[0] not in blocked
+    if dense:
+        assert len(run.entry) == 4
     assert run.positions[0] == run.positions[-1]
     assert len(run.positions) == len(run.times)
     assert all(a < b for a, b in zip(run.times, run.times[1:]))
@@ -65,7 +70,10 @@ def test_one_continuous_safe_route_and_valid_bombs(dense):
     assert hits == original
     for a, b in zip(run.positions, run.positions[1:]):
         assert abs(a[0]-b[0])+abs(a[1]-b[1]) <= 1
-        assert -1 <= b[0] <= board_weeks(days) and -1 <= b[1] <= 7
+        assert 0 <= b[0] < board_weeks(days) and 0 <= b[1] < 7
+    assert all(0 <= x < board_weeks(days) and 0 <= y < 7 for x, y in run.positions)
+    for event in run.events:
+        assert all(0 <= x < board_weeks(days) and 0 <= y < 7 for x, y in event.cross)
 
 
 def test_sparse_calendar_starts_without_empty_column_delay():

@@ -7,6 +7,7 @@ from math import hypot
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
+from contribution_dynamic.layout import calendar_width
 
 CELL = STEP
 STAGING_ROW = 7
@@ -313,7 +314,7 @@ def _highlight(move, match, p):
 def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
     weeks = board_weeks(days)
-    width = LEFT + weeks * STEP + RIGHT
+    width = calendar_width(LEFT, STEP, CELL, RIGHT, weeks)
     height = TOP + 8 * STEP + 19
     match = plan_match(days)
     captures = [m for m in match.moves if m.day is not None] if match else []
