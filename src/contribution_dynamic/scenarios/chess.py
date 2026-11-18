@@ -3,6 +3,7 @@
 from dataclasses import dataclass
 from math import hypot
 
+from contribution_dynamic.animation import track as _track
 from contribution_dynamic.calendar import Day
 
 STEP = 13
@@ -139,25 +140,6 @@ def _point(square: Square) -> tuple[float, float]:
     return LEFT + square[0] * STEP + CELL / 2, TOP + square[1] * STEP + CELL / 2
 
 
-def _track(name, values, times, cycle, mode="linear", translate=False):
-    """Create complete SMIL timelines without duplicated key times."""
-    values, times = list(values), list(times)
-    if times[0] > 0:
-        values.insert(0, values[0])
-        times.insert(0, 0)
-    if times[-1] < cycle:
-        values.append(values[-1])
-        times.append(cycle)
-    keys = ";".join(f"{time / cycle:.9f}" for time in times)
-    vals = ";".join(map(str, values))
-    tag = "animateTransform" if translate else "animate"
-    extra = ' type="translate"' if translate else ""
-    return (
-        f'<{tag} attributeName="{name}"{extra} values="{vals}" keyTimes="{keys}" '
-        f'dur="{cycle:.6f}s" calcMode="{mode}" repeatCount="indefinite"/>'
-    )
-
-
 def _months(days):
     seen = set()
     last = -4
@@ -204,8 +186,8 @@ def _capture(move: Capture, cycle: float, p: dict) -> list[str]:
         f'<rect x="{tx-6}" y="{ty-6}" width="12" height="12" rx="2" '
         f'fill="none" stroke="{gold}" stroke-width="1"/>',
         f'<g transform="translate({x} {y})">',
-        _track("transform", locations, times, cycle, translate=True),
-        f'<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>',
+        _track("transform", locations, times, cycle, transform=True),
+        '<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>',
         f'<g fill="{fill}" stroke="{stroke}" color="{stroke}" '
         'stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">',
         f'<use href="#chess-{move.piece}" xlink:href="#chess-{move.piece}"/>',

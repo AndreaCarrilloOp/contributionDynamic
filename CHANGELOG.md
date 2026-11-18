@@ -18,3 +18,5 @@
 - Restrict published and preview assets to GitFactory and GitOrigami; retain motion as an internal baseline.
 - Add GitAbyss, a contribution-driven bioluminescent jellyfish scenario in both themes.
 - Add GitChess with original chess-piece vectors, legal movement geometry and parallel capture zones.
+- Fix GitChess Ruff F541, share compact animation timeline serialization, add batch generation and a reusable composite action.
+- Add vector brand identity, live gallery, MIT license, setup guide and beta release checklist.

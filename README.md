@@ -1,105 +1,119 @@
-# contributionDynamic
+<div align="center">
+  <img src="assets/brand/logo.svg" width="88" height="88" alt="contributionDynamic logo">
+  <h1>contributionDynamic</h1>
+  <p><em>Beyond static contributions.</em></p>
+  <p>Transform GitHub contribution calendars into animated worlds.</p>
+  <a href="https://github.com/AndreaCarrilloOp/contributionDynamic/actions/workflows/ci.yml"><img src="https://github.com/AndreaCarrilloOp/contributionDynamic/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-148a83" alt="MIT license"></a>
+  <img src="https://img.shields.io/badge/Python-3.12%2B-203543" alt="Python 3.12+">
+</div>
 
-*Beyond static contributions.*
+> Beta development · Prototype scenarios. Animated SVGs require a viewer that supports SMIL. The gallery uses the owner's published calendar; new assets appear after the publishing workflow succeeds.
 
-An animation and simulation engine for transforming GitHub contribution calendars into dynamic visual experiences.
+## Gallery
 
-> **Status:** Pre-alpha — core prototype under development.
+### GitFactory
 
-## Scenarios
+Robotic production lines process active cells.
 
-| Scenario | Concept | Status |
-| --- | --- | --- |
-| GitFactory | Robotic processing directly on the contribution calendar | Prototype |
-| GitOrigami | Paper birds folding from active calendar cells | Prototype |
-| GitAbyss | Bioluminescent jellyfish feeding on contribution energy | Prototype |
-| GitChess | Strategic chess-inspired captures on the contribution calendar | Prototype |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-dark.svg">
+  <img alt="GitFactory animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg" width="100%">
+</picture>
+
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg)
+
+### GitOrigami
+
+Paper birds fold, fly, and restore the calendar.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-dark.svg">
+  <img alt="GitOrigami animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-light.svg" width="100%">
+</picture>
+
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-light.svg)
+
+### GitAbyss
+
+Bioluminescent jellyfish collect contribution energy.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/abyss-dark.svg">
+  <img alt="GitAbyss animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/abyss-light.svg" width="100%">
+</picture>
+
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/abyss-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/abyss-light.svg)
+
+### GitChess
+
+Chess pieces capture and restore contribution tokens.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg">
+  <img alt="GitChess animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg" width="100%">
+</picture>
+
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg)
 
 ## Quick start
 
-Requires Python 3.12+.
+Requires Python 3.12 or newer.
 
 ```sh
-python -m pip install -e ".[dev]"
-python -m contribution_dynamic generate --output examples/demo.svg
-python -m pytest
-python -m ruff check .
+git clone https://github.com/AndreaCarrilloOp/contributionDynamic.git
+cd contributionDynamic
+python -m pip install -e .
+python -m contribution_dynamic batch --output-dir generated
 ```
 
-The default generator uses deterministic sample data. For actual GitHub contributions, set the GITHUB_TOKEN environment variable and run:
+The default uses deterministic demo data. To fetch a live calendar, set the `GITHUB_TOKEN` environment variable securely and pass `--user YOUR_LOGIN`.
 
 ```sh
-python -m contribution_dynamic generate --user YOUR_LOGIN --theme dark --output examples/profile.svg
+python -m contribution_dynamic generate --scenario abyss --theme dark --output abyss.svg
 ```
 
-Do not commit tokens. To preview the first factory scenario:
+## GitHub Action
 
-```sh
-python -m contribution_dynamic generate --scenario factory --theme dark --output examples/factory-dark.svg
+Add the following step to an Ubuntu workflow. Until a release is published, use `@main` for evaluation only; pin a verified release or commit SHA for production.
+
+```yaml
+- uses: AndreaCarrilloOp/contributionDynamic@main
+  with:
+    github-user: ${{ github.repository_owner }}
+    github-token: ${{ secrets.CONTRIBUTION_TOKEN }}
+    scenario: all
+    theme: both
+    output-dir: generated
 ```
 
-GitFactory preserves the calendar layout and uses four independent production zones. Rail-mounted grippers extract active cells, move them to local conveyors and process them at output stations. Each loop restores the calendar. Live data uses GitHub's contribution levels with a theme-specific palette; demo data uses a count-based fallback. The SVG is a separate image for use in a README; it does not alter GitHub's native calendar.
+| Input | Default | Options |
+| --- | --- | --- |
+| github-user | empty | GitHub login or demo |
+| github-token | empty | Read-only token for live data |
+| scenario | all | all, factory, origami, abyss, chess |
+| theme | both | both, dark, light |
+| output-dir | generated | Destination directory |
 
-To preview GitOrigami:
-
-```sh
-python -m contribution_dynamic generate --scenario origami --theme dark --output examples/origami-dark.svg
-```
-
-GitOrigami folds each active calendar cell into a six-panel paper bird. Only active cells are scheduled, so sparse calendars begin folding immediately. Birds fly and fade, and each original cell returns after its flight. This is a geometric animation, not a physical paper-folding solver.
-
-To preview GitAbyss:
-
-```sh
-python -m contribution_dynamic generate --scenario abyss --theme dark --output examples/abyss-dark.svg
-```
-
-GitAbyss sends up to seven bioluminescent jellyfish along routes through active calendar cells. Each visit releases a light pulse proportional to the contribution level. The original cell colors return after each pulse, and the jellyfish gently swim back to their starting positions.
-
-To preview GitChess:
-
-```sh
-python -m contribution_dynamic generate --scenario chess --theme dark --output examples/chess-dark.svg
-```
-
-GitChess uses six original SVG chess silhouettes and four independent zones. Pieces follow traditional movement geometry (including diagonal pawn captures), prioritize stronger contributions, animate capture pulses, and restore source colors. It is a chess-inspired calendar animation, not a complete chess game: calendar cells do not block sliding pieces, and pieces enter and leave between turns.
-
-Run **CI** for token-free demo previews or **Validate GitHub GraphQL** for previews based on the repository owner's actual contributions.
-
-## Automated publishing
-
-The **Publish contribution animations** workflow runs daily at 11:17 UTC and can also be started manually from the Actions tab. It uses the repository secret `CONTRIBUTION_TOKEN` to fetch the owner's calendar, validates the code and publishes eight SVG files to the dedicated `output` branch. A failed generation leaves existing published assets untouched. No local token is required.
-
-Use a read-only token limited to public data; the published SVGs expose calendar dates, contribution counts and activity levels. Do not publish private activity unless you intend to disclose it.
-
-After the first successful publish, embed a scenario in a GitHub README with theme-aware markup:
-
-```html
-<picture>
-  <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-dark.svg">
-  <source media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg">
-  <img alt="GitFactory contribution animation"
-    src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg">
-</picture>
-```
-
-Replace `factory` with `origami`, `abyss`, or `chess` to select another published scenario. The experimental `motion` renderer remains available for internal development through `--scenario motion`, but is not published. GitHub image caching may delay visible updates.
+The action generates SVGs; it does not push changes. See the [setup guide](docs/setup.md) for a complete scheduled profile workflow and theme-aware embedding. Never commit tokens. Public SVGs disclose dates, counts and activity levels.
 
 ## Architecture
 
-Calendar collector → normalized model → motion path → SVG renderer.
+GraphQL collector → calendar model → scenario simulation → compact SVG → publication
 
-See [architecture](docs/architecture.md) and [contributing](CONTRIBUTING.md).
+- Dependency-free runtime engine and deterministic animation.
+- Calendar positions and GitHub intensity levels preserved.
+- Declarative SVG motion, no JavaScript or external sprites.
+- Shared timeline compaction and batch generation from a single API request.
 
-## Roadmap
+The experimental `motion` renderer remains available locally, but is not published. GitChess models chess movement geometry, not a full game. GitOrigami is a geometric animation, not a physical folding solver.
 
-- [x] Repository initialization
-- [x] Core prototype implementation
-- [x] Core tests and live GraphQL validation
-- [x] GitFactory board-based parallel prototype (visual validation pending)
-- [x] GitOrigami initial prototype (visual validation pending)
-- [x] GitAbyss initial prototype (visual validation pending)
-- [x] GitChess initial prototype (visual validation pending)
-- [x] Automated SVG publishing (first live publish verified)
+## Development
+
+```sh
+python -m pip install -e ".[dev]"
+python -m pytest -v
+python -m ruff check .
+```
+
+[Architecture](docs/architecture.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Changelog](CHANGELOG.md) · [MIT license](LICENSE)

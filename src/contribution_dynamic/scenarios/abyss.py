@@ -3,6 +3,7 @@
 from dataclasses import dataclass
 from math import hypot
 
+from contribution_dynamic.animation import track as _track
 from contribution_dynamic.calendar import Day
 
 STEP = 13
@@ -90,25 +91,6 @@ def plan_journeys(days: tuple[Day, ...]) -> tuple[Journey, ...]:
         positions.append(home)
         routes.append(Journey(tuple(visits), tuple(positions), tuple(times)))
     return tuple(routes)
-
-
-def _track(name, values, times, cycle, transform=False):
-    """Build normalized, strictly ordered SMIL keyframes."""
-    values, times = list(values), list(times)
-    if times[0] > 0:
-        values.insert(0, values[0])
-        times.insert(0, 0.0)
-    if times[-1] < cycle:
-        values.append(values[-1])
-        times.append(cycle)
-    keys = ";".join(f"{t / cycle:.9f}" for t in times)
-    vals = ";".join(str(v) for v in values)
-    tag = "animateTransform" if transform else "animate"
-    extra = ' type="translate"' if transform else ""
-    return (
-        f'<{tag} attributeName="{name}"{extra} values="{vals}" keyTimes="{keys}" '
-        f'dur="{cycle:.6f}s" calcMode="linear" repeatCount="indefinite"/>'
-    )
 
 
 def _months(days: tuple[Day, ...]):

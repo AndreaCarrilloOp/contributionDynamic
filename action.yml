@@ -1,0 +1,61 @@
+name: 'contributionDynamic - Animated Contribution Calendars'
+description: 'Generate animated GitHub contribution SVGs in four original scenarios.'
+author: 'AndreaCarrilloOp'
+branding:
+  color: 'green'
+  icon: 'activity'
+inputs:
+  github-user:
+    description: 'GitHub login; omit to generate deterministic demo data.'
+    required: false
+    default: ''
+  github-token:
+    description: 'Read-only token for live public contribution data; required with github-user.'
+    required: false
+    default: ''
+  scenario:
+    description: 'all, factory, origami, abyss, or chess'
+    required: false
+    default: 'all'
+  theme:
+    description: 'both, dark, or light'
+    required: false
+    default: 'both'
+  output-dir:
+    description: 'Destination directory for the generated SVG files.'
+    required: false
+    default: 'generated'
+outputs:
+  output-dir:
+    description: 'Directory containing generated SVGs.'
+    value: ${{ steps.generate.outputs.directory }}
+runs:
+  using: 'composite'
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Install contributionDynamic
+      shell: bash
+      run: python -m pip install --no-deps "$GITHUB_ACTION_PATH"
+    - name: Generate validated SVGs
+      id: generate
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+        CONTRIBUTION_USER: ${{ inputs.github-user }}
+        SCENARIO: ${{ inputs.scenario }}
+        THEME: ${{ inputs.theme }}
+        OUTPUT_DIR: ${{ inputs.output-dir }}
+      run: |
+        set -euo pipefail
+        if [[ "$OUTPUT_DIR" == *$'\n'* || "$OUTPUT_DIR" == *$'\r'* || -z "$OUTPUT_DIR" ]]; then
+          echo "Invalid output directory" >&2
+          exit 1
+        fi
+        args=(batch --scenario="$SCENARIO" --theme="$THEME" --output-dir="$OUTPUT_DIR")
+        if [[ -n "$CONTRIBUTION_USER" ]]; then
+          args+=(--user="$CONTRIBUTION_USER")
+        fi
+        python -m contribution_dynamic "${args[@]}"
+        printf 'directory=%s\n' "$OUTPUT_DIR" >> "$GITHUB_OUTPUT"

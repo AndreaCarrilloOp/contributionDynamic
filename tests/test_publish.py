@@ -27,3 +27,13 @@ def test_build_assets_rejects_empty_calendar(tmp_path):
     with pytest.raises(ValueError, match="empty contribution calendar"):
         build_assets((), destination)
     assert not destination.exists()
+
+
+def test_build_assets_selects_scenario_and_theme(tmp_path):
+    paths = build_assets(demo_calendar(42, 1), tmp_path, ("chess",), ("light",))
+    assert [p.name for p in paths] == ["chess-light.svg"]
+
+
+def test_rejects_experimental_scenario(tmp_path):
+    with pytest.raises(ValueError, match="Unknown public scenario"):
+        build_assets(demo_calendar(42, 1), tmp_path, ("motion",))

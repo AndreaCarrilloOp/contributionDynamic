@@ -7,12 +7,14 @@ on:
       - 'src/**'
       - 'tests/**'
       - 'pyproject.toml'
+      - 'action.yml'
       - '.github/workflows/**'
   pull_request:
     paths:
       - 'src/**'
       - 'tests/**'
       - 'pyproject.toml'
+      - 'action.yml'
       - '.github/workflows/**'
   workflow_dispatch:
 
@@ -36,14 +38,18 @@ jobs:
         run: python -m pytest -v
       - name: Lint
         run: python -m ruff check .
-      - name: Generate demo previews
+      - name: Smoke-test composite action with demo data
+        uses: ./
+        with:
+          output-dir: previews
+      - name: Verify action output
         run: |
-          for scenario in factory origami abyss chess; do
-            for theme in dark light; do
-              python -m contribution_dynamic generate --scenario "$scenario" \
-                --theme "$theme" --output "previews/$scenario-$theme.svg"
-            done
-          done
+          python - <<'PY'
+          from pathlib import Path
+          expected = {f"{s}-{t}.svg" for s in ("factory", "origami", "abyss", "chess")
+                      for t in ("dark", "light")}
+          assert {p.name for p in Path("previews").glob("*.svg")} == expected
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: demo-previews

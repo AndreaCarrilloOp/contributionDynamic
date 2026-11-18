@@ -1,5 +1,6 @@
 """Fold active contribution cells into paper birds using declarative SVG."""
 
+from contribution_dynamic.animation import track as _track
 from contribution_dynamic.calendar import Day
 
 STEP = 13
@@ -38,25 +39,6 @@ BIRD_DOWN = (
     "0,0 4,8 7,-2", "-11,-1 -4,-2 -5,4", "-5,-2 6,-2 1,5",
     "-3,1 -10,8 3,4", "5,-2 7,-5 9,-1", "7,-3 12,-2 9,-1",
 )
-
-
-def _track(name, values, times, cycle, mode="linear", transform=False):
-    """Pad a local timeline to the shared loop."""
-    values, times = list(values), list(times)
-    if times[0] > 0:
-        values.insert(0, values[0])
-        times.insert(0, 0)
-    if times[-1] < cycle:
-        values.append(values[-1])
-        times.append(cycle)
-    keys = ";".join(f"{t / cycle:.9f}" for t in times)
-    vals = ";".join(map(str, values))
-    tag = "animateTransform" if transform else "animate"
-    extra = ' type="translate"' if transform else ""
-    return (
-        f'<{tag} attributeName="{name}"{extra} values="{vals}" keyTimes="{keys}" '
-        f'dur="{cycle:.6f}s" calcMode="{mode}" repeatCount="indefinite"/>'
-    )
 
 
 def _level(day: Day) -> int:

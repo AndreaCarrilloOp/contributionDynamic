@@ -2,6 +2,7 @@
 
 from dataclasses import dataclass
 
+from contribution_dynamic.animation import track as _track
 from contribution_dynamic.calendar import Day
 
 STEP = 13
@@ -86,25 +87,6 @@ def month_labels(days: tuple[Day, ...]) -> list[tuple[int, str]]:
                 labels.append((day.week, names[day.date.month - 1]))
                 last_week = day.week
     return labels
-
-
-def _track(name, values, times, duration, mode="linear", transform=False):
-    """Emit a complete, strictly increasing SMIL timeline."""
-    values, times = list(values), list(times)
-    if times[0] > 0:
-        times.insert(0, 0)
-        values.insert(0, values[0])
-    if times[-1] < duration:
-        times.append(duration)
-        values.append(values[-1])
-    keys = ";".join(f"{t / duration:.9f}" for t in times)
-    vals = ";".join(str(v) for v in values)
-    tag = "animateTransform" if transform else "animate"
-    extra = ' type="translate"' if transform else ""
-    return (
-        f'<{tag} attributeName="{name}"{extra} values="{vals}" keyTimes="{keys}" '
-        f'dur="{duration:.6f}s" calcMode="{mode}" repeatCount="indefinite"/>'
-    )
 
 
 def _color(day, palette):
