@@ -20,3 +20,12 @@ def test_batch_cli(tmp_path, monkeypatch):
     assert {p.name for p in tmp_path.glob("*.svg")} == {
         "chess-dark.svg", "chess-light.svg",
     }
+
+
+def test_default_generator_is_invaders(tmp_path, monkeypatch):
+    output = tmp_path / "default.svg"
+    monkeypatch.setattr("sys.argv", [
+        "contribution_dynamic", "generate", "--output", str(output),
+    ])
+    assert cli.main() == 0
+    assert 'data-ship="hero"' in output.read_text(encoding="utf-8")

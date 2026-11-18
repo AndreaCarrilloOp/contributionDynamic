@@ -1,5 +1,5 @@
 name: 'contributionDynamic - Animated Contribution Calendars'
-description: 'Generate animated GitHub contribution SVGs in six original scenarios.'
+description: 'Generate animated GitHub contribution SVGs in five original scenarios.'
 author: 'AndreaCarrilloOp'
 branding:
   color: 'green'
@@ -14,7 +14,7 @@ inputs:
     required: false
     default: ''
   scenario:
-    description: 'all, factory, origami, abyss, chess, blast, or tanks'
+    description: 'all, tanks, blast, chess, invaders, or origami'
     required: false
     default: 'all'
   theme:

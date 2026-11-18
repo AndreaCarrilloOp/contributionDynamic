@@ -35,3 +35,4 @@
 - Rework GitChess with a single persistent golden queen, level-scaled ebony contribution pawns, legal unobstructed routes, and full-cycle restoration.
 - Improve GitChess contrast and map levels 1–4 to distinct pawn, knight, bishop and rook silhouettes while retaining one golden queen and the legal route planner.
 - Refine the GitChess month header and verify stationary pieces, exact capture timing and synchronized restoration.
+- Retire GitFactory and GitAbyss; replace them with GitInvaders, a single-ship pixel-art battle with contribution-coded aliens, enemy counterfire and full-loop restoration.

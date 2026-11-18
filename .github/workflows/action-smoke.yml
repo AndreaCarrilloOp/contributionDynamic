@@ -22,7 +22,7 @@ jobs:
         with:
           github-user: ${{ github.repository_owner }}
           github-token: ${{ secrets.CONTRIBUTION_TOKEN }}
-          scenario: abyss
+          scenario: invaders
           theme: both
           output-dir: live
-      - run: test -s live/abyss-dark.svg && test -s live/abyss-light.svg
+      - run: test -s live/invaders-dark.svg && test -s live/invaders-light.svg

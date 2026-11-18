@@ -45,6 +45,17 @@ One golden queen moves across a high-contrast wood-toned checkerboard, capturing
 
 [Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg)
 
+### GitInvaders
+
+A single pixel-art spaceship battles a colorful formation of contribution-powered aliens. Four original silhouettes encode activity levels. The ship evades enemy fire, clears each column from the bottom up, and the calendar restores at the end of the loop.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-dark.svg">
+  <img alt="GitInvaders animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-light.svg" width="100%">
+</picture>
+
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-light.svg)
+
 ### GitOrigami
 
 Paper birds fold, fly, and restore the calendar.
@@ -55,28 +66,6 @@ Paper birds fold, fly, and restore the calendar.
 </picture>
 
 [Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-light.svg)
-
-### GitAbyss
-
-Bioluminescent jellyfish collect contribution energy.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/abyss-dark.svg">
-  <img alt="GitAbyss animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/abyss-light.svg" width="100%">
-</picture>
-
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/abyss-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/abyss-light.svg)
-
-### GitFactory
-
-Robotic production lines process active cells.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-dark.svg">
-  <img alt="GitFactory animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg" width="100%">
-</picture>
-
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg)
 
 ## Quick start
 
@@ -92,7 +81,7 @@ python -m contribution_dynamic batch --output-dir generated
 The default uses deterministic demo data. To fetch a live calendar, set the `GITHUB_TOKEN` environment variable securely and pass `--user YOUR_LOGIN`.
 
 ```sh
-python -m contribution_dynamic generate --scenario abyss --theme dark --output abyss.svg
+python -m contribution_dynamic generate --scenario invaders --theme dark --output invaders.svg
 ```
 
 ## GitHub Action
@@ -113,7 +102,7 @@ Add the following step to an Ubuntu workflow. Until a release is published, use 
 | --- | --- | --- |
 | github-user | empty | GitHub login or demo |
 | github-token | empty | Read-only token for live data |
-| scenario | all | all, tanks, blast, chess, origami, abyss, factory |
+| scenario | all | all, tanks, blast, chess, invaders, origami |
 | theme | both | both, dark, light |
 | output-dir | generated | Destination directory |
 

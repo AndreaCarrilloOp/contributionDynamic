@@ -67,14 +67,14 @@ jobs:
           fi
 ```
 
-Replace `YOUR_LOGIN` below with your GitHub username, and `factory` with the desired scenario.
+Replace `YOUR_LOGIN` below with your GitHub username, and `invaders` with the desired scenario.
 
 ```html
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/YOUR_LOGIN/YOUR_LOGIN/contribution-output/factory-dark.svg">
+    srcset="https://raw.githubusercontent.com/YOUR_LOGIN/YOUR_LOGIN/contribution-output/invaders-dark.svg">
   <img alt="Animated GitHub contributions"
-    src="https://raw.githubusercontent.com/YOUR_LOGIN/YOUR_LOGIN/contribution-output/factory-light.svg">
+    src="https://raw.githubusercontent.com/YOUR_LOGIN/YOUR_LOGIN/contribution-output/invaders-light.svg">
 </picture>
 ```
 

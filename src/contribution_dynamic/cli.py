@@ -22,7 +22,7 @@ def main() -> int:
     commands = parser.add_subparsers(dest="command")
     generate = commands.add_parser("generate", help="Generate one SVG")
     _source_args(generate)
-    generate.add_argument("--scenario", choices=RENDERERS, default="factory")
+    generate.add_argument("--scenario", choices=RENDERERS, default="invaders")
     generate.add_argument("--theme", choices=THEMES, default="dark")
     generate.add_argument("--output", type=Path, default=Path("contributions.svg"))
     batch = commands.add_parser("batch", help="Generate public scenarios in one fetch")
