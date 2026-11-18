@@ -12,16 +12,38 @@
 
 ## Gallery
 
-### GitFactory
+### GitTanks
 
-Robotic production lines process active cells.
+A golden retro tank navigates the contribution maze, breaks bricks before entering their cells, and faces up to three silver pursuers at a time. Hunters, ambushers and flankers spawn near standing bricks and navigate open cells with BFS. Both sides fire along clear rows or columns from up to five cells away. The eagle remains a visual base; the original calendar is restored when the tank returns to its starting square.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-dark.svg">
-  <img alt="GitFactory animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">
+  <img alt="GitTanks animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-light.svg" width="100%">
 </picture>
 
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg)
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-light.svg)
+
+### GitBlast
+
+One arcade hero navigates free cells, plants a single bomb beside an intact contribution brick, and retreats before a cross-shaped explosion. Flames stop at the first brick in each direction. The calendar resets when the hero returns home.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">
+  <img alt="GitBlast animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg" width="100%">
+</picture>
+
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg)
+
+### GitChess
+
+One golden queen moves across a classic wood-toned checkerboard, capturing ebony pawns that represent active contribution days. Pawn size encodes GitHub activity levels. The queen cannot pass through standing pawns; the calendar resets after she returns to her starting square.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg">
+  <img alt="GitChess animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg" width="100%">
+</picture>
+
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg)
 
 ### GitOrigami
 
@@ -45,38 +67,16 @@ Bioluminescent jellyfish collect contribution energy.
 
 [Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/abyss-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/abyss-light.svg)
 
-### GitChess
+### GitFactory
 
-One golden queen moves across a classic wood-toned checkerboard, capturing ebony pawns that represent active contribution days. Pawn size encodes GitHub activity levels. The queen cannot pass through standing pawns; the calendar resets after she returns to her starting square.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg">
-  <img alt="GitChess animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg" width="100%">
-</picture>
-
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg)
-
-### GitBlast
-
-One arcade hero navigates free cells, plants a single bomb beside an intact contribution brick, and retreats before a cross-shaped explosion. Flames stop at the first brick in each direction. The calendar resets when the hero returns home.
+Robotic production lines process active cells.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">
-  <img alt="GitBlast animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-dark.svg">
+  <img alt="GitFactory animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg" width="100%">
 </picture>
 
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg)
-
-### GitTanks
-
-A golden retro tank navigates the contribution maze, breaks bricks before entering their cells, and faces up to three silver pursuers at a time. Hunters, ambushers and flankers spawn near standing bricks and navigate open cells with BFS. Both sides fire along clear rows or columns from up to five cells away. The eagle remains a visual base; the original calendar is restored when the tank returns to its starting square.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">
-  <img alt="GitTanks animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-light.svg" width="100%">
-</picture>
-
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-light.svg)
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/factory-light.svg)
 
 ## Quick start
 
@@ -113,7 +113,7 @@ Add the following step to an Ubuntu workflow. Until a release is published, use 
 | --- | --- | --- |
 | github-user | empty | GitHub login or demo |
 | github-token | empty | Read-only token for live data |
-| scenario | all | all, factory, origami, abyss, chess, blast, tanks |
+| scenario | all | all, tanks, blast, chess, origami, abyss, factory |
 | theme | both | both, dark, light |
 | output-dir | generated | Destination directory |
 
