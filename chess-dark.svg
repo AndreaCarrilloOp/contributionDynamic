@@ -661,7 +661,7 @@
 <title>2026-08-19: 0 contributions</title></rect>
 <rect x="554" y="90" width="13" height="13" fill="#6d806e" data-date="2026-08-20" data-level="0">
 <title>2026-08-20: 0 contributions</title></rect>
-<rect x="554" y="103" width="13" height="13" fill="#82927f" data-date="2026-08-21" data-level="2">
+<rect x="554" y="103" width="13" height="13" fill="#82927f" data-date="2026-08-21" data-level="1">
 <title>2026-08-21: 15 contributions</title></rect>
 <rect x="554" y="116" width="13" height="13" fill="#6d806e" data-date="2026-08-22" data-level="1">
 <title>2026-08-22: 10 contributions</title></rect>
@@ -840,7 +840,7 @@
 <rect x="723" y="64" width="13" height="13" fill="#82927f" data-date="2026-11-17" data-level="4">
 <title>2026-11-17: 70 contributions</title></rect>
 <rect x="723" y="77" width="13" height="13" fill="#6d806e" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 59 contributions</title></rect>
+<title>2026-11-18: 61 contributions</title></rect>
 </g>
 <g id="move-highlights">
 <rect x="437.0" y="129.0" width="13" height="13" fill="#e9d48a" opacity="0" data-move="queen">
@@ -1275,13 +1275,13 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.141864743;0.231478664;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#222a25" stroke="#c3cdbc" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-08-21" cx="560.5" cy="109.5" r="1.6" fill="#344e3b" opacity=".8">
+<circle data-reserve="2026-08-21" cx="560.5" cy="109.5" r="1.1" fill="#344e3b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.1582058;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="knight" data-piece-date="2026-08-21" data-level="2" transform="translate(560.5 109.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-08-21" data-level="1" transform="translate(560.5 109.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.1582058;0.246409343;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#222a25" stroke="#c3cdbc" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
 <circle data-reserve="2026-08-22" cx="560.5" cy="122.5" r="1.1" fill="#344e3b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.186885653;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
