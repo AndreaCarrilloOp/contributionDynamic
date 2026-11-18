@@ -25,3 +25,4 @@
 - Add GitTanks with persistent armored patrols, turret aiming, ordered projectile impacts and column restoration.
 - Rework GitTanks into one persistent hero versus multiple enemy tanks with counterfire, dodging, and wave-based restoration.
 - Redesign GitTanks as a single in-grid maze tank with adjacent movement, destructible contribution blocks and full-cycle restoration.
+- Restyle GitTanks with a golden pixel-inspired tank, high-contrast brick masonry, and matching dark/light themes.

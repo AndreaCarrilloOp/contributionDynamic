@@ -17,18 +17,20 @@ MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 PALETTES = {
     "dark": {
-        "bg": "#111b1a", "empty": "#23332e", "text": "#a2b5a7",
-        "tiles": ("#354c39", "#526d45", "#779359", "#a3bd70"),
-        "hero": "#2fb894", "hero_top": "#85ead1", "hero_edge": "#123f38",
-        "tracks": "#141d1b", "metal": "#dce4ce",
-        "fire": "#ff9d43", "core": "#fff0a3",
+        "bg": "#080808", "empty": "#101010", "text": "#b7b3a6",
+        "tiles": ("#99501e", "#bb621f", "#da7d27", "#f3a342"),
+        "mortar": "#663819", "brick_light": "#ffd08a", "brick_shadow": "#633311",
+        "hero": "#d9b21f", "hero_top": "#ffe16a", "hero_edge": "#59400a",
+        "hero_shadow": "#95700c", "tracks": "#34332e", "metal": "#ccc3a1",
+        "fire": "#ff8624", "core": "#fff3b0",
     },
     "light": {
-        "bg": "#f8f6eb", "empty": "#e7ebdd", "text": "#465a47",
-        "tiles": ("#c5d5ae", "#a4bc88", "#809b5c", "#52733e"),
-        "hero": "#087b68", "hero_top": "#5ad7bf", "hero_edge": "#174b43",
-        "tracks": "#303a32", "metal": "#edf2d8",
-        "fire": "#e96c22", "core": "#ffe08a",
+        "bg": "#faf6eb", "empty": "#eee8db", "text": "#675b48",
+        "tiles": ("#f4c38d", "#dfa062", "#c87934", "#a95b22"),
+        "mortar": "#805027", "brick_light": "#ffe2b0", "brick_shadow": "#783f1c",
+        "hero": "#be8d10", "hero_top": "#ffe16a", "hero_edge": "#59400a",
+        "hero_shadow": "#8c6008", "tracks": "#38372f", "metal": "#b8ac86",
+        "fire": "#e76614", "core": "#fff1a1",
     },
 }
 
@@ -181,17 +183,31 @@ def _hero(steps, cycle, p):
         f'<g transform="rotate({first_angle})">',
         track("transform", angles, angle_times, cycle,
               transform=True).replace('type="translate"', 'type="rotate"'),
-        f'<rect x="-4.6" y="-4" width="9" height="8" rx="1.2" '
-        f'fill="{p["tracks"]}" stroke="{p["hero_edge"]}" stroke-width=".5"/>',
-        f'<path d="M-3.6 -3H3.6M-3.6 3H3.6" stroke="{p["metal"]}" '
-        'stroke-width=".9" stroke-dasharray="1 1.4"/>',
-        f'<rect x="-3.7" y="-2.4" width="7.2" height="4.8" rx="1" fill="{p["hero"]}"/>',
-        f'<rect x="1" y="-.85" width="5.7" height="1.7" rx=".35" '
-        f'fill="{p["hero_top"]}" stroke="{p["hero_edge"]}" stroke-width=".35"/>',
-        f'<circle r="2.5" fill="{p["hero_top"]}" stroke="{p["hero_edge"]}" '
-        'stroke-width=".55"/>',
-        f'<circle r=".8" fill="{p["hero"]}"/>',
+        *_tank_sprite(p),
         '</g></g>',
+    ]
+
+
+def _tank_sprite(p: dict) -> list[str]:
+    """An original pixel-inspired silhouette, facing right, with a seven-unit muzzle."""
+    return [
+        '<g data-sprite="retro-tank" shape-rendering="crispEdges">',
+        # Dark track beds with bright, square tread links.
+        f'<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="{p["tracks"]}"/>',
+        f'<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="{p["metal"]}" '
+        'stroke-width="1" stroke-dasharray="1.2 1.1"/>',
+        f'<path d="M-4 -3H4V3H-4Z" fill="{p["hero_shadow"]}" '
+        f'stroke="{p["hero_edge"]}" stroke-width="1"/>',
+        f'<path d="M-3 -2.5H3V2H-3Z" fill="{p["hero"]}"/>',
+        f'<path d="M-3 -2H2V-1H-3Z" fill="{p["hero_top"]}" opacity=".8"/>',
+        # Octagonal turret and a broad, beveled cannon. The tip matches _impact.
+        f'<path d="M0 -1H7V1H0Z" fill="{p["hero_top"]}" '
+        f'stroke="{p["hero_edge"]}" stroke-width=".55"/>',
+        f'<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" '
+        f'fill="{p["hero"]}" stroke="{p["hero_edge"]}" stroke-width=".6"/>',
+        f'<path d="M-2 -2H1L2 -1H-2Z" fill="{p["hero_top"]}"/>',
+        f'<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="{p["hero_shadow"]}"/>',
+        '</g>',
     ]
 
 
@@ -260,12 +276,23 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
     for day in sorted(by_day, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week*STEP, TOP + day.weekday*STEP
         step = by_day[day]
-        parts.append(f'<path d="M{x+1} {y+5}H{x+9}M{x+5} {y+1}V{y+5}'
-                     f'M{x+3} {y+5}V{y+9}" fill="none" stroke="{p["hero_edge"]}" '
-                     'stroke-width=".65" opacity=".5">')
-        parts.append(track("opacity", [.5, 0, .5], [0, step.hit, cycle],
+        parts.append(f'<g data-brick="{day.date.isoformat()}" '
+                     'shape-rendering="crispEdges" opacity="1">')
+        parts.append(track("opacity", [1, 0, 1], [0, step.hit, cycle],
                            cycle, "discrete"))
-        parts.append('</path>')
+        # Three staggered courses, warm mortar, highlights and lower shadow.
+        parts.append(f'<path d="M{x} {y+3.5}H{x+10}M{x} {y+7}H{x+10}'
+                     f'M{x+5} {y}V{y+3.5}M{x+2.5} {y+3.5}V{y+7}'
+                     f'M{x+7.5} {y+3.5}V{y+7}M{x+5} {y+7}V{y+10}" '
+                     f'fill="none" stroke="{p["mortar"]}" stroke-width=".8"/>')
+        parts.append(f'<path d="M{x+.5} {y+1}H{x+4.5}M{x+5.5} {y+1}H{x+9.5}'
+                     f'M{x+.5} {y+4.5}H{x+2}M{x+3} {y+4.5}H{x+7}'
+                     f'M{x+8} {y+4.5}H{x+9.5}M{x+.5} {y+8}H{x+4.5}'
+                     f'M{x+5.5} {y+8}H{x+9.5}" stroke="{p["brick_light"]}" '
+                     'stroke-width=".7" opacity=".66" fill="none"/>')
+        parts.append(f'<path d="M{x} {y+9.5}H{x+10}" stroke="{p["brick_shadow"]}" '
+                     'stroke-width="1" opacity=".6"/>')
+        parts.append('</g>')
     parts.extend(['</g>', '<g id="combat">'])
     for step in steps:
         if step.day is not None:

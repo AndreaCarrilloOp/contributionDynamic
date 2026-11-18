@@ -106,3 +106,23 @@ def test_no_artificial_activity_on_empty_calendar():
         assert not root.findall(".//s:g[@data-tank]", NS)
         assert not root.findall(".//s:animate", NS)
         assert not root.findall(".//s:g[@data-shot]", NS)
+
+
+def test_retro_sprite_and_bricks_use_theme_palette():
+    day = Day(date(2026, 11, 17), 7, 2, 52, 4)
+    for theme, background, gold, brick in (
+        ("dark", "#080808", "#d9b21f", "#f3a342"),
+        ("light", "#faf6eb", "#be8d10", "#a95b22"),
+    ):
+        root = ElementTree.fromstring(render_tanks((day,), theme))
+        assert root.find("s:rect", NS).attrib["fill"] == background
+        sprite = root.find(".//s:g[@data-sprite='retro-tank']", NS)
+        assert sprite is not None
+        assert gold in {part.get("fill") for part in sprite}
+        cell = root.find(".//s:g[@id='calendar']/s:rect", NS)
+        assert cell.attrib["fill"] == brick
+        detail = root.find(".//s:g[@data-brick]", NS)
+        assert detail is not None
+        assert len(detail.findall("s:path", NS)) == 3
+        animation = detail.find("s:animate", NS)
+        assert animation.attrib["values"].split(";")[:3] == ["1", "0", "1"]

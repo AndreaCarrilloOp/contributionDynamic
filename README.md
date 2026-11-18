@@ -69,7 +69,7 @@ Arcade robots plant bombs that break contribution bricks in cross-shaped explosi
 
 ### GitTanks
 
-One teal tank navigates inside the calendar maze, fires at contribution bricks blocking its path, and advances only after each brick breaks. The original calendar returns when the tank completes its route.
+A golden retro-arcade tank navigates a maze of orange contribution bricks, clearing obstacles before advancing. The calendar is restored with each loop.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">
