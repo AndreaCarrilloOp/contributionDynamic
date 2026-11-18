@@ -667,9 +667,9 @@
 <rect x="437" y="73" width="10" height="10" rx="2" fill="#102536" data-date="2026-06-17">
 <title>2026-06-17: 0 contributions</title>
 </rect>
-<rect x="437" y="86" width="10" height="10" rx="2" fill="#39d353" data-date="2026-06-18">
+<rect x="437" y="86" width="10" height="10" rx="2" fill="#26a641" data-date="2026-06-18">
 <title>2026-06-18: 17 contributions</title>
-<animate attributeName="fill" values="#39d353;#39d353;#67e8f9;#39d353;#39d353" keyTimes="0;0.032523696;0.07227488;0.162618479;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#26a641;#26a641;#67e8f9;#26a641;#26a641" keyTimes="0;0.032523696;0.07227488;0.162618479;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="437" y="99" width="10" height="10" rx="2" fill="#102536" data-date="2026-06-19">
 <title>2026-06-19: 0 contributions</title>
@@ -748,9 +748,9 @@
 <rect x="489" y="47" width="10" height="10" rx="2" fill="#102536" data-date="2026-07-13">
 <title>2026-07-13: 0 contributions</title>
 </rect>
-<rect x="489" y="60" width="10" height="10" rx="2" fill="#39d353" data-date="2026-07-14">
+<rect x="489" y="60" width="10" height="10" rx="2" fill="#26a641" data-date="2026-07-14">
 <title>2026-07-14: 18 contributions</title>
-<animate attributeName="fill" values="#39d353;#39d353;#67e8f9;#39d353;#39d353" keyTimes="0;0.413048813;0.452799997;0.543143596;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#26a641;#26a641;#67e8f9;#26a641;#26a641" keyTimes="0;0.413048813;0.452799997;0.543143596;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="489" y="73" width="10" height="10" rx="2" fill="#102536" data-date="2026-07-15">
 <title>2026-07-15: 0 contributions</title>
@@ -930,9 +930,9 @@
 <rect x="593" y="60" width="10" height="10" rx="2" fill="#102536" data-date="2026-09-08">
 <title>2026-09-08: 0 contributions</title>
 </rect>
-<rect x="593" y="73" width="10" height="10" rx="2" fill="#006d32" data-date="2026-09-09">
+<rect x="593" y="73" width="10" height="10" rx="2" fill="#0e4429" data-date="2026-09-09">
 <title>2026-09-09: 6 contributions</title>
-<animate attributeName="fill" values="#006d32;#006d32;#67e8f9;#006d32;#006d32" keyTimes="0;0.285485774;0.325236958;0.415580557;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#0e4429;#0e4429;#67e8f9;#0e4429;#0e4429" keyTimes="0;0.285485774;0.325236958;0.415580557;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="86" width="10" height="10" rx="2" fill="#102536" data-date="2026-09-10">
 <title>2026-09-10: 0 contributions</title>
@@ -1094,9 +1094,9 @@
 <title>2026-10-30: 2 contributions</title>
 <animate attributeName="fill" values="#0e4429;#0e4429;#67e8f9;#0e4429;#0e4429" keyTimes="0;0.032523696;0.07227488;0.162618479;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="684" y="112" width="10" height="10" rx="2" fill="#26a641" data-date="2026-10-31">
+<rect x="684" y="112" width="10" height="10" rx="2" fill="#006d32" data-date="2026-10-31">
 <title>2026-10-31: 11 contributions</title>
-<animate attributeName="fill" values="#26a641;#26a641;#67e8f9;#26a641;#26a641" keyTimes="0;0.658976312;0.698727495;0.789071095;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#006d32;#006d32;#67e8f9;#006d32;#006d32" keyTimes="0;0.658976312;0.698727495;0.789071095;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="34" width="10" height="10" rx="2" fill="#102536" data-date="2026-11-01">
 <title>2026-11-01: 0 contributions</title>
@@ -1111,17 +1111,17 @@
 <title>2026-11-04: 5 contributions</title>
 <animate attributeName="fill" values="#0e4429;#0e4429;#67e8f9;#0e4429;#0e4429" keyTimes="0;0.331264081;0.371015265;0.461358864;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="86" width="10" height="10" rx="2" fill="#26a641" data-date="2026-11-05">
+<rect x="697" y="86" width="10" height="10" rx="2" fill="#006d32" data-date="2026-11-05">
 <title>2026-11-05: 11 contributions</title>
-<animate attributeName="fill" values="#26a641;#26a641;#67e8f9;#26a641;#26a641" keyTimes="0;0.45774512;0.497496304;0.587839904;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#006d32;#006d32;#67e8f9;#006d32;#006d32" keyTimes="0;0.45774512;0.497496304;0.587839904;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="99" width="10" height="10" rx="2" fill="#006d32" data-date="2026-11-06">
 <title>2026-11-06: 8 contributions</title>
 <animate attributeName="fill" values="#006d32;#006d32;#67e8f9;#006d32;#006d32" keyTimes="0;0.032523696;0.07227488;0.162618479;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="112" width="10" height="10" rx="2" fill="#39d353" data-date="2026-11-07">
+<rect x="697" y="112" width="10" height="10" rx="2" fill="#26a641" data-date="2026-11-07">
 <title>2026-11-07: 17 contributions</title>
-<animate attributeName="fill" values="#39d353;#39d353;#67e8f9;#39d353;#39d353" keyTimes="0;0.159004735;0.198755919;0.289099518;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#26a641;#26a641;#67e8f9;#26a641;#26a641" keyTimes="0;0.159004735;0.198755919;0.289099518;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="710" y="34" width="10" height="10" rx="2" fill="#102536" data-date="2026-11-08">
 <title>2026-11-08: 0 contributions</title>
@@ -1156,13 +1156,13 @@
 <animate attributeName="fill" values="#39d353;#39d353;#67e8f9;#39d353;#39d353" keyTimes="0;0.490912174;0.530663358;0.621006958;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="73" width="10" height="10" rx="2" fill="#39d353" data-date="2026-11-18">
-<title>2026-11-18: 21 contributions</title>
+<title>2026-11-18: 24 contributions</title>
 <animate attributeName="fill" values="#39d353;#39d353;#67e8f9;#39d353;#39d353" keyTimes="0;0.617393214;0.657144397;0.747487997;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 </g>
 <g id="energy-pulses">
 <circle cx="442.0" cy="91.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-06-18">
-<animate attributeName="r" values="4;4;13;13" keyTimes="0;0.05420616;0.171652839;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;11;11" keyTimes="0;0.05420616;0.171652839;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.046978672;0.081309239;0.171652839;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="468.0" cy="91.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-07-02">
@@ -1174,7 +1174,7 @@
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.30102275;0.335353318;0.425696917;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="494.0" cy="65.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-07-14">
-<animate attributeName="r" values="4;4;13;13" keyTimes="0;0.434731277;0.552177956;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;11;11" keyTimes="0;0.434731277;0.552177956;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.427503789;0.461834357;0.552177956;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="533.0" cy="117.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-08-08">
@@ -1218,7 +1218,7 @@
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.173459711;0.207790279;0.298133878;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="598.0" cy="78.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-09-09">
-<animate attributeName="r" values="4;4;9;9" keyTimes="0;0.307168238;0.424614917;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;7;7" keyTimes="0;0.307168238;0.424614917;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.29994075;0.334271318;0.424614917;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="611.0" cy="91.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-09-17">
@@ -1242,7 +1242,7 @@
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.450756353;0.485086921;0.575430521;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="689.0" cy="117.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-10-31">
-<animate attributeName="r" values="4;4;11;11" keyTimes="0;0.680658776;0.798105455;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;9;9" keyTimes="0;0.680658776;0.798105455;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.673431288;0.707761855;0.798105455;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="689.0" cy="104.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-10-30">
@@ -1258,7 +1258,7 @@
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.345719057;0.380049625;0.470393224;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="702.0" cy="91.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-11-05">
-<animate attributeName="r" values="4;4;11;11" keyTimes="0;0.479427584;0.596874263;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;9;9" keyTimes="0;0.479427584;0.596874263;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.472200096;0.506530664;0.596874263;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="702.0" cy="104.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-11-06">
@@ -1266,7 +1266,7 @@
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.046978672;0.081309239;0.171652839;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="702.0" cy="117.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-11-07">
-<animate attributeName="r" values="4;4;13;13" keyTimes="0;0.180687199;0.298133878;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;11;11" keyTimes="0;0.180687199;0.298133878;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.173459711;0.207790279;0.298133878;1" dur="5.534426s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="728.0" cy="52.0" r="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0" data-energy="2026-11-16">
