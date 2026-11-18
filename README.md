@@ -69,7 +69,7 @@ Arcade robots plant bombs that break contribution bricks in cross-shaped explosi
 
 ### GitTanks
 
-Armored patrols move along the calendar, aim their turrets, and hit contribution targets in column order. The targets recover after each column is cleared.
+One teal hero tank faces waves of red enemy tanks tied to active calendar cells. The enemies return fire, the hero dodges and counterattacks, and each contribution cell recovers after its wave.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">

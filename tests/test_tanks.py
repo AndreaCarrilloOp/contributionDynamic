@@ -7,41 +7,46 @@ from contribution_dynamic.scenarios.tanks import (
     LEFT,
     STEP,
     TOP,
-    plan_shots,
+    plan_waves,
     render_tanks,
 )
 
 NS = {"s": "http://www.w3.org/2000/svg"}
 
 
-def test_patrol_covers_each_active_cell_once():
+def test_each_active_day_is_one_enemy():
     days = demo_calendar()
-    shots = plan_shots(days)
-    assert len(shots) == len({s.day for s in shots})
-    assert {s.day for s in shots} == {d for d in days if d.count}
-    assert len([s for s in shots if s.start == FIRST]) == 4
-    for shot in shots:
-        assert shot.start < shot.aim < shot.launch < shot.hit < shot.restore
+    waves = plan_waves(days)
+    duels = [d for wave in waves for d in wave.duels]
+    assert len(duels) == len({d.day for d in duels})
+    assert {d.day for d in duels} == {d for d in days if d.count}
+    assert waves[0].start == FIRST
+    assert all(1 <= len(w.duels) <= 6 for w in waves)
+    assert any(len(w.duels) > 1 for w in waves)
 
 
-def test_projectiles_clear_nearer_targets_before_farther_ones():
-    days = tuple(Day(date(2026, 1, 4 + row), 3, row, 0) for row in range(7))
-    shots = plan_shots(days)
-    assert [s.day.weekday for s in shots] == list(range(7))
-    for earlier, later in zip(shots, shots[1:]):
-        assert earlier.hit < later.launch < earlier.restore
-    assert len({s.restore for s in shots}) == 1
+def test_enemy_counterfire_and_hero_dodge_precede_impact():
+    waves = plan_waves(demo_calendar())
+    for wave in waves:
+        assert wave.start < wave.arrive < wave.dodge_start < wave.dodge_end
+        assert abs(abs(wave.base - wave.dodge) - 18) < 1e-6
+        for duel in wave.duels:
+            assert duel.return_launch < wave.dodge_end < duel.return_hit
+            assert duel.return_hit < duel.launch < duel.hit < wave.restore
+    for previous, current in zip(waves, waves[1:]):
+        assert previous.restore < current.start
+        assert previous.dodge == current.origin
 
 
-def test_sparse_calendar_starts_immediately():
+def test_sparse_calendar_starts_without_empty_column_delay():
     day = Day(date(2026, 11, 17), 9, 2, 52, 4)
-    shot, = plan_shots((day,))
-    assert shot.start == FIRST
-    assert shot.origin_week == day.week
-    assert shot.hit < 1.5
+    wave, = plan_waves((day,))
+    assert wave.start == FIRST
+    assert wave.duels[0].day == day
+    assert wave.duels[0].launch < 1.5
 
 
-def test_svg_preserves_coordinates_and_repeats_exactly():
+def test_svg_has_exactly_one_hero_and_preserves_calendar():
     days = demo_calendar()
     for theme in ("dark", "light"):
         svg = render_tanks(days, theme)
@@ -53,8 +58,13 @@ def test_svg_preserves_coordinates_and_repeats_exactly():
             assert cell.attrib["data-date"] == day.date.isoformat()
             assert int(cell.attrib["x"]) == LEFT + day.week * STEP
             assert int(cell.attrib["y"]) == TOP + day.weekday * STEP
-        assert len(root.findall(".//s:g[@data-tank]", NS)) == 4
-        assert len(root.findall(".//s:g[@data-shot]", NS)) == sum(d.count > 0 for d in days)
+        assert len(root.findall(".//s:g[@data-tank='hero']", NS)) == 1
+        enemies = root.findall(".//s:g[@data-tank='enemy']", NS)
+        assert {e.attrib["data-enemy"] for e in enemies} == {
+            day.date.isoformat() for day in days if day.count
+        }
+        assert len(root.findall(".//s:g[@data-projectile='hero']", NS)) == len(enemies)
+        assert len(root.findall(".//s:g[@data-projectile='enemy']", NS)) == len(enemies)
 
 
 def test_original_level_and_color_are_restored():
@@ -70,7 +80,7 @@ def test_original_level_and_color_are_restored():
     assert values[1] != values[0]
 
 
-def test_no_artificial_activity_on_empty_board():
+def test_no_fabricated_battle_on_empty_calendar():
     for days in ((), (Day(date(2026, 11, 17), 0, 2, 52, 0),)):
         root = ElementTree.fromstring(render_tanks(days))
         assert not root.findall(".//s:g[@data-tank]", NS)

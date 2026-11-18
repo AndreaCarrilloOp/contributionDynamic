@@ -23,3 +23,4 @@
 - Restyle GitChess with classic checkerboard squares, ivory/ebony pieces and level-scaled golden capture tokens.
 - Add GitBlast with level-colored bricks, clipped cross explosions, safe retreat geometry and restoration.
 - Add GitTanks with persistent armored patrols, turret aiming, ordered projectile impacts and column restoration.
+- Rework GitTanks into one persistent hero versus multiple enemy tanks with counterfire, dodging, and wave-based restoration.
