@@ -12,3 +12,13 @@ venv/
 htmlcov/
 build/
 dist/
+
+# Generated assets and reports
+/generated/
+/previews/
+/artifacts/
+/visual-report/
+/benchmark.json
+/coverage.xml
+/contributions.svg
+/examples/

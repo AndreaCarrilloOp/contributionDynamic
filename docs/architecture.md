@@ -1,18 +1,14 @@
 # Architecture
 
-The core prototype implements a normalized immutable calendar model, deterministic demo input, GitHub GraphQL collector, serpentine motion path and self-contained SVG renderer.
-
-The first motion path visits active cells in alternating column order. It is a baseline for testing, not the final scenario behavior. Future scenarios will define their own simulation state, timing and geometry.
+The engine uses an immutable contribution calendar, deterministic demo input, a GitHub GraphQL collector, five scenario planners and self-contained SVG renderers. Shared calendar helpers resolve intensity and board width; shared label and animation modules serialize consistent SVG geometry and timelines.
 
 SVG output uses embedded declarative animation without JavaScript. GitHub image rendering compatibility and live API access require verification.
 
 The collector accepts credentials from the environment through the CLI. The default demo requires no token.
 
-GitOrigami animates six triangular SVG paper panels per active day. A deterministic active-cell wave schedules folding, flight and fade-out without waiting for empty columns. Each source cell is restored after its own flight. The CLI selects a renderer through a scenario registry. CI generates demo previews without credentials; the manual GraphQL workflow fetches live data once for the five public scenarios.
+GitOrigami animates six triangular SVG paper panels per active day. A deterministic active-cell wave schedules folding, flight and fade-out without waiting for empty columns. Each source cell is restored after its own flight. The CLI selects a renderer through a scenario registry. CI generates demo previews without credentials; the manual publishing workflow fetches live data once for the five public scenarios.
 
 Publishing renders and XML-validates ten public assets from one calendar before uploading an artifact. A separate job with contents write permission updates the output branch without force-pushing. Generation uses read-only repository permissions and receives the contribution token only during the fetch step. Existing assets remain available if generation fails.
-
-The experimental motion renderer is retained for local development and unit tests, but is excluded from publishing and CI preview artifacts.
 
 GitChess schedules a team of up to four attackers with queen, rook, bishop and knight movement. A breadth-first search plans unobstructed captures and preparatory moves, with a shared occupancy map preventing friendly collisions. The team takes turns. After every active day has been captured, attackers return to their starting squares before restoration. Reverse traversal is a deterministic fallback for obstructed return paths.
 

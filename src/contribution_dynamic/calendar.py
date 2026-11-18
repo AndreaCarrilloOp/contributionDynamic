@@ -32,6 +32,18 @@ def demo_calendar(seed: int = 42, weeks: int = 53) -> tuple[Day, ...]:
     )
 
 
+def contribution_level(day: Day) -> int:
+    """Preserve GitHub quartiles, with a deterministic fallback for demo data."""
+    if not day.count:
+        return 0
+    return max(1, day.level) if day.level is not None else min(4, day.count.bit_length())
+
+
+def board_weeks(days: tuple[Day, ...]) -> int:
+    """Reserve a full calendar while supporting a partial 54th week."""
+    return max(53, max((day.week + 1 for day in days), default=0))
+
+
 MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 

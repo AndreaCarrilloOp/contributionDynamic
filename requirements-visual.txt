@@ -1,2 +1,0 @@
-# Optional browser checks; not a runtime dependency.
-playwright==1.65.2

@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from math import hypot
 
 from contribution_dynamic.animation import track
-from contribution_dynamic.calendar import Day
+from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
 
 CELL = STEP
@@ -71,16 +71,6 @@ def legal_move(piece: str, origin: Square, destination: Square, side: int = 1) -
     if piece == "king":
         return max(a, b) == 1
     raise ValueError(f"Unknown chess piece: {piece}")
-
-
-def _level(day: Day) -> int:
-    if day.count == 0:
-        return 0
-    return max(1, day.level) if day.level is not None else min(4, day.count.bit_length())
-
-
-def board_weeks(days: tuple[Day, ...]) -> int:
-    return max(53, max((d.week + 1 for d in days), default=0))
 
 
 def _inside(pos: Square, weeks: int) -> bool:
@@ -160,7 +150,7 @@ def plan_match(days: tuple[Day, ...]) -> Match | None:
     weeks = board_weeks(days)
     count = min(len(TEAM), len(pending))
     first = min(pending)[0]
-    start_col = max(0, min(weeks-count, first-1))
+    start_col = max(0, min(weeks - count, first - 1)) if count > 1 else first
     home_columns = sorted(range(start_col, start_col+count), key=lambda x: (abs(x-first), x))
     homes = tuple((piece, (col, STAGING_ROW))
                   for piece, col in zip(TEAM[:count], home_columns))
@@ -279,7 +269,7 @@ def _attacker(piece, home, match, p):
 
 def _defender(move, reveal, match, p):
     day = move.day
-    level = _level(day)
+    level = contribution_level(day)
     x, y = _point(move.destination)
     kind = PIECE_BY_LEVEL[level]
     first = reveal == 0
@@ -351,7 +341,7 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
         color = p["squares"][(day.week + day.weekday) % 2]
         parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
                      f'fill="{color}" data-date="{day.date.isoformat()}" '
-                     f'data-level="{_level(day)}">')
+                     f'data-level="{contribution_level(day)}">')
         parts.append(f'<title>{day.date.isoformat()}: {day.count} contributions</title></rect>')
     parts.extend(['</g>', '<g id="move-highlights">'])
     if match:

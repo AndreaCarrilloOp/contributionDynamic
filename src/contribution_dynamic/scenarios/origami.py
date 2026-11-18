@@ -1,7 +1,7 @@
 """Fold active contribution cells into paper birds using declarative SVG."""
 
 from contribution_dynamic.animation import track as _track
-from contribution_dynamic.calendar import Day
+from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
 
 CELL = 10
@@ -37,12 +37,6 @@ BIRD_DOWN = (
     "0,0 4,8 7,-2", "-11,-1 -4,-2 -5,4", "-5,-2 6,-2 1,5",
     "-3,1 -10,8 3,4", "5,-2 7,-5 9,-1", "7,-3 12,-2 9,-1",
 )
-
-
-def _level(day: Day) -> int:
-    if day.count == 0:
-        return 0
-    return max(1, day.level) if day.level is not None else min(4, day.count.bit_length())
 
 
 def fold_schedule(days: tuple[Day, ...]) -> dict[Day, float]:
@@ -85,7 +79,7 @@ def _bird(day, color, shades, cycle, width, s):
 
 def render_origami(days: tuple[Day, ...], theme: str = "dark") -> str:
     bg, empty, text, levels, highlight, middle, shadow = PALETTES[theme]
-    weeks = max(53, max((d.week + 1 for d in days), default=0))
+    weeks = board_weeks(days)
     width, height = LEFT + weeks * STEP + RIGHT, TOP + 7 * STEP + 13
     schedule = fold_schedule(days)
     cycle = max(4.0, max(schedule.values(), default=0) + FLIGHT + .65)
@@ -100,7 +94,7 @@ def render_origami(days: tuple[Day, ...], theme: str = "dark") -> str:
     parts.append('<g id="calendar">')
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP
-        level = _level(day)
+        level = contribution_level(day)
         color = levels[level-1] if level else empty
         parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" '
                      f'fill="{color}" data-date="{day.date.isoformat()}">')
@@ -113,7 +107,7 @@ def render_origami(days: tuple[Day, ...], theme: str = "dark") -> str:
         parts.append('</rect>')
     parts.extend(['</g>', '<g id="paper-birds">'])
     for day, start in schedule.items():
-        parts.extend(_bird(day, levels[_level(day)-1],
+        parts.extend(_bird(day, levels[contribution_level(day)-1],
                            (shadow, middle, middle, highlight, highlight, shadow),
                            cycle, width, start))
     parts.extend(['</g>', '</svg>'])

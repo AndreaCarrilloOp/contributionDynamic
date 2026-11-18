@@ -8,7 +8,6 @@ on:
       - 'tests/**'
       - 'pyproject.toml'
       - 'action.yml'
-      - 'requirements*.txt'
       - 'scripts/**'
       - '.github/workflows/**'
   pull_request:
@@ -17,7 +16,6 @@ on:
       - 'tests/**'
       - 'pyproject.toml'
       - 'action.yml'
-      - 'requirements*.txt'
       - 'scripts/**'
       - '.github/workflows/**'
   workflow_dispatch:
@@ -64,8 +62,8 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-          expected = {f"{s}-{t}.svg" for s in ("tanks", "blast", "chess", "invaders", "origami")
-                      for t in ("dark", "light")}
+          from contribution_dynamic.registry import PUBLISHED_SCENARIOS, THEMES
+          expected = {f"{s}-{t}.svg" for s in PUBLISHED_SCENARIOS for t in THEMES}
           assert {p.name for p in Path("previews").glob("*.svg")} == expected
           PY
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6

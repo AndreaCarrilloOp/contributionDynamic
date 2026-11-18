@@ -38,3 +38,4 @@
 - Retire GitFactory and GitAbyss; replace them with GitInvaders, a single-ship pixel-art battle with contribution-coded aliens, enemy counterfire and full-loop restoration.
 - Redesign GitChess with a subdued contiguous board, four turn-based attackers, legal team routing, and a four-target focus window.
 - Align all five calendars through one geometry and SVG label renderer; preserve exact month columns and center Mon, Wed and Fri on their rows.
+- Consolidate calendar helpers and package dependencies; remove the retired motion prototype and generated example SVGs from main. Fix initial queen placement for single-day calendars.

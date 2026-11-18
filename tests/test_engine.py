@@ -1,9 +1,7 @@
-from xml.etree import ElementTree
+from datetime import date
 
-from contribution_dynamic.calendar import demo_calendar
+from contribution_dynamic.calendar import Day, board_weeks, contribution_level, demo_calendar
 from contribution_dynamic.collector import parse_calendar
-from contribution_dynamic.motion import serpentine_path
-from contribution_dynamic.svg import render
 
 
 def test_demo_is_deterministic():
@@ -11,17 +9,13 @@ def test_demo_is_deterministic():
     assert len(demo_calendar()) == 371
 
 
-def test_route_visits_active_cells_once():
-    days = demo_calendar()
-    route = serpentine_path(days)
-    assert set(route) == {day for day in days if day.count > 0}
-    assert len(route) == len(set(route))
-
-
-def test_svg_is_valid_xml():
-    for theme in ("dark", "light"):
-        root = ElementTree.fromstring(render(demo_calendar(), theme))
-        assert root.tag.endswith("svg")
+def test_shared_calendar_intensity_and_width():
+    day = date(2026, 11, 18)
+    assert contribution_level(Day(day, 0, 3, 53, 0)) == 0
+    assert contribution_level(Day(day, 99, 3, 53, 1)) == 1
+    assert contribution_level(Day(day, 8, 3, 53)) == 4
+    assert board_weeks(()) == 53
+    assert board_weeks((Day(day, 1, 3, 53),)) == 54
 
 
 def test_graphql_parser():

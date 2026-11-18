@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from math import atan2, cos, degrees, radians, sin
 
 from contribution_dynamic.animation import track
-from contribution_dynamic.calendar import Day
+from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
 
 CELL = 10
@@ -78,16 +78,6 @@ class Battle:
     attacks: tuple[Attack, ...]
     cycle: float
     enemies: tuple[EnemyRoute, ...] = ()
-
-
-def _level(day: Day) -> int:
-    if not day.count:
-        return 0
-    return max(1, day.level) if day.level is not None else min(4, day.count.bit_length())
-
-
-def board_weeks(days: tuple[Day, ...]) -> int:
-    return max(53, max((d.week + 1 for d in days), default=0))
 
 
 def base_x(days: tuple[Day, ...]) -> float:
@@ -511,7 +501,7 @@ def _combat(attack, cycle, p):
         ])
     parts.extend(_projectile(origin, target, attack.fire, attack.hit, cycle, p, "hero"))
     parts.extend(_explosion(target, attack.hit, cycle, p,
-                            5+_level(attack.day) if attack.day else 8))
+                            5+contribution_level(attack.day) if attack.day else 8))
     parts.append('</g>')
     return parts
 
@@ -547,7 +537,7 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
     parts.append('<g id="calendar">')
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT+day.week*STEP, TOP+day.weekday*STEP
-        level = _level(day)
+        level = contribution_level(day)
         color = p["tiles"][level-1] if level else p["empty"]
         parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="1" '
                      f'fill="{color}" data-date="{day.date.isoformat()}" data-level="{level}">')

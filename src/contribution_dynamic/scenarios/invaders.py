@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from itertools import groupby
 
 from contribution_dynamic.animation import track
-from contribution_dynamic.calendar import Day
+from contribution_dynamic.calendar import Day, board_weeks, contribution_level
 from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
 
 CELL = 10
@@ -77,16 +77,6 @@ class Battle:
     volleys: tuple[Volley, ...]
     restore: float
     cycle: float
-
-
-def level(day: Day) -> int:
-    if not day.count:
-        return 0
-    return max(1, day.level) if day.level is not None else min(4, day.count.bit_length())
-
-
-def board_weeks(days: tuple[Day, ...]) -> int:
-    return max(53, max((day.week + 1 for day in days), default=0))
 
 
 def center(day: Day) -> tuple[float, float]:
@@ -187,7 +177,7 @@ def _formation(battle, p):
         for shot in volley.shots:
             day = shot.day
             x, y = center(day)
-            variant = level(day)
+            variant = contribution_level(day)
             parts.extend([
                 f'<g data-invader="{day.date.isoformat()}" data-level="{variant}" '
                 f'transform="translate({x} {y})" opacity="1">',
@@ -238,7 +228,7 @@ def _combat(battle, p):
             parts.extend(_laser(volley.base, SHIP_Y-6, y, shot.launch, shot.hit,
                                 battle.cycle, p["laser"], "hero"))
             parts.extend(_burst(volley.base, y, shot.hit, battle.cycle,
-                                p["aliens"][level(shot.day)-1], p["spark"]))
+                                p["aliens"][contribution_level(shot.day)-1], p["spark"]))
     parts.append('</g>')
     return parts
 
@@ -260,7 +250,7 @@ def render_invaders(days: tuple[Day, ...], theme: str = "dark") -> str:
     parts.append('<g id="calendar">')
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week*STEP, TOP + day.weekday*STEP
-        intensity = level(day)
+        intensity = contribution_level(day)
         color = p["tiles"][intensity-1] if intensity else p["empty"]
         parts.append(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="1" '
                      f'fill="{color}" data-date="{day.date.isoformat()}" '

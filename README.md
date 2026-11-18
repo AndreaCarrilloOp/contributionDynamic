@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/brand/logo.svg" width="88" height="88" alt="contributionDynamic logo">
+  <img src="assets/logo.svg" width="88" height="88" alt="contributionDynamic logo">
   <h1>contributionDynamic</h1>
   <p><em>Beyond static contributions.</em></p>
   <p>Transform GitHub contribution calendars into animated worlds.</p>
@@ -118,9 +118,11 @@ GraphQL collector → calendar model → scenario simulation → compact SVG →
 - Declarative SVG motion, no JavaScript or external sprites.
 - Shared timeline compaction and batch generation from a single API request.
 
-The experimental `motion` renderer remains available locally, but is not published. GitChess models team movement and blocking, not a full chess game. GitOrigami is a geometric animation, not a physical folding solver.
+GitChess models team movement and blocking, not a full chess game. GitOrigami is a geometric animation, not a physical folding solver.
 
 ## Development
+
+All development and optional browser dependencies are defined in `pyproject.toml`. Generated files belong in `generated/` or the `output` branch, not in the source tree.
 
 ```sh
 python -m pip install -e ".[dev]"
