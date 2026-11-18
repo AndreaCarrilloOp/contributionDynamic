@@ -36,3 +36,4 @@
 - Improve GitChess contrast and map levels 1–4 to distinct pawn, knight, bishop and rook silhouettes while retaining one golden queen and the legal route planner.
 - Refine the GitChess month header and verify stationary pieces, exact capture timing and synchronized restoration.
 - Retire GitFactory and GitAbyss; replace them with GitInvaders, a single-ship pixel-art battle with contribution-coded aliens, enemy counterfire and full-loop restoration.
+- Redesign GitChess with a subdued contiguous board, four turn-based attackers, legal team routing, and a four-target focus window.

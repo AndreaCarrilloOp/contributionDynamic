@@ -36,7 +36,7 @@ One arcade hero navigates free cells, plants a single bomb beside an intact cont
 
 ### GitChess
 
-One golden queen moves across a high-contrast wood-toned checkerboard, capturing ebony pieces that represent active contribution days. Activity levels map to pawn, knight, bishop and rook, with increasing piece size. The queen cannot pass through standing pieces; the calendar resets after she returns to her starting square. A clean, serif month header leaves the chessboard free of weekday labels.
+A team of ivory chess attackers — queen, rook, bishop and knight — takes turns on a quiet sage-green board. Reserve dots encode contribution intensity; only the next four opposing pieces are revealed, reducing visual clutter. Moves follow each attacker's chess geometry, respect friendly and enemy blockers, and restore the calendar after the team returns home.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg">
@@ -117,7 +117,7 @@ GraphQL collector → calendar model → scenario simulation → compact SVG →
 - Declarative SVG motion, no JavaScript or external sprites.
 - Shared timeline compaction and batch generation from a single API request.
 
-The experimental `motion` renderer remains available locally, but is not published. GitChess models queen movement and blocking, not a full chess game. GitOrigami is a geometric animation, not a physical folding solver.
+The experimental `motion` renderer remains available locally, but is not published. GitChess models team movement and blocking, not a full chess game. GitOrigami is a geometric animation, not a physical folding solver.
 
 ## Development
 
