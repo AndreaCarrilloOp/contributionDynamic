@@ -1,0 +1,53 @@
+name: Validate GitHub GraphQL
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install and test
+        run: |
+          python -m pip install -e '.[dev]'
+          python -m pytest -v
+          python -m ruff check .
+      - name: Fetch real contribution calendar and render
+        env:
+          GITHUB_TOKEN: ${{ secrets.CONTRIBUTION_TOKEN }}
+          CONTRIBUTION_USER: ${{ github.repository_owner }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          from contribution_dynamic.collector import collect
+          from contribution_dynamic.svg import render
+
+          days = collect(os.environ["CONTRIBUTION_USER"], os.environ["GITHUB_TOKEN"])
+          if not days:
+              raise SystemExit("GitHub returned an empty calendar")
+          output = Path("artifacts")
+          output.mkdir(exist_ok=True)
+          for theme in ("dark", "light"):
+              (output / f"profile-{theme}.svg").write_text(
+                  render(days, theme), encoding="utf-8"
+              )
+          print(f"GraphQL OK: {len(days)} calendar days received.")
+          PY
+      - name: Upload SVG previews
+        uses: actions/upload-artifact@v4
+        with:
+          name: contribution-previews
+          path: artifacts/*.svg
+          if-no-files-found: error
+          retention-days: 7
