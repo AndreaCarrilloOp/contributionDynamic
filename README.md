@@ -25,7 +25,7 @@ A golden retro tank navigates the contribution maze, breaks bricks before enteri
 
 ### GitBlast
 
-One arcade hero stays inside the calendar grid, navigates free cells, plants a single bomb beside an intact contribution brick, and retreats before a cross-shaped explosion. Flames stop at the first brick in each direction. The calendar resets when the hero returns home.
+A pixel-art bomber navigates a subdued stone-brick maze inside the calendar, plants bombs and retreats before cross-shaped explosions. Up to three enemy patrols move through nearby free cells; enemies caught by the flames are defeated. Contribution bricks retain their four activity levels and reset when the hero returns home.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">

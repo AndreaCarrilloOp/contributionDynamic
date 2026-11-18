@@ -44,3 +44,5 @@
 - Refine GitInvaders with short alternating attack bursts, wider evasions and occasional visible ship damage.
 - Compact every calendar header and viewport, remove scenario footers, and support an opt-in quiet project signature.
 - Balance GitInvaders burst rounds to avoid repeated column attacks when alternatives remain.
+- Redesign GitBlast with pixel-style bomber, three enemy patrol variants, blast defeats, subdued masonry and readable dual-theme colors.
+- Fix the GitInvaders test import ordering that blocked publishing.

@@ -8,6 +8,7 @@ from contribution_dynamic.calendar import Day, demo_calendar
 from contribution_dynamic.scenarios.blast import (
     FIRST,
     LEFT,
+    MAX_ENEMIES,
     STEP,
     TOP,
     blast_cross,
@@ -120,3 +121,45 @@ def test_brick_restores_original_fill():
     values = animation.attrib["values"].split(";")
     assert values[0] == values[-1] == cell.attrib["fill"]
     assert values[1] != values[0]
+
+
+@pytest.mark.parametrize("dense", [False, True])
+def test_enemies_use_free_cells_and_respect_blast_outcomes(dense):
+    days = demo_calendar()
+    if dense:
+        days = tuple(replace(day, count=1) for day in days)
+    run = plan_run(days)
+    assert run is not None
+    assert run.enemies
+    blocked = {(d.week, d.weekday) for d in days if d.count}
+    blocked.difference_update((d.week, d.weekday) for d in run.entry)
+    for index, event in enumerate(run.events):
+        enemies = [e for e in run.enemies if e.event == index]
+        assert len(enemies) <= MAX_ENEMIES
+        used = set()
+        hero = {pos for pos, time in zip(run.positions, run.times, strict=True)
+                if event.start <= time <= event.clear}
+        for enemy in enemies:
+            assert enemy.route[0] != enemy.route[-1]
+            assert not set(enemy.route) & (blocked | used | hero)
+            assert all(0 <= x < board_weeks(days) and 0 <= y < 7 for x, y in enemy.route)
+            assert event.start < enemy.spawn < enemy.arrive < event.hit
+            assert enemy.defeated == (enemy.route[-1] in event.cross)
+            assert enemy.end == (event.hit if enemy.defeated else event.clear)
+            used.update(enemy.route)
+        blocked.difference_update((d.week, d.weekday) for d in event.hits)
+
+
+def test_enemy_sprites_and_impacts_in_both_themes():
+    days = demo_calendar()
+    run = plan_run(days)
+    assert run is not None
+    assert any(e.defeated for e in run.enemies)
+    assert any(sum(e.event == i for e in run.enemies) > 1 for i in range(len(run.events)))
+    for theme in ("dark", "light"):
+        root = ElementTree.fromstring(render_blast(days, theme))
+        assert len(root.findall(".//s:g[@data-sprite='bomber']", NS)) == 1
+        assert len(root.findall(".//s:g[@data-actor='enemy']", NS)) == len(run.enemies)
+        assert len(root.findall(".//s:circle[@data-enemy-impact]", NS)) == sum(
+            e.defeated for e in run.enemies
+        )
