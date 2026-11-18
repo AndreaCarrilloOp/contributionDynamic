@@ -4,10 +4,13 @@ from xml.etree import ElementTree
 
 from contribution_dynamic.calendar import Day, demo_calendar
 from contribution_dynamic.scenarios.tanks import (
+    FIRE_RANGE,
     LEFT,
     MAX_ENEMIES,
+    SPAWN_RADIUS,
     STEP,
     TOP,
+    can_fire,
     plan_battle,
     render_tanks,
 )
@@ -43,8 +46,16 @@ def test_dense_and_demo_routes_never_enter_standing_bricks_or_enemies():
                     occupied = max(i for i, tick in enumerate(enemy.times) if tick <= t)
                     assert dest != enemy.positions[occupied]
         for a in battle.attacks:
-            assert abs(a.source[0]-a.target[0])+abs(a.source[1]-a.target[1]) == 1
-            assert a.fire < a.hit < a.enter
+            obstacles = {
+                b.target for b in battle.attacks if b.day is not None and b.hit >= a.fire
+            }
+            for route in battle.enemies:
+                encounter = next(b for b in battle.attacks if b.enemy == route.enemy)
+                if encounter.spawn <= a.fire < encounter.hit:
+                    index = max(i for i, t in enumerate(route.times) if t <= a.fire)
+                    obstacles.add(route.positions[index])
+            assert can_fire(a.source, a.target, obstacles)
+            assert a.fire < a.hit < a.complete
 
 
 def test_enemy_waves_return_fire_and_are_defeated():
@@ -146,3 +157,46 @@ def test_enemies_do_not_share_squares_at_movement_boundaries():
                 i = max(i for i, t in enumerate(route.times) if t <= tick)
                 positions.append(route.positions[i])
         assert len(positions) == len(set(positions))
+
+
+def test_ranged_fire_stops_at_bricks_and_tanks():
+    assert can_fire((2, 2), (7, 2), set())
+    assert can_fire((7, 2), (2, 2), {(2, 2)})
+    assert not can_fire((2, 2), (7, 2), {(4, 2)})
+    assert not can_fire((2, 2), (2, 7), {(2, 4)})
+    assert not can_fire((2, 2), (8, 2), set())
+    assert not can_fire((2, 2), (3, 3), set())
+
+
+def test_enemy_spawn_is_near_a_standing_brick():
+    for days in (demo_calendar(), tuple(replace(d, count=1) for d in demo_calendar())):
+        battle = plan_battle(days)
+        assert battle is not None
+        bricks = {a.target: a.hit for a in battle.attacks if a.day is not None}
+        for enemy in battle.enemies:
+            x, y = enemy.positions[0]
+            born = enemy.times[0]
+            standing = {pos for pos, hit in bricks.items() if hit > born}
+            assert (x, y) not in standing
+            assert any(0 < abs(x-a)+abs(y-b) <= SPAWN_RADIUS for a, b in standing)
+
+
+def test_both_sides_fire_across_multiple_cells():
+    battle = plan_battle(demo_calendar())
+    assert battle is not None
+    ranged = [
+        a for a in battle.attacks
+        if a.enemy is not None
+        and 1 < abs(a.source[0]-a.target[0])+abs(a.source[1]-a.target[1]) <= FIRE_RANGE
+    ]
+    assert ranged
+    for attack in ranged:
+        assert attack.counter < attack.shield_hit < attack.fire < attack.hit
+        assert abs((attack.shield_hit-attack.counter)-(attack.hit-attack.fire)) < 1e-6
+
+
+def test_no_enemy_spawns_after_the_last_brick_is_destroyed():
+    day = Day(date(2026, 11, 17), 1, 2, 52, 1)
+    battle = plan_battle((day,))
+    assert battle is not None
+    assert not battle.enemies

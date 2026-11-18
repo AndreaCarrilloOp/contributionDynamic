@@ -16,6 +16,9 @@ BASE = TOP + 7 * STEP + 15
 MAX_ENEMIES = 3
 WAVE_BRICKS = 5
 CHASE_ROUNDS = 10
+FIRE_RANGE = 5
+SPAWN_RADIUS = 2
+PROJECTILE_SPEED = 150
 ROLES = ("hunter", "ambusher", "flanker")
 MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
@@ -54,7 +57,7 @@ class Attack:
     target: Square
     fire: float
     hit: float
-    enter: float
+    complete: float
     day: Day | None = None
     enemy: int | None = None
     counter: float | None = None
@@ -139,29 +142,72 @@ def _path(parents, end):
     return tuple(reversed(route))
 
 
-def _approach(start, blocked, targets, width, spawn):
-    """Find the closest reachable firing square adjacent to a blocked target."""
-    parents = _paths(start, blocked, width, spawn)
-    for pos in parents:
-        for neighbor in _neighbors(pos, width, spawn):
-            if neighbor in targets:
-                return _path(parents, pos), neighbor
-    raise ValueError("No reachable target")
-
-
 def _distance(a: Square, b: Square) -> int:
     return abs(a[0]-b[0]) + abs(a[1]-b[1])
 
 
+def can_fire(source: Square, target: Square, blocked: set[Square]) -> bool:
+    """Only cardinal shots within range; intervening bricks and tanks stop fire."""
+    dx, dy = target[0]-source[0], target[1]-source[1]
+    distance = abs(dx)+abs(dy)
+    if not 1 <= distance <= FIRE_RANGE or (dx and dy):
+        return False
+    sx, sy = dx // distance, dy // distance
+    return all(
+        (source[0]+sx*i, source[1]+sy*i) not in blocked
+        for i in range(1, distance)
+    )
+
+
+def _visible(source, blocked, targets):
+    """The first solid square along each ray is the only possible target."""
+    for dx, dy in DIRECTIONS:
+        for distance in range(1, FIRE_RANGE+1):
+            target = source[0]+dx*distance, source[1]+dy*distance
+            if target in targets:
+                yield target
+                break
+            if target in blocked:
+                break
+
+
+def _approach(start, blocked, targets, width, spawn):
+    """Find the nearest reachable square with a clear firing line."""
+    parents = _paths(start, blocked, width, spawn)
+    for pos in parents:
+        target = next(_visible(pos, blocked, targets), None)
+        if target is not None:
+            return _path(parents, pos), target
+    raise ValueError("No reachable target")
+
+
+def _flight(source: Square, target: Square) -> float:
+    return max(.12, (_distance(source, target)*STEP-7)/PROJECTILE_SPEED)
+
+
 def _enemy_positions(current, blocked, width, spawn, count, cleared):
     parents = _paths(current, blocked, width, spawn)
-    candidates = [pos for pos in parents if pos not in (current, spawn)]
+    if not blocked:
+        return ()
+    near = {
+        (x+dx, y+dy)
+        for x, y in blocked
+        for dx in range(-SPAWN_RADIUS, SPAWN_RADIUS+1)
+        for dy in range(-SPAWN_RADIUS, SPAWN_RADIUS+1)
+        if 0 < abs(dx)+abs(dy) <= SPAWN_RADIUS
+    }
+    candidates = [
+        pos for pos in parents
+        if pos not in (current, spawn) and pos in near
+        and 0 <= pos[0] < width and 0 <= pos[1] < 7
+    ]
     distances = {pos: len(_path(parents, pos))-1 for pos in candidates}
     chosen = []
     while candidates and len(chosen) < count:
         # Prefer several approach directions and avoid distant, inactive waiting.
         target = min(candidates, key=lambda pos: (
-            abs(distances[pos]-5)
+            abs(distances[pos]-(FIRE_RANGE+2))
+            + (3 if can_fire(current, pos, blocked) else 0)
             - min(5, min((_distance(pos, other) for other in chosen), default=0))*.8,
             pos not in cleared,
             pos,
@@ -174,7 +220,7 @@ def _enemy_positions(current, blocked, width, spawn, count, cleared):
 def _chase_step(position, hero, heading, role, blocked, width, spawn):
     """Find one legal BFS step toward a role-specific interception square."""
     parents = _paths(position, blocked | {hero, spawn}, width, spawn)
-    goals = [pos for pos in _neighbors(hero, width, spawn) if pos in parents]
+    goals = [pos for pos in parents if can_fire(pos, hero, blocked)]
     if not goals:
         return position
     dx, dy = heading
@@ -243,19 +289,23 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
         source = positions[-1]
         turn(target)
         counter = shield_hit = None
+        flight = _flight(source, target)
         if enemy is not None:
             counter = clock+.04
-            shield_hit = counter+.12
+            shield_hit = counter+flight
             pose(source, shield_hit+.08, angles[-1])
         fire = clock+.04
-        hit = fire+.12
+        hit = fire+flight
         pose(source, hit+.16, angles[-1])
-        pose(target, clock+.11, angles[-1])
+        # Distant targets are shot without teleporting the tank to the impact.
+        if day is not None and _distance(source, target) == 1:
+            pose(target, clock+.11, angles[-1])
         attacks.append(Attack(source, target, fire, hit, clock, day, enemy,
                               counter, shield_hit, born))
 
     while blocked:
-        count = min(WAVE_BRICKS, len(blocked))
+        # Leave a standing brick for a real spawn site when a wave is possible.
+        count = min(WAVE_BRICKS, max(1, len(blocked)-1))
         for _ in range(count):
             route, target = _approach(positions[-1], blocked, blocked, width, spawn)
             walk(route)
@@ -263,7 +313,7 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
             blocked.remove(target)
             cleared.add(target)
         spawns = _enemy_positions(
-            positions[-1], blocked, width, spawn, min(MAX_ENEMIES, count), cleared,
+            positions[-1], blocked, width, spawn, MAX_ENEMIES, cleared,
         )
         if not spawns:
             continue
@@ -285,14 +335,16 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
             if not living:
                 break
             hero = positions[-1]
-            # Fire immediately when a pursuer reaches an adjacent square.
-            close = [key for key, pos in living.items() if _distance(hero, pos) == 1]
-            if close:
-                defeat(min(close))
-                continue
+            # Both sides exchange fire as soon as an unobstructed ray connects.
             obstacles = blocked | set(living.values())
+            visible = [
+                key for key, pos in living.items() if can_fire(hero, pos, obstacles)
+            ]
+            if visible:
+                defeat(min(visible, key=lambda key: (_distance(hero, living[key]), key)))
+                continue
             # Keep clearing the maze while enemies approach. If the corridor
-            # is cut off, advance toward an enemy instead of crossing a wall.
+            # is cut off, seek a firing line instead of crossing a wall.
             goals = blocked if blocked and round_index < 5 else set(living.values())
             try:
                 route, target = _approach(hero, obstacles, goals, width, spawn)
@@ -462,7 +514,8 @@ def _enemy(attack, route, cycle, p):
 def _combat(attack, cycle, p):
     origin, target = _center(*attack.source), _center(*attack.target)
     label = attack.day.date.isoformat() if attack.day is not None else attack.enemy
-    parts = [f'<g data-shot="{label}">']
+    distance = _distance(attack.source, attack.target)
+    parts = [f'<g data-shot="{label}" data-distance="{distance}">']
     if attack.enemy is not None:
         parts.extend(_projectile(target, origin, attack.counter,
                                  attack.shield_hit, cycle, p, "enemy"))
