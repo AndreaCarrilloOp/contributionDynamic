@@ -1157,8 +1157,8 @@
 <title>2026-11-17: 70 contributions</title>
 <animate attributeName="fill" values="#f0d9b5;#f0d9b5;#956919;#f0d9b5;#f0d9b5" keyTimes="0;0.027041644;0.028664143;0.034613304;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="723" y="69" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-11-18" data-level="3">
-<title>2026-11-18: 13 contributions</title>
+<rect x="723" y="69" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-11-18" data-level="4">
+<title>2026-11-18: 15 contributions</title>
 <animate attributeName="fill" values="#b58863;#b58863;#956919;#b58863;#b58863" keyTimes="0;0.205516495;0.207138994;0.213088156;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 </g>
@@ -1250,7 +1250,7 @@
 <circle cx="728.0" cy="61.0" r="3.9" fill="#f9d579" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-17" data-level="4" opacity="1">
 <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.027041644;0.031368307;0.040021633;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="728.0" cy="74.0" r="3.0" fill="#f9d579" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-18" data-level="3" opacity="1">
+<circle cx="728.0" cy="74.0" r="3.9" fill="#f9d579" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-18" data-level="4" opacity="1">
 <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.205516495;0.209843158;0.218496485;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 </g>
@@ -1435,7 +1435,7 @@
 </g></g></g>
 <circle cx="728.0" cy="74.0" r="4" fill="none" stroke="#956919" stroke-width="1" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.206057328;0.209031909;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;9;9" keyTimes="0;0.207138994;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="4;4;10;10" keyTimes="0;0.207138994;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <g data-capture="2026-10-31" data-piece="bishop" data-lane="3" opacity="0">
 <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.22796106;0.232287723;0.257706869;0.267982693;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
