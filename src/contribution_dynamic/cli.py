@@ -7,11 +7,17 @@ from pathlib import Path
 from contribution_dynamic import __version__
 from contribution_dynamic.calendar import demo_calendar
 from contribution_dynamic.collector import collect
+from contribution_dynamic.scenarios.abyss import render_abyss
 from contribution_dynamic.scenarios.factory import render_factory
 from contribution_dynamic.scenarios.origami import render_origami
 from contribution_dynamic.svg import render
 
-RENDERERS = {"motion": render, "factory": render_factory, "origami": render_origami}
+RENDERERS = {
+    "motion": render,
+    "factory": render_factory,
+    "origami": render_origami,
+    "abyss": render_abyss,
+}
 
 
 def main() -> int:

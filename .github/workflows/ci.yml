@@ -38,7 +38,7 @@ jobs:
         run: python -m ruff check .
       - name: Generate demo previews
         run: |
-          for scenario in factory origami; do
+          for scenario in factory origami abyss; do
             for theme in dark light; do
               python -m contribution_dynamic generate --scenario "$scenario" \
                 --theme "$theme" --output "previews/$scenario-$theme.svg"

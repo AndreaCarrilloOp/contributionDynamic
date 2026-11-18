@@ -16,3 +16,4 @@
 - Add validated multi-scenario asset generation and daily publishing to a dedicated output branch.
 - Fix sparse-calendar GitOrigami delays, bird geometry, and per-cell restoration.
 - Restrict published and preview assets to GitFactory and GitOrigami; retain motion as an internal baseline.
+- Add GitAbyss, a contribution-driven bioluminescent jellyfish scenario in both themes.

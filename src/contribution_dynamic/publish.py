@@ -7,7 +7,7 @@ from contribution_dynamic.calendar import Day
 from contribution_dynamic.cli import RENDERERS
 
 THEMES = ("dark", "light")
-PUBLISHED_SCENARIOS = ("factory", "origami")
+PUBLISHED_SCENARIOS = ("factory", "origami", "abyss")
 
 
 def build_assets(days: tuple[Day, ...], destination: Path) -> tuple[Path, ...]:

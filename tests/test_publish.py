@@ -11,7 +11,7 @@ def test_build_assets_generates_public_scenarios_only(tmp_path):
     assets = build_assets(days, tmp_path)
     assert {path.name for path in assets} == {
         f"{scenario}-{theme}.svg"
-        for scenario in ("factory", "origami")
+        for scenario in ("factory", "origami", "abyss")
         for theme in ("dark", "light")
     }
     assert set(tmp_path.glob("*.svg")) == set(assets)
