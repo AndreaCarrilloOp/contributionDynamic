@@ -67,6 +67,17 @@ Arcade robots plant bombs that break contribution bricks in cross-shaped explosi
 
 [Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg)
 
+### GitTanks
+
+Armored patrols move along the calendar, aim their turrets, and hit contribution targets in column order. The targets recover after each column is cleared.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">
+  <img alt="GitTanks animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-light.svg" width="100%">
+</picture>
+
+[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-light.svg)
+
 ## Quick start
 
 Requires Python 3.12 or newer.
@@ -102,7 +113,7 @@ Add the following step to an Ubuntu workflow. Until a release is published, use 
 | --- | --- | --- |
 | github-user | empty | GitHub login or demo |
 | github-token | empty | Read-only token for live data |
-| scenario | all | all, factory, origami, abyss, chess, blast |
+| scenario | all | all, factory, origami, abyss, chess, blast, tanks |
 | theme | both | both, dark, light |
 | output-dir | generated | Destination directory |
 

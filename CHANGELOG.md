@@ -22,3 +22,4 @@
 - Add vector brand identity, live gallery, MIT license, setup guide and beta release checklist.
 - Restyle GitChess with classic checkerboard squares, ivory/ebony pieces and level-scaled golden capture tokens.
 - Add GitBlast with level-colored bricks, clipped cross explosions, safe retreat geometry and restoration.
+- Add GitTanks with persistent armored patrols, turret aiming, ordered projectile impacts and column restoration.
