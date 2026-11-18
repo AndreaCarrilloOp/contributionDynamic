@@ -1,0 +1,28 @@
+name: Consumer action smoke test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  consumer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      # No checkout of the engine: resolve it as a consumer would.
+      - uses: AndreaCarrilloOp/contributionDynamic@main
+        with:
+          scenario: chess
+          theme: light
+          output-dir: demo
+      - run: test -s demo/chess-light.svg && test ! -e demo/chess-dark.svg
+      - uses: AndreaCarrilloOp/contributionDynamic@main
+        with:
+          github-user: ${{ github.repository_owner }}
+          github-token: ${{ secrets.CONTRIBUTION_TOKEN }}
+          scenario: abyss
+          theme: both
+          output-dir: live
+      - run: test -s live/abyss-dark.svg && test -s live/abyss-light.svg

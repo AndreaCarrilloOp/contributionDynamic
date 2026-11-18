@@ -1,0 +1,4 @@
+# Versions validated by CI or explicitly selected for release hardening.
+pytest==9.2.0
+ruff==0.17.5
+coverage==7.10.7

@@ -32,7 +32,7 @@ outputs:
 runs:
   using: 'composite'
   steps:
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
       with:
         python-version: '3.12'
     - name: Install contributionDynamic
@@ -51,6 +51,10 @@ runs:
         set -euo pipefail
         if [[ "$OUTPUT_DIR" == *$'\n'* || "$OUTPUT_DIR" == *$'\r'* || -z "$OUTPUT_DIR" ]]; then
           echo "Invalid output directory" >&2
+          exit 1
+        fi
+        if [[ -n "$CONTRIBUTION_USER" && -z "$GITHUB_TOKEN" ]]; then
+          echo "A read-only github-token is required for live contributions." >&2
           exit 1
         fi
         args=(batch --scenario="$SCENARIO" --theme="$THEME" --output-dir="$OUTPUT_DIR")

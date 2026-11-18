@@ -1,0 +1,19 @@
+name: Bug report
+description: Report a reproducible problem with an animation or action.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include scenario, theme, command or workflow and expected behavior. Never include tokens.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and actual behavior
+      description: Python version, browser, runner, sanitized logs or screenshots.
+    validations:
+      required: true

@@ -20,13 +20,20 @@ Issues = "https://github.com/AndreaCarrilloOp/contributionDynamic/issues"
 contribution-dynamic = "contribution_dynamic.cli:main"
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "ruff>=0.9"]
+dev = ["pytest==9.2.0", "ruff==0.17.5", "coverage==7.10.7"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["contribution_dynamic"]
+
+[tool.coverage.report]
+show_missing = true
 
 [tool.ruff]
 target-version = "py312"
