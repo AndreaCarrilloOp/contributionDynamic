@@ -14,3 +14,4 @@
 - Add the GitOrigami calendar-to-paper-bird scenario and CLI selection.
 - Generate all three scenarios in light and dark themes using CI and live GraphQL previews.
 - Add validated multi-scenario asset generation and daily publishing to a dedicated output branch.
+- Fix sparse-calendar GitOrigami delays, bird geometry, and per-cell restoration.

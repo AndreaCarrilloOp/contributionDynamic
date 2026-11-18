@@ -2,7 +2,16 @@ from datetime import date
 from xml.etree import ElementTree
 
 from contribution_dynamic.calendar import Day, demo_calendar
-from contribution_dynamic.scenarios.origami import LEFT, STEP, TOP, render_origami
+from contribution_dynamic.scenarios.origami import (
+    FIRST_FOLD,
+    FLIGHT,
+    LEFT,
+    PAPER,
+    STEP,
+    TOP,
+    fold_schedule,
+    render_origami,
+)
 
 NS = {"s": "http://www.w3.org/2000/svg"}
 
@@ -28,7 +37,7 @@ def test_one_bird_per_active_day():
     assert [bird.attrib["data-bird"] for bird in birds] == [
         day.date.isoformat() for day in days if day.count
     ]
-    assert all(len(bird.findall("s:polygon", NS)) == 4 for bird in birds)
+    assert all(len(bird.findall(".//s:polygon", NS)) == len(PAPER) for bird in birds)
 
 
 def test_animation_timelines_are_complete():
@@ -56,3 +65,38 @@ def test_origami_uses_api_intensity():
         cell = root.find(".//s:g[@id='calendar']/s:rect", NS)
         assert cell is not None
         assert cell.attrib["fill"] == color
+
+
+def test_sparse_calendar_starts_immediately_and_preserves_order():
+    days = (
+        Day(date(2026, 11, 17), 7, 2, 51),
+        Day(date(2026, 6, 18), 3, 4, 30),
+        Day(date(2025, 11, 23), 0, 0, 0),
+    )
+    schedule = fold_schedule(days)
+    assert list(schedule) == [days[1], days[0]]
+    assert schedule[days[1]] == FIRST_FOLD
+    assert schedule[days[0]] - schedule[days[1]] < 1
+
+
+def test_source_cell_restores_after_flight():
+    day = Day(date(2026, 11, 17), 7, 2, 51)
+    root = ElementTree.fromstring(render_origami((day,)))
+    cell = root.find(".//s:g[@id='calendar']/s:rect", NS)
+    assert cell is not None
+    animation = cell.find("s:animate", NS)
+    assert animation is not None
+    values = animation.attrib["values"].split(";")
+    assert values[0] == values[2] == cell.attrib["fill"]
+    assert values[1] != values[0]
+    duration = float(animation.attrib["dur"].removesuffix("s"))
+    keys = list(map(float, animation.attrib["keyTimes"].split(";")))
+    assert abs(keys[1] * duration - FIRST_FOLD) < 1e-6
+    assert abs(keys[2] * duration - (FIRST_FOLD + FLIGHT)) < 1e-6
+    assert keys[2] < 1
+
+
+def test_right_edge_bird_faces_inward():
+    day = Day(date(2026, 11, 17), 7, 2, 52)
+    root = ElementTree.fromstring(render_origami((day,)))
+    assert root.find(".//s:g[@data-bird]/s:g[@transform='scale(-1 1)']", NS) is not None

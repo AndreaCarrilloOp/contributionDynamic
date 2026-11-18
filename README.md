@@ -44,7 +44,7 @@ To preview GitOrigami:
 python -m contribution_dynamic generate --scenario origami --theme dark --output examples/origami-dark.svg
 ```
 
-GitOrigami folds each active calendar cell into a four-panel paper bird. A staggered wave travels across the board, birds fly and fade, and the original calendar returns at the end of the loop. This is a geometric animation, not a physical paper-folding solver.
+GitOrigami folds each active calendar cell into a six-panel paper bird. Only active cells are scheduled, so sparse calendars begin folding immediately. Birds fly and fade, and each original cell returns after its flight. This is a geometric animation, not a physical paper-folding solver.
 
 Run **CI** for token-free demo previews or **Validate GitHub GraphQL** for previews based on the repository owner's actual contributions.
 
