@@ -871,7 +871,7 @@
 </rect>
 <rect x="554" y="95" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-08-21" data-level="4">
 <title>2026-08-21: 15 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#956919;#f0d9b5;#f0d9b5" keyTimes="0;0.160897783;0.162520281;0.168469443;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#956919;#f0d9b5;#f0d9b5" keyTimes="0;0.205516495;0.207138994;0.213088156;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="554" y="108" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-08-22" data-level="3">
 <title>2026-08-22: 10 contributions</title>
@@ -1158,8 +1158,8 @@
 <animate attributeName="fill" values="#f0d9b5;#f0d9b5;#956919;#f0d9b5;#f0d9b5" keyTimes="0;0.027041644;0.028664143;0.034613304;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="69" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 15 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#956919;#b58863;#b58863" keyTimes="0;0.205516495;0.207138994;0.213088156;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<title>2026-11-18: 17 contributions</title>
+<animate attributeName="fill" values="#b58863;#b58863;#956919;#b58863;#b58863" keyTimes="0;0.160897783;0.162520281;0.168469443;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 </g>
 <g id="contribution-tokens">
@@ -1188,7 +1188,7 @@
 <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.027041644;0.031368307;0.040021633;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="559.0" cy="100.0" r="3.9" fill="#f9d579" stroke="#6c4b17" stroke-width=".65" data-token="2026-08-21" data-level="4" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.160897783;0.165224446;0.173877772;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.205516495;0.209843158;0.218496485;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="559.0" cy="113.0" r="3.0" fill="#f9d579" stroke="#6c4b17" stroke-width=".65" data-token="2026-08-22" data-level="3" opacity="1">
 <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.339372634;0.343699297;0.352352623;0.357220119;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
@@ -1251,7 +1251,7 @@
 <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.027041644;0.031368307;0.040021633;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <circle cx="728.0" cy="74.0" r="3.9" fill="#f9d579" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-18" data-level="4" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.205516495;0.209843158;0.218496485;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.160897783;0.165224446;0.173877772;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 </g>
 <g id="chess-moves">
@@ -1409,31 +1409,31 @@
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.116819903;0.119794484;0.134126555;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="4;4;10;10" keyTimes="0;0.117901568;0.134126555;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-capture="2026-08-21" data-piece="knight" data-lane="3" opacity="0">
+<g data-capture="2026-11-18" data-piece="knight" data-lane="3" opacity="0">
 <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.138723634;0.143050297;0.168469443;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M572.0 74.0L559.0 100.0" stroke="#956919" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="553.0" y="94.0" width="12" height="12" rx="2" fill="none" stroke="#956919" stroke-width="1"/>
-<g transform="translate(572.0 74.0)">
-<animateTransform attributeName="transform" type="translate" values="572.0 74.0;572.0 74.0;565.5 80.0;559.0 100.0;559.0 100.0" keyTimes="0;0.144672796;0.153596539;0.162520281;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M715.0 48.0L728.0 74.0" stroke="#956919" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
+<rect x="722.0" y="68.0" width="12" height="12" rx="2" fill="none" stroke="#956919" stroke-width="1"/>
+<g transform="translate(715.0 48.0)">
+<animateTransform attributeName="transform" type="translate" values="715.0 48.0;715.0 48.0;721.5 54.0;728.0 74.0;728.0 74.0" keyTimes="0;0.144672796;0.153596539;0.162520281;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 <ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
 <g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
 <use href="#chess-knight" xlink:href="#chess-knight"/>
 </g></g></g>
-<circle cx="559.0" cy="100.0" r="4" fill="none" stroke="#956919" stroke-width="1" opacity="0">
+<circle cx="728.0" cy="74.0" r="4" fill="none" stroke="#956919" stroke-width="1" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.161438615;0.164413196;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="4;4;10;10" keyTimes="0;0.162520281;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<g data-capture="2026-11-18" data-piece="rook" data-lane="3" opacity="0">
+<g data-capture="2026-08-21" data-piece="rook" data-lane="3" opacity="0">
 <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.183342347;0.18766901;0.213088156;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M728.0 35.0L728.0 74.0" stroke="#956919" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="722.0" y="68.0" width="12" height="12" rx="2" fill="none" stroke="#956919" stroke-width="1"/>
-<g transform="translate(728.0 35.0)">
-<animateTransform attributeName="transform" type="translate" values="728.0 35.0;728.0 35.0;728.0 74.0;728.0 74.0" keyTimes="0;0.189291509;0.207138994;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<path d="M559.0 61.0L559.0 100.0" stroke="#956919" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
+<rect x="553.0" y="94.0" width="12" height="12" rx="2" fill="none" stroke="#956919" stroke-width="1"/>
+<g transform="translate(559.0 61.0)">
+<animateTransform attributeName="transform" type="translate" values="559.0 61.0;559.0 61.0;559.0 100.0;559.0 100.0" keyTimes="0;0.189291509;0.207138994;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 <ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
 <g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
 <use href="#chess-rook" xlink:href="#chess-rook"/>
 </g></g></g>
-<circle cx="728.0" cy="74.0" r="4" fill="none" stroke="#956919" stroke-width="1" opacity="0">
+<circle cx="559.0" cy="100.0" r="4" fill="none" stroke="#956919" stroke-width="1" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.206057328;0.209031909;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="r" values="4;4;10;10" keyTimes="0;0.207138994;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
