@@ -47,7 +47,7 @@ Bioluminescent jellyfish collect contribution energy.
 
 ### GitChess
 
-Ivory and ebony chess pieces capture golden contribution tokens on a classic wood-toned checkerboard. Token size encodes GitHub activity levels.
+One golden queen moves across a classic wood-toned checkerboard, capturing ebony pawns that represent active contribution days. Pawn size encodes GitHub activity levels. The queen cannot pass through standing pawns; the calendar resets after she returns to her starting square.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg">
@@ -128,7 +128,7 @@ GraphQL collector → calendar model → scenario simulation → compact SVG →
 - Declarative SVG motion, no JavaScript or external sprites.
 - Shared timeline compaction and batch generation from a single API request.
 
-The experimental `motion` renderer remains available locally, but is not published. GitChess models chess movement geometry, not a full game. GitOrigami is a geometric animation, not a physical folding solver.
+The experimental `motion` renderer remains available locally, but is not published. GitChess models queen movement and blocking, not a full chess game. GitOrigami is a geometric animation, not a physical folding solver.
 
 ## Development
 

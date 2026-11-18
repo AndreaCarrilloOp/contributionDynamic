@@ -1,76 +1,55 @@
-"""GitChess: strategic chess-inspired captures on the contribution calendar."""
+"""GitChess: one persistent golden queen captures contribution pawns."""
 
+from collections import deque
 from dataclasses import dataclass
 from math import hypot
 
-from contribution_dynamic.animation import track as _track
+from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, month_label_positions
 
 STEP = 13
 CELL = 10
 LEFT = 47
 TOP = 30
-LANES = 4
-FIRST_MOVE = .18
-CADENCE = 1.65
-ARRIVAL = .88
-RESTORE = 1.48
-PIECES = ("knight", "rook", "bishop", "queen", "pawn", "king")
-
+FIRST_MOVE = .12
+STAGING_ROW = 7
+PAWN_SCALES = (.48, .56, .64, .72)
+DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1),
+              (1, 1), (-1, 1), (-1, -1), (1, -1))
 PALETTES = {
     "dark": {
-        "bg": "#0f1115", "text": "#c9bba5",
-        "squares": ("#f0d9b5", "#b58863"),
-        "ivory": "#fff4e0", "dark_piece": "#2b2b2b",
-        "ivory_edge": "#554237", "ebony_edge": "#e9d5ad",
-        "gold": "#d4af37", "token": "#ffe49a", "token_edge": "#6c4b17",
+        "bg": "#0f1115", "text": "#c9bba5", "squares": ("#f0d9b5", "#b58863"),
+        "pawn": "#302b2a", "pawn_edge": "#fff0d6",
+        "queen": "#ffd66b", "queen_edge": "#64400d", "gold": "#d4af37",
     },
     "light": {
-        "bg": "#faf7f1", "text": "#5d4b3b",
-        "squares": ("#f0d9b5", "#b58863"),
-        "ivory": "#fff4e0", "dark_piece": "#2b2b2b",
-        "ivory_edge": "#554237", "ebony_edge": "#e9d5ad",
-        "gold": "#956919", "token": "#f9d579", "token_edge": "#6c4b17",
+        "bg": "#faf7f1", "text": "#5d4b3b", "squares": ("#f0d9b5", "#b58863"),
+        "pawn": "#302b2a", "pawn_edge": "#fff0d6",
+        "queen": "#ffd66b", "queen_edge": "#64400d", "gold": "#956919",
     },
 }
-
-TOKEN_RADII = (1.5, 2.2, 3.0, 3.9)
-
-# Original vector silhouettes. Shared bases and strokes keep pieces legible
-# at calendar-cell size without chess fonts or external image dependencies.
-SHAPES = {
-    "pawn": '<circle cx="0" cy="-4" r="2.5"/><path d="M-1.8 -1.5H1.8L3 4H-3Z"/>',
-    "rook": '<path d="M-5 -6H-3V-3.8H-1V-6H1V-3.8H3V-6H5V-1.5'
-            'L3 0L3.5 4H-3.5L-3 0L-5 -1.5Z"/>',
-    "knight": '<path d="M-4.5 4L-3.5 1L-1 -1L-4.4 -.6L-5 -3L-1.5 -6'
-              'L-1.2 -8L.5 -6.7C4.5 -6 5 -1 3.4 4Z"/>'
-              '<circle cx="-1.3" cy="-3.9" r=".65" fill="currentColor" stroke="none"/>',
-    "bishop": '<path d="M0 -7Q5 -3 2.5 -.5L1.5 .5L3.5 4H-3.5L-1.5 .5'
-              'Q-5 -2 0 -7Z"/><path d="M.3 -5.4L-1 -2.4" fill="none"/>',
-    "queen": '<path d="M-5 -4L-2.5 -1L0 -5L2.5 -1L5 -4L3.1 1L3.7 4'
-             'H-3.7L-3.1 1Z"/><circle cx="-5" cy="-5" r=".9"/>'
-             '<circle cx="0" cy="-6" r="1"/><circle cx="5" cy="-5" r=".9"/>',
-    "king": '<path d="M-4.5 -3Q-5 -5 -2 -5L0 -2L2 -5Q5 -5 4.5 -3'
-            'L2.5 1L3.5 4H-3.5L-2.5 1Z"/>'
-            '<path d="M0 -8V-2M-2 -6H2" fill="none" stroke-width="1.2"/>',
-}
-
 Square = tuple[int, int]
 
 
 @dataclass(frozen=True)
-class Capture:
-    day: Day
-    piece: str
+class Move:
     origin: Square
     destination: Square
-    lane: int
-    side: int
     start: float
+    arrive: float
+    day: Day | None = None
+
+
+@dataclass(frozen=True)
+class Match:
+    home: Square
+    moves: tuple[Move, ...]
+    restore: float
+    cycle: float
 
 
 def legal_move(piece: str, origin: Square, destination: Square, side: int = 1) -> bool:
-    """Validate chess geometry; calendar tokens are energy, not blocking pieces."""
+    """Validate chess geometry; blocking is handled by the queen route planner."""
     dx = destination[0] - origin[0]
     dy = destination[1] - origin[1]
     a, b = abs(dx), abs(dy)
@@ -91,118 +70,139 @@ def legal_move(piece: str, origin: Square, destination: Square, side: int = 1) -
     raise ValueError(f"Unknown chess piece: {piece}")
 
 
+
 def _level(day: Day) -> int:
-    if day.count == 0:
+    if not day.count:
         return 0
     return max(1, day.level) if day.level is not None else min(4, day.count.bit_length())
 
 
 def board_weeks(days: tuple[Day, ...]) -> int:
-    return max(53, max((day.week + 1 for day in days), default=0))
+    return max(53, max((d.week + 1 for d in days), default=0))
 
 
-def _edges(weeks: int) -> tuple[int, ...]:
-    return tuple(i * weeks // LANES for i in range(LANES + 1))
+def queen_rays(origin: Square, occupied: set[Square], weeks: int):
+    """Yield legal destinations, ending each ray at its first standing pawn."""
+    for dx, dy in DIRECTIONS:
+        x, y = origin
+        while True:
+            x, y = x + dx, y + dy
+            if not (0 <= x < weeks and 0 <= y <= STAGING_ROW):
+                break
+            pos = (x, y)
+            yield pos
+            if pos in occupied:
+                break
 
 
-def plan_captures(days: tuple[Day, ...]) -> tuple[Capture, ...]:
-    """Prioritize stronger tokens per zone and schedule one piece per zone."""
-    edges = _edges(board_weeks(days))
-    active = {(d.week, d.weekday) for d in days if d.count}
-    result = []
-    for lane in range(LANES):
-        left, right = edges[lane:lane + 2]
-        targets = sorted(
-            (d for d in days if d.count and left <= d.week < right),
-            key=lambda d: (-_level(d), -d.count, d.date),
-        )
-        for i, day in enumerate(targets):
-            target = (day.week, day.weekday)
-            piece = PIECES[(i + lane) % len(PIECES)]
-            side = 1 if (i + lane) % 2 == 0 else -1
-            if piece == "pawn" and target[1] - side not in range(7):
-                side = -side
-            candidates = [
-                (x, y) for x in range(left, right) for y in range(7)
-                if legal_move(piece, (x, y), target, side)
-            ]
-            # Prefer empty launch squares and short but visible moves (2-4 cells).
-            origin = min(candidates, key=lambda pos: (
-                pos in active,
-                abs(hypot(pos[0] - target[0], pos[1] - target[1]) - 3),
-                abs(pos[0] - target[0]),
-                pos,
+def _path_to_capture(origin: Square, pending: dict[Square, Day], weeks: int):
+    """Find a visible pawn, or the shortest legal sequence of empty queen moves."""
+    occupied = set(pending)
+    queue = deque([origin])
+    previous = {origin: None}
+    while queue:
+        current = queue.popleft()
+        visible = tuple(queen_rays(current, occupied, weeks))
+        targets = [pos for pos in visible if pos in occupied]
+        if targets:
+            target = min(targets, key=lambda pos: (
+                hypot(pos[0]-current[0], pos[1]-current[1]),
+                -_level(pending[pos]), pos,
             ))
-            result.append(Capture(day, piece, origin, target, lane, side,
-                                  FIRST_MOVE + i * CADENCE))
-    return tuple(result)
+            path = [target, current]
+            while previous[path[-1]] is not None:
+                path.append(previous[path[-1]])
+            return tuple(reversed(path))
+        for pos in visible:
+            if pos not in previous:
+                previous[pos] = current
+                queue.append(pos)
+    raise RuntimeError("No queen route to a remaining pawn")
+
+
+def plan_match(days: tuple[Day, ...]) -> Match | None:
+    """Capture every active day exactly once, then return and restore the board."""
+    pending = {(d.week, d.weekday): d for d in days if d.count}
+    if not pending:
+        return None
+    weeks = board_weeks(days)
+    home = (min(pending)[0], STAGING_ROW)
+    current = home
+    moves = []
+    time = FIRST_MOVE
+
+    def append_move(destination: Square, day: Day | None = None):
+        nonlocal current, time
+        distance = hypot(destination[0]-current[0], destination[1]-current[1])
+        duration = .16 + min(.70, distance * .045)
+        arrive = time + duration
+        moves.append(Move(current, destination, time, arrive, day))
+        current = destination
+        time = arrive + (.12 if day is not None else .035)
+
+    while pending:
+        path = _path_to_capture(current, pending, weeks)
+        for pos in path[1:]:
+            append_move(pos, pending.pop(pos, None))
+
+    # The board is now empty: return via the staging row using legal queen moves.
+    for pos in ((current[0], STAGING_ROW), home):
+        if current != pos:
+            append_move(pos)
+    restore = time + .08
+    return Match(home, tuple(moves), restore, max(4.0, restore + .35))
 
 
 def _point(square: Square) -> tuple[float, float]:
     return LEFT + square[0] * STEP + CELL / 2, TOP + square[1] * STEP + CELL / 2
 
 
+def _position(square: Square) -> str:
+    x, y = _point(square)
+    return f"{x} {y}"
+
+
 def _sprite_defs():
-    parts = ['<defs>']
-    for piece, shape in SHAPES.items():
-        parts.append(f'<g id="chess-{piece}">{shape}'
-                     '<path d="M-4 4H4L5 6H-5Z"/></g>')
-    parts.append('</defs>')
-    return parts
-
-
-def _capture(move: Capture, cycle: float, p: dict) -> list[str]:
-    x, y = _point(move.origin)
-    tx, ty = _point(move.destination)
-    s = move.start
-    hit = s + ARRIVAL
-    end = s + RESTORE
-    gold = p["gold"]
-    locations = [f"{x} {y}", f"{x} {y}"]
-    times = [s, s+.22]
-    if move.piece == "knight":
-        locations.append(f"{(x+tx)/2} {(y+ty)/2-7}")
-        times.append(s+.55)
-    locations.append(f"{tx} {ty}")
-    times.append(hit)
-    fill = p["ivory"] if move.side == 1 else p["dark_piece"]
-    stroke = p["ivory_edge"] if move.side == 1 else p["ebony_edge"]
-    parts = [
-        f'<g data-capture="{move.day.date.isoformat()}" data-piece="{move.piece}" '
-        f'data-lane="{move.lane}" opacity="0">',
-        _track("opacity", [0, 1, 1, 0], [s, s+.16, hit+.22, end], cycle),
-        f'<path d="M{x} {y}L{tx} {ty}" stroke="{gold}" fill="none" '
-        'stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>',
-        f'<rect x="{tx-6}" y="{ty-6}" width="12" height="12" rx="2" '
-        f'fill="none" stroke="{gold}" stroke-width="1"/>',
-        f'<g transform="translate({x} {y})">',
-        _track("transform", locations, times, cycle, transform=True),
-        '<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>',
-        f'<g fill="{fill}" stroke="{stroke}" color="{stroke}" '
-        'stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">',
-        f'<use href="#chess-{move.piece}" xlink:href="#chess-{move.piece}"/>',
-        '</g></g></g>',
-        f'<circle cx="{tx}" cy="{ty}" r="4" fill="none" stroke="{gold}" '
-        'stroke-width="1" opacity="0">',
-        _track("opacity", [0, 1, 0], [hit-.04, hit+.07, end], cycle),
-        _track("r", [4, 6+_level(move.day)], [hit, end], cycle),
-        '</circle>',
+    return [
+        '<defs>',
+        '<g id="chess-pawn"><circle cy="-4" r="2.6"/>',
+        '<path d="M-1.7 -1.5H1.7Q1.7 1 3.5 4H-3.5Q-1.7 1 -1.7 -1.5Z"/>',
+        '<path d="M-3.5 4H3.5L4.5 6H-4.5Z"/></g>',
+        '<g id="chess-queen">',
+        '<path d="M-5 -4L-2.5 -1L0 -5L2.5 -1L5 -4L3.1 1L3.7 4H-3.7L-3.1 1Z"/>',
+        '<circle cx="-5" cy="-5" r=".9"/><circle cy="-6" r="1"/>',
+        '<circle cx="5" cy="-5" r=".9"/><path d="M-4 4H4L5 6H-5Z"/>',
+        '</g></defs>',
     ]
-    return parts
+
+
+def _queen(match: Match, p: dict) -> list[str]:
+    positions, times = [_position(match.home)], [0.0]
+    for move in match.moves:
+        positions.extend((_position(move.origin), _position(move.destination)))
+        times.extend((move.start, move.arrive))
+    return [
+        f'<g data-piece="queen" transform="translate({_position(match.home)})">',
+        track("transform", positions, times, match.cycle, transform=True),
+        '<ellipse cy="5" rx="5.8" ry="1.6" fill="#000000" opacity=".25"/>',
+        f'<g fill="{p["queen"]}" stroke="{p["queen_edge"]}" stroke-width=".65" '
+        'stroke-linejoin="round" stroke-linecap="round">',
+        '<use href="#chess-queen" xlink:href="#chess-queen"/>',
+        '</g></g>',
+    ]
 
 
 def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
     width = LEFT + board_weeks(days) * STEP + 16
-    height = TOP + 7 * STEP + 17
-    captures = plan_captures(days)
-    cycle = max(4.0, max((m.start + CADENCE for m in captures), default=0) + .5)
-    by_day = {move.day: move for move in captures}
+    height = TOP + 8 * STEP + 19
+    match = plan_match(days)
+    by_day = {m.day: m for m in match.moves if m.day is not None} if match else {}
     parts = [
         '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
         f'width="{width}" height="{height}" viewBox="0 0 {width} {height}" '
-        'role="img" aria-label="GitChess strategic contribution calendar">',
-        '<title>GitChess — every contribution is a strategic move</title>',
+        'role="img" aria-label="GitChess queen captures contribution pawns">',
+        '<title>GitChess — one queen against the pawns</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
         *_sprite_defs(),
         f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
@@ -220,28 +220,40 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
                      f'fill="{color}" data-date="{day.date.isoformat()}" '
                      f'data-level="{level}">')
         parts.append(f'<title>{day.date.isoformat()}: {day.count} contributions</title>')
-        if day in by_day:
-            s = by_day[day].start
-            hit, end = s + ARRIVAL, s + RESTORE
-            parts.append(_track("fill", [color, p["gold"], color],
-                                [hit-.06, hit, hit+.22], cycle))
+        if match and day in by_day:
+            hit = by_day[day].arrive
+            parts.append(track("fill", [color, p["gold"], color],
+                               [hit-.035, hit, hit+.15], match.cycle))
         parts.append('</rect>')
-    parts.extend(['</g>', '<g id="contribution-tokens">'])
-    for day in sorted(by_day, key=lambda d: (d.week, d.weekday)):
-        level = _level(day)
-        x, y = _point((day.week, day.weekday))
-        move = by_day[day]
-        hit, end = move.start + ARRIVAL, move.start + RESTORE
-        radius = TOKEN_RADII[level - 1]
-        parts.append(f'<circle cx="{x}" cy="{y}" r="{radius}" fill="{p["token"]}" '
-                     f'stroke="{p["token_edge"]}" stroke-width=".65" '
-                     f'data-token="{day.date.isoformat()}" data-level="{level}" opacity="1">')
-        parts.append(_track("opacity", [1, 0, 0, 1],
-                            [hit-.06, hit+.10, end-.18, end], cycle))
-        parts.append('</circle>')
-    parts.extend(['</g>', '<g id="chess-moves">'])
-    for move in captures:
-        parts.extend(_capture(move, cycle, p))
+    parts.extend(['</g>', '<g id="contribution-pawns">'])
+    if match:
+        for day, move in by_day.items():
+            level = _level(day)
+            x, y = _point(move.destination)
+            scale = PAWN_SCALES[level-1]
+            parts.append(f'<g data-piece="pawn" data-pawn="{day.date.isoformat()}" '
+                         f'data-level="{level}" data-scale="{scale}" opacity="1" '
+                         f'transform="translate({x} {y}) scale({scale})">')
+            parts.append(track("opacity", [1, 0, 1],
+                               [0, move.arrive, match.restore], match.cycle, "discrete"))
+            parts.append(f'<g fill="{p["pawn"]}" stroke="{p["pawn_edge"]}" '
+                         'stroke-width=".8" stroke-linejoin="round">')
+            parts.append('<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>')
+    parts.extend(['</g>', '<g id="capture-effects">'])
+    if match:
+        for move in by_day.values():
+            x, y = _point(move.destination)
+            hit = move.arrive
+            parts.extend([
+                f'<circle data-capture="{move.day.date.isoformat()}" cx="{x}" cy="{y}" '
+                f'r="3" fill="none" stroke="{p["gold"]}" stroke-width="1" opacity="0">',
+                track("opacity", [0, 1, 0], [hit-.02, hit, hit+.18], match.cycle),
+                track("r", [3, 7], [hit, hit+.18], match.cycle),
+                '</circle>',
+            ])
+    parts.extend(['</g>', '<g id="queen">'])
+    if match:
+        parts.extend(_queen(match, p))
     parts.extend([
         '</g>',
         f'<text x="{LEFT}" y="{height-6}" fill="{p["gold"]}" font-size="8" '
