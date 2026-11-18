@@ -28,3 +28,4 @@
 - Restyle GitTanks with a golden pixel-inspired tank, high-contrast brick masonry, and matching dark/light themes.
 - Add eagle-base defense to GitTanks: one golden defender, multiple silver invaders, destructible contribution bricks, shield impacts and counterfire.
 - Combine in-grid BFS navigation, hero-led brick destruction and silver enemy waves in GitTanks; restore the calendar after a safe return to spawn.
+- Add moving silver enemy pursuers to GitTanks, with role-based BFS interception and reserved-cell collision prevention.

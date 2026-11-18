@@ -14,7 +14,9 @@ TOP = 39
 FIRST = .12
 BASE = TOP + 7 * STEP + 15
 MAX_ENEMIES = 3
-WAVE_BRICKS = 7
+WAVE_BRICKS = 5
+CHASE_ROUNDS = 10
+ROLES = ("hunter", "ambusher", "flanker")
 MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 PALETTES = {
@@ -61,6 +63,14 @@ class Attack:
 
 
 @dataclass(frozen=True)
+class EnemyRoute:
+    enemy: int
+    role: str
+    positions: tuple[Square, ...]
+    times: tuple[float, ...]
+
+
+@dataclass(frozen=True)
 class Battle:
     spawn: Square
     positions: tuple[Square, ...]
@@ -68,6 +78,7 @@ class Battle:
     angles: tuple[float, ...]
     attacks: tuple[Attack, ...]
     cycle: float
+    enemies: tuple[EnemyRoute, ...] = ()
 
 
 def _level(day: Day) -> int:
@@ -138,16 +149,46 @@ def _approach(start, blocked, targets, width, spawn):
     raise ValueError("No reachable target")
 
 
+def _distance(a: Square, b: Square) -> int:
+    return abs(a[0]-b[0]) + abs(a[1]-b[1])
+
+
 def _enemy_positions(current, blocked, width, spawn, count, cleared):
     parents = _paths(current, blocked, width, spawn)
     candidates = [pos for pos in parents if pos not in (current, spawn)]
-    # Favor nearby, already cleared squares. Never occupy unbroken bricks.
-    candidates.sort(key=lambda pos: (
-        abs(len(_path(parents, pos))-4),
-        pos not in cleared,
+    distances = {pos: len(_path(parents, pos))-1 for pos in candidates}
+    chosen = []
+    while candidates and len(chosen) < count:
+        # Prefer several approach directions and avoid distant, inactive waiting.
+        target = min(candidates, key=lambda pos: (
+            abs(distances[pos]-5)
+            - min(5, min((_distance(pos, other) for other in chosen), default=0))*.8,
+            pos not in cleared,
+            pos,
+        ))
+        chosen.append(target)
+        candidates.remove(target)
+    return tuple(chosen)
+
+
+def _chase_step(position, hero, heading, role, blocked, width, spawn):
+    """Find one legal BFS step toward a role-specific interception square."""
+    parents = _paths(position, blocked | {hero, spawn}, width, spawn)
+    goals = [pos for pos in _neighbors(hero, width, spawn) if pos in parents]
+    if not goals:
+        return position
+    dx, dy = heading
+    preferred = hero
+    if role == "ambusher":
+        preferred = hero[0]+dx, hero[1]+dy
+    elif role == "flanker":
+        preferred = hero[0]-dy, hero[1]+dx
+    destination = min(goals, key=lambda pos: (
+        len(_path(parents, pos)) + _distance(pos, preferred)*.85,
         pos,
     ))
-    return set(candidates[:count])
+    route = _path(parents, destination)
+    return route[1] if len(route) > 1 else position
 
 
 def plan_battle(days: tuple[Day, ...]) -> Battle | None:
@@ -171,8 +212,10 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
     times = [0.0, FIRST]
     angles = [90.0, 90.0]
     attacks = []
+    enemy_routes = []
     clock = FIRST
     enemy_id = 0
+    heading = (1, 0)
 
     def pose(pos, t, angle):
         nonlocal clock
@@ -189,7 +232,10 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
         pose(pos, clock+.07, angle)
 
     def walk(route):
+        nonlocal heading
         for pos in route[1:]:
+            prior = positions[-1]
+            heading = pos[0]-prior[0], pos[1]-prior[1]
             turn(pos)
             pose(pos, clock+.11, angles[-1])
 
@@ -216,20 +262,87 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
             engage(target, day=bricks[target])
             blocked.remove(target)
             cleared.add(target)
-        enemies = _enemy_positions(
+        spawns = _enemy_positions(
             positions[-1], blocked, width, spawn, min(MAX_ENEMIES, count), cleared,
         )
-        if enemies:
-            born = clock
-            pose(positions[-1], clock+.16, angles[-1])
-            while enemies:
+        if not spawns:
+            continue
+        born = clock
+        living = {enemy_id+i: pos for i, pos in enumerate(spawns)}
+        roles = {key: ROLES[i] for i, key in enumerate(living)}
+        enemy_id += len(living)
+        trails = {key: ([pos], [born]) for key, pos in living.items()}
+        pose(positions[-1], clock+.16, angles[-1])
+
+        def defeat(key):
+            target = living[key]
+            engage(target, enemy=key, born=born)
+            path, ticks = trails[key]
+            enemy_routes.append(EnemyRoute(key, roles[key], tuple(path), tuple(ticks)))
+            del living[key]
+
+        for round_index in range(CHASE_ROUNDS):
+            if not living:
+                break
+            hero = positions[-1]
+            # Fire immediately when a pursuer reaches an adjacent square.
+            close = [key for key, pos in living.items() if _distance(hero, pos) == 1]
+            if close:
+                defeat(min(close))
+                continue
+            obstacles = blocked | set(living.values())
+            # Keep clearing the maze while enemies approach. If the corridor
+            # is cut off, advance toward an enemy instead of crossing a wall.
+            goals = blocked if blocked and round_index < 5 else set(living.values())
+            try:
+                route, target = _approach(hero, obstacles, goals, width, spawn)
+            except ValueError:
                 route, target = _approach(
-                    positions[-1], blocked | enemies, enemies, width, spawn,
+                    hero, obstacles, set(living.values()), width, spawn,
                 )
-                walk(route)
-                engage(target, enemy=enemy_id, born=born)
-                enemy_id += 1
-                enemies.remove(target)
+            if len(route) > 1:
+                walk(route[:2])
+            elif target in blocked:
+                engage(target, day=bricks[target])
+                blocked.remove(target)
+                cleared.add(target)
+            else:
+                defeat(next(key for key, pos in living.items() if pos == target))
+                continue
+
+            # Enemies pursue in the same tick. Reserve every old square plus
+            # each chosen destination to prohibit overlap and head-on swaps.
+            occupied = set(living.values())
+            reserved = set()
+            next_positions = {}
+            for key, pos in living.items():
+                destination = _chase_step(
+                    pos, positions[-1], heading, roles[key],
+                    blocked | (occupied - {pos}) | reserved, width, spawn,
+                )
+                next_positions[key] = destination
+                reserved.add(destination)
+            begin, finish = clock, clock+.18
+            for key, destination in next_positions.items():
+                pos = living[key]
+                if destination != pos:
+                    path, ticks = trails[key]
+                    if begin > ticks[-1]:
+                        path.append(pos)
+                        ticks.append(begin)
+                    path.append(destination)
+                    ticks.append(finish)
+            living.update(next_positions)
+            pose(positions[-1], finish, angles[-1])
+
+        # A bounded pursuit phase guarantees progress even on narrow mazes.
+        while living:
+            route, target = _approach(
+                positions[-1], blocked | set(living.values()),
+                set(living.values()), width, spawn,
+            )
+            walk(route)
+            defeat(next(key for key, pos in living.items() if pos == target))
         pose(positions[-1], clock+.10, angles[-1])
 
     # With all bricks destroyed the hero can return through open lanes.
@@ -240,7 +353,8 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
     pose(spawn, clock+.15, home_angle)
     # Reset only when the hero is safely back at its starting square.
     return Battle(spawn, tuple(positions), tuple(times), tuple(angles),
-                  tuple(attacks), max(4.0, clock+.6))
+                  tuple(attacks), max(4.0, clock+.6),
+                  tuple(sorted(enemy_routes, key=lambda enemy: enemy.enemy)))
 
 
 def _months(days):
@@ -321,17 +435,25 @@ def _hero(battle, p):
     ]
 
 
-def _enemy(attack, cycle, p):
-    pos = _center(*attack.target)
-    aim = _angle(pos, _center(*attack.source))
+def _enemy(attack, route, cycle, p):
+    positions = [_position(_center(*pos)) for pos in route.positions]
+    aim = _angle(_center(*attack.target), _center(*attack.source))
+    angles, angle_times = [90], [attack.spawn]
+    for a, b, t in zip(route.positions, route.positions[1:], route.times[1:]):
+        if a != b:
+            angles.append(_angle(_center(*a), _center(*b)))
+            angle_times.append(t)
+    angles.append(aim)
+    angle_times.append(attack.counter-.03)
     return [
-        f'<g data-tank="enemy" data-enemy="{attack.enemy}" opacity="0" '
-        f'transform="translate({_position(pos)})">',
+        f'<g data-tank="enemy" data-enemy="{attack.enemy}" data-role="{route.role}" '
+        f'opacity="0" transform="translate({positions[0]})">',
         track("opacity", [0, 1, 1, 0],
               [attack.spawn, attack.spawn+.12, attack.hit-.015, attack.hit], cycle),
+        track("transform", positions, route.times, cycle, transform=True),
         '<g transform="rotate(90)">',
-        track("transform", [90, aim, aim], [attack.spawn, attack.counter-.03, attack.hit],
-              cycle, transform=True).replace('type="translate"', 'type="rotate"'),
+        track("transform", angles, angle_times, cycle, "discrete",
+              transform=True).replace('type="translate"', 'type="rotate"'),
         *_tank_sprite(p, "enemy"),
         '</g></g>',
     ]
@@ -382,7 +504,7 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" '
         'aria-label="GitTanks golden tank navigates the contribution maze">',
-        '<title>GitTanks — maze battle</title>',
+        '<title>GitTanks — one versus many</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
         f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
     ]
@@ -426,9 +548,10 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
         parts.append('</g>')
     parts.extend(['</g>', '<g id="combat">'])
     if battle:
+        routes = {route.enemy: route for route in battle.enemies}
         for attack in battle.attacks:
             if attack.enemy is not None:
-                parts.extend(_enemy(attack, cycle, p))
+                parts.extend(_enemy(attack, routes[attack.enemy], cycle, p))
             parts.extend(_combat(attack, cycle, p))
     parts.extend(['</g>', '<g id="base">', *_eagle(center, p), '</g>', '<g id="hero">'])
     if battle:
@@ -436,7 +559,7 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
     parts.extend([
         '</g>',
         f'<text x="{LEFT}" y="{height-6}" fill="{p["text"]}" font-size="8" '
-        'letter-spacing="1.2" font-family="system-ui,sans-serif">GITTANKS · MAZE BATTLE</text>',
+        'letter-spacing="1.2" font-family="system-ui,sans-serif">GITTANKS · ONE VS MANY</text>',
         '</svg>',
     ])
     return "\n".join(parts) + "\n"

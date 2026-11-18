@@ -37,10 +37,11 @@ def test_dense_and_demo_routes_never_enter_standing_bricks_or_enemies():
             assert abs(pos[0]-dest[0])+abs(pos[1]-dest[1]) <= 1
             if dest in bricks:
                 assert any(a.day and a.target == dest and a.hit < t for a in battle.attacks)
-            assert not any(
-                a.enemy is not None and a.target == dest and a.spawn <= t < a.hit
-                for a in battle.attacks
-            )
+            for enemy in battle.enemies:
+                a = next(a for a in battle.attacks if a.enemy == enemy.enemy)
+                if a.spawn <= t < a.hit:
+                    occupied = max(i for i, tick in enumerate(enemy.times) if tick <= t)
+                    assert dest != enemy.positions[occupied]
         for a in battle.attacks:
             assert abs(a.source[0]-a.target[0])+abs(a.source[1]-a.target[1]) == 1
             assert a.fire < a.hit < a.enter
@@ -108,3 +109,40 @@ def test_no_fabricated_battle_on_empty_calendar():
         root = ElementTree.fromstring(render_tanks(days))
         assert not root.findall(".//s:g[@data-tank]", NS)
         assert not root.findall(".//s:animate", NS)
+
+
+def test_enemies_have_distinct_roles_and_pursue_on_free_squares():
+    days = demo_calendar()
+    battle = plan_battle(days)
+    assert battle is not None
+    attacks = {a.enemy: a for a in battle.attacks if a.enemy is not None}
+    cleared = {a.target: a.hit for a in battle.attacks if a.day is not None}
+    assert {route.role for route in battle.enemies} == {"hunter", "ambusher", "flanker"}
+    assert any(len(set(route.positions)) > 1 for route in battle.enemies)
+    for route in battle.enemies:
+        attack = attacks[route.enemy]
+        assert route.positions[-1] == attack.target
+        assert route.times[0] == attack.spawn
+        assert route.times[-1] < attack.hit
+        assert all(a < b for a, b in zip(route.times, route.times[1:]))
+        for pos, time in zip(route.positions, route.times, strict=True):
+            assert pos not in cleared or cleared[pos] < time
+        for a, b in zip(route.positions, route.positions[1:]):
+            assert abs(a[0]-b[0])+abs(a[1]-b[1]) <= 1
+
+
+def test_enemies_do_not_share_squares_at_movement_boundaries():
+    battle = plan_battle(demo_calendar())
+    assert battle is not None
+    attacks = {a.enemy: a for a in battle.attacks if a.enemy is not None}
+    ticks = sorted({
+        t for route in battle.enemies for t in route.times
+    })
+    for tick in ticks:
+        positions = []
+        for route in battle.enemies:
+            attack = attacks[route.enemy]
+            if attack.spawn <= tick < attack.hit:
+                i = max(i for i, t in enumerate(route.times) if t <= tick)
+                positions.append(route.positions[i])
+        assert len(positions) == len(set(positions))

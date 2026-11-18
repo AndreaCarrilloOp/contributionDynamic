@@ -69,7 +69,7 @@ Arcade robots plant bombs that break contribution bricks in cross-shaped explosi
 
 ### GitTanks
 
-A golden retro tank navigates the contribution maze, breaks bricks before entering their cells, and fights waves of silver enemies. The eagle remains a visual base; the original calendar is restored when the tank returns to its starting square.
+A golden retro tank navigates the contribution maze, breaks bricks before entering their cells, and faces up to three silver pursuers at a time. Hunters, ambushers and flankers navigate open cells with BFS The eagle remains a visual base; the original calendar is restored when the tank returns to its starting square.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">
