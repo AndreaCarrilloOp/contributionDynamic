@@ -1,16 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="752" height="138" viewBox="0 0 752 138" role="img" aria-label="GitChess strategic contribution calendar">
-<title>GitChess — every contribution is a strategic move</title>
-<rect width="752" height="138" rx="6" fill="#0f1115"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="752" height="153" viewBox="0 0 752 153" role="img" aria-label="GitChess queen captures contribution pawns">
+<title>GitChess — one queen against the pawns</title>
+<rect width="752" height="153" rx="6" fill="#0f1115"/>
 <defs>
-<g id="chess-pawn"><circle cx="0" cy="-4" r="2.5"/><path d="M-1.8 -1.5H1.8L3 4H-3Z"/><path d="M-4 4H4L5 6H-5Z"/></g>
-<g id="chess-rook"><path d="M-5 -6H-3V-3.8H-1V-6H1V-3.8H3V-6H5V-1.5L3 0L3.5 4H-3.5L-3 0L-5 -1.5Z"/><path d="M-4 4H4L5 6H-5Z"/></g>
-<g id="chess-knight"><path d="M-4.5 4L-3.5 1L-1 -1L-4.4 -.6L-5 -3L-1.5 -6L-1.2 -8L.5 -6.7C4.5 -6 5 -1 3.4 4Z"/><circle cx="-1.3" cy="-3.9" r=".65" fill="currentColor" stroke="none"/><path d="M-4 4H4L5 6H-5Z"/></g>
-<g id="chess-bishop"><path d="M0 -7Q5 -3 2.5 -.5L1.5 .5L3.5 4H-3.5L-1.5 .5Q-5 -2 0 -7Z"/><path d="M.3 -5.4L-1 -2.4" fill="none"/><path d="M-4 4H4L5 6H-5Z"/></g>
-<g id="chess-queen"><path d="M-5 -4L-2.5 -1L0 -5L2.5 -1L5 -4L3.1 1L3.7 4H-3.7L-3.1 1Z"/><circle cx="-5" cy="-5" r=".9"/><circle cx="0" cy="-6" r="1"/><circle cx="5" cy="-5" r=".9"/><path d="M-4 4H4L5 6H-5Z"/></g>
-<g id="chess-king"><path d="M-4.5 -3Q-5 -5 -2 -5L0 -2L2 -5Q5 -5 4.5 -3L2.5 1L3.5 4H-3.5L-2.5 1Z"/><path d="M0 -8V-2M-2 -6H2" fill="none" stroke-width="1.2"/><path d="M-4 4H4L5 6H-5Z"/></g>
-</defs>
+<g id="chess-pawn"><circle cy="-4" r="2.6"/>
+<path d="M-1.7 -1.5H1.7Q1.7 1 3.5 4H-3.5Q-1.7 1 -1.7 -1.5Z"/>
+<path d="M-3.5 4H3.5L4.5 6H-4.5Z"/></g>
+<g id="chess-queen">
+<path d="M-5 -4L-2.5 -1L0 -5L2.5 -1L5 -4L3.1 1L3.7 4H-3.7L-3.1 1Z"/>
+<circle cx="-5" cy="-5" r=".9"/><circle cy="-6" r="1"/>
+<circle cx="5" cy="-5" r=".9"/><path d="M-4 4H4L5 6H-5Z"/>
+</g></defs>
 <g font-family="system-ui,sans-serif" font-size="10" fill="#c9bba5">
 <text x="47" y="14">Nov</text>
+<text x="73" y="14">Dec</text>
 <text x="125" y="14">Jan</text>
 <text x="190" y="14">Feb</text>
 <text x="242" y="14">Mar</text>
@@ -671,7 +673,7 @@
 </rect>
 <rect x="437" y="82" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-06-18" data-level="4">
 <title>2026-06-18: 17 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.11627907;0.117901568;0.12385073;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.028810591;0.031464198;0.042836799;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="437" y="95" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-06-19" data-level="0">
 <title>2026-06-19: 0 contributions</title>
@@ -714,7 +716,7 @@
 </rect>
 <rect x="463" y="82" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-07-02" data-level="2">
 <title>2026-07-02: 7 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.205516495;0.207138994;0.213088156;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.056863008;0.059516615;0.070889217;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="463" y="95" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-07-03" data-level="0">
 <title>2026-07-03: 0 contributions</title>
@@ -730,7 +732,7 @@
 </rect>
 <rect x="476" y="56" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-07-07" data-level="1">
 <title>2026-07-07: 1 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.294753921;0.29637642;0.302325581;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.112382474;0.115036081;0.126408683;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="476" y="69" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-07-08" data-level="0">
 <title>2026-07-08: 0 contributions</title>
@@ -752,7 +754,7 @@
 </rect>
 <rect x="489" y="56" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-07-14" data-level="4">
 <title>2026-07-14: 18 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.071660357;0.073282856;0.079232017;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.087741837;0.090395444;0.101768046;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="489" y="69" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-07-15" data-level="0">
 <title>2026-07-15: 0 contributions</title>
@@ -819,22 +821,22 @@
 </rect>
 <rect x="528" y="69" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-08-05" data-level="2">
 <title>2026-08-05: 8 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.160897783;0.162520281;0.168469443;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.236483158;0.239136765;0.250509367;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="528" y="82" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-08-06" data-level="1">
 <title>2026-08-06: 1 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.339372634;0.340995133;0.346944294;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.261123795;0.263777402;0.275150004;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="528" y="95" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-08-07" data-level="0">
 <title>2026-08-07: 0 contributions</title>
 </rect>
 <rect x="528" y="108" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-08-08" data-level="1">
 <title>2026-08-08: 4 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.250135208;0.251757707;0.257706869;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.152911275;0.155564882;0.166937484;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="541" y="30" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-08-09" data-level="4">
 <title>2026-08-09: 23 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.027041644;0.028664143;0.034613304;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.874901382;0.877554989;0.888927591;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="541" y="43" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-08-10" data-level="0">
 <title>2026-08-10: 0 contributions</title>
@@ -869,13 +871,13 @@
 <rect x="554" y="82" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-08-20" data-level="0">
 <title>2026-08-20: 0 contributions</title>
 </rect>
-<rect x="554" y="95" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-08-21" data-level="4">
+<rect x="554" y="95" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-08-21" data-level="3">
 <title>2026-08-21: 15 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.205516495;0.207138994;0.213088156;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.205604329;0.208257936;0.219630538;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="554" y="108" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-08-22" data-level="3">
+<rect x="554" y="108" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-08-22" data-level="2">
 <title>2026-08-22: 10 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.339372634;0.340995133;0.346944294;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.180963693;0.1836173;0.194989901;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="567" y="30" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-08-23" data-level="0">
 <title>2026-08-23: 0 contributions</title>
@@ -906,11 +908,11 @@
 </rect>
 <rect x="580" y="56" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-09-01" data-level="1">
 <title>2026-09-01: 4 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.740941049;0.742563548;0.74851271;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.401385882;0.404039489;0.415412091;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="580" y="69" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-09-02" data-level="2">
 <title>2026-09-02: 7 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.473228772;0.474851271;0.480800433;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.376745245;0.379398852;0.390771454;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="580" y="82" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-09-03" data-level="0">
 <title>2026-09-03: 0 contributions</title>
@@ -923,18 +925,18 @@
 </rect>
 <rect x="593" y="30" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-09-06" data-level="1">
 <title>2026-09-06: 3 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.830178475;0.831800973;0.837750135;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.452080361;0.454733968;0.46610657;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="43" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-09-07" data-level="4">
 <title>2026-09-07: 22 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.071660357;0.073282856;0.079232017;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.427439725;0.430093332;0.441465933;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="56" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-09-08" data-level="0">
 <title>2026-09-08: 0 contributions</title>
 </rect>
 <rect x="593" y="69" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-09-09" data-level="2">
 <title>2026-09-09: 6 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.607084911;0.608707409;0.614656571;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.352104608;0.354758215;0.366130817;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="82" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-09-10" data-level="0">
 <title>2026-09-10: 0 contributions</title>
@@ -956,11 +958,11 @@
 </rect>
 <rect x="606" y="69" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-09-16" data-level="2">
 <title>2026-09-16: 7 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.517847485;0.519469984;0.525419145;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.327463971;0.330117578;0.34149018;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="606" y="82" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-09-17" data-level="1">
 <title>2026-09-17: 2 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.874797188;0.876419686;0.882368848;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.302823334;0.305476942;0.316849543;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="606" y="95" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-09-18" data-level="0">
 <title>2026-09-18: 0 contributions</title>
@@ -991,7 +993,7 @@
 </rect>
 <rect x="632" y="30" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-09-27" data-level="1">
 <title>2026-09-27: 2 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.9194159;0.921038399;0.926987561;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.483544559;0.486198166;0.497570768;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="632" y="43" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-09-28" data-level="0">
 <title>2026-09-28: 0 contributions</title>
@@ -1028,7 +1030,7 @@
 </rect>
 <rect x="645" y="95" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-10-09" data-level="1">
 <title>2026-10-09: 4 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.785559762;0.787182261;0.793131422;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.804527871;0.807181478;0.81855408;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="645" y="108" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-10-10" data-level="0">
 <title>2026-10-10: 0 contributions</title>
@@ -1054,9 +1056,9 @@
 <rect x="658" y="108" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-10-17" data-level="0">
 <title>2026-10-17: 0 contributions</title>
 </rect>
-<rect x="671" y="30" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-10-18" data-level="2">
+<rect x="671" y="30" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-10-18" data-level="1">
 <title>2026-10-18: 5 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.651703624;0.653326122;0.659275284;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.515008757;0.517662364;0.529034966;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="671" y="43" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-10-19" data-level="0">
 <title>2026-10-19: 0 contributions</title>
@@ -1081,7 +1083,7 @@
 </rect>
 <rect x="684" y="43" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-10-26" data-level="2">
 <title>2026-10-26: 7 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.562466198;0.564088697;0.570037858;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.5410626;0.543716207;0.555088808;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="684" y="56" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-10-27" data-level="0">
 <title>2026-10-27: 0 contributions</title>
@@ -1094,11 +1096,11 @@
 </rect>
 <rect x="684" y="95" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-10-30" data-level="1">
 <title>2026-10-30: 2 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.964034613;0.965657112;0.971606274;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.773063673;0.77571728;0.787089882;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="684" y="108" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-10-31" data-level="3">
 <title>2026-10-31: 11 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.250135208;0.251757707;0.257706869;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.748423036;0.751076643;0.762449245;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="30" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-11-01" data-level="0">
 <title>2026-11-01: 0 contributions</title>
@@ -1109,21 +1111,21 @@
 <rect x="697" y="56" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-11-03" data-level="0">
 <title>2026-11-03: 0 contributions</title>
 </rect>
-<rect x="697" y="69" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-11-04" data-level="2">
+<rect x="697" y="69" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-11-04" data-level="1">
 <title>2026-11-04: 5 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.696322336;0.697944835;0.703893997;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.649860489;0.652514096;0.663886697;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="82" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-11-05" data-level="3">
 <title>2026-11-05: 11 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.294753921;0.29637642;0.302325581;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.674501126;0.677154733;0.688527334;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="95" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-11-06" data-level="2">
 <title>2026-11-06: 8 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.428610059;0.430232558;0.43618172;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.699141762;0.701795369;0.713167971;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="108" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-11-07" data-level="4">
 <title>2026-11-07: 17 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.160897783;0.162520281;0.168469443;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.723782399;0.726436006;0.737808608;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="710" y="30" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-11-08" data-level="0">
 <title>2026-11-08: 0 contributions</title>
@@ -1149,532 +1151,270 @@
 <rect x="723" y="30" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-11-15" data-level="0">
 <title>2026-11-15: 0 contributions</title>
 </rect>
-<rect x="723" y="43" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-11-16" data-level="3">
+<rect x="723" y="43" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-11-16" data-level="2">
 <title>2026-11-16: 10 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.383991347;0.385613845;0.391563007;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.572526798;0.575180405;0.586553006;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="56" width="10" height="10" rx=".5" fill="#f0d9b5" data-date="2026-11-17" data-level="4">
 <title>2026-11-17: 70 contributions</title>
-<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.027041644;0.028664143;0.034613304;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f0d9b5;#f0d9b5;#d4af37;#f0d9b5;#f0d9b5" keyTimes="0;0.597167434;0.599821042;0.611193643;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="69" width="10" height="10" rx=".5" fill="#b58863" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 18 contributions</title>
-<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.11627907;0.117901568;0.12385073;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<title>2026-11-18: 21 contributions</title>
+<animate attributeName="fill" values="#b58863;#b58863;#d4af37;#b58863;#b58863" keyTimes="0;0.621808071;0.624461678;0.63583428;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
 </g>
-<g id="contribution-tokens">
-<circle cx="442.0" cy="87.0" r="3.9" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-06-18" data-level="4" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.11627907;0.120605733;0.129259059;0.134126555;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<g id="contribution-pawns">
+<g data-piece="pawn" data-pawn="2026-06-18" data-level="4" data-scale="0.72" opacity="1" transform="translate(442.0 87.0) scale(0.72)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.031464198;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-07-02" data-level="2" data-scale="0.56" opacity="1" transform="translate(468.0 87.0) scale(0.56)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.059516615;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-07-14" data-level="4" data-scale="0.72" opacity="1" transform="translate(494.0 61.0) scale(0.72)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.090395444;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-07-07" data-level="1" data-scale="0.48" opacity="1" transform="translate(481.0 61.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.115036081;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-08-08" data-level="1" data-scale="0.48" opacity="1" transform="translate(533.0 113.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.155564882;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-08-22" data-level="2" data-scale="0.56" opacity="1" transform="translate(559.0 113.0) scale(0.56)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.1836173;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-08-21" data-level="3" data-scale="0.64" opacity="1" transform="translate(559.0 100.0) scale(0.64)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.208257936;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-08-05" data-level="2" data-scale="0.56" opacity="1" transform="translate(533.0 74.0) scale(0.56)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.239136765;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-08-06" data-level="1" data-scale="0.48" opacity="1" transform="translate(533.0 87.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.263777402;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-09-17" data-level="1" data-scale="0.48" opacity="1" transform="translate(611.0 87.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.305476942;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-09-16" data-level="2" data-scale="0.56" opacity="1" transform="translate(611.0 74.0) scale(0.56)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.330117578;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-09-09" data-level="2" data-scale="0.56" opacity="1" transform="translate(598.0 74.0) scale(0.56)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.354758215;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-09-02" data-level="2" data-scale="0.56" opacity="1" transform="translate(585.0 74.0) scale(0.56)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.379398852;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-09-01" data-level="1" data-scale="0.48" opacity="1" transform="translate(585.0 61.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.404039489;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-09-07" data-level="4" data-scale="0.72" opacity="1" transform="translate(598.0 48.0) scale(0.72)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.430093332;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-09-06" data-level="1" data-scale="0.48" opacity="1" transform="translate(598.0 35.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.454733968;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-09-27" data-level="1" data-scale="0.48" opacity="1" transform="translate(637.0 35.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.486198166;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-10-18" data-level="1" data-scale="0.48" opacity="1" transform="translate(676.0 35.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.517662364;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-10-26" data-level="2" data-scale="0.56" opacity="1" transform="translate(689.0 48.0) scale(0.56)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.543716207;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-11-16" data-level="2" data-scale="0.56" opacity="1" transform="translate(728.0 48.0) scale(0.56)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.575180405;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-11-17" data-level="4" data-scale="0.72" opacity="1" transform="translate(728.0 61.0) scale(0.72)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.599821042;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-11-18" data-level="4" data-scale="0.72" opacity="1" transform="translate(728.0 74.0) scale(0.72)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.624461678;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-11-04" data-level="1" data-scale="0.48" opacity="1" transform="translate(702.0 74.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.652514096;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-11-05" data-level="3" data-scale="0.64" opacity="1" transform="translate(702.0 87.0) scale(0.64)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.677154733;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-11-06" data-level="2" data-scale="0.56" opacity="1" transform="translate(702.0 100.0) scale(0.56)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.701795369;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-11-07" data-level="4" data-scale="0.72" opacity="1" transform="translate(702.0 113.0) scale(0.72)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.726436006;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-10-31" data-level="3" data-scale="0.64" opacity="1" transform="translate(689.0 113.0) scale(0.64)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.751076643;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-10-30" data-level="1" data-scale="0.48" opacity="1" transform="translate(689.0 100.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.77571728;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-10-09" data-level="1" data-scale="0.48" opacity="1" transform="translate(650.0 100.0) scale(0.48)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.807181478;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<g data-piece="pawn" data-pawn="2026-08-09" data-level="4" data-scale="0.72" opacity="1" transform="translate(546.0 35.0) scale(0.72)">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.877554989;0.97346393;1" dur="13.189594s" calcMode="discrete" repeatCount="indefinite"/>
+<g fill="#302b2a" stroke="#fff0d6" stroke-width=".8" stroke-linejoin="round">
+<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+</g>
+<g id="capture-effects">
+<circle data-capture="2026-06-18" cx="442.0" cy="87.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.029947851;0.031464198;0.04511132;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.031464198;0.04511132;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="468.0" cy="87.0" r="2.2" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-07-02" data-level="2" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.205516495;0.209843158;0.218496485;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-07-02" cx="468.0" cy="87.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.058000268;0.059516615;0.073163737;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.059516615;0.073163737;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="481.0" cy="61.0" r="1.5" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-07-07" data-level="1" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.294753921;0.299080584;0.30773391;0.312601406;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-07-14" cx="494.0" cy="61.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.088879097;0.090395444;0.104042566;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.090395444;0.104042566;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="494.0" cy="61.0" r="3.9" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-07-14" data-level="4" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.071660357;0.07598702;0.084640346;0.089507842;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-07-07" cx="481.0" cy="61.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.113519734;0.115036081;0.128683203;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.115036081;0.128683203;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="533.0" cy="74.0" r="2.2" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-08-05" data-level="2" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.160897783;0.165224446;0.173877772;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-08-08" cx="533.0" cy="113.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.154048535;0.155564882;0.169212004;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.155564882;0.169212004;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="533.0" cy="87.0" r="1.5" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-08-06" data-level="1" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.339372634;0.343699297;0.352352623;0.357220119;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-08-22" cx="559.0" cy="113.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.182100953;0.1836173;0.197264422;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.1836173;0.197264422;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="533.0" cy="113.0" r="1.5" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-08-08" data-level="1" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.250135208;0.254461871;0.263115197;0.267982693;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-08-21" cx="559.0" cy="100.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.20674159;0.208257936;0.221905058;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.208257936;0.221905058;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="546.0" cy="35.0" r="3.9" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-08-09" data-level="4" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.027041644;0.031368307;0.040021633;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-08-05" cx="533.0" cy="74.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.237620418;0.239136765;0.252783887;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.239136765;0.252783887;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="559.0" cy="100.0" r="3.9" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-08-21" data-level="4" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.205516495;0.209843158;0.218496485;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-08-06" cx="533.0" cy="87.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.262261055;0.263777402;0.277424524;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.263777402;0.277424524;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="559.0" cy="113.0" r="3.0" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-08-22" data-level="3" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.339372634;0.343699297;0.352352623;0.357220119;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-09-17" cx="611.0" cy="87.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.303960595;0.305476942;0.319124063;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.305476942;0.319124063;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="585.0" cy="61.0" r="1.5" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-09-01" data-level="1" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.740941049;0.745267712;0.753921038;0.758788534;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-09-16" cx="611.0" cy="74.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.328601232;0.330117578;0.3437647;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.330117578;0.3437647;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="585.0" cy="74.0" r="2.2" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-09-02" data-level="2" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.473228772;0.477555435;0.486208761;0.491076257;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-09-09" cx="598.0" cy="74.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.353241868;0.354758215;0.368405337;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.354758215;0.368405337;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="598.0" cy="35.0" r="1.5" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-09-06" data-level="1" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.830178475;0.834505138;0.843158464;0.84802596;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-09-02" cx="585.0" cy="74.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.377882505;0.379398852;0.393045974;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.379398852;0.393045974;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="598.0" cy="48.0" r="3.9" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-09-07" data-level="4" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.071660357;0.07598702;0.084640346;0.089507842;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-09-01" cx="585.0" cy="61.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.402523142;0.404039489;0.417686611;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.404039489;0.417686611;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="598.0" cy="74.0" r="2.2" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-09-09" data-level="2" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.607084911;0.611411574;0.6200649;0.624932396;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-09-07" cx="598.0" cy="48.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.428576985;0.430093332;0.443740454;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.430093332;0.443740454;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="611.0" cy="74.0" r="2.2" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-09-16" data-level="2" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.517847485;0.522174148;0.530827474;0.53569497;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-09-06" cx="598.0" cy="35.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.453217622;0.454733968;0.46838109;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.454733968;0.46838109;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="611.0" cy="87.0" r="1.5" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-09-17" data-level="1" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.874797188;0.879123851;0.887777177;0.892644673;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-09-27" cx="637.0" cy="35.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.484681819;0.486198166;0.499845288;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.486198166;0.499845288;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="637.0" cy="35.0" r="1.5" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-09-27" data-level="1" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.9194159;0.923742564;0.93239589;0.937263386;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-10-18" cx="676.0" cy="35.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.516146017;0.517662364;0.531309486;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.517662364;0.531309486;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="650.0" cy="100.0" r="1.5" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-10-09" data-level="1" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.785559762;0.789886425;0.798539751;0.803407247;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-10-26" cx="689.0" cy="48.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.54219986;0.543716207;0.557363329;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.543716207;0.557363329;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="676.0" cy="35.0" r="2.2" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-10-18" data-level="2" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.651703624;0.656030287;0.664683613;0.669551109;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-11-16" cx="728.0" cy="48.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.573664058;0.575180405;0.588827527;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.575180405;0.588827527;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="689.0" cy="48.0" r="2.2" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-10-26" data-level="2" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.562466198;0.566792861;0.575446187;0.580313683;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-11-17" cx="728.0" cy="61.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.598304695;0.599821042;0.613468163;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.599821042;0.613468163;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="689.0" cy="100.0" r="1.5" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-10-30" data-level="1" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.964034613;0.968361276;0.977014602;0.981882098;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-11-18" cx="728.0" cy="74.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.622945332;0.624461678;0.6381088;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.624461678;0.6381088;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="689.0" cy="113.0" r="3.0" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-10-31" data-level="3" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.250135208;0.254461871;0.263115197;0.267982693;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-11-04" cx="702.0" cy="74.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.650997749;0.652514096;0.666161218;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.652514096;0.666161218;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="702.0" cy="74.0" r="2.2" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-04" data-level="2" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.696322336;0.700648999;0.709302326;0.714169822;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-11-05" cx="702.0" cy="87.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.675638386;0.677154733;0.690801855;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.677154733;0.690801855;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="702.0" cy="87.0" r="3.0" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-05" data-level="3" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.294753921;0.299080584;0.30773391;0.312601406;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-11-06" cx="702.0" cy="100.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.700279023;0.701795369;0.715442491;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.701795369;0.715442491;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="702.0" cy="100.0" r="2.2" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-06" data-level="2" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.428610059;0.432936723;0.441590049;0.446457545;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-11-07" cx="702.0" cy="113.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.724919659;0.726436006;0.740083128;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.726436006;0.740083128;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="702.0" cy="113.0" r="3.9" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-07" data-level="4" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.160897783;0.165224446;0.173877772;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-10-31" cx="689.0" cy="113.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.749560296;0.751076643;0.764723765;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.751076643;0.764723765;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="728.0" cy="48.0" r="3.0" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-16" data-level="3" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.383991347;0.38831801;0.396971336;0.401838832;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-10-30" cx="689.0" cy="100.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.774200933;0.77571728;0.789364402;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.77571728;0.789364402;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="728.0" cy="61.0" r="3.9" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-17" data-level="4" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.027041644;0.031368307;0.040021633;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-10-09" cx="650.0" cy="100.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.805665131;0.807181478;0.8208286;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.807181478;0.8208286;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
-<circle cx="728.0" cy="74.0" r="3.9" fill="#ffe49a" stroke="#6c4b17" stroke-width=".65" data-token="2026-11-18" data-level="4" opacity="1">
-<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.11627907;0.120605733;0.129259059;0.134126555;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
+<circle data-capture="2026-08-09" cx="546.0" cy="35.0" r="3" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
+<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.876038642;0.877554989;0.891202111;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="3;3;7;7" keyTimes="0;0.877554989;0.891202111;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 </g>
-<g id="chess-moves">
-<g data-capture="2026-08-09" data-piece="bishop" data-lane="2" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.004867496;0.009194159;0.034613304;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M520.0 61.0L546.0 35.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="540.0" y="29.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(520.0 61.0)">
-<animateTransform attributeName="transform" type="translate" values="520.0 61.0;520.0 61.0;546.0 35.0;546.0 35.0" keyTimes="0;0.010816658;0.028664143;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-bishop" xlink:href="#chess-bishop"/>
-</g></g></g>
-<circle cx="546.0" cy="35.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.027582477;0.030557058;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;10;10" keyTimes="0;0.028664143;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-07-14" data-piece="queen" data-lane="2" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.049486209;0.053812872;0.079232017;0.089507842;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M494.0 100.0L494.0 61.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="488.0" y="55.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(494.0 100.0)">
-<animateTransform attributeName="transform" type="translate" values="494.0 100.0;494.0 100.0;494.0 61.0;494.0 61.0" keyTimes="0;0.05543537;0.073282856;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
+<g id="queen">
+<g data-piece="queen" transform="translate(442.0 126.0)">
+<animateTransform attributeName="transform" type="translate" values="442.0 126.0;442.0 126.0;442.0 87.0;442.0 87.0;468.0 87.0;468.0 87.0;494.0 61.0;494.0 61.0;481.0 61.0;481.0 61.0;533.0 113.0;533.0 113.0;559.0 113.0;559.0 113.0;559.0 100.0;559.0 100.0;533.0 74.0;533.0 74.0;533.0 87.0;533.0 87.0;611.0 87.0;611.0 87.0;611.0 74.0;611.0 74.0;598.0 74.0;598.0 74.0;585.0 74.0;585.0 74.0;585.0 61.0;585.0 61.0;598.0 48.0;598.0 48.0;598.0 35.0;598.0 35.0;637.0 35.0;637.0 35.0;676.0 35.0;676.0 35.0;689.0 48.0;689.0 48.0;728.0 48.0;728.0 48.0;728.0 61.0;728.0 61.0;728.0 74.0;728.0 74.0;702.0 74.0;702.0 74.0;702.0 87.0;702.0 87.0;702.0 100.0;702.0 100.0;702.0 113.0;702.0 113.0;689.0 113.0;689.0 113.0;689.0 100.0;689.0 100.0;650.0 100.0;650.0 100.0;611.0 100.0;611.0 100.0;546.0 35.0;546.0 35.0;546.0 126.0;546.0 126.0;442.0 126.0;442.0 126.0" keyTimes="0;0.009098081;0.031464198;0.040562279;0.059516615;0.068614697;0.090395444;0.099493525;0.115036081;0.124134162;0.155564882;0.164662964;0.1836173;0.192715381;0.208257936;0.217356018;0.239136765;0.248234847;0.263777402;0.272875484;0.305476942;0.314575023;0.330117578;0.33921566;0.354758215;0.363856297;0.379398852;0.388496933;0.404039489;0.41313757;0.430093332;0.439191413;0.454733968;0.46383205;0.486198166;0.495296248;0.517662364;0.526760445;0.543716207;0.552814288;0.575180405;0.584278486;0.599821042;0.608919123;0.624461678;0.63355976;0.652514096;0.661612177;0.677154733;0.686252814;0.701795369;0.710893451;0.726436006;0.735534088;0.751076643;0.760174725;0.77571728;0.784815361;0.807181478;0.816279559;0.838645676;0.841299283;0.877554989;0.88665307;0.922666309;0.925319916;0.964744935;1" dur="13.189594s" calcMode="linear" repeatCount="indefinite"/>
+<ellipse cy="5" rx="5.8" ry="1.6" fill="#000000" opacity=".25"/>
+<g fill="#ffd66b" stroke="#64400d" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
 <use href="#chess-queen" xlink:href="#chess-queen"/>
-</g></g></g>
-<circle cx="494.0" cy="61.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.07220119;0.075175771;0.089507842;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;10;10" keyTimes="0;0.073282856;0.089507842;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-06-18" data-piece="pawn" data-lane="2" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.094104922;0.098431585;0.12385073;0.134126555;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M429.0 74.0L442.0 87.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="436.0" y="81.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(429.0 74.0)">
-<animateTransform attributeName="transform" type="translate" values="429.0 74.0;429.0 74.0;442.0 87.0;442.0 87.0" keyTimes="0;0.100054083;0.117901568;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/>
-</g></g></g>
-<circle cx="442.0" cy="87.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.116819903;0.119794484;0.134126555;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;10;10" keyTimes="0;0.117901568;0.134126555;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-08-05" data-piece="king" data-lane="2" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.138723634;0.143050297;0.168469443;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M520.0 61.0L533.0 74.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="527.0" y="68.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(520.0 61.0)">
-<animateTransform attributeName="transform" type="translate" values="520.0 61.0;520.0 61.0;533.0 74.0;533.0 74.0" keyTimes="0;0.144672796;0.162520281;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-king" xlink:href="#chess-king"/>
-</g></g></g>
-<circle cx="533.0" cy="74.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.161438615;0.164413196;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;8;8" keyTimes="0;0.162520281;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-07-02" data-piece="knight" data-lane="2" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.183342347;0.18766901;0.213088156;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M455.0 61.0L468.0 87.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="462.0" y="81.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(455.0 61.0)">
-<animateTransform attributeName="transform" type="translate" values="455.0 61.0;455.0 61.0;461.5 67.0;468.0 87.0;468.0 87.0" keyTimes="0;0.189291509;0.198215251;0.207138994;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/>
-</g></g></g>
-<circle cx="468.0" cy="87.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.206057328;0.209031909;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;8;8" keyTimes="0;0.207138994;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-08-08" data-piece="rook" data-lane="2" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.22796106;0.232287723;0.257706869;0.267982693;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M494.0 113.0L533.0 113.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="527.0" y="107.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(494.0 113.0)">
-<animateTransform attributeName="transform" type="translate" values="494.0 113.0;494.0 113.0;533.0 113.0;533.0 113.0" keyTimes="0;0.233910222;0.251757707;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-rook" xlink:href="#chess-rook"/>
-</g></g></g>
-<circle cx="533.0" cy="113.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.250676041;0.253650622;0.267982693;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;7;7" keyTimes="0;0.251757707;0.267982693;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-07-07" data-piece="bishop" data-lane="2" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.272579773;0.276906436;0.302325581;0.312601406;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M455.0 35.0L481.0 61.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="475.0" y="55.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(455.0 35.0)">
-<animateTransform attributeName="transform" type="translate" values="455.0 35.0;455.0 35.0;481.0 61.0;481.0 61.0" keyTimes="0;0.278528935;0.29637642;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-bishop" xlink:href="#chess-bishop"/>
-</g></g></g>
-<circle cx="481.0" cy="61.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.295294754;0.298269335;0.312601406;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;7;7" keyTimes="0;0.29637642;0.312601406;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-08-06" data-piece="queen" data-lane="2" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.317198486;0.321525149;0.346944294;0.357220119;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M533.0 48.0L533.0 87.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="527.0" y="81.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(533.0 48.0)">
-<animateTransform attributeName="transform" type="translate" values="533.0 48.0;533.0 48.0;533.0 87.0;533.0 87.0" keyTimes="0;0.323147647;0.340995133;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-queen" xlink:href="#chess-queen"/>
-</g></g></g>
-<circle cx="533.0" cy="87.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.339913467;0.342888048;0.357220119;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;7;7" keyTimes="0;0.340995133;0.357220119;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-11-17" data-piece="queen" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.004867496;0.009194159;0.034613304;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M728.0 100.0L728.0 61.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="722.0" y="55.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(728.0 100.0)">
-<animateTransform attributeName="transform" type="translate" values="728.0 100.0;728.0 100.0;728.0 61.0;728.0 61.0" keyTimes="0;0.010816658;0.028664143;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-queen" xlink:href="#chess-queen"/>
-</g></g></g>
-<circle cx="728.0" cy="61.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.027582477;0.030557058;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;10;10" keyTimes="0;0.028664143;0.044889129;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-09-07" data-piece="pawn" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.049486209;0.053812872;0.079232017;0.089507842;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M585.0 35.0L598.0 48.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="592.0" y="42.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(585.0 35.0)">
-<animateTransform attributeName="transform" type="translate" values="585.0 35.0;585.0 35.0;598.0 48.0;598.0 48.0" keyTimes="0;0.05543537;0.073282856;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/>
-</g></g></g>
-<circle cx="598.0" cy="48.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.07220119;0.075175771;0.089507842;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;10;10" keyTimes="0;0.073282856;0.089507842;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-11-18" data-piece="king" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.094104922;0.098431585;0.12385073;0.134126555;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M715.0 61.0L728.0 74.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="722.0" y="68.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(715.0 61.0)">
-<animateTransform attributeName="transform" type="translate" values="715.0 61.0;715.0 61.0;728.0 74.0;728.0 74.0" keyTimes="0;0.100054083;0.117901568;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-king" xlink:href="#chess-king"/>
-</g></g></g>
-<circle cx="728.0" cy="74.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.116819903;0.119794484;0.134126555;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;10;10" keyTimes="0;0.117901568;0.134126555;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-11-07" data-piece="knight" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.138723634;0.143050297;0.168469443;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M689.0 87.0L702.0 113.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="696.0" y="107.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(689.0 87.0)">
-<animateTransform attributeName="transform" type="translate" values="689.0 87.0;689.0 87.0;695.5 93.0;702.0 113.0;702.0 113.0" keyTimes="0;0.144672796;0.153596539;0.162520281;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/>
-</g></g></g>
-<circle cx="702.0" cy="113.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.161438615;0.164413196;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;10;10" keyTimes="0;0.162520281;0.178745268;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-08-21" data-piece="rook" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.183342347;0.18766901;0.213088156;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M559.0 61.0L559.0 100.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="553.0" y="94.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(559.0 61.0)">
-<animateTransform attributeName="transform" type="translate" values="559.0 61.0;559.0 61.0;559.0 100.0;559.0 100.0" keyTimes="0;0.189291509;0.207138994;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-rook" xlink:href="#chess-rook"/>
-</g></g></g>
-<circle cx="559.0" cy="100.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.206057328;0.209031909;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;10;10" keyTimes="0;0.207138994;0.223363981;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-10-31" data-piece="bishop" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.22796106;0.232287723;0.257706869;0.267982693;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M663.0 87.0L689.0 113.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="683.0" y="107.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(663.0 87.0)">
-<animateTransform attributeName="transform" type="translate" values="663.0 87.0;663.0 87.0;689.0 113.0;689.0 113.0" keyTimes="0;0.233910222;0.251757707;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-bishop" xlink:href="#chess-bishop"/>
-</g></g></g>
-<circle cx="689.0" cy="113.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.250676041;0.253650622;0.267982693;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;9;9" keyTimes="0;0.251757707;0.267982693;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-11-05" data-piece="queen" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.272579773;0.276906436;0.302325581;0.312601406;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M702.0 48.0L702.0 87.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="696.0" y="81.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(702.0 48.0)">
-<animateTransform attributeName="transform" type="translate" values="702.0 48.0;702.0 48.0;702.0 87.0;702.0 87.0" keyTimes="0;0.278528935;0.29637642;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-queen" xlink:href="#chess-queen"/>
-</g></g></g>
-<circle cx="702.0" cy="87.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.295294754;0.298269335;0.312601406;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;9;9" keyTimes="0;0.29637642;0.312601406;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-08-22" data-piece="pawn" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.317198486;0.321525149;0.346944294;0.357220119;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M572.0 100.0L559.0 113.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="553.0" y="107.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(572.0 100.0)">
-<animateTransform attributeName="transform" type="translate" values="572.0 100.0;572.0 100.0;559.0 113.0;559.0 113.0" keyTimes="0;0.323147647;0.340995133;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/>
-</g></g></g>
-<circle cx="559.0" cy="113.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.339913467;0.342888048;0.357220119;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;9;9" keyTimes="0;0.340995133;0.357220119;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-11-16" data-piece="king" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.361817198;0.366143862;0.391563007;0.401838832;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M715.0 35.0L728.0 48.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="722.0" y="42.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(715.0 35.0)">
-<animateTransform attributeName="transform" type="translate" values="715.0 35.0;715.0 35.0;728.0 48.0;728.0 48.0" keyTimes="0;0.36776636;0.385613845;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-king" xlink:href="#chess-king"/>
-</g></g></g>
-<circle cx="728.0" cy="48.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.38453218;0.38750676;0.401838832;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;9;9" keyTimes="0;0.385613845;0.401838832;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-11-06" data-piece="knight" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.406435911;0.410762574;0.43618172;0.446457545;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M689.0 74.0L702.0 100.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="696.0" y="94.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(689.0 74.0)">
-<animateTransform attributeName="transform" type="translate" values="689.0 74.0;689.0 74.0;695.5 80.0;702.0 100.0;702.0 100.0" keyTimes="0;0.412385073;0.421308816;0.430232558;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/>
-</g></g></g>
-<circle cx="702.0" cy="100.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.429150892;0.432125473;0.446457545;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;8;8" keyTimes="0;0.430232558;0.446457545;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-09-02" data-piece="rook" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.451054624;0.455381287;0.480800433;0.491076257;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M585.0 35.0L585.0 74.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="579.0" y="68.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(585.0 35.0)">
-<animateTransform attributeName="transform" type="translate" values="585.0 35.0;585.0 35.0;585.0 74.0;585.0 74.0" keyTimes="0;0.457003786;0.474851271;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-rook" xlink:href="#chess-rook"/>
-</g></g></g>
-<circle cx="585.0" cy="74.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.473769605;0.476744186;0.491076257;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;8;8" keyTimes="0;0.474851271;0.491076257;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-09-16" data-piece="bishop" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.495673337;0.5;0.525419145;0.53569497;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M585.0 48.0L611.0 74.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="605.0" y="68.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(585.0 48.0)">
-<animateTransform attributeName="transform" type="translate" values="585.0 48.0;585.0 48.0;611.0 74.0;611.0 74.0" keyTimes="0;0.501622499;0.519469984;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-bishop" xlink:href="#chess-bishop"/>
-</g></g></g>
-<circle cx="611.0" cy="74.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.518388318;0.521362899;0.53569497;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;8;8" keyTimes="0;0.519469984;0.53569497;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-10-26" data-piece="queen" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.54029205;0.544618713;0.570037858;0.580313683;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M689.0 87.0L689.0 48.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="683.0" y="42.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(689.0 87.0)">
-<animateTransform attributeName="transform" type="translate" values="689.0 87.0;689.0 87.0;689.0 48.0;689.0 48.0" keyTimes="0;0.546241211;0.564088697;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-queen" xlink:href="#chess-queen"/>
-</g></g></g>
-<circle cx="689.0" cy="48.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.563007031;0.565981612;0.580313683;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;8;8" keyTimes="0;0.564088697;0.580313683;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-09-09" data-piece="pawn" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.584910763;0.589237426;0.614656571;0.624932396;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M611.0 61.0L598.0 74.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="592.0" y="68.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(611.0 61.0)">
-<animateTransform attributeName="transform" type="translate" values="611.0 61.0;611.0 61.0;598.0 74.0;598.0 74.0" keyTimes="0;0.590859924;0.608707409;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/>
-</g></g></g>
-<circle cx="598.0" cy="74.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.607625744;0.610600324;0.624932396;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;8;8" keyTimes="0;0.608707409;0.624932396;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-10-18" data-piece="king" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.629529475;0.633856138;0.659275284;0.669551109;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M663.0 48.0L676.0 35.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="670.0" y="29.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(663.0 48.0)">
-<animateTransform attributeName="transform" type="translate" values="663.0 48.0;663.0 48.0;676.0 35.0;676.0 35.0" keyTimes="0;0.635478637;0.653326122;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-king" xlink:href="#chess-king"/>
-</g></g></g>
-<circle cx="676.0" cy="35.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.652244456;0.655219037;0.669551109;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;8;8" keyTimes="0;0.653326122;0.669551109;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-11-04" data-piece="knight" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.674148188;0.678474851;0.703893997;0.714169822;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M715.0 48.0L702.0 74.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="696.0" y="68.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(715.0 48.0)">
-<animateTransform attributeName="transform" type="translate" values="715.0 48.0;715.0 48.0;708.5 54.0;702.0 74.0;702.0 74.0" keyTimes="0;0.68009735;0.689021092;0.697944835;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/>
-</g></g></g>
-<circle cx="702.0" cy="74.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.696863169;0.69983775;0.714169822;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;8;8" keyTimes="0;0.697944835;0.714169822;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-09-01" data-piece="rook" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.718766901;0.723093564;0.74851271;0.758788534;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M585.0 100.0L585.0 61.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="579.0" y="55.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(585.0 100.0)">
-<animateTransform attributeName="transform" type="translate" values="585.0 100.0;585.0 100.0;585.0 61.0;585.0 61.0" keyTimes="0;0.724716063;0.742563548;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-rook" xlink:href="#chess-rook"/>
-</g></g></g>
-<circle cx="585.0" cy="61.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.741481882;0.744456463;0.758788534;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;7;7" keyTimes="0;0.742563548;0.758788534;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-10-09" data-piece="bishop" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.763385614;0.767712277;0.793131422;0.803407247;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M624.0 74.0L650.0 100.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="644.0" y="94.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(624.0 74.0)">
-<animateTransform attributeName="transform" type="translate" values="624.0 74.0;624.0 74.0;650.0 100.0;650.0 100.0" keyTimes="0;0.769334776;0.787182261;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-bishop" xlink:href="#chess-bishop"/>
-</g></g></g>
-<circle cx="650.0" cy="100.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.786100595;0.789075176;0.803407247;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;7;7" keyTimes="0;0.787182261;0.803407247;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-09-06" data-piece="queen" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.808004327;0.81233099;0.837750135;0.84802596;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M559.0 35.0L598.0 35.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="592.0" y="29.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(559.0 35.0)">
-<animateTransform attributeName="transform" type="translate" values="559.0 35.0;559.0 35.0;598.0 35.0;598.0 35.0" keyTimes="0;0.813953488;0.831800973;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-queen" xlink:href="#chess-queen"/>
-</g></g></g>
-<circle cx="598.0" cy="35.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.830719308;0.833693889;0.84802596;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;7;7" keyTimes="0;0.831800973;0.84802596;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-09-17" data-piece="pawn" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.852623039;0.856949703;0.882368848;0.892644673;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M624.0 74.0L611.0 87.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="605.0" y="81.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(624.0 74.0)">
-<animateTransform attributeName="transform" type="translate" values="624.0 74.0;624.0 74.0;611.0 87.0;611.0 87.0" keyTimes="0;0.858572201;0.876419686;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/>
-</g></g></g>
-<circle cx="611.0" cy="87.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.875338021;0.878312601;0.892644673;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;7;7" keyTimes="0;0.876419686;0.892644673;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-09-27" data-piece="king" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.897241752;0.901568415;0.926987561;0.937263386;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M624.0 48.0L637.0 35.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="631.0" y="29.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(624.0 48.0)">
-<animateTransform attributeName="transform" type="translate" values="624.0 48.0;624.0 48.0;637.0 35.0;637.0 35.0" keyTimes="0;0.903190914;0.921038399;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#2b2b2b" stroke="#e9d5ad" color="#e9d5ad" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-king" xlink:href="#chess-king"/>
-</g></g></g>
-<circle cx="637.0" cy="35.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.919956733;0.922931314;0.937263386;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;7;7" keyTimes="0;0.921038399;0.937263386;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
-<g data-capture="2026-10-30" data-piece="knight" data-lane="3" opacity="0">
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.941860465;0.946187128;0.971606274;0.981882098;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M676.0 74.0L689.0 100.0" stroke="#d4af37" fill="none" stroke-width=".7" stroke-dasharray="2 3" opacity=".5"/>
-<rect x="683.0" y="94.0" width="12" height="12" rx="2" fill="none" stroke="#d4af37" stroke-width="1"/>
-<g transform="translate(676.0 74.0)">
-<animateTransform attributeName="transform" type="translate" values="676.0 74.0;676.0 74.0;682.5 80.0;689.0 100.0;689.0 100.0" keyTimes="0;0.947809627;0.956733369;0.965657112;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<ellipse cy="5" rx="5.8" ry="1.7" fill="#000000" opacity=".25"/>
-<g fill="#fff4e0" stroke="#554237" color="#554237" stroke-width=".65" stroke-linejoin="round" stroke-linecap="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/>
-</g></g></g>
-<circle cx="689.0" cy="100.0" r="4" fill="none" stroke="#d4af37" stroke-width="1" opacity="0">
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.964575446;0.967550027;0.981882098;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="r" values="4;4;7;7" keyTimes="0;0.965657112;0.981882098;1" dur="36.98s" calcMode="linear" repeatCount="indefinite"/>
-</circle>
+</g></g>
 </g>
-<text x="47" y="132" fill="#d4af37" font-size="8" letter-spacing="1.3" font-family="system-ui,sans-serif">GITCHESS</text>
+<text x="47" y="147" fill="#d4af37" font-size="8" letter-spacing="1.3" font-family="system-ui,sans-serif">GITCHESS</text>
 </svg>
