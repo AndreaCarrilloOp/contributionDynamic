@@ -37,3 +37,4 @@
 - Refine the GitChess month header and verify stationary pieces, exact capture timing and synchronized restoration.
 - Retire GitFactory and GitAbyss; replace them with GitInvaders, a single-ship pixel-art battle with contribution-coded aliens, enemy counterfire and full-loop restoration.
 - Redesign GitChess with a subdued contiguous board, four turn-based attackers, legal team routing, and a four-target focus window.
+- Align all five calendars through one geometry and SVG label renderer; preserve exact month columns and center Mon, Wed and Fri on their rows.

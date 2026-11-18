@@ -4,6 +4,7 @@ from xml.etree import ElementTree
 import pytest
 
 from contribution_dynamic.calendar import Day, month_label_positions
+from contribution_dynamic.labels import LEFT, MONTH_BASELINES, RIGHT, STEP, TOP, WEEKDAYS
 from contribution_dynamic.registry import PUBLISHED_SCENARIOS, RENDERERS, THEMES
 
 NS = {"s": "http://www.w3.org/2000/svg"}
@@ -36,11 +37,32 @@ def test_all_calendar_months_are_visible(scenario, theme, start, end):
     labels = [node for node in root.findall(".//s:text", NS) if node.text in MONTHS]
     assert [node.text for node in labels] == expected
     assert "Dec" in expected
+    months = {}
+    for day in days:
+        months.setdefault((day.date.year, day.date.month), day.week)
     xs = [int(node.attrib["x"]) for node in labels]
-    assert all(b-a >= 24 for a, b in zip(xs, xs[1:]))
+    assert xs == [LEFT + week * STEP for week in months.values()]
     assert xs[0] >= 0 and xs[-1]+24 <= int(root.attrib["width"])
+    for baseline in MONTH_BASELINES:
+        row = [int(n.attrib["x"]) for n in labels if int(n.attrib["y"]) == baseline]
+        assert all(b-a >= 24 for a, b in zip(row, row[1:]))
+    assert all(int(n.attrib["y"]) in MONTH_BASELINES for n in labels)
     cells = root.findall(".//s:g[@id='calendar']/s:rect", NS)
     assert {c.attrib["data-date"] for c in cells} == {d.date.isoformat() for d in days}
+    cell = float(cells[0].attrib["height"])
+    assert int(root.attrib["width"]) == LEFT + max(53, days[-1].week+1)*STEP + RIGHT
+    for node, day in zip(cells, days, strict=True):
+        assert float(node.attrib["x"]) == LEFT + day.week * STEP
+        assert float(node.attrib["y"]) == TOP + day.weekday * STEP
+    weekdays = root.find(".//s:g[@id='weekday-labels']", NS)
+    assert weekdays is not None
+    assert weekdays.attrib["dominant-baseline"] == "central"
+    assert weekdays.attrib["text-anchor"] == "end"
+    day_labels = weekdays.findall("s:text", NS)
+    assert [n.text for n in day_labels] == [name for _, name in WEEKDAYS]
+    for node, (row, _) in zip(day_labels, WEEKDAYS, strict=True):
+        assert float(node.attrib["y"]) == TOP + row * STEP + cell / 2
+        assert int(node.attrib["x"]) == LEFT-18
 
 
 def test_december_stays_aligned_when_there_is_room():
@@ -52,3 +74,15 @@ def test_no_month_is_invented_or_added_to_empty_calendar():
     days = _calendar(date(2026, 11, 18), date(2026, 11, 19))
     assert month_label_positions(days, 47, 13, 752) == ((47, "Nov"),)
     assert month_label_positions((), 47, 13, 752) == ()
+
+
+def test_partial_boundary_months_keep_exact_columns():
+    days = _calendar(date(2025, 11, 30), date(2026, 11, 1))
+    assert month_label_positions(days, LEFT, STEP, 752)[:2] == (
+        (LEFT, "Nov"), (LEFT, "Dec"),
+    )
+    for scenario in PUBLISHED_SCENARIOS:
+        root = ElementTree.fromstring(RENDERERS[scenario](days, "dark"))
+        labels = root.findall(".//s:g[@id='month-labels']/s:text", NS)
+        assert labels[0].attrib["x"] == labels[1].attrib["x"]
+        assert labels[0].attrib["y"] != labels[1].attrib["y"]

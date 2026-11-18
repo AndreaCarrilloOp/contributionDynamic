@@ -4,12 +4,10 @@ from collections import deque
 from dataclasses import dataclass
 
 from contribution_dynamic.animation import track
-from contribution_dynamic.calendar import Day, month_label_positions
+from contribution_dynamic.calendar import Day
+from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
 
-STEP = 13
 CELL = 10
-LEFT = 47
-TOP = 39
 FIRST = .12
 WALK_TIME = .12
 RADIUS = 2
@@ -266,7 +264,7 @@ def _event(event: Blast, cycle: float, p: dict) -> list[str]:
 
 def render_blast(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
-    width, height = LEFT + board_weeks(days) * STEP + 20, TOP + 8 * STEP + 18
+    width, height = LEFT + board_weeks(days) * STEP + RIGHT, TOP + 8 * STEP + 18
     run = plan_run(days)
     events = run.events if run else ()
     cycle = run.cycle if run else 4.0
@@ -277,13 +275,9 @@ def render_blast(days: tuple[Day, ...], theme: str = "dark") -> str:
         'aria-label="GitBlast arcade contribution calendar">',
         '<title>GitBlast — ignite your contributions</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
-        f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
     ]
-    for x, name in month_label_positions(days, LEFT, STEP, width):
-        parts.append(f'<text x="{x}" y="14">{name}</text>')
-    for row, name in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
-        parts.append(f'<text x="5" y="{TOP+row*STEP+8}">{name}</text>')
-    parts.extend(['</g>', '<g id="calendar">'])
+    parts.extend(render_labels(days, width, CELL, p["text"]))
+    parts.append('<g id="calendar">')
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP
         level = _level(day)

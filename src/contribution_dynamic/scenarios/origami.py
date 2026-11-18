@@ -1,12 +1,10 @@
 """Fold active contribution cells into paper birds using declarative SVG."""
 
 from contribution_dynamic.animation import track as _track
-from contribution_dynamic.calendar import Day, month_label_positions
+from contribution_dynamic.calendar import Day
+from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
 
-STEP = 13
 CELL = 10
-LEFT = 47
-TOP = 32
 FLIGHT = 2.6
 FIRST_FOLD = 0.25
 MAX_CADENCE = 0.48
@@ -88,7 +86,7 @@ def _bird(day, color, shades, cycle, width, s):
 def render_origami(days: tuple[Day, ...], theme: str = "dark") -> str:
     bg, empty, text, levels, highlight, middle, shadow = PALETTES[theme]
     weeks = max(53, max((d.week + 1 for d in days), default=0))
-    width, height = LEFT + weeks * STEP + 16, TOP + 7 * STEP + 13
+    width, height = LEFT + weeks * STEP + RIGHT, TOP + 7 * STEP + 13
     schedule = fold_schedule(days)
     cycle = max(4.0, max(schedule.values(), default=0) + FLIGHT + .65)
     parts = [
@@ -97,13 +95,9 @@ def render_origami(days: tuple[Day, ...], theme: str = "dark") -> str:
         'aria-label="GitOrigami contribution calendar animation">',
         '<title>GitOrigami — contribution calendar</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{bg}"/>',
-        f'<g font-family="system-ui,sans-serif" font-size="10" fill="{text}">',
     ]
-    for x, label in month_label_positions(days, LEFT, STEP, width):
-        parts.append(f'<text x="{x}" y="14">{label}</text>')
-    for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
-        parts.append(f'<text x="10" y="{TOP+row*STEP+8}">{label}</text>')
-    parts.extend(['</g>', '<g id="calendar">'])
+    parts.extend(render_labels(days, width, CELL, text))
+    parts.append('<g id="calendar">')
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP
         level = _level(day)

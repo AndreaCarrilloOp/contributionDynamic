@@ -5,11 +5,10 @@ from dataclasses import dataclass
 from math import hypot
 
 from contribution_dynamic.animation import track
-from contribution_dynamic.calendar import Day, month_label_positions
+from contribution_dynamic.calendar import Day
+from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
 
-STEP = CELL = 13
-LEFT = 47
-TOP = 26
+CELL = STEP
 STAGING_ROW = 7
 FIRST_MOVE = .12
 TEAM = ("queen", "rook", "bishop", "knight")
@@ -324,7 +323,7 @@ def _highlight(move, match, p):
 def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
     weeks = board_weeks(days)
-    width = LEFT + weeks * STEP + 16
+    width = LEFT + weeks * STEP + RIGHT
     height = TOP + 8 * STEP + 19
     match = plan_match(days)
     captures = [m for m in match.moves if m.day is not None] if match else []
@@ -335,13 +334,9 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
         '<title>GitChess — tactical play</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
         *_sprite_defs(),
-        '<g id="month-labels" font-family="Georgia,serif" font-size="10.5" '
-        f'letter-spacing=".2" fill="{p["text"]}">',
     ]
-    for x, name in month_label_positions(days, LEFT, STEP, width):
-        parts.append(f'<text x="{x}" y="15">{name}</text>')
+    parts.extend(render_labels(days, width, CELL, p["text"]))
     parts.extend([
-        '</g>',
         f'<rect x="{LEFT-2}" y="{TOP-2}" width="{weeks*STEP+4}" height="{8*STEP+4}" '
         f'rx="1" fill="{p["frame"]}"/>',
         '<g id="staging">',
@@ -350,7 +345,7 @@ def render_chess(days: tuple[Day, ...], theme: str = "dark") -> str:
         color = p["squares"][(week+STAGING_ROW) % 2]
         parts.append(f'<rect x="{LEFT+week*STEP}" y="{TOP+STAGING_ROW*STEP}" '
                      f'width="{CELL}" height="{CELL}" fill="{color}"/>')
-    parts.extend(['</g>', '<g id="calendar">'])
+    parts.append('<g id="calendar">')
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week * STEP, TOP + day.weekday * STEP
         color = p["squares"][(day.week + day.weekday) % 2]

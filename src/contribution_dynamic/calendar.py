@@ -39,20 +39,14 @@ MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
 def month_label_positions(
     days: tuple[Day, ...], left: int, step: int, width: int,
 ) -> tuple[tuple[int, str], ...]:
-    """Label every represented month, including short boundary months.
+    """Anchor each represented month at its actual first displayed week.
 
-    Positions normally follow the first represented week. Shift labels
-    left if necessary to keep 10px month text separated and inside the SVG.
+    The width argument is retained for callers; no month is moved to a
+    different contribution column to fit the label. The SVG layout handles
+    crowded boundary months on a second baseline.
     """
     months = {}
     for day in sorted(days, key=lambda d: d.date):
         months.setdefault((day.date.year, day.date.month), day.week)
-    positions = [(left + week * step, MONTHS[month-1])
-                 for (_, month), week in months.items()]
-    right = width - 24
-    for i in range(len(positions)-1, -1, -1):
-        x, label = positions[i]
-        x = min(x, right)
-        positions[i] = (x, label)
-        right = x - 24
-    return tuple(positions)
+    return tuple((left + week * step, MONTHS[month-1])
+                 for (_, month), week in months.items())

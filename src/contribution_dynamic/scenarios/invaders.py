@@ -4,12 +4,10 @@ from dataclasses import dataclass
 from itertools import groupby
 
 from contribution_dynamic.animation import track
-from contribution_dynamic.calendar import Day, month_label_positions
+from contribution_dynamic.calendar import Day
+from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
 
-STEP = 13
 CELL = 10
-LEFT = 27
-TOP = 28
 SHIP_Y = TOP + 7 * STEP + 17
 FIRST = .12
 SWAY = 2.5
@@ -248,7 +246,7 @@ def _combat(battle, p):
 def render_invaders(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
     weeks = board_weeks(days)
-    width, height = LEFT + weeks * STEP + 16, SHIP_Y + 23
+    width, height = LEFT + weeks * STEP + RIGHT, SHIP_Y + 23
     battle = plan_battle(days)
     by_day = {s.day: s for v in battle.volleys for s in v.shots} if battle else {}
     parts = [
@@ -257,11 +255,9 @@ def render_invaders(days: tuple[Day, ...], theme: str = "dark") -> str:
         'aria-label="GitInvaders pixel-art contribution battle">',
         '<title>GitInvaders — defend your contributions</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
-        f'<g font-family="monospace" font-size="10" fill="{p["text"]}">',
     ]
-    for x, name in month_label_positions(days, LEFT, STEP, width):
-        parts.append(f'<text x="{x}" y="15">{name}</text>')
-    parts.extend(['</g>', '<g id="calendar">'])
+    parts.extend(render_labels(days, width, CELL, p["text"]))
+    parts.append('<g id="calendar">')
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT + day.week*STEP, TOP + day.weekday*STEP
         intensity = level(day)

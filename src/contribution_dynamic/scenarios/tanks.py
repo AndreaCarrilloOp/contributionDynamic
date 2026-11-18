@@ -5,12 +5,10 @@ from dataclasses import dataclass
 from math import atan2, cos, degrees, radians, sin
 
 from contribution_dynamic.animation import track
-from contribution_dynamic.calendar import Day, month_label_positions
+from contribution_dynamic.calendar import Day
+from contribution_dynamic.labels import LEFT, RIGHT, STEP, TOP, render_labels
 
-STEP = 13
 CELL = 10
-LEFT = 47
-TOP = 39
 FIRST = .12
 BASE = TOP + 7 * STEP + 15
 MAX_ENEMIES = 3
@@ -534,7 +532,7 @@ def _eagle(center, p):
 def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
     p = PALETTES[theme]
     weeks, center = board_weeks(days), base_x(days)
-    width, height = LEFT+weeks*STEP+16, BASE+23
+    width, height = LEFT + weeks * STEP + RIGHT, BASE+23
     battle = plan_battle(days)
     cycle = battle.cycle if battle else 4.0
     by_day = {a.day: a for a in battle.attacks if a.day} if battle else {}
@@ -544,13 +542,9 @@ def render_tanks(days: tuple[Day, ...], theme: str = "dark") -> str:
         'aria-label="GitTanks golden tank navigates the contribution maze">',
         '<title>GitTanks — one versus many</title>',
         f'<rect width="{width}" height="{height}" rx="6" fill="{p["bg"]}"/>',
-        f'<g font-family="system-ui,sans-serif" font-size="10" fill="{p["text"]}">',
     ]
-    for x, label in month_label_positions(days, LEFT, STEP, width):
-        parts.append(f'<text x="{x}" y="14">{label}</text>')
-    for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
-        parts.append(f'<text x="10" y="{TOP+row*STEP+8}">{label}</text>')
-    parts.extend(['</g>', '<g id="calendar">'])
+    parts.extend(render_labels(days, width, CELL, p["text"]))
+    parts.append('<g id="calendar">')
     for day in sorted(days, key=lambda d: (d.week, d.weekday)):
         x, y = LEFT+day.week*STEP, TOP+day.weekday*STEP
         level = _level(day)

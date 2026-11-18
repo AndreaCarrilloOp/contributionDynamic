@@ -114,6 +114,7 @@ GraphQL collector → calendar model → scenario simulation → compact SVG →
 
 - Dependency-free runtime engine and deterministic animation.
 - Calendar positions and GitHub intensity levels preserved.
+- Consistent month and Mon/Wed/Fri labels aligned to calendar columns and rows in both themes.
 - Declarative SVG motion, no JavaScript or external sprites.
 - Shared timeline compaction and batch generation from a single API request.
 
