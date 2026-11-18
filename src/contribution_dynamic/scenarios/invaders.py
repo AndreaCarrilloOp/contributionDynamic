@@ -19,10 +19,12 @@ SHIP_Y = TOP + 7 * STEP + 17
 FIRST = .12
 ARCADE_ALIENS = 55
 ARCADE_HZ = 60
-MARCH_STEP = 2
-MARCH_LIMIT = 10
-DROP_STEP = 4
-DROP_LIMIT = 8
+MARCH_STEP = 1
+MARCH_LIMIT = 1
+BOB_LIMIT = 1
+SPRITE_SCALE = .8
+SPRITE_WIDTH = 9
+SPRITE_HEIGHT = 7
 MIN_MARCH_INTERVAL = .12
 DODGE = 16
 DAMAGE_INTERVAL = 9
@@ -179,7 +181,7 @@ def march_interval(alive: int, initial: int) -> float:
 
 
 def plan_march(shots: tuple[Shot, ...]) -> tuple[March, ...]:
-    """March independently of the hero: discrete steps, edge turns and acceleration."""
+    """Oscillate within each source cell on the shared arcade clock."""
     if not shots:
         return ()
     hits = sorted(shot.hit for shot in shots)
@@ -192,12 +194,8 @@ def plan_march(shots: tuple[Shot, ...]) -> tuple[March, ...]:
         alive = initial-bisect_right(hits, time)
         if x+direction*MARCH_STEP > MARCH_LIMIT or x+direction*MARCH_STEP < -MARCH_LIMIT:
             direction *= -1
-            if y < DROP_LIMIT:
-                y = min(DROP_LIMIT, y+DROP_STEP)
-            else:
-                x += direction*MARCH_STEP
-        else:
-            x += direction*MARCH_STEP
+            y = BOB_LIMIT-y
+        x += direction*MARCH_STEP
         frame = 1-frame
         steps.append(March(time, x, y, frame, alive))
         time += march_interval(alive, initial)
@@ -317,12 +315,14 @@ def _formation(battle, p):
     times = [step.time for step in battle.march] + [battle.restore]
     shifts = [_xy(step.x, step.y) for step in battle.march] + ["0 0"]
     frames = [step.frame for step in battle.march] + [0]
-    # Define four shared sprites; the two walking poses use the same march clock.
+    # Center the nine-by-seven sprites before scaling. At all march offsets,
+    # the entire silhouette remains inside its original ten-unit square.
     parts = ['<defs>']
     for i, rows in enumerate(ALIENS):
-        poses = (_pixels(rows, -4, -3), _pixels(ALIENS_ALT[i], -4, -3))
+        origin = (-SPRITE_WIDTH/2, -SPRITE_HEIGHT/2)
+        poses = (_pixels(rows, *origin), _pixels(ALIENS_ALT[i], *origin))
         parts.extend([
-            f'<g id="invader-sprite-{i+1}">',
+            f'<g id="invader-sprite-{i+1}" transform="scale({SPRITE_SCALE})">',
             f'<path d="{poses[0]}" fill="{p["aliens"][i]}">',
             track("opacity", [1-frame for frame in frames], times, battle.cycle, "discrete"),
             '</path>',
@@ -389,7 +389,7 @@ def _combat(battle, p):
     for volley in battle.volleys:
         x, y = alien_position(volley.shots[0].day, battle.march, volley.enemy_launch)
         target_y = SHIP_Y if volley.damaged else SHIP_Y+6
-        parts.extend(_laser((x, y+3), (volley.base, target_y),
+        parts.extend(_laser((x, y+SPRITE_HEIGHT*SPRITE_SCALE/2), (volley.base, target_y),
                             volley.enemy_launch, volley.enemy_hit,
                             battle.cycle, p["hostile"], "enemy"))
         parts.extend(_burst(volley.base, target_y, volley.enemy_hit, battle.cycle,

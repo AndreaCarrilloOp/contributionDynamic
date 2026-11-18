@@ -47,7 +47,7 @@ A team of ivory chess attackers — queen, rook, bishop and knight — takes tur
 
 ### GitInvaders
 
-A single pixel-art ship faces a marching alien formation. Discrete lateral steps, edge turns, a bounded descent, alternating poses and progressive acceleration evoke the 1978 arcade cadence while preserving the calendar and synchronized laser impacts.
+A single pixel-art ship faces a marching alien formation. Discrete lateral steps, subtle vertical bobbing, alternating poses and progressive acceleration evoke the 1978 arcade cadence. Every alien stays entirely inside its own contribution cell; laser impacts follow the same motion clock.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-dark.svg">
