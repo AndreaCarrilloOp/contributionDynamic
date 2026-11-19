@@ -8,7 +8,7 @@ The dependency-free Python engine collects a GitHub contribution calendar once t
 
 | Scenario | Simulation |
 | --- | --- |
-| GitTanks | One golden tank navigates free cells, destroys bricks, evades counterfire and faces silver pursuers. Bounded cardinal pathfinding respects obstacles; reinforcements overlap when safe. The hero takes no damage: counterfire misses an empty square after evasion, or is intercepted outside the hull by a temporary shield when no safe route exists. |
+| GitTanks | One golden tank navigates free cells, destroys bricks, evades counterfire and faces silver pursuers. Bounded cardinal pathfinding respects obstacles; reinforcements overlap when safe. Enemy movement shares the hero's clock during brick clearing and deployment, so a lone survivor continues pursuing or patrolling available corridors; reserved routes and firing lanes prevent conflicts. The hero takes no damage: counterfire misses an empty square after evasion, or is intercepted outside the hull by a temporary shield when no safe route exists. |
 | GitBlast | A bomber places sequential bombs beside contribution bricks and retreats outside the blast cross. Flames stop at the first intact brick. Initial patrols and staggered reinforcements use free cells. |
 | GitChess | Queen, rook, bishop and knight take turns capturing contribution pieces according to their movement geometry, with occupancy constraints and a limited target window. |
 | GitInvaders | One ship engages a level-coded alien formation. Each alien oscillates within its own cell, alternating poses and accelerating as the formation shrinks. |

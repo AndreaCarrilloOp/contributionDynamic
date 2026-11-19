@@ -14,7 +14,7 @@ Five original scenarios, based on real GitHub contribution data. Each supports d
 
 ### GitTanks
 
-One golden tank navigates destructible contribution bricks and faces staggered silver reinforcements. It evades incoming fire and safely intercepts shots when cornered, taking no damage.
+One golden tank navigates destructible contribution bricks and faces staggered silver reinforcements. Enemies pursue or patrol during brick clearing and staggered reinforcements. The hero evades incoming fire and safely intercepts shots when cornered, taking no damage.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">

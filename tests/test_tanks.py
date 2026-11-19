@@ -14,6 +14,7 @@ from contribution_dynamic.scenarios.tanks import (
     SPAWN_RADIUS,
     STEP,
     TOP,
+    _patrol_step,
     can_fire,
     plan_battle,
     render_tanks,
@@ -272,3 +273,33 @@ def test_enemy_reinforcements_overlap_existing_opponents():
     for enemy in enemies[1:]:
         assert enemy.spawn < end, "Enemy-free gap between reinforcements"
         end = max(end, enemy.hit)
+
+
+def test_surviving_enemy_keeps_moving_during_brick_attacks():
+    battle = plan_battle(demo_calendar())
+    assert battle is not None
+    attacks = {a.enemy: a for a in battle.attacks if a.enemy is not None}
+    moved = False
+    for brick in (a for a in battle.attacks if a.day is not None):
+        survivors = [
+            route for route in battle.enemies
+            if attacks[route.enemy].spawn < brick.fire < brick.complete
+            < attacks[route.enemy].hit
+        ]
+        if len(survivors) != 1:
+            continue
+        route = survivors[0]
+        if any(a != b and brick.fire < tick <= brick.complete
+               for a, b, tick in zip(route.positions, route.positions[1:], route.times[1:])):
+            moved = True
+    assert moved, "The sole surviving enemy must move while the hero clears bricks"
+
+
+def test_patrol_fallback_moves_only_when_a_legal_square_exists():
+    position, hero, spawn = (2, 2), (5, 5), (0, 0)
+    # No reachable firing line: the enemy has one legal patrol step.
+    blocked = {(x, y) for x in range(53) for y in range(7)}
+    blocked.difference_update({position, (3, 2), hero})
+    assert _patrol_step(position, hero, (1, 0), "hunter", blocked, 53, spawn) == (3, 2)
+    blocked.add((3, 2))
+    assert _patrol_step(position, hero, (1, 0), "hunter", blocked, 53, spawn) == position

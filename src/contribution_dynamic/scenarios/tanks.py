@@ -21,6 +21,7 @@ MAX_ENEMIES = 3
 SPAWN_GAP = .36
 WAVE_BRICKS = 5
 CHASE_ROUNDS = 10
+PURSUIT_STEP = .18
 FIRE_RANGE = 5
 SPAWN_RADIUS = 2
 PROJECTILE_SPEED = 150
@@ -234,6 +235,22 @@ def _chase_step(position, hero, heading, role, blocked, width, spawn):
     return route[1] if len(route) > 1 else position
 
 
+def _patrol_step(position, hero, heading, role, blocked, width, spawn, previous=None):
+    """Keep pursuing, or patrol a legal neighboring square if a firing lane is blocked."""
+    destination = _chase_step(position, hero, heading, role, blocked, width, spawn)
+    if destination != position:
+        return destination
+    choices = [
+        pos for pos in _neighbors(position, width, spawn)
+        if pos not in blocked and pos not in (hero, spawn)
+    ]
+    if not choices:
+        return position
+    return min(choices, key=lambda pos: (
+        pos == previous, _distance(pos, hero), pos,
+    ))
+
+
 def plan_battle(days: tuple[Day, ...]) -> Battle | None:
     """Clear active bricks with one tank, then fight enemies on open grid squares."""
     bricks = {(d.week, d.weekday): d for d in days if d.count}
@@ -344,6 +361,65 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
     last_birth = -SPAWN_GAP
     budget = MAX_ENEMIES * ((len(bricks)+WAVE_BRICKS-1)//WAVE_BRICKS+1)
 
+    def advance_enemies(begin, finish, protected=(), patrol=False):
+        """Advance opponents on the existing hero clock, without adding a pause.
+
+        Protect the entire planned hero route and its firing lane, reserve enemy
+        starts and destinations, and commit each movement before the next tick.
+        """
+        protected = set(protected) | {positions[-1], spawn}
+        while living and finish-begin >= PURSUIT_STEP-1e-8:
+            end = min(finish, begin+PURSUIT_STEP)
+            occupied = set(living.values())
+            reserved = set()
+            next_positions = {}
+            for key, pos in living.items():
+                obstacles = blocked | (occupied - {pos}) | reserved | protected
+                if patrol:
+                    path, _ = trails[key]
+                    previous = next((p for p in reversed(path) if p != pos), None)
+                    destination = _patrol_step(
+                        pos, positions[-1], heading, roles[key], obstacles,
+                        width, spawn, previous,
+                    )
+                else:
+                    destination = _chase_step(
+                        pos, positions[-1], heading, roles[key], obstacles,
+                        width, spawn,
+                    )
+                next_positions[key] = destination
+                reserved.add(destination)
+            for key, destination in next_positions.items():
+                pos = living[key]
+                if destination != pos:
+                    path, ticks = trails[key]
+                    if begin > ticks[-1]:
+                        path.append(pos)
+                        ticks.append(begin)
+                    path.append(destination)
+                    ticks.append(end)
+            living.update(next_positions)
+            begin = end
+
+    def clear_brick(route, target):
+        # Preserve the hero's BFS route and cardinal ray while enemies move.
+        source = route[-1]
+        distance = _distance(source, target)
+        dx = (target[0]-source[0]) // distance
+        dy = (target[1]-source[1]) // distance
+        protected = set(route) | {
+            (source[0]+dx*i, source[1]+dy*i) for i in range(distance+1)
+        }
+        for pos in route[1:]:
+            begin = clock
+            walk((positions[-1], pos))
+            advance_enemies(begin, clock, protected, patrol=True)
+        begin = clock
+        engage(target, day=bricks[target])
+        advance_enemies(begin, clock, protected, patrol=True)
+        blocked.remove(target)
+        cleared.add(target)
+
     def deploy(count):
         nonlocal enemy_id, last_birth, budget
         if count <= 0 or budget <= 0:
@@ -354,7 +430,9 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
         )
         for pos in spawns:
             if clock < last_birth+SPAWN_GAP:
+                begin = clock
                 pose(positions[-1], last_birth+SPAWN_GAP, angles[-1])
+                advance_enemies(begin, clock, spawns, patrol=True)
             key = enemy_id
             enemy_id += 1
             budget -= 1
@@ -363,7 +441,9 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
             living[key] = pos
             roles[key] = ROLES[key % len(ROLES)]
             trails[key] = ([pos], [clock])
+            begin = clock
             pose(positions[-1], clock+SPAWN_GAP, angles[-1])
+            advance_enemies(begin, clock, spawns, patrol=True)
 
     def defeat(key):
         target = living[key]
@@ -389,10 +469,7 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
             if reachable is None:
                 break
             route, target = reachable
-            walk(route)
-            engage(target, day=bricks[target])
-            blocked.remove(target)
-            cleared.add(target)
+            clear_brick(route, target)
             progress = True
         if blocked and progress:
             deploy(MAX_ENEMIES-len(living))
@@ -428,41 +505,20 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
             if len(route) > 1:
                 walk(route[:2])
             elif target in blocked:
-                engage(target, day=bricks[target])
-                blocked.remove(target)
-                cleared.add(target)
+                clear_brick(route, target)
             else:
                 key = next(key for key, pos in living.items() if pos == target)
                 if len(living) == 1 and blocked and budget:
                     deploy(1)
-                    if not can_fire(positions[-1], target, blocked | set(living.values())):
+                    if not can_fire(
+                        positions[-1], living[key], blocked | set(living.values()),
+                    ):
                         continue
                 defeat(key)
                 continue
 
-            # Enemies pursue in the same tick. Reserve every old square plus
-            # each chosen destination to prohibit overlap and head-on swaps.
-            occupied = set(living.values())
-            reserved = set()
-            next_positions = {}
-            for key, pos in living.items():
-                destination = _chase_step(
-                    pos, positions[-1], heading, roles[key],
-                    blocked | (occupied - {pos}) | reserved, width, spawn,
-                )
-                next_positions[key] = destination
-                reserved.add(destination)
-            begin, finish = clock, clock+.18
-            for key, destination in next_positions.items():
-                pos = living[key]
-                if destination != pos:
-                    path, ticks = trails[key]
-                    if begin > ticks[-1]:
-                        path.append(pos)
-                        ticks.append(begin)
-                    path.append(destination)
-                    ticks.append(finish)
-            living.update(next_positions)
+            finish = clock+PURSUIT_STEP
+            advance_enemies(clock, finish)
             pose(positions[-1], finish, angles[-1])
 
         # A bounded pursuit phase guarantees progress even on narrow mazes.
