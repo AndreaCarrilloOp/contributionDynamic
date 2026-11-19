@@ -2,7 +2,7 @@
 
 from bisect import bisect_left, bisect_right
 from collections import deque
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
@@ -26,6 +26,7 @@ MAX_ENEMIES = 3
 INITIAL_ENEMIES = 2
 SPAWN_GAP = .36
 ENEMY_STEP = .18
+PATROL_STEP = .24
 DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
 PALETTES = {
     "dark": {
@@ -166,11 +167,15 @@ def _site(current, blocked, weeks):
     raise RuntimeError("No safe bomb placement")
 
 
+def _reserved_route(positions, times, start, end):
+    """Reserve both endpoints of every movement overlapping an interval."""
+    lo = max(0, bisect_right(times, start)-1)
+    hi = min(len(times), bisect_left(times, end)+1)
+    return set(positions[lo:hi])
+
+
 def _reserved_hero(run, start, end):
-    """Reserve both endpoints of every hero movement overlapping the interval."""
-    lo = max(0, bisect_right(run.times, start)-1)
-    hi = min(len(run.times), bisect_left(run.times, end)+1)
-    return set(run.positions[lo:hi])
+    return _reserved_route(run.positions, run.times, start, end)
 
 
 def _enemy_route(run, blocked, active, source, spawn, end, target, weeks, danger):
@@ -282,6 +287,98 @@ def _initial_enemies(run, blocked, weeks):
     return enemies
 
 
+def _roaming_patrol(run, days, enemy, others):
+    """Plan a mobile survivor in space and time instead of repeating one edge.
+
+    Each interval reserves the hero, other enemies, intact bricks, bombs and
+    flames. Backward reachability guarantees that roaming never leads to a
+    dead end later in its lifetime. Bitsets keep the long calendar inexpensive.
+    """
+    weeks = board_weeks(days)
+    squares = [(x, y) for x in range(weeks) for y in range(ROWS)]
+    bits = {pos: 1 << i for i, pos in enumerate(squares)}
+    full = (1 << len(squares))-1
+    top = sum(bits[x, 0] for x in range(weeks))
+    bottom = sum(bits[x, ROWS-1] for x in range(weeks))
+
+    def neighbors(mask):
+        # Include waiting, and suppress vertical wrap between columns.
+        return (mask | (mask << ROWS) | (mask >> ROWS)
+                | ((mask & ~bottom) << 1) | ((mask & ~top) >> 1)) & full
+
+    clearing = {pos: FIRST/2 for pos in ((d.week, d.weekday) for d in run.entry)}
+    clearing.update({(d.week, d.weekday): event.clear
+                     for event in run.events for d in event.hits})
+    standing = sum(bits[d.week, d.weekday] for d in days if d.count)
+    releases = sorted((tick, bits[pos]) for pos, tick in clearing.items())
+    release = 0
+    event_clears = [event.clear for event in run.events]
+    steps = int((enemy.end-enemy.spawn-.10)/PATROL_STEP)
+    if steps < 1:
+        return enemy
+    times = [enemy.spawn+i*PATROL_STEP for i in range(steps+1)]
+    safe = []
+    for start, end in zip(times, [*times[1:], enemy.end], strict=True):
+        while release < len(releases) and releases[release][0] <= start:
+            standing &= ~releases[release][1]
+            release += 1
+        forbidden = _reserved_hero(run, start, end)
+        for i in range(bisect_left(event_clears, start), len(run.events)):
+            event = run.events[i]
+            if event.plant > end:
+                break
+            forbidden.add(event.center)
+            if event.hit <= end:
+                forbidden.update(event.cross)
+        for other in others:
+            if other.spawn <= end and other.end >= start:
+                forbidden.update(_reserved_route(
+                    other.route, other.times, max(start, other.spawn), min(end, other.end),
+                ))
+        occupied = standing
+        for pos in forbidden:
+            occupied |= bits.get(pos, 0)
+        safe.append(full & ~occupied)
+
+    # Any chosen square can reach another safe square on every future tick.
+    viable = safe.copy()
+    for i in range(len(safe)-2, -1, -1):
+        viable[i] = safe[i] & neighbors(safe[i] & viable[i+1])
+    current = enemy.route[0]
+    if not viable[0] & bits[current]:
+        return enemy  # Preserve the previously validated legacy route.
+
+    route = [current]
+    visits = {current: 1}
+    for i in range(len(times)-1):
+        allowed = safe[i] & viable[i+1]
+        choices = [pos for pos in (current, *_neighbors(current, weeks))
+                   if allowed & bits[pos]]
+        previous = route[-2] if len(route) > 1 else None
+        hero = run.positions[max(0, bisect_right(run.times, times[i+1])-1)]
+        destination = min(choices, key=lambda pos: (
+            pos == current, pos == previous,
+            visits.get(pos, 0), abs(pos[0]-hero[0])+abs(pos[1]-hero[1]), pos,
+        ))
+        visits[destination] = visits.get(destination, 0)+1
+        route.append(destination)
+        current = destination
+    if len(set(route)) < 2:
+        return enemy
+    return replace(enemy, route=tuple(route), times=tuple(times))
+
+
+def _roam_survivors(run, days, enemies):
+    # Keep existing birth and defeat schedules. Reserve other actors while
+    # extending each survivor, including survivors already updated here.
+    result = list(enemies)
+    for i, enemy in enumerate(result):
+        if not enemy.defeated:
+            others = result[:i]+result[i+1:]
+            result[i] = _roaming_patrol(run, days, enemy, others)
+    return tuple(result)
+
+
 def plan_enemies(run: Run, days: tuple[Day, ...]) -> tuple[Enemy, ...]:
     """Start with a small patrol; release replacements after damage and flame clearance.
 
@@ -356,7 +453,7 @@ def plan_enemies(run: Run, days: tuple[Day, ...]) -> tuple[Enemy, ...]:
             enemies.append(Enemy(index, len(enemies) % 3, source, tuple(positions),
                                  tuple(times), spawn, end, hit_event))
             last_spawn = spawn
-    return tuple(enemies)
+    return _roam_survivors(run, days, enemies)
 
 
 def plan_run(days: tuple[Day, ...]) -> Run | None:

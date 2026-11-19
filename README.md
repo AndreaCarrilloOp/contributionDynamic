@@ -25,7 +25,7 @@ One golden tank navigates destructible contribution bricks and faces staggered s
 
 ### GitBlast
 
-A pixel-art bomber clears a stone maze with cross-shaped blasts and moving enemy patrols.
+A pixel-art bomber clears a stone maze with cross-shaped blasts and roaming enemies that explore newly opened corridors while avoiding the flames.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">

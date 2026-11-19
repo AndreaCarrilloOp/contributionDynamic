@@ -10,9 +10,14 @@ from contribution_dynamic.scenarios.blast import (
     INITIAL_ENEMIES,
     LEFT,
     MAX_ENEMIES,
+    PATROL_STEP,
     SPAWN_GAP,
     STEP,
     TOP,
+    Enemy,
+    Run,
+    _reserved_route,
+    _roaming_patrol,
     blast_cross,
     board_weeks,
     plan_blasts,
@@ -156,11 +161,13 @@ def test_enemies_spawn_after_damage_and_only_one_at_a_time(dense):
         assert all(0 <= x < board_weeks(days) and 0 <= y < 7 for x, y in enemy.route)
         assert all(abs(a[0]-b[0])+abs(a[1]-b[1]) <= 1
                    for a, b in zip(enemy.route, enemy.route[1:]))
-        cleared = set(run.entry) if enemy.spawn else set()
-        for prior in run.events[:enemy.event+1]:
-            cleared.update(prior.hits)
-        blocked = {(d.week, d.weekday) for d in days if d.count and d not in cleared}
-        assert not set(enemy.route) & blocked
+        # Roaming survivors may enter a cell after its brick is cleared.
+        cleared = {(d.week, d.weekday): FIRST/2 for d in run.entry}
+        cleared.update({(d.week, d.weekday): event.clear
+                        for event in run.events for d in event.hits})
+        original = {(d.week, d.weekday) for d in days if d.count}
+        for pos, tick in zip(enemy.route, enemy.times, strict=True):
+            assert pos not in original or cleared.get(pos, float("inf")) <= tick
         if enemy.defeated:
             impact = run.events[enemy.hit_event]
             assert enemy.hit_event > enemy.event
@@ -170,9 +177,21 @@ def test_enemies_spawn_after_damage_and_only_one_at_a_time(dense):
             assert abs(enemy.end-(run.cycle-.02)) < 1e-8
         active = [e for e in run.enemies if e.spawn <= enemy.spawn < e.end]
         assert len(active) <= MAX_ENEMIES
-        for other in active:
-            if other != enemy:
-                assert not set(enemy.route) & set(other.route)
+        if enemy.defeated:
+            continue
+        for i, start in enumerate(enemy.times):
+            end = enemy.times[i+1] if i+1 < len(enemy.times) else enemy.end
+            occupied = set(enemy.route[i:i+2])
+            assert not occupied & _reserved_route(run.positions, run.times, start, end)
+            for other in run.enemies:
+                if other == enemy or other.spawn > end or other.end <= start:
+                    continue
+                # A defeated actor is already gone at its exact impact time.
+                if enemy.end <= other.spawn:
+                    continue
+                shared = _reserved_route(other.route, other.times,
+                                         max(start, other.spawn), min(end, other.end))
+                assert not occupied & shared
 
 
 def test_enemy_sprites_and_impacts_in_both_themes():
@@ -216,3 +235,36 @@ def test_initial_patrol_maintains_enemy_continuity():
         assert enemy.spawn < end
         end = max(end, enemy.end)
     assert end >= run.times[-1]
+
+
+def test_roaming_survivor_explores_free_corridors_without_waiting():
+    # A long-lived patrol must not merely oscillate between its first two cells.
+    day = Day(date(2026, 11, 17), 1, 2, 52, 1)
+    run = Run(((52, 0), (52, 0)), (0.0, 12.0), (), 12.0, ())
+    enemy = Enemy(-1, 0, None, ((49, 4), (50, 4)), (0.0, .55), 0.0, 11.98, None)
+    roaming = _roaming_patrol(run, (day,), enemy, ())
+    assert roaming.spawn == enemy.spawn and roaming.end == enemy.end
+    assert len(set(roaming.route)) >= 10
+    assert len(roaming.route) == len(roaming.times)
+    assert all(a != b for a, b in zip(roaming.route, roaming.route[1:]))
+    assert all(abs((b-a)-PATROL_STEP) < 1e-7
+               for a, b in zip(roaming.times, roaming.times[1:]))
+    assert (52, 2) not in roaming.route
+    assert (52, 0) not in roaming.route
+
+
+def test_roaming_patrol_maintains_continuity_and_avoids_active_flames():
+    run = plan_run(demo_calendar())
+    assert run is not None
+    survivors = [enemy for enemy in run.enemies if not enemy.defeated]
+    assert survivors
+    assert any(len(set(enemy.route)) >= 4 for enemy in survivors)
+    for enemy in survivors:
+        for i, start in enumerate(enemy.times):
+            end = enemy.times[i+1] if i+1 < len(enemy.times) else enemy.end
+            occupied = set(enemy.route[i:i+2])
+            for event in run.events:
+                if start <= event.clear and end >= event.plant:
+                    assert event.center not in occupied
+                if start <= event.clear and end >= event.hit:
+                    assert not occupied.intersection(event.cross)
