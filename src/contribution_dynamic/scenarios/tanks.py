@@ -2,7 +2,7 @@
 
 from collections import deque
 from dataclasses import dataclass
-from math import atan2, cos, degrees, radians, sin
+from math import atan2, cos, degrees, hypot, radians, sin
 
 from contribution_dynamic.animation import track
 from contribution_dynamic.calendar import Day, board_weeks, contribution_level
@@ -24,7 +24,7 @@ CHASE_ROUNDS = 10
 FIRE_RANGE = 5
 SPAWN_RADIUS = 2
 PROJECTILE_SPEED = 150
-DAMAGE_INTERVAL = 20
+SHIELD_RADIUS = 8.5
 ROLES = ("hunter", "ambusher", "flanker")
 PALETTES = {
     "dark": {
@@ -313,7 +313,7 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
                     evade = min(sidesteps)
                     route, _ = _approach(evade, obstacles, {target}, width, spawn)
                 # Turn the hull first; the enemy fires during the maneuver.
-                counter = clock+.17
+                counter = clock+.22
                 counter_hit = counter+_flight(source, target)
                 walk((source, evade), turn_time=.10, move_time=.16)
                 pose(evade, max(clock+.04, counter_hit+.08), angles[-1])
@@ -323,8 +323,11 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
             else:
                 turn(target)
                 counter = clock+.04
-                counter_hit = counter+_flight(source, target)
-                outcome = "damage" if (enemy+1) % DAMAGE_INTERVAL == 0 else "shield"
+                # No safe escape: intercept the shell outside the hull.
+                outcome = "shield"
+                counter_hit = counter+max(
+                    .12, (_distance(source, target)*STEP-7-SHIELD_RADIUS)/PROJECTILE_SPEED,
+                )
                 pose(source, counter_hit+.08, angles[-1])
         turn(target)
         flight = _flight(source, target)
@@ -513,7 +516,9 @@ def _tank_sprite(p: dict, side: str = "hero") -> list[str]:
 
 
 def _projectile(origin, target, fire, hit, cycle, p, side):
-    muzzle = _toward(origin, target, 7)
+    # A nearby protective barrier may be closer than the usual cannon tip.
+    distance = hypot(target[0]-origin[0], target[1]-origin[1])
+    muzzle = _toward(origin, target, min(7, max(0, distance-1)))
     return [
         f'<g data-projectile="{side}" opacity="0" transform="translate({_position(muzzle)})">',
         track("opacity", [0, 1, 1, 0], [fire-.01, fire, hit-.01, hit], cycle),
@@ -542,12 +547,6 @@ def _explosion(point, hit, cycle, p, radius=7):
 
 def _hero(battle, p):
     positions = [_position(_center(*pos)) for pos in battle.positions]
-    damage, ticks = [1], [0.0]
-    for attack in battle.attacks:
-        if attack.counter_outcome == "damage":
-            t = attack.counter_hit
-            damage.extend((1, .3, 1, .45, 1))
-            ticks.extend((t-.01, t, t+.045, t+.09, t+.15))
     return [
         f'<g data-tank="hero" transform="translate({positions[0]})">',
         track("transform", positions, battle.times, battle.cycle, transform=True),
@@ -555,7 +554,6 @@ def _hero(battle, p):
         track("transform", [f"{a:.2f}" for a in battle.angles], battle.times,
               battle.cycle, transform=True).replace('type="translate"', 'type="rotate"'),
         '<g data-tank-body="hero">',
-        *([track("opacity", damage, ticks, battle.cycle)] if len(ticks) > 1 else []),
         *_tank_sprite(p, "hero"),
         '</g>',
         '</g></g>',
@@ -593,22 +591,31 @@ def _combat(attack, cycle, p):
     parts = [f'<g data-shot="{label}" data-distance="{distance}">']
     if attack.enemy is not None:
         counter_origin = _center(*attack.counter_target)
-        parts.extend(_projectile(target, counter_origin, attack.counter,
-                                 attack.counter_hit, cycle, p, "enemy"))
         outcome = attack.counter_outcome
+        impact = (_toward(counter_origin, target, SHIELD_RADIUS)
+                  if outcome == "shield" else counter_origin)
+        parts.extend(_projectile(target, impact, attack.counter,
+                                 attack.counter_hit, cycle, p, "enemy"))
         parts.append(f'<g data-counter-outcome="{outcome}">')
         if outcome == "shield":
+            # Activate protection before launch, then dissipate at interception.
             parts.extend([
-                f'<circle cx="{counter_origin[0]}" cy="{counter_origin[1]}" r="7" fill="none" '
-                f'stroke="{p["shield"]}" stroke-width="1.4" opacity="0">',
-                track("opacity", [0, 1, 0],
-                      [attack.counter_hit-.02, attack.counter_hit, attack.counter_hit+.16],
+                f'<circle cx="{counter_origin[0]}" cy="{counter_origin[1]}" '
+                f'r="{SHIELD_RADIUS}" fill="none" stroke="{p["shield"]}" '
+                'stroke-width="1" opacity="0" data-protection="true">',
+                track("opacity", [0, .65, .65, 0],
+                      [attack.counter-.035, attack.counter, attack.counter_hit,
+                       attack.counter_hit+.12], cycle),
+                '</circle>',
+                f'<circle cx="{impact[0]:.3f}" cy="{impact[1]:.3f}" r="2" '
+                f'fill="{p["core"]}" opacity="0">',
+                track("opacity", [0, .9, 0],
+                      [attack.counter_hit-.01, attack.counter_hit, attack.counter_hit+.10],
                       cycle),
                 '</circle>',
             ])
         else:
-            radius = 4 if outcome == "miss" else 7
-            parts.extend(_explosion(counter_origin, attack.counter_hit, cycle, p, radius))
+            parts.extend(_explosion(counter_origin, attack.counter_hit, cycle, p, 4))
         parts.append('</g>')
     parts.extend(_projectile(origin, target, attack.fire, attack.hit, cycle, p, "hero"))
     parts.extend(_explosion(target, attack.hit, cycle, p,

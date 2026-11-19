@@ -1,14 +1,15 @@
 from dataclasses import replace
 from datetime import date
+from math import hypot
 from xml.etree import ElementTree
 
 from contribution_dynamic.calendar import Day, demo_calendar
 from contribution_dynamic.scenarios.tanks import (
-    DAMAGE_INTERVAL,
     FIRE_RANGE,
     LEFT,
     MAX_ENEMIES,
     PROJECTILE_SPEED,
+    SHIELD_RADIUS,
     SPAWN_GAP,
     SPAWN_RADIUS,
     STEP,
@@ -197,8 +198,9 @@ def test_both_sides_fire_across_multiple_cells():
     for attack in ranged:
         assert attack.counter < attack.counter_hit < attack.fire < attack.hit
         distance = sum(abs(a-b) for a, b in zip(attack.counter_target, attack.target))
+        protection = SHIELD_RADIUS if attack.counter_outcome == "shield" else 0
         assert abs(attack.counter_hit-attack.counter
-                   - max(.12, (distance*STEP-7)/PROJECTILE_SPEED)) < 1e-6
+                   - max(.12, (distance*STEP-7-protection)/PROJECTILE_SPEED)) < 1e-6
 
 
 def test_no_enemy_spawns_after_the_last_brick_is_destroyed():
@@ -208,7 +210,7 @@ def test_no_enemy_spawns_after_the_last_brick_is_destroyed():
     assert not battle.enemies
 
 
-def test_counterfire_is_evaded_and_real_damage_is_rare():
+def test_counterfire_is_evaded_or_blocked_without_damage():
     for days in (demo_calendar(), tuple(replace(d, count=1) for d in demo_calendar())):
         battle = plan_battle(days)
         assert battle is not None
@@ -216,9 +218,7 @@ def test_counterfire_is_evaded_and_real_damage_is_rare():
         assert counters
         missed = [a for a in counters if a.counter_outcome == "miss"]
         assert missed
-        assert sum(a.counter_outcome == "damage" for a in counters) <= (
-            len(counters)//DAMAGE_INTERVAL
-        )
+        assert all(a.counter_outcome in {"miss", "shield"} for a in counters)
         assert any(a.source != a.counter_target for a in missed)
         for attack in missed:
             assert attack.evade is not None
@@ -243,6 +243,23 @@ def test_render_counterfire_outcomes_match_the_simulation():
         root = ElementTree.fromstring(render_tanks(days, theme))
         outcomes = root.findall(".//s:g[@data-counter-outcome]", NS)
         assert [node.attrib["data-counter-outcome"] for node in outcomes] == expected
+        assert set(expected) <= {"miss", "shield"}
+        hero = root.find(".//s:g[@data-tank-body='hero']", NS)
+        assert hero is not None
+        assert hero.find("s:animate[@attributeName='opacity']", NS) is None
+        for attack in battle.attacks:
+            if attack.counter_outcome != "shield":
+                continue
+            group = root.find(f".//s:g[@data-shot='{attack.enemy}']", NS)
+            assert group is not None
+            shell = group.find("s:g[@data-projectile='enemy']/s:animateTransform", NS)
+            assert shell is not None
+            values = shell.attrib["values"].split(";")
+            x, y = map(float, values[-1].split())
+            cx = LEFT + attack.counter_target[0]*STEP + 5
+            cy = TOP + attack.counter_target[1]*STEP + 5
+            assert abs(hypot(x-cx, y-cy)-SHIELD_RADIUS) < .002
+            assert group.find(".//s:circle[@data-protection='true']", NS) is not None
 
 
 def test_enemy_reinforcements_overlap_existing_opponents():
