@@ -25,7 +25,6 @@
 </g>
 <g id="calendar">
 <g id="calendar-padding" aria-hidden="true">
-<rect x="723" y="90" width="10" height="10" rx="1" fill="#26352e" data-placeholder="true"/>
 <rect x="723" y="103" width="10" height="10" rx="1" fill="#26352e" data-placeholder="true"/>
 <rect x="723" y="116" width="10" height="10" rx="1" fill="#26352e" data-placeholder="true"/>
 </g>
@@ -671,9 +670,9 @@
 <rect x="437" y="77" width="10" height="10" rx="1" fill="#26352e" data-date="2026-06-17" data-level="0">
 <title>2026-06-17: 0 contributions</title>
 </rect>
-<rect x="437" y="90" width="10" height="10" rx="1" fill="#acbca7" data-date="2026-06-18" data-level="4">
+<rect x="437" y="90" width="10" height="10" rx="1" fill="#8b9e8c" data-date="2026-06-18" data-level="3">
 <title>2026-06-18: 17 contributions</title>
-<animate attributeName="fill" values="#acbca7;#26352e;#acbca7" keyTimes="0;0.017738946;1" dur="37.77s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#8b9e8c;#26352e;#8b9e8c" keyTimes="0;0.017738946;1" dur="37.77s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="437" y="103" width="10" height="10" rx="1" fill="#26352e" data-date="2026-06-19" data-level="0">
 <title>2026-06-19: 0 contributions</title>
@@ -1123,9 +1122,9 @@
 <title>2026-11-06: 8 contributions</title>
 <animate attributeName="fill" values="#6c8174;#26352e;#6c8174" keyTimes="0;0.446386021;1" dur="37.77s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="116" width="10" height="10" rx="1" fill="#acbca7" data-date="2026-11-07" data-level="4">
+<rect x="697" y="116" width="10" height="10" rx="1" fill="#8b9e8c" data-date="2026-11-07" data-level="3">
 <title>2026-11-07: 17 contributions</title>
-<animate attributeName="fill" values="#acbca7;#26352e;#acbca7" keyTimes="0;0.414879534;1" dur="37.77s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#8b9e8c;#26352e;#8b9e8c" keyTimes="0;0.414879534;1" dur="37.77s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="710" y="38" width="10" height="10" rx="1" fill="#26352e" data-date="2026-11-08" data-level="0">
 <title>2026-11-08: 0 contributions</title>
@@ -1160,8 +1159,11 @@
 <animate attributeName="fill" values="#acbca7;#26352e;#acbca7" keyTimes="0;0.588297591;1" dur="37.77s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="77" width="10" height="10" rx="1" fill="#acbca7" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 69 contributions</title>
+<title>2026-11-18: 70 contributions</title>
 <animate attributeName="fill" values="#acbca7;#26352e;#acbca7" keyTimes="0;0.515753243;1" dur="37.77s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="723" y="90" width="10" height="10" rx="1" fill="#26352e" data-date="2026-11-19" data-level="0">
+<title>2026-11-19: 0 contributions</title>
 </rect>
 </g>
 <g id="brick-mortar">
@@ -1721,22 +1723,22 @@
 <rect x="425.5" y="62.5" width="7" height="13" rx="1" fill="#e38846" opacity=".9"/>
 <path d="M429.0 62.5V75.5" stroke="#fff0b5" stroke-width="2.4"/>
 </g>
-<rect x="441.0" y="94.0" width="2" height="2" fill="#acbca7" opacity="0">
+<rect x="441.0" y="94.0" width="2" height="2" fill="#8b9e8c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017738946;0.018797988;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="441.0;441.0;435.0;435.0" keyTimes="0;0.017738946;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="94.0;94.0;87.0;87.0" keyTimes="0;0.017738946;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="441.0" y="94.0" width="2" height="2" fill="#acbca7" opacity="0">
+<rect x="441.0" y="94.0" width="2" height="2" fill="#8b9e8c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017738946;0.018797988;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="441.0;441.0;449.0;449.0" keyTimes="0;0.017738946;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="94.0;94.0;88.0;88.0" keyTimes="0;0.017738946;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="441.0" y="94.0" width="2" height="2" fill="#acbca7" opacity="0">
+<rect x="441.0" y="94.0" width="2" height="2" fill="#8b9e8c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017738946;0.018797988;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="441.0;441.0;436.0;436.0" keyTimes="0;0.017738946;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="94.0;94.0;102.0;102.0" keyTimes="0;0.017738946;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="441.0" y="94.0" width="2" height="2" fill="#acbca7" opacity="0">
+<rect x="441.0" y="94.0" width="2" height="2" fill="#8b9e8c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017738946;0.018797988;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="441.0;441.0;448.0;448.0" keyTimes="0;0.017738946;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="94.0;94.0;103.0;103.0" keyTimes="0;0.017738946;0.028858883;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
@@ -2337,22 +2339,22 @@
 <rect x="685.5" y="88.5" width="7" height="13" rx="1" fill="#e38846" opacity=".9"/>
 <path d="M689.0 88.5V101.5" stroke="#fff0b5" stroke-width="2.4"/>
 </g>
-<rect x="701.0" y="120.0" width="2" height="2" fill="#acbca7" opacity="0">
+<rect x="701.0" y="120.0" width="2" height="2" fill="#8b9e8c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.414879534;0.415938576;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="701.0;701.0;695.0;695.0" keyTimes="0;0.414879534;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="120.0;120.0;113.0;113.0" keyTimes="0;0.414879534;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="701.0" y="120.0" width="2" height="2" fill="#acbca7" opacity="0">
+<rect x="701.0" y="120.0" width="2" height="2" fill="#8b9e8c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.414879534;0.415938576;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="701.0;701.0;709.0;709.0" keyTimes="0;0.414879534;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="120.0;120.0;114.0;114.0" keyTimes="0;0.414879534;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="701.0" y="120.0" width="2" height="2" fill="#acbca7" opacity="0">
+<rect x="701.0" y="120.0" width="2" height="2" fill="#8b9e8c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.414879534;0.415938576;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="701.0;701.0;696.0;696.0" keyTimes="0;0.414879534;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="120.0;120.0;128.0;128.0" keyTimes="0;0.414879534;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="701.0" y="120.0" width="2" height="2" fill="#acbca7" opacity="0">
+<rect x="701.0" y="120.0" width="2" height="2" fill="#8b9e8c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.414879534;0.415938576;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="701.0;701.0;708.0;708.0" keyTimes="0;0.414879534;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="120.0;120.0;129.0;129.0" keyTimes="0;0.414879534;0.42599947;1" dur="37.77s" calcMode="linear" repeatCount="indefinite"/>

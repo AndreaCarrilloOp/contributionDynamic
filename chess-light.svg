@@ -101,7 +101,6 @@
 </g>
 <g id="calendar">
 <g id="calendar-padding" aria-hidden="true">
-<rect x="723" y="90" width="13" height="13" rx="0" fill="#d5dfc8" data-placeholder="true"/>
 <rect x="723" y="103" width="13" height="13" rx="0" fill="#bacbb0" data-placeholder="true"/>
 <rect x="723" y="116" width="13" height="13" rx="0" fill="#d5dfc8" data-placeholder="true"/>
 </g>
@@ -533,7 +532,7 @@
 <title>2026-06-16: 0 contributions</title></rect>
 <rect x="437" y="77" width="13" height="13" fill="#bacbb0" data-date="2026-06-17" data-level="0">
 <title>2026-06-17: 0 contributions</title></rect>
-<rect x="437" y="90" width="13" height="13" fill="#d5dfc8" data-date="2026-06-18" data-level="4">
+<rect x="437" y="90" width="13" height="13" fill="#d5dfc8" data-date="2026-06-18" data-level="3">
 <title>2026-06-18: 17 contributions</title></rect>
 <rect x="437" y="103" width="13" height="13" fill="#bacbb0" data-date="2026-06-19" data-level="0">
 <title>2026-06-19: 0 contributions</title></rect>
@@ -817,7 +816,7 @@
 <title>2026-11-05: 11 contributions</title></rect>
 <rect x="697" y="103" width="13" height="13" fill="#bacbb0" data-date="2026-11-06" data-level="2">
 <title>2026-11-06: 8 contributions</title></rect>
-<rect x="697" y="116" width="13" height="13" fill="#d5dfc8" data-date="2026-11-07" data-level="4">
+<rect x="697" y="116" width="13" height="13" fill="#d5dfc8" data-date="2026-11-07" data-level="3">
 <title>2026-11-07: 17 contributions</title></rect>
 <rect x="710" y="38" width="13" height="13" fill="#bacbb0" data-date="2026-11-08" data-level="0">
 <title>2026-11-08: 0 contributions</title></rect>
@@ -840,7 +839,9 @@
 <rect x="723" y="64" width="13" height="13" fill="#d5dfc8" data-date="2026-11-17" data-level="4">
 <title>2026-11-17: 70 contributions</title></rect>
 <rect x="723" y="77" width="13" height="13" fill="#bacbb0" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 69 contributions</title></rect>
+<title>2026-11-18: 70 contributions</title></rect>
+<rect x="723" y="90" width="13" height="13" fill="#d5dfc8" data-date="2026-11-19" data-level="0">
+<title>2026-11-19: 0 contributions</title></rect>
 </g>
 <g id="move-highlights">
 <rect x="437.0" y="129.0" width="13" height="13" fill="#947232" opacity="0" data-move="queen">
@@ -1217,10 +1218,10 @@
 </rect>
 </g>
 <g id="contribution-pieces">
-<g data-piece="contribution" data-kind="rook" data-piece-date="2026-06-18" data-level="4" transform="translate(443.5 96.5) scale(.75)" opacity="1">
+<g data-piece="contribution" data-kind="bishop" data-piece-date="2026-06-18" data-level="3" transform="translate(443.5 96.5) scale(.75)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.014745612;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-rook" xlink:href="#chess-rook"/></g></g>
+<use href="#chess-bishop" xlink:href="#chess-bishop"/></g></g>
 <g data-piece="contribution" data-kind="pawn" data-piece-date="2026-08-08" data-level="1" transform="translate(534.5 122.5) scale(.75)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.047941049;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
@@ -1408,13 +1409,13 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.562188442;0.651218165;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
-<circle data-reserve="2026-11-07" cx="703.5" cy="122.5" r="2.7" fill="#4e6c4b" opacity=".8">
+<circle data-reserve="2026-11-07" cx="703.5" cy="122.5" r="2.1" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.575295653;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="rook" data-piece-date="2026-11-07" data-level="4" transform="translate(703.5 122.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="bishop" data-piece-date="2026-11-07" data-level="3" transform="translate(703.5 122.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.575295653;0.664325376;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-rook" xlink:href="#chess-rook"/></g></g>
+<use href="#chess-bishop" xlink:href="#chess-bishop"/></g></g>
 </g>
 <g id="attackers">
 <g data-attacker="queen" transform="translate(443.5 135.5)">

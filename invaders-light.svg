@@ -25,7 +25,6 @@
 </g>
 <g id="calendar">
 <g id="calendar-padding" aria-hidden="true">
-<rect x="723" y="90" width="10" height="10" rx="1" fill="#e5ebf5" data-placeholder="true"/>
 <rect x="723" y="103" width="10" height="10" rx="1" fill="#e5ebf5" data-placeholder="true"/>
 <rect x="723" y="116" width="10" height="10" rx="1" fill="#e5ebf5" data-placeholder="true"/>
 </g>
@@ -671,9 +670,9 @@
 <rect x="437" y="77" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-06-17" data-level="0">
 <title>2026-06-17: 0 contributions</title>
 </rect>
-<rect x="437" y="90" width="10" height="10" rx="1" fill="#f5e8ce" data-date="2026-06-18" data-level="4">
+<rect x="437" y="90" width="10" height="10" rx="1" fill="#f4dcea" data-date="2026-06-18" data-level="3">
 <title>2026-06-18: 17 contributions</title>
-<animate attributeName="fill" values="#f5e8ce;#e5ebf5;#f5e8ce;#f5e8ce" keyTimes="0;0.026722079;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4dcea;#e5ebf5;#f4dcea;#f4dcea" keyTimes="0;0.026722079;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="437" y="103" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-06-19" data-level="0">
 <title>2026-06-19: 0 contributions</title>
@@ -1123,9 +1122,9 @@
 <title>2026-11-06: 8 contributions</title>
 <animate attributeName="fill" values="#dce9fb;#e5ebf5;#dce9fb;#dce9fb" keyTimes="0;0.826824099;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="116" width="10" height="10" rx="1" fill="#f5e8ce" data-date="2026-11-07" data-level="4">
+<rect x="697" y="116" width="10" height="10" rx="1" fill="#f4dcea" data-date="2026-11-07" data-level="3">
 <title>2026-11-07: 17 contributions</title>
-<animate attributeName="fill" values="#f5e8ce;#e5ebf5;#f5e8ce;#f5e8ce" keyTimes="0;0.51449795;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f4dcea;#e5ebf5;#f4dcea;#f4dcea" keyTimes="0;0.51449795;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="710" y="38" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-11-08" data-level="0">
 <title>2026-11-08: 0 contributions</title>
@@ -1160,8 +1159,11 @@
 <animate attributeName="fill" values="#f5e8ce;#e5ebf5;#f5e8ce;#f5e8ce" keyTimes="0;0.729485462;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="77" width="10" height="10" rx="1" fill="#f5e8ce" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 69 contributions</title>
+<title>2026-11-18: 70 contributions</title>
 <animate attributeName="fill" values="#f5e8ce;#e5ebf5;#f5e8ce;#f5e8ce" keyTimes="0;0.436465292;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="723" y="90" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-11-19" data-level="0">
+<title>2026-11-19: 0 contributions</title>
 </rect>
 </g>
 <path d="M42 153H737" stroke="#c5d1e5" stroke-width="1" stroke-dasharray="3 4"/>
@@ -1197,9 +1199,9 @@
 </defs>
 <g id="invaders" shape-rendering="crispEdges">
 <animateTransform attributeName="transform" type="translate" values="0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;0 0;0 0" keyTimes="0;0.028796754;0.056633616;0.084470478;0.111347448;0.137264527;0.163181605;0.188138792;0.212136086;0.236133381;0.259170784;0.281248296;0.303325807;0.324443426;0.344601154;0.364758882;0.383956718;0.402194662;0.419472714;0.436750766;0.453068927;0.469387087;0.485705248;0.501063516;0.516421785;0.530820162;0.545218539;0.559616916;0.573055401;0.586493886;0.598972479;0.611451073;0.623929666;0.635448368;0.646967069;0.658485771;0.670004472;0.680563282;0.691122092;0.701680901;0.711279819;0.720878737;0.730477655;0.739116681;0.746795816;0.75447495;0.762154084;0.769833219;0.777512353;0.785191488;0.79191073;0.797670081;0.803429432;0.809188782;0.814948133;0.820707484;0.826466835;0.832226185;0.837025644;0.840865212;0.844704779;0.848544346;0.852383913;0.85622348;0.860063047;0.863902615;0.867742182;0.871581749;0.875351506;0.879121263;0.88289102;0.886660776;0.890430533;0.89420029;0.897970047;0.901739804;0.905509561;0.909279318;0.913049074;0.916818831;0.920588588;0.924358345;0.928128102;0.931897859;0.935667616;0.939437373;0.943207129;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<g data-invader="2026-06-18" data-level="4" transform="translate(442.0 95.0)" opacity="1">
+<g data-invader="2026-06-18" data-level="3" transform="translate(442.0 95.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.026722079;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
+<use href="#invader-sprite-3" xlink:href="#invader-sprite-3"/>
 </g>
 <g data-invader="2026-09-02" data-level="2" transform="translate(585.0 82.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.070855799;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
@@ -1253,9 +1255,9 @@
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.478997481;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
-<g data-invader="2026-11-07" data-level="4" transform="translate(702.0 121.0)" opacity="1">
+<g data-invader="2026-11-07" data-level="3" transform="translate(702.0 121.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.51449795;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
+<use href="#invader-sprite-3" xlink:href="#invader-sprite-3"/>
 </g>
 <g data-invader="2026-09-17" data-level="1" transform="translate(611.0 95.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.550949328;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
@@ -1336,7 +1338,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(442.0 95.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.026407932;0.026722079;0.028135737;0.030491835;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#b06c0b"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#b52783"/>
 <path d="M-2 -2h4v4h-4Z" fill="#f79228"/>
 </g>
 <g data-laser="enemy" transform="translate(586.0 84.8)" opacity="0">
@@ -1606,7 +1608,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(701.0 122.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.514183804;0.51449795;0.515911609;0.518267707;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#b06c0b"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#b52783"/>
 <path d="M-2 -2h4v4h-4Z" fill="#f79228"/>
 </g>
 <g data-laser="enemy" transform="translate(612.0 97.8)" opacity="0">
