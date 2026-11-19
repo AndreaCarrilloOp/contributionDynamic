@@ -34,12 +34,7 @@ def test_build_assets_selects_scenario_and_theme(tmp_path):
     assert [p.name for p in paths] == ["chess-light.svg"]
 
 
-def test_rejects_experimental_scenario(tmp_path):
+@pytest.mark.parametrize("scenarios", [(), ("unknown",), ("chess", "unknown")])
+def test_rejects_invalid_scenario_selection(tmp_path, scenarios):
     with pytest.raises(ValueError, match="Unknown public scenario"):
-        build_assets(demo_calendar(42, 1), tmp_path, ("motion",))
-
-
-@pytest.mark.parametrize("scenario", ["factory", "abyss"])
-def test_rejects_retired_scenarios(tmp_path, scenario):
-    with pytest.raises(ValueError, match="Unknown public scenario"):
-        build_assets(demo_calendar(42, 1), tmp_path, (scenario,))
+        build_assets(demo_calendar(42, 1), tmp_path, scenarios)

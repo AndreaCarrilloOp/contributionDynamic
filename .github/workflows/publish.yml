@@ -68,14 +68,26 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git rm -r --ignore-unmatch -- demo
+          assets=()
           for scenario in tanks blast chess invaders origami; do
             for theme in dark light; do
-              file="$scenario-$theme.svg"
-              cp "$RUNNER_TEMP/contribution-animations/$file" "$file"
-              git add -- "$file"
+              assets+=("$scenario-$theme.svg")
             done
           done
+          expected="$(printf '%s\n' "${assets[@]}" | sort)"
+          actual="$(find "$RUNNER_TEMP/contribution-animations" -type f -printf '%P\n' | sort)"
+          if [[ "$actual" != "$expected" ]]; then
+            echo "Unexpected or missing SVG assets; publication aborted." >&2
+            exit 1
+          fi
+          for file in "${assets[@]}"; do
+            cp "$RUNNER_TEMP/contribution-animations/$file" "$file"
+            git add -- "$file"
+          done
+          if [[ "$(git ls-files | sort)" != "$expected" ]]; then
+            echo "The output branch must contain exactly the ten official SVGs." >&2
+            exit 1
+          fi
           if git diff --cached --quiet; then
             echo "No changes to publish."
             exit 0

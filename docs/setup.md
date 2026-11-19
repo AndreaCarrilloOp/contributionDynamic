@@ -78,4 +78,4 @@ Replace `YOUR_LOGIN` below with your GitHub username, and `invaders` with the de
 </picture>
 ```
 
-The generated image is separate from GitHub's native calendar. GitHub may cache raw SVGs. The workflow updates daily and supports manual runs; scheduled execution can be delayed by GitHub. Write permissions are needed only by the publication job.
+Use `theme: both` when embedding the automatic dark/light picture above. If generating only one theme, link directly to that SVG instead. The generated image is separate from GitHub's native calendar. GitHub may cache raw SVGs. The workflow updates daily and supports manual runs; scheduled execution can be delayed by GitHub. Write permissions are needed only by the publication job.

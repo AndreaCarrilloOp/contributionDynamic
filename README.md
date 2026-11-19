@@ -10,11 +10,11 @@
 
 ## Animated worlds
 
-Five original scenarios, based on real GitHub contribution data. Each supports dark and light themes, preserves calendar coordinates and runs as a self-contained animated SVG. Previews follow your GitHub appearance settings; use the links below each animation to open either theme directly.
+Five original animated worlds built from real GitHub contributions. Previews adapt to your appearance settings; the links below each animation open either theme directly.
 
 ### GitTanks
 
-One golden tank navigates destructible contribution bricks and faces staggered silver reinforcements. Enemies pursue or patrol during brick clearing and staggered reinforcements. The hero evades incoming fire and safely intercepts shots when cornered, taking no damage.
+A golden tank clears contribution bricks, evades incoming fire and faces a continuous patrol of staggered silver reinforcements.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">
@@ -107,17 +107,17 @@ Pin a reviewed release or commit SHA for production. The action generates files 
 | `output-dir` | `generated` | SVG destination |
 | `signature` | `false` | true, false |
 
-Set both credentials for real contributions. The credential-free mode is retained for local testing only; no synthetic calendar is publicly published.
+Set both the GitHub login and token for real contributions. Credential-free generation is available for local validation; public assets use live data only.
 
 See the [profile setup guide](docs/setup.md) for a scheduled workflow and theme-aware README embedding.
 
 ## Architecture
 
-GitHub GraphQL → calendar model → scenario planner → SVG → publication
+`GitHub GraphQL` → `Calendar` → `Scenario planner` → `SVG` → `Output`
 
 - No runtime dependencies, JavaScript or external sprites.
 - Deterministic motion, preserved dates and activity levels.
-- Ten live assets published in the separate `output` branch.
+- Ten live SVGs in [`output`](https://github.com/AndreaCarrilloOp/contributionDynamic/tree/output).
 - Automated tests, linting, security checks and browser validation.
 
 Animated SVGs require SMIL support. Published images expose dates, contribution counts and levels; review the intended visibility.

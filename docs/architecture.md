@@ -22,7 +22,7 @@ All five renderers share the compact calendar header, month anchors, weekday lab
 
 ## Publication
 
-The reusable composite action and CLI generate selected SVGs from one calendar fetch. Batch generation validates every SVG before writing assets. The daily or manually triggered publishing workflow tests the engine, generates the ten real-calendar SVGs, and uploads them to an isolated publication job. Only that job has repository write permission. The `output` branch contains the public SVGs; the source branch contains no generated animations.
+The reusable composite action and CLI generate selected SVGs from one calendar fetch. Batch generation validates every SVG before writing assets. The daily or manually triggered publishing workflow tests the engine, generates the ten real-calendar SVGs, and uploads them to an isolated publication job. Only that job has repository write permission. The publication job verifies the exact ten-file SVG catalog in both the artifact and the staged `output` tree. Any missing or extra file aborts publication. The source branch contains no generated animations.
 
 Credentials are passed through environment variables. Public output may reveal dates and activity counts; see [Security](../SECURITY.md).
 
