@@ -463,9 +463,11 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
             pose(positions[-1], finish, angles[-1])
 
         # A bounded pursuit phase guarantees progress even on narrow mazes.
+        replenished = False
         while living and (len(living) > 1 or brick_route() is None):
-            if len(living) == 1 and blocked and budget:
+            if len(living) == 1 and blocked and budget and not replenished:
                 deploy(1)
+                replenished = True
             route, target = _approach(
                 positions[-1], blocked | set(living.values()),
                 set(living.values()), width, spawn,

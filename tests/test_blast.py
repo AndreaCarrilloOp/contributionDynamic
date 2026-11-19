@@ -204,3 +204,15 @@ def test_sparse_calendar_has_visible_enemies_before_first_bomb():
     assert len(initial) == INITIAL_ENEMIES
     assert all(e.source is None for e in initial)
     assert all((day.week, day.weekday) not in e.route for e in initial)
+
+
+def test_initial_patrol_maintains_enemy_continuity():
+    run = plan_run(demo_calendar())
+    assert run is not None
+    enemies = sorted(run.enemies, key=lambda e: e.spawn)
+    assert enemies and enemies[0].spawn == 0
+    end = enemies[0].end
+    for enemy in enemies[1:]:
+        assert enemy.spawn < end
+        end = max(end, enemy.end)
+    assert end >= run.times[-1]

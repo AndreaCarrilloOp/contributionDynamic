@@ -218,7 +218,8 @@ def _initial_enemies(run, blocked, weeks):
         route = ()
         chosen = None
         danger = set()
-        for index, event in enumerate(run.events[:4]):
+        # Prefer one persistent initial patrol as the continuity anchor.
+        for index, event in enumerate(run.events[:4] if kind else ()):
             for anchor in anchors:
                 route = _enemy_route(
                     run, blocked, enemies, anchor, 0.0, event.hit,
@@ -249,6 +250,20 @@ def _initial_enemies(run, blocked, weeks):
                 if neighbor is not None:
                     route = (pos, neighbor)
                     break
+        if not route and kind == 0:
+            danger = set()
+            for index, event in enumerate(run.events):
+                for anchor in anchors:
+                    route = _enemy_route(
+                        run, blocked, enemies, anchor, 0.0, event.hit,
+                        set(event.cross)-blocked, weeks, danger,
+                    )
+                    if route:
+                        chosen, end = index, event.hit
+                        break
+                if route:
+                    break
+                danger.update(event.cross)
         if not route:
             continue
         positions = list(route)
@@ -294,6 +309,10 @@ def plan_enemies(run: Run, days: tuple[Day, ...]) -> tuple[Enemy, ...]:
             # Try to intercept a later blast, never cross the earlier flames.
             for later_index in range(index+1, min(index+5, len(run.events))):
                 later = run.events[later_index]
+                # Keep a survivor available through the reinforcement window.
+                if not any(other.end > later.clear+SPAWN_GAP for other in active):
+                    danger.update(later.cross)
+                    continue
                 route = _enemy_route(
                     run, blocked, active, source, spawn, later.hit,
                     set(later.cross)-blocked, weeks, danger,

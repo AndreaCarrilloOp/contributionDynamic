@@ -14,7 +14,7 @@
 
 ### GitTanks
 
-Enemy tanks enter individually at staggered intervals after brick destruction. The hero sidesteps incoming shots wherever a safe escape square exists; shielding is reserved for trapped encounters, and actual damage is rare. A golden retro tank navigates the contribution maze, breaks bricks before entering their cells, and faces up to three silver pursuers at a time. Hunters, ambushers and flankers spawn near standing bricks and navigate open cells with BFS. Both sides fire along clear rows or columns from up to five cells away. The eagle remains a visual base; the original calendar is restored when the tank returns to its starting square.
+Enemy tanks enter individually at staggered intervals after brick destruction. The hero turns into a free corridor to evade shots, then seeks a new firing lane instead of automatically reversing. Reinforcements overlap surviving opponents wherever legal spawn sites permit; shielding and damage remain exceptional. A golden retro tank navigates the contribution maze, breaks bricks before entering their cells, and faces up to three silver pursuers at a time. Hunters, ambushers and flankers spawn near standing bricks and navigate open cells with BFS. Both sides fire along clear rows or columns from up to five cells away. The eagle remains a visual base; the original calendar is restored when the tank returns to its starting square.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">
@@ -25,7 +25,7 @@ Enemy tanks enter individually at staggered intervals after brick destruction. T
 
 ### GitBlast
 
-A pixel-art bomber navigates a subdued stone-brick maze inside the calendar, plants bombs and retreats before cross-shaped explosions. Two ghosts are initially visible wherever safe corridors exist; replacements emerge individually after brick damage and flame clearance, with at most three active enemies. Contribution bricks retain their four activity levels and reset when the hero returns home.
+A pixel-art bomber navigates a subdued stone-brick maze inside the calendar, plants bombs and retreats before cross-shaped explosions. Two ghosts are initially visible wherever safe corridors exist; one patrol stays active to bridge staggered replacements after brick damage, with at most three active enemies. Contribution bricks retain their four activity levels and reset when the hero returns home.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">

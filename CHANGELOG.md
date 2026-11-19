@@ -50,3 +50,4 @@
 - Restore classic GitInvaders stepwise marching, alternating sprite poses, edge descent and progressive acceleration with synchronized impacts.
 - Constrain GitInvaders' retro oscillation and full sprite bounds to each original contribution cell, preserving the arcade timing and synchronized impacts.
 - Add real tank evasions with rare damage and initial Bomberman patrols while preserving staggered replacement spawns.
+- Route tank evasions through oriented movement and alternate firing lanes; retain opponents between reinforcement phases in GitTanks and GitBlast.
