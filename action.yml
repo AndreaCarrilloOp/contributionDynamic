@@ -6,11 +6,11 @@ branding:
   icon: 'activity'
 inputs:
   github-user:
-    description: 'GitHub login; omit to generate deterministic demo data.'
+    description: 'GitHub login; omit only for credential-free testing.'
     required: false
     default: ''
   github-token:
-    description: 'Read-only token for live public contribution data; required with github-user.'
+    description: 'Read-only token for contribution data; required with github-user.'
     required: false
     default: ''
   scenario:

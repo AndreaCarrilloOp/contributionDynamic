@@ -54,7 +54,7 @@ jobs:
             benchmark.json
           if-no-files-found: error
           retention-days: 14
-      - name: Smoke-test composite action with demo data
+      - name: Smoke-test composite action without credentials
         uses: ./
         with:
           output-dir: previews
@@ -66,9 +66,3 @@ jobs:
           expected = {f"{s}-{t}.svg" for s in PUBLISHED_SCENARIOS for t in THEMES}
           assert {p.name for p in Path("previews").glob("*.svg")} == expected
           PY
-      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
-        with:
-          name: demo-previews
-          path: previews/*.svg
-          if-no-files-found: error
-          retention-days: 7

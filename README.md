@@ -8,85 +8,73 @@
   <img src="https://img.shields.io/badge/Python-3.12%2B-203543" alt="Python 3.12+">
 </div>
 
-> Beta development · Prototype scenarios. Animated SVGs require a viewer that supports SMIL. The gallery uses the owner's published calendar; new assets appear after the publishing workflow succeeds.
+## Animated worlds
 
-## Gallery
+Five original scenarios, based on real GitHub contribution data. Each supports dark and light themes, preserves calendar coordinates and runs as a self-contained animated SVG.
 
 ### GitTanks
 
-Enemy tanks enter individually at staggered intervals after brick destruction. The hero turns into a free corridor to evade shots, then seeks a new firing lane instead of automatically reversing. Reinforcements overlap surviving opponents wherever legal spawn sites permit; shielding and damage remain exceptional. A golden retro tank navigates the contribution maze, breaks bricks before entering their cells, and faces up to three silver pursuers at a time. Hunters, ambushers and flankers spawn near standing bricks and navigate open cells with BFS. Both sides fire along clear rows or columns from up to five cells away. The eagle remains a visual base; the original calendar is restored when the tank returns to its starting square.
+One golden tank navigates destructible contribution bricks, evades fire and faces staggered silver reinforcements.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">
   <img alt="GitTanks animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-light.svg" width="100%">
 </picture>
 
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-light.svg)
-
 ### GitBlast
 
-A pixel-art bomber navigates a subdued stone-brick maze inside the calendar, plants bombs and retreats before cross-shaped explosions. Two ghosts are initially visible wherever safe corridors exist; one patrol stays active to bridge staggered replacements after brick damage, with at most three active enemies. Contribution bricks retain their four activity levels and reset when the hero returns home.
+A pixel-art bomber clears a stone maze with cross-shaped blasts and moving enemy patrols.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">
   <img alt="GitBlast animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg" width="100%">
 </picture>
 
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg)
-
 ### GitChess
 
-A team of ivory chess attackers — queen, rook, bishop and knight — takes turns on a quiet sage-green board. Reserve dots encode contribution intensity; only the next four opposing pieces are revealed, reducing visual clutter. Moves follow each attacker's chess geometry, respect friendly and enemy blockers, and restore the calendar after the team returns home.
+Four chess attackers capture level-coded pieces using legal movement geometry and shared occupancy.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg">
   <img alt="GitChess animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg" width="100%">
 </picture>
 
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg)
-
 ### GitInvaders
 
-A single pixel-art ship faces a marching alien formation. Discrete lateral steps, subtle vertical bobbing, alternating poses and progressive acceleration evoke the 1978 arcade cadence. Every alien stays entirely inside its own contribution cell; laser impacts follow the same motion clock.
+A single spaceship defends against aliens that oscillate within their own cells at a progressively faster arcade rhythm.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-dark.svg">
   <img alt="GitInvaders animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-light.svg" width="100%">
 </picture>
 
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-light.svg)
-
 ### GitOrigami
 
-Paper birds fold, fly, and restore the calendar.
+Contribution cells fold into paper birds, fly and return to the calendar.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-dark.svg">
   <img alt="GitOrigami animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-light.svg" width="100%">
 </picture>
 
-[Dark SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-dark.svg) · [Light SVG](https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-light.svg)
-
 ## Quick start
 
-Requires Python 3.12 or newer.
+Requires Python 3.12+ and a GitHub token with read access to the intended contribution data. Set `GITHUB_TOKEN` securely in your environment.
 
 ```sh
 git clone https://github.com/AndreaCarrilloOp/contributionDynamic.git
 cd contributionDynamic
 python -m pip install -e .
-python -m contribution_dynamic batch --output-dir generated
+python -m contribution_dynamic batch --user YOUR_LOGIN --output-dir generated
 ```
 
-The default uses deterministic demo data. To fetch a live calendar, set the `GITHUB_TOKEN` environment variable securely and pass `--user YOUR_LOGIN`.
+Generate a single animation:
 
 ```sh
-python -m contribution_dynamic generate --scenario invaders --theme dark --output invaders.svg
+python -m contribution_dynamic generate --user YOUR_LOGIN --scenario invaders --theme dark --output invaders.svg
 ```
 
 ## GitHub Action
-
-Add the following step to an Ubuntu workflow. Until a release is published, use `@main` for evaluation only; pin a verified release or commit SHA for production.
 
 ```yaml
 - uses: AndreaCarrilloOp/contributionDynamic@main
@@ -98,39 +86,40 @@ Add the following step to an Ubuntu workflow. Until a release is published, use 
     output-dir: generated
 ```
 
-| Input | Default | Options |
-| --- | --- | --- |
-| github-user | empty | GitHub login or demo |
-| github-token | empty | Read-only token for live data |
-| scenario | all | all, tanks, blast, chess, invaders, origami |
-| theme | both | both, dark, light |
-| output-dir | generated | Destination directory |
-| signature | false | true, false |
+Pin a reviewed release or commit SHA for production. The action generates files locally; publication is a separate step.
 
-The action generates SVGs; it does not push changes. See the [setup guide](docs/setup.md) for a complete scheduled profile workflow and theme-aware embedding. Never commit tokens. Public SVGs disclose dates, counts and activity levels.
+| Input | Default | Values |
+| --- | --- | --- |
+| `github-user` | — | GitHub login |
+| `github-token` | — | Read-only token |
+| `scenario` | `all` | all, tanks, blast, chess, invaders, origami |
+| `theme` | `both` | both, dark, light |
+| `output-dir` | `generated` | SVG destination |
+| `signature` | `false` | true, false |
+
+Set both credentials for real contributions. The credential-free mode is retained for local testing only; no synthetic calendar is publicly published.
+
+See the [profile setup guide](docs/setup.md) for a scheduled workflow and theme-aware README embedding.
 
 ## Architecture
 
-GraphQL collector → calendar model → scenario simulation → compact SVG → publication
+GitHub GraphQL → calendar model → scenario planner → SVG → publication
 
-- Dependency-free runtime engine and deterministic animation.
-- Calendar positions and GitHub intensity levels preserved.
-- Consistent month and Mon/Wed/Fri labels aligned to calendar columns and rows in both themes.
-- Compact shared header and no scenario footer by default; use `--signature` on either CLI command or `signature: 'true'` in the action to add a subtle project signature.
-- Complete seven-row grid, including visual-only placeholders for slots omitted by GitHub.
-- Declarative SVG motion, no JavaScript or external sprites.
-- Shared timeline compaction and batch generation from a single API request.
+- No runtime dependencies, JavaScript or external sprites.
+- Deterministic motion, preserved dates and activity levels.
+- Ten live assets published in the separate `output` branch.
+- Automated tests, linting, security checks and browser validation.
 
-GitChess models team movement and blocking, not a full chess game. GitOrigami is a geometric animation, not a physical folding solver.
+Animated SVGs require SMIL support. Published images expose dates, contribution counts and levels; review the intended visibility.
 
 ## Development
 
-All development and optional browser dependencies are defined in `pyproject.toml`. Generated files belong in `generated/` or the `output` branch, not in the source tree.
-
 ```sh
 python -m pip install -e ".[dev]"
-python -m pytest -v
+python -m pytest
 python -m ruff check .
 ```
 
-[Architecture](docs/architecture.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Changelog](CHANGELOG.md) · [MIT license](LICENSE)
+Generated test outputs and quality reports are not committed.
+
+[Architecture](docs/architecture.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [MIT license](LICENSE)

@@ -16,8 +16,8 @@ jobs:
         with:
           scenario: chess
           theme: light
-          output-dir: demo
-      - run: test -s demo/chess-light.svg && test ! -e demo/chess-dark.svg
+          output-dir: /tmp/contribution-fixture
+      - run: test -s /tmp/contribution-fixture/chess-light.svg && test ! -e /tmp/contribution-fixture/chess-dark.svg
       - uses: AndreaCarrilloOp/contributionDynamic@main
         with:
           github-user: ${{ github.repository_owner }}

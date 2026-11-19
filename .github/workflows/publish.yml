@@ -35,11 +35,10 @@ jobs:
           CONTRIBUTION_USER: ${{ github.repository_owner }}
         run: |
           python -m contribution_dynamic batch --user "$CONTRIBUTION_USER" --output-dir generated
-          python -m contribution_dynamic batch --output-dir generated/demo
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         with:
           name: published-animations
-          path: generated/
+          path: generated/*.svg
           if-no-files-found: error
           retention-days: 7
 
@@ -69,19 +68,12 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for retired in motion factory abyss; do
-            for theme in dark light; do
-              git rm --ignore-unmatch -- "$retired-$theme.svg" "demo/$retired-$theme.svg"
-            done
-          done
+          git rm -r --ignore-unmatch -- demo
           for scenario in tanks blast chess invaders origami; do
             for theme in dark light; do
               file="$scenario-$theme.svg"
               cp "$RUNNER_TEMP/contribution-animations/$file" "$file"
               git add -- "$file"
-              mkdir -p demo
-              cp "$RUNNER_TEMP/contribution-animations/demo/$file" "demo/$file"
-              git add -- "demo/$file"
             done
           done
           if git diff --cached --quiet; then
