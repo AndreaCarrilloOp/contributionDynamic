@@ -69,6 +69,7 @@ class Attack:
     spawn: float | None = None
     evade: Square | None = None
     counter_outcome: str | None = None
+    counter_target: Square | None = None
 
 
 @dataclass(frozen=True)
@@ -181,8 +182,8 @@ def _flight(source: Square, target: Square) -> float:
     return max(.12, (_distance(source, target)*STEP-7)/PROJECTILE_SPEED)
 
 
-def _enemy_positions(current, blocked, width, spawn, count, cleared):
-    parents = _paths(current, blocked, width, spawn)
+def _enemy_positions(current, blocked, width, spawn, count, cleared, occupied=()):
+    parents = _paths(current, blocked | set(occupied), width, spawn)
     if not blocked:
         return ()
     near = {
@@ -266,53 +267,67 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
         angles.append(angle)
         clock = t
 
-    def turn(target):
+    def turn(target, duration=.07):
         pos = positions[-1]
         desired = _angle(_center(*pos), _center(*target))
         previous = angles[-1]
         angle = previous + (desired-previous+180) % 360 - 180
-        pose(pos, clock+.07, angle)
+        pose(pos, clock+duration, angle)
 
-    def walk(route):
+    def walk(route, turn_time=.07, move_time=.11):
         nonlocal heading
         for pos in route[1:]:
             prior = positions[-1]
             heading = pos[0]-prior[0], pos[1]-prior[1]
-            turn(pos)
-            pose(pos, clock+.11, angles[-1])
+            turn(pos, turn_time)
+            pose(pos, clock+move_time, angles[-1])
 
     def engage(target, day=None, enemy=None, born=None, occupied=()):
         source = positions[-1]
-        turn(target)
-        counter = counter_hit = None
+        counter = counter_hit = counter_target = None
         evade = outcome = None
-        flight = _flight(source, target)
+        obstacles = blocked | set(occupied)
         if enemy is not None:
-            # The shooter locks onto the old square. Move sideways during
-            # its aiming telegraph, before the projectile can reach it.
+            counter_target = source
             dx, dy = target[0]-source[0], target[1]-source[1]
             sidesteps = [
                 pos for pos in _neighbors(source, width, spawn)
-                if pos not in blocked and pos not in occupied
+                if pos not in obstacles
                 and (pos[0]-source[0])*dx+(pos[1]-source[1])*dy == 0
             ]
-            counter = clock+.18
-            counter_hit = counter+flight
             if sidesteps:
-                evade = min(sidesteps, key=lambda pos: (
-                    -sum(n not in blocked and n not in occupied
-                         for n in _neighbors(pos, width, spawn)),
-                    pos,
-                ))
-                pose(source, clock+.025, angles[-1])
-                pose(evade, counter-.01, angles[-1])
-                pose(evade, counter_hit+.06, angles[-1])
-                pose(source, clock+.13, angles[-1])
+                # Prefer another firing lane instead of immediately reversing.
+                choices = []
+                for pos in sidesteps:
+                    try:
+                        route, _ = _approach(
+                            pos, obstacles | {source}, {target}, width, spawn,
+                        )
+                    except ValueError:
+                        continue
+                    if len(route) <= 6:
+                        choices.append((pos, route))
+                if choices:
+                    evade, route = min(choices, key=lambda item: (len(item[1]), item))
+                else:
+                    evade = min(sidesteps)
+                    route, _ = _approach(evade, obstacles, {target}, width, spawn)
+                # Turn the hull first; the enemy fires during the maneuver.
+                counter = clock+.17
+                counter_hit = counter+_flight(source, target)
+                walk((source, evade), turn_time=.10, move_time=.16)
+                pose(evade, max(clock+.04, counter_hit+.08), angles[-1])
+                walk(route, turn_time=.10, move_time=.16)
+                source = positions[-1]
                 outcome = "miss"
             else:
-                # A trapped tank can absorb the shot. Real damage is rare.
+                turn(target)
+                counter = clock+.04
+                counter_hit = counter+_flight(source, target)
                 outcome = "damage" if (enemy+1) % DAMAGE_INTERVAL == 0 else "shield"
                 pose(source, counter_hit+.08, angles[-1])
+        turn(target)
+        flight = _flight(source, target)
         fire = clock+.04
         hit = fire+flight
         pose(source, hit+.16, angles[-1])
@@ -320,46 +335,69 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
         if day is not None and _distance(source, target) == 1:
             pose(target, clock+.11, angles[-1])
         attacks.append(Attack(source, target, fire, hit, clock, day, enemy,
-                              counter, counter_hit, born, evade, outcome))
+                              counter, counter_hit, born, evade, outcome, counter_target))
 
-    while blocked:
-        # Leave a standing brick for a real spawn site when a wave is possible.
+    living, roles, trails, births = {}, {}, {}, {}
+    last_birth = -SPAWN_GAP
+    budget = MAX_ENEMIES * ((len(bricks)+WAVE_BRICKS-1)//WAVE_BRICKS+1)
+
+    def deploy(count):
+        nonlocal enemy_id, last_birth, budget
+        if count <= 0 or budget <= 0:
+            return
+        spawns = _enemy_positions(
+            positions[-1], blocked, width, spawn, min(count, budget),
+            cleared, living.values(),
+        )
+        for pos in spawns:
+            if clock < last_birth+SPAWN_GAP:
+                pose(positions[-1], last_birth+SPAWN_GAP, angles[-1])
+            key = enemy_id
+            enemy_id += 1
+            budget -= 1
+            last_birth = clock
+            births[key] = clock
+            living[key] = pos
+            roles[key] = ROLES[key % len(ROLES)]
+            trails[key] = ([pos], [clock])
+            pose(positions[-1], clock+SPAWN_GAP, angles[-1])
+
+    def defeat(key):
+        target = living[key]
+        engage(target, enemy=key, born=births[key], occupied=set(living.values()))
+        path, ticks = trails.pop(key)
+        enemy_routes.append(EnemyRoute(key, roles.pop(key), tuple(path), tuple(ticks)))
+        del living[key]
+
+    def brick_route():
+        if not blocked:
+            return None
+        try:
+            return _approach(positions[-1], blocked | set(living.values()),
+                             blocked, width, spawn)
+        except ValueError:
+            return None
+
+    while blocked or living:
         count = min(WAVE_BRICKS, max(1, len(blocked)-1))
+        progress = False
         for _ in range(count):
-            route, target = _approach(positions[-1], blocked, blocked, width, spawn)
+            reachable = brick_route()
+            if reachable is None:
+                break
+            route, target = reachable
             walk(route)
             engage(target, day=bricks[target])
             blocked.remove(target)
             cleared.add(target)
-        spawns = _enemy_positions(
-            positions[-1], blocked, width, spawn, MAX_ENEMIES, cleared,
-        )
-        if not spawns:
+            progress = True
+        if blocked and progress:
+            deploy(MAX_ENEMIES-len(living))
+        if not living:
             continue
-        living = {}
-        roles = {}
-        trails = {}
-        births = {}
-        # Deploy one tank at a time on real simulation ticks. Keep the hero
-        # stationary during deployment so no newly occupied cell is crossed.
-        for i, pos in enumerate(spawns):
-            key = enemy_id
-            enemy_id += 1
-            births[key] = clock
-            living[key] = pos
-            roles[key] = ROLES[i]
-            trails[key] = ([pos], [clock])
-            pose(positions[-1], clock+SPAWN_GAP, angles[-1])
-
-        def defeat(key):
-            target = living[key]
-            engage(target, enemy=key, born=births[key], occupied=set(living.values()))
-            path, ticks = trails[key]
-            enemy_routes.append(EnemyRoute(key, roles[key], tuple(path), tuple(ticks)))
-            del living[key]
 
         for round_index in range(CHASE_ROUNDS):
-            if not living:
+            if not living or (len(living) == 1 and brick_route() is not None):
                 break
             hero = positions[-1]
             # Both sides exchange fire as soon as an unobstructed ray connects.
@@ -368,7 +406,12 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
                 key for key, pos in living.items() if can_fire(hero, pos, obstacles)
             ]
             if visible:
-                defeat(min(visible, key=lambda key: (_distance(hero, living[key]), key)))
+                key = min(visible, key=lambda key: (_distance(hero, living[key]), key))
+                if len(living) == 1 and blocked and budget:
+                    deploy(1)
+                    if not can_fire(hero, living[key], blocked | set(living.values())):
+                        continue
+                defeat(key)
                 continue
             # Keep clearing the maze while enemies approach. If the corridor
             # is cut off, seek a firing line instead of crossing a wall.
@@ -386,7 +429,12 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
                 blocked.remove(target)
                 cleared.add(target)
             else:
-                defeat(next(key for key, pos in living.items() if pos == target))
+                key = next(key for key, pos in living.items() if pos == target)
+                if len(living) == 1 and blocked and budget:
+                    deploy(1)
+                    if not can_fire(positions[-1], target, blocked | set(living.values())):
+                        continue
+                defeat(key)
                 continue
 
             # Enemies pursue in the same tick. Reserve every old square plus
@@ -415,7 +463,9 @@ def plan_battle(days: tuple[Day, ...]) -> Battle | None:
             pose(positions[-1], finish, angles[-1])
 
         # A bounded pursuit phase guarantees progress even on narrow mazes.
-        while living:
+        while living and (len(living) > 1 or brick_route() is None):
+            if len(living) == 1 and blocked and budget:
+                deploy(1)
             route, target = _approach(
                 positions[-1], blocked | set(living.values()),
                 set(living.values()), width, spawn,
@@ -512,7 +562,7 @@ def _hero(battle, p):
 
 def _enemy(attack, route, cycle, p):
     positions = [_position(_center(*pos)) for pos in route.positions]
-    aim = _angle(_center(*attack.target), _center(*attack.source))
+    aim = _angle(_center(*attack.target), _center(*attack.counter_target))
     angles, angle_times = [90], [attack.spawn]
     for a, b, t in zip(route.positions, route.positions[1:], route.times[1:]):
         if a != b:
@@ -540,13 +590,14 @@ def _combat(attack, cycle, p):
     distance = _distance(attack.source, attack.target)
     parts = [f'<g data-shot="{label}" data-distance="{distance}">']
     if attack.enemy is not None:
-        parts.extend(_projectile(target, origin, attack.counter,
+        counter_origin = _center(*attack.counter_target)
+        parts.extend(_projectile(target, counter_origin, attack.counter,
                                  attack.counter_hit, cycle, p, "enemy"))
         outcome = attack.counter_outcome
         parts.append(f'<g data-counter-outcome="{outcome}">')
         if outcome == "shield":
             parts.extend([
-                f'<circle cx="{origin[0]}" cy="{origin[1]}" r="7" fill="none" '
+                f'<circle cx="{counter_origin[0]}" cy="{counter_origin[1]}" r="7" fill="none" '
                 f'stroke="{p["shield"]}" stroke-width="1.4" opacity="0">',
                 track("opacity", [0, 1, 0],
                       [attack.counter_hit-.02, attack.counter_hit, attack.counter_hit+.16],
@@ -555,7 +606,7 @@ def _combat(attack, cycle, p):
             ])
         else:
             radius = 4 if outcome == "miss" else 7
-            parts.extend(_explosion(origin, attack.counter_hit, cycle, p, radius))
+            parts.extend(_explosion(counter_origin, attack.counter_hit, cycle, p, radius))
         parts.append('</g>')
     parts.extend(_projectile(origin, target, attack.fire, attack.hit, cycle, p, "hero"))
     parts.extend(_explosion(target, attack.hit, cycle, p,

@@ -8,6 +8,7 @@ from contribution_dynamic.scenarios.tanks import (
     FIRE_RANGE,
     LEFT,
     MAX_ENEMIES,
+    PROJECTILE_SPEED,
     SPAWN_GAP,
     SPAWN_RADIUS,
     STEP,
@@ -195,7 +196,9 @@ def test_both_sides_fire_across_multiple_cells():
     assert ranged
     for attack in ranged:
         assert attack.counter < attack.counter_hit < attack.fire < attack.hit
-        assert abs((attack.counter_hit-attack.counter)-(attack.hit-attack.fire)) < 1e-6
+        distance = sum(abs(a-b) for a, b in zip(attack.counter_target, attack.target))
+        assert abs(attack.counter_hit-attack.counter
+                   - max(.12, (distance*STEP-7)/PROJECTILE_SPEED)) < 1e-6
 
 
 def test_no_enemy_spawns_after_the_last_brick_is_destroyed():
@@ -216,13 +219,14 @@ def test_counterfire_is_evaded_and_real_damage_is_rare():
         assert sum(a.counter_outcome == "damage" for a in counters) <= (
             len(counters)//DAMAGE_INTERVAL
         )
+        assert any(a.source != a.counter_target for a in missed)
         for attack in missed:
             assert attack.evade is not None
-            dx = attack.evade[0]-attack.source[0]
-            dy = attack.evade[1]-attack.source[1]
+            dx = attack.evade[0]-attack.counter_target[0]
+            dy = attack.evade[1]-attack.counter_target[1]
             assert abs(dx)+abs(dy) == 1
-            assert dx*(attack.target[0]-attack.source[0])+dy*(
-                attack.target[1]-attack.source[1]
+            assert dx*(attack.target[0]-attack.counter_target[0])+dy*(
+                attack.target[1]-attack.counter_target[1]
             ) == 0
             at_impact = max(i for i, t in enumerate(battle.times) if t <= attack.counter_hit)
             assert battle.positions[at_impact] == attack.evade
@@ -239,3 +243,15 @@ def test_render_counterfire_outcomes_match_the_simulation():
         root = ElementTree.fromstring(render_tanks(days, theme))
         outcomes = root.findall(".//s:g[@data-counter-outcome]", NS)
         assert [node.attrib["data-counter-outcome"] for node in outcomes] == expected
+
+
+def test_enemy_reinforcements_overlap_existing_opponents():
+    battle = plan_battle(demo_calendar())
+    assert battle is not None
+    enemies = sorted((a for a in battle.attacks if a.enemy is not None),
+                     key=lambda a: a.spawn)
+    assert len(enemies) > MAX_ENEMIES
+    end = enemies[0].hit
+    for enemy in enemies[1:]:
+        assert enemy.spawn < end, "Enemy-free gap between reinforcements"
+        end = max(end, enemy.hit)
