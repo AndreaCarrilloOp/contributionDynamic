@@ -533,7 +533,7 @@
 <title>2026-06-16: 0 contributions</title></rect>
 <rect x="437" y="77" width="13" height="13" fill="#bacbb0" data-date="2026-06-17" data-level="0">
 <title>2026-06-17: 0 contributions</title></rect>
-<rect x="437" y="90" width="13" height="13" fill="#d5dfc8" data-date="2026-06-18" data-level="2">
+<rect x="437" y="90" width="13" height="13" fill="#d5dfc8" data-date="2026-06-18" data-level="4">
 <title>2026-06-18: 17 contributions</title></rect>
 <rect x="437" y="103" width="13" height="13" fill="#bacbb0" data-date="2026-06-19" data-level="0">
 <title>2026-06-19: 0 contributions</title></rect>
@@ -561,7 +561,7 @@
 <title>2026-06-30: 0 contributions</title></rect>
 <rect x="463" y="77" width="13" height="13" fill="#bacbb0" data-date="2026-07-01" data-level="0">
 <title>2026-07-01: 0 contributions</title></rect>
-<rect x="463" y="90" width="13" height="13" fill="#d5dfc8" data-date="2026-07-02" data-level="1">
+<rect x="463" y="90" width="13" height="13" fill="#d5dfc8" data-date="2026-07-02" data-level="2">
 <title>2026-07-02: 7 contributions</title></rect>
 <rect x="463" y="103" width="13" height="13" fill="#bacbb0" data-date="2026-07-03" data-level="0">
 <title>2026-07-03: 0 contributions</title></rect>
@@ -585,7 +585,7 @@
 <title>2026-07-12: 0 contributions</title></rect>
 <rect x="489" y="51" width="13" height="13" fill="#bacbb0" data-date="2026-07-13" data-level="0">
 <title>2026-07-13: 0 contributions</title></rect>
-<rect x="489" y="64" width="13" height="13" fill="#d5dfc8" data-date="2026-07-14" data-level="2">
+<rect x="489" y="64" width="13" height="13" fill="#d5dfc8" data-date="2026-07-14" data-level="4">
 <title>2026-07-14: 18 contributions</title></rect>
 <rect x="489" y="77" width="13" height="13" fill="#bacbb0" data-date="2026-07-15" data-level="0">
 <title>2026-07-15: 0 contributions</title></rect>
@@ -629,7 +629,7 @@
 <title>2026-08-03: 0 contributions</title></rect>
 <rect x="528" y="64" width="13" height="13" fill="#bacbb0" data-date="2026-08-04" data-level="0">
 <title>2026-08-04: 0 contributions</title></rect>
-<rect x="528" y="77" width="13" height="13" fill="#d5dfc8" data-date="2026-08-05" data-level="1">
+<rect x="528" y="77" width="13" height="13" fill="#d5dfc8" data-date="2026-08-05" data-level="2">
 <title>2026-08-05: 8 contributions</title></rect>
 <rect x="528" y="90" width="13" height="13" fill="#bacbb0" data-date="2026-08-06" data-level="1">
 <title>2026-08-06: 1 contributions</title></rect>
@@ -637,7 +637,7 @@
 <title>2026-08-07: 0 contributions</title></rect>
 <rect x="528" y="116" width="13" height="13" fill="#bacbb0" data-date="2026-08-08" data-level="1">
 <title>2026-08-08: 4 contributions</title></rect>
-<rect x="541" y="38" width="13" height="13" fill="#d5dfc8" data-date="2026-08-09" data-level="2">
+<rect x="541" y="38" width="13" height="13" fill="#d5dfc8" data-date="2026-08-09" data-level="4">
 <title>2026-08-09: 23 contributions</title></rect>
 <rect x="541" y="51" width="13" height="13" fill="#bacbb0" data-date="2026-08-10" data-level="0">
 <title>2026-08-10: 0 contributions</title></rect>
@@ -661,9 +661,9 @@
 <title>2026-08-19: 0 contributions</title></rect>
 <rect x="554" y="90" width="13" height="13" fill="#bacbb0" data-date="2026-08-20" data-level="0">
 <title>2026-08-20: 0 contributions</title></rect>
-<rect x="554" y="103" width="13" height="13" fill="#d5dfc8" data-date="2026-08-21" data-level="1">
+<rect x="554" y="103" width="13" height="13" fill="#d5dfc8" data-date="2026-08-21" data-level="3">
 <title>2026-08-21: 15 contributions</title></rect>
-<rect x="554" y="116" width="13" height="13" fill="#bacbb0" data-date="2026-08-22" data-level="1">
+<rect x="554" y="116" width="13" height="13" fill="#bacbb0" data-date="2026-08-22" data-level="2">
 <title>2026-08-22: 10 contributions</title></rect>
 <rect x="567" y="38" width="13" height="13" fill="#d5dfc8" data-date="2026-08-23" data-level="0">
 <title>2026-08-23: 0 contributions</title></rect>
@@ -685,7 +685,7 @@
 <title>2026-08-31: 0 contributions</title></rect>
 <rect x="580" y="64" width="13" height="13" fill="#bacbb0" data-date="2026-09-01" data-level="1">
 <title>2026-09-01: 4 contributions</title></rect>
-<rect x="580" y="77" width="13" height="13" fill="#d5dfc8" data-date="2026-09-02" data-level="1">
+<rect x="580" y="77" width="13" height="13" fill="#d5dfc8" data-date="2026-09-02" data-level="2">
 <title>2026-09-02: 7 contributions</title></rect>
 <rect x="580" y="90" width="13" height="13" fill="#bacbb0" data-date="2026-09-03" data-level="0">
 <title>2026-09-03: 0 contributions</title></rect>
@@ -695,11 +695,11 @@
 <title>2026-09-05: 0 contributions</title></rect>
 <rect x="593" y="38" width="13" height="13" fill="#d5dfc8" data-date="2026-09-06" data-level="1">
 <title>2026-09-06: 3 contributions</title></rect>
-<rect x="593" y="51" width="13" height="13" fill="#bacbb0" data-date="2026-09-07" data-level="2">
+<rect x="593" y="51" width="13" height="13" fill="#bacbb0" data-date="2026-09-07" data-level="4">
 <title>2026-09-07: 22 contributions</title></rect>
 <rect x="593" y="64" width="13" height="13" fill="#d5dfc8" data-date="2026-09-08" data-level="0">
 <title>2026-09-08: 0 contributions</title></rect>
-<rect x="593" y="77" width="13" height="13" fill="#bacbb0" data-date="2026-09-09" data-level="1">
+<rect x="593" y="77" width="13" height="13" fill="#bacbb0" data-date="2026-09-09" data-level="2">
 <title>2026-09-09: 6 contributions</title></rect>
 <rect x="593" y="90" width="13" height="13" fill="#d5dfc8" data-date="2026-09-10" data-level="0">
 <title>2026-09-10: 0 contributions</title></rect>
@@ -713,7 +713,7 @@
 <title>2026-09-14: 0 contributions</title></rect>
 <rect x="606" y="64" width="13" height="13" fill="#bacbb0" data-date="2026-09-15" data-level="0">
 <title>2026-09-15: 0 contributions</title></rect>
-<rect x="606" y="77" width="13" height="13" fill="#d5dfc8" data-date="2026-09-16" data-level="1">
+<rect x="606" y="77" width="13" height="13" fill="#d5dfc8" data-date="2026-09-16" data-level="2">
 <title>2026-09-16: 7 contributions</title></rect>
 <rect x="606" y="90" width="13" height="13" fill="#bacbb0" data-date="2026-09-17" data-level="1">
 <title>2026-09-17: 2 contributions</title></rect>
@@ -793,7 +793,7 @@
 <title>2026-10-24: 0 contributions</title></rect>
 <rect x="684" y="38" width="13" height="13" fill="#bacbb0" data-date="2026-10-25" data-level="0">
 <title>2026-10-25: 0 contributions</title></rect>
-<rect x="684" y="51" width="13" height="13" fill="#d5dfc8" data-date="2026-10-26" data-level="1">
+<rect x="684" y="51" width="13" height="13" fill="#d5dfc8" data-date="2026-10-26" data-level="2">
 <title>2026-10-26: 7 contributions</title></rect>
 <rect x="684" y="64" width="13" height="13" fill="#bacbb0" data-date="2026-10-27" data-level="0">
 <title>2026-10-27: 0 contributions</title></rect>
@@ -803,7 +803,7 @@
 <title>2026-10-29: 0 contributions</title></rect>
 <rect x="684" y="103" width="13" height="13" fill="#d5dfc8" data-date="2026-10-30" data-level="1">
 <title>2026-10-30: 2 contributions</title></rect>
-<rect x="684" y="116" width="13" height="13" fill="#bacbb0" data-date="2026-10-31" data-level="1">
+<rect x="684" y="116" width="13" height="13" fill="#bacbb0" data-date="2026-10-31" data-level="2">
 <title>2026-10-31: 11 contributions</title></rect>
 <rect x="697" y="38" width="13" height="13" fill="#d5dfc8" data-date="2026-11-01" data-level="0">
 <title>2026-11-01: 0 contributions</title></rect>
@@ -813,11 +813,11 @@
 <title>2026-11-03: 0 contributions</title></rect>
 <rect x="697" y="77" width="13" height="13" fill="#bacbb0" data-date="2026-11-04" data-level="1">
 <title>2026-11-04: 5 contributions</title></rect>
-<rect x="697" y="90" width="13" height="13" fill="#d5dfc8" data-date="2026-11-05" data-level="1">
+<rect x="697" y="90" width="13" height="13" fill="#d5dfc8" data-date="2026-11-05" data-level="2">
 <title>2026-11-05: 11 contributions</title></rect>
-<rect x="697" y="103" width="13" height="13" fill="#bacbb0" data-date="2026-11-06" data-level="1">
+<rect x="697" y="103" width="13" height="13" fill="#bacbb0" data-date="2026-11-06" data-level="2">
 <title>2026-11-06: 8 contributions</title></rect>
-<rect x="697" y="116" width="13" height="13" fill="#d5dfc8" data-date="2026-11-07" data-level="2">
+<rect x="697" y="116" width="13" height="13" fill="#d5dfc8" data-date="2026-11-07" data-level="4">
 <title>2026-11-07: 17 contributions</title></rect>
 <rect x="710" y="38" width="13" height="13" fill="#bacbb0" data-date="2026-11-08" data-level="0">
 <title>2026-11-08: 0 contributions</title></rect>
@@ -835,12 +835,12 @@
 <title>2026-11-14: 0 contributions</title></rect>
 <rect x="723" y="38" width="13" height="13" fill="#d5dfc8" data-date="2026-11-15" data-level="0">
 <title>2026-11-15: 0 contributions</title></rect>
-<rect x="723" y="51" width="13" height="13" fill="#bacbb0" data-date="2026-11-16" data-level="1">
+<rect x="723" y="51" width="13" height="13" fill="#bacbb0" data-date="2026-11-16" data-level="2">
 <title>2026-11-16: 10 contributions</title></rect>
 <rect x="723" y="64" width="13" height="13" fill="#d5dfc8" data-date="2026-11-17" data-level="4">
 <title>2026-11-17: 70 contributions</title></rect>
 <rect x="723" y="77" width="13" height="13" fill="#bacbb0" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 61 contributions</title></rect>
+<title>2026-11-18: 62 contributions</title></rect>
 </g>
 <g id="move-highlights">
 <rect x="437.0" y="129.0" width="13" height="13" fill="#947232" opacity="0" data-move="queen">
@@ -1217,29 +1217,29 @@
 </rect>
 </g>
 <g id="contribution-pieces">
-<g data-piece="contribution" data-kind="knight" data-piece-date="2026-06-18" data-level="2" transform="translate(443.5 96.5) scale(.75)" opacity="1">
+<g data-piece="contribution" data-kind="rook" data-piece-date="2026-06-18" data-level="4" transform="translate(443.5 96.5) scale(.75)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.014745612;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
+<use href="#chess-rook" xlink:href="#chess-rook"/></g></g>
 <g data-piece="contribution" data-kind="pawn" data-piece-date="2026-08-08" data-level="1" transform="translate(534.5 122.5) scale(.75)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.047941049;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<g data-piece="contribution" data-kind="knight" data-piece-date="2026-08-09" data-level="2" transform="translate(547.5 44.5) scale(.75)" opacity="1">
+<g data-piece="contribution" data-kind="rook" data-piece-date="2026-08-09" data-level="4" transform="translate(547.5 44.5) scale(.75)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.069923617;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-08-05" data-level="1" transform="translate(534.5 83.5) scale(.75)" opacity="1">
+<use href="#chess-rook" xlink:href="#chess-rook"/></g></g>
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-08-05" data-level="2" transform="translate(534.5 83.5) scale(.75)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.112943397;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-07-02" cx="469.5" cy="96.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
+<circle data-reserve="2026-07-02" cx="469.5" cy="96.5" r="1.6" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.015457961;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-07-02" data-level="1" transform="translate(469.5 96.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-07-02" data-level="2" transform="translate(469.5 96.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.015457961;0.127047896;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
 <circle data-reserve="2026-08-06" cx="534.5" cy="96.5" r="1.1" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.048653397;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
@@ -1247,20 +1247,20 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.048653397;0.141152394;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-09-02" cx="586.5" cy="83.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<circle data-reserve="2026-09-02" cx="586.5" cy="83.5" r="1.6" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.070635966;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-09-02" data-level="1" transform="translate(586.5 83.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-09-02" data-level="2" transform="translate(586.5 83.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.070635966;0.157493451;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-07-14" cx="495.5" cy="70.5" r="1.6" fill="#4e6c4b" opacity=".8">
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
+<circle data-reserve="2026-07-14" cx="495.5" cy="70.5" r="2.7" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.113655745;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="knight" data-piece-date="2026-07-14" data-level="2" transform="translate(495.5 70.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="rook" data-piece-date="2026-07-14" data-level="4" transform="translate(495.5 70.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.113655745;0.186173304;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
+<use href="#chess-rook" xlink:href="#chess-rook"/></g></g>
 <circle data-reserve="2026-07-07" cx="482.5" cy="70.5" r="1.1" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.127760244;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
@@ -1275,20 +1275,20 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.141864743;0.231478664;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-08-21" cx="560.5" cy="109.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<circle data-reserve="2026-08-21" cx="560.5" cy="109.5" r="2.1" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.1582058;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-08-21" data-level="1" transform="translate(560.5 109.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="bishop" data-piece-date="2026-08-21" data-level="3" transform="translate(560.5 109.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.1582058;0.246409343;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-08-22" cx="560.5" cy="122.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<use href="#chess-bishop" xlink:href="#chess-bishop"/></g></g>
+<circle data-reserve="2026-08-22" cx="560.5" cy="122.5" r="1.6" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.186885653;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-08-22" data-level="1" transform="translate(560.5 122.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-08-22" data-level="2" transform="translate(560.5 122.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.186885653;0.289429122;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
 <circle data-reserve="2026-09-01" cx="586.5" cy="70.5" r="1.1" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.214097362;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
@@ -1296,13 +1296,13 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.214097362;0.309517348;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-09-16" cx="612.5" cy="83.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<circle data-reserve="2026-09-16" cx="612.5" cy="83.5" r="1.6" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.232191012;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-09-16" data-level="1" transform="translate(612.5 83.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-09-16" data-level="2" transform="translate(612.5 83.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.232191012;0.322624559;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
 <circle data-reserve="2026-10-18" cx="677.5" cy="44.5" r="1.1" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.247121691;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
@@ -1310,20 +1310,20 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.247121691;0.359537806;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-09-09" cx="599.5" cy="83.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<circle data-reserve="2026-09-09" cx="599.5" cy="83.5" r="1.6" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.290141471;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-09-09" data-level="1" transform="translate(599.5 83.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-09-09" data-level="2" transform="translate(599.5 83.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.290141471;0.388217659;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-09-07" cx="599.5" cy="57.5" r="1.6" fill="#4e6c4b" opacity=".8">
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
+<circle data-reserve="2026-09-07" cx="599.5" cy="57.5" r="2.7" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.310229696;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="knight" data-piece-date="2026-09-07" data-level="2" transform="translate(599.5 57.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="rook" data-piece-date="2026-09-07" data-level="4" transform="translate(599.5 57.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.310229696;0.40173796;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
+<use href="#chess-rook" xlink:href="#chess-rook"/></g></g>
 <circle data-reserve="2026-11-04" cx="703.5" cy="83.5" r="1.1" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.323336907;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
@@ -1331,13 +1331,13 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.323336907;0.420828898;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-10-26" cx="690.5" cy="57.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<circle data-reserve="2026-10-26" cx="690.5" cy="57.5" r="1.6" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.360250155;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-10-26" data-level="1" transform="translate(690.5 57.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-10-26" data-level="2" transform="translate(690.5 57.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.360250155;0.434349199;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
 <circle data-reserve="2026-10-09" cx="651.5" cy="109.5" r="1.1" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.388930008;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
@@ -1352,13 +1352,13 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.402450309;0.476136263;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-11-05" cx="703.5" cy="96.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<circle data-reserve="2026-11-05" cx="703.5" cy="96.5" r="1.6" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.421541246;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-11-05" data-level="1" transform="translate(703.5 96.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-11-05" data-level="2" transform="translate(703.5 96.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.421541246;0.489243474;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
 <circle data-reserve="2026-11-17" cx="729.5" cy="70.5" r="2.7" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.435061547;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
@@ -1366,13 +1366,13 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.435061547;0.517694454;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-rook" xlink:href="#chess-rook"/></g></g>
-<circle data-reserve="2026-10-31" cx="690.5" cy="122.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<circle data-reserve="2026-10-31" cx="690.5" cy="122.5" r="1.6" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.4637414;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-10-31" data-level="1" transform="translate(690.5 122.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-10-31" data-level="2" transform="translate(690.5 122.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.4637414;0.546374307;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
 <circle data-reserve="2026-09-27" cx="638.5" cy="44.5" r="1.1" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.476848611;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
@@ -1380,13 +1380,13 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.476848611;0.561476093;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-11-06" cx="703.5" cy="109.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<circle data-reserve="2026-11-06" cx="703.5" cy="109.5" r="1.6" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.489955822;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-11-06" data-level="1" transform="translate(703.5 109.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-11-06" data-level="2" transform="translate(703.5 109.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.489955822;0.574583304;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
 <circle data-reserve="2026-10-30" cx="690.5" cy="109.5" r="1.1" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.518406802;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
@@ -1401,20 +1401,20 @@
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.547086655;0.619604214;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
 <use href="#chess-rook" xlink:href="#chess-rook"/></g></g>
-<circle data-reserve="2026-11-16" cx="729.5" cy="57.5" r="1.1" fill="#4e6c4b" opacity=".8">
+<circle data-reserve="2026-11-16" cx="729.5" cy="57.5" r="1.6" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.562188442;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="pawn" data-piece-date="2026-11-16" data-level="1" transform="translate(729.5 57.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="knight" data-piece-date="2026-11-16" data-level="2" transform="translate(729.5 57.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.562188442;0.651218165;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-pawn" xlink:href="#chess-pawn"/></g></g>
-<circle data-reserve="2026-11-07" cx="703.5" cy="122.5" r="1.6" fill="#4e6c4b" opacity=".8">
+<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
+<circle data-reserve="2026-11-07" cx="703.5" cy="122.5" r="2.7" fill="#4e6c4b" opacity=".8">
 <animate attributeName="opacity" values="0.8;0;0.8;0.8" keyTimes="0;0.575295653;0.976848676;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 </circle>
-<g data-piece="contribution" data-kind="knight" data-piece-date="2026-11-07" data-level="2" transform="translate(703.5 122.5) scale(.75)" opacity="0">
+<g data-piece="contribution" data-kind="rook" data-piece-date="2026-11-07" data-level="4" transform="translate(703.5 122.5) scale(.75)" opacity="0">
 <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.575295653;0.664325376;1" dur="28.076148s" calcMode="discrete" repeatCount="indefinite"/>
 <g fill="#24352a" stroke="#e1ead7" stroke-width=".55" stroke-linejoin="round">
-<use href="#chess-knight" xlink:href="#chess-knight"/></g></g>
+<use href="#chess-rook" xlink:href="#chess-rook"/></g></g>
 </g>
 <g id="attackers">
 <g data-attacker="queen" transform="translate(443.5 135.5)">

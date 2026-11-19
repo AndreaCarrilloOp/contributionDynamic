@@ -671,9 +671,9 @@
 <rect x="437" y="77" width="10" height="10" rx="1" fill="#141f30" data-date="2026-06-17" data-level="0">
 <title>2026-06-17: 0 contributions</title>
 </rect>
-<rect x="437" y="90" width="10" height="10" rx="1" fill="#243a59" data-date="2026-06-18" data-level="2">
+<rect x="437" y="90" width="10" height="10" rx="1" fill="#514026" data-date="2026-06-18" data-level="4">
 <title>2026-06-18: 17 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.026722079;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.026722079;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="437" y="103" width="10" height="10" rx="1" fill="#141f30" data-date="2026-06-19" data-level="0">
 <title>2026-06-19: 0 contributions</title>
@@ -714,9 +714,9 @@
 <rect x="463" y="77" width="10" height="10" rx="1" fill="#141f30" data-date="2026-07-01" data-level="0">
 <title>2026-07-01: 0 contributions</title>
 </rect>
-<rect x="463" y="90" width="10" height="10" rx="1" fill="#34304c" data-date="2026-07-02" data-level="1">
+<rect x="463" y="90" width="10" height="10" rx="1" fill="#243a59" data-date="2026-07-02" data-level="2">
 <title>2026-07-02: 7 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.110510238;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.110510238;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="463" y="103" width="10" height="10" rx="1" fill="#141f30" data-date="2026-07-03" data-level="0">
 <title>2026-07-03: 0 contributions</title>
@@ -752,9 +752,9 @@
 <rect x="489" y="51" width="10" height="10" rx="1" fill="#141f30" data-date="2026-07-13" data-level="0">
 <title>2026-07-13: 0 contributions</title>
 </rect>
-<rect x="489" y="64" width="10" height="10" rx="1" fill="#243a59" data-date="2026-07-14" data-level="2">
+<rect x="489" y="64" width="10" height="10" rx="1" fill="#514026" data-date="2026-07-14" data-level="4">
 <title>2026-07-14: 18 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.257752176;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.257752176;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="489" y="77" width="10" height="10" rx="1" fill="#141f30" data-date="2026-07-15" data-level="0">
 <title>2026-07-15: 0 contributions</title>
@@ -819,9 +819,9 @@
 <rect x="528" y="64" width="10" height="10" rx="1" fill="#141f30" data-date="2026-08-04" data-level="0">
 <title>2026-08-04: 0 contributions</title>
 </rect>
-<rect x="528" y="77" width="10" height="10" rx="1" fill="#34304c" data-date="2026-08-05" data-level="1">
+<rect x="528" y="77" width="10" height="10" rx="1" fill="#243a59" data-date="2026-08-05" data-level="2">
 <title>2026-08-05: 8 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.385925449;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.385925449;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="528" y="90" width="10" height="10" rx="1" fill="#34304c" data-date="2026-08-06" data-level="1">
 <title>2026-08-06: 1 contributions</title>
@@ -834,9 +834,9 @@
 <title>2026-08-08: 4 contributions</title>
 <animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.285244991;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="541" y="38" width="10" height="10" rx="1" fill="#243a59" data-date="2026-08-09" data-level="2">
+<rect x="541" y="38" width="10" height="10" rx="1" fill="#514026" data-date="2026-08-09" data-level="4">
 <title>2026-08-09: 23 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.223395878;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.223395878;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="541" y="51" width="10" height="10" rx="1" fill="#141f30" data-date="2026-08-10" data-level="0">
 <title>2026-08-10: 0 contributions</title>
@@ -871,13 +871,13 @@
 <rect x="554" y="90" width="10" height="10" rx="1" fill="#141f30" data-date="2026-08-20" data-level="0">
 <title>2026-08-20: 0 contributions</title>
 </rect>
-<rect x="554" y="103" width="10" height="10" rx="1" fill="#34304c" data-date="2026-08-21" data-level="1">
+<rect x="554" y="103" width="10" height="10" rx="1" fill="#53344e" data-date="2026-08-21" data-level="3">
 <title>2026-08-21: 15 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.350230564;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#53344e;#141f30;#53344e;#53344e" keyTimes="0;0.350230564;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="554" y="116" width="10" height="10" rx="1" fill="#34304c" data-date="2026-08-22" data-level="1">
+<rect x="554" y="116" width="10" height="10" rx="1" fill="#243a59" data-date="2026-08-22" data-level="2">
 <title>2026-08-22: 10 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.144409176;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.144409176;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="567" y="38" width="10" height="10" rx="1" fill="#141f30" data-date="2026-08-23" data-level="0">
 <title>2026-08-23: 0 contributions</title>
@@ -910,9 +910,9 @@
 <title>2026-09-01: 4 contributions</title>
 <animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.322742753;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="580" y="77" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-02" data-level="1">
+<rect x="580" y="77" width="10" height="10" rx="1" fill="#243a59" data-date="2026-09-02" data-level="2">
 <title>2026-09-02: 7 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.070855799;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.070855799;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="580" y="90" width="10" height="10" rx="1" fill="#141f30" data-date="2026-09-03" data-level="0">
 <title>2026-09-03: 0 contributions</title>
@@ -927,16 +927,16 @@
 <title>2026-09-06: 3 contributions</title>
 <animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.790047411;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="593" y="51" width="10" height="10" rx="1" fill="#243a59" data-date="2026-09-07" data-level="2">
+<rect x="593" y="51" width="10" height="10" rx="1" fill="#514026" data-date="2026-09-07" data-level="4">
 <title>2026-09-07: 22 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.783116556;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.783116556;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="64" width="10" height="10" rx="1" fill="#141f30" data-date="2026-09-08" data-level="0">
 <title>2026-09-08: 0 contributions</title>
 </rect>
-<rect x="593" y="77" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-09" data-level="1">
+<rect x="593" y="77" width="10" height="10" rx="1" fill="#243a59" data-date="2026-09-09" data-level="2">
 <title>2026-09-09: 6 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.478997481;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.478997481;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="593" y="90" width="10" height="10" rx="1" fill="#141f30" data-date="2026-09-10" data-level="0">
 <title>2026-09-10: 0 contributions</title>
@@ -956,9 +956,9 @@
 <rect x="606" y="64" width="10" height="10" rx="1" fill="#141f30" data-date="2026-09-15" data-level="0">
 <title>2026-09-15: 0 contributions</title>
 </rect>
-<rect x="606" y="77" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-16" data-level="1">
+<rect x="606" y="77" width="10" height="10" rx="1" fill="#243a59" data-date="2026-09-16" data-level="2">
 <title>2026-09-16: 7 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.871482552;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.871482552;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="606" y="90" width="10" height="10" rx="1" fill="#34304c" data-date="2026-09-17" data-level="1">
 <title>2026-09-17: 2 contributions</title>
@@ -1081,9 +1081,9 @@
 <rect x="684" y="38" width="10" height="10" rx="1" fill="#141f30" data-date="2026-10-25" data-level="0">
 <title>2026-10-25: 0 contributions</title>
 </rect>
-<rect x="684" y="51" width="10" height="10" rx="1" fill="#34304c" data-date="2026-10-26" data-level="1">
+<rect x="684" y="51" width="10" height="10" rx="1" fill="#243a59" data-date="2026-10-26" data-level="2">
 <title>2026-10-26: 7 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.915815693;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.915815693;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="684" y="64" width="10" height="10" rx="1" fill="#141f30" data-date="2026-10-27" data-level="0">
 <title>2026-10-27: 0 contributions</title>
@@ -1098,9 +1098,9 @@
 <title>2026-10-30: 2 contributions</title>
 <animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.905056179;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="684" y="116" width="10" height="10" rx="1" fill="#34304c" data-date="2026-10-31" data-level="1">
+<rect x="684" y="116" width="10" height="10" rx="1" fill="#243a59" data-date="2026-10-31" data-level="2">
 <title>2026-10-31: 11 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.583246735;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.583246735;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="697" y="38" width="10" height="10" rx="1" fill="#141f30" data-date="2026-11-01" data-level="0">
 <title>2026-11-01: 0 contributions</title>
@@ -1115,17 +1115,17 @@
 <title>2026-11-04: 5 contributions</title>
 <animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.945855943;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="90" width="10" height="10" rx="1" fill="#34304c" data-date="2026-11-05" data-level="1">
+<rect x="697" y="90" width="10" height="10" rx="1" fill="#243a59" data-date="2026-11-05" data-level="2">
 <title>2026-11-05: 11 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.833754954;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.833754954;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="103" width="10" height="10" rx="1" fill="#34304c" data-date="2026-11-06" data-level="1">
+<rect x="697" y="103" width="10" height="10" rx="1" fill="#243a59" data-date="2026-11-06" data-level="2">
 <title>2026-11-06: 8 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.826824099;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.826824099;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="116" width="10" height="10" rx="1" fill="#243a59" data-date="2026-11-07" data-level="2">
+<rect x="697" y="116" width="10" height="10" rx="1" fill="#514026" data-date="2026-11-07" data-level="4">
 <title>2026-11-07: 17 contributions</title>
-<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.51449795;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.51449795;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="710" y="38" width="10" height="10" rx="1" fill="#141f30" data-date="2026-11-08" data-level="0">
 <title>2026-11-08: 0 contributions</title>
@@ -1151,16 +1151,16 @@
 <rect x="723" y="38" width="10" height="10" rx="1" fill="#141f30" data-date="2026-11-15" data-level="0">
 <title>2026-11-15: 0 contributions</title>
 </rect>
-<rect x="723" y="51" width="10" height="10" rx="1" fill="#34304c" data-date="2026-11-16" data-level="1">
+<rect x="723" y="51" width="10" height="10" rx="1" fill="#243a59" data-date="2026-11-16" data-level="2">
 <title>2026-11-16: 10 contributions</title>
-<animate attributeName="fill" values="#34304c;#141f30;#34304c;#34304c" keyTimes="0;0.736416317;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#243a59;#141f30;#243a59;#243a59" keyTimes="0;0.736416317;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="64" width="10" height="10" rx="1" fill="#514026" data-date="2026-11-17" data-level="4">
 <title>2026-11-17: 70 contributions</title>
 <animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.729485462;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="723" y="77" width="10" height="10" rx="1" fill="#514026" data-date="2026-11-18" data-level="4">
-<title>2026-11-18: 61 contributions</title>
+<title>2026-11-18: 62 contributions</title>
 <animate attributeName="fill" values="#514026;#141f30;#514026;#514026" keyTimes="0;0.436465292;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 </g>
@@ -1197,33 +1197,33 @@
 </defs>
 <g id="invaders" shape-rendering="crispEdges">
 <animateTransform attributeName="transform" type="translate" values="0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;0 0;0 0" keyTimes="0;0.028796754;0.056633616;0.084470478;0.111347448;0.137264527;0.163181605;0.188138792;0.212136086;0.236133381;0.259170784;0.281248296;0.303325807;0.324443426;0.344601154;0.364758882;0.383956718;0.402194662;0.419472714;0.436750766;0.453068927;0.469387087;0.485705248;0.501063516;0.516421785;0.530820162;0.545218539;0.559616916;0.573055401;0.586493886;0.598972479;0.611451073;0.623929666;0.635448368;0.646967069;0.658485771;0.670004472;0.680563282;0.691122092;0.701680901;0.711279819;0.720878737;0.730477655;0.739116681;0.746795816;0.75447495;0.762154084;0.769833219;0.777512353;0.785191488;0.79191073;0.797670081;0.803429432;0.809188782;0.814948133;0.820707484;0.826466835;0.832226185;0.837025644;0.840865212;0.844704779;0.848544346;0.852383913;0.85622348;0.860063047;0.863902615;0.867742182;0.871581749;0.875351506;0.879121263;0.88289102;0.886660776;0.890430533;0.89420029;0.897970047;0.901739804;0.905509561;0.909279318;0.913049074;0.916818831;0.920588588;0.924358345;0.928128102;0.931897859;0.935667616;0.939437373;0.943207129;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<g data-invader="2026-06-18" data-level="2" transform="translate(442.0 95.0)" opacity="1">
+<g data-invader="2026-06-18" data-level="4" transform="translate(442.0 95.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.026722079;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
+</g>
+<g data-invader="2026-09-02" data-level="2" transform="translate(585.0 82.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.070855799;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
-<g data-invader="2026-09-02" data-level="1" transform="translate(585.0 82.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.070855799;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
-</g>
-<g data-invader="2026-07-02" data-level="1" transform="translate(468.0 95.0)" opacity="1">
+<g data-invader="2026-07-02" data-level="2" transform="translate(468.0 95.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.110510238;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
+<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
-<g data-invader="2026-08-22" data-level="1" transform="translate(559.0 121.0)" opacity="1">
+<g data-invader="2026-08-22" data-level="2" transform="translate(559.0 121.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.144409176;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
+<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
 <g data-invader="2026-07-07" data-level="1" transform="translate(481.0 69.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.181968535;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
 </g>
-<g data-invader="2026-08-09" data-level="2" transform="translate(546.0 43.0)" opacity="1">
+<g data-invader="2026-08-09" data-level="4" transform="translate(546.0 43.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.223395878;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
+<use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
 </g>
-<g data-invader="2026-07-14" data-level="2" transform="translate(494.0 69.0)" opacity="1">
+<g data-invader="2026-07-14" data-level="4" transform="translate(494.0 69.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.257752176;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
+<use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
 </g>
 <g data-invader="2026-08-08" data-level="1" transform="translate(533.0 121.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.285244991;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
@@ -1233,37 +1233,37 @@
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.322742753;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
 </g>
-<g data-invader="2026-08-21" data-level="1" transform="translate(559.0 108.0)" opacity="1">
+<g data-invader="2026-08-21" data-level="3" transform="translate(559.0 108.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.350230564;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
+<use href="#invader-sprite-3" xlink:href="#invader-sprite-3"/>
 </g>
 <g data-invader="2026-08-06" data-level="1" transform="translate(533.0 95.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.378994594;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
 </g>
-<g data-invader="2026-08-05" data-level="1" transform="translate(533.0 82.0)" opacity="1">
+<g data-invader="2026-08-05" data-level="2" transform="translate(533.0 82.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.385925449;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
+<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
 <g data-invader="2026-11-18" data-level="4" transform="translate(728.0 82.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.436465292;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
 </g>
-<g data-invader="2026-09-09" data-level="1" transform="translate(598.0 82.0)" opacity="1">
+<g data-invader="2026-09-09" data-level="2" transform="translate(598.0 82.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.478997481;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
-</g>
-<g data-invader="2026-11-07" data-level="2" transform="translate(702.0 121.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.51449795;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
+</g>
+<g data-invader="2026-11-07" data-level="4" transform="translate(702.0 121.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.51449795;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
 </g>
 <g data-invader="2026-09-17" data-level="1" transform="translate(611.0 95.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.550949328;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
 </g>
-<g data-invader="2026-10-31" data-level="1" transform="translate(689.0 121.0)" opacity="1">
+<g data-invader="2026-10-31" data-level="2" transform="translate(689.0 121.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.583246735;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
+<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
 <g data-invader="2026-09-27" data-level="1" transform="translate(637.0 43.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.623072547;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
@@ -1281,37 +1281,37 @@
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.729485462;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
 </g>
-<g data-invader="2026-11-16" data-level="1" transform="translate(728.0 56.0)" opacity="1">
+<g data-invader="2026-11-16" data-level="2" transform="translate(728.0 56.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.736416317;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
-</g>
-<g data-invader="2026-09-07" data-level="2" transform="translate(598.0 56.0)" opacity="1">
-<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.783116556;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
+</g>
+<g data-invader="2026-09-07" data-level="4" transform="translate(598.0 56.0)" opacity="1">
+<animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.783116556;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
+<use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
 </g>
 <g data-invader="2026-09-06" data-level="1" transform="translate(598.0 43.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.790047411;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
 </g>
-<g data-invader="2026-11-06" data-level="1" transform="translate(702.0 108.0)" opacity="1">
+<g data-invader="2026-11-06" data-level="2" transform="translate(702.0 108.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.826824099;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
+<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
-<g data-invader="2026-11-05" data-level="1" transform="translate(702.0 95.0)" opacity="1">
+<g data-invader="2026-11-05" data-level="2" transform="translate(702.0 95.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.833754954;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
+<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
-<g data-invader="2026-09-16" data-level="1" transform="translate(611.0 82.0)" opacity="1">
+<g data-invader="2026-09-16" data-level="2" transform="translate(611.0 82.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.871482552;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
+<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
 <g data-invader="2026-10-30" data-level="1" transform="translate(689.0 108.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.905056179;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
 </g>
-<g data-invader="2026-10-26" data-level="1" transform="translate(689.0 56.0)" opacity="1">
+<g data-invader="2026-10-26" data-level="2" transform="translate(689.0 56.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.915815693;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
+<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
 <g data-invader="2026-11-04" data-level="1" transform="translate(702.0 82.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.945855943;0.982721948;1" dur="31.832292s" calcMode="discrete" repeatCount="indefinite"/>
@@ -1336,7 +1336,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(442.0 95.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.026407932;0.026722079;0.028135737;0.030491835;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ffcd53"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(586.0 84.8)" opacity="0">
@@ -1356,7 +1356,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(585.0 83.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.070541652;0.070855799;0.072269458;0.074625556;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(467.0 98.8)" opacity="0">
@@ -1376,7 +1376,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(467.0 96.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.110196091;0.110510238;0.111923896;0.114279995;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(559.0 123.8)" opacity="0">
@@ -1396,7 +1396,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(560.0 121.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.144095029;0.144409176;0.145822835;0.148178933;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(482.0 71.8)" opacity="0">
@@ -1436,7 +1436,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(546.0 43.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.223081731;0.223395878;0.224809536;0.227165634;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ffcd53"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(495.0 71.8)" opacity="0">
@@ -1456,7 +1456,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(495.0 69.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.257438029;0.257752176;0.259165835;0.261521933;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ffcd53"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(533.0 124.8)" opacity="0">
@@ -1516,7 +1516,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(559.0 109.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.349916417;0.350230564;0.351644223;0.354000321;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ef58be"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(533.0 98.8)" opacity="0">
@@ -1546,7 +1546,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(533.0 82.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.385611303;0.385925449;0.387339108;0.389695206;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(729.0 84.8)" opacity="0">
@@ -1586,7 +1586,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(599.0 82.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.478683335;0.478997481;0.48041114;0.482767238;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(702.0 124.8)" opacity="0">
@@ -1606,7 +1606,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(701.0 122.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.514183804;0.51449795;0.515911609;0.518267707;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ffcd53"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(612.0 97.8)" opacity="0">
@@ -1646,7 +1646,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(689.0 121.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.582932589;0.583246735;0.584660394;0.587016492;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(638.0 45.8)" opacity="0">
@@ -1736,7 +1736,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(728.0 57.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.73610217;0.736416317;0.737829975;0.740186073;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(599.0 58.8)" opacity="0">
@@ -1756,7 +1756,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(598.0 56.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.782802409;0.783116556;0.784530214;0.786886312;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#ffcd53"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="hero" transform="translate(599.0 140)" opacity="0">
@@ -1786,7 +1786,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(702.0 108.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.826509953;0.826824099;0.828237758;0.830593856;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="hero" transform="translate(702.0 140)" opacity="0">
@@ -1796,7 +1796,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(703.0 95.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.833440808;0.833754954;0.835168613;0.837524711;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(612.0 84.8)" opacity="0">
@@ -1816,7 +1816,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(611.0 83.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.871168405;0.871482552;0.87289621;0.875252308;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(688.0 111.8)" opacity="0">
@@ -1846,7 +1846,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(689.0 57.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.915501547;0.915815693;0.917229352;0.91958545;1" dur="31.832292s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#49d8a0"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#48b8ff"/>
 <path d="M-2 -2h4v4h-4Z" fill="#fff2bc"/>
 </g>
 <g data-laser="enemy" transform="translate(703.0 84.8)" opacity="0">
