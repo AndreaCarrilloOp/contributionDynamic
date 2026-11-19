@@ -10,7 +10,7 @@
 
 ## Animated worlds
 
-Five original scenarios, based on real GitHub contribution data. Each supports dark and light themes, preserves calendar coordinates and runs as a self-contained animated SVG.
+Five original scenarios, based on real GitHub contribution data. Each supports dark and light themes, preserves calendar coordinates and runs as a self-contained animated SVG. Previews follow your GitHub appearance settings; use the links below each animation to open either theme directly.
 
 ### GitTanks
 
@@ -21,6 +21,8 @@ One golden tank navigates destructible contribution bricks and faces staggered s
   <img alt="GitTanks animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-light.svg" width="100%">
 </picture>
 
+<sub><a href="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-dark.svg">Dark Mode</a> · <a href="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/tanks-light.svg">Light Mode</a></sub>
+
 ### GitBlast
 
 A pixel-art bomber clears a stone maze with cross-shaped blasts and moving enemy patrols.
@@ -29,6 +31,8 @@ A pixel-art bomber clears a stone maze with cross-shaped blasts and moving enemy
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">
   <img alt="GitBlast animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg" width="100%">
 </picture>
+
+<sub><a href="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-dark.svg">Dark Mode</a> · <a href="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/blast-light.svg">Light Mode</a></sub>
 
 ### GitChess
 
@@ -39,6 +43,8 @@ Four chess attackers capture level-coded pieces using legal movement geometry an
   <img alt="GitChess animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg" width="100%">
 </picture>
 
+<sub><a href="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-dark.svg">Dark Mode</a> · <a href="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/chess-light.svg">Light Mode</a></sub>
+
 ### GitInvaders
 
 A single spaceship defends against aliens that oscillate within their own cells at a progressively faster arcade rhythm.
@@ -48,6 +54,8 @@ A single spaceship defends against aliens that oscillate within their own cells 
   <img alt="GitInvaders animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-light.svg" width="100%">
 </picture>
 
+<sub><a href="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-dark.svg">Dark Mode</a> · <a href="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/invaders-light.svg">Light Mode</a></sub>
+
 ### GitOrigami
 
 Contribution cells fold into paper birds, fly and return to the calendar.
@@ -56,6 +64,8 @@ Contribution cells fold into paper birds, fly and return to the calendar.
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-dark.svg">
   <img alt="GitOrigami animated contribution calendar" src="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-light.svg" width="100%">
 </picture>
+
+<sub><a href="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-dark.svg">Dark Mode</a> · <a href="https://raw.githubusercontent.com/AndreaCarrilloOp/contributionDynamic/output/origami-light.svg">Light Mode</a></sub>
 
 ## Quick start
 
