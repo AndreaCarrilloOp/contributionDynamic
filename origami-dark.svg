@@ -25,7 +25,6 @@
 </g>
 <g id="calendar">
 <g id="calendar-padding" aria-hidden="true">
-<rect x="723" y="116" width="10" height="10" rx="2" fill="#161b22" data-placeholder="true"/>
 </g>
 <rect x="47" y="38" width="10" height="10" rx="2" fill="#161b22" data-date="2025-11-16">
 <title>2025-11-16: 0 contributions</title>
@@ -669,9 +668,9 @@
 <rect x="437" y="77" width="10" height="10" rx="2" fill="#161b22" data-date="2026-06-17">
 <title>2026-06-17: 0 contributions</title>
 </rect>
-<rect x="437" y="90" width="10" height="10" rx="2" fill="#26a641" data-date="2026-06-18">
+<rect x="437" y="90" width="10" height="10" rx="2" fill="#39d353" data-date="2026-06-18">
 <title>2026-06-18: 17 contributions</title>
-<animate attributeName="fill" values="#26a641;#161b22;#26a641;#26a641" keyTimes="0;0.01396648;0.159217877;1" dur="17.9s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#161b22;#39d353;#39d353" keyTimes="0;0.01396648;0.159217877;1" dur="17.9s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="437" y="103" width="10" height="10" rx="2" fill="#161b22" data-date="2026-06-19">
 <title>2026-06-19: 0 contributions</title>
@@ -1121,9 +1120,9 @@
 <title>2026-11-06: 8 contributions</title>
 <animate attributeName="fill" values="#006d32;#161b22;#006d32;#006d32" keyTimes="0;0.684357542;0.829608939;1" dur="17.9s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="116" width="10" height="10" rx="2" fill="#26a641" data-date="2026-11-07">
+<rect x="697" y="116" width="10" height="10" rx="2" fill="#39d353" data-date="2026-11-07">
 <title>2026-11-07: 17 contributions</title>
-<animate attributeName="fill" values="#26a641;#161b22;#26a641;#26a641" keyTimes="0;0.711173184;0.856424581;1" dur="17.9s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#161b22;#39d353;#39d353" keyTimes="0;0.711173184;0.856424581;1" dur="17.9s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="710" y="38" width="10" height="10" rx="2" fill="#161b22" data-date="2026-11-08">
 <title>2026-11-08: 0 contributions</title>
@@ -1168,35 +1167,38 @@
 <rect x="723" y="103" width="10" height="10" rx="2" fill="#161b22" data-date="2026-11-20">
 <title>2026-11-20: 0 contributions</title>
 </rect>
+<rect x="723" y="116" width="10" height="10" rx="2" fill="#161b22" data-date="2026-11-21">
+<title>2026-11-21: 0 contributions</title>
+</rect>
 </g>
 <g id="paper-birds">
 <g data-bird="2026-06-18" opacity="0" transform="translate(442.0 95.0)">
 <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.013128492;0.01396648;0.139664804;0.159217877;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 <animateTransform attributeName="transform" type="translate" values="442.0 95.0;442.0 95.0;454.0 89.0;476.0 77.0;497.0 67.0;497.0 67.0" keyTimes="0;0.034078212;0.061452514;0.103351955;0.159217877;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="scale(1 1)">
-<polygon points="-5,-5 5,-5 0,0" fill="#26a641">
+<polygon points="-5,-5 5,-5 0,0" fill="#39d353">
 <animate attributeName="points" values="-5,-5 5,-5 0,0;-5,-5 5,-5 0,0;-5,-2 0,-5 1,2;0,0 4,-11 7,-2;0,0 4,8 7,-2;0,0 4,-11 7,-2;0,0 4,8 7,-2;0,0 4,-11 7,-2;0,0 4,8 7,-2;0,0 4,8 7,-2" keyTimes="0;0.01396648;0.024581006;0.037988827;0.058100559;0.078212291;0.098324022;0.118435754;0.159217877;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#137b70;#137b70" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#137b70;#137b70" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
-<polygon points="5,-5 5,5 0,0" fill="#26a641">
+<polygon points="5,-5 5,5 0,0" fill="#39d353">
 <animate attributeName="points" values="5,-5 5,5 0,0;5,-5 5,5 0,0;0,-5 5,-2 1,2;-11,-1 -4,-2 -5,4;-11,-1 -4,-2 -5,4" keyTimes="0;0.01396648;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#48bfa9;#48bfa9" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#48bfa9;#48bfa9" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
-<polygon points="5,5 -5,5 0,0" fill="#26a641">
+<polygon points="5,5 -5,5 0,0" fill="#39d353">
 <animate attributeName="points" values="5,5 -5,5 0,0;5,5 -5,5 0,0;5,-2 1,5 1,2;-5,-2 6,-2 1,5;-5,-2 6,-2 1,5" keyTimes="0;0.01396648;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#48bfa9;#48bfa9" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#48bfa9;#48bfa9" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
-<polygon points="-5,5 -5,-5 0,0" fill="#26a641">
+<polygon points="-5,5 -5,-5 0,0" fill="#39d353">
 <animate attributeName="points" values="-5,5 -5,-5 0,0;-5,5 -5,-5 0,0;1,5 -5,-2 1,2;-3,1 -11,-8 3,4;-3,1 -10,8 3,4;-3,1 -11,-8 3,4;-3,1 -10,8 3,4;-3,1 -11,-8 3,4;-3,1 -10,8 3,4;-3,1 -10,8 3,4" keyTimes="0;0.01396648;0.024581006;0.037988827;0.058100559;0.078212291;0.098324022;0.118435754;0.159217877;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#b8f5db;#b8f5db" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#b8f5db;#b8f5db" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
-<polygon points="5,-5 5,-5 5,-5" fill="#26a641">
+<polygon points="5,-5 5,-5 5,-5" fill="#39d353">
 <animate attributeName="points" values="5,-5 5,-5 5,-5;5,-5 5,-5 5,-5;5,-2 5,-2 5,-2;5,-2 7,-5 9,-1;5,-2 7,-5 9,-1" keyTimes="0;0.01396648;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#b8f5db;#b8f5db" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#b8f5db;#b8f5db" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
-<polygon points="5,-5 5,-5 5,-5" fill="#26a641">
+<polygon points="5,-5 5,-5 5,-5" fill="#39d353">
 <animate attributeName="points" values="5,-5 5,-5 5,-5;5,-5 5,-5 5,-5;5,-2 5,-2 5,-2;7,-3 12,-2 9,-1;7,-3 12,-2 9,-1" keyTimes="0;0.01396648;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#137b70;#137b70" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#137b70;#137b70" keyTimes="0;0.024581006;0.037988827;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
 </g>
 </g>
@@ -1954,29 +1956,29 @@
 <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.710335196;0.711173184;0.836871508;0.856424581;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 <animateTransform attributeName="transform" type="translate" values="702.0 121.0;702.0 121.0;690.0 115.0;668.0 103.0;647.0 93.0;647.0 93.0" keyTimes="0;0.731284916;0.758659218;0.800558659;0.856424581;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 <g transform="scale(-1 1)">
-<polygon points="-5,-5 5,-5 0,0" fill="#26a641">
+<polygon points="-5,-5 5,-5 0,0" fill="#39d353">
 <animate attributeName="points" values="-5,-5 5,-5 0,0;-5,-5 5,-5 0,0;-5,-2 0,-5 1,2;0,0 4,-11 7,-2;0,0 4,8 7,-2;0,0 4,-11 7,-2;0,0 4,8 7,-2;0,0 4,-11 7,-2;0,0 4,8 7,-2;0,0 4,8 7,-2" keyTimes="0;0.711173184;0.721787709;0.735195531;0.755307263;0.775418994;0.795530726;0.815642458;0.856424581;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#137b70;#137b70" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#137b70;#137b70" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
-<polygon points="5,-5 5,5 0,0" fill="#26a641">
+<polygon points="5,-5 5,5 0,0" fill="#39d353">
 <animate attributeName="points" values="5,-5 5,5 0,0;5,-5 5,5 0,0;0,-5 5,-2 1,2;-11,-1 -4,-2 -5,4;-11,-1 -4,-2 -5,4" keyTimes="0;0.711173184;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#48bfa9;#48bfa9" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#48bfa9;#48bfa9" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
-<polygon points="5,5 -5,5 0,0" fill="#26a641">
+<polygon points="5,5 -5,5 0,0" fill="#39d353">
 <animate attributeName="points" values="5,5 -5,5 0,0;5,5 -5,5 0,0;5,-2 1,5 1,2;-5,-2 6,-2 1,5;-5,-2 6,-2 1,5" keyTimes="0;0.711173184;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#48bfa9;#48bfa9" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#48bfa9;#48bfa9" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
-<polygon points="-5,5 -5,-5 0,0" fill="#26a641">
+<polygon points="-5,5 -5,-5 0,0" fill="#39d353">
 <animate attributeName="points" values="-5,5 -5,-5 0,0;-5,5 -5,-5 0,0;1,5 -5,-2 1,2;-3,1 -11,-8 3,4;-3,1 -10,8 3,4;-3,1 -11,-8 3,4;-3,1 -10,8 3,4;-3,1 -11,-8 3,4;-3,1 -10,8 3,4;-3,1 -10,8 3,4" keyTimes="0;0.711173184;0.721787709;0.735195531;0.755307263;0.775418994;0.795530726;0.815642458;0.856424581;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#b8f5db;#b8f5db" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#b8f5db;#b8f5db" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
-<polygon points="5,-5 5,-5 5,-5" fill="#26a641">
+<polygon points="5,-5 5,-5 5,-5" fill="#39d353">
 <animate attributeName="points" values="5,-5 5,-5 5,-5;5,-5 5,-5 5,-5;5,-2 5,-2 5,-2;5,-2 7,-5 9,-1;5,-2 7,-5 9,-1" keyTimes="0;0.711173184;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#b8f5db;#b8f5db" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#b8f5db;#b8f5db" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
-<polygon points="5,-5 5,-5 5,-5" fill="#26a641">
+<polygon points="5,-5 5,-5 5,-5" fill="#39d353">
 <animate attributeName="points" values="5,-5 5,-5 5,-5;5,-5 5,-5 5,-5;5,-2 5,-2 5,-2;7,-3 12,-2 9,-1;7,-3 12,-2 9,-1" keyTimes="0;0.711173184;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#26a641;#26a641;#137b70;#137b70" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#39d353;#39d353;#137b70;#137b70" keyTimes="0;0.721787709;0.735195531;1" dur="17.9s" calcMode="linear" repeatCount="indefinite"/>
 </polygon>
 </g>
 </g>

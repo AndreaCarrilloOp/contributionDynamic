@@ -25,7 +25,6 @@
 </g>
 <g id="calendar">
 <g id="calendar-padding" aria-hidden="true">
-<rect x="723" y="116" width="10" height="10" rx="1" fill="#e5ebf5" data-placeholder="true"/>
 </g>
 <rect x="47" y="38" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2025-11-16" data-level="0">
 <title>2025-11-16: 0 contributions</title>
@@ -669,9 +668,9 @@
 <rect x="437" y="77" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-06-17" data-level="0">
 <title>2026-06-17: 0 contributions</title>
 </rect>
-<rect x="437" y="90" width="10" height="10" rx="1" fill="#f4dcea" data-date="2026-06-18" data-level="3">
+<rect x="437" y="90" width="10" height="10" rx="1" fill="#f5e8ce" data-date="2026-06-18" data-level="4">
 <title>2026-06-18: 17 contributions</title>
-<animate attributeName="fill" values="#f4dcea;#e5ebf5;#f4dcea;#f4dcea" keyTimes="0;0.025873931;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f5e8ce;#e5ebf5;#f5e8ce;#f5e8ce" keyTimes="0;0.025873931;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="437" y="103" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-06-19" data-level="0">
 <title>2026-06-19: 0 contributions</title>
@@ -1121,9 +1120,9 @@
 <title>2026-11-06: 8 contributions</title>
 <animate attributeName="fill" values="#dce9fb;#e5ebf5;#dce9fb;#dce9fb" keyTimes="0;0.797957529;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="116" width="10" height="10" rx="1" fill="#f4dcea" data-date="2026-11-07" data-level="3">
+<rect x="697" y="116" width="10" height="10" rx="1" fill="#f5e8ce" data-date="2026-11-07" data-level="4">
 <title>2026-11-07: 17 contributions</title>
-<animate attributeName="fill" values="#f4dcea;#e5ebf5;#f4dcea;#f4dcea" keyTimes="0;0.496932284;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#f5e8ce;#e5ebf5;#f5e8ce;#f5e8ce" keyTimes="0;0.496932284;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="710" y="38" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-11-08" data-level="0">
 <title>2026-11-08: 0 contributions</title>
@@ -1168,6 +1167,9 @@
 <rect x="723" y="103" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-11-20" data-level="0">
 <title>2026-11-20: 0 contributions</title>
 </rect>
+<rect x="723" y="116" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-11-21" data-level="0">
+<title>2026-11-21: 0 contributions</title>
+</rect>
 </g>
 <path d="M42 153H737" stroke="#c5d1e5" stroke-width="1" stroke-dasharray="3 4"/>
 <defs>
@@ -1202,9 +1204,9 @@
 </defs>
 <g id="invaders" shape-rendering="crispEdges">
 <animateTransform attributeName="transform" type="translate" values="0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0.000 0.000;1.000 0.000;0.000 1.000;-1.000 1.000;0 0;0 0" keyTimes="0;0.027882757;0.05486607;0.081849383;0.107933252;0.133117677;0.158302103;0.182587084;0.205972622;0.22935816;0.251844254;0.273430905;0.295017555;0.315704762;0.335492525;0.355280287;0.374168607;0.391258038;0.40834747;0.425436901;0.441626889;0.457816877;0.474006865;0.489297409;0.504587953;0.518979053;0.533370153;0.54686181;0.560353466;0.573845122;0.586437335;0.599029548;0.611621761;0.62331453;0.635007299;0.646700068;0.657493393;0.668286718;0.679080043;0.688973924;0.698867806;0.708761687;0.717756125;0.725851119;0.733946113;0.742041107;0.750136101;0.758231094;0.765426645;0.771722751;0.778018857;0.784314964;0.79061107;0.796907176;0.803203283;0.808599945;0.813097164;0.817594383;0.822091602;0.826588821;0.831086039;0.835583258;0.840080477;0.844577696;0.848227802;0.851877909;0.855528015;0.859178121;0.862828228;0.866478334;0.87012844;0.873778547;0.877428653;0.881078759;0.884728866;0.888378972;0.892029078;0.895679185;0.899329291;0.902979397;0.906629504;0.91027961;0.913929716;0.917579823;0.921229929;0.924880035;0.928530142;0.932180248;0.935830354;0.939480461;0.943130567;0.946780673;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
-<g data-invader="2026-06-18" data-level="3" transform="translate(442.0 95.0)" opacity="1">
+<g data-invader="2026-06-18" data-level="4" transform="translate(442.0 95.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.025873931;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-3" xlink:href="#invader-sprite-3"/>
+<use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
 </g>
 <g data-invader="2026-09-02" data-level="2" transform="translate(585.0 82.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.068606865;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
@@ -1258,9 +1260,9 @@
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.462558586;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
 </g>
-<g data-invader="2026-11-07" data-level="3" transform="translate(702.0 121.0)" opacity="1">
+<g data-invader="2026-11-07" data-level="4" transform="translate(702.0 121.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.496932284;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-3" xlink:href="#invader-sprite-3"/>
+<use href="#invader-sprite-4" xlink:href="#invader-sprite-4"/>
 </g>
 <g data-invader="2026-09-17" data-level="1" transform="translate(611.0 95.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.53222671;0.983270346;1" dur="32.875755s" calcMode="discrete" repeatCount="indefinite"/>
@@ -1345,7 +1347,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(442.0 95.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.025569755;0.025873931;0.027242721;0.029524037;1" dur="32.875755s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#b52783"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#b06c0b"/>
 <path d="M-2 -2h4v4h-4Z" fill="#f79228"/>
 </g>
 <g data-laser="enemy" transform="translate(586.0 84.8)" opacity="0">
@@ -1615,7 +1617,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(701.0 122.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.496628109;0.496932284;0.498301074;0.500582391;1" dur="32.875755s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#b52783"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#b06c0b"/>
 <path d="M-2 -2h4v4h-4Z" fill="#f79228"/>
 </g>
 <g data-laser="enemy" transform="translate(611.0 97.8)" opacity="0">

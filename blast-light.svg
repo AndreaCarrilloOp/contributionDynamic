@@ -25,7 +25,6 @@
 </g>
 <g id="calendar">
 <g id="calendar-padding" aria-hidden="true">
-<rect x="723" y="116" width="10" height="10" rx="1" fill="#e0e8dc" data-placeholder="true"/>
 </g>
 <rect x="47" y="38" width="10" height="10" rx="1" fill="#e0e8dc" data-date="2025-11-16" data-level="0">
 <title>2025-11-16: 0 contributions</title>
@@ -669,9 +668,9 @@
 <rect x="437" y="77" width="10" height="10" rx="1" fill="#e0e8dc" data-date="2026-06-17" data-level="0">
 <title>2026-06-17: 0 contributions</title>
 </rect>
-<rect x="437" y="90" width="10" height="10" rx="1" fill="#799180" data-date="2026-06-18" data-level="3">
+<rect x="437" y="90" width="10" height="10" rx="1" fill="#506c5c" data-date="2026-06-18" data-level="4">
 <title>2026-06-18: 17 contributions</title>
-<animate attributeName="fill" values="#799180;#e0e8dc;#799180" keyTimes="0;0.017144319;1" dur="39.08s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#506c5c;#e0e8dc;#506c5c" keyTimes="0;0.017144319;1" dur="39.08s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="437" y="103" width="10" height="10" rx="1" fill="#e0e8dc" data-date="2026-06-19" data-level="0">
 <title>2026-06-19: 0 contributions</title>
@@ -1121,9 +1120,9 @@
 <title>2026-11-06: 8 contributions</title>
 <animate attributeName="fill" values="#a2b4a3;#e0e8dc;#a2b4a3" keyTimes="0;0.431422723;1" dur="39.08s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
-<rect x="697" y="116" width="10" height="10" rx="1" fill="#799180" data-date="2026-11-07" data-level="3">
+<rect x="697" y="116" width="10" height="10" rx="1" fill="#506c5c" data-date="2026-11-07" data-level="4">
 <title>2026-11-07: 17 contributions</title>
-<animate attributeName="fill" values="#799180;#e0e8dc;#799180" keyTimes="0;0.400972364;1" dur="39.08s" calcMode="discrete" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#506c5c;#e0e8dc;#506c5c" keyTimes="0;0.400972364;1" dur="39.08s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 <rect x="710" y="38" width="10" height="10" rx="1" fill="#e0e8dc" data-date="2026-11-08" data-level="0">
 <title>2026-11-08: 0 contributions</title>
@@ -1167,6 +1166,9 @@
 </rect>
 <rect x="723" y="103" width="10" height="10" rx="1" fill="#e0e8dc" data-date="2026-11-20" data-level="0">
 <title>2026-11-20: 0 contributions</title>
+</rect>
+<rect x="723" y="116" width="10" height="10" rx="1" fill="#e0e8dc" data-date="2026-11-21" data-level="0">
+<title>2026-11-21: 0 contributions</title>
 </rect>
 </g>
 <g id="brick-mortar">
@@ -1745,22 +1747,22 @@
 <rect x="425.5" y="62.5" width="7" height="13" rx="1" fill="#d06a30" opacity=".9"/>
 <path d="M429.0 62.5V75.5" stroke="#ffe6a0" stroke-width="2.4"/>
 </g>
-<rect x="441.0" y="94.0" width="2" height="2" fill="#799180" opacity="0">
+<rect x="441.0" y="94.0" width="2" height="2" fill="#506c5c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017144319;0.018167861;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="441.0;441.0;435.0;435.0" keyTimes="0;0.017144319;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="94.0;94.0;87.0;87.0" keyTimes="0;0.017144319;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="441.0" y="94.0" width="2" height="2" fill="#799180" opacity="0">
+<rect x="441.0" y="94.0" width="2" height="2" fill="#506c5c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017144319;0.018167861;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="441.0;441.0;449.0;449.0" keyTimes="0;0.017144319;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="94.0;94.0;88.0;88.0" keyTimes="0;0.017144319;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="441.0" y="94.0" width="2" height="2" fill="#799180" opacity="0">
+<rect x="441.0" y="94.0" width="2" height="2" fill="#506c5c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017144319;0.018167861;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="441.0;441.0;436.0;436.0" keyTimes="0;0.017144319;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="94.0;94.0;102.0;102.0" keyTimes="0;0.017144319;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="441.0" y="94.0" width="2" height="2" fill="#799180" opacity="0">
+<rect x="441.0" y="94.0" width="2" height="2" fill="#506c5c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.017144319;0.018167861;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="441.0;441.0;448.0;448.0" keyTimes="0;0.017144319;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="94.0;94.0;103.0;103.0" keyTimes="0;0.017144319;0.027891505;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
@@ -2361,22 +2363,22 @@
 <rect x="685.5" y="88.5" width="7" height="13" rx="1" fill="#d06a30" opacity=".9"/>
 <path d="M689.0 88.5V101.5" stroke="#ffe6a0" stroke-width="2.4"/>
 </g>
-<rect x="701.0" y="120.0" width="2" height="2" fill="#799180" opacity="0">
+<rect x="701.0" y="120.0" width="2" height="2" fill="#506c5c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.400972364;0.401995906;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="701.0;701.0;695.0;695.0" keyTimes="0;0.400972364;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="120.0;120.0;113.0;113.0" keyTimes="0;0.400972364;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="701.0" y="120.0" width="2" height="2" fill="#799180" opacity="0">
+<rect x="701.0" y="120.0" width="2" height="2" fill="#506c5c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.400972364;0.401995906;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="701.0;701.0;709.0;709.0" keyTimes="0;0.400972364;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="120.0;120.0;114.0;114.0" keyTimes="0;0.400972364;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="701.0" y="120.0" width="2" height="2" fill="#799180" opacity="0">
+<rect x="701.0" y="120.0" width="2" height="2" fill="#506c5c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.400972364;0.401995906;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="701.0;701.0;696.0;696.0" keyTimes="0;0.400972364;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="120.0;120.0;128.0;128.0" keyTimes="0;0.400972364;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 </rect>
-<rect x="701.0" y="120.0" width="2" height="2" fill="#799180" opacity="0">
+<rect x="701.0" y="120.0" width="2" height="2" fill="#506c5c" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.400972364;0.401995906;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="x" values="701.0;701.0;708.0;708.0" keyTimes="0;0.400972364;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
 <animate attributeName="y" values="120.0;120.0;129.0;129.0" keyTimes="0;0.400972364;0.41171955;1" dur="39.08s" calcMode="linear" repeatCount="indefinite"/>
