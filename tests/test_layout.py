@@ -4,7 +4,7 @@ from xml.etree import ElementTree
 import pytest
 
 from contribution_dynamic.calendar import Day, board_weeks
-from contribution_dynamic.labels import FONT_SIZE, LEFT, MONTH_BASELINES, STEP, TOP
+from contribution_dynamic.labels import FONT_SIZE, LEFT, MONTH_BASELINE, STEP, TOP
 from contribution_dynamic.layout import ROWS, SIGNATURE_HEIGHT, calendar_height, calendar_width
 from contribution_dynamic.registry import PUBLISHED_SCENARIOS, RENDERERS, THEMES
 
@@ -50,7 +50,7 @@ def test_compact_layout_and_optional_signature(scenario, theme):
     days = (Day(date(2026, 11, 18), 0, 3, 52, 0),)
     plain = ElementTree.fromstring(RENDERERS[scenario](days, theme))
     signed = ElementTree.fromstring(RENDERERS[scenario](days, theme, signature=True))
-    assert FONT_SIZE == 9 and TOP == 38 and MONTH_BASELINES == (10, 20)
+    assert FONT_SIZE == 9 and TOP == 38 and MONTH_BASELINE == 10
     assert plain.find(".//s:text[@id='repo-signature']", NS) is None
     stamp = signed.find(".//s:text[@id='repo-signature']", NS)
     assert stamp is not None and stamp.text == "contributionDynamic"

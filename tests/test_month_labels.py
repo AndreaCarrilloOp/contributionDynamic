@@ -4,7 +4,7 @@ from xml.etree import ElementTree
 import pytest
 
 from contribution_dynamic.calendar import Day, month_label_positions
-from contribution_dynamic.labels import LEFT, MONTH_BASELINES, RIGHT, STEP, TOP, WEEKDAYS
+from contribution_dynamic.labels import LEFT, MONTH_BASELINE, MONTH_SPACING, RIGHT, STEP, TOP, WEEKDAYS
 from contribution_dynamic.layout import calendar_width
 from contribution_dynamic.registry import PUBLISHED_SCENARIOS, RENDERERS, THEMES
 
@@ -44,10 +44,11 @@ def test_all_calendar_months_are_visible(scenario, theme, start, end):
     xs = [int(node.attrib["x"]) for node in labels]
     assert xs == [LEFT + week * STEP for week in months.values()]
     assert xs[0] >= 0 and xs[-1]+24 <= int(root.attrib["width"])
-    for baseline in MONTH_BASELINES:
-        row = [int(n.attrib["x"]) for n in labels if int(n.attrib["y"]) == baseline]
-        assert all(b-a >= 24 for a, b in zip(row, row[1:]))
-    assert all(int(n.attrib["y"]) in MONTH_BASELINES for n in labels)
+    assert all(int(n.attrib["y"]) == MONTH_BASELINE for n in labels)
+    for first, second in zip(labels, labels[1:]):
+        if int(second.attrib["x"])-int(first.attrib["x"]) < MONTH_SPACING:
+            assert first.attrib["text-anchor"] == "end"
+            assert first.attrib["dx"] == "-3"
     cells = root.findall(".//s:g[@id='calendar']/s:rect", NS)
     assert {c.attrib["data-date"] for c in cells} == {d.date.isoformat() for d in days}
     cell = float(cells[0].attrib["height"])
@@ -87,4 +88,20 @@ def test_partial_boundary_months_keep_exact_columns():
         root = ElementTree.fromstring(RENDERERS[scenario](days, "dark"))
         labels = root.findall(".//s:g[@id='month-labels']/s:text", NS)
         assert labels[0].attrib["x"] == labels[1].attrib["x"]
-        assert labels[0].attrib["y"] != labels[1].attrib["y"]
+        assert labels[0].attrib["y"] == labels[1].attrib["y"] == str(MONTH_BASELINE)
+        assert labels[0].attrib["text-anchor"] == "end"
+        assert labels[0].attrib["dx"] == "-3"
+
+
+@pytest.mark.parametrize("scenario", PUBLISHED_SCENARIOS)
+@pytest.mark.parametrize("theme", THEMES)
+def test_december_shares_month_baseline_in_published_calendar(scenario, theme):
+    days = _calendar(date(2025, 11, 23), date(2026, 11, 22))
+    root = ElementTree.fromstring(RENDERERS[scenario](days, theme))
+    labels = root.findall(".//s:g[@id='month-labels']/s:text", NS)
+    assert [(node.text, node.attrib["x"]) for node in labels[:3]] == [
+        ("Nov", "47"), ("Dec", "60"), ("Jan", "112"),
+    ]
+    assert {node.attrib["y"] for node in labels} == {str(MONTH_BASELINE)}
+    assert labels[0].attrib["text-anchor"] == "end"
+    assert "text-anchor" not in labels[1].attrib

@@ -8,24 +8,22 @@ STEP = 13
 RIGHT = 16
 FONT_SIZE = 9
 MONTH_SPACING = 24
-MONTH_BASELINES = (10, 20)
+MONTH_BASELINE = 10
 WEEKDAYS = ((1, "Mon"), (3, "Wed"), (5, "Fri"))
 
 
 def render_labels(days: tuple[Day, ...], width: int, cell: int, color: str) -> list[str]:
-    """Keep month anchors exact; stagger only closely spaced label baselines."""
+    """Keep month labels level and separate adjacent boundary months."""
     parts = [
         f'<g id="calendar-labels" font-family="system-ui,sans-serif" '
         f'font-size="{FONT_SIZE}" fill="{color}">',
         '<g id="month-labels" text-anchor="start">',
     ]
-    last = [float("-inf")] * len(MONTH_BASELINES)
-    for x, month in month_label_positions(days, LEFT, STEP, width):
-        lane = next((i for i, prev in enumerate(last) if x-prev >= MONTH_SPACING), 1)
-        last[lane] = x
-        # Normally there is enough right padding (STEP + RIGHT) for the last
-        # abbreviation. The alternate baseline handles partial boundary months.
-        parts.append(f'<text x="{x}" y="{MONTH_BASELINES[lane]}">{month}</text>')
+    months = month_label_positions(days, LEFT, STEP, width)
+    for i, (x, month) in enumerate(months):
+        crowded = i+1 < len(months) and months[i+1][0]-x < MONTH_SPACING
+        alignment = ' text-anchor="end" dx="-3"' if crowded else ""
+        parts.append(f'<text x="{x}" y="{MONTH_BASELINE}"{alignment}>{month}</text>')
     parts.extend([
         '</g>',
         '<g id="weekday-labels" text-anchor="end" dominant-baseline="central">',
