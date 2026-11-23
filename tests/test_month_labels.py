@@ -4,7 +4,15 @@ from xml.etree import ElementTree
 import pytest
 
 from contribution_dynamic.calendar import Day, month_label_positions
-from contribution_dynamic.labels import LEFT, MONTH_BASELINE, MONTH_SPACING, RIGHT, STEP, TOP, WEEKDAYS
+from contribution_dynamic.labels import (
+    LEFT,
+    MONTH_BASELINE,
+    MONTH_SPACING,
+    RIGHT,
+    STEP,
+    TOP,
+    WEEKDAYS,
+)
 from contribution_dynamic.layout import calendar_width
 from contribution_dynamic.registry import PUBLISHED_SCENARIOS, RENDERERS, THEMES
 
