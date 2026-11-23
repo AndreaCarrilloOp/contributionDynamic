@@ -1,0 +1,2429 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="749" height="158" viewBox="0 0 749 158" role="img" aria-label="Tanks golden tank navigates the contribution maze">
+<title>Tanks — one versus many</title>
+<rect width="749" height="158" rx="6" fill="#faf6eb"/>
+<g id="calendar-labels" font-family="system-ui,sans-serif" font-size="9" fill="#675b48">
+<g id="month-labels" text-anchor="start">
+<text x="47" y="10">Nov</text>
+<text x="60" y="20">Dec</text>
+<text x="112" y="10">Jan</text>
+<text x="177" y="10">Feb</text>
+<text x="229" y="10">Mar</text>
+<text x="281" y="10">Apr</text>
+<text x="333" y="10">May</text>
+<text x="398" y="10">Jun</text>
+<text x="450" y="10">Jul</text>
+<text x="502" y="10">Aug</text>
+<text x="567" y="10">Sep</text>
+<text x="619" y="10">Oct</text>
+<text x="684" y="10">Nov</text>
+</g>
+<g id="weekday-labels" text-anchor="end" dominant-baseline="central">
+<text x="29" y="56">Mon</text>
+<text x="29" y="82">Wed</text>
+<text x="29" y="108">Fri</text>
+</g>
+</g>
+<g id="calendar">
+<g id="calendar-padding" aria-hidden="true">
+<rect x="723" y="51" width="10" height="10" rx="1" fill="#eee8db" data-placeholder="true"/>
+<rect x="723" y="64" width="10" height="10" rx="1" fill="#eee8db" data-placeholder="true"/>
+<rect x="723" y="77" width="10" height="10" rx="1" fill="#eee8db" data-placeholder="true"/>
+<rect x="723" y="90" width="10" height="10" rx="1" fill="#eee8db" data-placeholder="true"/>
+<rect x="723" y="103" width="10" height="10" rx="1" fill="#eee8db" data-placeholder="true"/>
+<rect x="723" y="116" width="10" height="10" rx="1" fill="#eee8db" data-placeholder="true"/>
+</g>
+<rect x="47" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-11-23" data-level="0">
+<title>2025-11-23: 0 contributions</title>
+</rect>
+<rect x="47" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-11-24" data-level="0">
+<title>2025-11-24: 0 contributions</title>
+</rect>
+<rect x="47" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-11-25" data-level="0">
+<title>2025-11-25: 0 contributions</title>
+</rect>
+<rect x="47" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-11-26" data-level="0">
+<title>2025-11-26: 0 contributions</title>
+</rect>
+<rect x="47" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-11-27" data-level="0">
+<title>2025-11-27: 0 contributions</title>
+</rect>
+<rect x="47" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-11-28" data-level="0">
+<title>2025-11-28: 0 contributions</title>
+</rect>
+<rect x="47" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-11-29" data-level="0">
+<title>2025-11-29: 0 contributions</title>
+</rect>
+<rect x="60" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-11-30" data-level="0">
+<title>2025-11-30: 0 contributions</title>
+</rect>
+<rect x="60" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-01" data-level="0">
+<title>2025-12-01: 0 contributions</title>
+</rect>
+<rect x="60" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-02" data-level="0">
+<title>2025-12-02: 0 contributions</title>
+</rect>
+<rect x="60" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-03" data-level="0">
+<title>2025-12-03: 0 contributions</title>
+</rect>
+<rect x="60" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-04" data-level="0">
+<title>2025-12-04: 0 contributions</title>
+</rect>
+<rect x="60" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-05" data-level="0">
+<title>2025-12-05: 0 contributions</title>
+</rect>
+<rect x="60" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-06" data-level="0">
+<title>2025-12-06: 0 contributions</title>
+</rect>
+<rect x="73" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-07" data-level="0">
+<title>2025-12-07: 0 contributions</title>
+</rect>
+<rect x="73" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-08" data-level="0">
+<title>2025-12-08: 0 contributions</title>
+</rect>
+<rect x="73" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-09" data-level="0">
+<title>2025-12-09: 0 contributions</title>
+</rect>
+<rect x="73" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-10" data-level="0">
+<title>2025-12-10: 0 contributions</title>
+</rect>
+<rect x="73" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-11" data-level="0">
+<title>2025-12-11: 0 contributions</title>
+</rect>
+<rect x="73" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-12" data-level="0">
+<title>2025-12-12: 0 contributions</title>
+</rect>
+<rect x="73" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-13" data-level="0">
+<title>2025-12-13: 0 contributions</title>
+</rect>
+<rect x="86" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-14" data-level="0">
+<title>2025-12-14: 0 contributions</title>
+</rect>
+<rect x="86" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-15" data-level="0">
+<title>2025-12-15: 0 contributions</title>
+</rect>
+<rect x="86" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-16" data-level="0">
+<title>2025-12-16: 0 contributions</title>
+</rect>
+<rect x="86" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-17" data-level="0">
+<title>2025-12-17: 0 contributions</title>
+</rect>
+<rect x="86" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-18" data-level="0">
+<title>2025-12-18: 0 contributions</title>
+</rect>
+<rect x="86" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-19" data-level="0">
+<title>2025-12-19: 0 contributions</title>
+</rect>
+<rect x="86" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-20" data-level="0">
+<title>2025-12-20: 0 contributions</title>
+</rect>
+<rect x="99" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-21" data-level="0">
+<title>2025-12-21: 0 contributions</title>
+</rect>
+<rect x="99" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-22" data-level="0">
+<title>2025-12-22: 0 contributions</title>
+</rect>
+<rect x="99" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-23" data-level="0">
+<title>2025-12-23: 0 contributions</title>
+</rect>
+<rect x="99" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-24" data-level="0">
+<title>2025-12-24: 0 contributions</title>
+</rect>
+<rect x="99" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-25" data-level="0">
+<title>2025-12-25: 0 contributions</title>
+</rect>
+<rect x="99" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-26" data-level="0">
+<title>2025-12-26: 0 contributions</title>
+</rect>
+<rect x="99" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-27" data-level="0">
+<title>2025-12-27: 0 contributions</title>
+</rect>
+<rect x="112" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-28" data-level="0">
+<title>2025-12-28: 0 contributions</title>
+</rect>
+<rect x="112" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-29" data-level="0">
+<title>2025-12-29: 0 contributions</title>
+</rect>
+<rect x="112" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-30" data-level="0">
+<title>2025-12-30: 0 contributions</title>
+</rect>
+<rect x="112" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2025-12-31" data-level="0">
+<title>2025-12-31: 0 contributions</title>
+</rect>
+<rect x="112" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-01" data-level="0">
+<title>2026-01-01: 0 contributions</title>
+</rect>
+<rect x="112" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-02" data-level="0">
+<title>2026-01-02: 0 contributions</title>
+</rect>
+<rect x="112" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-03" data-level="0">
+<title>2026-01-03: 0 contributions</title>
+</rect>
+<rect x="125" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-04" data-level="0">
+<title>2026-01-04: 0 contributions</title>
+</rect>
+<rect x="125" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-05" data-level="0">
+<title>2026-01-05: 0 contributions</title>
+</rect>
+<rect x="125" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-06" data-level="0">
+<title>2026-01-06: 0 contributions</title>
+</rect>
+<rect x="125" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-07" data-level="0">
+<title>2026-01-07: 0 contributions</title>
+</rect>
+<rect x="125" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-08" data-level="0">
+<title>2026-01-08: 0 contributions</title>
+</rect>
+<rect x="125" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-09" data-level="0">
+<title>2026-01-09: 0 contributions</title>
+</rect>
+<rect x="125" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-10" data-level="0">
+<title>2026-01-10: 0 contributions</title>
+</rect>
+<rect x="138" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-11" data-level="0">
+<title>2026-01-11: 0 contributions</title>
+</rect>
+<rect x="138" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-12" data-level="0">
+<title>2026-01-12: 0 contributions</title>
+</rect>
+<rect x="138" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-13" data-level="0">
+<title>2026-01-13: 0 contributions</title>
+</rect>
+<rect x="138" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-14" data-level="0">
+<title>2026-01-14: 0 contributions</title>
+</rect>
+<rect x="138" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-15" data-level="0">
+<title>2026-01-15: 0 contributions</title>
+</rect>
+<rect x="138" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-16" data-level="0">
+<title>2026-01-16: 0 contributions</title>
+</rect>
+<rect x="138" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-17" data-level="0">
+<title>2026-01-17: 0 contributions</title>
+</rect>
+<rect x="151" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-18" data-level="0">
+<title>2026-01-18: 0 contributions</title>
+</rect>
+<rect x="151" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-19" data-level="0">
+<title>2026-01-19: 0 contributions</title>
+</rect>
+<rect x="151" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-20" data-level="0">
+<title>2026-01-20: 0 contributions</title>
+</rect>
+<rect x="151" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-21" data-level="0">
+<title>2026-01-21: 0 contributions</title>
+</rect>
+<rect x="151" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-22" data-level="0">
+<title>2026-01-22: 0 contributions</title>
+</rect>
+<rect x="151" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-23" data-level="0">
+<title>2026-01-23: 0 contributions</title>
+</rect>
+<rect x="151" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-24" data-level="0">
+<title>2026-01-24: 0 contributions</title>
+</rect>
+<rect x="164" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-25" data-level="0">
+<title>2026-01-25: 0 contributions</title>
+</rect>
+<rect x="164" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-26" data-level="0">
+<title>2026-01-26: 0 contributions</title>
+</rect>
+<rect x="164" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-27" data-level="0">
+<title>2026-01-27: 0 contributions</title>
+</rect>
+<rect x="164" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-28" data-level="0">
+<title>2026-01-28: 0 contributions</title>
+</rect>
+<rect x="164" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-29" data-level="0">
+<title>2026-01-29: 0 contributions</title>
+</rect>
+<rect x="164" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-30" data-level="0">
+<title>2026-01-30: 0 contributions</title>
+</rect>
+<rect x="164" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-01-31" data-level="0">
+<title>2026-01-31: 0 contributions</title>
+</rect>
+<rect x="177" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-01" data-level="0">
+<title>2026-02-01: 0 contributions</title>
+</rect>
+<rect x="177" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-02" data-level="0">
+<title>2026-02-02: 0 contributions</title>
+</rect>
+<rect x="177" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-03" data-level="0">
+<title>2026-02-03: 0 contributions</title>
+</rect>
+<rect x="177" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-04" data-level="0">
+<title>2026-02-04: 0 contributions</title>
+</rect>
+<rect x="177" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-05" data-level="0">
+<title>2026-02-05: 0 contributions</title>
+</rect>
+<rect x="177" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-06" data-level="0">
+<title>2026-02-06: 0 contributions</title>
+</rect>
+<rect x="177" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-07" data-level="0">
+<title>2026-02-07: 0 contributions</title>
+</rect>
+<rect x="190" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-08" data-level="0">
+<title>2026-02-08: 0 contributions</title>
+</rect>
+<rect x="190" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-09" data-level="0">
+<title>2026-02-09: 0 contributions</title>
+</rect>
+<rect x="190" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-10" data-level="0">
+<title>2026-02-10: 0 contributions</title>
+</rect>
+<rect x="190" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-11" data-level="0">
+<title>2026-02-11: 0 contributions</title>
+</rect>
+<rect x="190" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-12" data-level="0">
+<title>2026-02-12: 0 contributions</title>
+</rect>
+<rect x="190" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-13" data-level="0">
+<title>2026-02-13: 0 contributions</title>
+</rect>
+<rect x="190" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-14" data-level="0">
+<title>2026-02-14: 0 contributions</title>
+</rect>
+<rect x="203" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-15" data-level="0">
+<title>2026-02-15: 0 contributions</title>
+</rect>
+<rect x="203" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-16" data-level="0">
+<title>2026-02-16: 0 contributions</title>
+</rect>
+<rect x="203" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-17" data-level="0">
+<title>2026-02-17: 0 contributions</title>
+</rect>
+<rect x="203" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-18" data-level="0">
+<title>2026-02-18: 0 contributions</title>
+</rect>
+<rect x="203" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-19" data-level="0">
+<title>2026-02-19: 0 contributions</title>
+</rect>
+<rect x="203" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-20" data-level="0">
+<title>2026-02-20: 0 contributions</title>
+</rect>
+<rect x="203" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-21" data-level="0">
+<title>2026-02-21: 0 contributions</title>
+</rect>
+<rect x="216" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-22" data-level="0">
+<title>2026-02-22: 0 contributions</title>
+</rect>
+<rect x="216" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-23" data-level="0">
+<title>2026-02-23: 0 contributions</title>
+</rect>
+<rect x="216" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-24" data-level="0">
+<title>2026-02-24: 0 contributions</title>
+</rect>
+<rect x="216" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-25" data-level="0">
+<title>2026-02-25: 0 contributions</title>
+</rect>
+<rect x="216" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-26" data-level="0">
+<title>2026-02-26: 0 contributions</title>
+</rect>
+<rect x="216" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-27" data-level="0">
+<title>2026-02-27: 0 contributions</title>
+</rect>
+<rect x="216" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-02-28" data-level="0">
+<title>2026-02-28: 0 contributions</title>
+</rect>
+<rect x="229" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-01" data-level="0">
+<title>2026-03-01: 0 contributions</title>
+</rect>
+<rect x="229" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-02" data-level="0">
+<title>2026-03-02: 0 contributions</title>
+</rect>
+<rect x="229" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-03" data-level="0">
+<title>2026-03-03: 0 contributions</title>
+</rect>
+<rect x="229" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-04" data-level="0">
+<title>2026-03-04: 0 contributions</title>
+</rect>
+<rect x="229" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-05" data-level="0">
+<title>2026-03-05: 0 contributions</title>
+</rect>
+<rect x="229" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-06" data-level="0">
+<title>2026-03-06: 0 contributions</title>
+</rect>
+<rect x="229" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-07" data-level="0">
+<title>2026-03-07: 0 contributions</title>
+</rect>
+<rect x="242" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-08" data-level="0">
+<title>2026-03-08: 0 contributions</title>
+</rect>
+<rect x="242" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-09" data-level="0">
+<title>2026-03-09: 0 contributions</title>
+</rect>
+<rect x="242" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-10" data-level="0">
+<title>2026-03-10: 0 contributions</title>
+</rect>
+<rect x="242" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-11" data-level="0">
+<title>2026-03-11: 0 contributions</title>
+</rect>
+<rect x="242" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-12" data-level="0">
+<title>2026-03-12: 0 contributions</title>
+</rect>
+<rect x="242" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-13" data-level="0">
+<title>2026-03-13: 0 contributions</title>
+</rect>
+<rect x="242" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-14" data-level="0">
+<title>2026-03-14: 0 contributions</title>
+</rect>
+<rect x="255" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-15" data-level="0">
+<title>2026-03-15: 0 contributions</title>
+</rect>
+<rect x="255" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-16" data-level="0">
+<title>2026-03-16: 0 contributions</title>
+</rect>
+<rect x="255" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-17" data-level="0">
+<title>2026-03-17: 0 contributions</title>
+</rect>
+<rect x="255" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-18" data-level="0">
+<title>2026-03-18: 0 contributions</title>
+</rect>
+<rect x="255" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-19" data-level="0">
+<title>2026-03-19: 0 contributions</title>
+</rect>
+<rect x="255" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-20" data-level="0">
+<title>2026-03-20: 0 contributions</title>
+</rect>
+<rect x="255" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-21" data-level="0">
+<title>2026-03-21: 0 contributions</title>
+</rect>
+<rect x="268" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-22" data-level="0">
+<title>2026-03-22: 0 contributions</title>
+</rect>
+<rect x="268" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-23" data-level="0">
+<title>2026-03-23: 0 contributions</title>
+</rect>
+<rect x="268" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-24" data-level="0">
+<title>2026-03-24: 0 contributions</title>
+</rect>
+<rect x="268" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-25" data-level="0">
+<title>2026-03-25: 0 contributions</title>
+</rect>
+<rect x="268" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-26" data-level="0">
+<title>2026-03-26: 0 contributions</title>
+</rect>
+<rect x="268" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-27" data-level="0">
+<title>2026-03-27: 0 contributions</title>
+</rect>
+<rect x="268" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-28" data-level="0">
+<title>2026-03-28: 0 contributions</title>
+</rect>
+<rect x="281" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-29" data-level="0">
+<title>2026-03-29: 0 contributions</title>
+</rect>
+<rect x="281" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-30" data-level="0">
+<title>2026-03-30: 0 contributions</title>
+</rect>
+<rect x="281" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-03-31" data-level="0">
+<title>2026-03-31: 0 contributions</title>
+</rect>
+<rect x="281" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-01" data-level="0">
+<title>2026-04-01: 0 contributions</title>
+</rect>
+<rect x="281" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-02" data-level="0">
+<title>2026-04-02: 0 contributions</title>
+</rect>
+<rect x="281" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-03" data-level="0">
+<title>2026-04-03: 0 contributions</title>
+</rect>
+<rect x="281" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-04" data-level="0">
+<title>2026-04-04: 0 contributions</title>
+</rect>
+<rect x="294" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-05" data-level="0">
+<title>2026-04-05: 0 contributions</title>
+</rect>
+<rect x="294" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-06" data-level="0">
+<title>2026-04-06: 0 contributions</title>
+</rect>
+<rect x="294" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-07" data-level="0">
+<title>2026-04-07: 0 contributions</title>
+</rect>
+<rect x="294" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-08" data-level="0">
+<title>2026-04-08: 0 contributions</title>
+</rect>
+<rect x="294" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-09" data-level="0">
+<title>2026-04-09: 0 contributions</title>
+</rect>
+<rect x="294" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-10" data-level="0">
+<title>2026-04-10: 0 contributions</title>
+</rect>
+<rect x="294" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-11" data-level="0">
+<title>2026-04-11: 0 contributions</title>
+</rect>
+<rect x="307" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-12" data-level="0">
+<title>2026-04-12: 0 contributions</title>
+</rect>
+<rect x="307" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-13" data-level="0">
+<title>2026-04-13: 0 contributions</title>
+</rect>
+<rect x="307" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-14" data-level="0">
+<title>2026-04-14: 0 contributions</title>
+</rect>
+<rect x="307" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-15" data-level="0">
+<title>2026-04-15: 0 contributions</title>
+</rect>
+<rect x="307" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-16" data-level="0">
+<title>2026-04-16: 0 contributions</title>
+</rect>
+<rect x="307" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-17" data-level="0">
+<title>2026-04-17: 0 contributions</title>
+</rect>
+<rect x="307" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-18" data-level="0">
+<title>2026-04-18: 0 contributions</title>
+</rect>
+<rect x="320" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-19" data-level="0">
+<title>2026-04-19: 0 contributions</title>
+</rect>
+<rect x="320" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-20" data-level="0">
+<title>2026-04-20: 0 contributions</title>
+</rect>
+<rect x="320" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-21" data-level="0">
+<title>2026-04-21: 0 contributions</title>
+</rect>
+<rect x="320" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-22" data-level="0">
+<title>2026-04-22: 0 contributions</title>
+</rect>
+<rect x="320" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-23" data-level="0">
+<title>2026-04-23: 0 contributions</title>
+</rect>
+<rect x="320" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-24" data-level="0">
+<title>2026-04-24: 0 contributions</title>
+</rect>
+<rect x="320" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-25" data-level="0">
+<title>2026-04-25: 0 contributions</title>
+</rect>
+<rect x="333" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-26" data-level="0">
+<title>2026-04-26: 0 contributions</title>
+</rect>
+<rect x="333" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-27" data-level="0">
+<title>2026-04-27: 0 contributions</title>
+</rect>
+<rect x="333" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-28" data-level="0">
+<title>2026-04-28: 0 contributions</title>
+</rect>
+<rect x="333" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-29" data-level="0">
+<title>2026-04-29: 0 contributions</title>
+</rect>
+<rect x="333" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-04-30" data-level="0">
+<title>2026-04-30: 0 contributions</title>
+</rect>
+<rect x="333" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-01" data-level="0">
+<title>2026-05-01: 0 contributions</title>
+</rect>
+<rect x="333" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-02" data-level="0">
+<title>2026-05-02: 0 contributions</title>
+</rect>
+<rect x="346" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-03" data-level="0">
+<title>2026-05-03: 0 contributions</title>
+</rect>
+<rect x="346" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-04" data-level="0">
+<title>2026-05-04: 0 contributions</title>
+</rect>
+<rect x="346" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-05" data-level="0">
+<title>2026-05-05: 0 contributions</title>
+</rect>
+<rect x="346" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-06" data-level="0">
+<title>2026-05-06: 0 contributions</title>
+</rect>
+<rect x="346" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-07" data-level="0">
+<title>2026-05-07: 0 contributions</title>
+</rect>
+<rect x="346" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-08" data-level="0">
+<title>2026-05-08: 0 contributions</title>
+</rect>
+<rect x="346" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-09" data-level="0">
+<title>2026-05-09: 0 contributions</title>
+</rect>
+<rect x="359" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-10" data-level="0">
+<title>2026-05-10: 0 contributions</title>
+</rect>
+<rect x="359" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-11" data-level="0">
+<title>2026-05-11: 0 contributions</title>
+</rect>
+<rect x="359" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-12" data-level="0">
+<title>2026-05-12: 0 contributions</title>
+</rect>
+<rect x="359" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-13" data-level="0">
+<title>2026-05-13: 0 contributions</title>
+</rect>
+<rect x="359" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-14" data-level="0">
+<title>2026-05-14: 0 contributions</title>
+</rect>
+<rect x="359" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-15" data-level="0">
+<title>2026-05-15: 0 contributions</title>
+</rect>
+<rect x="359" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-16" data-level="0">
+<title>2026-05-16: 0 contributions</title>
+</rect>
+<rect x="372" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-17" data-level="0">
+<title>2026-05-17: 0 contributions</title>
+</rect>
+<rect x="372" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-18" data-level="0">
+<title>2026-05-18: 0 contributions</title>
+</rect>
+<rect x="372" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-19" data-level="0">
+<title>2026-05-19: 0 contributions</title>
+</rect>
+<rect x="372" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-20" data-level="0">
+<title>2026-05-20: 0 contributions</title>
+</rect>
+<rect x="372" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-21" data-level="0">
+<title>2026-05-21: 0 contributions</title>
+</rect>
+<rect x="372" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-22" data-level="0">
+<title>2026-05-22: 0 contributions</title>
+</rect>
+<rect x="372" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-23" data-level="0">
+<title>2026-05-23: 0 contributions</title>
+</rect>
+<rect x="385" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-24" data-level="0">
+<title>2026-05-24: 0 contributions</title>
+</rect>
+<rect x="385" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-25" data-level="0">
+<title>2026-05-25: 0 contributions</title>
+</rect>
+<rect x="385" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-26" data-level="0">
+<title>2026-05-26: 0 contributions</title>
+</rect>
+<rect x="385" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-27" data-level="0">
+<title>2026-05-27: 0 contributions</title>
+</rect>
+<rect x="385" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-28" data-level="0">
+<title>2026-05-28: 0 contributions</title>
+</rect>
+<rect x="385" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-29" data-level="0">
+<title>2026-05-29: 0 contributions</title>
+</rect>
+<rect x="385" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-30" data-level="0">
+<title>2026-05-30: 0 contributions</title>
+</rect>
+<rect x="398" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-05-31" data-level="0">
+<title>2026-05-31: 0 contributions</title>
+</rect>
+<rect x="398" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-01" data-level="0">
+<title>2026-06-01: 0 contributions</title>
+</rect>
+<rect x="398" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-02" data-level="0">
+<title>2026-06-02: 0 contributions</title>
+</rect>
+<rect x="398" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-03" data-level="0">
+<title>2026-06-03: 0 contributions</title>
+</rect>
+<rect x="398" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-04" data-level="0">
+<title>2026-06-04: 0 contributions</title>
+</rect>
+<rect x="398" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-05" data-level="0">
+<title>2026-06-05: 0 contributions</title>
+</rect>
+<rect x="398" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-06" data-level="0">
+<title>2026-06-06: 0 contributions</title>
+</rect>
+<rect x="411" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-07" data-level="0">
+<title>2026-06-07: 0 contributions</title>
+</rect>
+<rect x="411" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-08" data-level="0">
+<title>2026-06-08: 0 contributions</title>
+</rect>
+<rect x="411" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-09" data-level="0">
+<title>2026-06-09: 0 contributions</title>
+</rect>
+<rect x="411" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-10" data-level="0">
+<title>2026-06-10: 0 contributions</title>
+</rect>
+<rect x="411" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-11" data-level="0">
+<title>2026-06-11: 0 contributions</title>
+</rect>
+<rect x="411" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-12" data-level="0">
+<title>2026-06-12: 0 contributions</title>
+</rect>
+<rect x="411" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-13" data-level="0">
+<title>2026-06-13: 0 contributions</title>
+</rect>
+<rect x="424" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-14" data-level="0">
+<title>2026-06-14: 0 contributions</title>
+</rect>
+<rect x="424" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-15" data-level="0">
+<title>2026-06-15: 0 contributions</title>
+</rect>
+<rect x="424" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-16" data-level="0">
+<title>2026-06-16: 0 contributions</title>
+</rect>
+<rect x="424" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-17" data-level="0">
+<title>2026-06-17: 0 contributions</title>
+</rect>
+<rect x="424" y="90" width="10" height="10" rx="1" fill="#c87934" data-date="2026-06-18" data-level="3">
+<title>2026-06-18: 17 contributions</title>
+<animate attributeName="fill" values="#c87934;#eee8db;#c87934" keyTimes="0;0.006746338;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="424" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-19" data-level="0">
+<title>2026-06-19: 0 contributions</title>
+</rect>
+<rect x="424" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-20" data-level="0">
+<title>2026-06-20: 0 contributions</title>
+</rect>
+<rect x="437" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-21" data-level="0">
+<title>2026-06-21: 0 contributions</title>
+</rect>
+<rect x="437" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-22" data-level="0">
+<title>2026-06-22: 0 contributions</title>
+</rect>
+<rect x="437" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-23" data-level="0">
+<title>2026-06-23: 0 contributions</title>
+</rect>
+<rect x="437" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-24" data-level="0">
+<title>2026-06-24: 0 contributions</title>
+</rect>
+<rect x="437" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-25" data-level="0">
+<title>2026-06-25: 0 contributions</title>
+</rect>
+<rect x="437" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-26" data-level="0">
+<title>2026-06-26: 0 contributions</title>
+</rect>
+<rect x="437" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-27" data-level="0">
+<title>2026-06-27: 0 contributions</title>
+</rect>
+<rect x="450" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-28" data-level="0">
+<title>2026-06-28: 0 contributions</title>
+</rect>
+<rect x="450" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-29" data-level="0">
+<title>2026-06-29: 0 contributions</title>
+</rect>
+<rect x="450" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-06-30" data-level="0">
+<title>2026-06-30: 0 contributions</title>
+</rect>
+<rect x="450" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-01" data-level="0">
+<title>2026-07-01: 0 contributions</title>
+</rect>
+<rect x="450" y="90" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-07-02" data-level="2">
+<title>2026-07-02: 7 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.016512465;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="450" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-03" data-level="0">
+<title>2026-07-03: 0 contributions</title>
+</rect>
+<rect x="450" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-04" data-level="0">
+<title>2026-07-04: 0 contributions</title>
+</rect>
+<rect x="463" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-05" data-level="0">
+<title>2026-07-05: 0 contributions</title>
+</rect>
+<rect x="463" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-06" data-level="0">
+<title>2026-07-06: 0 contributions</title>
+</rect>
+<rect x="463" y="64" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-07-07" data-level="1">
+<title>2026-07-07: 1 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.047224364;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="463" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-08" data-level="0">
+<title>2026-07-08: 0 contributions</title>
+</rect>
+<rect x="463" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-09" data-level="0">
+<title>2026-07-09: 0 contributions</title>
+</rect>
+<rect x="463" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-10" data-level="0">
+<title>2026-07-10: 0 contributions</title>
+</rect>
+<rect x="463" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-11" data-level="0">
+<title>2026-07-11: 0 contributions</title>
+</rect>
+<rect x="476" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-12" data-level="0">
+<title>2026-07-12: 0 contributions</title>
+</rect>
+<rect x="476" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-13" data-level="0">
+<title>2026-07-13: 0 contributions</title>
+</rect>
+<rect x="476" y="64" width="10" height="10" rx="1" fill="#a95b22" data-date="2026-07-14" data-level="4">
+<title>2026-07-14: 18 contributions</title>
+<animate attributeName="fill" values="#a95b22;#eee8db;#a95b22" keyTimes="0;0.058339758;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="476" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-15" data-level="0">
+<title>2026-07-15: 0 contributions</title>
+</rect>
+<rect x="476" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-16" data-level="0">
+<title>2026-07-16: 0 contributions</title>
+</rect>
+<rect x="476" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-17" data-level="0">
+<title>2026-07-17: 0 contributions</title>
+</rect>
+<rect x="476" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-18" data-level="0">
+<title>2026-07-18: 0 contributions</title>
+</rect>
+<rect x="489" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-19" data-level="0">
+<title>2026-07-19: 0 contributions</title>
+</rect>
+<rect x="489" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-20" data-level="0">
+<title>2026-07-20: 0 contributions</title>
+</rect>
+<rect x="489" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-21" data-level="0">
+<title>2026-07-21: 0 contributions</title>
+</rect>
+<rect x="489" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-22" data-level="0">
+<title>2026-07-22: 0 contributions</title>
+</rect>
+<rect x="489" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-23" data-level="0">
+<title>2026-07-23: 0 contributions</title>
+</rect>
+<rect x="489" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-24" data-level="0">
+<title>2026-07-24: 0 contributions</title>
+</rect>
+<rect x="489" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-25" data-level="0">
+<title>2026-07-25: 0 contributions</title>
+</rect>
+<rect x="502" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-26" data-level="0">
+<title>2026-07-26: 0 contributions</title>
+</rect>
+<rect x="502" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-27" data-level="0">
+<title>2026-07-27: 0 contributions</title>
+</rect>
+<rect x="502" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-28" data-level="0">
+<title>2026-07-28: 0 contributions</title>
+</rect>
+<rect x="502" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-29" data-level="0">
+<title>2026-07-29: 0 contributions</title>
+</rect>
+<rect x="502" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-30" data-level="0">
+<title>2026-07-30: 0 contributions</title>
+</rect>
+<rect x="502" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-07-31" data-level="0">
+<title>2026-07-31: 0 contributions</title>
+</rect>
+<rect x="502" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-01" data-level="0">
+<title>2026-08-01: 0 contributions</title>
+</rect>
+<rect x="515" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-02" data-level="0">
+<title>2026-08-02: 0 contributions</title>
+</rect>
+<rect x="515" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-03" data-level="0">
+<title>2026-08-03: 0 contributions</title>
+</rect>
+<rect x="515" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-04" data-level="0">
+<title>2026-08-04: 0 contributions</title>
+</rect>
+<rect x="515" y="77" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-08-05" data-level="2">
+<title>2026-08-05: 8 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.121305577;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="515" y="90" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-08-06" data-level="1">
+<title>2026-08-06: 1 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.036108969;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="515" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-07" data-level="0">
+<title>2026-08-07: 0 contributions</title>
+</rect>
+<rect x="515" y="116" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-08-08" data-level="1">
+<title>2026-08-08: 4 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.205988178;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="528" y="38" width="10" height="10" rx="1" fill="#a95b22" data-date="2026-08-09" data-level="4">
+<title>2026-08-09: 23 contributions</title>
+<animate attributeName="fill" values="#a95b22;#eee8db;#a95b22" keyTimes="0;0.231431509;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="528" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-10" data-level="0">
+<title>2026-08-10: 0 contributions</title>
+</rect>
+<rect x="528" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-11" data-level="0">
+<title>2026-08-11: 0 contributions</title>
+</rect>
+<rect x="528" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-12" data-level="0">
+<title>2026-08-12: 0 contributions</title>
+</rect>
+<rect x="528" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-13" data-level="0">
+<title>2026-08-13: 0 contributions</title>
+</rect>
+<rect x="528" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-14" data-level="0">
+<title>2026-08-14: 0 contributions</title>
+</rect>
+<rect x="528" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-15" data-level="0">
+<title>2026-08-15: 0 contributions</title>
+</rect>
+<rect x="541" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-16" data-level="0">
+<title>2026-08-16: 0 contributions</title>
+</rect>
+<rect x="541" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-17" data-level="0">
+<title>2026-08-17: 0 contributions</title>
+</rect>
+<rect x="541" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-18" data-level="0">
+<title>2026-08-18: 0 contributions</title>
+</rect>
+<rect x="541" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-19" data-level="0">
+<title>2026-08-19: 0 contributions</title>
+</rect>
+<rect x="541" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-20" data-level="0">
+<title>2026-08-20: 0 contributions</title>
+</rect>
+<rect x="541" y="103" width="10" height="10" rx="1" fill="#c87934" data-date="2026-08-21" data-level="3">
+<title>2026-08-21: 15 contributions</title>
+<animate attributeName="fill" values="#c87934;#eee8db;#c87934" keyTimes="0;0.282189668;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="541" y="116" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-08-22" data-level="2">
+<title>2026-08-22: 10 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.29150604;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="554" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-23" data-level="0">
+<title>2026-08-23: 0 contributions</title>
+</rect>
+<rect x="554" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-24" data-level="0">
+<title>2026-08-24: 0 contributions</title>
+</rect>
+<rect x="554" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-25" data-level="0">
+<title>2026-08-25: 0 contributions</title>
+</rect>
+<rect x="554" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-26" data-level="0">
+<title>2026-08-26: 0 contributions</title>
+</rect>
+<rect x="554" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-27" data-level="0">
+<title>2026-08-27: 0 contributions</title>
+</rect>
+<rect x="554" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-28" data-level="0">
+<title>2026-08-28: 0 contributions</title>
+</rect>
+<rect x="554" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-29" data-level="0">
+<title>2026-08-29: 0 contributions</title>
+</rect>
+<rect x="567" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-30" data-level="0">
+<title>2026-08-30: 0 contributions</title>
+</rect>
+<rect x="567" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-08-31" data-level="0">
+<title>2026-08-31: 0 contributions</title>
+</rect>
+<rect x="567" y="64" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-01" data-level="1">
+<title>2026-09-01: 4 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.320547417;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="567" y="77" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-09-02" data-level="2">
+<title>2026-09-02: 7 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.180544847;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="567" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-03" data-level="0">
+<title>2026-09-03: 0 contributions</title>
+</rect>
+<rect x="567" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-04" data-level="0">
+<title>2026-09-04: 0 contributions</title>
+</rect>
+<rect x="567" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-05" data-level="0">
+<title>2026-09-05: 0 contributions</title>
+</rect>
+<rect x="580" y="38" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-06" data-level="1">
+<title>2026-09-06: 3 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.424441018;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="580" y="51" width="10" height="10" rx="1" fill="#a95b22" data-date="2026-09-07" data-level="4">
+<title>2026-09-07: 22 contributions</title>
+<animate attributeName="fill" values="#a95b22;#eee8db;#a95b22" keyTimes="0;0.333333333;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="580" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-08" data-level="0">
+<title>2026-09-08: 0 contributions</title>
+</rect>
+<rect x="580" y="77" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-09-09" data-level="2">
+<title>2026-09-09: 6 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.196671807;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="580" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-10" data-level="0">
+<title>2026-09-10: 0 contributions</title>
+</rect>
+<rect x="580" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-11" data-level="0">
+<title>2026-09-11: 0 contributions</title>
+</rect>
+<rect x="580" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-12" data-level="0">
+<title>2026-09-12: 0 contributions</title>
+</rect>
+<rect x="593" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-13" data-level="0">
+<title>2026-09-13: 0 contributions</title>
+</rect>
+<rect x="593" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-14" data-level="0">
+<title>2026-09-14: 0 contributions</title>
+</rect>
+<rect x="593" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-15" data-level="0">
+<title>2026-09-15: 0 contributions</title>
+</rect>
+<rect x="593" y="77" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-09-16" data-level="2">
+<title>2026-09-16: 7 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.222115137;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="593" y="90" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-17" data-level="1">
+<title>2026-09-17: 2 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.305962478;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="593" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-18" data-level="0">
+<title>2026-09-18: 0 contributions</title>
+</rect>
+<rect x="593" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-19" data-level="0">
+<title>2026-09-19: 0 contributions</title>
+</rect>
+<rect x="606" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-20" data-level="0">
+<title>2026-09-20: 0 contributions</title>
+</rect>
+<rect x="606" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-21" data-level="0">
+<title>2026-09-21: 0 contributions</title>
+</rect>
+<rect x="606" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-22" data-level="0">
+<title>2026-09-22: 0 contributions</title>
+</rect>
+<rect x="606" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-23" data-level="0">
+<title>2026-09-23: 0 contributions</title>
+</rect>
+<rect x="606" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-24" data-level="0">
+<title>2026-09-24: 0 contributions</title>
+</rect>
+<rect x="606" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-25" data-level="0">
+<title>2026-09-25: 0 contributions</title>
+</rect>
+<rect x="606" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-26" data-level="0">
+<title>2026-09-26: 0 contributions</title>
+</rect>
+<rect x="619" y="38" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-09-27" data-level="1">
+<title>2026-09-27: 2 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.45849396;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="619" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-28" data-level="0">
+<title>2026-09-28: 0 contributions</title>
+</rect>
+<rect x="619" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-29" data-level="0">
+<title>2026-09-29: 0 contributions</title>
+</rect>
+<rect x="619" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-09-30" data-level="0">
+<title>2026-09-30: 0 contributions</title>
+</rect>
+<rect x="619" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-01" data-level="0">
+<title>2026-10-01: 0 contributions</title>
+</rect>
+<rect x="619" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-02" data-level="0">
+<title>2026-10-02: 0 contributions</title>
+</rect>
+<rect x="619" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-03" data-level="0">
+<title>2026-10-03: 0 contributions</title>
+</rect>
+<rect x="632" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-04" data-level="0">
+<title>2026-10-04: 0 contributions</title>
+</rect>
+<rect x="632" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-05" data-level="0">
+<title>2026-10-05: 0 contributions</title>
+</rect>
+<rect x="632" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-06" data-level="0">
+<title>2026-10-06: 0 contributions</title>
+</rect>
+<rect x="632" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-07" data-level="0">
+<title>2026-10-07: 0 contributions</title>
+</rect>
+<rect x="632" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-08" data-level="0">
+<title>2026-10-08: 0 contributions</title>
+</rect>
+<rect x="632" y="103" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-10-09" data-level="1">
+<title>2026-10-09: 4 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.383962992;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="632" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-10" data-level="0">
+<title>2026-10-10: 0 contributions</title>
+</rect>
+<rect x="645" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-11" data-level="0">
+<title>2026-10-11: 0 contributions</title>
+</rect>
+<rect x="645" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-12" data-level="0">
+<title>2026-10-12: 0 contributions</title>
+</rect>
+<rect x="645" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-13" data-level="0">
+<title>2026-10-13: 0 contributions</title>
+</rect>
+<rect x="645" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-14" data-level="0">
+<title>2026-10-14: 0 contributions</title>
+</rect>
+<rect x="645" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-15" data-level="0">
+<title>2026-10-15: 0 contributions</title>
+</rect>
+<rect x="645" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-16" data-level="0">
+<title>2026-10-16: 0 contributions</title>
+</rect>
+<rect x="645" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-17" data-level="0">
+<title>2026-10-17: 0 contributions</title>
+</rect>
+<rect x="658" y="38" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-10-18" data-level="1">
+<title>2026-10-18: 5 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.649383192;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="658" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-19" data-level="0">
+<title>2026-10-19: 0 contributions</title>
+</rect>
+<rect x="658" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-20" data-level="0">
+<title>2026-10-20: 0 contributions</title>
+</rect>
+<rect x="658" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-21" data-level="0">
+<title>2026-10-21: 0 contributions</title>
+</rect>
+<rect x="658" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-22" data-level="0">
+<title>2026-10-22: 0 contributions</title>
+</rect>
+<rect x="658" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-23" data-level="0">
+<title>2026-10-23: 0 contributions</title>
+</rect>
+<rect x="658" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-24" data-level="0">
+<title>2026-10-24: 0 contributions</title>
+</rect>
+<rect x="671" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-25" data-level="0">
+<title>2026-10-25: 0 contributions</title>
+</rect>
+<rect x="671" y="51" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-10-26" data-level="2">
+<title>2026-10-26: 7 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.636597276;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="671" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-27" data-level="0">
+<title>2026-10-27: 0 contributions</title>
+</rect>
+<rect x="671" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-28" data-level="0">
+<title>2026-10-28: 0 contributions</title>
+</rect>
+<rect x="671" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-10-29" data-level="0">
+<title>2026-10-29: 0 contributions</title>
+</rect>
+<rect x="671" y="103" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-10-30" data-level="1">
+<title>2026-10-30: 2 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.472950398;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="671" y="116" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-10-31" data-level="2">
+<title>2026-10-31: 11 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.54998715;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="684" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-01" data-level="0">
+<title>2026-11-01: 0 contributions</title>
+</rect>
+<rect x="684" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-02" data-level="0">
+<title>2026-11-02: 0 contributions</title>
+</rect>
+<rect x="684" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-03" data-level="0">
+<title>2026-11-03: 0 contributions</title>
+</rect>
+<rect x="684" y="77" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-11-04" data-level="1">
+<title>2026-11-04: 5 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.618671293;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="684" y="90" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-11-05" data-level="2">
+<title>2026-11-05: 11 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.447507068;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="684" y="103" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-11-06" data-level="2">
+<title>2026-11-06: 8 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.485607813;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="684" y="116" width="10" height="10" rx="1" fill="#c87934" data-date="2026-11-07" data-level="3">
+<title>2026-11-07: 17 contributions</title>
+<animate attributeName="fill" values="#c87934;#eee8db;#c87934" keyTimes="0;0.564443588;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="697" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-08" data-level="0">
+<title>2026-11-08: 0 contributions</title>
+</rect>
+<rect x="697" y="51" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-09" data-level="0">
+<title>2026-11-09: 0 contributions</title>
+</rect>
+<rect x="697" y="64" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-10" data-level="0">
+<title>2026-11-10: 0 contributions</title>
+</rect>
+<rect x="697" y="77" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-11" data-level="0">
+<title>2026-11-11: 0 contributions</title>
+</rect>
+<rect x="697" y="90" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-12" data-level="0">
+<title>2026-11-12: 0 contributions</title>
+</rect>
+<rect x="697" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-13" data-level="0">
+<title>2026-11-13: 0 contributions</title>
+</rect>
+<rect x="697" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-14" data-level="0">
+<title>2026-11-14: 0 contributions</title>
+</rect>
+<rect x="710" y="38" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-15" data-level="0">
+<title>2026-11-15: 0 contributions</title>
+</rect>
+<rect x="710" y="51" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-11-16" data-level="2">
+<title>2026-11-16: 10 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.68690568;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="710" y="64" width="10" height="10" rx="1" fill="#a95b22" data-date="2026-11-17" data-level="4">
+<title>2026-11-17: 70 contributions</title>
+<animate attributeName="fill" values="#a95b22;#eee8db;#a95b22" keyTimes="0;0.77383706;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="710" y="77" width="10" height="10" rx="1" fill="#a95b22" data-date="2026-11-18" data-level="4">
+<title>2026-11-18: 70 contributions</title>
+<animate attributeName="fill" values="#a95b22;#eee8db;#a95b22" keyTimes="0;0.78996402;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="710" y="90" width="10" height="10" rx="1" fill="#f4c38d" data-date="2026-11-19" data-level="1">
+<title>2026-11-19: 4 contributions</title>
+<animate attributeName="fill" values="#f4c38d;#eee8db;#f4c38d" keyTimes="0;0.873425855;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="710" y="103" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-20" data-level="0">
+<title>2026-11-20: 0 contributions</title>
+</rect>
+<rect x="710" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-21" data-level="0">
+<title>2026-11-21: 0 contributions</title>
+</rect>
+<rect x="723" y="38" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-11-22" data-level="2">
+<title>2026-11-22: 9 contributions</title>
+<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.672449242;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+</g>
+<g id="brick-detail">
+<g data-brick="2026-06-18" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.006746338;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M424 93.5H434M424 97H434M429 90V93.5M426.5 93.5V97M431.5 93.5V97M429 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M424.5 91H428.5M429.5 91H433.5M424.5 94.5H426M427 94.5H431M432 94.5H433.5M424.5 98H428.5M429.5 98H433.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M424 99.5H434" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-07-02" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.016512465;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M450 93.5H460M450 97H460M455 90V93.5M452.5 93.5V97M457.5 93.5V97M455 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M450.5 91H454.5M455.5 91H459.5M450.5 94.5H452M453 94.5H457M458 94.5H459.5M450.5 98H454.5M455.5 98H459.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M450 99.5H460" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-07-07" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.047224364;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M463 67.5H473M463 71H473M468 64V67.5M465.5 67.5V71M470.5 67.5V71M468 71V74" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M463.5 65H467.5M468.5 65H472.5M463.5 68.5H465M466 68.5H470M471 68.5H472.5M463.5 72H467.5M468.5 72H472.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M463 73.5H473" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-07-14" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.058339758;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M476 67.5H486M476 71H486M481 64V67.5M478.5 67.5V71M483.5 67.5V71M481 71V74" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M476.5 65H480.5M481.5 65H485.5M476.5 68.5H478M479 68.5H483M484 68.5H485.5M476.5 72H480.5M481.5 72H485.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M476 73.5H486" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-08-05" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.121305577;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M515 80.5H525M515 84H525M520 77V80.5M517.5 80.5V84M522.5 80.5V84M520 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M515.5 78H519.5M520.5 78H524.5M515.5 81.5H517M518 81.5H522M523 81.5H524.5M515.5 85H519.5M520.5 85H524.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M515 86.5H525" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-08-06" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.036108969;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M515 93.5H525M515 97H525M520 90V93.5M517.5 93.5V97M522.5 93.5V97M520 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M515.5 91H519.5M520.5 91H524.5M515.5 94.5H517M518 94.5H522M523 94.5H524.5M515.5 98H519.5M520.5 98H524.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M515 99.5H525" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-08-08" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.205988178;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M515 119.5H525M515 123H525M520 116V119.5M517.5 119.5V123M522.5 119.5V123M520 123V126" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M515.5 117H519.5M520.5 117H524.5M515.5 120.5H517M518 120.5H522M523 120.5H524.5M515.5 124H519.5M520.5 124H524.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M515 125.5H525" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-08-09" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.231431509;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M528 41.5H538M528 45H538M533 38V41.5M530.5 41.5V45M535.5 41.5V45M533 45V48" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M528.5 39H532.5M533.5 39H537.5M528.5 42.5H530M531 42.5H535M536 42.5H537.5M528.5 46H532.5M533.5 46H537.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M528 47.5H538" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-08-21" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.282189668;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M541 106.5H551M541 110H551M546 103V106.5M543.5 106.5V110M548.5 106.5V110M546 110V113" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M541.5 104H545.5M546.5 104H550.5M541.5 107.5H543M544 107.5H548M549 107.5H550.5M541.5 111H545.5M546.5 111H550.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M541 112.5H551" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-08-22" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.29150604;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M541 119.5H551M541 123H551M546 116V119.5M543.5 119.5V123M548.5 119.5V123M546 123V126" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M541.5 117H545.5M546.5 117H550.5M541.5 120.5H543M544 120.5H548M549 120.5H550.5M541.5 124H545.5M546.5 124H550.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M541 125.5H551" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-09-01" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.320547417;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M567 67.5H577M567 71H577M572 64V67.5M569.5 67.5V71M574.5 67.5V71M572 71V74" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M567.5 65H571.5M572.5 65H576.5M567.5 68.5H569M570 68.5H574M575 68.5H576.5M567.5 72H571.5M572.5 72H576.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M567 73.5H577" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-09-02" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.180544847;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M567 80.5H577M567 84H577M572 77V80.5M569.5 80.5V84M574.5 80.5V84M572 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M567.5 78H571.5M572.5 78H576.5M567.5 81.5H569M570 81.5H574M575 81.5H576.5M567.5 85H571.5M572.5 85H576.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M567 86.5H577" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-09-06" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.424441018;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M580 41.5H590M580 45H590M585 38V41.5M582.5 41.5V45M587.5 41.5V45M585 45V48" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M580.5 39H584.5M585.5 39H589.5M580.5 42.5H582M583 42.5H587M588 42.5H589.5M580.5 46H584.5M585.5 46H589.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M580 47.5H590" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-09-07" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.333333333;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M580 54.5H590M580 58H590M585 51V54.5M582.5 54.5V58M587.5 54.5V58M585 58V61" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M580.5 52H584.5M585.5 52H589.5M580.5 55.5H582M583 55.5H587M588 55.5H589.5M580.5 59H584.5M585.5 59H589.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M580 60.5H590" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-09-09" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.196671807;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M580 80.5H590M580 84H590M585 77V80.5M582.5 80.5V84M587.5 80.5V84M585 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M580.5 78H584.5M585.5 78H589.5M580.5 81.5H582M583 81.5H587M588 81.5H589.5M580.5 85H584.5M585.5 85H589.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M580 86.5H590" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-09-16" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.222115137;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M593 80.5H603M593 84H603M598 77V80.5M595.5 80.5V84M600.5 80.5V84M598 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M593.5 78H597.5M598.5 78H602.5M593.5 81.5H595M596 81.5H600M601 81.5H602.5M593.5 85H597.5M598.5 85H602.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M593 86.5H603" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-09-17" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.305962478;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M593 93.5H603M593 97H603M598 90V93.5M595.5 93.5V97M600.5 93.5V97M598 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M593.5 91H597.5M598.5 91H602.5M593.5 94.5H595M596 94.5H600M601 94.5H602.5M593.5 98H597.5M598.5 98H602.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M593 99.5H603" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-09-27" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.45849396;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M619 41.5H629M619 45H629M624 38V41.5M621.5 41.5V45M626.5 41.5V45M624 45V48" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M619.5 39H623.5M624.5 39H628.5M619.5 42.5H621M622 42.5H626M627 42.5H628.5M619.5 46H623.5M624.5 46H628.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M619 47.5H629" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-10-09" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.383962992;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M632 106.5H642M632 110H642M637 103V106.5M634.5 106.5V110M639.5 106.5V110M637 110V113" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M632.5 104H636.5M637.5 104H641.5M632.5 107.5H634M635 107.5H639M640 107.5H641.5M632.5 111H636.5M637.5 111H641.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M632 112.5H642" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-10-18" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.649383192;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M658 41.5H668M658 45H668M663 38V41.5M660.5 41.5V45M665.5 41.5V45M663 45V48" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M658.5 39H662.5M663.5 39H667.5M658.5 42.5H660M661 42.5H665M666 42.5H667.5M658.5 46H662.5M663.5 46H667.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M658 47.5H668" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-10-26" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.636597276;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M671 54.5H681M671 58H681M676 51V54.5M673.5 54.5V58M678.5 54.5V58M676 58V61" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M671.5 52H675.5M676.5 52H680.5M671.5 55.5H673M674 55.5H678M679 55.5H680.5M671.5 59H675.5M676.5 59H680.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M671 60.5H681" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-10-30" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.472950398;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M671 106.5H681M671 110H681M676 103V106.5M673.5 106.5V110M678.5 106.5V110M676 110V113" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M671.5 104H675.5M676.5 104H680.5M671.5 107.5H673M674 107.5H678M679 107.5H680.5M671.5 111H675.5M676.5 111H680.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M671 112.5H681" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-10-31" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.54998715;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M671 119.5H681M671 123H681M676 116V119.5M673.5 119.5V123M678.5 119.5V123M676 123V126" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M671.5 117H675.5M676.5 117H680.5M671.5 120.5H673M674 120.5H678M679 120.5H680.5M671.5 124H675.5M676.5 124H680.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M671 125.5H681" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-11-04" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.618671293;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M684 80.5H694M684 84H694M689 77V80.5M686.5 80.5V84M691.5 80.5V84M689 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M684.5 78H688.5M689.5 78H693.5M684.5 81.5H686M687 81.5H691M692 81.5H693.5M684.5 85H688.5M689.5 85H693.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M684 86.5H694" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-11-05" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.447507068;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M684 93.5H694M684 97H694M689 90V93.5M686.5 93.5V97M691.5 93.5V97M689 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M684.5 91H688.5M689.5 91H693.5M684.5 94.5H686M687 94.5H691M692 94.5H693.5M684.5 98H688.5M689.5 98H693.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M684 99.5H694" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-11-06" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.485607813;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M684 106.5H694M684 110H694M689 103V106.5M686.5 106.5V110M691.5 106.5V110M689 110V113" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M684.5 104H688.5M689.5 104H693.5M684.5 107.5H686M687 107.5H691M692 107.5H693.5M684.5 111H688.5M689.5 111H693.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M684 112.5H694" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-11-07" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.564443588;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M684 119.5H694M684 123H694M689 116V119.5M686.5 119.5V123M691.5 119.5V123M689 123V126" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M684.5 117H688.5M689.5 117H693.5M684.5 120.5H686M687 120.5H691M692 120.5H693.5M684.5 124H688.5M689.5 124H693.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M684 125.5H694" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-11-16" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.68690568;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M710 54.5H720M710 58H720M715 51V54.5M712.5 54.5V58M717.5 54.5V58M715 58V61" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M710.5 52H714.5M715.5 52H719.5M710.5 55.5H712M713 55.5H717M718 55.5H719.5M710.5 59H714.5M715.5 59H719.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M710 60.5H720" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-11-17" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.77383706;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M710 67.5H720M710 71H720M715 64V67.5M712.5 67.5V71M717.5 67.5V71M715 71V74" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M710.5 65H714.5M715.5 65H719.5M710.5 68.5H712M713 68.5H717M718 68.5H719.5M710.5 72H714.5M715.5 72H719.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M710 73.5H720" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-11-18" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.78996402;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M710 80.5H720M710 84H720M715 77V80.5M712.5 80.5V84M717.5 80.5V84M715 84V87" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M710.5 78H714.5M715.5 78H719.5M710.5 81.5H712M713 81.5H717M718 81.5H719.5M710.5 85H714.5M715.5 85H719.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M710 86.5H720" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-11-19" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.873425855;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M710 93.5H720M710 97H720M715 90V93.5M712.5 93.5V97M717.5 93.5V97M715 97V100" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M710.5 91H714.5M715.5 91H719.5M710.5 94.5H712M713 94.5H717M718 94.5H719.5M710.5 98H714.5M715.5 98H719.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M710 99.5H720" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+<g data-brick="2026-11-22" shape-rendering="crispEdges" opacity="1">
+<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.672449242;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<path d="M723 41.5H733M723 45H733M728 38V41.5M725.5 41.5V45M730.5 41.5V45M728 45V48" fill="none" stroke="#805027" stroke-width=".8"/>
+<path d="M723.5 39H727.5M728.5 39H732.5M723.5 42.5H725M726 42.5H730M731 42.5H732.5M723.5 46H727.5M728.5 46H732.5" stroke="#ffe2b0" stroke-width=".7" opacity=".66" fill="none"/>
+<path d="M723 47.5H733" stroke="#783f1c" stroke-width="1" opacity=".6"/>
+</g>
+</g>
+<g id="combat">
+<g data-shot="2026-06-18" data-distance="1">
+<g data-projectile="hero" opacity="0" transform="translate(423.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.004240555;0.004433308;0.006553585;0.006746338;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="423.000 95.000;423.000 95.000;429.000 95.000;429.000 95.000" keyTimes="0;0.004433308;0.006746338;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(429.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.006553585;0.006746338;0.008288358;0.011372398;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.006746338;0.011372398;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-07-02" data-distance="2">
+<g data-projectile="hero" opacity="0" transform="translate(436.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.01387818;0.014070933;0.016319712;0.016512465;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="436.000 95.000;436.000 95.000;455.000 95.000;455.000 95.000" keyTimes="0;0.014070933;0.016512465;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(455.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.016319712;0.016512465;0.018054485;0.021138525;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.016512465;0.021138525;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-08-06" data-distance="5">
+<g data-projectile="hero" opacity="0" transform="translate(462.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.02846312;0.028655873;0.035916217;0.036108969;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="462.000 95.000;462.000 95.000;520.000 95.000;520.000 95.000" keyTimes="0;0.028655873;0.036108969;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(520.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.035916217;0.036108969;0.037650989;0.04073503;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.036108969;0.04073503;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-07-07" data-distance="2">
+<g data-projectile="hero" opacity="0" transform="translate(468.000 88.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.04459008;0.044782832;0.047031611;0.047224364;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="468.000 88.000;468.000 88.000;468.000 69.000;468.000 69.000" keyTimes="0;0.044782832;0.047224364;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(468.000 69.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.047031611;0.047224364;0.048766384;0.051850424;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.047224364;0.051850424;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-07-14" data-distance="2">
+<g data-projectile="hero" opacity="0" transform="translate(481.000 88.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.055705474;0.055898227;0.058147006;0.058339758;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="481.000 88.000;481.000 88.000;481.000 69.000;481.000 69.000" keyTimes="0;0.055898227;0.058339758;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(481.000 69.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.058147006;0.058339758;0.059881778;0.062965819;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;9;9" keyTimes="0;0.058339758;0.062965819;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="1" data-role="ambusher" data-spawn="3.546667" opacity="0" transform="translate(559.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.068362889;0.070675919;0.106431509;0.106720637;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="559.000 82.000;559.000 82.000;559.000 95.000;546.000 95.000;533.000 95.000;520.000 95.000;520.000 95.000" keyTimes="0;0.068362889;0.071832434;0.075301979;0.078771524;0.082241069;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;90.0;180.0;180.0" keyTimes="0;0.068362889;0.071832434;0.075301979;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="1" data-distance="2">
+<g data-projectile="enemy" opacity="0" transform="translate(513.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.086288872;0.086481624;0.090400925;0.090593678;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="513.000 95.000;513.000 95.000;481.000 95.000;481.000 95.000" keyTimes="0;0.086481624;0.090593678;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(481.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.090400925;0.090593678;0.092135698;0.095219738;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.090593678;0.095219738;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(501.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.104086353;0.104279106;0.106527885;0.106720637;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="501.000 95.000;501.000 95.000;520.000 95.000;520.000 95.000" keyTimes="0;0.104279106;0.106720637;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(520.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.106527885;0.106720637;0.108262657;0.111346698;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.106720637;0.111346698;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-08-05" data-distance="2">
+<g data-projectile="hero" opacity="0" transform="translate(501.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.118671293;0.118864045;0.121112824;0.121305577;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="501.000 82.000;501.000 82.000;520.000 82.000;520.000 82.000" keyTimes="0;0.118864045;0.121305577;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(520.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.121112824;0.121305577;0.122847597;0.125931637;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.121305577;0.125931637;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="0" data-role="hunter" data-spawn="3.186667" opacity="0" transform="translate(520.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.061423799;0.063736829;0.158731689;0.159020817;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="520.000 43.000;520.000 43.000;507.000 43.000;494.000 43.000;481.000 43.000;468.000 43.000;455.000 43.000;442.000 43.000;442.000 43.000;429.000 43.000;429.000 56.000;429.000 69.000;429.000 69.000;429.000 82.000;429.000 82.000" keyTimes="0;0.061423799;0.064893344;0.068362889;0.071832434;0.075301979;0.078771524;0.082241069;0.113274223;0.116743768;0.120213313;0.123682858;0.124389617;0.127859162;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0;90.0;90.0;0.0;0.0" keyTimes="0;0.061423799;0.064893344;0.116743768;0.120213313;0.127859162;0.13152146;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="0" data-distance="4">
+<g data-projectile="enemy" opacity="0" transform="translate(436.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.131906965;0.132099717;0.139360062;0.139552814;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="436.000 82.000;436.000 82.000;494.000 82.000;494.000 82.000" keyTimes="0;0.132099717;0.139552814;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(494.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.139360062;0.139552814;0.141094834;0.144178874;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.139552814;0.144178874;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(474.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.15304549;0.153238242;0.158828065;0.159020817;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="474.000 82.000;474.000 82.000;429.000 82.000;429.000 82.000" keyTimes="0;0.153238242;0.159020817;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(429.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.158828065;0.159020817;0.160562837;0.163646877;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.159020817;0.163646877;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-09-02" data-distance="5">
+<g data-projectile="hero" opacity="0" transform="translate(514.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.172898998;0.17309175;0.180352095;0.180544847;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="514.000 82.000;514.000 82.000;572.000 82.000;572.000 82.000" keyTimes="0;0.17309175;0.180544847;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(572.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.180352095;0.180544847;0.182086867;0.185170907;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.180544847;0.185170907;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-09-09" data-distance="5">
+<g data-projectile="hero" opacity="0" transform="translate(527.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.189025957;0.18921871;0.196479054;0.196671807;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="527.000 82.000;527.000 82.000;585.000 82.000;585.000 82.000" keyTimes="0;0.18921871;0.196671807;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(585.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.196479054;0.196671807;0.198213827;0.201297867;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.196671807;0.201297867;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-08-08" data-distance="3">
+<g data-projectile="hero" opacity="0" transform="translate(520.000 89.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.201683372;0.201876124;0.205795425;0.205988178;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="520.000 89.000;520.000 89.000;520.000 121.000;520.000 121.000" keyTimes="0;0.201876124;0.205988178;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(520.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.205795425;0.205988178;0.207530198;0.210614238;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.205988178;0.210614238;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-09-16" data-distance="5">
+<g data-projectile="hero" opacity="0" transform="translate(540.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.214469288;0.214662041;0.221922385;0.222115137;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="540.000 82.000;540.000 82.000;598.000 82.000;598.000 82.000" keyTimes="0;0.214662041;0.222115137;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(598.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.221922385;0.222115137;0.223657158;0.226741198;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.222115137;0.226741198;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-08-09" data-distance="3">
+<g data-projectile="hero" opacity="0" transform="translate(533.000 75.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.227126703;0.227319455;0.231238756;0.231431509;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="533.000 75.000;533.000 75.000;533.000 43.000;533.000 43.000" keyTimes="0;0.227319455;0.231431509;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(533.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.231238756;0.231431509;0.232973529;0.236057569;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;9;9" keyTimes="0;0.231431509;0.236057569;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="3" data-role="hunter" data-spawn="12.166667" opacity="0" transform="translate(598.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.234515549;0.236828579;0.272327165;0.272616294;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="598.000 56.000;598.000 56.000;598.000 69.000;598.000 82.000;598.000 82.000" keyTimes="0;0.234515549;0.237985094;0.241454639;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;90.0;90.0;180.0;180.0" keyTimes="0;0.234515549;0.237985094;0.241454639;0.245116937;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="3" data-distance="4">
+<g data-projectile="enemy" opacity="0" transform="translate(591.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.245502442;0.245695194;0.252955538;0.253148291;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="591.000 82.000;591.000 82.000;533.000 82.000;533.000 82.000" keyTimes="0;0.245695194;0.253148291;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(533.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.252955538;0.253148291;0.254690311;0.257774351;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.253148291;0.257774351;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(553.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.266640966;0.266833719;0.272423542;0.272616294;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 82.000;553.000 82.000;598.000 82.000;598.000 82.000" keyTimes="0;0.266833719;0.272616294;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(598.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.272423542;0.272616294;0.274158314;0.277242354;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.272616294;0.277242354;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-08-21" data-distance="2">
+<g data-projectile="hero" opacity="0" transform="translate(546.000 89.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.279555384;0.279748137;0.281996916;0.282189668;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="546.000 89.000;546.000 89.000;546.000 108.000;546.000 108.000" keyTimes="0;0.279748137;0.282189668;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(546.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.281996916;0.282189668;0.283731689;0.286815729;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.282189668;0.286815729;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-08-22" data-distance="3">
+<g data-projectile="hero" opacity="0" transform="translate(546.000 89.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.287201234;0.287393986;0.291313287;0.29150604;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="546.000 89.000;546.000 89.000;546.000 121.000;546.000 121.000" keyTimes="0;0.287393986;0.29150604;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(546.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.291313287;0.29150604;0.29304806;0.2961321;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.29150604;0.2961321;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-09-17" data-distance="4">
+<g data-projectile="hero" opacity="0" transform="translate(553.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.29998715;0.300179902;0.305769725;0.305962478;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="553.000 95.000;553.000 95.000;598.000 95.000;598.000 95.000" keyTimes="0;0.300179902;0.305962478;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(598.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.305769725;0.305962478;0.307504498;0.310588538;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.305962478;0.310588538;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-09-01" data-distance="2">
+<g data-projectile="hero" opacity="0" transform="translate(572.000 88.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.317913133;0.318105885;0.320354665;0.320547417;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="572.000 88.000;572.000 88.000;572.000 69.000;572.000 69.000" keyTimes="0;0.318105885;0.320547417;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(572.000 69.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.320354665;0.320547417;0.322089437;0.325173477;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.320547417;0.325173477;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-09-07" data-distance="3">
+<g data-projectile="hero" opacity="0" transform="translate(585.000 88.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.329028527;0.32922128;0.333140581;0.333333333;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="585.000 88.000;585.000 88.000;585.000 56.000;585.000 56.000" keyTimes="0;0.32922128;0.333333333;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(585.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.333140581;0.333333333;0.334875353;0.337959393;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;9;9" keyTimes="0;0.333333333;0.337959393;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="2" data-role="flanker" data-spawn="3.906667" opacity="0" transform="translate(533.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.075301979;0.077615009;0.37268697;0.372976099;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="533.000 121.000;533.000 121.000;533.000 108.000;520.000 108.000;520.000 108.000;507.000 108.000;494.000 108.000;481.000 108.000;481.000 108.000;468.000 108.000;468.000 108.000;455.000 108.000;442.000 108.000;429.000 108.000;416.000 108.000;403.000 108.000;403.000 108.000;390.000 108.000;377.000 108.000;364.000 108.000;351.000 108.000;351.000 108.000;351.000 95.000;351.000 82.000;351.000 82.000;351.000 69.000;351.000 56.000;364.000 56.000;377.000 56.000;377.000 56.000;390.000 56.000;403.000 56.000;403.000 56.000;416.000 56.000;429.000 56.000;429.000 56.000;442.000 56.000;455.000 56.000;455.000 56.000;468.000 56.000;481.000 56.000;481.000 56.000;494.000 56.000;507.000 56.000;520.000 56.000;533.000 56.000;533.000 56.000;546.000 56.000;546.000 69.000;546.000 82.000;533.000 82.000;533.000 82.000;533.000 95.000;533.000 108.000;533.000 121.000;533.000 121.000;546.000 121.000;559.000 121.000;572.000 121.000;585.000 121.000;585.000 121.000" keyTimes="0;0.075301979;0.078771524;0.082241069;0.113274223;0.116743768;0.120213313;0.123682858;0.124389617;0.127859162;0.164032382;0.167501928;0.170971473;0.174441018;0.177910563;0.181380108;0.183628887;0.187098432;0.190567977;0.194037522;0.197507068;0.199755847;0.203225392;0.206694937;0.209072218;0.212541763;0.216011308;0.219480853;0.222950398;0.225199178;0.228668723;0.232138268;0.234515549;0.237985094;0.241454639;0.277627859;0.281097404;0.284566949;0.285273709;0.288743254;0.292212799;0.29459008;0.298059625;0.30152917;0.304998715;0.30846826;0.309046518;0.312516063;0.315985608;0.319455153;0.322924698;0.323631457;0.327101002;0.330570547;0.334040093;0.336417373;0.339886919;0.343356464;0.346826009;0.350295554;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;180.0;180.0;-90.0;-90.0;0.0;0.0;90.0;90.0;180.0;90.0;90.0;0.0;0.0;-90.0;-90.0" keyTimes="0;0.075301979;0.078771524;0.082241069;0.197507068;0.203225392;0.216011308;0.219480853;0.312516063;0.315985608;0.319455153;0.322924698;0.327101002;0.334040093;0.339886919;0.350295554;0.353957851;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="2" data-distance="1">
+<g data-projectile="enemy" opacity="0" transform="translate(585.000 114.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.354343356;0.354536109;0.356784888;0.356977641;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="585.000 114.000;585.000 114.000;585.000 95.000;585.000 95.000" keyTimes="0;0.354536109;0.356977641;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(585.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.356784888;0.356977641;0.358519661;0.361603701;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.356977641;0.361603701;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(585.000 115.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.370470316;0.370663069;0.372783346;0.372976099;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="585.000 115.000;585.000 115.000;585.000 121.000;585.000 121.000" keyTimes="0;0.370663069;0.372976099;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(585.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.372783346;0.372976099;0.374518119;0.377602159;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.372976099;0.377602159;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-10-09" data-distance="4">
+<g data-projectile="hero" opacity="0" transform="translate(592.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.377987664;0.378180416;0.383770239;0.383962992;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="592.000 108.000;592.000 108.000;637.000 108.000;637.000 108.000" keyTimes="0;0.378180416;0.383962992;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(637.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.383770239;0.383962992;0.385505012;0.388589052;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.383962992;0.388589052;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="4" data-role="ambusher" data-spawn="17.453333" opacity="0" transform="translate(637.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.336417373;0.338730403;0.407767926;0.408057055;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="637.000 56.000;637.000 56.000;637.000 69.000;637.000 82.000;637.000 95.000;624.000 95.000;624.000 95.000;611.000 95.000;598.000 95.000;585.000 95.000;585.000 95.000" keyTimes="0;0.336417373;0.339886919;0.343356464;0.346826009;0.350295554;0.376060139;0.379529684;0.382999229;0.386468774;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;90.0;90.0;180.0;180.0;90.0;90.0" keyTimes="0;0.336417373;0.339886919;0.346826009;0.350295554;0.386468774;0.394178874;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="4" data-distance="1">
+<g data-projectile="enemy" opacity="0" transform="translate(585.000 102.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.394564379;0.394757132;0.396877409;0.397070162;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="585.000 102.000;585.000 102.000;585.000 108.000;585.000 108.000" keyTimes="0;0.394757132;0.397070162;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(585.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.396877409;0.397070162;0.398612182;0.401696222;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.397070162;0.401696222;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(579.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.405551272;0.405744025;0.407864302;0.408057055;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="579.000 95.000;579.000 95.000;585.000 95.000;585.000 95.000" keyTimes="0;0.405744025;0.408057055;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(585.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.407864302;0.408057055;0.409599075;0.412683115;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.408057055;0.412683115;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-09-06" data-distance="4">
+<g data-projectile="hero" opacity="0" transform="translate(585.000 88.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.41846569;0.418658443;0.424248265;0.424441018;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="585.000 88.000;585.000 88.000;585.000 43.000;585.000 43.000" keyTimes="0;0.418658443;0.424441018;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(585.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.424248265;0.424441018;0.425983038;0.429067078;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.424441018;0.429067078;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-11-05" data-distance="5">
+<g data-projectile="hero" opacity="0" transform="translate(631.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.439861218;0.440053971;0.447314315;0.447507068;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="631.000 95.000;631.000 95.000;689.000 95.000;689.000 95.000" keyTimes="0;0.440053971;0.447507068;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(689.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.447314315;0.447507068;0.449049088;0.452133128;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.447507068;0.452133128;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-09-27" data-distance="4">
+<g data-projectile="hero" opacity="0" transform="translate(624.000 88.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.452518633;0.452711385;0.458301208;0.45849396;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="624.000 88.000;624.000 88.000;624.000 43.000;624.000 43.000" keyTimes="0;0.452711385;0.45849396;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(624.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.458301208;0.45849396;0.46003598;0.463120021;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.45849396;0.463120021;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-10-30" data-distance="4">
+<g data-projectile="hero" opacity="0" transform="translate(631.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.466975071;0.467167823;0.472757646;0.472950398;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="631.000 108.000;631.000 108.000;676.000 108.000;676.000 108.000" keyTimes="0;0.467167823;0.472950398;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(676.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.472757646;0.472950398;0.474492418;0.477576458;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.472950398;0.477576458;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-11-06" data-distance="5">
+<g data-projectile="hero" opacity="0" transform="translate(631.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.477961964;0.478154716;0.48541506;0.485607813;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="631.000 108.000;631.000 108.000;689.000 108.000;689.000 108.000" keyTimes="0;0.478154716;0.485607813;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(689.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.48541506;0.485607813;0.487149833;0.490233873;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.485607813;0.490233873;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="7" data-role="ambusher" data-spawn="25.713333" opacity="0" transform="translate(702.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.495630943;0.497943973;0.53344256;0.533731689;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="702.000 95.000;702.000 95.000;702.000 108.000;689.000 108.000;689.000 108.000" keyTimes="0;0.495630943;0.499100488;0.502570033;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;90.0;180.0;180.0" keyTimes="0;0.495630943;0.499100488;0.502570033;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="7" data-distance="4">
+<g data-projectile="enemy" opacity="0" transform="translate(682.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.506617836;0.506810589;0.514070933;0.514263685;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="682.000 108.000;682.000 108.000;624.000 108.000;624.000 108.000" keyTimes="0;0.506810589;0.514263685;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(624.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.514070933;0.514263685;0.515805705;0.518889746;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.514263685;0.518889746;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(644.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.527756361;0.527949113;0.533538936;0.533731689;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="644.000 108.000;644.000 108.000;689.000 108.000;689.000 108.000" keyTimes="0;0.527949113;0.533731689;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(689.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.533538936;0.533731689;0.535273709;0.538357749;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.533731689;0.538357749;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-10-31" data-distance="3">
+<g data-projectile="hero" opacity="0" transform="translate(644.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.545682344;0.545875096;0.549794397;0.54998715;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="644.000 121.000;644.000 121.000;676.000 121.000;676.000 121.000" keyTimes="0;0.545875096;0.54998715;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(676.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.549794397;0.54998715;0.55152917;0.55461321;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.54998715;0.55461321;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-11-07" data-distance="4">
+<g data-projectile="hero" opacity="0" transform="translate(644.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.55846826;0.558661013;0.564250835;0.564443588;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="644.000 121.000;644.000 121.000;689.000 121.000;689.000 121.000" keyTimes="0;0.558661013;0.564443588;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(689.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.564250835;0.564443588;0.565985608;0.569069648;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.564443588;0.569069648;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="6" data-role="hunter" data-spawn="25.353333" opacity="0" transform="translate(650.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.488691853;0.491004883;0.593388589;0.593677718;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="650.000 43.000;650.000 43.000;637.000 43.000;624.000 43.000;611.000 43.000;598.000 43.000;598.000 43.000;598.000 56.000;598.000 69.000;598.000 82.000;598.000 82.000;598.000 95.000;598.000 108.000;598.000 121.000;611.000 121.000;611.000 121.000" keyTimes="0;0.488691853;0.492161398;0.495630943;0.499100488;0.502570033;0.540285274;0.543754819;0.547224364;0.550693909;0.55307119;0.556540735;0.56001028;0.563479825;0.56694937;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0;90.0;90.0;0.0;0.0" keyTimes="0;0.488691853;0.492161398;0.502570033;0.543754819;0.563479825;0.56694937;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="6" data-distance="1">
+<g data-projectile="enemy" opacity="0" transform="translate(618.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.575044976;0.575237728;0.577486507;0.57767926;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="618.000 121.000;618.000 121.000;637.000 121.000;637.000 121.000" keyTimes="0;0.575237728;0.57767926;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(637.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.577486507;0.57767926;0.57922128;0.58230532;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.57767926;0.58230532;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(617.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.591171935;0.591364688;0.593484965;0.593677718;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="617.000 121.000;617.000 121.000;611.000 121.000;611.000 121.000" keyTimes="0;0.591364688;0.593677718;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(611.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.593484965;0.593677718;0.595219738;0.598303778;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.593677718;0.598303778;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-11-04" data-distance="5">
+<g data-projectile="hero" opacity="0" transform="translate(631.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.611025443;0.611218196;0.61847854;0.618671293;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="631.000 82.000;631.000 82.000;689.000 82.000;689.000 82.000" keyTimes="0;0.611218196;0.618671293;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(689.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.61847854;0.618671293;0.620213313;0.623297353;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.618671293;0.623297353;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-10-26" data-distance="4">
+<g data-projectile="hero" opacity="0" transform="translate(631.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.630621948;0.630814701;0.636404523;0.636597276;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="631.000 56.000;631.000 56.000;676.000 56.000;676.000 56.000" keyTimes="0;0.630814701;0.636597276;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(676.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.636404523;0.636597276;0.638139296;0.641223336;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.636597276;0.641223336;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-10-18" data-distance="3">
+<g data-projectile="hero" opacity="0" transform="translate(631.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.645078386;0.645271139;0.649190439;0.649383192;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="631.000 43.000;631.000 43.000;663.000 43.000;663.000 43.000" keyTimes="0;0.645271139;0.649383192;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(663.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.649190439;0.649383192;0.650925212;0.654009252;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.649383192;0.654009252;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-11-22" data-distance="5">
+<g data-projectile="hero" opacity="0" transform="translate(670.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.664803392;0.664996145;0.672256489;0.672449242;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 43.000;670.000 43.000;728.000 43.000;728.000 43.000" keyTimes="0;0.664996145;0.672449242;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(728.000 43.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.672256489;0.672449242;0.673991262;0.677075302;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.672449242;0.677075302;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-11-16" data-distance="4">
+<g data-projectile="hero" opacity="0" transform="translate(670.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.680930352;0.681123105;0.686712927;0.68690568;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 56.000;670.000 56.000;715.000 56.000;715.000 56.000" keyTimes="0;0.681123105;0.68690568;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(715.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.686712927;0.68690568;0.6884477;0.69153174;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.68690568;0.69153174;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="5" data-role="flanker" data-spawn="17.813333" opacity="0" transform="translate(650.000 121.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.343356464;0.345669494;0.72805834;0.728347469;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="650.000 121.000;650.000 121.000;637.000 121.000;624.000 121.000;624.000 121.000;611.000 121.000;598.000 121.000;585.000 121.000;585.000 121.000;572.000 121.000;559.000 121.000;546.000 121.000;533.000 121.000;533.000 121.000;520.000 121.000;507.000 121.000;494.000 121.000;481.000 121.000;468.000 121.000;455.000 121.000;455.000 121.000;455.000 108.000;455.000 95.000;468.000 95.000;468.000 95.000;481.000 95.000;494.000 95.000;507.000 95.000;520.000 95.000;520.000 95.000;533.000 95.000;546.000 95.000;559.000 95.000;559.000 95.000;572.000 95.000;585.000 95.000;598.000 95.000;611.000 95.000;611.000 95.000;624.000 95.000;637.000 95.000;650.000 95.000;650.000 95.000;663.000 95.000;676.000 95.000;689.000 95.000;702.000 95.000;702.000 95.000;702.000 108.000;702.000 108.000;689.000 108.000;676.000 108.000;676.000 95.000;689.000 95.000;702.000 95.000;702.000 82.000;702.000 82.000;702.000 69.000;689.000 69.000;676.000 69.000;663.000 69.000;650.000 69.000;650.000 69.000;637.000 69.000;624.000 69.000;611.000 69.000;611.000 69.000;598.000 69.000;585.000 69.000;572.000 69.000;559.000 69.000;546.000 69.000;533.000 69.000;533.000 69.000;533.000 56.000;546.000 56.000;559.000 56.000;572.000 56.000;572.000 56.000;585.000 56.000;598.000 56.000;611.000 56.000;624.000 56.000;624.000 56.000" keyTimes="0;0.343356464;0.346826009;0.350295554;0.376060139;0.379529684;0.382999229;0.386468774;0.41306862;0.416538165;0.42000771;0.423477255;0.4269468;0.427525058;0.430994603;0.434464148;0.437933693;0.441403238;0.444872783;0.448342328;0.450591108;0.454060653;0.457530198;0.460999743;0.461578001;0.465047546;0.468517091;0.471986636;0.475456181;0.476034438;0.479503984;0.482973529;0.486443074;0.488691853;0.492161398;0.495630943;0.499100488;0.502570033;0.540285274;0.543754819;0.547224364;0.550693909;0.55307119;0.556540735;0.56001028;0.563479825;0.56694937;0.567527628;0.570997173;0.598689283;0.602158828;0.605628373;0.609097918;0.612567463;0.616037008;0.619506554;0.621755333;0.625224878;0.628694423;0.632163968;0.635633513;0.639103058;0.639681316;0.643150861;0.646620406;0.650089951;0.652467232;0.655936777;0.659406322;0.662875867;0.666345412;0.669814958;0.673284503;0.675533282;0.679002827;0.682472372;0.685941917;0.689411462;0.68998972;0.693459265;0.69692881;0.700398355;0.7038679;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0;-90.0;-90.0;0.0;0.0;90.0;180.0;180.0;-90.0;0.0;0.0;-90.0;-90.0;180.0;180.0;-90.0;0.0;0.0" keyTimes="0;0.343356464;0.346826009;0.448342328;0.454060653;0.457530198;0.460999743;0.56694937;0.570997173;0.602158828;0.605628373;0.609097918;0.612567463;0.616037008;0.619506554;0.625224878;0.628694423;0.673284503;0.679002827;0.682472372;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="5" data-distance="2">
+<g data-projectile="enemy" opacity="0" transform="translate(631.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.707915703;0.708108455;0.712027756;0.712220509;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="631.000 56.000;631.000 56.000;663.000 56.000;663.000 56.000" keyTimes="0;0.708108455;0.712220509;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(663.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.712027756;0.712220509;0.713762529;0.716846569;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.712220509;0.716846569;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(643.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.725713184;0.725905937;0.728154716;0.728347469;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="643.000 56.000;643.000 56.000;624.000 56.000;624.000 56.000" keyTimes="0;0.725905937;0.728347469;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(624.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.728154716;0.728347469;0.729889489;0.732973529;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.728347469;0.732973529;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="8" data-role="flanker" data-spawn="35.796667" opacity="0" transform="translate(702.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.68998972;0.69230275;0.758962992;0.75925212;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="702.000 108.000;702.000 108.000;689.000 108.000;676.000 108.000;663.000 108.000;650.000 108.000;650.000 108.000" keyTimes="0;0.68998972;0.693459265;0.69692881;0.700398355;0.7038679;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0;-90.0;-90.0" keyTimes="0;0.68998972;0.693459265;0.7038679;0.735093806;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="8" data-distance="3">
+<g data-projectile="enemy" opacity="0" transform="translate(650.000 101.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.735479311;0.735672064;0.741261886;0.741454639;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="650.000 101.000;650.000 101.000;650.000 56.000;650.000 56.000" keyTimes="0;0.735672064;0.741454639;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(650.000 56.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.741261886;0.741454639;0.742996659;0.746080699;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.741454639;0.746080699;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(650.000 76.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.754947314;0.755140067;0.759059368;0.75925212;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="650.000 76.000;650.000 76.000;650.000 108.000;650.000 108.000" keyTimes="0;0.755140067;0.75925212;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(650.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.759059368;0.75925212;0.76079414;0.76387818;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.75925212;0.76387818;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-11-17" data-distance="5">
+<g data-projectile="hero" opacity="0" transform="translate(657.000 69.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.76619121;0.766383963;0.773644307;0.77383706;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="657.000 69.000;657.000 69.000;715.000 69.000;715.000 69.000" keyTimes="0;0.766383963;0.77383706;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(715.000 69.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.773644307;0.77383706;0.77537908;0.77846312;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;9;9" keyTimes="0;0.77383706;0.77846312;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-11-18" data-distance="5">
+<g data-projectile="hero" opacity="0" transform="translate(657.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.78231817;0.782510923;0.789771267;0.78996402;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="657.000 82.000;657.000 82.000;715.000 82.000;715.000 82.000" keyTimes="0;0.782510923;0.78996402;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(715.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.789771267;0.78996402;0.79150604;0.79459008;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;9;9" keyTimes="0;0.78996402;0.79459008;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="11" data-role="flanker" data-spawn="41.503333" opacity="0" transform="translate(715.000 69.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.79998715;0.80230018;0.834457723;0.834746852;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="715.000 69.000;715.000 69.000;715.000 82.000;702.000 82.000;702.000 82.000" keyTimes="0;0.79998715;0.803456695;0.80692624;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;90.0;180.0;180.0" keyTimes="0;0.79998715;0.803456695;0.80692624;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="11" data-distance="3">
+<g data-projectile="enemy" opacity="0" transform="translate(695.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.810974043;0.811166795;0.816756618;0.81694937;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="695.000 82.000;695.000 82.000;650.000 82.000;650.000 82.000" keyTimes="0;0.811166795;0.81694937;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(650.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.816756618;0.81694937;0.81849139;0.82157543;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.81694937;0.82157543;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(670.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.830442046;0.830634798;0.834554099;0.834746852;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 82.000;670.000 82.000;702.000 82.000;702.000 82.000" keyTimes="0;0.830634798;0.834746852;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(702.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.834554099;0.834746852;0.836288872;0.839372912;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.834746852;0.839372912;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="10" data-role="ambusher" data-spawn="41.143333" opacity="0" transform="translate(715.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.79304806;0.79536109;0.860222308;0.860511437;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="715.000 108.000;715.000 108.000;702.000 108.000;689.000 108.000;676.000 108.000;663.000 108.000;663.000 108.000" keyTimes="0;0.79304806;0.796517605;0.79998715;0.803456695;0.80692624;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;180.0;180.0;-90.0;-90.0" keyTimes="0;0.79304806;0.796517605;0.80692624;0.841493189;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="10" data-distance="1">
+<g data-projectile="enemy" opacity="0" transform="translate(663.000 101.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.841878694;0.842071447;0.844320226;0.844512979;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="663.000 101.000;663.000 101.000;663.000 82.000;663.000 82.000" keyTimes="0;0.842071447;0.844512979;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(663.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.844320226;0.844512979;0.846054999;0.849139039;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.844512979;0.849139039;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(663.000 102.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.858005654;0.858198407;0.860318684;0.860511437;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="663.000 102.000;663.000 102.000;663.000 108.000;663.000 108.000" keyTimes="0;0.858198407;0.860511437;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(663.000 108.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.860318684;0.860511437;0.862053457;0.865137497;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.860511437;0.865137497;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-shot="2026-11-19" data-distance="4">
+<g data-projectile="hero" opacity="0" transform="translate(670.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.867450527;0.867643279;0.873233102;0.873425855;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="670.000 95.000;670.000 95.000;715.000 95.000;715.000 95.000" keyTimes="0;0.867643279;0.873425855;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(715.000 95.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.873233102;0.873425855;0.874967875;0.878051915;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;6;6" keyTimes="0;0.873425855;0.878051915;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-tank="enemy" data-enemy="9" data-role="hunter" data-spawn="36.156667" opacity="0" transform="translate(728.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.69692881;0.69924184;0.914321511;0.91461064;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="728.000 82.000;728.000 82.000;728.000 69.000;728.000 56.000;728.000 56.000;728.000 43.000;715.000 43.000;702.000 43.000;702.000 43.000;689.000 43.000;676.000 43.000;663.000 43.000;650.000 43.000;650.000 43.000;637.000 43.000;624.000 43.000;611.000 43.000;598.000 43.000;598.000 43.000;598.000 56.000;598.000 69.000;598.000 82.000;598.000 82.000" keyTimes="0;0.69692881;0.700398355;0.7038679;0.764263685;0.767733231;0.771202776;0.774672321;0.7769211;0.780390645;0.78386019;0.787329735;0.79079928;0.79304806;0.796517605;0.79998715;0.803456695;0.80692624;0.865523002;0.868992547;0.872462092;0.875931637;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90;90;-90.0;-90.0;180.0;180.0;90.0;90.0;0.0;0.0" keyTimes="0;0.69692881;0.700398355;0.767733231;0.771202776;0.80692624;0.868992547;0.875931637;0.887111282;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#4a5964" stroke="#35424b" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#7a8791"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#cbd4d7" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#cbd4d7" stroke="#35424b" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#7a8791" stroke="#35424b" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#cbd4d7"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#4a5964"/>
+</g>
+</g></g>
+<g data-shot="9" data-distance="4">
+<g data-projectile="enemy" opacity="0" transform="translate(605.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.887496787;0.88768954;0.894949884;0.895142637;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="605.000 82.000;605.000 82.000;663.000 82.000;663.000 82.000" keyTimes="0;0.88768954;0.895142637;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-counter-outcome="miss">
+<g data-impact="true" opacity="0" transform="translate(663.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.894949884;0.895142637;0.896684657;0.899768697;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;4;4" keyTimes="0;0.895142637;0.899768697;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+<g data-projectile="hero" opacity="0" transform="translate(643.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.908635312;0.908828065;0.914417887;0.91461064;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="643.000 82.000;643.000 82.000;598.000 82.000;598.000 82.000" keyTimes="0;0.908828065;0.91461064;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<rect x="-1.2" y="-1.2" width="2.4" height="2.4" fill="#fff1a1" stroke="#e76614" stroke-width=".5"/>
+</g>
+<g data-impact="true" opacity="0" transform="translate(598.000 82.000)">
+<animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.914417887;0.91461064;0.91615266;0.9192367;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.91461064;0.9192367;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+</circle>
+<path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
+<path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
+</g>
+</g>
+</g>
+<g id="base">
+<g data-base="eagle" transform="translate(390.0 144)">
+<rect x="-10" y="-9" width="20" height="18" rx="1" fill="#eee8db" stroke="#783f1c" stroke-width="1.3"/>
+<path d="M-8 -6H-5V-4H-3V-2H-1V-5H1V-6H4V-3H2V-2H4V-4H6V-6H8V-1H6V1H3V4H5V6H-5V4H-3V1H-6V-1H-8Z" fill="#ffe16a" stroke="#59400a" stroke-width=".6"/>
+</g>
+</g>
+<g id="hero">
+<g data-tank="hero" transform="translate(416.000 95.000)">
+<animateTransform attributeName="transform" type="translate" values="416.000 95.000;416.000 95.000;429.000 95.000;429.000 95.000;442.000 95.000;442.000 95.000;455.000 95.000;455.000 95.000;468.000 95.000;468.000 95.000;481.000 95.000;481.000 95.000;481.000 82.000;481.000 82.000;494.000 82.000;494.000 82.000;494.000 95.000;494.000 95.000;494.000 82.000;494.000 82.000;494.000 69.000;494.000 69.000;481.000 69.000;481.000 69.000;481.000 82.000;481.000 82.000;494.000 82.000;494.000 82.000;507.000 82.000;507.000 82.000;520.000 82.000;520.000 82.000;533.000 82.000;533.000 82.000;533.000 69.000;533.000 69.000;546.000 69.000;546.000 69.000;546.000 82.000;546.000 82.000;546.000 95.000;546.000 95.000;559.000 95.000;559.000 95.000;572.000 95.000;572.000 95.000;585.000 95.000;585.000 95.000;572.000 95.000;572.000 95.000;572.000 108.000;572.000 108.000;585.000 108.000;585.000 108.000;572.000 108.000;572.000 108.000;572.000 95.000;572.000 95.000;585.000 95.000;585.000 95.000;598.000 95.000;598.000 95.000;611.000 95.000;611.000 95.000;624.000 95.000;624.000 95.000;624.000 108.000;624.000 108.000;624.000 95.000;624.000 95.000;637.000 95.000;637.000 95.000;637.000 108.000;637.000 108.000;637.000 121.000;637.000 121.000;637.000 108.000;637.000 108.000;624.000 108.000;624.000 108.000;624.000 121.000;624.000 121.000;624.000 108.000;624.000 108.000;624.000 95.000;624.000 95.000;624.000 82.000;624.000 82.000;624.000 69.000;624.000 69.000;624.000 56.000;624.000 56.000;624.000 43.000;624.000 43.000;637.000 43.000;637.000 43.000;650.000 43.000;650.000 43.000;663.000 43.000;663.000 43.000;663.000 56.000;663.000 56.000;663.000 43.000;663.000 43.000;650.000 43.000;650.000 43.000;650.000 56.000;650.000 56.000;637.000 56.000;637.000 56.000;637.000 69.000;637.000 69.000;650.000 69.000;650.000 69.000;650.000 82.000;650.000 82.000;650.000 69.000;650.000 69.000;663.000 69.000;663.000 69.000;663.000 82.000;663.000 82.000;650.000 82.000;650.000 82.000;650.000 95.000;650.000 95.000;663.000 95.000;663.000 95.000;663.000 82.000;663.000 82.000;663.000 69.000;663.000 69.000;650.000 69.000;650.000 69.000;650.000 82.000;650.000 82.000;650.000 95.000;650.000 95.000;637.000 95.000;637.000 95.000;624.000 95.000;624.000 95.000;611.000 95.000;611.000 95.000;598.000 95.000;598.000 95.000;585.000 95.000;585.000 95.000;572.000 95.000;572.000 95.000;559.000 95.000;559.000 95.000;546.000 95.000;546.000 95.000;533.000 95.000;533.000 95.000;520.000 95.000;520.000 95.000;507.000 95.000;507.000 95.000;494.000 95.000;494.000 95.000;481.000 95.000;481.000 95.000;468.000 95.000;468.000 95.000;455.000 95.000;455.000 95.000;442.000 95.000;442.000 95.000;429.000 95.000;429.000 95.000;416.000 95.000;416.000 95.000" keyTimes="0;0.009830378;0.011950655;0.020945772;0.02306605;0.024415317;0.026535595;0.040542277;0.042662555;0.051657672;0.053777949;0.084168594;0.087252634;0.094063223;0.097147263;0.099074788;0.102158828;0.111153945;0.113274223;0.129786687;0.132870727;0.143022359;0.146106399;0.148033924;0.151117965;0.16538165;0.167501928;0.168851195;0.170971473;0.184978155;0.187098432;0.210421485;0.212541763;0.243382164;0.246466204;0.256617836;0.259701876;0.261629401;0.264713441;0.295939347;0.298059625;0.310395785;0.312516063;0.31386533;0.315985608;0.324980725;0.327101002;0.352223079;0.355307119;0.360447186;0.363531226;0.365458751;0.368542791;0.392444102;0.395528142;0.400539707;0.403623747;0.414417887;0.416538165;0.428874325;0.430994603;0.43234387;0.434464148;0.435813416;0.437933693;0.462927268;0.465047546;0.504497558;0.507581599;0.517733231;0.520817271;0.522744796;0.525828836;0.538164996;0.540285274;0.572924698;0.576008738;0.581148805;0.584232845;0.58616037;0.58924441;0.600038551;0.602158828;0.603508096;0.605628373;0.606977641;0.609097918;0.6231046;0.625224878;0.626574145;0.628694423;0.641030583;0.643150861;0.6538165;0.655936777;0.657286045;0.659406322;0.66075559;0.662875867;0.676882549;0.679002827;0.705795425;0.708879465;0.715690054;0.718774094;0.720701619;0.723785659;0.733359034;0.736443074;0.744924184;0.748008224;0.749935749;0.753019789;0.778270368;0.780390645;0.808853765;0.811937805;0.820418915;0.823502956;0.825430481;0.828514521;0.839758417;0.842842457;0.847982524;0.851066564;0.852994089;0.856078129;0.877859162;0.87997944;0.88537651;0.88846055;0.898612182;0.901696222;0.903623747;0.906707787;0.920971473;0.92309175;0.924441018;0.926561295;0.927910563;0.93003084;0.931380108;0.933500386;0.934849653;0.936969931;0.938319198;0.940439476;0.941788743;0.943909021;0.945258288;0.947378566;0.948727833;0.950848111;0.952197379;0.954317656;0.955666924;0.957787201;0.959136469;0.961256746;0.962606014;0.964726291;0.966075559;0.968195837;0.969545104;0.971665382;0.973014649;0.975134927;0.976484194;0.978604472;0.979953739;0.982074017;0.983423285;0.985543562;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g transform="rotate(90)">
+<animateTransform attributeName="transform" type="rotate" values="90.00;90.00;0.00;0.00;-90.00;-90.00;0.00;0.00;-90.00;-90.00;0.00;0.00;90.00;90.00;0.00;0.00;-90.00;-90.00;0.00;0.00;-90.00;-90.00;-180.00;-180.00;-270.00;-270.00;-180.00;-180.00;-360.00;-360.00;-270.00;-270.00;-360.00;-360.00;-450.00;-450.00;-360.00;-360.00;-270.00;-270.00;-360.00;-360.00;-270.00;-270.00;-360.00;-360.00;-450.00;-450.00;-360.00;-360.00;-450.00;-450.00;-540.00;-540.00;-630.00;-630.00;-720.00;-720.00;-630.00;-630.00;-720.00;-720.00;-900.00;-900.00;-810.00;-810.00;-720.00;-720.00;-810.00;-810.00;-720.00;-720.00;-810.00;-810.00;-990.00;-990.00;-1080.00;-1080.00;-1170.00;-1170.00;-1080.00;-1080.00;-990.00;-990.00;-1080.00;-1080.00;-990.00;-990.00;-1080.00;-1080.00;-1170.00;-1170.00;-1260.00;-1260.00;-1350.00;-1350.00;-1260.00;-1260.00;-1170.00;-1170.00;-1080.00;-1080.00;-1170.00;-1170.00;-1080.00;-1080.00;-1170.00;-1170.00;-1080.00;-1080.00;-990.00;-990.00;-1080.00;-1080.00;-1170.00;-1170.00;-1260.00;-1260.00;-1350.00;-1350.00;-1260.00;-1260.00;-1350.00;-1350.00;-1440.00;-1440.00;-1350.00;-1350.00;-1440.00;-1440.00;-1350.00;-1350.00;-1440.00;-1440.00;-1530.00;-1530.00;-1440.00;-1440.00;-1350.00;-1350.00;-1440.00;-1440.00;-1620.00;-1620.00;-1710.00;-1710.00;-1800.00;-1800.00;-1710.00;-1710.00;-1800.00;-1800.00;-1890.00;-1890.00;-1980.00;-1980.00;-2070.00;-2070.00;-1980.00;-1980.00;-2070.00;-2070.00;-1980.00;-1980.00;-2070.00;-2070.00" keyTimes="0;0.00231303;0.003662298;0.042662555;0.044011822;0.050308404;0.051657672;0.053777949;0.055127217;0.092135698;0.094063223;0.097147263;0.099074788;0.102158828;0.103508096;0.109804677;0.111153945;0.116743768;0.118093035;0.127859162;0.129786687;0.141094834;0.143022359;0.146106399;0.148033924;0.151117965;0.152467232;0.164032382;0.16538165;0.199755847;0.201105114;0.209072218;0.210421485;0.225199178;0.226548445;0.254690311;0.256617836;0.259701876;0.261629401;0.264713441;0.266062709;0.277627859;0.278977127;0.298059625;0.299408892;0.315985608;0.317334875;0.323631457;0.324980725;0.327101002;0.32845027;0.350295554;0.352223079;0.358519661;0.360447186;0.363531226;0.365458751;0.368542791;0.369892059;0.376060139;0.377409406;0.390516577;0.392444102;0.398612182;0.400539707;0.403623747;0.404973015;0.416538165;0.417887433;0.427525058;0.428874325;0.450591108;0.451940375;0.461578001;0.462927268;0.465047546;0.466396813;0.502570033;0.504497558;0.515805705;0.517733231;0.520817271;0.522744796;0.525828836;0.527178103;0.536815729;0.538164996;0.543754819;0.545104086;0.570997173;0.572924698;0.57922128;0.581148805;0.584232845;0.58616037;0.58924441;0.590593678;0.598689283;0.600038551;0.609097918;0.610447186;0.621755333;0.6231046;0.628694423;0.630043691;0.639681316;0.641030583;0.643150861;0.644500129;0.675533282;0.676882549;0.679002827;0.680352095;0.7038679;0.705795425;0.713762529;0.715690054;0.718774094;0.720701619;0.723785659;0.725134927;0.742996659;0.744924184;0.748008224;0.749935749;0.753019789;0.754369057;0.764263685;0.765612953;0.7769211;0.778270368;0.780390645;0.781739913;0.80692624;0.808853765;0.81849139;0.820418915;0.823502956;0.825430481;0.828514521;0.829863788;0.837830892;0.839758417;0.846054999;0.847982524;0.851066564;0.852994089;0.856078129;0.857427397;0.865523002;0.866872269;0.876509895;0.877859162;0.896684657;0.898612182;0.901696222;0.903623747;0.906707787;0.908057055;0.919622205;0.920971473;0.92309175;0.924441018;0.985543562;0.98843485;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<g data-tank-body="hero">
+<g data-sprite="retro-tank" shape-rendering="crispEdges">
+<path d="M-5 -5H5V-2H-5ZM-5 2H5V5H-5Z" fill="#38372f"/>
+<path d="M-4.5 -4.5H4.5M-4.5 4.5H4.5" stroke="#b8ac86" stroke-width="1" stroke-dasharray="1.2 1.1"/>
+<path d="M-4 -3H4V3H-4Z" fill="#8c6008" stroke="#59400a" stroke-width="1"/>
+<path d="M-3 -2.5H3V2H-3Z" fill="#be8d10"/>
+<path d="M-3 -2H2V-1H-3Z" fill="#ffe16a" opacity=".8"/>
+<path d="M0 -1H7V1H0Z" fill="#ffe16a" stroke="#59400a" stroke-width=".55"/>
+<path d="M-2 -3H1L3 -1V1L1 3H-2L-3 1V-1Z" fill="#be8d10" stroke="#59400a" stroke-width=".6"/>
+<path d="M-2 -2H1L2 -1H-2Z" fill="#ffe16a"/>
+<rect x="-.8" y="-.8" width="1.6" height="1.6" fill="#8c6008"/>
+</g>
+</g>
+</g></g>
+</g>
+</svg>
