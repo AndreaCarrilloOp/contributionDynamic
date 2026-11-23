@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Generated assets and reports
+/generated/
+/previews/
+/visual-report/
+/benchmark.json
+/coverage.xml
+/contributions.svg

@@ -1,0 +1,1 @@
+"""Contribution-driven animation scenarios."""

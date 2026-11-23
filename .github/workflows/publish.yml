@@ -1,0 +1,103 @@
+name: Publish contribution animations
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'pyproject.toml'
+      - 'action.yml'
+      - '.github/workflows/publish.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '17 11 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contribution-animation-publish
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Install and validate
+        run: |
+          python -m pip install -e '.[dev]'
+          python -m pytest -v
+          python -m ruff check .
+      - name: Generate live SVG assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.CONTRIBUTION_TOKEN }}
+          CONTRIBUTION_USER: ${{ github.repository_owner }}
+        run: |
+          python -m contribution_dynamic batch --user "$CONTRIBUTION_USER" --output-dir generated
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: published-animations
+          path: generated/*.svg
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: published-animations
+          path: ${{ runner.temp }}/contribution-animations
+      - name: Publish to output branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git show-ref --verify --quiet refs/remotes/origin/output; then
+            git switch -c output --track origin/output
+          else
+            git switch --orphan output
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          assets=()
+          for scenario in tanks blast chess invaders origami; do
+            for theme in dark light; do
+              assets+=("$scenario-$theme.svg")
+            done
+          done
+          expected="$(printf '%s\n' "${assets[@]}" | sort)"
+          actual="$(find "$RUNNER_TEMP/contribution-animations" -type f -printf '%P\n' | sort)"
+          if [[ "$actual" != "$expected" ]]; then
+            echo "Unexpected or missing SVG assets; publication aborted." >&2
+            exit 1
+          fi
+          for file in "${assets[@]}"; do
+            cp "$RUNNER_TEMP/contribution-animations/$file" "$file"
+            git add -- "$file"
+          done
+          if [[ "$(git ls-files | sort)" != "$expected" ]]; then
+            echo "The output branch must contain exactly the ten official SVGs." >&2
+            exit 1
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git commit -m "chore: update contribution animations"
+          git push origin HEAD:refs/heads/output

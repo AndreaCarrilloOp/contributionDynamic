@@ -1,0 +1,64 @@
+"""Immutable contribution calendar and deterministic demo data."""
+
+from dataclasses import dataclass
+from datetime import date, timedelta
+from random import Random
+
+
+@dataclass(frozen=True)
+class Day:
+    date: date
+    count: int
+    weekday: int
+    week: int
+    level: int | None = None
+
+    def __post_init__(self):
+        if self.count < 0 or not 0 <= self.weekday <= 6 or self.week < 0:
+            raise ValueError("Invalid contribution day")
+        if self.level is not None and not 0 <= self.level <= 4:
+            raise ValueError("Invalid contribution level")
+
+
+def demo_calendar(seed: int = 42, weeks: int = 53) -> tuple[Day, ...]:
+    if not 1 <= weeks <= 53:
+        raise ValueError("weeks must be between 1 and 53")
+    rng = Random(seed)
+    start = date(2025, 1, 5)
+    return tuple(
+        Day(start + timedelta(days=w * 7 + d), rng.choice([0, 0, 1, 2, 4, 8]), d, w)
+        for w in range(weeks)
+        for d in range(7)
+    )
+
+
+def contribution_level(day: Day) -> int:
+    """Preserve GitHub quartiles, with a deterministic fallback for demo data."""
+    if not day.count:
+        return 0
+    return max(1, day.level) if day.level is not None else min(4, day.count.bit_length())
+
+
+def board_weeks(days: tuple[Day, ...]) -> int:
+    """Reserve a full calendar while supporting a partial 54th week."""
+    return max(53, max((day.week + 1 for day in days), default=0))
+
+
+MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+
+def month_label_positions(
+    days: tuple[Day, ...], left: int, step: int, width: int,
+) -> tuple[tuple[int, str], ...]:
+    """Anchor each represented month at its actual first displayed week.
+
+    The width argument is retained for callers; no month is moved to a
+    different contribution column to fit the label. The SVG layout handles
+    crowded boundary months on a second baseline.
+    """
+    months = {}
+    for day in sorted(days, key=lambda d: d.date):
+        months.setdefault((day.date.year, day.date.month), day.week)
+    return tuple((left + week * step, MONTHS[month-1])
+                 for (_, month), week in months.items())
