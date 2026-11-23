@@ -3,8 +3,8 @@
 <rect width="749" height="160" rx="6" fill="#f5f8ff"/>
 <g id="calendar-labels" font-family="system-ui,sans-serif" font-size="9" fill="#455675">
 <g id="month-labels" text-anchor="start">
-<text x="47" y="10">Nov</text>
-<text x="60" y="20">Dec</text>
+<text x="47" y="10" text-anchor="end" dx="-3">Nov</text>
+<text x="60" y="10">Dec</text>
 <text x="112" y="10">Jan</text>
 <text x="177" y="10">Feb</text>
 <text x="229" y="10">Mar</text>
@@ -1155,9 +1155,9 @@
 <rect x="710" y="116" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-11-21" data-level="0">
 <title>2026-11-21: 0 contributions</title>
 </rect>
-<rect x="723" y="38" width="10" height="10" rx="1" fill="#dce9fb" data-date="2026-11-22" data-level="2">
-<title>2026-11-22: 9 contributions</title>
-<animate attributeName="fill" values="#dce9fb;#e5ebf5;#dce9fb;#dce9fb" keyTimes="0;0.945364818;0.98398624;1" dur="34.345462s" calcMode="discrete" repeatCount="indefinite"/>
+<rect x="723" y="38" width="10" height="10" rx="1" fill="#f4dcea" data-date="2026-11-22" data-level="3">
+<title>2026-11-22: 13 contributions</title>
+<animate attributeName="fill" values="#f4dcea;#e5ebf5;#f4dcea;#f4dcea" keyTimes="0;0.945364818;0.98398624;1" dur="34.345462s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 </g>
 <path d="M42 153H737" stroke="#c5d1e5" stroke-width="1" stroke-dasharray="3 4"/>
@@ -1317,9 +1317,9 @@
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.90702594;0.98398624;1" dur="34.345462s" calcMode="discrete" repeatCount="indefinite"/>
 <use href="#invader-sprite-1" xlink:href="#invader-sprite-1"/>
 </g>
-<g data-invader="2026-11-22" data-level="2" transform="translate(728.0 43.0)" opacity="1">
+<g data-invader="2026-11-22" data-level="3" transform="translate(728.0 43.0)" opacity="1">
 <animate attributeName="opacity" values="1;0;1;1" keyTimes="0;0.945364818;0.98398624;1" dur="34.345462s" calcMode="discrete" repeatCount="indefinite"/>
-<use href="#invader-sprite-2" xlink:href="#invader-sprite-2"/>
+<use href="#invader-sprite-3" xlink:href="#invader-sprite-3"/>
 </g>
 </g>
 <g id="lasers">
@@ -1910,7 +1910,7 @@
 </g>
 <g data-impact="true" data-hit-kind="alien" transform="translate(729.0 43.0)" opacity="0">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.945073658;0.945364818;0.946675034;0.948858729;1" dur="34.345462s" calcMode="linear" repeatCount="indefinite"/>
-<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#1664ad"/>
+<path d="M-1 -5h2v4h4v2h-4v4h-2v-4h-4v-2h4Z" fill="#b52783"/>
 <path d="M-2 -2h4v4h-4Z" fill="#f79228"/>
 </g>
 </g>

@@ -3,8 +3,8 @@
 <rect width="749" height="158" rx="6" fill="#faf6eb"/>
 <g id="calendar-labels" font-family="system-ui,sans-serif" font-size="9" fill="#675b48">
 <g id="month-labels" text-anchor="start">
-<text x="47" y="10">Nov</text>
-<text x="60" y="20">Dec</text>
+<text x="47" y="10" text-anchor="end" dx="-3">Nov</text>
+<text x="60" y="10">Dec</text>
 <text x="112" y="10">Jan</text>
 <text x="177" y="10">Feb</text>
 <text x="229" y="10">Mar</text>
@@ -1155,9 +1155,9 @@
 <rect x="710" y="116" width="10" height="10" rx="1" fill="#eee8db" data-date="2026-11-21" data-level="0">
 <title>2026-11-21: 0 contributions</title>
 </rect>
-<rect x="723" y="38" width="10" height="10" rx="1" fill="#dfa062" data-date="2026-11-22" data-level="2">
-<title>2026-11-22: 9 contributions</title>
-<animate attributeName="fill" values="#dfa062;#eee8db;#dfa062" keyTimes="0;0.672449242;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
+<rect x="723" y="38" width="10" height="10" rx="1" fill="#c87934" data-date="2026-11-22" data-level="3">
+<title>2026-11-22: 13 contributions</title>
+<animate attributeName="fill" values="#c87934;#eee8db;#c87934" keyTimes="0;0.672449242;1" dur="51.88s" calcMode="discrete" repeatCount="indefinite"/>
 </rect>
 </g>
 <g id="brick-detail">
@@ -2098,7 +2098,7 @@
 <g data-impact="true" opacity="0" transform="translate(728.000 43.000)">
 <animate attributeName="opacity" values="0;0;1;0.7;0;0" keyTimes="0;0.672256489;0.672449242;0.673991262;0.677075302;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
 <circle r="2" fill="none" stroke="#e76614" stroke-width="1.4">
-<animate attributeName="r" values="2;2;7;7" keyTimes="0;0.672449242;0.677075302;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
+<animate attributeName="r" values="2;2;8;8" keyTimes="0;0.672449242;0.677075302;1" dur="51.88s" calcMode="linear" repeatCount="indefinite"/>
 </circle>
 <path d="M-4 0L0 -4L4 0L0 4Z" fill="#fff1a1"/>
 <path d="M-5 -3l-2 -2M5 -3l2 -2M-4 4l-2 2M4 4l2 2" stroke="#e76614" stroke-width="1.6"/>
