@@ -25,7 +25,6 @@
 </g>
 <g id="calendar">
 <g id="calendar-padding" aria-hidden="true">
-<rect x="723" y="64" width="10" height="10" rx="1" fill="#26352e" data-placeholder="true"/>
 <rect x="723" y="77" width="10" height="10" rx="1" fill="#26352e" data-placeholder="true"/>
 <rect x="723" y="90" width="10" height="10" rx="1" fill="#26352e" data-placeholder="true"/>
 <rect x="723" y="103" width="10" height="10" rx="1" fill="#26352e" data-placeholder="true"/>
@@ -1161,6 +1160,9 @@
 <rect x="723" y="51" width="10" height="10" rx="1" fill="#52645d" data-date="2026-11-23" data-level="1">
 <title>2026-11-23: 2 contributions</title>
 <animate attributeName="fill" values="#52645d;#26352e;#52645d" keyTimes="0;0.586052304;1" dur="40.15s" calcMode="discrete" repeatCount="indefinite"/>
+</rect>
+<rect x="723" y="64" width="10" height="10" rx="1" fill="#26352e" data-date="2026-11-24" data-level="0">
+<title>2026-11-24: 0 contributions</title>
 </rect>
 </g>
 <g id="brick-mortar">
