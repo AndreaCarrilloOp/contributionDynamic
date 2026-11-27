@@ -25,7 +25,6 @@
 </g>
 <g id="calendar">
 <g id="calendar-padding" aria-hidden="true">
-<rect x="723" y="103" width="10" height="10" rx="1" fill="#e5ebf5" data-placeholder="true"/>
 <rect x="723" y="116" width="10" height="10" rx="1" fill="#e5ebf5" data-placeholder="true"/>
 </g>
 <rect x="47" y="38" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2025-11-23" data-level="0">
@@ -1168,6 +1167,9 @@
 </rect>
 <rect x="723" y="90" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-11-26" data-level="0">
 <title>2026-11-26: 0 contributions</title>
+</rect>
+<rect x="723" y="103" width="10" height="10" rx="1" fill="#e5ebf5" data-date="2026-11-27" data-level="0">
+<title>2026-11-27: 0 contributions</title>
 </rect>
 </g>
 <path d="M42 153H737" stroke="#c5d1e5" stroke-width="1" stroke-dasharray="3 4"/>
